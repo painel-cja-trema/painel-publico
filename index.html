@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<title>Consulta Pública · Comissão de Juízes Auxiliares – 2º Grau</title>
+<link rel="stylesheet" href="./style.css?v=20260720_pages">
+<style>
+.erro-carregamento{max-width:1100px;margin:35px auto;padding:24px;border:1px solid #d9a3a3;border-radius:14px;background:#fff4f4;color:#7b1d1d}.carregando{max-width:1100px;margin:35px auto;padding:28px;text-align:center}.sem-link{cursor:default;text-decoration:none}.public-footer-note{margin-bottom:32px}
+</style>
+</head>
+<body>
+<header class="header">
+ <div class="header-inner">
+  <div class="brand-row">
+   <div class="logo-card">
+    <div class="logo-mark" aria-label="Justiça Eleitoral">
+      <svg width="79" height="79" viewBox="0 0 120 120" role="img" aria-label="Marca Justiça Eleitoral">
+        <rect x="50" y="22" width="49" height="75" rx="1" fill="#f3c51c"/><path d="M48 28H100V98H40Z" fill="#f3c51c" opacity=".98"/><path d="M40 98 L100 98 L100 60 Z" fill="#205e44"/><path d="M39 98 L100 59" stroke="#fff" stroke-width="4"/><circle cx="52" cy="49" r="38" fill="#2d5eb8" stroke="#fff" stroke-width="4"/><g fill="#fff"><circle cx="33" cy="36" r="2.1"/><circle cx="41" cy="26" r="2"/><circle cx="56" cy="24" r="1.7"/><circle cx="69" cy="31" r="2"/><circle cx="74" cy="44" r="1.8"/><circle cx="63" cy="58" r="1.9"/><circle cx="47" cy="61" r="1.7"/><circle cx="31" cy="53" r="1.9"/><circle cx="57" cy="39" r="1.5"/><circle cx="43" cy="45" r="1.4"/></g>
+      </svg>
+    </div>
+    <div class="logo-copy"><div class="small">Tribunal Regional Eleitoral</div><div class="big">TRE <span>MARANHÃO</span></div></div>
+   </div>
+   <div class="title"><div class="eyebrow">Consulta Pública</div><h1>Comissão de Juízes Auxiliares <span>– 2º Grau</span></h1><p>Estoque, julgamentos e distribuição de minuta</p></div>
+   <div class="election-card" aria-label="Eleições 2026"><div class="election-word"><span>EL</span><span class="bars"><i></i><i></i><i></i></span><span>IÇÕES</span></div><span class="year">2026</span><div class="motto"><span class="voto">#VOTO</span><span class="na">NA</span>DEMOCRACIA</div></div>
+  </div>
+  <div class="navline"><nav class="nav"><a href="#comparativo">Comparativo</a><a href="#entrada-comissao">Entrada</a><a href="#tarefas-criticas">Tarefas críticas</a><a href="#todas-tarefas">Todas as tarefas</a><a href="#julgados">Julgados</a><a href="#minuta">Minutas</a></nav></div>
+ </div>
+</header>
+<main id="conteudo"><section class="carregando"><h2>Carregando painel público...</h2></section></main>
+<script>
+const esc = v => String(v ?? '').replace(/[&<>'"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
+const arr = v => Array.isArray(v) ? v : [];
+const nomeJuiz = g => g === 'Gab. JA 1' ? 'Dr. Nilo Ribeiro' : g === 'Gab. JA 2' ? 'Dra. Manuella Ribeiro' : 'Dr. Rubem Filho';
+const numero = v => Number(v || 0).toLocaleString('pt-BR');
+function tabela(cab, linhas){return `<div class="wrap"><table><thead><tr>${cab.map(x=>`<th>${esc(x)}</th>`).join('')}</tr></thead><tbody>${linhas.join('') || `<tr><td colspan="${cab.length}">Nenhum registro disponível.</td></tr>`}</tbody></table></div>`}
+function render(d){
+ const e=d.entrada_comissao||{}; const tc=d.tarefas_criticas||{}; const tt=d.todas_tarefas||{};
+ const cols=arr(tc.colunas), linhas=arr(tc.linhas), tarefas=arr(tt.linhas), gabCols=arr(tt.colunas);
+ let h=`<section class="visao-geral"><div><span class="rotulo">CONSULTA PÚBLICA</span><h2>Acompanhamento da Comissão</h2><p>Dados restritos a processos sem segredo de justiça.</p></div><div class="fonte"><i></i><div><span>Última publicação</span><strong>${esc(d.publicado_em||'Não informada')}</strong></div></div></section>`;
+ h+=`<section class="cards"><article class="card azul"><div class="ico">▤</div><div><span>Estoque atual</span><b>${numero(d.total)}</b><em>processos públicos nos três gabinetes</em></div></article><article class="card verde"><div class="ico">✓</div><div><span>Processos julgados</span><b>${numero(d.julgados_total)}</b><em>coluna “julgamento” preenchida</em></div></article><article class="card amarelo"><div class="ico">▣</div><div><span>Arquivados identificados</span><b>${numero(d.arquivados_total)}</b><em>tarefa ou último movimento</em></div></article><article class="card ciano"><div class="ico">▧</div><div><span>Comissão · Minutar ato</span><b>${numero(arr(d.minutar_processos).length)}</b><em>fila pública pronta para distribuição</em></div></article></section>`;
+ if(d.entrada_comissao){h+=`<section id="entrada-comissao" class="painel entrada-comissao-painel"><div class="entrada-comissao-card ${Number(e.total||0)===0?'zero':''}"><div class="entrada-comissao-icone">⚖</div><div class="entrada-comissao-info"><span class="rotulo">PORTA DE ENTRADA DA COMISSÃO</span><h2>Processos com liminar aguardando certificação</h2><p>${esc(e.descricao||'')}</p></div><div class="entrada-comissao-numero sem-link"><small>Total público</small><strong>${numero(e.total)}</strong></div></div></section>`}
+ if(linhas.length){h+=`<section id="tarefas-criticas" class="painel tarefas-criticas-painel"><div class="tarefas-criticas-cabecalho"><div><span class="rotulo">CONTROLE OPERACIONAL</span><h2>Tarefas críticas por gabinete</h2><p>Acompanhamento público das filas críticas, sem processos em segredo de justiça.</p></div><div class="tarefas-legenda">${cols.map(c=>`<span>${esc(c.curto)}</span>`).join('')}</div></div><div class="tarefas-gabinetes-grid">${linhas.map((l,i)=>`<article class="tarefa-gab-card tarefa-gab-${i+1}"><div class="tarefa-gab-topo"><div><h3>${esc(l.gabinete)}</h3><p>${esc(nomeJuiz(l.gabinete))}</p></div><div class="tarefa-acervo sem-link"><small>Acervo</small><strong>${numero(l.total_acervo)}</strong></div></div><div class="tarefas-metricas">${cols.map(c=>`<div class="crit-task ${(c.codigo||'').toLowerCase()} ${Number((l.contagens||{})[c.codigo]||0)===0?'zero':''}"><span>${esc(c.rotulo)}</span><strong>${numero((l.contagens||{})[c.codigo])}</strong><em>${esc(c.descricao)}</em></div>`).join('')}</div></article>`).join('')}</div><div class="tarefas-total-comissao"><div class="total-principal"><small>Total público da Comissão</small><strong>${numero(tc.total_acervo)}</strong></div>${cols.map(c=>`<div><small>${esc(c.curto)}</small><strong>${numero((tc.totais||{})[c.codigo])}</strong></div>`).join('')}</div></section>`}
+ if(tarefas.length){h+=`<section id="todas-tarefas" class="painel todas-tarefas-painel painel-analitico"><div class="cabecalho-painel todas-tarefas-cabecalho"><div><span class="rotulo">ESTOQUE OPERACIONAL</span><h2>Todas as tarefas do acervo público</h2><p>Distribuição completa das tarefas atuais dos três gabinetes auxiliares.</p></div><div class="acoes-painel"><span class="pill">${tarefas.length} tarefa(s)</span></div></div><div class="todas-tarefas-resumo gabinete-enfase"><div><small>Acervo total</small><strong>${numero(tt.total_acervo)}</strong></div><div><small>Tarefas distintas</small><strong>${tarefas.length}</strong></div><div><small>Gabinetes</small><strong>3</strong></div><div><small>Gabinetes</small><strong>JA 1 · JA 2 · JA 3</strong></div></div>${tabela(['Tarefa',...gabCols.map(c=>c.gabinete||c.nome),'Total'], tarefas.map(t=>{const cs=t.contagens||{};let total=0;const vals=gabCols.map(c=>{const v=Number(cs[c.nome]||0);total+=v;return `<td>${numero(v)}</td>`});return `<tr><td>${esc(t.tarefa_atual||t.tarefa||'')}</td>${vals.join('')}<td><b>${numero(total)}</b></td></tr>`}))}</section>`}
+ const comp=arr(d.comparativo); if(comp.length){h+=`<section id="comparativo" class="painel"><div class="cabecalho-menor"><span class="rotulo">COMPARATIVO</span><h2>Indicadores por gabinete</h2></div>${tabela(['Gabinete','Estoque','Julgados','Arquivados','Sigilosos'],comp.map(x=>`<tr><td><span class="chip">${esc(x.gabinete)}</span></td><td>${numero(x.total)}</td><td>${numero(x.julgados)}</td><td>${numero(x.arquivados)}</td><td>${numero(x.sigilosos)}</td></tr>`))}</section>`}
+ const julg=arr(d.julgados_por_gabinete||d.julgados); if(julg.length){h+=`<section id="julgados" class="painel"><div class="cabecalho-menor"><span class="rotulo">JULGAMENTOS</span><h2>Processos julgados por gabinete</h2></div>${tabela(['Gabinete','Quantidade'],julg.map(x=>`<tr><td><span class="chip">${esc(x.gabinete)}</span></td><td>${numero(x.quantidade??x.total??x.julgados)}</td></tr>`))}</section>`}
+ h+=`<section id="minuta" class="painel minuta"><div class="cabecalho-menor"><span class="rotulo">OPERAÇÃO</span><h2>Distribuição de minuta · Comissão</h2></div>${arr(d.minutar_processos).length?`<p class="status pronto">✓ Há ${arr(d.minutar_processos).length} processo(s) público(s) pronto(s) para distribuição.</p>`:`<p class="status vazio">i Não há processos públicos em “Minutar ato”.</p>`}</section>`;
+ const pt=arr(d.por_tarefa); if(pt.length){h+=`<section class="painel"><div class="cabecalho-menor"><span class="rotulo">ESTOQUE OPERACIONAL</span><h2>Tarefas atuais por gabinete</h2></div>${tabela(['Gabinete','Tarefa','Quantidade'],pt.map(x=>`<tr><td><span class="chip">${esc(x.gabinete)}</span></td><td>${esc(x.tarefa_atual)}</td><td>${numero(x.quantidade)}</td></tr>`))}</section>`}
+ const antigos=arr(d.mais_antigos); if(antigos.length){h+=`<section class="painel"><div class="cabecalho-menor"><span class="rotulo">ATENÇÃO PRIORITÁRIA</span><h2>Processos com maior tempo de tramitação</h2></div>${tabela(['Processo','Gabinete','Classe','Tarefa','Dias'],antigos.map(x=>`<tr><td class="processo">${esc(x.processo)}</td><td><span class="chip">${esc(x.gabinete)}</span></td><td>${esc(x.classe)}</td><td>${esc(x.tarefa_atual)}</td><td><span class="badge-dias">${numero(x.dias_tramitando)}</span></td></tr>`))}</section>`}
+ h+=`<section class="painel public-footer-note"><span class="rotulo">ORIGEM</span><p>Indicadores gerados a partir da base mais recente publicada pelo sistema interno, com exclusão dos processos marcados como segredo de justiça. Arquivo de origem: <b>${esc(d.arquivo_origem||'não informado')}</b>.</p></section>`;
+ document.getElementById('conteudo').innerHTML=h;
+}
+fetch(`./painel_publico.json?v=${Date.now()}`,{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json()}).then(render).catch(err=>{document.getElementById('conteudo').innerHTML=`<section class="erro-carregamento"><h2>Não foi possível carregar o painel.</h2><p>O arquivo de dados ainda não foi publicado ou o GitHub Pages está em atualização.</p><small>${esc(err.message)}</small></section>`});
+</script>
+</body>
+</html>
