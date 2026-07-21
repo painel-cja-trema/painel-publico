@@ -47,6 +47,15 @@ function csvValor(v){return '"'+String(v??'').replace(/"/g,'""')+'"'}
 function baixarExcel(){const cab=['Processo','Gabinete','Classe','Tarefa atual','Autuação','Desde','Dias','Responsável','Julgamento'];const linhas=RELATORIO_ATUAL.map(x=>[x.processo,x.sigla||x.gabinete,x.classe,x.tarefa_atual,x.autuacao,x.desde,x.dias_tramitando,x.responsavel_processo,x.julgamento||x.teor]);const csv='\ufeff'+[cab,...linhas].map(l=>l.map(csvValor).join(';')).join('\r\n');const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));a.download=TITULO_ATUAL.replace(/[^a-z0-9]+/gi,'_').toLowerCase()+'.csv';a.click();URL.revokeObjectURL(a.href)}
 function imprimirPDF(){const w=window.open('','_blank');w.document.write(`<html><head><meta charset="utf-8"><title>${esc(TITULO_ATUAL)}</title><style>body{font-family:Arial;padding:20px;color:#173f67}h1{font-size:20px}table{width:100%;border-collapse:collapse;font-size:10px}th,td{border:1px solid #ccd8e3;padding:5px;text-align:left}th{background:#103f70;color:#fff}@page{size:landscape;margin:10mm}</style></head><body><h1>${esc(TITULO_ATUAL)}</h1><p>${RELATORIO_ATUAL.length} processo(s) · Consulta pública</p>${processosTabela(RELATORIO_ATUAL)}<script>setTimeout(()=>print(),250)<\/script></body></html>`);w.document.close()}
 function detalhe(tipo,chave,titulo){let itens=[];if(tipo==='entrada')itens=DADOS.entrada_comissao_processos;if(tipo==='critica')itens=(DADOS.tarefas_criticas_processos||{})[chave];if(tipo==='tarefa')itens=(DADOS.todas_tarefas_processos||{})[chave];if(tipo==='gabinete')itens=(DADOS.acervo_por_gabinete||{})[chave];if(tipo==='minuta')itens=DADOS.minutar_processos;if(tipo==='julgados')itens=DADOS.julgados_recentes;abrirDetalhe(titulo,itens)}
+function detalheTarefaGabinete(chave,gabinete,titulo){
+ const normalizar=v=>String(v||'').trim().toLowerCase().replace(/\s+/g,' ');
+ const alvo=normalizar(gabinete);
+ const itens=arr((DADOS.todas_tarefas_processos||{})[chave]).filter(x=>{
+   const identificadores=[x.sigla,x.gabinete,x.gabinete_atual,x.nome_gabinete].map(normalizar);
+   return identificadores.includes(alvo);
+ });
+ abrirDetalhe(`${titulo} · ${gabinete}`,itens);
+}
 function render(d){DADOS=d;const e=d.entrada_comissao||{},tc=d.tarefas_criticas||{},tt=d.todas_tarefas||{};const cols=arr(tc.colunas),linhas=arr(tc.linhas),tarefas=arr(tt.linhas),gabCols=arr(tt.colunas),comp=arr(d.comparativo);
 let h=`<section class="visao-geral"><div><span class="rotulo">CONSULTA PÚBLICA</span><h2>Acompanhamento da Comissão</h2><p>Dados restritos a processos sem segredo de justiça.</p></div><div class="fonte"><i></i><div><span>Última publicação</span><strong>${esc(d.publicado_em||'Não informada')}</strong></div></div></section>`;
 h+=`<section class="cards public-cards"><article class="card azul"><div class="ico">▤</div><div><span>Estoque atual</span><b>${numero(d.total)}</b><em>processos públicos</em></div></article><article class="card verde detalhe-link" onclick="detalhe('julgados','','Processos julgados recentes')"><div class="ico">✓</div><div><span>Processos julgados</span><b>${numero(d.julgados_total)}</b><em>Clique para detalhar</em></div></article><article class="card amarelo"><div class="ico">▣</div><div><span>Arquivados</span><b>${numero(d.arquivados_total)}</b><em>identificados na base</em></div></article><article class="card ciano detalhe-link" onclick="detalhe('minuta','','Processos em Minutar ato')"><div class="ico">▧</div><div><span>Minutar ato</span><b>${numero(arr(d.minutar_processos).length)}</b><em>Clique para detalhar</em></div></article></section>`;
@@ -57,7 +66,7 @@ if(tarefas.length){
 const cards=gabCols.map((g,i)=>{
  const itens=tarefas.map(t=>{
    const v=Number((t.contagens||{})[g.nome]||0);
-   return v?`<button class="todas-task-row" onclick="detalhe('tarefa','${esc(t.codigo)}','${esc(t.tarefa_atual||t.tarefa)}')"><span>${esc(t.tarefa_atual||t.tarefa)}</span><strong>${numero(v)}</strong></button>`:'';
+   return v?`<button class="todas-task-row" onclick="detalheTarefaGabinete('${esc(t.codigo)}','${esc(g.gabinete||g.nome)}','${esc(t.tarefa_atual||t.tarefa)}')"><span>${esc(t.tarefa_atual||t.tarefa)}</span><strong>${numero(v)}</strong></button>`:'';
  }).join('');
  const ac=(comp.find(x=>x.gabinete===(g.gabinete||g.nome))||{}).quantidade||0;
  return `<article class="todas-gab-card todas-gab-${i+1}">
