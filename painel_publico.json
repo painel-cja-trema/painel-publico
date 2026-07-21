@@ -51,7 +51,7 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Processo com prazo em curso",
-      "quantidade": 6
+      "quantidade": 7
     },
     {
       "gabinete": "Gab. JA 1",
@@ -75,11 +75,6 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Visualizar expediente DJE",
-      "quantidade": 2
-    },
-    {
-      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Analisar resposta do expediente; Registrar recurso",
       "quantidade": 1
     },
@@ -91,6 +86,11 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Registrar ciência por telefone ou pessoalmente",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Visualizar expediente DJE",
       "quantidade": 1
     },
     {
@@ -125,7 +125,7 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Analisar Petição Avulsa; Analisar Petição Avulsa; Analisar determinação; Petições não lidas; Petições não lidas",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar Petição Avulsa; Elaborar Documentos; Petições não lidas; Petições não lidas",
       "quantidade": 1
     },
     {
@@ -202,7 +202,7 @@
       "processo": "0600026-53.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Visualizar expediente DJE",
+      "tarefa_atual": "Processo com prazo em curso",
       "dias_tramitando": 161,
       "segredo_justica": "NÃO"
     },
@@ -622,11 +622,11 @@
         "codigo": "processo-com-prazo-em-curso",
         "tarefa": "Processo com prazo em curso",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 6,
+          "Gabinete Juiz Auxiliar 1": 7,
           "Gabinete Juiz Auxiliar 2": 7,
           "Gabinete Juiz Auxiliar 3": 4
         },
-        "total": 17
+        "total": 18
       },
       {
         "codigo": "aguardando-julgamento-do-recurso-interno",
@@ -642,11 +642,11 @@
         "codigo": "visualizar-expediente-dje",
         "tarefa": "Visualizar expediente DJE",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 2,
+          "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 6,
           "Gabinete Juiz Auxiliar 3": 0
         },
-        "total": 8
+        "total": 7
       },
       {
         "codigo": "revisar-ato",
@@ -739,8 +739,8 @@
         "total": 1
       },
       {
-        "codigo": "analisar-peticao-avulsa-analisar-peticao-avulsa-analisar-determinacao-peticoes-nao-lidas-peticoes-nao-lidas",
-        "tarefa": "Analisar Petição Avulsa; Analisar Petição Avulsa; Analisar determinação; Petições não lidas; Petições não lidas",
+        "codigo": "analisar-peticao-avulsa-analisar-peticao-avulsa-elaborar-documentos-peticoes-nao-lidas-peticoes-nao-lidas",
+        "tarefa": "Analisar Petição Avulsa; Analisar Petição Avulsa; Elaborar Documentos; Petições não lidas; Petições não lidas",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -803,6 +803,20 @@
   },
   "todas_tarefas_processos": {
     "processo-com-prazo-em-curso": [
+      {
+        "processo": "0600026-53.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Processo com prazo em curso",
+        "autuacao": "09/02/2026",
+        "desde": "21/07/2026",
+        "dias_tramitando": 161,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
       {
         "processo": "0600089-78.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
@@ -1157,20 +1171,6 @@
       }
     ],
     "visualizar-expediente-dje": [
-      {
-        "processo": "0600026-53.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Visualizar expediente DJE",
-        "autuacao": "09/02/2026",
-        "desde": "18/07/2026",
-        "dias_tramitando": 161,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
       {
         "processo": "0600106-17.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
@@ -1624,12 +1624,12 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-peticao-avulsa-analisar-peticao-avulsa-analisar-determinacao-peticoes-nao-lidas-peticoes-nao-lidas": [
+    "analisar-peticao-avulsa-analisar-peticao-avulsa-elaborar-documentos-peticoes-nao-lidas-peticoes-nao-lidas": [
       {
         "processo": "0600168-57.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Analisar Petição Avulsa; Analisar determinação; Petições não lidas; Petições não lidas",
+        "tarefa_atual": "Analisar Petição Avulsa; Analisar Petição Avulsa; Elaborar Documentos; Petições não lidas; Petições não lidas",
         "autuacao": "01/06/2026",
         "desde": "",
         "dias_tramitando": 50,
@@ -1727,9 +1727,9 @@
         "processo": "0600026-53.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Visualizar expediente DJE",
+        "tarefa_atual": "Processo com prazo em curso",
         "autuacao": "09/02/2026",
-        "desde": "18/07/2026",
+        "desde": "21/07/2026",
         "dias_tramitando": 161,
         "julgado": false,
         "data_julgamento": "",
@@ -2191,7 +2191,7 @@
         "processo": "0600168-57.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Analisar Petição Avulsa; Analisar determinação; Petições não lidas; Petições não lidas",
+        "tarefa_atual": "Analisar Petição Avulsa; Analisar Petição Avulsa; Elaborar Documentos; Petições não lidas; Petições não lidas",
         "autuacao": "01/06/2026",
         "desde": "",
         "dias_tramitando": 50,
@@ -2917,8 +2917,8 @@
       "Gab. JA 3": 11
     }
   ],
-  "publicado_em": "21/07/2026 11:44",
+  "publicado_em": "21/07/2026 11:46",
   "arquivo_origem": "dashboard_42_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "c02aacf68856b01e47fc5f96a4c07bf0bc262c7b6597a895a8e7c52d177260a7"
+  "hash_publicacao": "c0489d68c069a79631644a14a874aaba74989668e8a5d64b3069d9dd326818d9"
 }
