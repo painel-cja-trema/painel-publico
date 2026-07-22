@@ -100,11 +100,6 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Lançar movimento",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Minutar ato",
       "quantidade": 1
     },
@@ -116,6 +111,11 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Registrar ciência por telefone ou pessoalmente",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Remeter Processos - Gabinete",
       "quantidade": 1
     },
     {
@@ -473,7 +473,7 @@
           "TRIAGEM_ORDINARIA": 2,
           "MINUTAR_ATO": 2,
           "ASSINAR_ATO": 4,
-          "LANCAR_MOVIMENTACAO": 1
+          "LANCAR_MOVIMENTACAO": 0
         }
       },
       {
@@ -506,7 +506,7 @@
       "TRIAGEM_ORDINARIA": 3,
       "MINUTAR_ATO": 3,
       "ASSINAR_ATO": 6,
-      "LANCAR_MOVIMENTACAO": 1
+      "LANCAR_MOVIMENTACAO": 0
     },
     "total_acervo": 67
   },
@@ -701,22 +701,7 @@
         "responsavel_processo": ""
       }
     ],
-    "LANCAR_MOVIMENTACAO": [
-      {
-        "processo": "0600228-30.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "09/07/2026",
-        "desde": "21/07/2026",
-        "dias_tramitando": 12,
-        "julgado": true,
-        "data_julgamento": "22/07/2026",
-        "teor": "Julgado procedente em parte do pedido em 22/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ]
+    "LANCAR_MOVIMENTACAO": []
   },
   "entrada_comissao": {
     "codigo": "LIMINAR_CERTIFICACAO",
@@ -914,16 +899,6 @@
         "total": 1
       },
       {
-        "codigo": "lancar-movimento",
-        "tarefa": "Lançar movimento",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
         "codigo": "minutar-ato-peticoes-nao-lidas",
         "tarefa": "Minutar ato; Petições não lidas",
         "contagens": {
@@ -936,6 +911,16 @@
       {
         "codigo": "registrar-ciencia-por-telefone-ou-pessoalmente",
         "tarefa": "Registrar ciência por telefone ou pessoalmente",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "remeter-processos-gabinete",
+        "tarefa": "Remeter Processos - Gabinete",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -1877,22 +1862,6 @@
         "responsavel_processo": ""
       }
     ],
-    "lancar-movimento": [
-      {
-        "processo": "0600228-30.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "09/07/2026",
-        "desde": "21/07/2026",
-        "dias_tramitando": 12,
-        "julgado": true,
-        "data_julgamento": "22/07/2026",
-        "teor": "Julgado procedente em parte do pedido em 22/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "minutar-ato-peticoes-nao-lidas": [
       {
         "processo": "0600162-50.2026.6.10.0000",
@@ -1921,6 +1890,22 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "remeter-processos-gabinete": [
+      {
+        "processo": "0600228-30.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Remeter Processos - Gabinete",
+        "autuacao": "09/07/2026",
+        "desde": "22/07/2026",
+        "dias_tramitando": 12,
+        "julgado": true,
+        "data_julgamento": "21/07/2026",
+        "teor": "Julgado procedente em parte do pedido em 21/07/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -2198,13 +2183,13 @@
         "processo": "0600228-30.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Lançar movimento",
+        "tarefa_atual": "Remeter Processos - Gabinete",
         "autuacao": "09/07/2026",
-        "desde": "21/07/2026",
+        "desde": "22/07/2026",
         "dias_tramitando": 12,
         "julgado": true,
-        "data_julgamento": "22/07/2026",
-        "teor": "Julgado procedente em parte do pedido em 22/07/2026",
+        "data_julgamento": "21/07/2026",
+        "teor": "Julgado procedente em parte do pedido em 21/07/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -2877,8 +2862,8 @@
       "processo": "0600228-30.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "teor": "Julgado procedente em parte do pedido em 22/07/2026",
-      "data_julgamento": "22/07/2026",
+      "teor": "Julgado procedente em parte do pedido em 21/07/2026",
+      "data_julgamento": "21/07/2026",
       "dias_tramitando": 12
     },
     {
@@ -3178,8 +3163,8 @@
       "Gab. JA 3": 11
     }
   ],
-  "publicado_em": "22/07/2026 10:32",
+  "publicado_em": "22/07/2026 10:37",
   "arquivo_origem": "dashboard_42_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "9d81ae96617ff9c3045f33f08af00181f7ef724d8f7d45b89b274d7a585e10f0"
+  "hash_publicacao": "510d58dff3c62b290beef093ab7ece762b4cad720ad42fc21a346cb444066b69"
 }
