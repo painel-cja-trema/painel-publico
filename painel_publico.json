@@ -10,7 +10,7 @@
       "juiz": "Dr. Nilo Ribeiro",
       "distribuidor": "Flauberth Silva Santos",
       "quantidade": 24,
-      "media_dias": 46.6,
+      "media_dias": 46.7,
       "maior_tempo": 163,
       "urgentes": 0,
       "minutar": 3,
@@ -120,6 +120,11 @@
     },
     {
       "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Lançar movimento",
+      "quantidade": 2
+    },
+    {
+      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Analisar determinação",
       "quantidade": 1
     },
@@ -131,16 +136,6 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Analisar resposta do expediente; Registrar recurso",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Assinar ato",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Lançar movimento",
       "quantidade": 1
     },
     {
@@ -347,7 +342,7 @@
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
       "tarefa_atual": "Registrar ciência por telefone ou pessoalmente",
-      "dias_tramitando": 56,
+      "dias_tramitando": 57,
       "segredo_justica": "NÃO"
     },
     {
@@ -474,8 +469,8 @@
           "TRIAGEM_URGENTE": 0,
           "TRIAGEM_ORDINARIA": 1,
           "MINUTAR_ATO": 0,
-          "ASSINAR_ATO": 1,
-          "LANCAR_MOVIMENTACAO": 1
+          "ASSINAR_ATO": 0,
+          "LANCAR_MOVIMENTACAO": 2
         }
       },
       {
@@ -495,8 +490,8 @@
       "TRIAGEM_URGENTE": 0,
       "TRIAGEM_ORDINARIA": 2,
       "MINUTAR_ATO": 3,
-      "ASSINAR_ATO": 1,
-      "LANCAR_MOVIMENTACAO": 1
+      "ASSINAR_ATO": 0,
+      "LANCAR_MOVIMENTACAO": 2
     },
     "total_acervo": 66
   },
@@ -576,23 +571,22 @@
         "responsavel_processo": ""
       }
     ],
-    "ASSINAR_ATO": [
+    "ASSINAR_ATO": [],
+    "LANCAR_MOVIMENTACAO": [
       {
         "processo": "0600168-57.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
+        "tarefa_atual": "Lançar movimento",
         "autuacao": "01/06/2026",
-        "desde": "21/07/2026",
+        "desde": "22/07/2026",
         "dias_tramitando": 51,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
-      }
-    ],
-    "LANCAR_MOVIMENTACAO": [
+      },
       {
         "processo": "0600168-57.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
@@ -705,6 +699,16 @@
         "total": 2
       },
       {
+        "codigo": "lancar-movimento",
+        "tarefa": "Lançar movimento",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 2,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 2
+      },
+      {
         "codigo": "realizar-triagem-ordinarios",
         "tarefa": "Realizar triagem ordinários",
         "contagens": {
@@ -767,26 +771,6 @@
       {
         "codigo": "analisar-resposta-do-expediente-registrar-recurso",
         "tarefa": "Analisar resposta do expediente; Registrar recurso",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "assinar-ato",
-        "tarefa": "Assinar ato",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "lancar-movimento",
-        "tarefa": "Lançar movimento",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -1564,6 +1548,36 @@
         "responsavel_processo": ""
       }
     ],
+    "lancar-movimento": [
+      {
+        "processo": "0600168-57.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Lançar movimento",
+        "autuacao": "01/06/2026",
+        "desde": "22/07/2026",
+        "dias_tramitando": 51,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600168-57.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "ED no(a) Rp",
+        "tarefa_atual": "Lançar movimento",
+        "autuacao": "08/06/2026",
+        "desde": "22/07/2026",
+        "dias_tramitando": 44,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "realizar-triagem-ordinarios": [
       {
         "processo": "0600102-77.2026.6.10.0000",
@@ -1718,38 +1732,6 @@
         "responsavel_processo": ""
       }
     ],
-    "assinar-ato": [
-      {
-        "processo": "0600168-57.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "01/06/2026",
-        "desde": "21/07/2026",
-        "dias_tramitando": 51,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "lancar-movimento": [
-      {
-        "processo": "0600168-57.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "ED no(a) Rp",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "08/06/2026",
-        "desde": "22/07/2026",
-        "dias_tramitando": 44,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "registrar-ciencia-por-telefone-ou-pessoalmente": [
       {
         "processo": "0600160-80.2026.6.10.0000",
@@ -1758,7 +1740,7 @@
         "tarefa_atual": "Registrar ciência por telefone ou pessoalmente",
         "autuacao": "26/05/2026",
         "desde": "10/07/2026",
-        "dias_tramitando": 56,
+        "dias_tramitando": 57,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -1888,7 +1870,7 @@
         "tarefa_atual": "Registrar ciência por telefone ou pessoalmente",
         "autuacao": "26/05/2026",
         "desde": "10/07/2026",
-        "dias_tramitando": 56,
+        "dias_tramitando": 57,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -2237,9 +2219,9 @@
         "processo": "0600168-57.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
+        "tarefa_atual": "Lançar movimento",
         "autuacao": "01/06/2026",
-        "desde": "21/07/2026",
+        "desde": "22/07/2026",
         "dias_tramitando": 51,
         "julgado": false,
         "data_julgamento": "",
@@ -3005,8 +2987,8 @@
       "Gab. JA 3": 11
     }
   ],
-  "publicado_em": "22/07/2026 18:06",
+  "publicado_em": "22/07/2026 18:11",
   "arquivo_origem": "dashboard_42_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "a6c3e710ecc6c8a1fe50b4c6e6b25c26dfe335973a2848f2bfe02d4727fc87a9"
+  "hash_publicacao": "55b3284880dc6050b35912a203b854df0ee541dd735606cc2a4f8497289a4c49"
 }
