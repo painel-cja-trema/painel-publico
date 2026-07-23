@@ -60,6 +60,11 @@
     },
     {
       "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Analisar determinação",
+      "quantidade": 2
+    },
+    {
+      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Assinar ato",
       "quantidade": 2
     },
@@ -70,22 +75,12 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Registrar ciência intimação pessoal",
-      "quantidade": 2
-    },
-    {
-      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Revisar ato",
       "quantidade": 2
     },
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Analisar Processos",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Analisar determinação",
       "quantidade": 1
     },
     {
@@ -101,6 +96,11 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Minutar ato",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Registrar ciência intimação pessoal",
       "quantidade": 1
     },
     {
@@ -326,7 +326,7 @@
       "processo": "0600151-21.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Registrar ciência intimação pessoal",
+      "tarefa_atual": "Analisar determinação",
       "dias_tramitando": 65,
       "segredo_justica": "NÃO"
     },
@@ -661,6 +661,16 @@
         "total": 3
       },
       {
+        "codigo": "analisar-determinacao",
+        "tarefa": "Analisar determinação",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 2,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 3
+      },
+      {
         "codigo": "assinar-ato",
         "tarefa": "Assinar ato",
         "contagens": {
@@ -701,31 +711,11 @@
         "total": 2
       },
       {
-        "codigo": "analisar-determinacao",
-        "tarefa": "Analisar determinação",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 2
-      },
-      {
         "codigo": "analisar-resposta-do-expediente-registrar-recurso",
         "tarefa": "Analisar resposta do expediente; Registrar recurso",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 2
-      },
-      {
-        "codigo": "registrar-ciencia-intimacao-pessoal",
-        "tarefa": "Registrar ciência intimação pessoal",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 2,
-          "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 2
@@ -806,6 +796,16 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "registrar-ciencia-intimacao-pessoal",
+        "tarefa": "Registrar ciência intimação pessoal",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -1296,6 +1296,50 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-determinacao": [
+      {
+        "processo": "0600112-24.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação",
+        "autuacao": "30/04/2026",
+        "desde": "23/07/2026",
+        "dias_tramitando": 83,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600147-81.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "RepEsp",
+        "tarefa_atual": "Analisar determinação",
+        "autuacao": "15/05/2026",
+        "desde": "22/07/2026",
+        "dias_tramitando": 69,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600151-21.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação",
+        "autuacao": "18/05/2026",
+        "desde": "23/07/2026",
+        "dias_tramitando": 65,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "assinar-ato": [
       {
         "processo": "0600159-95.2026.6.10.0000",
@@ -1458,36 +1502,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-determinacao": [
-      {
-        "processo": "0600112-24.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "30/04/2026",
-        "desde": "23/07/2026",
-        "dias_tramitando": 83,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600147-81.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "RepEsp",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "15/05/2026",
-        "desde": "22/07/2026",
-        "dias_tramitando": 69,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "analisar-resposta-do-expediente-registrar-recurso": [
       {
         "processo": "0600190-18.2026.6.10.0000",
@@ -1514,36 +1528,6 @@
         "julgado": true,
         "data_julgamento": "20/07/2026",
         "teor": "Julgado improcedente o pedido em 20/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "registrar-ciencia-intimacao-pessoal": [
-      {
-        "processo": "0600080-19.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Registrar ciência intimação pessoal",
-        "autuacao": "07/04/2026",
-        "desde": "13/07/2026",
-        "dias_tramitando": 106,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600151-21.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Registrar ciência intimação pessoal",
-        "autuacao": "18/05/2026",
-        "desde": "20/07/2026",
-        "dias_tramitando": 65,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -1717,6 +1701,22 @@
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
+    ],
+    "registrar-ciencia-intimacao-pessoal": [
+      {
+        "processo": "0600080-19.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Registrar ciência intimação pessoal",
+        "autuacao": "07/04/2026",
+        "desde": "13/07/2026",
+        "dias_tramitando": 106,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
     ]
   },
   "acervo_por_gabinete": {
@@ -1795,9 +1795,9 @@
         "processo": "0600151-21.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Registrar ciência intimação pessoal",
+        "tarefa_atual": "Analisar determinação",
         "autuacao": "18/05/2026",
-        "desde": "20/07/2026",
+        "desde": "23/07/2026",
         "dias_tramitando": 65,
         "julgado": false,
         "data_julgamento": "",
@@ -2895,8 +2895,8 @@
       "Gab. JA 3": 10
     }
   ],
-  "publicado_em": "23/07/2026 13:53",
+  "publicado_em": "23/07/2026 14:00",
   "arquivo_origem": "dashboard_42_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "65619cc45a27b1a4731f6d19a94a0a8e649917c53c8a80fcaf987855b09026cc"
+  "hash_publicacao": "36873d5e2de37c045f7085850343dfd3a5fe5f605808e63ad800372ef53caac2"
 }
