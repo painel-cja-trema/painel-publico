@@ -26,7 +26,7 @@
       "quantidade": 27,
       "media_dias": 37.6,
       "maior_tempo": 103,
-      "urgentes": 0,
+      "urgentes": 1,
       "minutar": 1,
       "julgados": 10,
       "percentual_julgados": 37.0,
@@ -111,7 +111,7 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Analisar determinação",
-      "quantidade": 5
+      "quantidade": 4
     },
     {
       "gabinete": "Gab. JA 2",
@@ -146,6 +146,11 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Realizar triagem ordinários",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Realizar triagem urgentes",
       "quantidade": 1
     },
     {
@@ -447,7 +452,7 @@
         "nome": "Gabinete Juiz Auxiliar 2",
         "total_acervo": 27,
         "contagens": {
-          "TRIAGEM_URGENTE": 0,
+          "TRIAGEM_URGENTE": 1,
           "TRIAGEM_ORDINARIA": 1,
           "MINUTAR_ATO": 1,
           "ASSINAR_ATO": 0,
@@ -468,7 +473,7 @@
       }
     ],
     "totais": {
-      "TRIAGEM_URGENTE": 0,
+      "TRIAGEM_URGENTE": 1,
       "TRIAGEM_ORDINARIA": 3,
       "MINUTAR_ATO": 2,
       "ASSINAR_ATO": 2,
@@ -477,7 +482,22 @@
     "total_acervo": 64
   },
   "tarefas_criticas_processos": {
-    "TRIAGEM_URGENTE": [],
+    "TRIAGEM_URGENTE": [
+      {
+        "processo": "0600239-59.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem urgentes",
+        "autuacao": "16/07/2026",
+        "desde": "23/07/2026",
+        "dias_tramitando": 6,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "TRIAGEM_ORDINARIA": [
       {
         "processo": "0600102-77.2026.6.10.0000",
@@ -634,10 +654,10 @@
         "tarefa": "Analisar determinação",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 5,
+          "Gabinete Juiz Auxiliar 2": 4,
           "Gabinete Juiz Auxiliar 3": 0
         },
-        "total": 5
+        "total": 4
       },
       {
         "codigo": "elaborar-documentos",
@@ -775,6 +795,16 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "realizar-triagem-urgentes",
+        "tarefa": "Realizar triagem urgentes",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -1249,20 +1279,6 @@
         "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
-      },
-      {
-        "processo": "0600239-59.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "16/07/2026",
-        "desde": "23/07/2026",
-        "dias_tramitando": 6,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
       }
     ],
     "elaborar-documentos": [
@@ -1706,6 +1722,22 @@
         "autuacao": "13/05/2026",
         "desde": "",
         "dias_tramitando": 70,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "realizar-triagem-urgentes": [
+      {
+        "processo": "0600239-59.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem urgentes",
+        "autuacao": "16/07/2026",
+        "desde": "23/07/2026",
+        "dias_tramitando": 6,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -2338,7 +2370,7 @@
         "processo": "0600239-59.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
+        "tarefa_atual": "Realizar triagem urgentes",
         "autuacao": "16/07/2026",
         "desde": "23/07/2026",
         "dias_tramitando": 6,
@@ -2918,8 +2950,8 @@
       "Gab. JA 3": 11
     }
   ],
-  "publicado_em": "23/07/2026 10:11",
+  "publicado_em": "23/07/2026 10:21",
   "arquivo_origem": "dashboard_42_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "c4d2a1be136e82153b054e7316f68e03c44377c16f879d643d2943a5ecce69d6"
+  "hash_publicacao": "a1a65971d14c39bec8c7426cc8a080a96b2f14844487d200f5e370dd4eb495f4"
 }
