@@ -27,7 +27,7 @@
       "media_dias": 33.9,
       "maior_tempo": 105,
       "urgentes": 1,
-      "minutar": 1,
+      "minutar": 0,
       "julgados": 13,
       "percentual_julgados": 43.3,
       "arquivados": 0
@@ -125,12 +125,12 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Atualizar dados do processo",
+      "tarefa_atual": "Assinar ato; Petições não lidas",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Minutar ato; Petições não lidas",
+      "tarefa_atual": "Atualizar dados do processo",
       "quantidade": 1
     },
     {
@@ -509,20 +509,6 @@
       "teor": "",
       "segredo_justica": "NÃO",
       "responsavel_processo": ""
-    },
-    {
-      "processo": "0600248-21.2026.6.10.0000",
-      "gabinete": "Gab. JA 2",
-      "classe": "Rp",
-      "tarefa_atual": "Minutar ato; Petições não lidas",
-      "autuacao": "23/07/2026",
-      "desde": "",
-      "dias_tramitando": 1,
-      "julgado": false,
-      "data_julgamento": "",
-      "teor": "",
-      "segredo_justica": "NÃO",
-      "responsavel_processo": ""
     }
   ],
   "tarefas_criticas": {
@@ -578,8 +564,8 @@
         "contagens": {
           "TRIAGEM_URGENTE": 1,
           "TRIAGEM_ORDINARIA": 1,
-          "MINUTAR_ATO": 1,
-          "ASSINAR_ATO": 0,
+          "MINUTAR_ATO": 0,
+          "ASSINAR_ATO": 1,
           "LANCAR_MOVIMENTACAO": 0
         }
       },
@@ -599,8 +585,8 @@
     "totais": {
       "TRIAGEM_URGENTE": 1,
       "TRIAGEM_ORDINARIA": 2,
-      "MINUTAR_ATO": 8,
-      "ASSINAR_ATO": 0,
+      "MINUTAR_ATO": 7,
+      "ASSINAR_ATO": 1,
       "LANCAR_MOVIMENTACAO": 0
     },
     "total_acervo": 68
@@ -750,12 +736,14 @@
         "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
-      },
+      }
+    ],
+    "ASSINAR_ATO": [
       {
         "processo": "0600248-21.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Minutar ato; Petições não lidas",
+        "tarefa_atual": "Assinar ato; Petições não lidas",
         "autuacao": "23/07/2026",
         "desde": "",
         "dias_tramitando": 1,
@@ -766,7 +754,6 @@
         "responsavel_processo": ""
       }
     ],
-    "ASSINAR_ATO": [],
     "LANCAR_MOVIMENTACAO": []
   },
   "entrada_comissao": {
@@ -925,6 +912,16 @@
         "total": 1
       },
       {
+        "codigo": "assinar-ato-peticoes-nao-lidas",
+        "tarefa": "Assinar ato; Petições não lidas",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
         "codigo": "atualizar-dados-do-processo",
         "tarefa": "Atualizar dados do processo",
         "contagens": {
@@ -941,16 +938,6 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
-        "codigo": "minutar-ato-peticoes-nao-lidas",
-        "tarefa": "Minutar ato; Petições não lidas",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
       },
@@ -1874,6 +1861,22 @@
         "responsavel_processo": ""
       }
     ],
+    "assinar-ato-peticoes-nao-lidas": [
+      {
+        "processo": "0600248-21.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Assinar ato; Petições não lidas",
+        "autuacao": "23/07/2026",
+        "desde": "",
+        "dias_tramitando": 1,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "atualizar-dados-do-processo": [
       {
         "processo": "0600181-56.2026.6.10.0000",
@@ -1902,22 +1905,6 @@
         "julgado": true,
         "data_julgamento": "07/07/2026",
         "teor": "Julgado improcedente o pedido em 07/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "minutar-ato-peticoes-nao-lidas": [
-      {
-        "processo": "0600248-21.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Minutar ato; Petições não lidas",
-        "autuacao": "23/07/2026",
-        "desde": "",
-        "dias_tramitando": 1,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -2753,7 +2740,7 @@
         "processo": "0600248-21.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Minutar ato; Petições não lidas",
+        "tarefa_atual": "Assinar ato; Petições não lidas",
         "autuacao": "23/07/2026",
         "desde": "",
         "dias_tramitando": 1,
@@ -3263,8 +3250,8 @@
       "Gab. JA 3": 10
     }
   ],
-  "publicado_em": "25/07/2026 10:52",
+  "publicado_em": "25/07/2026 11:06",
   "arquivo_origem": "dashboard_42_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "8f6816d58285d1d95f85192bc07af2a48ff9a32b3515417c976262ab1c5bf85d"
+  "hash_publicacao": "4d35a60008dd1341ddc4d98b7be5fd317579a28a8ecb14db0ac9bb0a5c4832b9"
 }
