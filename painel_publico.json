@@ -12,7 +12,7 @@
       "quantidade": 26,
       "media_dias": 45.5,
       "maior_tempo": 165,
-      "urgentes": 0,
+      "urgentes": 1,
       "minutar": 6,
       "julgados": 15,
       "percentual_julgados": 57.7,
@@ -38,7 +38,7 @@
       "juiz": "Dr. Rubem Filho",
       "distribuidor": "Danielle Cerqueira Castro",
       "quantidade": 12,
-      "media_dias": 33.4,
+      "media_dias": 33.5,
       "maior_tempo": 87,
       "urgentes": 0,
       "minutar": 0,
@@ -80,12 +80,12 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Analisar determinação - Urgentes",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Registrar ciência intimação pessoal",
+      "tarefa_atual": "Assinar ato",
       "quantidade": 1
     },
     {
@@ -258,7 +258,7 @@
       "processo": "0600080-19.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Registrar ciência intimação pessoal",
+      "tarefa_atual": "Analisar determinação - Urgentes",
       "dias_tramitando": 108,
       "segredo_justica": "NÃO"
     },
@@ -942,6 +942,16 @@
         "total": 1
       },
       {
+        "codigo": "analisar-determinacao-urgentes",
+        "tarefa": "Analisar determinação - Urgentes",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
         "codigo": "analisar-peticao-avulsa-de-autuacao-processo-com-prazo-em-curso",
         "tarefa": "Analisar petição avulsa de autuação; Processo com prazo em curso",
         "contagens": {
@@ -1047,16 +1057,6 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "registrar-ciencia-intimacao-pessoal",
-        "tarefa": "Registrar ciência intimação pessoal",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -1685,7 +1685,7 @@
         "tarefa_atual": "Elaborar Documentos",
         "autuacao": "11/06/2026",
         "desde": "20/07/2026",
-        "dias_tramitando": 43,
+        "dias_tramitando": 44,
         "julgado": true,
         "data_julgamento": "14/07/2026",
         "teor": "Julgado improcedente o pedido em 14/07/2026",
@@ -1757,7 +1757,7 @@
         "tarefa_atual": "Minutar Relatório, Voto e Ementa",
         "autuacao": "16/07/2026",
         "desde": "24/07/2026",
-        "dias_tramitando": 8,
+        "dias_tramitando": 9,
         "julgado": true,
         "data_julgamento": "10/07/2026",
         "teor": "Julgado procedente o pedido em 10/07/2026",
@@ -1884,6 +1884,22 @@
         "autuacao": "23/07/2026",
         "desde": "",
         "dias_tramitando": 1,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-determinacao-urgentes": [
+      {
+        "processo": "0600080-19.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação - Urgentes",
+        "autuacao": "07/04/2026",
+        "desde": "25/07/2026",
+        "dias_tramitando": 108,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -2066,22 +2082,6 @@
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
-    ],
-    "registrar-ciencia-intimacao-pessoal": [
-      {
-        "processo": "0600080-19.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Registrar ciência intimação pessoal",
-        "autuacao": "07/04/2026",
-        "desde": "13/07/2026",
-        "dias_tramitando": 108,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
     ]
   },
   "acervo_por_gabinete": {
@@ -2118,9 +2118,9 @@
         "processo": "0600080-19.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Registrar ciência intimação pessoal",
+        "tarefa_atual": "Analisar determinação - Urgentes",
         "autuacao": "07/04/2026",
-        "desde": "13/07/2026",
+        "desde": "25/07/2026",
         "dias_tramitando": 108,
         "julgado": false,
         "data_julgamento": "",
@@ -2613,7 +2613,7 @@
         "tarefa_atual": "Elaborar Documentos",
         "autuacao": "11/06/2026",
         "desde": "20/07/2026",
-        "dias_tramitando": 43,
+        "dias_tramitando": 44,
         "julgado": true,
         "data_julgamento": "14/07/2026",
         "teor": "Julgado improcedente o pedido em 14/07/2026",
@@ -3049,7 +3049,7 @@
         "tarefa_atual": "Minutar Relatório, Voto e Ementa",
         "autuacao": "16/07/2026",
         "desde": "24/07/2026",
-        "dias_tramitando": 8,
+        "dias_tramitando": 9,
         "julgado": true,
         "data_julgamento": "10/07/2026",
         "teor": "Julgado procedente o pedido em 10/07/2026",
@@ -3233,7 +3233,7 @@
       "classe": "Rp",
       "teor": "Julgado improcedente o pedido em 14/07/2026",
       "data_julgamento": "14/07/2026",
-      "dias_tramitando": 43
+      "dias_tramitando": 44
     },
     {
       "processo": "0600188-48.2026.6.10.0000",
@@ -3257,7 +3257,7 @@
       "classe": "REC no(a) Rp",
       "teor": "Julgado procedente o pedido em 10/07/2026",
       "data_julgamento": "10/07/2026",
-      "dias_tramitando": 8
+      "dias_tramitando": 9
     },
     {
       "processo": "0600192-85.2026.6.10.0000",
@@ -3358,8 +3358,8 @@
       "Gab. JA 3": 10
     }
   ],
-  "publicado_em": "25/07/2026 13:58",
+  "publicado_em": "25/07/2026 14:03",
   "arquivo_origem": "dashboard_42_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "9d1525d644c3a10996d6d77ee70ef29be4febda5d0221973b8dd88a8c3987b9d"
+  "hash_publicacao": "fae0b25f5aa9112dfcd3d77c6a671513b92c7373df0f72fefc5de1cd5c5d560a"
 }
