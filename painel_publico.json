@@ -145,17 +145,17 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Lançar movimento; Petições não lidas",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Petições não lidas; Remeter Processos - Gabinete",
       "quantidade": 1
     },
     {
@@ -567,7 +567,7 @@
           "TRIAGEM_ORDINARIA": 2,
           "MINUTAR_ATO": 0,
           "ASSINAR_ATO": 0,
-          "LANCAR_MOVIMENTACAO": 1
+          "LANCAR_MOVIMENTACAO": 0
         }
       },
       {
@@ -588,7 +588,7 @@
       "TRIAGEM_ORDINARIA": 3,
       "MINUTAR_ATO": 6,
       "ASSINAR_ATO": 1,
-      "LANCAR_MOVIMENTACAO": 1
+      "LANCAR_MOVIMENTACAO": 0
     },
     "total_acervo": 69
   },
@@ -755,22 +755,7 @@
         "responsavel_processo": ""
       }
     ],
-    "LANCAR_MOVIMENTACAO": [
-      {
-        "processo": "0600248-21.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Lançar movimento; Petições não lidas",
-        "autuacao": "23/07/2026",
-        "desde": "",
-        "dias_tramitando": 1,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ]
+    "LANCAR_MOVIMENTACAO": []
   },
   "entrada_comissao": {
     "codigo": "LIMINAR_CERTIFICACAO",
@@ -978,16 +963,6 @@
         "total": 1
       },
       {
-        "codigo": "lancar-movimento-peticoes-nao-lidas",
-        "tarefa": "Lançar movimento; Petições não lidas",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
         "codigo": "peticoes-nao-lidas-processo-com-prazo-em-curso",
         "tarefa": "Petições não lidas; Processo com prazo em curso",
         "contagens": {
@@ -1000,6 +975,16 @@
       {
         "codigo": "peticoes-nao-lidas-realizar-triagem-ordinarios",
         "tarefa": "Petições não lidas; Realizar triagem ordinários",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "peticoes-nao-lidas-remeter-processos-gabinete",
+        "tarefa": "Petições não lidas; Remeter Processos - Gabinete",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -1955,22 +1940,6 @@
         "responsavel_processo": ""
       }
     ],
-    "lancar-movimento-peticoes-nao-lidas": [
-      {
-        "processo": "0600248-21.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Lançar movimento; Petições não lidas",
-        "autuacao": "23/07/2026",
-        "desde": "",
-        "dias_tramitando": 1,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "peticoes-nao-lidas-processo-com-prazo-em-curso": [
       {
         "processo": "0600168-57.2026.6.10.0000",
@@ -1996,6 +1965,22 @@
         "autuacao": "10/07/2026",
         "desde": "",
         "dias_tramitando": 14,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "peticoes-nao-lidas-remeter-processos-gabinete": [
+      {
+        "processo": "0600248-21.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Petições não lidas; Remeter Processos - Gabinete",
+        "autuacao": "23/07/2026",
+        "desde": "",
+        "dias_tramitando": 1,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -2818,7 +2803,7 @@
         "processo": "0600248-21.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Lançar movimento; Petições não lidas",
+        "tarefa_atual": "Petições não lidas; Remeter Processos - Gabinete",
         "autuacao": "23/07/2026",
         "desde": "",
         "dias_tramitando": 1,
@@ -3342,8 +3327,8 @@
       "Gab. JA 3": 10
     }
   ],
-  "publicado_em": "25/07/2026 14:26",
+  "publicado_em": "25/07/2026 14:31",
   "arquivo_origem": "dashboard_42_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "8250a468be6f4321684d4a278d7654a6c84a8fcdefd36b955aa06a927047e725"
+  "hash_publicacao": "ae23d367f612b3af514d568d4b6ec950b67e564457cbe123d38971ab355380ea"
 }
