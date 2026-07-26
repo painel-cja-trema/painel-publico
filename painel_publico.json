@@ -125,7 +125,7 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
+      "tarefa_atual": "Analisar Petição Avulsa; Petições descartadas; Processo com prazo em curso",
       "quantidade": 1
     },
     {
@@ -150,17 +150,17 @@
     },
     {
       "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Petições descartadas; Visualizar expediente DJE",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Petições não lidas; Visualizar expediente DJE",
       "quantidade": 1
     },
     {
@@ -394,7 +394,7 @@
       "processo": "0600167-72.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Petições não lidas; Visualizar expediente DJE",
+      "tarefa_atual": "Petições descartadas; Visualizar expediente DJE",
       "dias_tramitando": 55,
       "segredo_justica": "NÃO"
     }
@@ -790,8 +790,8 @@
         "total": 1
       },
       {
-        "codigo": "analisar-peticao-avulsa-peticoes-nao-lidas-processo-com-prazo-em-curso",
-        "tarefa": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
+        "codigo": "analisar-peticao-avulsa-peticoes-descartadas-processo-com-prazo-em-curso",
+        "tarefa": "Analisar Petição Avulsa; Petições descartadas; Processo com prazo em curso",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -840,6 +840,16 @@
         "total": 1
       },
       {
+        "codigo": "peticoes-descartadas-visualizar-expediente-dje",
+        "tarefa": "Petições descartadas; Visualizar expediente DJE",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
         "codigo": "peticoes-nao-lidas-processo-com-prazo-em-curso",
         "tarefa": "Petições não lidas; Processo com prazo em curso",
         "contagens": {
@@ -852,16 +862,6 @@
       {
         "codigo": "peticoes-nao-lidas-realizar-triagem-ordinarios",
         "tarefa": "Petições não lidas; Realizar triagem ordinários",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "peticoes-nao-lidas-visualizar-expediente-dje",
-        "tarefa": "Petições não lidas; Visualizar expediente DJE",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -1731,12 +1731,12 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-peticao-avulsa-peticoes-nao-lidas-processo-com-prazo-em-curso": [
+    "analisar-peticao-avulsa-peticoes-descartadas-processo-com-prazo-em-curso": [
       {
         "processo": "0600238-74.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
+        "tarefa_atual": "Analisar Petição Avulsa; Petições descartadas; Processo com prazo em curso",
         "autuacao": "13/07/2026",
         "desde": "",
         "dias_tramitando": 12,
@@ -1811,6 +1811,22 @@
         "responsavel_processo": ""
       }
     ],
+    "peticoes-descartadas-visualizar-expediente-dje": [
+      {
+        "processo": "0600167-72.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Petições descartadas; Visualizar expediente DJE",
+        "autuacao": "31/05/2026",
+        "desde": "",
+        "dias_tramitando": 55,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "peticoes-nao-lidas-processo-com-prazo-em-curso": [
       {
         "processo": "0600168-57.2026.6.10.0000",
@@ -1836,22 +1852,6 @@
         "autuacao": "10/07/2026",
         "desde": "",
         "dias_tramitando": 15,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "peticoes-nao-lidas-visualizar-expediente-dje": [
-      {
-        "processo": "0600167-72.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Petições não lidas; Visualizar expediente DJE",
-        "autuacao": "31/05/2026",
-        "desde": "",
-        "dias_tramitando": 55,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -2410,7 +2410,7 @@
         "processo": "0600167-72.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Petições não lidas; Visualizar expediente DJE",
+        "tarefa_atual": "Petições descartadas; Visualizar expediente DJE",
         "autuacao": "31/05/2026",
         "desde": "",
         "dias_tramitando": 55,
@@ -2550,7 +2550,7 @@
         "processo": "0600238-74.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
+        "tarefa_atual": "Analisar Petição Avulsa; Petições descartadas; Processo com prazo em curso",
         "autuacao": "13/07/2026",
         "desde": "",
         "dias_tramitando": 12,
@@ -3214,8 +3214,8 @@
       "Gab. JA 3": 10
     }
   ],
-  "publicado_em": "26/07/2026 11:11",
+  "publicado_em": "26/07/2026 11:23",
   "arquivo_origem": "dashboard_42_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "324dbf46059352766c827f4c17ad3802b2fa19a00a2a98134a404c9595e92490"
+  "hash_publicacao": "7124484c88beb1c4742824f0c32bce1fdfc226f5822f3405702109cd5fb30ae0"
 }
