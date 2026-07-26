@@ -170,11 +170,6 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Analisar Petição Avulsa; Analisar petição avulsa de autuação; Petições não lidas; Processo com prazo em curso",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Analisar determinação",
       "quantidade": 1
     },
@@ -186,6 +181,11 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Minutar Relatório, Voto e Ementa",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
       "quantidade": 1
     }
   ],
@@ -731,16 +731,6 @@
         "total": 1
       },
       {
-        "codigo": "analisar-peticao-avulsa-analisar-peticao-avulsa-de-autuacao-peticoes-nao-lidas-processo-com-prazo-em-curso",
-        "tarefa": "Analisar Petição Avulsa; Analisar petição avulsa de autuação; Petições não lidas; Processo com prazo em curso",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
         "codigo": "analisar-peticao-avulsa-processo-com-prazo-em-curso",
         "tarefa": "Analisar Petição Avulsa; Processo com prazo em curso",
         "contagens": {
@@ -777,6 +767,16 @@
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "peticoes-nao-lidas-processo-com-prazo-em-curso",
+        "tarefa": "Petições não lidas; Processo com prazo em curso",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 1
       },
@@ -1022,6 +1022,20 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0600185-93.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Processo com prazo em curso",
+        "autuacao": "22/07/2026",
+        "desde": "25/07/2026",
+        "dias_tramitando": 4,
+        "julgado": true,
+        "data_julgamento": "16/07/2026",
+        "teor": "Julgado procedente em parte do pedido em 16/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0600193-70.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "REC no(a) Rp",
@@ -1032,20 +1046,6 @@
         "julgado": true,
         "data_julgamento": "16/07/2026",
         "teor": "Julgado procedente o pedido em 16/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600185-93.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Processo com prazo em curso",
-        "autuacao": "22/07/2026",
-        "desde": "25/07/2026",
-        "dias_tramitando": 3,
-        "julgado": true,
-        "data_julgamento": "16/07/2026",
-        "teor": "Julgado procedente em parte do pedido em 16/07/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -1686,22 +1686,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-peticao-avulsa-analisar-peticao-avulsa-de-autuacao-peticoes-nao-lidas-processo-com-prazo-em-curso": [
-      {
-        "processo": "0600235-22.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "RepEsp",
-        "tarefa_atual": "Analisar Petição Avulsa; Analisar petição avulsa de autuação; Petições não lidas; Processo com prazo em curso",
-        "autuacao": "13/07/2026",
-        "desde": "",
-        "dias_tramitando": 13,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "analisar-peticao-avulsa-processo-com-prazo-em-curso": [
       {
         "processo": "0600238-74.2026.6.10.0000",
@@ -1759,6 +1743,22 @@
         "autuacao": "18/05/2026",
         "desde": "23/07/2026",
         "dias_tramitando": 68,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "peticoes-nao-lidas-processo-com-prazo-em-curso": [
+      {
+        "processo": "0600235-22.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "RepEsp",
+        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+        "autuacao": "13/07/2026",
+        "desde": "",
+        "dias_tramitando": 13,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -2162,7 +2162,7 @@
         "tarefa_atual": "Processo com prazo em curso",
         "autuacao": "22/07/2026",
         "desde": "25/07/2026",
-        "dias_tramitando": 3,
+        "dias_tramitando": 4,
         "julgado": true,
         "data_julgamento": "16/07/2026",
         "teor": "Julgado procedente em parte do pedido em 16/07/2026",
@@ -2779,7 +2779,7 @@
         "processo": "0600235-22.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "RepEsp",
-        "tarefa_atual": "Analisar Petição Avulsa; Analisar petição avulsa de autuação; Petições não lidas; Processo com prazo em curso",
+        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
         "autuacao": "13/07/2026",
         "desde": "",
         "dias_tramitando": 13,
@@ -2916,7 +2916,7 @@
       "classe": "REC no(a) Rp",
       "teor": "Julgado procedente em parte do pedido em 16/07/2026",
       "data_julgamento": "16/07/2026",
-      "dias_tramitando": 3
+      "dias_tramitando": 4
     },
     {
       "processo": "0600185-93.2026.6.10.0000",
@@ -3105,8 +3105,8 @@
       "Gab. JA 3": 10
     }
   ],
-  "publicado_em": "26/07/2026 13:22",
+  "publicado_em": "26/07/2026 13:27",
   "arquivo_origem": "dashboard_42_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "0840c586966093a502732e5050c90e251821360b915b06aaec46a07c33f49bd9"
+  "hash_publicacao": "ba3696d8ced5151175d11044f54098183ba5d0927baf775edef278dd295b0c88"
 }
