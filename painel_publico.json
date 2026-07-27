@@ -50,18 +50,13 @@
   "por_tarefa": [
     {
       "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Processo com prazo em curso",
+      "quantidade": 7
+    },
+    {
+      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Aguardando julgamento do recurso interno",
       "quantidade": 6
-    },
-    {
-      "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Processo com prazo em curso",
-      "quantidade": 6
-    },
-    {
-      "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Analisar determinação",
-      "quantidade": 3
     },
     {
       "gabinete": "Gab. JA 1",
@@ -72,6 +67,11 @@
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Revisar ato",
       "quantidade": 3
+    },
+    {
+      "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Analisar determinação",
+      "quantidade": 2
     },
     {
       "gabinete": "Gab. JA 1",
@@ -197,7 +197,7 @@
       "processo": "0600026-53.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Processo com prazo em curso",
       "dias_tramitando": 167,
       "segredo_justica": "NÃO"
     },
@@ -610,11 +610,11 @@
         "codigo": "processo-com-prazo-em-curso",
         "tarefa": "Processo com prazo em curso",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 6,
+          "Gabinete Juiz Auxiliar 1": 7,
           "Gabinete Juiz Auxiliar 2": 18,
           "Gabinete Juiz Auxiliar 3": 0
         },
-        "total": 24
+        "total": 25
       },
       {
         "codigo": "aguardando-julgamento-do-recurso-interno",
@@ -637,16 +637,6 @@
         "total": 5
       },
       {
-        "codigo": "analisar-determinacao",
-        "tarefa": "Analisar determinação",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 3,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 4
-      },
-      {
         "codigo": "visualizar-expediente-dje",
         "tarefa": "Visualizar expediente DJE",
         "contagens": {
@@ -655,6 +645,16 @@
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 4
+      },
+      {
+        "codigo": "analisar-determinacao",
+        "tarefa": "Analisar determinação",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 2,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 3
       },
       {
         "codigo": "lancar-movimento",
@@ -801,6 +801,20 @@
   },
   "todas_tarefas_processos": {
     "processo-com-prazo-em-curso": [
+      {
+        "processo": "0600026-53.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Processo com prazo em curso",
+        "autuacao": "09/02/2026",
+        "desde": "27/07/2026",
+        "dias_tramitando": 167,
+        "julgado": true,
+        "data_julgamento": "24/07/2026",
+        "teor": "Julgado improcedente o pedido em 24/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
       {
         "processo": "0600027-38.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
@@ -1380,64 +1394,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-determinacao": [
-      {
-        "processo": "0600026-53.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "09/02/2026",
-        "desde": "27/07/2026",
-        "dias_tramitando": 167,
-        "julgado": true,
-        "data_julgamento": "24/07/2026",
-        "teor": "Julgado improcedente o pedido em 24/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600222-23.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "07/07/2026",
-        "desde": "25/07/2026",
-        "dias_tramitando": 19,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600226-60.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "08/07/2026",
-        "desde": "25/07/2026",
-        "dias_tramitando": 18,
-        "julgado": true,
-        "data_julgamento": "22/07/2026",
-        "teor": "Extinto o processo por ausência das condições da ação em 22/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600228-30.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "09/07/2026",
-        "desde": "25/07/2026",
-        "dias_tramitando": 17,
-        "julgado": true,
-        "data_julgamento": "21/07/2026",
-        "teor": "Julgado procedente em parte do pedido em 21/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "visualizar-expediente-dje": [
       {
         "processo": "0600159-95.2026.6.10.0000",
@@ -1492,6 +1448,50 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-determinacao": [
+      {
+        "processo": "0600222-23.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação",
+        "autuacao": "07/07/2026",
+        "desde": "25/07/2026",
+        "dias_tramitando": 19,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600226-60.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação",
+        "autuacao": "08/07/2026",
+        "desde": "25/07/2026",
+        "dias_tramitando": 18,
+        "julgado": true,
+        "data_julgamento": "22/07/2026",
+        "teor": "Extinto o processo por ausência das condições da ação em 22/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600228-30.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação",
+        "autuacao": "09/07/2026",
+        "desde": "25/07/2026",
+        "dias_tramitando": 17,
+        "julgado": true,
+        "data_julgamento": "21/07/2026",
+        "teor": "Julgado procedente em parte do pedido em 21/07/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -1811,7 +1811,7 @@
         "processo": "0600026-53.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
+        "tarefa_atual": "Processo com prazo em curso",
         "autuacao": "09/02/2026",
         "desde": "27/07/2026",
         "dias_tramitando": 167,
@@ -3079,8 +3079,8 @@
       "Gab. JA 3": 10
     }
   ],
-  "publicado_em": "27/07/2026 09:16",
+  "publicado_em": "27/07/2026 09:21",
   "arquivo_origem": "dashboard_42_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "f08b111bc44cc468de5dba11999e4dd26d305986c4d1c16b1466f12f8fbc64d1"
+  "hash_publicacao": "f7313c19c5813f313cbde50d706fa45f1fefc453ae051b3ee1b5e73cc4fdfb0e"
 }
