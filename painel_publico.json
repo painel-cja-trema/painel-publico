@@ -140,6 +140,11 @@
     },
     {
       "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Assinar ato",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Definir procedimento; Petições não lidas",
       "quantidade": 1
     },
@@ -161,11 +166,6 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Registrar ciência por telefone ou pessoalmente",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Revisar ato",
       "quantidade": 1
     },
     {
@@ -537,7 +537,7 @@
           "TRIAGEM_URGENTE": 0,
           "TRIAGEM_ORDINARIA": 5,
           "MINUTAR_ATO": 1,
-          "ASSINAR_ATO": 0,
+          "ASSINAR_ATO": 1,
           "LANCAR_MOVIMENTACAO": 1
         }
       },
@@ -558,7 +558,7 @@
       "TRIAGEM_URGENTE": 0,
       "TRIAGEM_ORDINARIA": 5,
       "MINUTAR_ATO": 5,
-      "ASSINAR_ATO": 2,
+      "ASSINAR_ATO": 3,
       "LANCAR_MOVIMENTACAO": 1
     },
     "total_acervo": 67
@@ -737,6 +737,20 @@
         "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
+      },
+      {
+        "processo": "0600252-58.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "28/07/2026",
+        "desde": "28/07/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
       }
     ],
     "LANCAR_MOVIMENTACAO": [
@@ -832,6 +846,16 @@
         "total": 4
       },
       {
+        "codigo": "assinar-ato",
+        "tarefa": "Assinar ato",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 2,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 3
+      },
+      {
         "codigo": "visualizar-expediente-dje",
         "tarefa": "Visualizar expediente DJE",
         "contagens": {
@@ -868,16 +892,6 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 2
-      },
-      {
-        "codigo": "assinar-ato",
-        "tarefa": "Assinar ato",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 2,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 2
       },
@@ -984,16 +998,6 @@
       {
         "codigo": "registrar-ciencia-por-telefone-ou-pessoalmente",
         "tarefa": "Registrar ciência por telefone ou pessoalmente",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "revisar-ato",
-        "tarefa": "Revisar ato",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -1603,6 +1607,50 @@
         "responsavel_processo": ""
       }
     ],
+    "assinar-ato": [
+      {
+        "processo": "0600151-21.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "18/05/2026",
+        "desde": "28/07/2026",
+        "dias_tramitando": 70,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600191-03.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "25/06/2026",
+        "desde": "27/07/2026",
+        "dias_tramitando": 32,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600252-58.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "28/07/2026",
+        "desde": "28/07/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "visualizar-expediente-dje": [
       {
         "processo": "0600112-24.2026.6.10.0000",
@@ -1730,36 +1778,6 @@
         "autuacao": "07/07/2026",
         "desde": "25/07/2026",
         "dias_tramitando": 21,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "assinar-ato": [
-      {
-        "processo": "0600151-21.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "18/05/2026",
-        "desde": "28/07/2026",
-        "dias_tramitando": 70,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600191-03.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "25/06/2026",
-        "desde": "27/07/2026",
-        "dias_tramitando": 32,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -1967,22 +1985,6 @@
         "julgado": true,
         "data_julgamento": "18/07/2026",
         "teor": "Julgado improcedente o pedido em 18/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "revisar-ato": [
-      {
-        "processo": "0600252-58.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Revisar ato",
-        "autuacao": "28/07/2026",
-        "desde": "28/07/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -2752,7 +2754,7 @@
         "processo": "0600252-58.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Revisar ato",
+        "tarefa_atual": "Assinar ato",
         "autuacao": "28/07/2026",
         "desde": "28/07/2026",
         "dias_tramitando": 0,
@@ -3234,8 +3236,8 @@
       "Gab. JA 3": 10
     }
   ],
-  "publicado_em": "28/07/2026 15:13",
+  "publicado_em": "28/07/2026 15:33",
   "arquivo_origem": "dashboard_42_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "18868d24c731fe566ded32f7ca26765188e32480a672d32a7d6eeea35528ef37"
+  "hash_publicacao": "ab135627458dfa6de5d3ad01837492149d5a7d6e42acdca6ec9c8da35e1c0c23"
 }
