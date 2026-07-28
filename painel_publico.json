@@ -26,8 +26,8 @@
       "quantidade": 32,
       "media_dias": 34.8,
       "maior_tempo": 108,
-      "urgentes": 1,
-      "minutar": 1,
+      "urgentes": 0,
+      "minutar": 2,
       "julgados": 13,
       "percentual_julgados": 40.6,
       "arquivados": 0
@@ -125,6 +125,11 @@
     },
     {
       "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Minutar ato",
+      "quantidade": 2
+    },
+    {
+      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Realizar triagem ordinários",
       "quantidade": 2
     },
@@ -156,16 +161,6 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Minutar Relatório, Voto e Ementa",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Minutar ato",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Realizar triagem urgentes",
       "quantidade": 1
     },
     {
@@ -486,6 +481,20 @@
       "teor": "",
       "segredo_justica": "NÃO",
       "responsavel_processo": ""
+    },
+    {
+      "processo": "0600252-58.2026.6.10.0000",
+      "gabinete": "Gab. JA 2",
+      "classe": "Rp",
+      "tarefa_atual": "Minutar ato",
+      "autuacao": "28/07/2026",
+      "desde": "28/07/2026",
+      "dias_tramitando": 0,
+      "julgado": false,
+      "data_julgamento": "",
+      "teor": "",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
     }
   ],
   "tarefas_criticas": {
@@ -539,9 +548,9 @@
         "nome": "Gabinete Juiz Auxiliar 2",
         "total_acervo": 32,
         "contagens": {
-          "TRIAGEM_URGENTE": 1,
+          "TRIAGEM_URGENTE": 0,
           "TRIAGEM_ORDINARIA": 2,
-          "MINUTAR_ATO": 1,
+          "MINUTAR_ATO": 2,
           "ASSINAR_ATO": 1,
           "LANCAR_MOVIMENTACAO": 0
         }
@@ -560,31 +569,16 @@
       }
     ],
     "totais": {
-      "TRIAGEM_URGENTE": 1,
+      "TRIAGEM_URGENTE": 0,
       "TRIAGEM_ORDINARIA": 4,
-      "MINUTAR_ATO": 5,
+      "MINUTAR_ATO": 6,
       "ASSINAR_ATO": 3,
       "LANCAR_MOVIMENTACAO": 0
     },
     "total_acervo": 67
   },
   "tarefas_criticas_processos": {
-    "TRIAGEM_URGENTE": [
-      {
-        "processo": "0600252-58.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Realizar triagem urgentes",
-        "autuacao": "28/07/2026",
-        "desde": "28/07/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
+    "TRIAGEM_URGENTE": [],
     "TRIAGEM_ORDINARIA": [
       {
         "processo": "0600232-67.2026.6.10.0000",
@@ -713,6 +707,20 @@
         "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
+      },
+      {
+        "processo": "0600252-58.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Minutar ato",
+        "autuacao": "28/07/2026",
+        "desde": "28/07/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
       }
     ],
     "ASSINAR_ATO": [
@@ -807,6 +815,16 @@
         "total": 10
       },
       {
+        "codigo": "minutar-ato",
+        "tarefa": "Minutar ato",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 3,
+          "Gabinete Juiz Auxiliar 2": 2,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 5
+      },
+      {
         "codigo": "analisar-determinacao",
         "tarefa": "Analisar determinação",
         "contagens": {
@@ -823,16 +841,6 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 2,
           "Gabinete Juiz Auxiliar 3": 2
-        },
-        "total": 4
-      },
-      {
-        "codigo": "minutar-ato",
-        "tarefa": "Minutar ato",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 3,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 4
       },
@@ -962,16 +970,6 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "realizar-triagem-urgentes",
-        "tarefa": "Realizar triagem urgentes",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -1410,6 +1408,78 @@
         "responsavel_processo": ""
       }
     ],
+    "minutar-ato": [
+      {
+        "processo": "0600027-38.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Minutar ato",
+        "autuacao": "09/02/2026",
+        "desde": "27/07/2026",
+        "dias_tramitando": 168,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600159-95.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Minutar ato",
+        "autuacao": "26/05/2026",
+        "desde": "27/07/2026",
+        "dias_tramitando": 62,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600162-50.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Minutar ato",
+        "autuacao": "27/05/2026",
+        "desde": "27/07/2026",
+        "dias_tramitando": 61,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600251-73.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Minutar ato",
+        "autuacao": "25/07/2026",
+        "desde": "27/07/2026",
+        "dias_tramitando": 3,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600252-58.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Minutar ato",
+        "autuacao": "28/07/2026",
+        "desde": "28/07/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "analisar-determinacao": [
       {
         "processo": "0600106-17.2026.6.10.0000",
@@ -1522,64 +1592,6 @@
         "julgado": true,
         "data_julgamento": "13/07/2026",
         "teor": "Julgado improcedente o pedido em 13/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "minutar-ato": [
-      {
-        "processo": "0600027-38.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Minutar ato",
-        "autuacao": "09/02/2026",
-        "desde": "27/07/2026",
-        "dias_tramitando": 168,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600159-95.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Minutar ato",
-        "autuacao": "26/05/2026",
-        "desde": "27/07/2026",
-        "dias_tramitando": 62,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600162-50.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Minutar ato",
-        "autuacao": "27/05/2026",
-        "desde": "27/07/2026",
-        "dias_tramitando": 61,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600251-73.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Minutar ato",
-        "autuacao": "25/07/2026",
-        "desde": "27/07/2026",
-        "dias_tramitando": 3,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -1928,22 +1940,6 @@
         "julgado": true,
         "data_julgamento": "14/07/2026",
         "teor": "Julgado procedente o pedido em 14/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "realizar-triagem-urgentes": [
-      {
-        "processo": "0600252-58.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Realizar triagem urgentes",
-        "autuacao": "28/07/2026",
-        "desde": "28/07/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -2745,7 +2741,7 @@
         "processo": "0600252-58.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Realizar triagem urgentes",
+        "tarefa_atual": "Minutar ato",
         "autuacao": "28/07/2026",
         "desde": "28/07/2026",
         "dias_tramitando": 0,
@@ -3227,8 +3223,8 @@
       "Gab. JA 3": 10
     }
   ],
-  "publicado_em": "28/07/2026 12:23",
+  "publicado_em": "28/07/2026 12:32",
   "arquivo_origem": "dashboard_42_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "2b8cc0f5f2b363327925f5642eda0941ceed4320ec797087c9fd74cf3a3c6689"
+  "hash_publicacao": "a9f28d4828c8bbeb70aff3862fffb806c10dacf04a340574b2e4d9c6b0b54351"
 }
