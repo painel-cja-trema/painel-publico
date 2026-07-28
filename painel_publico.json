@@ -65,6 +65,11 @@
     },
     {
       "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Remeter Processos - Gabinete",
+      "quantidade": 2
+    },
+    {
+      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Aguarda Sessão de Julgamento Virtual; Elaborar extrato da ata; Liberados para julgamento pelo gabinete virtual; Selecionar documentos para acórdão - Gabinete",
       "quantidade": 1
     },
@@ -80,22 +85,12 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Lançar movimento",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Minutar ato; Petições não lidas",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Realizar triagem ordinários",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Remeter Processos - Gabinete",
       "quantidade": 1
     },
     {
@@ -545,7 +540,7 @@
           "TRIAGEM_ORDINARIA": 1,
           "MINUTAR_ATO": 5,
           "ASSINAR_ATO": 1,
-          "LANCAR_MOVIMENTACAO": 1
+          "LANCAR_MOVIMENTACAO": 0
         }
       },
       {
@@ -578,7 +573,7 @@
       "TRIAGEM_ORDINARIA": 3,
       "MINUTAR_ATO": 6,
       "ASSINAR_ATO": 2,
-      "LANCAR_MOVIMENTACAO": 1
+      "LANCAR_MOVIMENTACAO": 0
     },
     "total_acervo": 66
   },
@@ -744,22 +739,7 @@
         "responsavel_processo": ""
       }
     ],
-    "LANCAR_MOVIMENTACAO": [
-      {
-        "processo": "0600157-28.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "ED no(a) Rp",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "14/07/2026",
-        "desde": "27/07/2026",
-        "dias_tramitando": 13,
-        "julgado": true,
-        "data_julgamento": "09/07/2026",
-        "teor": "Julgado procedente o pedido em 09/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ]
+    "LANCAR_MOVIMENTACAO": []
   },
   "entrada_comissao": {
     "codigo": "LIMINAR_CERTIFICACAO",
@@ -877,6 +857,16 @@
         "total": 2
       },
       {
+        "codigo": "remeter-processos-gabinete",
+        "tarefa": "Remeter Processos - Gabinete",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 2,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 2
+      },
+      {
         "codigo": "aguarda-julgamento-incluido-em-pauta-virtual-elaborar-extrato-da-ata-elaborar-extrato-da-ata-processo-incluido-em-pauta-virtual-selecionar-documentos-para-acordao-gabinete-selecionar-documentos-para-acordao-gabinete",
         "tarefa": "Aguarda Julgamento - incluído em pauta virtual; Elaborar extrato da ata; Elaborar extrato da ata; Processo incluído em pauta virtual; Selecionar documentos para acórdão - Gabinete; Selecionar documentos para acórdão - Gabinete",
         "contagens": {
@@ -947,16 +937,6 @@
         "total": 1
       },
       {
-        "codigo": "lancar-movimento",
-        "tarefa": "Lançar movimento",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
         "codigo": "minutar-ato-peticoes-nao-lidas",
         "tarefa": "Minutar ato; Petições não lidas",
         "contagens": {
@@ -972,16 +952,6 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "remeter-processos-gabinete",
-        "tarefa": "Remeter Processos - Gabinete",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -1770,6 +1740,36 @@
         "responsavel_processo": ""
       }
     ],
+    "remeter-processos-gabinete": [
+      {
+        "processo": "0600112-24.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Remeter Processos - Gabinete",
+        "autuacao": "30/04/2026",
+        "desde": "28/07/2026",
+        "dias_tramitando": 88,
+        "julgado": true,
+        "data_julgamento": "27/07/2026",
+        "teor": "Julgado improcedente o pedido em 27/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600157-28.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "ED no(a) Rp",
+        "tarefa_atual": "Remeter Processos - Gabinete",
+        "autuacao": "14/07/2026",
+        "desde": "28/07/2026",
+        "dias_tramitando": 13,
+        "julgado": true,
+        "data_julgamento": "09/07/2026",
+        "teor": "Julgado procedente o pedido em 09/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "aguarda-julgamento-incluido-em-pauta-virtual-elaborar-extrato-da-ata-elaborar-extrato-da-ata-processo-incluido-em-pauta-virtual-selecionar-documentos-para-acordao-gabinete-selecionar-documentos-para-acordao-gabinete": [
       {
         "processo": "0600173-79.2026.6.10.0000",
@@ -1882,22 +1882,6 @@
         "responsavel_processo": ""
       }
     ],
-    "lancar-movimento": [
-      {
-        "processo": "0600157-28.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "ED no(a) Rp",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "14/07/2026",
-        "desde": "27/07/2026",
-        "dias_tramitando": 13,
-        "julgado": true,
-        "data_julgamento": "09/07/2026",
-        "teor": "Julgado procedente o pedido em 09/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "minutar-ato-peticoes-nao-lidas": [
       {
         "processo": "0600177-19.2026.6.10.0000",
@@ -1926,22 +1910,6 @@
         "julgado": true,
         "data_julgamento": "18/07/2026",
         "teor": "Julgado improcedente o pedido em 18/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "remeter-processos-gabinete": [
-      {
-        "processo": "0600112-24.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Remeter Processos - Gabinete",
-        "autuacao": "30/04/2026",
-        "desde": "28/07/2026",
-        "dias_tramitando": 88,
-        "julgado": true,
-        "data_julgamento": "27/07/2026",
-        "teor": "Julgado improcedente o pedido em 27/07/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -2223,9 +2191,9 @@
         "processo": "0600157-28.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "ED no(a) Rp",
-        "tarefa_atual": "Lançar movimento",
+        "tarefa_atual": "Remeter Processos - Gabinete",
         "autuacao": "14/07/2026",
-        "desde": "27/07/2026",
+        "desde": "28/07/2026",
         "dias_tramitando": 13,
         "julgado": true,
         "data_julgamento": "09/07/2026",
@@ -3211,8 +3179,8 @@
       "Gab. JA 3": 10
     }
   ],
-  "publicado_em": "28/07/2026 09:45",
+  "publicado_em": "28/07/2026 09:49",
   "arquivo_origem": "dashboard_42_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "e04e79dd426f12e535eca97db06e1435e2d7730ad3fef3a33a4cfc0c21acdd63"
+  "hash_publicacao": "0d1769e3f004fda717d5b49194ed708263858da53351e9c3c74ebbadaa705af8"
 }
