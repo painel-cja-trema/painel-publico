@@ -80,6 +80,11 @@
     },
     {
       "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Assinar ato",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Minutar ato; Petições não lidas",
       "quantidade": 1
     },
@@ -91,11 +96,6 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Revisar Relatório, Voto e Ementa",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Revisar ato",
       "quantidade": 1
     },
     {
@@ -534,7 +534,7 @@
           "TRIAGEM_URGENTE": 0,
           "TRIAGEM_ORDINARIA": 1,
           "MINUTAR_ATO": 5,
-          "ASSINAR_ATO": 0,
+          "ASSINAR_ATO": 1,
           "LANCAR_MOVIMENTACAO": 2
         }
       },
@@ -567,7 +567,7 @@
       "TRIAGEM_URGENTE": 0,
       "TRIAGEM_ORDINARIA": 4,
       "MINUTAR_ATO": 6,
-      "ASSINAR_ATO": 1,
+      "ASSINAR_ATO": 2,
       "LANCAR_MOVIMENTACAO": 2
     },
     "total_acervo": 66
@@ -732,6 +732,20 @@
         "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
+      },
+      {
+        "processo": "0600191-03.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "25/06/2026",
+        "desde": "27/07/2026",
+        "dias_tramitando": 32,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
       }
     ],
     "LANCAR_MOVIMENTACAO": [
@@ -861,6 +875,16 @@
         "total": 2
       },
       {
+        "codigo": "assinar-ato",
+        "tarefa": "Assinar ato",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 2
+      },
+      {
         "codigo": "lancar-movimento",
         "tarefa": "Lançar movimento",
         "contagens": {
@@ -941,16 +965,6 @@
         "total": 1
       },
       {
-        "codigo": "assinar-ato",
-        "tarefa": "Assinar ato",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
         "codigo": "minutar-relatorio-voto-e-ementa",
         "tarefa": "Minutar Relatório, Voto e Ementa",
         "contagens": {
@@ -983,16 +997,6 @@
       {
         "codigo": "revisar-relatorio-voto-e-ementa",
         "tarefa": "Revisar Relatório, Voto e Ementa",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "revisar-ato",
-        "tarefa": "Revisar ato",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -1728,6 +1732,36 @@
         "responsavel_processo": ""
       }
     ],
+    "assinar-ato": [
+      {
+        "processo": "0600181-56.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "12/06/2026",
+        "desde": "27/07/2026",
+        "dias_tramitando": 45,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600191-03.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "25/06/2026",
+        "desde": "27/07/2026",
+        "dias_tramitando": 32,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "lancar-movimento": [
       {
         "processo": "0600112-24.2026.6.10.0000",
@@ -1870,22 +1904,6 @@
         "responsavel_processo": ""
       }
     ],
-    "assinar-ato": [
-      {
-        "processo": "0600181-56.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "12/06/2026",
-        "desde": "27/07/2026",
-        "dias_tramitando": 45,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "minutar-relatorio-voto-e-ementa": [
       {
         "processo": "0600192-85.2026.6.10.0000",
@@ -1946,22 +1964,6 @@
         "julgado": true,
         "data_julgamento": "09/07/2026",
         "teor": "Julgado procedente em parte do pedido em 09/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "revisar-ato": [
-      {
-        "processo": "0600191-03.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Revisar ato",
-        "autuacao": "25/06/2026",
-        "desde": "25/07/2026",
-        "dias_tramitando": 32,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -2185,9 +2187,9 @@
         "processo": "0600191-03.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Revisar ato",
+        "tarefa_atual": "Assinar ato",
         "autuacao": "25/06/2026",
-        "desde": "25/07/2026",
+        "desde": "27/07/2026",
         "dias_tramitando": 32,
         "julgado": false,
         "data_julgamento": "",
@@ -3215,8 +3217,8 @@
       "Gab. JA 3": 10
     }
   ],
-  "publicado_em": "27/07/2026 23:35",
+  "publicado_em": "27/07/2026 23:39",
   "arquivo_origem": "dashboard_42_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "192d5e33204799df6359b806946b4d75df842429a54b9c7f0a5710f74bd6b4e7"
+  "hash_publicacao": "6d623037f823e08195d35b0346672a075165df75c6ad4cb0724342a9baa97aea"
 }
