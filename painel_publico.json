@@ -26,7 +26,7 @@
       "quantidade": 32,
       "media_dias": 35.4,
       "maior_tempo": 109,
-      "urgentes": 0,
+      "urgentes": 1,
       "minutar": 0,
       "julgados": 13,
       "percentual_julgados": 40.6,
@@ -130,11 +130,6 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Analisar determinação",
       "quantidade": 1
     },
@@ -156,6 +151,11 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Petições não lidas; Realizar triagem urgentes",
       "quantidade": 1
     },
     {
@@ -515,7 +515,7 @@
         "nome": "Gabinete Juiz Auxiliar 2",
         "total_acervo": 32,
         "contagens": {
-          "TRIAGEM_URGENTE": 0,
+          "TRIAGEM_URGENTE": 1,
           "TRIAGEM_ORDINARIA": 5,
           "MINUTAR_ATO": 0,
           "ASSINAR_ATO": 1,
@@ -536,7 +536,7 @@
       }
     ],
     "totais": {
-      "TRIAGEM_URGENTE": 0,
+      "TRIAGEM_URGENTE": 1,
       "TRIAGEM_ORDINARIA": 5,
       "MINUTAR_ATO": 4,
       "ASSINAR_ATO": 1,
@@ -545,7 +545,22 @@
     "total_acervo": 67
   },
   "tarefas_criticas_processos": {
-    "TRIAGEM_URGENTE": [],
+    "TRIAGEM_URGENTE": [
+      {
+        "processo": "0600249-06.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Petições não lidas; Realizar triagem urgentes",
+        "autuacao": "23/07/2026",
+        "desde": "",
+        "dias_tramitando": 5,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "TRIAGEM_ORDINARIA": [
       {
         "processo": "0600168-57.2026.6.10.0000",
@@ -899,16 +914,6 @@
         "total": 1
       },
       {
-        "codigo": "analisar-peticao-avulsa-peticoes-nao-lidas-processo-com-prazo-em-curso",
-        "tarefa": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
         "codigo": "assinar-ato",
         "tarefa": "Assinar ato",
         "contagens": {
@@ -961,6 +966,16 @@
       {
         "codigo": "peticoes-nao-lidas-processo-com-prazo-em-curso",
         "tarefa": "Petições não lidas; Processo com prazo em curso",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "peticoes-nao-lidas-realizar-triagem-urgentes",
+        "tarefa": "Petições não lidas; Realizar triagem urgentes",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -1838,22 +1853,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-peticao-avulsa-peticoes-nao-lidas-processo-com-prazo-em-curso": [
-      {
-        "processo": "0600249-06.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
-        "autuacao": "23/07/2026",
-        "desde": "",
-        "dias_tramitando": 5,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "assinar-ato": [
       {
         "processo": "0600251-73.2026.6.10.0000",
@@ -1943,6 +1942,22 @@
         "autuacao": "15/05/2026",
         "desde": "",
         "dias_tramitando": 74,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "peticoes-nao-lidas-realizar-triagem-urgentes": [
+      {
+        "processo": "0600249-06.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Petições não lidas; Realizar triagem urgentes",
+        "autuacao": "23/07/2026",
+        "desde": "",
+        "dias_tramitando": 5,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -2689,7 +2704,7 @@
         "processo": "0600249-06.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
+        "tarefa_atual": "Petições não lidas; Realizar triagem urgentes",
         "autuacao": "23/07/2026",
         "desde": "",
         "dias_tramitando": 5,
@@ -3213,8 +3228,8 @@
       "Gab. JA 3": 10
     }
   ],
-  "publicado_em": "28/07/2026 20:54",
+  "publicado_em": "28/07/2026 20:59",
   "arquivo_origem": "dashboard_42_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "b4acb331176b2667a45c22b816306a3f56bd573b3b2d508d3b6d6a1ee38aedc4"
+  "hash_publicacao": "bc893404d8e04641bf55fc0103593801814eaf9aaa46cdc795f6d1ad99ddee18"
 }
