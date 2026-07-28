@@ -80,12 +80,12 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Assinar ato",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Escolher tipo",
       "quantidade": 1
     },
     {
@@ -304,7 +304,7 @@
       "processo": "0600112-24.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Escolher tipo",
       "dias_tramitando": 88,
       "segredo_justica": "NÃO"
     },
@@ -792,16 +792,6 @@
         "total": 11
       },
       {
-        "codigo": "analisar-determinacao",
-        "tarefa": "Analisar determinação",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 3,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 5
-      },
-      {
         "codigo": "minutar-ato",
         "tarefa": "Minutar ato",
         "contagens": {
@@ -810,6 +800,16 @@
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 5
+      },
+      {
+        "codigo": "analisar-determinacao",
+        "tarefa": "Analisar determinação",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 3,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 4
       },
       {
         "codigo": "elaborar-documentos",
@@ -927,6 +927,16 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "escolher-tipo",
+        "tarefa": "Escolher tipo",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -1413,78 +1423,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-determinacao": [
-      {
-        "processo": "0600106-17.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "24/04/2026",
-        "desde": "27/07/2026",
-        "dias_tramitando": 94,
-        "julgado": true,
-        "data_julgamento": "17/07/2026",
-        "teor": "Julgado procedente o pedido em 17/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600112-24.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "30/04/2026",
-        "desde": "28/07/2026",
-        "dias_tramitando": 88,
-        "julgado": true,
-        "data_julgamento": "27/07/2026",
-        "teor": "Julgado improcedente o pedido em 27/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600168-57.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "01/06/2026",
-        "desde": "28/07/2026",
-        "dias_tramitando": 56,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600176-34.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "10/06/2026",
-        "desde": "28/07/2026",
-        "dias_tramitando": 47,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600222-23.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "07/07/2026",
-        "desde": "25/07/2026",
-        "dias_tramitando": 20,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "minutar-ato": [
       {
         "processo": "0600027-38.2026.6.10.0000",
@@ -1550,6 +1488,64 @@
         "autuacao": "25/07/2026",
         "desde": "27/07/2026",
         "dias_tramitando": 2,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-determinacao": [
+      {
+        "processo": "0600106-17.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação",
+        "autuacao": "24/04/2026",
+        "desde": "27/07/2026",
+        "dias_tramitando": 94,
+        "julgado": true,
+        "data_julgamento": "17/07/2026",
+        "teor": "Julgado procedente o pedido em 17/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600168-57.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação",
+        "autuacao": "01/06/2026",
+        "desde": "28/07/2026",
+        "dias_tramitando": 56,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600176-34.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação",
+        "autuacao": "10/06/2026",
+        "desde": "28/07/2026",
+        "dias_tramitando": 47,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600222-23.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação",
+        "autuacao": "07/07/2026",
+        "desde": "25/07/2026",
+        "dias_tramitando": 20,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -1875,6 +1871,22 @@
         "responsavel_processo": ""
       }
     ],
+    "escolher-tipo": [
+      {
+        "processo": "0600112-24.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Escolher tipo",
+        "autuacao": "30/04/2026",
+        "desde": "28/07/2026",
+        "dias_tramitando": 88,
+        "julgado": true,
+        "data_julgamento": "27/07/2026",
+        "teor": "Julgado improcedente o pedido em 27/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "minutar-ato-peticoes-nao-lidas": [
       {
         "processo": "0600177-19.2026.6.10.0000",
@@ -1988,7 +2000,7 @@
         "processo": "0600112-24.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
+        "tarefa_atual": "Escolher tipo",
         "autuacao": "30/04/2026",
         "desde": "28/07/2026",
         "dias_tramitando": 88,
@@ -3172,8 +3184,8 @@
       "Gab. JA 3": 10
     }
   ],
-  "publicado_em": "28/07/2026 09:52",
+  "publicado_em": "28/07/2026 10:00",
   "arquivo_origem": "dashboard_42_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "25e3bc24153aa1a7c979141adb66d29a5718002bd513c115cd3a509220cf67e0"
+  "hash_publicacao": "bb16233ecd78c0d5977bda0e966f19efcfdff3ad1efe8b8dda49ed59469b08cb"
 }
