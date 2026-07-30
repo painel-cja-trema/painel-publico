@@ -90,17 +90,17 @@
     },
     {
       "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Preparar comunicação",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Realizar triagem ordinários",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Revisar ato",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Visualizar expediente DJE",
       "quantidade": 1
     },
     {
@@ -222,7 +222,7 @@
       "processo": "0600027-38.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Visualizar expediente DJE",
+      "tarefa_atual": "Preparar comunicação",
       "dias_tramitando": 171,
       "segredo_justica": "NÃO"
     },
@@ -791,16 +791,6 @@
         "total": 2
       },
       {
-        "codigo": "visualizar-expediente-dje",
-        "tarefa": "Visualizar expediente DJE",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 2
-      },
-      {
         "codigo": "aguarda-julgamento-incluido-em-pauta-virtual-elaborar-extrato-da-ata-elaborar-extrato-da-ata-processo-incluido-em-pauta-virtual-selecionar-documentos-para-acordao-gabinete-selecionar-documentos-para-acordao-gabinete",
         "tarefa": "Aguarda Julgamento - incluído em pauta virtual; Elaborar extrato da ata; Elaborar extrato da ata; Processo incluído em pauta virtual; Selecionar documentos para acórdão - Gabinete; Selecionar documentos para acórdão - Gabinete",
         "contagens": {
@@ -871,6 +861,16 @@
         "total": 1
       },
       {
+        "codigo": "preparar-comunicacao",
+        "tarefa": "Preparar comunicação",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
         "codigo": "registrar-ciencia-por-telefone-ou-pessoalmente",
         "tarefa": "Registrar ciência por telefone ou pessoalmente",
         "contagens": {
@@ -886,6 +886,16 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "visualizar-expediente-dje",
+        "tarefa": "Visualizar expediente DJE",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -1698,36 +1708,6 @@
         "responsavel_processo": ""
       }
     ],
-    "visualizar-expediente-dje": [
-      {
-        "processo": "0600027-38.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Visualizar expediente DJE",
-        "autuacao": "09/02/2026",
-        "desde": "30/07/2026",
-        "dias_tramitando": 171,
-        "julgado": true,
-        "data_julgamento": "30/07/2026",
-        "teor": "Julgado improcedente o pedido em 30/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600251-73.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Visualizar expediente DJE",
-        "autuacao": "25/07/2026",
-        "desde": "30/07/2026",
-        "dias_tramitando": 5,
-        "julgado": true,
-        "data_julgamento": "30/07/2026",
-        "teor": "Extinto o processo por desistência em 30/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "aguarda-julgamento-incluido-em-pauta-virtual-elaborar-extrato-da-ata-elaborar-extrato-da-ata-processo-incluido-em-pauta-virtual-selecionar-documentos-para-acordao-gabinete-selecionar-documentos-para-acordao-gabinete": [
       {
         "processo": "0600173-79.2026.6.10.0000",
@@ -1840,6 +1820,22 @@
         "responsavel_processo": ""
       }
     ],
+    "preparar-comunicacao": [
+      {
+        "processo": "0600027-38.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Preparar comunicação",
+        "autuacao": "09/02/2026",
+        "desde": "30/07/2026",
+        "dias_tramitando": 171,
+        "julgado": true,
+        "data_julgamento": "30/07/2026",
+        "teor": "Julgado improcedente o pedido em 30/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "registrar-ciencia-por-telefone-ou-pessoalmente": [
       {
         "processo": "0600134-82.2026.6.10.0000",
@@ -1871,6 +1867,22 @@
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
+    ],
+    "visualizar-expediente-dje": [
+      {
+        "processo": "0600251-73.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Visualizar expediente DJE",
+        "autuacao": "25/07/2026",
+        "desde": "30/07/2026",
+        "dias_tramitando": 5,
+        "julgado": true,
+        "data_julgamento": "30/07/2026",
+        "teor": "Extinto o processo por desistência em 30/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
     ]
   },
   "acervo_por_gabinete": {
@@ -1879,7 +1891,7 @@
         "processo": "0600027-38.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Visualizar expediente DJE",
+        "tarefa_atual": "Preparar comunicação",
         "autuacao": "09/02/2026",
         "desde": "30/07/2026",
         "dias_tramitando": 171,
@@ -3119,8 +3131,8 @@
       "Gab. JA 3": 10
     }
   ],
-  "publicado_em": "30/07/2026 17:23",
+  "publicado_em": "30/07/2026 17:29",
   "arquivo_origem": "dashboard_42_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "0f246add337f7b3982a7c38dc0ff9f8d879c30a3813997e7cab50df0fdf043c2"
+  "hash_publicacao": "396023562ac0c333b99896be02432d7fef33484e64c301738cf0bf0ef2378b1c"
 }
