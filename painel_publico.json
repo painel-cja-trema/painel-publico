@@ -85,12 +85,12 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Realizar triagem ordinários",
+      "tarefa_atual": "Lançar movimento",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Lançar movimento",
+      "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
       "quantidade": 1
     },
     {
@@ -145,7 +145,7 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Analisar Petição Avulsa; Petições descartadas; Visualizar expediente DJE",
+      "tarefa_atual": "Analisar Petição Avulsa; Visualizar expediente DJE",
       "quantidade": 1
     },
     {
@@ -342,7 +342,7 @@
       "processo": "0600160-80.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Realizar triagem ordinários",
+      "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
       "dias_tramitando": 64,
       "segredo_justica": "NÃO"
     },
@@ -625,7 +625,7 @@
         "processo": "0600160-80.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Realizar triagem ordinários",
+        "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
         "autuacao": "26/05/2026",
         "desde": "",
         "dias_tramitando": 64,
@@ -963,21 +963,11 @@
         "total": 1
       },
       {
-        "codigo": "analisar-peticao-avulsa-peticoes-descartadas-visualizar-expediente-dje",
-        "tarefa": "Analisar Petição Avulsa; Petições descartadas; Visualizar expediente DJE",
+        "codigo": "analisar-peticao-avulsa-visualizar-expediente-dje",
+        "tarefa": "Analisar Petição Avulsa; Visualizar expediente DJE",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "analisar-peticao-avulsa-peticoes-nao-lidas-realizar-triagem-ordinarios",
-        "tarefa": "Analisar Petição Avulsa; Petições não lidas; Realizar triagem ordinários",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -1019,6 +1009,16 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
+        "codigo": "peticoes-nao-lidas-realizar-triagem-ordinarios",
+        "tarefa": "Petições não lidas; Realizar triagem ordinários",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
       },
@@ -1882,31 +1882,15 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-peticao-avulsa-peticoes-descartadas-visualizar-expediente-dje": [
+    "analisar-peticao-avulsa-visualizar-expediente-dje": [
       {
         "processo": "0600248-21.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Petições descartadas; Visualizar expediente DJE",
+        "tarefa_atual": "Analisar Petição Avulsa; Visualizar expediente DJE",
         "autuacao": "23/07/2026",
         "desde": "",
         "dias_tramitando": 6,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "analisar-peticao-avulsa-peticoes-nao-lidas-realizar-triagem-ordinarios": [
-      {
-        "processo": "0600160-80.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Realizar triagem ordinários",
-        "autuacao": "26/05/2026",
-        "desde": "",
-        "dias_tramitando": 64,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -1971,6 +1955,22 @@
         "autuacao": "13/07/2026",
         "desde": "",
         "dias_tramitando": 17,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "peticoes-nao-lidas-realizar-triagem-ordinarios": [
+      {
+        "processo": "0600160-80.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
+        "autuacao": "26/05/2026",
+        "desde": "",
+        "dias_tramitando": 64,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -2131,7 +2131,7 @@
         "processo": "0600160-80.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Realizar triagem ordinários",
+        "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
         "autuacao": "26/05/2026",
         "desde": "",
         "dias_tramitando": 64,
@@ -2721,7 +2721,7 @@
         "processo": "0600248-21.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Petições descartadas; Visualizar expediente DJE",
+        "tarefa_atual": "Analisar Petição Avulsa; Visualizar expediente DJE",
         "autuacao": "23/07/2026",
         "desde": "",
         "dias_tramitando": 6,
@@ -3259,8 +3259,8 @@
       "Gab. JA 3": 10
     }
   ],
-  "publicado_em": "30/07/2026 11:28",
+  "publicado_em": "30/07/2026 11:33",
   "arquivo_origem": "dashboard_42_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "37088c7fa968ca39c0d72046e3ef10e6bd17d56a8462b02d380e007221d12cda"
+  "hash_publicacao": "ed60866b9ee2f63e29242349105d71075aed0d64d3488da942878276098630a8"
 }
