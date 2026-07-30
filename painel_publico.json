@@ -135,12 +135,12 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Petições não lidas",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Petições descartadas",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Analisar Petição Avulsa; Minutar ato; Petições não lidas",
+      "tarefa_atual": "Analisar Petição Avulsa; Minutar ato; Petições descartadas",
       "quantidade": 1
     },
     {
@@ -160,7 +160,7 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+      "tarefa_atual": "Petições descartadas; Processo com prazo em curso",
       "quantidade": 1
     },
     {
@@ -315,7 +315,7 @@
       "processo": "0600147-81.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "RepEsp",
-      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+      "tarefa_atual": "Petições descartadas; Processo com prazo em curso",
       "dias_tramitando": 75,
       "segredo_justica": "NÃO"
     },
@@ -504,7 +504,7 @@
       "processo": "0600245-66.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar Petição Avulsa; Minutar ato; Petições não lidas",
+      "tarefa_atual": "Analisar Petição Avulsa; Minutar ato; Petições descartadas",
       "autuacao": "22/07/2026",
       "desde": "",
       "dias_tramitando": 8,
@@ -744,7 +744,7 @@
         "processo": "0600245-66.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Minutar ato; Petições não lidas",
+        "tarefa_atual": "Analisar Petição Avulsa; Minutar ato; Petições descartadas",
         "autuacao": "22/07/2026",
         "desde": "",
         "dias_tramitando": 8,
@@ -908,16 +908,6 @@
         "total": 2
       },
       {
-        "codigo": "peticoes-nao-lidas-processo-com-prazo-em-curso",
-        "tarefa": "Petições não lidas; Processo com prazo em curso",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 2
-      },
-      {
         "codigo": "visualizar-expediente-dje",
         "tarefa": "Visualizar expediente DJE",
         "contagens": {
@@ -958,8 +948,8 @@
         "total": 1
       },
       {
-        "codigo": "analisar-peticao-avulsa-analisar-determinacao-peticoes-nao-lidas",
-        "tarefa": "Analisar Petição Avulsa; Analisar determinação; Petições não lidas",
+        "codigo": "analisar-peticao-avulsa-analisar-determinacao-peticoes-descartadas",
+        "tarefa": "Analisar Petição Avulsa; Analisar determinação; Petições descartadas",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -968,8 +958,8 @@
         "total": 1
       },
       {
-        "codigo": "analisar-peticao-avulsa-minutar-ato-peticoes-nao-lidas",
-        "tarefa": "Analisar Petição Avulsa; Minutar ato; Petições não lidas",
+        "codigo": "analisar-peticao-avulsa-minutar-ato-peticoes-descartadas",
+        "tarefa": "Analisar Petição Avulsa; Minutar ato; Petições descartadas",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -1024,6 +1014,26 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "peticoes-descartadas-processo-com-prazo-em-curso",
+        "tarefa": "Petições descartadas; Processo com prazo em curso",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "peticoes-nao-lidas-processo-com-prazo-em-curso",
+        "tarefa": "Petições não lidas; Processo com prazo em curso",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 1
       },
@@ -1763,36 +1773,6 @@
         "responsavel_processo": ""
       }
     ],
-    "peticoes-nao-lidas-processo-com-prazo-em-curso": [
-      {
-        "processo": "0600147-81.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "RepEsp",
-        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
-        "autuacao": "15/05/2026",
-        "desde": "",
-        "dias_tramitando": 75,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600235-22.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "RepEsp",
-        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
-        "autuacao": "13/07/2026",
-        "desde": "",
-        "dias_tramitando": 17,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "visualizar-expediente-dje": [
       {
         "processo": "0600112-24.2026.6.10.0000",
@@ -1871,12 +1851,12 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-peticao-avulsa-analisar-determinacao-peticoes-nao-lidas": [
+    "analisar-peticao-avulsa-analisar-determinacao-peticoes-descartadas": [
       {
         "processo": "0600238-74.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Petições não lidas",
+        "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Petições descartadas",
         "autuacao": "13/07/2026",
         "desde": "",
         "dias_tramitando": 16,
@@ -1887,12 +1867,12 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-peticao-avulsa-minutar-ato-peticoes-nao-lidas": [
+    "analisar-peticao-avulsa-minutar-ato-peticoes-descartadas": [
       {
         "processo": "0600245-66.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Minutar ato; Petições não lidas",
+        "tarefa_atual": "Analisar Petição Avulsa; Minutar ato; Petições descartadas",
         "autuacao": "22/07/2026",
         "desde": "",
         "dias_tramitando": 8,
@@ -1979,6 +1959,38 @@
         "julgado": true,
         "data_julgamento": "19/07/2026",
         "teor": "Julgado procedente o pedido em 19/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "peticoes-descartadas-processo-com-prazo-em-curso": [
+      {
+        "processo": "0600147-81.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "RepEsp",
+        "tarefa_atual": "Petições descartadas; Processo com prazo em curso",
+        "autuacao": "15/05/2026",
+        "desde": "",
+        "dias_tramitando": 75,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "peticoes-nao-lidas-processo-com-prazo-em-curso": [
+      {
+        "processo": "0600235-22.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "RepEsp",
+        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+        "autuacao": "13/07/2026",
+        "desde": "",
+        "dias_tramitando": 17,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -2418,7 +2430,7 @@
         "processo": "0600147-81.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "RepEsp",
-        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+        "tarefa_atual": "Petições descartadas; Processo com prazo em curso",
         "autuacao": "15/05/2026",
         "desde": "",
         "dias_tramitando": 75,
@@ -2586,7 +2598,7 @@
         "processo": "0600238-74.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Petições não lidas",
+        "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Petições descartadas",
         "autuacao": "13/07/2026",
         "desde": "",
         "dias_tramitando": 16,
@@ -2670,7 +2682,7 @@
         "processo": "0600245-66.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Minutar ato; Petições não lidas",
+        "tarefa_atual": "Analisar Petição Avulsa; Minutar ato; Petições descartadas",
         "autuacao": "22/07/2026",
         "desde": "",
         "dias_tramitando": 8,
@@ -3264,8 +3276,8 @@
       "Gab. JA 3": 10
     }
   ],
-  "publicado_em": "30/07/2026 11:23",
+  "publicado_em": "30/07/2026 11:24",
   "arquivo_origem": "dashboard_42_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "5f5d99881074403b24755d8594ced5da96b9ac0a868a17c077426024ac859d0f"
+  "hash_publicacao": "373ac9906ca38a7a77079c0b35ad7081f2710c0e5a4362eee3763da0a2b59271"
 }
