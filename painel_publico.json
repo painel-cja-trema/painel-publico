@@ -90,22 +90,22 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Analisar determinação",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Assinar ato",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Elaborar certidão de trânsito em julgado",
+      "tarefa_atual": "Realizar triagem ordinários",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Revisar ato",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Verificar Pendências",
       "quantidade": 1
     },
     {
@@ -237,7 +237,7 @@
       "processo": "0600026-53.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Elaborar certidão de trânsito em julgado",
+      "tarefa_atual": "Verificar Pendências",
       "dias_tramitando": 170,
       "segredo_justica": "NÃO"
     },
@@ -325,7 +325,7 @@
       "processo": "0600140-89.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Realizar triagem ordinários",
       "dias_tramitando": 77,
       "segredo_justica": "NÃO"
     },
@@ -565,7 +565,7 @@
         "total_acervo": 23,
         "contagens": {
           "TRIAGEM_URGENTE": 0,
-          "TRIAGEM_ORDINARIA": 0,
+          "TRIAGEM_ORDINARIA": 1,
           "MINUTAR_ATO": 3,
           "ASSINAR_ATO": 1,
           "LANCAR_MOVIMENTACAO": 0
@@ -598,7 +598,7 @@
     ],
     "totais": {
       "TRIAGEM_URGENTE": 0,
-      "TRIAGEM_ORDINARIA": 0,
+      "TRIAGEM_ORDINARIA": 1,
       "MINUTAR_ATO": 8,
       "ASSINAR_ATO": 4,
       "LANCAR_MOVIMENTACAO": 0
@@ -607,7 +607,22 @@
   },
   "tarefas_criticas_processos": {
     "TRIAGEM_URGENTE": [],
-    "TRIAGEM_ORDINARIA": [],
+    "TRIAGEM_ORDINARIA": [
+      {
+        "processo": "0600140-89.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem ordinários",
+        "autuacao": "13/05/2026",
+        "desde": "30/07/2026",
+        "dias_tramitando": 77,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "MINUTAR_ATO": [
       {
         "processo": "0600151-21.2026.6.10.0000",
@@ -858,16 +873,6 @@
         "total": 4
       },
       {
-        "codigo": "analisar-determinacao",
-        "tarefa": "Analisar determinação",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 3
-      },
-      {
         "codigo": "conferir-relatorio-voto-e-ementa",
         "tarefa": "Conferir Relatório, Voto e Ementa",
         "contagens": {
@@ -903,6 +908,16 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 2
+      },
+      {
+        "codigo": "analisar-determinacao",
+        "tarefa": "Analisar determinação",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 2
@@ -988,16 +1003,6 @@
         "total": 1
       },
       {
-        "codigo": "elaborar-certidao-de-transito-em-julgado",
-        "tarefa": "Elaborar certidão de trânsito em julgado",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
         "codigo": "minutar-relatorio-voto-e-ementa",
         "tarefa": "Minutar Relatório, Voto e Ementa",
         "contagens": {
@@ -1018,6 +1023,16 @@
         "total": 1
       },
       {
+        "codigo": "realizar-triagem-ordinarios",
+        "tarefa": "Realizar triagem ordinários",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
         "codigo": "registrar-ciencia-por-telefone-ou-pessoalmente",
         "tarefa": "Registrar ciência por telefone ou pessoalmente",
         "contagens": {
@@ -1030,6 +1045,16 @@
       {
         "codigo": "revisar-ato",
         "tarefa": "Revisar ato",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "verificar-pendencias",
+        "tarefa": "Verificar Pendências",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -1625,50 +1650,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-determinacao": [
-      {
-        "processo": "0600140-89.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "13/05/2026",
-        "desde": "30/07/2026",
-        "dias_tramitando": 77,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600181-56.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "12/06/2026",
-        "desde": "29/07/2026",
-        "dias_tramitando": 47,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600222-23.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "07/07/2026",
-        "desde": "25/07/2026",
-        "dias_tramitando": 22,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "conferir-relatorio-voto-e-ementa": [
       {
         "processo": "0600186-78.2026.6.10.0000",
@@ -1796,6 +1777,36 @@
         "autuacao": "13/07/2026",
         "desde": "",
         "dias_tramitando": 16,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-determinacao": [
+      {
+        "processo": "0600181-56.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação",
+        "autuacao": "12/06/2026",
+        "desde": "29/07/2026",
+        "dias_tramitando": 47,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600222-23.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação",
+        "autuacao": "07/07/2026",
+        "desde": "25/07/2026",
+        "dias_tramitando": 22,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -1945,22 +1956,6 @@
         "responsavel_processo": ""
       }
     ],
-    "elaborar-certidao-de-transito-em-julgado": [
-      {
-        "processo": "0600026-53.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Elaborar certidão de trânsito em julgado",
-        "autuacao": "09/02/2026",
-        "desde": "30/07/2026",
-        "dias_tramitando": 170,
-        "julgado": true,
-        "data_julgamento": "24/07/2026",
-        "teor": "Julgado improcedente o pedido em 24/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "minutar-relatorio-voto-e-ementa": [
       {
         "processo": "0600190-18.2026.6.10.0000",
@@ -1986,6 +1981,22 @@
         "autuacao": "15/05/2026",
         "desde": "",
         "dias_tramitando": 75,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "realizar-triagem-ordinarios": [
+      {
+        "processo": "0600140-89.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem ordinários",
+        "autuacao": "13/05/2026",
+        "desde": "30/07/2026",
+        "dias_tramitando": 77,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -2024,6 +2035,22 @@
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
+    ],
+    "verificar-pendencias": [
+      {
+        "processo": "0600026-53.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Verificar Pendências",
+        "autuacao": "09/02/2026",
+        "desde": "30/07/2026",
+        "dias_tramitando": 170,
+        "julgado": true,
+        "data_julgamento": "24/07/2026",
+        "teor": "Julgado improcedente o pedido em 24/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
     ]
   },
   "acervo_por_gabinete": {
@@ -2032,7 +2059,7 @@
         "processo": "0600026-53.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Elaborar certidão de trânsito em julgado",
+        "tarefa_atual": "Verificar Pendências",
         "autuacao": "09/02/2026",
         "desde": "30/07/2026",
         "dias_tramitando": 170,
@@ -2088,7 +2115,7 @@
         "processo": "0600140-89.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
+        "tarefa_atual": "Realizar triagem ordinários",
         "autuacao": "13/05/2026",
         "desde": "30/07/2026",
         "dias_tramitando": 77,
@@ -3272,8 +3299,8 @@
       "Gab. JA 3": 10
     }
   ],
-  "publicado_em": "30/07/2026 08:24",
+  "publicado_em": "30/07/2026 08:25",
   "arquivo_origem": "dashboard_42_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "c4eb8e681b01be4cfa4879d4fd8a3251fc6233dbd69f008c14bf85ab8d02c3ea"
+  "hash_publicacao": "1508cf9bc7328cba6adba376f8bc8eed93f0499385e441d55f365ca7d526c772"
 }
