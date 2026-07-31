@@ -26,7 +26,7 @@
       "quantidade": 34,
       "media_dias": 35.8,
       "maior_tempo": 111,
-      "urgentes": 0,
+      "urgentes": 1,
       "minutar": 3,
       "julgados": 16,
       "percentual_julgados": 47.1,
@@ -130,12 +130,12 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Conferir Relatório, Voto e Ementa",
+      "tarefa_atual": "Analisar determinação - Urgentes",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Lançar movimento",
+      "tarefa_atual": "Conferir Relatório, Voto e Ementa",
       "quantidade": 1
     },
     {
@@ -541,7 +541,7 @@
           "TRIAGEM_ORDINARIA": 4,
           "MINUTAR_ATO": 3,
           "ASSINAR_ATO": 0,
-          "LANCAR_MOVIMENTACAO": 1
+          "LANCAR_MOVIMENTACAO": 0
         }
       },
       {
@@ -562,7 +562,7 @@
       "TRIAGEM_ORDINARIA": 4,
       "MINUTAR_ATO": 7,
       "ASSINAR_ATO": 0,
-      "LANCAR_MOVIMENTACAO": 1
+      "LANCAR_MOVIMENTACAO": 0
     },
     "total_acervo": 68
   },
@@ -727,22 +727,7 @@
       }
     ],
     "ASSINAR_ATO": [],
-    "LANCAR_MOVIMENTACAO": [
-      {
-        "processo": "0600255-13.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "30/07/2026",
-        "desde": "31/07/2026",
-        "dias_tramitando": 1,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ]
+    "LANCAR_MOVIMENTACAO": []
   },
   "entrada_comissao": {
     "codigo": "LIMINAR_CERTIFICACAO",
@@ -890,6 +875,16 @@
         "total": 1
       },
       {
+        "codigo": "analisar-determinacao-urgentes",
+        "tarefa": "Analisar determinação - Urgentes",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
         "codigo": "analisar-resposta-do-expediente-registrar-recurso",
         "tarefa": "Analisar resposta do expediente; Registrar recurso",
         "contagens": {
@@ -902,16 +897,6 @@
       {
         "codigo": "conferir-relatorio-voto-e-ementa",
         "tarefa": "Conferir Relatório, Voto e Ementa",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "lancar-movimento",
-        "tarefa": "Lançar movimento",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -1841,6 +1826,22 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-determinacao-urgentes": [
+      {
+        "processo": "0600255-13.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação - Urgentes",
+        "autuacao": "30/07/2026",
+        "desde": "31/07/2026",
+        "dias_tramitando": 1,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "analisar-resposta-do-expediente-registrar-recurso": [
       {
         "processo": "0600191-03.2026.6.10.0000",
@@ -1869,22 +1870,6 @@
         "julgado": true,
         "data_julgamento": "19/07/2026",
         "teor": "Julgado procedente o pedido em 19/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "lancar-movimento": [
-      {
-        "processo": "0600255-13.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "30/07/2026",
-        "desde": "31/07/2026",
-        "dias_tramitando": 1,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -2718,7 +2703,7 @@
         "processo": "0600255-13.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Lançar movimento",
+        "tarefa_atual": "Analisar determinação - Urgentes",
         "autuacao": "30/07/2026",
         "desde": "31/07/2026",
         "dias_tramitando": 1,
@@ -3214,8 +3199,8 @@
       "Gab. JA 3": 10
     }
   ],
-  "publicado_em": "31/07/2026 14:49",
+  "publicado_em": "31/07/2026 14:54",
   "arquivo_origem": "dashboard_42_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "cab782225e59469062a31f568a7dd32e1663fa4ef943243eaebf1d00b5c1b727"
+  "hash_publicacao": "493a2802360af8f22d7cb5c31e7e6297130e36f92f2855783c3f61b83f05ad1e"
 }
