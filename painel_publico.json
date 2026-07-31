@@ -10,7 +10,7 @@
       "juiz": "Dr. Nilo Ribeiro",
       "distribuidor": "Flauberth Silva Santos",
       "quantidade": 22,
-      "media_dias": 51.3,
+      "media_dias": 51.4,
       "maior_tempo": 172,
       "urgentes": 0,
       "minutar": 4,
@@ -130,11 +130,6 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Assinar ato",
       "quantidade": 1
     },
@@ -146,6 +141,11 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Conferir Relatório, Voto e Ementa",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
       "quantidade": 1
     },
     {
@@ -923,16 +923,6 @@
         "total": 1
       },
       {
-        "codigo": "analisar-peticao-avulsa-analisar-resposta-do-expediente-peticoes-nao-lidas",
-        "tarefa": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
         "codigo": "analisar-peticao-avulsa-peticoes-nao-lidas-peticoes-nao-lidas-processo-com-prazo-em-curso",
         "tarefa": "Analisar Petição Avulsa; Petições não lidas; Petições não lidas; Processo com prazo em curso",
         "contagens": {
@@ -978,6 +968,16 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "peticoes-nao-lidas-processo-com-prazo-em-curso",
+        "tarefa": "Petições não lidas; Processo com prazo em curso",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -1168,7 +1168,7 @@
         "tarefa_atual": "Processo com prazo em curso",
         "autuacao": "14/07/2026",
         "desde": "30/07/2026",
-        "dias_tramitando": 16,
+        "dias_tramitando": 17,
         "julgado": true,
         "data_julgamento": "09/07/2026",
         "teor": "Julgado procedente o pedido em 09/07/2026",
@@ -1884,22 +1884,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-peticao-avulsa-analisar-resposta-do-expediente-peticoes-nao-lidas": [
-      {
-        "processo": "0600250-88.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas",
-        "autuacao": "23/07/2026",
-        "desde": "",
-        "dias_tramitando": 7,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "analisar-peticao-avulsa-peticoes-nao-lidas-peticoes-nao-lidas-processo-com-prazo-em-curso": [
       {
         "processo": "0600235-22.2026.6.10.0000",
@@ -1973,6 +1957,22 @@
         "autuacao": "18/05/2026",
         "desde": "",
         "dias_tramitando": 74,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "peticoes-nao-lidas-processo-com-prazo-em-curso": [
+      {
+        "processo": "0600250-88.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+        "autuacao": "23/07/2026",
+        "desde": "",
+        "dias_tramitando": 7,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -2240,6 +2240,20 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0600157-28.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "ED no(a) Rp",
+        "tarefa_atual": "Processo com prazo em curso",
+        "autuacao": "14/07/2026",
+        "desde": "30/07/2026",
+        "dias_tramitando": 17,
+        "julgado": true,
+        "data_julgamento": "09/07/2026",
+        "teor": "Julgado procedente o pedido em 09/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0600187-63.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "REC no(a) Rp",
@@ -2250,20 +2264,6 @@
         "julgado": true,
         "data_julgamento": "08/07/2026",
         "teor": "Julgado procedente em parte do pedido em 08/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600157-28.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "ED no(a) Rp",
-        "tarefa_atual": "Processo com prazo em curso",
-        "autuacao": "14/07/2026",
-        "desde": "30/07/2026",
-        "dias_tramitando": 16,
-        "julgado": true,
-        "data_julgamento": "09/07/2026",
-        "teor": "Julgado procedente o pedido em 09/07/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -2735,7 +2735,7 @@
         "processo": "0600250-88.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas",
+        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
         "autuacao": "23/07/2026",
         "desde": "",
         "dias_tramitando": 7,
@@ -3287,8 +3287,8 @@
       "Gab. JA 3": 10
     }
   ],
-  "publicado_em": "31/07/2026 18:56",
+  "publicado_em": "31/07/2026 19:01",
   "arquivo_origem": "dashboard_42_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "de25d983587fa7b7e90b116d893de04e4a21d90957303c234ee61dc1e488c368"
+  "hash_publicacao": "e7c155bb46dcccdf03f1348adf6a01e8e84dec790a90427b98591a3c6426254e"
 }
