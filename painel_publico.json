@@ -85,7 +85,7 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Informar data de trânsito em julgado",
       "quantidade": 1
     },
     {
@@ -273,7 +273,7 @@
       "processo": "0600112-24.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Informar data de trânsito em julgado",
       "dias_tramitando": 94,
       "segredo_justica": "NÃO"
     },
@@ -783,16 +783,6 @@
         "total": 4
       },
       {
-        "codigo": "analisar-determinacao",
-        "tarefa": "Analisar determinação",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 2,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 4
-      },
-      {
         "codigo": "minutar-ato",
         "tarefa": "Minutar ato",
         "contagens": {
@@ -801,6 +791,16 @@
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 4
+      },
+      {
+        "codigo": "analisar-determinacao",
+        "tarefa": "Analisar determinação",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 2,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 3
       },
       {
         "codigo": "aguarda-julgamento-incluido-em-pauta-virtual-elaborar-extrato-da-ata-processo-incluido-em-pauta-virtual-selecionar-documentos-para-acordao-gabinete",
@@ -819,6 +819,16 @@
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 2
+      },
+      {
+        "codigo": "informar-data-de-transito-em-julgado",
+        "tarefa": "Informar data de trânsito em julgado",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 2
       },
@@ -865,16 +875,6 @@
       {
         "codigo": "atualizar-dados-do-processo",
         "tarefa": "Atualizar dados do processo",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "informar-data-de-transito-em-julgado",
-        "tarefa": "Informar data de trânsito em julgado",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -1532,64 +1532,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-determinacao": [
-      {
-        "processo": "0600106-17.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "CumSen",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "24/04/2026",
-        "desde": "30/07/2026",
-        "dias_tramitando": 101,
-        "julgado": true,
-        "data_julgamento": "17/07/2026",
-        "teor": "Julgado procedente o pedido em 17/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600108-84.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "28/04/2026",
-        "desde": "03/08/2026",
-        "dias_tramitando": 97,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600112-24.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "30/04/2026",
-        "desde": "01/08/2026",
-        "dias_tramitando": 94,
-        "julgado": true,
-        "data_julgamento": "27/07/2026",
-        "teor": "Julgado improcedente o pedido em 27/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600222-23.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "07/07/2026",
-        "desde": "30/07/2026",
-        "dias_tramitando": 27,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "minutar-ato": [
       {
         "processo": "0600162-50.2026.6.10.0000",
@@ -1641,6 +1583,50 @@
         "autuacao": "23/07/2026",
         "desde": "02/08/2026",
         "dias_tramitando": 10,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-determinacao": [
+      {
+        "processo": "0600106-17.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "CumSen",
+        "tarefa_atual": "Analisar determinação",
+        "autuacao": "24/04/2026",
+        "desde": "30/07/2026",
+        "dias_tramitando": 101,
+        "julgado": true,
+        "data_julgamento": "17/07/2026",
+        "teor": "Julgado procedente o pedido em 17/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600108-84.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação",
+        "autuacao": "28/04/2026",
+        "desde": "03/08/2026",
+        "dias_tramitando": 97,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600222-23.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação",
+        "autuacao": "07/07/2026",
+        "desde": "30/07/2026",
+        "dias_tramitando": 27,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -1704,6 +1690,36 @@
         "julgado": true,
         "data_julgamento": "10/07/2026",
         "teor": "Julgado procedente o pedido em 10/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "informar-data-de-transito-em-julgado": [
+      {
+        "processo": "0600112-24.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Informar data de trânsito em julgado",
+        "autuacao": "30/04/2026",
+        "desde": "03/08/2026",
+        "dias_tramitando": 94,
+        "julgado": true,
+        "data_julgamento": "27/07/2026",
+        "teor": "Julgado improcedente o pedido em 27/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600243-96.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Informar data de trânsito em julgado",
+        "autuacao": "19/07/2026",
+        "desde": "01/08/2026",
+        "dias_tramitando": 15,
+        "julgado": true,
+        "data_julgamento": "24/07/2026",
+        "teor": "Extinto o processo por ausência de pressupostos processuais em 24/07/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -1798,22 +1814,6 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "informar-data-de-transito-em-julgado": [
-      {
-        "processo": "0600243-96.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Informar data de trânsito em julgado",
-        "autuacao": "19/07/2026",
-        "desde": "01/08/2026",
-        "dias_tramitando": 15,
-        "julgado": true,
-        "data_julgamento": "24/07/2026",
-        "teor": "Extinto o processo por ausência de pressupostos processuais em 24/07/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -1933,9 +1933,9 @@
         "processo": "0600112-24.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
+        "tarefa_atual": "Informar data de trânsito em julgado",
         "autuacao": "30/04/2026",
-        "desde": "01/08/2026",
+        "desde": "03/08/2026",
         "dias_tramitando": 94,
         "julgado": true,
         "data_julgamento": "27/07/2026",
@@ -3237,9 +3237,9 @@
       "processo": "0600112-24.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Informar data de trânsito em julgado",
       "autuacao": "30/04/2026",
-      "desde": "01/08/2026",
+      "desde": "03/08/2026",
       "dias_tramitando": 94,
       "julgado": true,
       "data_julgamento": "27/07/2026",
@@ -4825,9 +4825,9 @@
       "processo": "0600112-24.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Informar data de trânsito em julgado",
       "autuacao": "30/04/2026",
-      "desde": "01/08/2026",
+      "desde": "03/08/2026",
       "dias_tramitando": 94,
       "julgado": true,
       "data_julgamento": "27/07/2026",
@@ -5745,9 +5745,9 @@
       "processo": "0600112-24.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Informar data de trânsito em julgado",
       "autuacao": "30/04/2026",
-      "desde": "01/08/2026",
+      "desde": "03/08/2026",
       "dias_tramitando": 94,
       "julgado": true,
       "data_julgamento": "27/07/2026",
@@ -6233,8 +6233,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "03/08/2026 14:59",
+  "publicado_em": "03/08/2026 15:02",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "d1daf4ae1a4671e25092095e5b14960e318b837640c27c4749f20dcc6540794a"
+  "hash_publicacao": "6b88044e15bdfd6e09d47922cdd0b821694b3923f4950643992d1d84d5f689d0"
 }
