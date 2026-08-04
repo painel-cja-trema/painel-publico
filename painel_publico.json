@@ -125,6 +125,11 @@
     },
     {
       "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Analisar determinação; Registrar recurso",
+      "quantidade": 2
+    },
+    {
+      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
       "quantidade": 2
     },
@@ -150,27 +155,17 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Analisar determinação",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Analisar determinação; Registrar recurso",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Analisar resposta do expediente; Registrar recurso",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Assinar ato",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Informar data de trânsito em julgado; Processo destravado",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Preparar comunicação",
       "quantidade": 1
     },
     {
@@ -734,10 +729,20 @@
         "tarefa": "Analisar determinação",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 2,
-          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 1
         },
-        "total": 4
+        "total": 3
+      },
+      {
+        "codigo": "analisar-determinacao-registrar-recurso",
+        "tarefa": "Analisar determinação; Registrar recurso",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 2,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 2
       },
       {
         "codigo": "assinar-ato",
@@ -810,26 +815,6 @@
         "total": 1
       },
       {
-        "codigo": "analisar-determinacao-registrar-recurso",
-        "tarefa": "Analisar determinação; Registrar recurso",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "analisar-resposta-do-expediente-registrar-recurso",
-        "tarefa": "Analisar resposta do expediente; Registrar recurso",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
         "codigo": "informar-data-de-transito-em-julgado",
         "tarefa": "Informar data de trânsito em julgado",
         "contagens": {
@@ -855,6 +840,16 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "preparar-comunicacao",
+        "tarefa": "Preparar comunicação",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -1581,18 +1576,34 @@
         "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
-      },
+      }
+    ],
+    "analisar-determinacao-registrar-recurso": [
       {
-        "processo": "0600241-29.2026.6.10.0000",
+        "processo": "0600232-67.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
+        "tarefa_atual": "Analisar determinação; Registrar recurso",
+        "autuacao": "10/07/2026",
+        "desde": "",
+        "dias_tramitando": 25,
+        "julgado": true,
+        "data_julgamento": "30/07/2026",
+        "teor": "Julgado improcedente o pedido em 30/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600239-59.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação; Registrar recurso",
         "autuacao": "16/07/2026",
-        "desde": "04/08/2026",
+        "desde": "",
         "dias_tramitando": 19,
         "julgado": true,
-        "data_julgamento": "04/08/2026",
-        "teor": "Julgado improcedente o pedido em 04/08/2026",
+        "data_julgamento": "30/07/2026",
+        "teor": "Julgado improcedente o pedido em 30/07/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -1737,38 +1748,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-determinacao-registrar-recurso": [
-      {
-        "processo": "0600239-59.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação; Registrar recurso",
-        "autuacao": "16/07/2026",
-        "desde": "",
-        "dias_tramitando": 19,
-        "julgado": true,
-        "data_julgamento": "30/07/2026",
-        "teor": "Julgado improcedente o pedido em 30/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "analisar-resposta-do-expediente-registrar-recurso": [
-      {
-        "processo": "0600232-67.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar resposta do expediente; Registrar recurso",
-        "autuacao": "10/07/2026",
-        "desde": "",
-        "dias_tramitando": 25,
-        "julgado": true,
-        "data_julgamento": "30/07/2026",
-        "teor": "Julgado improcedente o pedido em 30/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "informar-data-de-transito-em-julgado": [
       {
         "processo": "0600027-38.2026.6.10.0000",
@@ -1813,6 +1792,22 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "preparar-comunicacao": [
+      {
+        "processo": "0600241-29.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Preparar comunicação",
+        "autuacao": "16/07/2026",
+        "desde": "04/08/2026",
+        "dias_tramitando": 19,
+        "julgado": true,
+        "data_julgamento": "04/08/2026",
+        "teor": "Julgado improcedente o pedido em 04/08/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -2376,7 +2371,7 @@
         "processo": "0600232-67.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Analisar resposta do expediente; Registrar recurso",
+        "tarefa_atual": "Analisar determinação; Registrar recurso",
         "autuacao": "10/07/2026",
         "desde": "",
         "dias_tramitando": 25,
@@ -2418,7 +2413,7 @@
         "processo": "0600241-29.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
+        "tarefa_atual": "Preparar comunicação",
         "autuacao": "16/07/2026",
         "desde": "04/08/2026",
         "dias_tramitando": 19,
@@ -3614,7 +3609,7 @@
       "processo": "0600232-67.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar resposta do expediente; Registrar recurso",
+      "tarefa_atual": "Analisar determinação; Registrar recurso",
       "autuacao": "10/07/2026",
       "desde": "",
       "dias_tramitando": 25,
@@ -3712,7 +3707,7 @@
       "processo": "0600241-29.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Preparar comunicação",
       "autuacao": "16/07/2026",
       "desde": "04/08/2026",
       "dias_tramitando": 19,
@@ -5208,7 +5203,7 @@
       "processo": "0600232-67.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar resposta do expediente; Registrar recurso",
+      "tarefa_atual": "Analisar determinação; Registrar recurso",
       "autuacao": "10/07/2026",
       "desde": "",
       "dias_tramitando": 25,
@@ -5264,7 +5259,7 @@
       "processo": "0600241-29.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Preparar comunicação",
       "autuacao": "16/07/2026",
       "desde": "04/08/2026",
       "dias_tramitando": 19,
@@ -6088,7 +6083,7 @@
       "processo": "0600232-67.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar resposta do expediente; Registrar recurso",
+      "tarefa_atual": "Analisar determinação; Registrar recurso",
       "autuacao": "10/07/2026",
       "desde": "",
       "dias_tramitando": 25,
@@ -6158,7 +6153,7 @@
       "processo": "0600241-29.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Preparar comunicação",
       "autuacao": "16/07/2026",
       "desde": "04/08/2026",
       "dias_tramitando": 19,
@@ -6324,8 +6319,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "04/08/2026 19:09",
+  "publicado_em": "04/08/2026 19:12",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "c5c0aa3977a28f9faae03da620b6420593626362f42791bf331144cc01eb825d"
+  "hash_publicacao": "96c47ffdd97085b0fead0e775fd0d2e4b061561f830bd08bab7501d473bba8dd"
 }
