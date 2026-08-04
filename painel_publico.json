@@ -38,7 +38,7 @@
       "juiz": "Dr. Rubem Filho",
       "distribuidor": "Danielle Cerqueira Castro",
       "quantidade": 10,
-      "media_dias": 39.2,
+      "media_dias": 39.3,
       "maior_tempo": 97,
       "urgentes": 0,
       "minutar": 1,
@@ -80,7 +80,7 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Elaborar Documentos",
+      "tarefa_atual": "Analisar determinação",
       "quantidade": 1
     },
     {
@@ -140,17 +140,17 @@
     },
     {
       "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Analisar determinação",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Analisar resposta do expediente; Registrar recurso",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Assinar ato",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Elaborar Documentos",
       "quantidade": 1
     },
     {
@@ -273,7 +273,7 @@
       "processo": "0600112-24.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Elaborar Documentos",
+      "tarefa_atual": "Analisar determinação",
       "dias_tramitando": 95,
       "segredo_justica": "NÃO"
     },
@@ -816,6 +816,16 @@
         "total": 4
       },
       {
+        "codigo": "analisar-determinacao",
+        "tarefa": "Analisar determinação",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 3
+      },
+      {
         "codigo": "lancar-movimento",
         "tarefa": "Lançar movimento",
         "contagens": {
@@ -856,16 +866,6 @@
         "total": 2
       },
       {
-        "codigo": "elaborar-documentos",
-        "tarefa": "Elaborar Documentos",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 2
-      },
-      {
         "codigo": "aguarda-julgamento-incluido-em-pauta-virtual-elaborar-extrato-da-ata-elaborar-extrato-da-ata-processo-incluido-em-pauta-virtual-selecionar-documentos-para-acordao-gabinete-selecionar-documentos-para-acordao-gabinete-verificar-inclusao-de-notas-orais",
         "tarefa": "Aguarda Julgamento - incluído em pauta virtual; Elaborar extrato da ata; Elaborar extrato da ata; Processo incluído em pauta virtual; Selecionar documentos para acórdão - Gabinete; Selecionar documentos para acórdão - Gabinete; Verificar inclusão de notas orais",
         "contagens": {
@@ -892,16 +892,6 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "analisar-determinacao",
-        "tarefa": "Analisar determinação",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 1
       },
@@ -1609,6 +1599,50 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-determinacao": [
+      {
+        "processo": "0600112-24.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação",
+        "autuacao": "30/04/2026",
+        "desde": "04/08/2026",
+        "dias_tramitando": 95,
+        "julgado": true,
+        "data_julgamento": "27/07/2026",
+        "teor": "Julgado improcedente o pedido em 27/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600222-23.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação",
+        "autuacao": "07/07/2026",
+        "desde": "30/07/2026",
+        "dias_tramitando": 28,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600243-96.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação",
+        "autuacao": "19/07/2026",
+        "desde": "04/08/2026",
+        "dias_tramitando": 16,
+        "julgado": true,
+        "data_julgamento": "24/07/2026",
+        "teor": "Extinto o processo por ausência de pressupostos processuais em 24/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "lancar-movimento": [
       {
         "processo": "0600140-89.2026.6.10.0000",
@@ -1719,7 +1753,7 @@
         "tarefa_atual": "Aguarda Julgamento - incluído em pauta virtual; Elaborar extrato da ata; Processo incluído em pauta virtual; Selecionar documentos para acórdão - Gabinete",
         "autuacao": "16/07/2026",
         "desde": "",
-        "dias_tramitando": 18,
+        "dias_tramitando": 19,
         "julgado": true,
         "data_julgamento": "10/07/2026",
         "teor": "Julgado procedente o pedido em 10/07/2026",
@@ -1753,36 +1787,6 @@
         "julgado": true,
         "data_julgamento": "07/07/2026",
         "teor": "Julgado improcedente o pedido em 07/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "elaborar-documentos": [
-      {
-        "processo": "0600112-24.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Elaborar Documentos",
-        "autuacao": "30/04/2026",
-        "desde": "03/08/2026",
-        "dias_tramitando": 95,
-        "julgado": true,
-        "data_julgamento": "27/07/2026",
-        "teor": "Julgado improcedente o pedido em 27/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600243-96.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Elaborar Documentos",
-        "autuacao": "19/07/2026",
-        "desde": "04/08/2026",
-        "dias_tramitando": 16,
-        "julgado": true,
-        "data_julgamento": "24/07/2026",
-        "teor": "Extinto o processo por ausência de pressupostos processuais em 24/07/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -1828,22 +1832,6 @@
         "autuacao": "28/04/2026",
         "desde": "03/08/2026",
         "dias_tramitando": 98,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "analisar-determinacao": [
-      {
-        "processo": "0600222-23.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "07/07/2026",
-        "desde": "30/07/2026",
-        "dias_tramitando": 28,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -2030,9 +2018,9 @@
         "processo": "0600112-24.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Elaborar Documentos",
+        "tarefa_atual": "Analisar determinação",
         "autuacao": "30/04/2026",
-        "desde": "03/08/2026",
+        "desde": "04/08/2026",
         "dias_tramitando": 95,
         "julgado": true,
         "data_julgamento": "27/07/2026",
@@ -2606,7 +2594,7 @@
         "processo": "0600243-96.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Elaborar Documentos",
+        "tarefa_atual": "Analisar determinação",
         "autuacao": "19/07/2026",
         "desde": "04/08/2026",
         "dias_tramitando": 16,
@@ -2947,7 +2935,7 @@
         "tarefa_atual": "Aguarda Julgamento - incluído em pauta virtual; Elaborar extrato da ata; Processo incluído em pauta virtual; Selecionar documentos para acórdão - Gabinete",
         "autuacao": "16/07/2026",
         "desde": "",
-        "dias_tramitando": 18,
+        "dias_tramitando": 19,
         "julgado": true,
         "data_julgamento": "10/07/2026",
         "teor": "Julgado procedente o pedido em 10/07/2026",
@@ -3171,7 +3159,7 @@
       "classe": "REC no(a) Rp",
       "teor": "Julgado procedente o pedido em 10/07/2026",
       "data_julgamento": "10/07/2026",
-      "dias_tramitando": 18
+      "dias_tramitando": 19
     },
     {
       "processo": "0600192-85.2026.6.10.0000",
@@ -3368,9 +3356,9 @@
       "processo": "0600112-24.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Elaborar Documentos",
+      "tarefa_atual": "Analisar determinação",
       "autuacao": "30/04/2026",
-      "desde": "03/08/2026",
+      "desde": "04/08/2026",
       "dias_tramitando": 95,
       "julgado": true,
       "data_julgamento": "27/07/2026",
@@ -3869,6 +3857,20 @@
       "responsavel_processo": ""
     },
     {
+      "processo": "0600192-85.2026.6.10.0000",
+      "gabinete": "Gab. JA 3",
+      "classe": "REC no(a) Rp",
+      "tarefa_atual": "Aguarda Julgamento - incluído em pauta virtual; Elaborar extrato da ata; Processo incluído em pauta virtual; Selecionar documentos para acórdão - Gabinete",
+      "autuacao": "16/07/2026",
+      "desde": "",
+      "dias_tramitando": 19,
+      "julgado": true,
+      "data_julgamento": "10/07/2026",
+      "teor": "Julgado procedente o pedido em 10/07/2026",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
+    },
+    {
       "processo": "0600239-59.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
@@ -3893,20 +3895,6 @@
       "julgado": true,
       "data_julgamento": "14/07/2026",
       "teor": "Julgado procedente o pedido em 14/07/2026",
-      "segredo_justica": "NÃO",
-      "responsavel_processo": ""
-    },
-    {
-      "processo": "0600192-85.2026.6.10.0000",
-      "gabinete": "Gab. JA 3",
-      "classe": "REC no(a) Rp",
-      "tarefa_atual": "Aguarda Julgamento - incluído em pauta virtual; Elaborar extrato da ata; Processo incluído em pauta virtual; Selecionar documentos para acórdão - Gabinete",
-      "autuacao": "16/07/2026",
-      "desde": "",
-      "dias_tramitando": 18,
-      "julgado": true,
-      "data_julgamento": "10/07/2026",
-      "teor": "Julgado procedente o pedido em 10/07/2026",
       "segredo_justica": "NÃO",
       "responsavel_processo": ""
     },
@@ -3942,7 +3930,7 @@
       "processo": "0600243-96.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Elaborar Documentos",
+      "tarefa_atual": "Analisar determinação",
       "autuacao": "19/07/2026",
       "desde": "04/08/2026",
       "dias_tramitando": 16,
@@ -5014,9 +5002,9 @@
       "processo": "0600112-24.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Elaborar Documentos",
+      "tarefa_atual": "Analisar determinação",
       "autuacao": "30/04/2026",
-      "desde": "03/08/2026",
+      "desde": "04/08/2026",
       "dias_tramitando": 95,
       "julgado": true,
       "data_julgamento": "27/07/2026",
@@ -5448,7 +5436,7 @@
       "processo": "0600243-96.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Elaborar Documentos",
+      "tarefa_atual": "Analisar determinação",
       "autuacao": "19/07/2026",
       "desde": "04/08/2026",
       "dias_tramitando": 16,
@@ -5730,6 +5718,20 @@
       "responsavel_processo": ""
     },
     {
+      "processo": "0600192-85.2026.6.10.0000",
+      "gabinete": "Gab. JA 3",
+      "classe": "REC no(a) Rp",
+      "tarefa_atual": "Aguarda Julgamento - incluído em pauta virtual; Elaborar extrato da ata; Processo incluído em pauta virtual; Selecionar documentos para acórdão - Gabinete",
+      "autuacao": "16/07/2026",
+      "desde": "",
+      "dias_tramitando": 19,
+      "julgado": true,
+      "data_julgamento": "10/07/2026",
+      "teor": "Julgado procedente o pedido em 10/07/2026",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
+    },
+    {
       "processo": "0600177-19.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "REC no(a) Rp",
@@ -5740,20 +5742,6 @@
       "julgado": true,
       "data_julgamento": "14/07/2026",
       "teor": "Julgado procedente o pedido em 14/07/2026",
-      "segredo_justica": "NÃO",
-      "responsavel_processo": ""
-    },
-    {
-      "processo": "0600192-85.2026.6.10.0000",
-      "gabinete": "Gab. JA 3",
-      "classe": "REC no(a) Rp",
-      "tarefa_atual": "Aguarda Julgamento - incluído em pauta virtual; Elaborar extrato da ata; Processo incluído em pauta virtual; Selecionar documentos para acórdão - Gabinete",
-      "autuacao": "16/07/2026",
-      "desde": "",
-      "dias_tramitando": 18,
-      "julgado": true,
-      "data_julgamento": "10/07/2026",
-      "teor": "Julgado procedente o pedido em 10/07/2026",
       "segredo_justica": "NÃO",
       "responsavel_processo": ""
     },
@@ -5978,9 +5966,9 @@
       "processo": "0600112-24.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Elaborar Documentos",
+      "tarefa_atual": "Analisar determinação",
       "autuacao": "30/04/2026",
-      "desde": "03/08/2026",
+      "desde": "04/08/2026",
       "dias_tramitando": 95,
       "julgado": true,
       "data_julgamento": "27/07/2026",
@@ -6283,6 +6271,20 @@
       "responsavel_processo": ""
     },
     {
+      "processo": "0600192-85.2026.6.10.0000",
+      "gabinete": "Gab. JA 3",
+      "classe": "REC no(a) Rp",
+      "tarefa_atual": "Aguarda Julgamento - incluído em pauta virtual; Elaborar extrato da ata; Processo incluído em pauta virtual; Selecionar documentos para acórdão - Gabinete",
+      "autuacao": "16/07/2026",
+      "desde": "",
+      "dias_tramitando": 19,
+      "julgado": true,
+      "data_julgamento": "10/07/2026",
+      "teor": "Julgado procedente o pedido em 10/07/2026",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
+    },
+    {
       "processo": "0600239-59.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
@@ -6311,20 +6313,6 @@
       "responsavel_processo": ""
     },
     {
-      "processo": "0600192-85.2026.6.10.0000",
-      "gabinete": "Gab. JA 3",
-      "classe": "REC no(a) Rp",
-      "tarefa_atual": "Aguarda Julgamento - incluído em pauta virtual; Elaborar extrato da ata; Processo incluído em pauta virtual; Selecionar documentos para acórdão - Gabinete",
-      "autuacao": "16/07/2026",
-      "desde": "",
-      "dias_tramitando": 18,
-      "julgado": true,
-      "data_julgamento": "10/07/2026",
-      "teor": "Julgado procedente o pedido em 10/07/2026",
-      "segredo_justica": "NÃO",
-      "responsavel_processo": ""
-    },
-    {
       "processo": "0600242-14.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
@@ -6342,7 +6330,7 @@
       "processo": "0600243-96.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Elaborar Documentos",
+      "tarefa_atual": "Analisar determinação",
       "autuacao": "19/07/2026",
       "desde": "04/08/2026",
       "dias_tramitando": 16,
@@ -6480,8 +6468,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "04/08/2026 13:54",
+  "publicado_em": "04/08/2026 14:06",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "db252177c2530ff6aceada50550c203b9fbff9a89784b2a8787e708515d9ad6c"
+  "hash_publicacao": "121e7a8f2eae79ac2c8b2babee58a44cae9723047de1ffde451626b4f9ccafae"
 }
