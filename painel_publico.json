@@ -85,12 +85,12 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Lançar movimento; Petições não lidas",
+      "tarefa_atual": "Fechar expediente manualmente",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Preparar comunicação",
+      "tarefa_atual": "Lançar movimento; Petições não lidas",
       "quantidade": 1
     },
     {
@@ -222,7 +222,7 @@
       "processo": "0600027-38.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Preparar comunicação",
+      "tarefa_atual": "Fechar expediente manualmente",
       "dias_tramitando": 175,
       "segredo_justica": "NÃO"
     },
@@ -891,6 +891,16 @@
         "total": 1
       },
       {
+        "codigo": "fechar-expediente-manualmente",
+        "tarefa": "Fechar expediente manualmente",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
         "codigo": "informar-data-de-transito-em-julgado-processo-destravado",
         "tarefa": "Informar data de trânsito em julgado; Processo destravado",
         "contagens": {
@@ -916,16 +926,6 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "preparar-comunicacao",
-        "tarefa": "Preparar comunicação",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -1832,6 +1832,22 @@
         "responsavel_processo": ""
       }
     ],
+    "fechar-expediente-manualmente": [
+      {
+        "processo": "0600027-38.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Fechar expediente manualmente",
+        "autuacao": "09/02/2026",
+        "desde": "04/08/2026",
+        "dias_tramitando": 175,
+        "julgado": true,
+        "data_julgamento": "30/07/2026",
+        "teor": "Julgado improcedente o pedido em 30/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "informar-data-de-transito-em-julgado-processo-destravado": [
       {
         "processo": "0600251-73.2026.6.10.0000",
@@ -1876,22 +1892,6 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "preparar-comunicacao": [
-      {
-        "processo": "0600027-38.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Preparar comunicação",
-        "autuacao": "09/02/2026",
-        "desde": "04/08/2026",
-        "dias_tramitando": 175,
-        "julgado": true,
-        "data_julgamento": "30/07/2026",
-        "teor": "Julgado improcedente o pedido em 30/07/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -1951,7 +1951,7 @@
         "processo": "0600027-38.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Preparar comunicação",
+        "tarefa_atual": "Fechar expediente manualmente",
         "autuacao": "09/02/2026",
         "desde": "04/08/2026",
         "dias_tramitando": 175,
@@ -3205,7 +3205,7 @@
       "processo": "0600027-38.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Preparar comunicação",
+      "tarefa_atual": "Fechar expediente manualmente",
       "autuacao": "09/02/2026",
       "desde": "04/08/2026",
       "dias_tramitando": 175,
@@ -4837,7 +4837,7 @@
       "processo": "0600027-38.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Preparar comunicação",
+      "tarefa_atual": "Fechar expediente manualmente",
       "autuacao": "09/02/2026",
       "desde": "04/08/2026",
       "dias_tramitando": 175,
@@ -5829,7 +5829,7 @@
       "processo": "0600027-38.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Preparar comunicação",
+      "tarefa_atual": "Fechar expediente manualmente",
       "autuacao": "09/02/2026",
       "desde": "04/08/2026",
       "dias_tramitando": 175,
@@ -6387,8 +6387,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "04/08/2026 11:17",
+  "publicado_em": "04/08/2026 11:32",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "7e775a7541d1f4611bf3c873e420803aad71569d4703b02ce589da399061efd7"
+  "hash_publicacao": "344a55f4ce91b26d622d121f9fb2d63d0c86826a0aacab10b6bd9e771c4c6281"
 }
