@@ -13,7 +13,7 @@
       "media_dias": 39.4,
       "maior_tempo": 121,
       "urgentes": 0,
-      "minutar": 0,
+      "minutar": 1,
       "julgados": 10,
       "percentual_julgados": 80.0,
       "arquivados": 4,
@@ -30,7 +30,7 @@
       "media_dias": 37.1,
       "maior_tempo": 118,
       "urgentes": 0,
-      "minutar": 3,
+      "minutar": 2,
       "julgados": 13,
       "percentual_julgados": 55.6,
       "arquivados": 5,
@@ -89,12 +89,12 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+      "tarefa_atual": "Minutar ato",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Realizar triagem ordinários",
+      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
       "quantidade": 1
     },
     {
@@ -109,18 +109,13 @@
     },
     {
       "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Assinar ato",
+      "quantidade": 8
+    },
+    {
+      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Aguardando julgamento do recurso interno",
       "quantidade": 7
-    },
-    {
-      "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Assinar ato",
-      "quantidade": 7
-    },
-    {
-      "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Minutar ato",
-      "quantidade": 3
     },
     {
       "gabinete": "Gab. JA 2",
@@ -130,6 +125,11 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Aguardando providências",
+      "quantidade": 2
+    },
+    {
+      "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Minutar ato",
       "quantidade": 2
     },
     {
@@ -288,7 +288,7 @@
       "processo": "0600151-21.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Realizar triagem ordinários",
+      "tarefa_atual": "Minutar ato",
       "dias_tramitando": 80,
       "segredo_justica": "NÃO"
     },
@@ -373,7 +373,13 @@
       "segredo_justica": "NÃO"
     }
   ],
-  "minutar_cja1": [],
+  "minutar_cja1": [
+    {
+      "processo": "0600151-21.2026.6.10.0000",
+      "classe": "Rp",
+      "dias_tramitando": 80
+    }
+  ],
   "minutar_processos": [
     {
       "processo": "0600102-77.2026.6.10.0000",
@@ -404,6 +410,20 @@
       "responsavel_processo": ""
     },
     {
+      "processo": "0600151-21.2026.6.10.0000",
+      "gabinete": "Gab. JA 1",
+      "classe": "Rp",
+      "tarefa_atual": "Minutar ato",
+      "autuacao": "18/05/2026",
+      "desde": "07/08/2026",
+      "dias_tramitando": 80,
+      "julgado": false,
+      "data_julgamento": "",
+      "teor": "",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
+    },
+    {
       "processo": "0600235-22.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "RepEsp",
@@ -414,20 +434,6 @@
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
-      "segredo_justica": "NÃO",
-      "responsavel_processo": ""
-    },
-    {
-      "processo": "0600242-14.2026.6.10.0000",
-      "gabinete": "Gab. JA 2",
-      "classe": "REC no(a) Rp",
-      "tarefa_atual": "Minutar ato",
-      "autuacao": "07/08/2026",
-      "desde": "07/08/2026",
-      "dias_tramitando": 0,
-      "julgado": true,
-      "data_julgamento": "03/08/2026",
-      "teor": "Julgado improcedente o pedido em 03/08/2026",
       "segredo_justica": "NÃO",
       "responsavel_processo": ""
     }
@@ -472,8 +478,8 @@
         "total_acervo": 25,
         "contagens": {
           "TRIAGEM_URGENTE": 0,
-          "TRIAGEM_ORDINARIA": 1,
-          "MINUTAR_ATO": 0,
+          "TRIAGEM_ORDINARIA": 0,
+          "MINUTAR_ATO": 1,
           "ASSINAR_ATO": 0,
           "LANCAR_MOVIMENTACAO": 0
         }
@@ -485,8 +491,8 @@
         "contagens": {
           "TRIAGEM_URGENTE": 0,
           "TRIAGEM_ORDINARIA": 1,
-          "MINUTAR_ATO": 3,
-          "ASSINAR_ATO": 7,
+          "MINUTAR_ATO": 2,
+          "ASSINAR_ATO": 8,
           "LANCAR_MOVIMENTACAO": 0
         }
       },
@@ -505,9 +511,9 @@
     ],
     "totais": {
       "TRIAGEM_URGENTE": 0,
-      "TRIAGEM_ORDINARIA": 2,
+      "TRIAGEM_ORDINARIA": 1,
       "MINUTAR_ATO": 4,
-      "ASSINAR_ATO": 7,
+      "ASSINAR_ATO": 8,
       "LANCAR_MOVIMENTACAO": 0
     },
     "total_acervo": 72
@@ -515,20 +521,6 @@
   "tarefas_criticas_processos": {
     "TRIAGEM_URGENTE": [],
     "TRIAGEM_ORDINARIA": [
-      {
-        "processo": "0600151-21.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Realizar triagem ordinários",
-        "autuacao": "18/05/2026",
-        "desde": "07/08/2026",
-        "dias_tramitando": 80,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
       {
         "processo": "0600193-70.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
@@ -574,6 +566,20 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0600151-21.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Minutar ato",
+        "autuacao": "18/05/2026",
+        "desde": "07/08/2026",
+        "dias_tramitando": 80,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0600235-22.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "RepEsp",
@@ -584,20 +590,6 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600242-14.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Minutar ato",
-        "autuacao": "07/08/2026",
-        "desde": "07/08/2026",
-        "dias_tramitando": 0,
-        "julgado": true,
-        "data_julgamento": "03/08/2026",
-        "teor": "Julgado improcedente o pedido em 03/08/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -688,6 +680,20 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0600242-14.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "07/08/2026",
+        "desde": "07/08/2026",
+        "dias_tramitando": 0,
+        "julgado": true,
+        "data_julgamento": "03/08/2026",
+        "teor": "Julgado improcedente o pedido em 03/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0600477-78.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
@@ -764,10 +770,10 @@
         "tarefa": "Assinar ato",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 7,
+          "Gabinete Juiz Auxiliar 2": 8,
           "Gabinete Juiz Auxiliar 3": 0
         },
-        "total": 7
+        "total": 8
       },
       {
         "codigo": "aguardando-julgamento-do-recurso-interno-peticoes-nao-lidas",
@@ -793,8 +799,8 @@
         "codigo": "minutar-ato",
         "tarefa": "Minutar ato",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 3,
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 2,
           "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 4
@@ -805,16 +811,6 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 2,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 2
-      },
-      {
-        "codigo": "realizar-triagem-ordinarios",
-        "tarefa": "Realizar triagem ordinários",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 2
@@ -872,6 +868,16 @@
       {
         "codigo": "processo-com-prazo-em-curso-registrar-recurso",
         "tarefa": "Processo com prazo em curso; Registrar recurso",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "realizar-triagem-ordinarios",
+        "tarefa": "Realizar triagem ordinários",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -1523,6 +1529,20 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0600242-14.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "07/08/2026",
+        "desde": "07/08/2026",
+        "dias_tramitando": 0,
+        "julgado": true,
+        "data_julgamento": "03/08/2026",
+        "teor": "Julgado improcedente o pedido em 03/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0600477-78.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
@@ -1725,6 +1745,20 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0600151-21.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Minutar ato",
+        "autuacao": "18/05/2026",
+        "desde": "07/08/2026",
+        "dias_tramitando": 80,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0600235-22.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "RepEsp",
@@ -1735,20 +1769,6 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600242-14.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Minutar ato",
-        "autuacao": "07/08/2026",
-        "desde": "07/08/2026",
-        "dias_tramitando": 0,
-        "julgado": true,
-        "data_julgamento": "03/08/2026",
-        "teor": "Julgado improcedente o pedido em 03/08/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -1779,36 +1799,6 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "realizar-triagem-ordinarios": [
-      {
-        "processo": "0600151-21.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Realizar triagem ordinários",
-        "autuacao": "18/05/2026",
-        "desde": "07/08/2026",
-        "dias_tramitando": 80,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600193-70.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Realizar triagem ordinários",
-        "autuacao": "22/07/2026",
-        "desde": "04/08/2026",
-        "dias_tramitando": 16,
-        "julgado": true,
-        "data_julgamento": "16/07/2026",
-        "teor": "Julgado procedente o pedido em 16/07/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -1909,6 +1899,22 @@
         "responsavel_processo": ""
       }
     ],
+    "realizar-triagem-ordinarios": [
+      {
+        "processo": "0600193-70.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Realizar triagem ordinários",
+        "autuacao": "22/07/2026",
+        "desde": "04/08/2026",
+        "dias_tramitando": 16,
+        "julgado": true,
+        "data_julgamento": "16/07/2026",
+        "teor": "Julgado procedente o pedido em 16/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "registrar-ciencia-intimacao-pessoal": [
       {
         "processo": "0600443-06.2026.6.10.0000",
@@ -1992,7 +1998,7 @@
         "processo": "0600151-21.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Realizar triagem ordinários",
+        "tarefa_atual": "Minutar ato",
         "autuacao": "18/05/2026",
         "desde": "07/08/2026",
         "dias_tramitando": 80,
@@ -2792,7 +2798,7 @@
         "processo": "0600242-14.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Minutar ato",
+        "tarefa_atual": "Assinar ato",
         "autuacao": "07/08/2026",
         "desde": "07/08/2026",
         "dias_tramitando": 0,
@@ -3415,7 +3421,7 @@
       "processo": "0600151-21.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Realizar triagem ordinários",
+      "tarefa_atual": "Minutar ato",
       "autuacao": "18/05/2026",
       "desde": "07/08/2026",
       "dias_tramitando": 80,
@@ -4523,7 +4529,7 @@
       "processo": "0600151-21.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Realizar triagem ordinários",
+      "tarefa_atual": "Minutar ato",
       "autuacao": "18/05/2026",
       "desde": "07/08/2026",
       "dias_tramitando": 80,
@@ -5575,7 +5581,7 @@
       "processo": "0600242-14.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "REC no(a) Rp",
-      "tarefa_atual": "Minutar ato",
+      "tarefa_atual": "Assinar ato",
       "autuacao": "07/08/2026",
       "desde": "07/08/2026",
       "dias_tramitando": 0,
@@ -6014,8 +6020,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "07/08/2026 15:14",
+  "publicado_em": "07/08/2026 15:20",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "2509c5f03c03606a9bf36130d9f3635e76c84e6df6ed1f73e24b5a4d33a11ff8"
+  "hash_publicacao": "98e6d6797fbcbb077b4c94b07ba35c95bf9b982e54fafba7f115bc383a0a267c"
 }
