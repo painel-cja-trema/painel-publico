@@ -179,11 +179,15 @@ const cards=gabCols.map((g,i)=>{
    const destaque=v===maior&&maior>0?' destaque-maior':'';
    return `<button class="todas-task-row${destaque}" onclick="detalheTarefaGabinete('${esc(t.codigo)}','${esc(g.gabinete||g.nome)}','${esc(t.tarefa_atual||t.tarefa)}')"><span>${esc(t.tarefa_atual||t.tarefa)}</span><strong>${numero(v)}</strong>${destaque?'<em>Maior volume</em>':''}</button>`;
  }).join('');
- const ac=(comp.find(x=>x.gabinete===(g.gabinete||g.nome))||{}).quantidade||0;
+ const chaveGab=g.gabinete||g.nome;
+ const listaAcervo=(d.acervo_por_gabinete||{})[chaveGab];
+ const ac=Array.isArray(listaAcervo)
+   ? listaAcervo.length
+   : tarefas.reduce((s,t)=>s+Number((t.contagens||{})[g.nome]||0),0);
  return `<article class="todas-gab-card todas-gab-${i+1}">
  <div class="todas-gab-topo">
- <div><h3>${esc(g.gabinete||g.nome)}</h3><p>${esc(nomeJuiz(g.gabinete||g.nome))}</p></div>
- <button class="todas-gab-acervo" onclick="detalhe('gabinete','${esc(g.gabinete||g.nome)}','Acervo ${esc(g.gabinete||g.nome)}')"><small>Acervo</small><strong>${numero(ac)}</strong></button>
+ <div><h3>${esc(chaveGab)}</h3><p>${esc(nomeJuiz(chaveGab))}</p></div>
+ <button class="todas-gab-acervo" onclick="detalhe('gabinete','${esc(chaveGab)}','Acervo ${esc(chaveGab)}')"><small>Acervo</small><strong>${numero(ac)}</strong></button>
  </div>
  <div class="todas-gab-lista">${itens}</div>
  </article>`;
