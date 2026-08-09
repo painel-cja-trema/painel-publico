@@ -184,7 +184,7 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "quantidade": 1
     },
     {
@@ -480,8 +480,8 @@
           "TRIAGEM_URGENTE": 0,
           "TRIAGEM_ORDINARIA": 0,
           "MINUTAR_ATO": 0,
-          "ASSINAR_ATO": 1,
-          "LANCAR_MOVIMENTACAO": 0
+          "ASSINAR_ATO": 0,
+          "LANCAR_MOVIMENTACAO": 1
         }
       }
     ],
@@ -489,8 +489,8 @@
       "TRIAGEM_URGENTE": 0,
       "TRIAGEM_ORDINARIA": 2,
       "MINUTAR_ATO": 2,
-      "ASSINAR_ATO": 5,
-      "LANCAR_MOVIMENTACAO": 0
+      "ASSINAR_ATO": 4,
+      "LANCAR_MOVIMENTACAO": 1
     },
     "total_acervo": 75
   },
@@ -612,12 +612,14 @@
         "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
-      },
+      }
+    ],
+    "LANCAR_MOVIMENTACAO": [
       {
         "processo": "0600585-10.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "TutAntAnt",
-        "tarefa_atual": "Assinar ato",
+        "tarefa_atual": "Lançar movimento",
         "autuacao": "09/08/2026",
         "desde": "09/08/2026",
         "dias_tramitando": 0,
@@ -627,8 +629,7 @@
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
-    ],
-    "LANCAR_MOVIMENTACAO": []
+    ]
   },
   "entrada_comissao": {
     "codigo": "LIMINAR_CERTIFICACAO",
@@ -711,9 +712,9 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 4,
-          "Gabinete Juiz Auxiliar 3": 1
+          "Gabinete Juiz Auxiliar 3": 0
         },
-        "total": 5
+        "total": 4
       },
       {
         "codigo": "aguardando-providencias",
@@ -808,6 +809,16 @@
       {
         "codigo": "analisar-determinacao",
         "tarefa": "Analisar determinação",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
+        "codigo": "lancar-movimento",
+        "tarefa": "Lançar movimento",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -1643,20 +1654,6 @@
         "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
-      },
-      {
-        "processo": "0600585-10.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "TutAntAnt",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "09/08/2026",
-        "desde": "09/08/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
       }
     ],
     "aguardando-providencias": [
@@ -1711,7 +1708,7 @@
         "tarefa_atual": "Analisar determinação; Registrar recurso",
         "autuacao": "16/07/2026",
         "desde": "16/07/2026",
-        "dias_tramitando": 23,
+        "dias_tramitando": 24,
         "julgado": true,
         "data_julgamento": "04/08/2026",
         "teor": "Julgado improcedente o pedido em 04/08/2026",
@@ -1882,6 +1879,22 @@
         "autuacao": "07/07/2026",
         "desde": "30/07/2026",
         "dias_tramitando": 33,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "lancar-movimento": [
+      {
+        "processo": "0600585-10.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "TutAntAnt",
+        "tarefa_atual": "Lançar movimento",
+        "autuacao": "09/08/2026",
+        "desde": "09/08/2026",
+        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -2537,7 +2550,7 @@
         "tarefa_atual": "Analisar determinação; Registrar recurso",
         "autuacao": "16/07/2026",
         "desde": "16/07/2026",
-        "dias_tramitando": 23,
+        "dias_tramitando": 24,
         "julgado": true,
         "data_julgamento": "04/08/2026",
         "teor": "Julgado improcedente o pedido em 04/08/2026",
@@ -2984,7 +2997,7 @@
         "processo": "0600585-10.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "TutAntAnt",
-        "tarefa_atual": "Assinar ato",
+        "tarefa_atual": "Lançar movimento",
         "autuacao": "09/08/2026",
         "desde": "09/08/2026",
         "dias_tramitando": 0,
@@ -3067,7 +3080,7 @@
       "classe": "Rp",
       "teor": "Julgado improcedente o pedido em 04/08/2026",
       "data_julgamento": "04/08/2026",
-      "dias_tramitando": 23
+      "dias_tramitando": 24
     },
     {
       "processo": "0600242-14.2026.6.10.0000",
@@ -3832,7 +3845,7 @@
       "tarefa_atual": "Analisar determinação; Registrar recurso",
       "autuacao": "16/07/2026",
       "desde": "16/07/2026",
-      "dias_tramitando": 23,
+      "dias_tramitando": 24,
       "julgado": true,
       "data_julgamento": "04/08/2026",
       "teor": "Julgado improcedente o pedido em 04/08/2026",
@@ -4053,7 +4066,7 @@
       "processo": "0600585-10.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "TutAntAnt",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "autuacao": "09/08/2026",
       "desde": "09/08/2026",
       "dias_tramitando": 0,
@@ -5012,7 +5025,7 @@
       "tarefa_atual": "Analisar determinação; Registrar recurso",
       "autuacao": "16/07/2026",
       "desde": "16/07/2026",
-      "dias_tramitando": 23,
+      "dias_tramitando": 24,
       "julgado": true,
       "data_julgamento": "04/08/2026",
       "teor": "Julgado improcedente o pedido em 04/08/2026",
@@ -5233,7 +5246,7 @@
       "processo": "0600585-10.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "TutAntAnt",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "autuacao": "09/08/2026",
       "desde": "09/08/2026",
       "dias_tramitando": 0,
@@ -6099,7 +6112,7 @@
       "tarefa_atual": "Analisar determinação; Registrar recurso",
       "autuacao": "16/07/2026",
       "desde": "16/07/2026",
-      "dias_tramitando": 23,
+      "dias_tramitando": 24,
       "julgado": true,
       "data_julgamento": "04/08/2026",
       "teor": "Julgado improcedente o pedido em 04/08/2026",
@@ -6164,8 +6177,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "09/08/2026 17:05",
+  "publicado_em": "09/08/2026 17:08",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "f2b1f626c384a646e626625699ed3ca8b5173d6555e9ec855e57ff8284d4c9d6"
+  "hash_publicacao": "0b01466b10ee7845b1cd20545e43ab0c23702dd5f12d733c1ec45304b29a466a"
 }
