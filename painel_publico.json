@@ -13,7 +13,7 @@
       "media_dias": 43.0,
       "maior_tempo": 125,
       "urgentes": 0,
-      "minutar": 0,
+      "minutar": 1,
       "julgados": 10,
       "percentual_julgados": 80.0,
       "arquivados": 5,
@@ -64,11 +64,6 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Aguardando julgamento do recurso interno; Petições não lidas",
-      "quantidade": 5
-    },
-    {
-      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Aguarda Julgamento - incluído em pauta virtual; Elaborar extrato da ata; Processo incluído em pauta virtual; Selecionar documentos para acórdão - Gabinete",
       "quantidade": 4
     },
@@ -79,7 +74,17 @@
     },
     {
       "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Aguardando julgamento do recurso interno; Petições não lidas",
+      "quantidade": 4
+    },
+    {
+      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Aguarda Sessão de Julgamento Virtual; Elaborar extrato da ata; Pauta provisória virtual; Selecionar documentos para acórdão - Gabinete",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Aguardando julgamento do recurso interno; Minutar ato - Petição avulsa",
       "quantidade": 1
     },
     {
@@ -368,7 +373,13 @@
       "segredo_justica": "NÃO"
     }
   ],
-  "minutar_cja1": [],
+  "minutar_cja1": [
+    {
+      "processo": "0600187-63.2026.6.10.0000",
+      "classe": "Rp",
+      "dias_tramitando": 48
+    }
+  ],
   "minutar_processos": [
     {
       "processo": "0600106-17.2026.6.10.0000",
@@ -381,6 +392,20 @@
       "julgado": true,
       "data_julgamento": "17/07/2026",
       "teor": "Julgado procedente o pedido em 17/07/2026",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
+    },
+    {
+      "processo": "0600187-63.2026.6.10.0000",
+      "gabinete": "Gab. JA 1",
+      "classe": "Rp",
+      "tarefa_atual": "Aguardando julgamento do recurso interno; Minutar ato - Petição avulsa",
+      "autuacao": "23/06/2026",
+      "desde": "23/06/2026",
+      "dias_tramitando": 48,
+      "julgado": true,
+      "data_julgamento": "08/07/2026",
+      "teor": "Julgado procedente em parte do pedido em 08/07/2026",
       "segredo_justica": "NÃO",
       "responsavel_processo": ""
     }
@@ -426,7 +451,7 @@
         "contagens": {
           "TRIAGEM_URGENTE": 0,
           "TRIAGEM_ORDINARIA": 1,
-          "MINUTAR_ATO": 0,
+          "MINUTAR_ATO": 1,
           "ASSINAR_ATO": 0,
           "LANCAR_MOVIMENTACAO": 0
         }
@@ -459,7 +484,7 @@
     "totais": {
       "TRIAGEM_URGENTE": 0,
       "TRIAGEM_ORDINARIA": 6,
-      "MINUTAR_ATO": 1,
+      "MINUTAR_ATO": 2,
       "ASSINAR_ATO": 5,
       "LANCAR_MOVIMENTACAO": 0
     },
@@ -565,6 +590,20 @@
         "julgado": true,
         "data_julgamento": "17/07/2026",
         "teor": "Julgado procedente o pedido em 17/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600187-63.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno; Minutar ato - Petição avulsa",
+        "autuacao": "23/06/2026",
+        "desde": "23/06/2026",
+        "dias_tramitando": 48,
+        "julgado": true,
+        "data_julgamento": "08/07/2026",
+        "teor": "Julgado procedente em parte do pedido em 08/07/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -719,16 +758,6 @@
         "total": 6
       },
       {
-        "codigo": "aguardando-julgamento-do-recurso-interno-peticoes-nao-lidas",
-        "tarefa": "Aguardando julgamento do recurso interno; Petições não lidas",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 5,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 5
-      },
-      {
         "codigo": "assinar-ato",
         "tarefa": "Assinar ato",
         "contagens": {
@@ -737,6 +766,16 @@
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 5
+      },
+      {
+        "codigo": "aguardando-julgamento-do-recurso-interno-peticoes-nao-lidas",
+        "tarefa": "Aguardando julgamento do recurso interno; Petições não lidas",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 4,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 4
       },
       {
         "codigo": "aguardando-providencias",
@@ -771,6 +810,16 @@
       {
         "codigo": "aguarda-sessao-de-julgamento-virtual-elaborar-extrato-da-ata-pauta-provisoria-virtual-selecionar-documentos-para-acordao-gabinete",
         "tarefa": "Aguarda Sessão de Julgamento Virtual; Elaborar extrato da ata; Pauta provisória virtual; Selecionar documentos para acórdão - Gabinete",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "aguardando-julgamento-do-recurso-interno-minutar-ato-peticao-avulsa",
+        "tarefa": "Aguardando julgamento do recurso interno; Minutar ato - Petição avulsa",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -1632,78 +1681,6 @@
         "responsavel_processo": ""
       }
     ],
-    "aguardando-julgamento-do-recurso-interno-peticoes-nao-lidas": [
-      {
-        "processo": "0600157-28.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno; Petições não lidas",
-        "autuacao": "25/05/2026",
-        "desde": "25/05/2026",
-        "dias_tramitando": 77,
-        "julgado": true,
-        "data_julgamento": "09/07/2026",
-        "teor": "Julgado procedente o pedido em 09/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600160-80.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno; Petições não lidas",
-        "autuacao": "26/05/2026",
-        "desde": "26/05/2026",
-        "dias_tramitando": 76,
-        "julgado": true,
-        "data_julgamento": "04/08/2026",
-        "teor": "Julgado improcedente o pedido em 04/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600185-93.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno; Petições não lidas",
-        "autuacao": "18/06/2026",
-        "desde": "18/06/2026",
-        "dias_tramitando": 53,
-        "julgado": true,
-        "data_julgamento": "16/07/2026",
-        "teor": "Julgado procedente em parte do pedido em 16/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600186-78.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno; Petições não lidas",
-        "autuacao": "23/06/2026",
-        "desde": "23/06/2026",
-        "dias_tramitando": 48,
-        "julgado": true,
-        "data_julgamento": "09/07/2026",
-        "teor": "Julgado procedente em parte do pedido em 09/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600187-63.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno; Petições não lidas",
-        "autuacao": "23/06/2026",
-        "desde": "23/06/2026",
-        "dias_tramitando": 48,
-        "julgado": true,
-        "data_julgamento": "08/07/2026",
-        "teor": "Julgado procedente em parte do pedido em 08/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "assinar-ato": [
       {
         "processo": "0600102-77.2026.6.10.0000",
@@ -1772,6 +1749,64 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "aguardando-julgamento-do-recurso-interno-peticoes-nao-lidas": [
+      {
+        "processo": "0600157-28.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno; Petições não lidas",
+        "autuacao": "25/05/2026",
+        "desde": "25/05/2026",
+        "dias_tramitando": 77,
+        "julgado": true,
+        "data_julgamento": "09/07/2026",
+        "teor": "Julgado procedente o pedido em 09/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600160-80.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno; Petições não lidas",
+        "autuacao": "26/05/2026",
+        "desde": "26/05/2026",
+        "dias_tramitando": 76,
+        "julgado": true,
+        "data_julgamento": "04/08/2026",
+        "teor": "Julgado improcedente o pedido em 04/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600185-93.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno; Petições não lidas",
+        "autuacao": "18/06/2026",
+        "desde": "18/06/2026",
+        "dias_tramitando": 53,
+        "julgado": true,
+        "data_julgamento": "16/07/2026",
+        "teor": "Julgado procedente em parte do pedido em 16/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600186-78.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno; Petições não lidas",
+        "autuacao": "23/06/2026",
+        "desde": "23/06/2026",
+        "dias_tramitando": 48,
+        "julgado": true,
+        "data_julgamento": "09/07/2026",
+        "teor": "Julgado procedente em parte do pedido em 09/07/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -1864,6 +1899,22 @@
         "julgado": true,
         "data_julgamento": "20/07/2026",
         "teor": "Julgado improcedente o pedido em 20/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "aguardando-julgamento-do-recurso-interno-minutar-ato-peticao-avulsa": [
+      {
+        "processo": "0600187-63.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno; Minutar ato - Petição avulsa",
+        "autuacao": "23/06/2026",
+        "desde": "23/06/2026",
+        "dias_tramitando": 48,
+        "julgado": true,
+        "data_julgamento": "08/07/2026",
+        "teor": "Julgado procedente em parte do pedido em 08/07/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -2127,7 +2178,7 @@
         "processo": "0600187-63.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno; Petições não lidas",
+        "tarefa_atual": "Aguardando julgamento do recurso interno; Minutar ato - Petição avulsa",
         "autuacao": "23/06/2026",
         "desde": "23/06/2026",
         "dias_tramitando": 48,
@@ -3746,7 +3797,7 @@
       "processo": "0600187-63.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Aguardando julgamento do recurso interno; Petições não lidas",
+      "tarefa_atual": "Aguardando julgamento do recurso interno; Minutar ato - Petição avulsa",
       "autuacao": "23/06/2026",
       "desde": "23/06/2026",
       "dias_tramitando": 48,
@@ -4926,7 +4977,7 @@
       "processo": "0600187-63.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Aguardando julgamento do recurso interno; Petições não lidas",
+      "tarefa_atual": "Aguardando julgamento do recurso interno; Minutar ato - Petição avulsa",
       "autuacao": "23/06/2026",
       "desde": "23/06/2026",
       "dias_tramitando": 48,
@@ -6111,7 +6162,7 @@
       "processo": "0600187-63.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Aguardando julgamento do recurso interno; Petições não lidas",
+      "tarefa_atual": "Aguardando julgamento do recurso interno; Minutar ato - Petição avulsa",
       "autuacao": "23/06/2026",
       "desde": "23/06/2026",
       "dias_tramitando": 48,
@@ -6305,8 +6356,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "10/08/2026 19:38",
+  "publicado_em": "10/08/2026 19:53",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "82c1ff64107cf0a94b0a1cb3866ef4de58701f81d641c3b318e5151e289c1952"
+  "hash_publicacao": "3e661b8ff64dbcdaf42d28549b958091cd601cb6224e7b7934b09ea29c42f666"
 }
