@@ -194,6 +194,11 @@
     },
     {
       "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Assinar ato",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
       "quantidade": 1
     },
@@ -204,12 +209,7 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Revisar ato",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Verificar e certificar dados do processo com liminar",
+      "tarefa_atual": "Redistribuir de ofício",
       "quantidade": 1
     }
   ],
@@ -510,7 +510,7 @@
           "TRIAGEM_URGENTE": 0,
           "TRIAGEM_ORDINARIA": 0,
           "MINUTAR_ATO": 0,
-          "ASSINAR_ATO": 0,
+          "ASSINAR_ATO": 1,
           "LANCAR_MOVIMENTACAO": 0
         }
       }
@@ -519,7 +519,7 @@
       "TRIAGEM_URGENTE": 0,
       "TRIAGEM_ORDINARIA": 4,
       "MINUTAR_ATO": 3,
-      "ASSINAR_ATO": 1,
+      "ASSINAR_ATO": 2,
       "LANCAR_MOVIMENTACAO": 0
     },
     "total_acervo": 79
@@ -630,6 +630,20 @@
     ],
     "ASSINAR_ATO": [
       {
+        "processo": "0600222-23.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "07/07/2026",
+        "desde": "11/08/2026",
+        "dias_tramitando": 35,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0600134-82.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "REC no(a) Rp",
@@ -651,40 +665,10 @@
     "rotulo": "Verificar e certificar dados do processo com liminar",
     "curto": "Liminares",
     "descricao": "Porta de entrada da Comissão: processos com liminar aguardando conferência/certificação inicial antes da distribuição aos gabinetes.",
-    "total": 1,
-    "processos": [
-      {
-        "processo": "0600661-34.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "PetCiv",
-        "tarefa_atual": "Verificar e certificar dados do processo com liminar",
-        "autuacao": "11/08/2026",
-        "desde": "11/08/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ]
+    "total": 0,
+    "processos": []
   },
-  "entrada_comissao_processos": [
-    {
-      "processo": "0600661-34.2026.6.10.0000",
-      "gabinete": "Gab. JA 3",
-      "classe": "PetCiv",
-      "tarefa_atual": "Verificar e certificar dados do processo com liminar",
-      "autuacao": "11/08/2026",
-      "desde": "11/08/2026",
-      "dias_tramitando": 0,
-      "julgado": false,
-      "data_julgamento": "",
-      "teor": "",
-      "segredo_justica": "NÃO",
-      "responsavel_processo": ""
-    }
-  ],
+  "entrada_comissao_processos": [],
   "todas_tarefas": {
     "colunas": [
       {
@@ -782,22 +766,22 @@
         "total": 2
       },
       {
+        "codigo": "assinar-ato",
+        "tarefa": "Assinar ato",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 2
+      },
+      {
         "codigo": "minutar-relatorio-voto-e-ementa",
         "tarefa": "Minutar Relatório, Voto e Ementa",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 2
-      },
-      {
-        "codigo": "revisar-ato",
-        "tarefa": "Revisar ato",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 2
       },
@@ -852,16 +836,6 @@
         "total": 1
       },
       {
-        "codigo": "assinar-ato",
-        "tarefa": "Assinar ato",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
         "codigo": "atualizar-dados-do-processo",
         "tarefa": "Atualizar dados do processo",
         "contagens": {
@@ -902,6 +876,16 @@
         "total": 1
       },
       {
+        "codigo": "redistribuir-de-oficio",
+        "tarefa": "Redistribuir de ofício",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
         "codigo": "registrar-ciencia-intimacao-pessoal",
         "tarefa": "Registrar ciência intimação pessoal",
         "contagens": {
@@ -912,12 +896,12 @@
         "total": 1
       },
       {
-        "codigo": "verificar-e-certificar-dados-do-processo-com-liminar",
-        "tarefa": "Verificar e certificar dados do processo com liminar",
+        "codigo": "revisar-ato",
+        "tarefa": "Revisar ato",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
+          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
       }
@@ -1823,6 +1807,36 @@
         "responsavel_processo": ""
       }
     ],
+    "assinar-ato": [
+      {
+        "processo": "0600222-23.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "07/07/2026",
+        "desde": "11/08/2026",
+        "dias_tramitando": 35,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600134-82.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "23/07/2026",
+        "desde": "11/08/2026",
+        "dias_tramitando": 18,
+        "julgado": true,
+        "data_julgamento": "18/07/2026",
+        "teor": "Julgado improcedente o pedido em 18/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "minutar-relatorio-voto-e-ementa": [
       {
         "processo": "0600193-70.2026.6.10.0000",
@@ -1849,36 +1863,6 @@
         "julgado": true,
         "data_julgamento": "09/07/2026",
         "teor": "Julgado procedente o pedido em 09/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "revisar-ato": [
-      {
-        "processo": "0600080-19.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Revisar ato",
-        "autuacao": "07/04/2026",
-        "desde": "11/08/2026",
-        "dias_tramitando": 125,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600222-23.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Revisar ato",
-        "autuacao": "07/07/2026",
-        "desde": "11/08/2026",
-        "dias_tramitando": 35,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -1963,22 +1947,6 @@
         "responsavel_processo": ""
       }
     ],
-    "assinar-ato": [
-      {
-        "processo": "0600134-82.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "23/07/2026",
-        "desde": "11/08/2026",
-        "dias_tramitando": 18,
-        "julgado": true,
-        "data_julgamento": "18/07/2026",
-        "teor": "Julgado improcedente o pedido em 18/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "atualizar-dados-do-processo": [
       {
         "processo": "0600102-77.2026.6.10.0000",
@@ -2043,6 +2011,22 @@
         "responsavel_processo": ""
       }
     ],
+    "redistribuir-de-oficio": [
+      {
+        "processo": "0600661-34.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "PetCiv",
+        "tarefa_atual": "Redistribuir de ofício",
+        "autuacao": "11/08/2026",
+        "desde": "11/08/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "registrar-ciencia-intimacao-pessoal": [
       {
         "processo": "0600477-78.2026.6.10.0000",
@@ -2059,15 +2043,15 @@
         "responsavel_processo": ""
       }
     ],
-    "verificar-e-certificar-dados-do-processo-com-liminar": [
+    "revisar-ato": [
       {
-        "processo": "0600661-34.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "PetCiv",
-        "tarefa_atual": "Verificar e certificar dados do processo com liminar",
-        "autuacao": "11/08/2026",
+        "processo": "0600080-19.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Revisar ato",
+        "autuacao": "07/04/2026",
         "desde": "11/08/2026",
-        "dias_tramitando": 0,
+        "dias_tramitando": 125,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -3052,7 +3036,7 @@
         "processo": "0600222-23.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Revisar ato",
+        "tarefa_atual": "Assinar ato",
         "autuacao": "07/07/2026",
         "desde": "11/08/2026",
         "dias_tramitando": 35,
@@ -3178,7 +3162,7 @@
         "processo": "0600661-34.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "PetCiv",
-        "tarefa_atual": "Verificar e certificar dados do processo com liminar",
+        "tarefa_atual": "Redistribuir de ofício",
         "autuacao": "11/08/2026",
         "desde": "11/08/2026",
         "dias_tramitando": 0,
@@ -3939,7 +3923,7 @@
       "processo": "0600222-23.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Revisar ato",
+      "tarefa_atual": "Assinar ato",
       "autuacao": "07/07/2026",
       "desde": "11/08/2026",
       "dias_tramitando": 35,
@@ -4261,7 +4245,7 @@
       "processo": "0600661-34.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "PetCiv",
-      "tarefa_atual": "Verificar e certificar dados do processo com liminar",
+      "tarefa_atual": "Redistribuir de ofício",
       "autuacao": "11/08/2026",
       "desde": "11/08/2026",
       "dias_tramitando": 0,
@@ -5133,7 +5117,7 @@
       "processo": "0600222-23.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Revisar ato",
+      "tarefa_atual": "Assinar ato",
       "autuacao": "07/07/2026",
       "desde": "11/08/2026",
       "dias_tramitando": 35,
@@ -5455,7 +5439,7 @@
       "processo": "0600661-34.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "PetCiv",
-      "tarefa_atual": "Verificar e certificar dados do processo com liminar",
+      "tarefa_atual": "Redistribuir de ofício",
       "autuacao": "11/08/2026",
       "desde": "11/08/2026",
       "dias_tramitando": 0,
@@ -6470,8 +6454,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "11/08/2026 14:12",
+  "publicado_em": "11/08/2026 14:24",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "22509cf0779c68e6fdab13ebf28b8253edf57443b18e3ccb49a6cb66ae2733d6"
+  "hash_publicacao": "dcdda135a18ef7dfe04362280a187fbf2c2bc783b40fed0595cea4456a126e9a"
 }
