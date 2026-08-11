@@ -154,6 +154,11 @@
     },
     {
       "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso; Registrar recurso",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Analisar Processos",
       "quantidade": 1
     },
@@ -170,11 +175,6 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Informar data de trânsito em julgado",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
       "quantidade": 1
     },
     {
@@ -817,6 +817,16 @@
         "total": 1
       },
       {
+        "codigo": "analisar-peticao-avulsa-peticoes-nao-lidas-processo-com-prazo-em-curso-registrar-recurso",
+        "tarefa": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso; Registrar recurso",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
         "codigo": "analisar-determinacao",
         "tarefa": "Analisar determinação",
         "contagens": {
@@ -863,16 +873,6 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
-        "codigo": "processo-com-prazo-em-curso-registrar-recurso",
-        "tarefa": "Processo com prazo em curso; Registrar recurso",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
       },
@@ -1908,6 +1908,22 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-peticao-avulsa-peticoes-nao-lidas-processo-com-prazo-em-curso-registrar-recurso": [
+      {
+        "processo": "0600357-35.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "RepEsp",
+        "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso; Registrar recurso",
+        "autuacao": "04/08/2026",
+        "desde": "04/08/2026",
+        "dias_tramitando": 7,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "analisar-determinacao": [
       {
         "processo": "0600102-77.2026.6.10.0000",
@@ -1981,22 +1997,6 @@
         "autuacao": "07/08/2026",
         "desde": "07/08/2026",
         "dias_tramitando": 4,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "processo-com-prazo-em-curso-registrar-recurso": [
-      {
-        "processo": "0600357-35.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "RepEsp",
-        "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
-        "autuacao": "04/08/2026",
-        "desde": "04/08/2026",
-        "dias_tramitando": 7,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -2845,7 +2845,7 @@
         "processo": "0600357-35.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "RepEsp",
-        "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
+        "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso; Registrar recurso",
         "autuacao": "04/08/2026",
         "desde": "04/08/2026",
         "dias_tramitando": 7,
@@ -4126,7 +4126,7 @@
       "processo": "0600357-35.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "RepEsp",
-      "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
+      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso; Registrar recurso",
       "autuacao": "04/08/2026",
       "desde": "04/08/2026",
       "dias_tramitando": 7,
@@ -5306,7 +5306,7 @@
       "processo": "0600357-35.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "RepEsp",
-      "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
+      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso; Registrar recurso",
       "autuacao": "04/08/2026",
       "desde": "04/08/2026",
       "dias_tramitando": 7,
@@ -6405,8 +6405,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "11/08/2026 19:40",
+  "publicado_em": "11/08/2026 19:43",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "a29be68b60442292868c0a2c009a34ab5a7db221b8890e0496512592476d1d1d"
+  "hash_publicacao": "a79b0645a155d59a26a649de2fb95787a6dd5f702b2cd03ff86255489deb8742"
 }
