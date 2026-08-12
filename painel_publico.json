@@ -44,7 +44,7 @@
       "juiz": "Dr. Rubem Filho",
       "distribuidor": "Danielle Cerqueira Castro",
       "quantidade": 9,
-      "media_dias": 37.7,
+      "media_dias": 37.8,
       "maior_tempo": 106,
       "urgentes": 0,
       "minutar": 0,
@@ -114,18 +114,18 @@
     },
     {
       "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Processo com prazo em curso",
+      "quantidade": 10
+    },
+    {
+      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Aguardando julgamento do recurso interno",
       "quantidade": 9
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Processo com prazo em curso",
-      "quantidade": 9
-    },
-    {
-      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Visualizar expediente DJE",
-      "quantidade": 8
+      "quantidade": 7
     },
     {
       "gabinete": "Gab. JA 2",
@@ -199,7 +199,7 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+      "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
       "quantidade": 1
     }
   ],
@@ -464,7 +464,7 @@
         "total_acervo": 13,
         "contagens": {
           "TRIAGEM_URGENTE": 0,
-          "TRIAGEM_ORDINARIA": 0,
+          "TRIAGEM_ORDINARIA": 1,
           "MINUTAR_ATO": 0,
           "ASSINAR_ATO": 0,
           "LANCAR_MOVIMENTACAO": 0
@@ -473,7 +473,7 @@
     ],
     "totais": {
       "TRIAGEM_URGENTE": 0,
-      "TRIAGEM_ORDINARIA": 3,
+      "TRIAGEM_ORDINARIA": 4,
       "MINUTAR_ATO": 1,
       "ASSINAR_ATO": 1,
       "LANCAR_MOVIMENTACAO": 0
@@ -505,6 +505,20 @@
         "autuacao": "28/07/2026",
         "desde": "12/08/2026",
         "dias_tramitando": 15,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600479-48.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
+        "autuacao": "07/08/2026",
+        "desde": "07/08/2026",
+        "dias_tramitando": 5,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -600,10 +614,10 @@
         "tarefa": "Processo com prazo em curso",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 5,
-          "Gabinete Juiz Auxiliar 2": 9,
+          "Gabinete Juiz Auxiliar 2": 10,
           "Gabinete Juiz Auxiliar 3": 3
         },
-        "total": 17
+        "total": 18
       },
       {
         "codigo": "aguarda-julgamento-incluido-em-pauta-virtual-elaborar-extrato-da-ata-processo-incluido-em-pauta-virtual-selecionar-documentos-para-acordao-gabinete",
@@ -620,10 +634,10 @@
         "tarefa": "Visualizar expediente DJE",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 8,
+          "Gabinete Juiz Auxiliar 2": 7,
           "Gabinete Juiz Auxiliar 3": 0
         },
-        "total": 8
+        "total": 7
       },
       {
         "codigo": "aguardando-julgamento-do-recurso-interno-visualizar-expediente-dje",
@@ -664,16 +678,6 @@
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 3
-      },
-      {
-        "codigo": "peticoes-nao-lidas-processo-com-prazo-em-curso",
-        "tarefa": "Petições não lidas; Processo com prazo em curso",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 2
       },
       {
         "codigo": "aguarda-julgamento-incluido-em-pauta-virtual-elaborar-extrato-da-ata-elaborar-extrato-da-ata-processo-incluido-em-pauta-virtual-selecionar-documentos-para-acordao-gabinete-selecionar-documentos-para-acordao-gabinete",
@@ -762,6 +766,26 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "peticoes-nao-lidas-processo-com-prazo-em-curso",
+        "tarefa": "Petições não lidas; Processo com prazo em curso",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "peticoes-nao-lidas-realizar-triagem-ordinarios",
+        "tarefa": "Petições não lidas; Realizar triagem ordinários",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 1
       },
@@ -1279,6 +1303,20 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0600242-14.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Processo com prazo em curso",
+        "autuacao": "07/08/2026",
+        "desde": "12/08/2026",
+        "dias_tramitando": 5,
+        "julgado": true,
+        "data_julgamento": "03/08/2026",
+        "teor": "Julgado improcedente o pedido em 03/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0600480-33.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
@@ -1315,7 +1353,7 @@
         "tarefa_atual": "Aguarda Julgamento - incluído em pauta virtual; Elaborar extrato da ata; Processo incluído em pauta virtual; Selecionar documentos para acórdão - Gabinete",
         "autuacao": "08/07/2026",
         "desde": "08/07/2026",
-        "dias_tramitando": 34,
+        "dias_tramitando": 35,
         "julgado": true,
         "data_julgamento": "04/07/2026",
         "teor": "Julgado improcedente o pedido em 04/07/2026",
@@ -1489,20 +1527,6 @@
         "julgado": true,
         "data_julgamento": "11/08/2026",
         "teor": "Julgado improcedente o pedido em 11/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600242-14.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Visualizar expediente DJE",
-        "autuacao": "07/08/2026",
-        "desde": "08/08/2026",
-        "dias_tramitando": 5,
-        "julgado": true,
-        "data_julgamento": "03/08/2026",
-        "teor": "Julgado improcedente o pedido em 03/08/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -1711,36 +1735,6 @@
         "responsavel_processo": ""
       }
     ],
-    "peticoes-nao-lidas-processo-com-prazo-em-curso": [
-      {
-        "processo": "0600151-21.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
-        "autuacao": "18/05/2026",
-        "desde": "18/05/2026",
-        "dias_tramitando": 86,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600479-48.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
-        "autuacao": "07/08/2026",
-        "desde": "07/08/2026",
-        "dias_tramitando": 4,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "aguarda-julgamento-incluido-em-pauta-virtual-elaborar-extrato-da-ata-elaborar-extrato-da-ata-processo-incluido-em-pauta-virtual-selecionar-documentos-para-acordao-gabinete-selecionar-documentos-para-acordao-gabinete": [
       {
         "processo": "0600173-79.2026.6.10.0000",
@@ -1878,6 +1872,38 @@
         "autuacao": "04/08/2026",
         "desde": "04/08/2026",
         "dias_tramitando": 8,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "peticoes-nao-lidas-processo-com-prazo-em-curso": [
+      {
+        "processo": "0600151-21.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+        "autuacao": "18/05/2026",
+        "desde": "18/05/2026",
+        "dias_tramitando": 86,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "peticoes-nao-lidas-realizar-triagem-ordinarios": [
+      {
+        "processo": "0600479-48.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
+        "autuacao": "07/08/2026",
+        "desde": "07/08/2026",
+        "dias_tramitando": 5,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -2768,9 +2794,9 @@
         "processo": "0600242-14.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Visualizar expediente DJE",
+        "tarefa_atual": "Processo com prazo em curso",
         "autuacao": "07/08/2026",
-        "desde": "08/08/2026",
+        "desde": "12/08/2026",
         "dias_tramitando": 5,
         "julgado": true,
         "data_julgamento": "03/08/2026",
@@ -2927,7 +2953,7 @@
         "tarefa_atual": "Aguarda Julgamento - incluído em pauta virtual; Elaborar extrato da ata; Processo incluído em pauta virtual; Selecionar documentos para acórdão - Gabinete",
         "autuacao": "08/07/2026",
         "desde": "08/07/2026",
-        "dias_tramitando": 34,
+        "dias_tramitando": 35,
         "julgado": true,
         "data_julgamento": "04/07/2026",
         "teor": "Julgado improcedente o pedido em 04/07/2026",
@@ -3008,10 +3034,10 @@
         "processo": "0600479-48.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+        "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
         "autuacao": "07/08/2026",
         "desde": "07/08/2026",
-        "dias_tramitando": 4,
+        "dias_tramitando": 5,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -4063,10 +4089,10 @@
       "processo": "0600479-48.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+      "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
       "autuacao": "07/08/2026",
       "desde": "07/08/2026",
-      "dias_tramitando": 4,
+      "dias_tramitando": 5,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -5243,10 +5269,10 @@
       "processo": "0600479-48.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+      "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
       "autuacao": "07/08/2026",
       "desde": "07/08/2026",
-      "dias_tramitando": 4,
+      "dias_tramitando": 5,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -5472,7 +5498,7 @@
       "tarefa_atual": "Aguarda Julgamento - incluído em pauta virtual; Elaborar extrato da ata; Processo incluído em pauta virtual; Selecionar documentos para acórdão - Gabinete",
       "autuacao": "08/07/2026",
       "desde": "08/07/2026",
-      "dias_tramitando": 34,
+      "dias_tramitando": 35,
       "julgado": true,
       "data_julgamento": "04/07/2026",
       "teor": "Julgado improcedente o pedido em 04/07/2026",
@@ -5749,9 +5775,9 @@
       "processo": "0600242-14.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "REC no(a) Rp",
-      "tarefa_atual": "Visualizar expediente DJE",
+      "tarefa_atual": "Processo com prazo em curso",
       "autuacao": "07/08/2026",
-      "desde": "08/08/2026",
+      "desde": "12/08/2026",
       "dias_tramitando": 5,
       "julgado": true,
       "data_julgamento": "03/08/2026",
@@ -6286,8 +6312,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "12/08/2026 18:51",
+  "publicado_em": "12/08/2026 18:54",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "785a20d4a1fd8e1e91ca2d77368171deb66d1eb45a1f86b7cf9ae07766d70f48"
+  "hash_publicacao": "31b201ca1bb8f2319456b0ba1724928dfd42ac0ee889b005c11fce96a8379225"
 }
