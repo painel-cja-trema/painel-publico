@@ -47,7 +47,7 @@
       "media_dias": 35.1,
       "maior_tempo": 106,
       "urgentes": 0,
-      "minutar": 1,
+      "minutar": 0,
       "julgados": 5,
       "percentual_julgados": 64.3,
       "arquivados": 4,
@@ -219,7 +219,7 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Minutar ato",
+      "tarefa_atual": "Assinar ato",
       "quantidade": 1
     }
   ],
@@ -432,20 +432,6 @@
       "teor": "",
       "segredo_justica": "NÃO",
       "responsavel_processo": ""
-    },
-    {
-      "processo": "0600849-27.2026.6.10.0000",
-      "gabinete": "Gab. JA 3",
-      "classe": "Rp",
-      "tarefa_atual": "Minutar ato",
-      "autuacao": "12/08/2026",
-      "desde": "12/08/2026",
-      "dias_tramitando": 0,
-      "julgado": false,
-      "data_julgamento": "",
-      "teor": "",
-      "segredo_justica": "NÃO",
-      "responsavel_processo": ""
     }
   ],
   "tarefas_criticas": {
@@ -513,8 +499,8 @@
         "contagens": {
           "TRIAGEM_URGENTE": 0,
           "TRIAGEM_ORDINARIA": 1,
-          "MINUTAR_ATO": 1,
-          "ASSINAR_ATO": 0,
+          "MINUTAR_ATO": 0,
+          "ASSINAR_ATO": 1,
           "LANCAR_MOVIMENTACAO": 0
         }
       }
@@ -522,8 +508,8 @@
     "totais": {
       "TRIAGEM_URGENTE": 0,
       "TRIAGEM_ORDINARIA": 3,
-      "MINUTAR_ATO": 3,
-      "ASSINAR_ATO": 0,
+      "MINUTAR_ATO": 2,
+      "ASSINAR_ATO": 1,
       "LANCAR_MOVIMENTACAO": 1
     },
     "total_acervo": 80
@@ -602,12 +588,14 @@
         "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
-      },
+      }
+    ],
+    "ASSINAR_ATO": [
       {
         "processo": "0600849-27.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Minutar ato",
+        "tarefa_atual": "Assinar ato",
         "autuacao": "12/08/2026",
         "desde": "12/08/2026",
         "dias_tramitando": 0,
@@ -618,7 +606,6 @@
         "responsavel_processo": ""
       }
     ],
-    "ASSINAR_ATO": [],
     "LANCAR_MOVIMENTACAO": [
       {
         "processo": "0600162-50.2026.6.10.0000",
@@ -732,16 +719,6 @@
         "total": 2
       },
       {
-        "codigo": "minutar-ato",
-        "tarefa": "Minutar ato",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 2
-      },
-      {
         "codigo": "realizar-triagem-ordinarios",
         "tarefa": "Realizar triagem ordinários",
         "contagens": {
@@ -832,6 +809,16 @@
         "total": 1
       },
       {
+        "codigo": "assinar-ato",
+        "tarefa": "Assinar ato",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
         "codigo": "conferir-relatorio-voto-e-ementa",
         "tarefa": "Conferir Relatório, Voto e Ementa",
         "contagens": {
@@ -864,6 +851,16 @@
       {
         "codigo": "minutar-relatorio-voto-e-ementa",
         "tarefa": "Minutar Relatório, Voto e Ementa",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "minutar-ato",
+        "tarefa": "Minutar ato",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -1769,36 +1766,6 @@
         "responsavel_processo": ""
       }
     ],
-    "minutar-ato": [
-      {
-        "processo": "0600252-58.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Minutar ato",
-        "autuacao": "28/07/2026",
-        "desde": "12/08/2026",
-        "dias_tramitando": 15,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600849-27.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Minutar ato",
-        "autuacao": "12/08/2026",
-        "desde": "12/08/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "realizar-triagem-ordinarios": [
       {
         "processo": "0600238-74.2026.6.10.0000",
@@ -1957,6 +1924,22 @@
         "responsavel_processo": ""
       }
     ],
+    "assinar-ato": [
+      {
+        "processo": "0600849-27.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "12/08/2026",
+        "desde": "12/08/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "conferir-relatorio-voto-e-ementa": [
       {
         "processo": "0600193-70.2026.6.10.0000",
@@ -2017,6 +2000,22 @@
         "julgado": true,
         "data_julgamento": "15/07/2026",
         "teor": "Julgado procedente o pedido em 15/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "minutar-ato": [
+      {
+        "processo": "0600252-58.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Minutar ato",
+        "autuacao": "28/07/2026",
+        "desde": "12/08/2026",
+        "dias_tramitando": 15,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -3202,7 +3201,7 @@
         "processo": "0600849-27.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Minutar ato",
+        "tarefa_atual": "Assinar ato",
         "autuacao": "12/08/2026",
         "desde": "12/08/2026",
         "dias_tramitando": 0,
@@ -4299,7 +4298,7 @@
       "processo": "0600849-27.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Minutar ato",
+      "tarefa_atual": "Assinar ato",
       "autuacao": "12/08/2026",
       "desde": "12/08/2026",
       "dias_tramitando": 0,
@@ -5507,7 +5506,7 @@
       "processo": "0600849-27.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Minutar ato",
+      "tarefa_atual": "Assinar ato",
       "autuacao": "12/08/2026",
       "desde": "12/08/2026",
       "dias_tramitando": 0,
@@ -6522,8 +6521,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "12/08/2026 22:53",
+  "publicado_em": "12/08/2026 22:59",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "61a661fde99bbf7242ec5752ae9ce3963642ac891ca67c14369fb5d9754f9682"
+  "hash_publicacao": "a65e4bbf4bba25718c17c809fa2c5c4d2fd8bf63c450b1f05a68ed3a9b09fcc9"
 }
