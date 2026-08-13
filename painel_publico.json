@@ -13,7 +13,7 @@
       "media_dias": 46.8,
       "maior_tempo": 127,
       "urgentes": 0,
-      "minutar": 0,
+      "minutar": 1,
       "julgados": 10,
       "percentual_julgados": 76.9,
       "arquivados": 5,
@@ -89,7 +89,7 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação",
+      "tarefa_atual": "Analisar Petição Avulsa; Elaborar Documentos",
       "quantidade": 1
     },
     {
@@ -104,12 +104,12 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Elaborar documentos - Magistrado Assinar; Preparar comunicação",
+      "tarefa_atual": "Elaborar documentos - Magistrado Assinar; Visualizar expediente DJE",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Processos retirados de julgamento; Realizar triagem ordinários",
+      "tarefa_atual": "Minutar ato; Processos retirados de julgamento",
       "quantidade": 1
     },
     {
@@ -149,12 +149,12 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Analisar Petição Avulsa; Analisar Petição Avulsa; Analisar petição avulsa de autuação; Petições não lidas; Processo com prazo em curso",
+      "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Analisar Processos; Registrar recurso",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar Petição Avulsa; Analisar petição avulsa de autuação; Petições não lidas; Processo com prazo em curso",
       "quantidade": 1
     },
     {
@@ -194,12 +194,12 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Aguarda Julgamento - incluído em pauta virtual; Elaborar extrato da ata; Elaborar extrato da ata; Processo incluído em pauta virtual; Selecionar documentos para acórdão - Gabinete; Selecionar documentos para acórdão - Gabinete",
+      "tarefa_atual": "Aguarda Julgamento - incluído em pauta virtual; Elaborar extrato da ata; Processo incluído em pauta virtual; Selecionar documentos para acórdão - Gabinete",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Aguarda Julgamento - incluído em pauta virtual; Elaborar extrato da ata; Processo incluído em pauta virtual; Selecionar documentos para acórdão - Gabinete",
+      "tarefa_atual": "Analisar Processos; Elaborar extrato da ata; Elaborar extrato da ata; Processo julgado; Selecionar documentos para acórdão - Gabinete; Selecionar documentos para acórdão - Gabinete",
       "quantidade": 1
     },
     {
@@ -331,7 +331,7 @@
       "processo": "0600155-58.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Processos retirados de julgamento; Realizar triagem ordinários",
+      "tarefa_atual": "Minutar ato; Processos retirados de julgamento",
       "dias_tramitando": 81,
       "segredo_justica": "NÃO"
     },
@@ -363,7 +363,7 @@
       "processo": "0600162-50.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Elaborar documentos - Magistrado Assinar; Preparar comunicação",
+      "tarefa_atual": "Elaborar documentos - Magistrado Assinar; Visualizar expediente DJE",
       "dias_tramitando": 77,
       "segredo_justica": "NÃO"
     },
@@ -408,8 +408,28 @@
       "segredo_justica": "NÃO"
     }
   ],
-  "minutar_cja1": [],
+  "minutar_cja1": [
+    {
+      "processo": "0600155-58.2026.6.10.0000",
+      "classe": "Rp",
+      "dias_tramitando": 81
+    }
+  ],
   "minutar_processos": [
+    {
+      "processo": "0600155-58.2026.6.10.0000",
+      "gabinete": "Gab. JA 1",
+      "classe": "Rp",
+      "tarefa_atual": "Minutar ato; Processos retirados de julgamento",
+      "autuacao": "23/05/2026",
+      "desde": "23/05/2026",
+      "dias_tramitando": 81,
+      "julgado": false,
+      "data_julgamento": "",
+      "teor": "",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
+    },
     {
       "processo": "0600252-58.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
@@ -465,8 +485,8 @@
         "total_acervo": 26,
         "contagens": {
           "TRIAGEM_URGENTE": 0,
-          "TRIAGEM_ORDINARIA": 1,
-          "MINUTAR_ATO": 0,
+          "TRIAGEM_ORDINARIA": 0,
+          "MINUTAR_ATO": 1,
           "ASSINAR_ATO": 1,
           "LANCAR_MOVIMENTACAO": 0
         }
@@ -498,8 +518,8 @@
     ],
     "totais": {
       "TRIAGEM_URGENTE": 0,
-      "TRIAGEM_ORDINARIA": 5,
-      "MINUTAR_ATO": 1,
+      "TRIAGEM_ORDINARIA": 4,
+      "MINUTAR_ATO": 2,
       "ASSINAR_ATO": 2,
       "LANCAR_MOVIMENTACAO": 0
     },
@@ -508,20 +528,6 @@
   "tarefas_criticas_processos": {
     "TRIAGEM_URGENTE": [],
     "TRIAGEM_ORDINARIA": [
-      {
-        "processo": "0600155-58.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Processos retirados de julgamento; Realizar triagem ordinários",
-        "autuacao": "23/05/2026",
-        "desde": "23/05/2026",
-        "dias_tramitando": 81,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
       {
         "processo": "0600168-57.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
@@ -580,6 +586,20 @@
       }
     ],
     "MINUTAR_ATO": [
+      {
+        "processo": "0600155-58.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Minutar ato; Processos retirados de julgamento",
+        "autuacao": "23/05/2026",
+        "desde": "23/05/2026",
+        "dias_tramitando": 81,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
       {
         "processo": "0600252-58.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
@@ -763,21 +783,21 @@
         "total": 2
       },
       {
-        "codigo": "aguarda-julgamento-incluido-em-pauta-virtual-elaborar-extrato-da-ata-elaborar-extrato-da-ata-processo-incluido-em-pauta-virtual-selecionar-documentos-para-acordao-gabinete-selecionar-documentos-para-acordao-gabinete",
-        "tarefa": "Aguarda Julgamento - incluído em pauta virtual; Elaborar extrato da ata; Elaborar extrato da ata; Processo incluído em pauta virtual; Selecionar documentos para acórdão - Gabinete; Selecionar documentos para acórdão - Gabinete",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
         "codigo": "aguarda-sessao-de-julgamento-virtual-elaborar-extrato-da-ata-pauta-provisoria-virtual-selecionar-documentos-para-acordao-gabinete",
         "tarefa": "Aguarda Sessão de Julgamento Virtual; Elaborar extrato da ata; Pauta provisória virtual; Selecionar documentos para acórdão - Gabinete",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "aguardando-julgamento-do-recurso-interno-registrar-recurso",
+        "tarefa": "Aguardando julgamento do recurso interno; Registrar recurso",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -793,12 +813,22 @@
         "total": 1
       },
       {
-        "codigo": "analisar-peticao-avulsa-analisar-determinacao",
-        "tarefa": "Analisar Petição Avulsa; Analisar determinação",
+        "codigo": "analisar-peticao-avulsa-elaborar-documentos",
+        "tarefa": "Analisar Petição Avulsa; Elaborar Documentos",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "analisar-processos-elaborar-extrato-da-ata-elaborar-extrato-da-ata-processo-julgado-selecionar-documentos-para-acordao-gabinete-selecionar-documentos-para-acordao-gabinete",
+        "tarefa": "Analisar Processos; Elaborar extrato da ata; Elaborar extrato da ata; Processo julgado; Selecionar documentos para acórdão - Gabinete; Selecionar documentos para acórdão - Gabinete",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 1
       },
@@ -823,16 +853,6 @@
         "total": 1
       },
       {
-        "codigo": "analisar-processos-registrar-recurso",
-        "tarefa": "Analisar Processos; Registrar recurso",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
         "codigo": "elaborar-documentos",
         "tarefa": "Elaborar Documentos",
         "contagens": {
@@ -843,8 +863,8 @@
         "total": 1
       },
       {
-        "codigo": "elaborar-documentos-magistrado-assinar-preparar-comunicacao",
-        "tarefa": "Elaborar documentos - Magistrado Assinar; Preparar comunicação",
+        "codigo": "elaborar-documentos-magistrado-assinar-visualizar-expediente-dje",
+        "tarefa": "Elaborar documentos - Magistrado Assinar; Visualizar expediente DJE",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -858,6 +878,16 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "minutar-ato-processos-retirados-de-julgamento",
+        "tarefa": "Minutar ato; Processos retirados de julgamento",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -878,16 +908,6 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "processos-retirados-de-julgamento-realizar-triagem-ordinarios",
-        "tarefa": "Processos retirados de julgamento; Realizar triagem ordinários",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -1798,7 +1818,7 @@
         "tarefa_atual": "Aguardando providências",
         "autuacao": "23/07/2026",
         "desde": "12/08/2026",
-        "dias_tramitando": 20,
+        "dias_tramitando": 21,
         "julgado": true,
         "data_julgamento": "18/07/2026",
         "teor": "Julgado improcedente o pedido em 18/07/2026",
@@ -1880,22 +1900,6 @@
         "responsavel_processo": ""
       }
     ],
-    "aguarda-julgamento-incluido-em-pauta-virtual-elaborar-extrato-da-ata-elaborar-extrato-da-ata-processo-incluido-em-pauta-virtual-selecionar-documentos-para-acordao-gabinete-selecionar-documentos-para-acordao-gabinete": [
-      {
-        "processo": "0600173-79.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Aguarda Julgamento - incluído em pauta virtual; Elaborar extrato da ata; Elaborar extrato da ata; Processo incluído em pauta virtual; Selecionar documentos para acórdão - Gabinete; Selecionar documentos para acórdão - Gabinete",
-        "autuacao": "09/07/2026",
-        "desde": "09/07/2026",
-        "dias_tramitando": 34,
-        "julgado": true,
-        "data_julgamento": "07/07/2026",
-        "teor": "Julgado improcedente o pedido em 07/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "aguarda-sessao-de-julgamento-virtual-elaborar-extrato-da-ata-pauta-provisoria-virtual-selecionar-documentos-para-acordao-gabinete": [
       {
         "processo": "0600225-75.2026.6.10.0000",
@@ -1908,6 +1912,22 @@
         "julgado": true,
         "data_julgamento": "20/07/2026",
         "teor": "Julgado improcedente o pedido em 20/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "aguardando-julgamento-do-recurso-interno-registrar-recurso": [
+      {
+        "processo": "0600245-66.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
+        "autuacao": "13/08/2026",
+        "desde": "13/08/2026",
+        "dias_tramitando": 0,
+        "julgado": true,
+        "data_julgamento": "06/08/2026",
+        "teor": "Julgado procedente em parte do pedido em 06/08/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -1928,18 +1948,34 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-peticao-avulsa-analisar-determinacao": [
+    "analisar-peticao-avulsa-elaborar-documentos": [
       {
         "processo": "0600364-27.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação",
+        "tarefa_atual": "Analisar Petição Avulsa; Elaborar Documentos",
         "autuacao": "04/08/2026",
         "desde": "04/08/2026",
         "dias_tramitando": 9,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-processos-elaborar-extrato-da-ata-elaborar-extrato-da-ata-processo-julgado-selecionar-documentos-para-acordao-gabinete-selecionar-documentos-para-acordao-gabinete": [
+      {
+        "processo": "0600173-79.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Analisar Processos; Elaborar extrato da ata; Elaborar extrato da ata; Processo julgado; Selecionar documentos para acórdão - Gabinete; Selecionar documentos para acórdão - Gabinete",
+        "autuacao": "09/07/2026",
+        "desde": "09/07/2026",
+        "dias_tramitando": 34,
+        "julgado": true,
+        "data_julgamento": "07/07/2026",
+        "teor": "Julgado improcedente o pedido em 07/07/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -1976,22 +2012,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-processos-registrar-recurso": [
-      {
-        "processo": "0600245-66.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos; Registrar recurso",
-        "autuacao": "13/08/2026",
-        "desde": "13/08/2026",
-        "dias_tramitando": 0,
-        "julgado": true,
-        "data_julgamento": "06/08/2026",
-        "teor": "Julgado procedente em parte do pedido em 06/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "elaborar-documentos": [
       {
         "processo": "0600248-21.2026.6.10.0000",
@@ -2008,12 +2028,12 @@
         "responsavel_processo": ""
       }
     ],
-    "elaborar-documentos-magistrado-assinar-preparar-comunicacao": [
+    "elaborar-documentos-magistrado-assinar-visualizar-expediente-dje": [
       {
         "processo": "0600162-50.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Elaborar documentos - Magistrado Assinar; Preparar comunicação",
+        "tarefa_atual": "Elaborar documentos - Magistrado Assinar; Visualizar expediente DJE",
         "autuacao": "27/05/2026",
         "desde": "27/05/2026",
         "dias_tramitando": 77,
@@ -2033,6 +2053,22 @@
         "autuacao": "28/07/2026",
         "desde": "12/08/2026",
         "dias_tramitando": 16,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "minutar-ato-processos-retirados-de-julgamento": [
+      {
+        "processo": "0600155-58.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Minutar ato; Processos retirados de julgamento",
+        "autuacao": "23/05/2026",
+        "desde": "23/05/2026",
+        "dias_tramitando": 81,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -2065,22 +2101,6 @@
         "autuacao": "08/08/2026",
         "desde": "08/08/2026",
         "dias_tramitando": 5,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "processos-retirados-de-julgamento-realizar-triagem-ordinarios": [
-      {
-        "processo": "0600155-58.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Processos retirados de julgamento; Realizar triagem ordinários",
-        "autuacao": "23/05/2026",
-        "desde": "23/05/2026",
-        "dias_tramitando": 81,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -2153,7 +2173,7 @@
         "processo": "0600155-58.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Processos retirados de julgamento; Realizar triagem ordinários",
+        "tarefa_atual": "Minutar ato; Processos retirados de julgamento",
         "autuacao": "23/05/2026",
         "desde": "23/05/2026",
         "dias_tramitando": 81,
@@ -2209,7 +2229,7 @@
         "processo": "0600162-50.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Elaborar documentos - Magistrado Assinar; Preparar comunicação",
+        "tarefa_atual": "Elaborar documentos - Magistrado Assinar; Visualizar expediente DJE",
         "autuacao": "27/05/2026",
         "desde": "27/05/2026",
         "dias_tramitando": 77,
@@ -2419,7 +2439,7 @@
         "processo": "0600364-27.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação",
+        "tarefa_atual": "Analisar Petição Avulsa; Elaborar Documentos",
         "autuacao": "04/08/2026",
         "desde": "04/08/2026",
         "dias_tramitando": 9,
@@ -2788,7 +2808,7 @@
         "tarefa_atual": "Aguardando providências",
         "autuacao": "23/07/2026",
         "desde": "12/08/2026",
-        "dias_tramitando": 20,
+        "dias_tramitando": 21,
         "julgado": true,
         "data_julgamento": "18/07/2026",
         "teor": "Julgado improcedente o pedido em 18/07/2026",
@@ -3037,7 +3057,7 @@
         "processo": "0600245-66.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos; Registrar recurso",
+        "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
         "autuacao": "13/08/2026",
         "desde": "13/08/2026",
         "dias_tramitando": 0,
@@ -3151,7 +3171,7 @@
         "processo": "0600173-79.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Aguarda Julgamento - incluído em pauta virtual; Elaborar extrato da ata; Elaborar extrato da ata; Processo incluído em pauta virtual; Selecionar documentos para acórdão - Gabinete; Selecionar documentos para acórdão - Gabinete",
+        "tarefa_atual": "Analisar Processos; Elaborar extrato da ata; Elaborar extrato da ata; Processo julgado; Selecionar documentos para acórdão - Gabinete; Selecionar documentos para acórdão - Gabinete",
         "autuacao": "09/07/2026",
         "desde": "09/07/2026",
         "dias_tramitando": 34,
@@ -3716,7 +3736,7 @@
       "processo": "0600155-58.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Processos retirados de julgamento; Realizar triagem ordinários",
+      "tarefa_atual": "Minutar ato; Processos retirados de julgamento",
       "autuacao": "23/05/2026",
       "desde": "23/05/2026",
       "dias_tramitando": 81,
@@ -3772,7 +3792,7 @@
       "processo": "0600162-50.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Elaborar documentos - Magistrado Assinar; Preparar comunicação",
+      "tarefa_atual": "Elaborar documentos - Magistrado Assinar; Visualizar expediente DJE",
       "autuacao": "27/05/2026",
       "desde": "27/05/2026",
       "dias_tramitando": 77,
@@ -4262,7 +4282,7 @@
       "processo": "0600364-27.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação",
+      "tarefa_atual": "Analisar Petição Avulsa; Elaborar Documentos",
       "autuacao": "04/08/2026",
       "desde": "04/08/2026",
       "dias_tramitando": 9,
@@ -4924,7 +4944,7 @@
       "processo": "0600155-58.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Processos retirados de julgamento; Realizar triagem ordinários",
+      "tarefa_atual": "Minutar ato; Processos retirados de julgamento",
       "autuacao": "23/05/2026",
       "desde": "23/05/2026",
       "dias_tramitando": 81,
@@ -4980,7 +5000,7 @@
       "processo": "0600162-50.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Elaborar documentos - Magistrado Assinar; Preparar comunicação",
+      "tarefa_atual": "Elaborar documentos - Magistrado Assinar; Visualizar expediente DJE",
       "autuacao": "27/05/2026",
       "desde": "27/05/2026",
       "dias_tramitando": 77,
@@ -5470,7 +5490,7 @@
       "processo": "0600364-27.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação",
+      "tarefa_atual": "Analisar Petição Avulsa; Elaborar Documentos",
       "autuacao": "04/08/2026",
       "desde": "04/08/2026",
       "dias_tramitando": 9,
@@ -5766,7 +5786,7 @@
       "processo": "0600173-79.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "REC no(a) Rp",
-      "tarefa_atual": "Aguarda Julgamento - incluído em pauta virtual; Elaborar extrato da ata; Elaborar extrato da ata; Processo incluído em pauta virtual; Selecionar documentos para acórdão - Gabinete; Selecionar documentos para acórdão - Gabinete",
+      "tarefa_atual": "Analisar Processos; Elaborar extrato da ata; Elaborar extrato da ata; Processo julgado; Selecionar documentos para acórdão - Gabinete; Selecionar documentos para acórdão - Gabinete",
       "autuacao": "09/07/2026",
       "desde": "09/07/2026",
       "dias_tramitando": 34,
@@ -5895,7 +5915,7 @@
       "tarefa_atual": "Aguardando providências",
       "autuacao": "23/07/2026",
       "desde": "12/08/2026",
-      "dias_tramitando": 20,
+      "dias_tramitando": 21,
       "julgado": true,
       "data_julgamento": "18/07/2026",
       "teor": "Julgado improcedente o pedido em 18/07/2026",
@@ -6088,7 +6108,7 @@
       "processo": "0600245-66.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "REC no(a) Rp",
-      "tarefa_atual": "Analisar Processos; Registrar recurso",
+      "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
       "autuacao": "13/08/2026",
       "desde": "13/08/2026",
       "dias_tramitando": 0,
@@ -6597,8 +6617,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "13/08/2026 14:37",
+  "publicado_em": "13/08/2026 14:46",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "bf0f1dd28ab683d8c5eb1c095cdc663a9ba3154a017ec2306006f92fc23323e7"
+  "hash_publicacao": "a9cf98ef1209175f43bbb8e4e5bfaa30260100084f1433a20f0150c4e39cbeca"
 }
