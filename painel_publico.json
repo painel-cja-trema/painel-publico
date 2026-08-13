@@ -154,17 +154,12 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Analisar Processos",
+      "tarefa_atual": "Analisar Processos; Registrar recurso",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Analisar determinação",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Analisar resposta do expediente; Petições não lidas",
       "quantidade": 1
     },
     {
@@ -180,6 +175,11 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Minutar ato",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
       "quantidade": 1
     },
     {
@@ -794,8 +794,8 @@
         "total": 1
       },
       {
-        "codigo": "analisar-processos",
-        "tarefa": "Analisar Processos",
+        "codigo": "analisar-processos-registrar-recurso",
+        "tarefa": "Analisar Processos; Registrar recurso",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -809,16 +809,6 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "analisar-resposta-do-expediente-peticoes-nao-lidas",
-        "tarefa": "Analisar resposta do expediente; Petições não lidas",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -850,6 +840,16 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
+        "codigo": "peticoes-nao-lidas-processo-com-prazo-em-curso",
+        "tarefa": "Petições não lidas; Processo com prazo em curso",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
       },
@@ -1949,12 +1949,12 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-processos": [
+    "analisar-processos-registrar-recurso": [
       {
         "processo": "0600245-66.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos",
+        "tarefa_atual": "Analisar Processos; Registrar recurso",
         "autuacao": "13/08/2026",
         "desde": "13/08/2026",
         "dias_tramitando": 0,
@@ -1974,22 +1974,6 @@
         "autuacao": "23/05/2026",
         "desde": "23/05/2026",
         "dias_tramitando": 81,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "analisar-resposta-do-expediente-peticoes-nao-lidas": [
-      {
-        "processo": "0600480-33.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar resposta do expediente; Petições não lidas",
-        "autuacao": "08/08/2026",
-        "desde": "08/08/2026",
-        "dias_tramitando": 5,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -2037,6 +2021,22 @@
         "tarefa_atual": "Petições não lidas; Petições não lidas; Realizar triagem ordinários",
         "autuacao": "07/08/2026",
         "desde": "07/08/2026",
+        "dias_tramitando": 5,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "peticoes-nao-lidas-processo-com-prazo-em-curso": [
+      {
+        "processo": "0600480-33.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+        "autuacao": "08/08/2026",
+        "desde": "08/08/2026",
         "dias_tramitando": 5,
         "julgado": false,
         "data_julgamento": "",
@@ -2938,7 +2938,7 @@
         "processo": "0600480-33.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Analisar resposta do expediente; Petições não lidas",
+        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
         "autuacao": "08/08/2026",
         "desde": "08/08/2026",
         "dias_tramitando": 5,
@@ -2994,7 +2994,7 @@
         "processo": "0600245-66.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos",
+        "tarefa_atual": "Analisar Processos; Registrar recurso",
         "autuacao": "13/08/2026",
         "desde": "13/08/2026",
         "dias_tramitando": 0,
@@ -4275,7 +4275,7 @@
       "processo": "0600480-33.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar resposta do expediente; Petições não lidas",
+      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
       "autuacao": "08/08/2026",
       "desde": "08/08/2026",
       "dias_tramitando": 5,
@@ -5483,7 +5483,7 @@
       "processo": "0600480-33.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar resposta do expediente; Petições não lidas",
+      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
       "autuacao": "08/08/2026",
       "desde": "08/08/2026",
       "dias_tramitando": 5,
@@ -6045,7 +6045,7 @@
       "processo": "0600245-66.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "REC no(a) Rp",
-      "tarefa_atual": "Analisar Processos",
+      "tarefa_atual": "Analisar Processos; Registrar recurso",
       "autuacao": "13/08/2026",
       "desde": "13/08/2026",
       "dias_tramitando": 0,
@@ -6554,8 +6554,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "13/08/2026 12:27",
+  "publicado_em": "13/08/2026 12:33",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "748bf38b140841fdc263e092fc5eae2a2a001938b8277163f9b14ae1c497f752"
+  "hash_publicacao": "d2cedcbc9c35648d4c0f0bd44cb96873b40b7a6dbb38add2f143297a20bc2a77"
 }
