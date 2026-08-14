@@ -149,17 +149,7 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Analisar Processos",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Analisar determinação",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Analisar resposta do expediente; Registrar recurso",
       "quantidade": 1
     },
     {
@@ -175,6 +165,16 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Preparar comunicação",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
       "quantidade": 1
     },
     {
@@ -874,16 +874,6 @@
         "total": 1
       },
       {
-        "codigo": "analisar-processos",
-        "tarefa": "Analisar Processos",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
         "codigo": "analisar-processos-elaborar-extrato-da-ata-processo-julgado-revisar-acordao-ou-resolucao-gabinete",
         "tarefa": "Analisar Processos; Elaborar extrato da ata; Processo julgado; Revisar acórdão ou resolução - Gabinete",
         "contagens": {
@@ -914,8 +904,18 @@
         "total": 1
       },
       {
-        "codigo": "analisar-resposta-do-expediente-registrar-recurso",
-        "tarefa": "Analisar resposta do expediente; Registrar recurso",
+        "codigo": "preparar-comunicacao",
+        "tarefa": "Preparar comunicação",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "processo-com-prazo-em-curso-registrar-recurso",
+        "tarefa": "Processo com prazo em curso; Registrar recurso",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -2079,22 +2079,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-processos": [
-      {
-        "processo": "0600357-35.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Ag no(a) RepEsp",
-        "tarefa_atual": "Analisar Processos",
-        "autuacao": "13/08/2026",
-        "desde": "14/08/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "analisar-processos-elaborar-extrato-da-ata-processo-julgado-revisar-acordao-ou-resolucao-gabinete": [
       {
         "processo": "0600173-79.2026.6.10.0000",
@@ -2143,12 +2127,28 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-resposta-do-expediente-registrar-recurso": [
+    "preparar-comunicacao": [
+      {
+        "processo": "0600357-35.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Ag no(a) RepEsp",
+        "tarefa_atual": "Preparar comunicação",
+        "autuacao": "13/08/2026",
+        "desde": "14/08/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "processo-com-prazo-em-curso-registrar-recurso": [
       {
         "processo": "0600256-95.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Analisar resposta do expediente; Registrar recurso",
+        "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
         "autuacao": "30/07/2026",
         "desde": "30/07/2026",
         "dias_tramitando": 14,
@@ -3028,7 +3028,7 @@
         "processo": "0600256-95.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Analisar resposta do expediente; Registrar recurso",
+        "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
         "autuacao": "30/07/2026",
         "desde": "30/07/2026",
         "dias_tramitando": 14,
@@ -3196,7 +3196,7 @@
         "processo": "0600357-35.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Ag no(a) RepEsp",
-        "tarefa_atual": "Analisar Processos",
+        "tarefa_atual": "Preparar comunicação",
         "autuacao": "13/08/2026",
         "desde": "14/08/2026",
         "dias_tramitando": 0,
@@ -4365,7 +4365,7 @@
       "processo": "0600256-95.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar resposta do expediente; Registrar recurso",
+      "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
       "autuacao": "30/07/2026",
       "desde": "30/07/2026",
       "dias_tramitando": 14,
@@ -5615,7 +5615,7 @@
       "processo": "0600256-95.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar resposta do expediente; Registrar recurso",
+      "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
       "autuacao": "30/07/2026",
       "desde": "30/07/2026",
       "dias_tramitando": 14,
@@ -6359,7 +6359,7 @@
       "processo": "0600357-35.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Ag no(a) RepEsp",
-      "tarefa_atual": "Analisar Processos",
+      "tarefa_atual": "Preparar comunicação",
       "autuacao": "13/08/2026",
       "desde": "14/08/2026",
       "dias_tramitando": 0,
@@ -6842,7 +6842,7 @@
       "processo": "0600256-95.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar resposta do expediente; Registrar recurso",
+      "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
       "autuacao": "30/07/2026",
       "desde": "30/07/2026",
       "dias_tramitando": 14,
@@ -6868,8 +6868,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "14/08/2026 08:48",
+  "publicado_em": "14/08/2026 08:51",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "1e0acf6734b2fae70b16c8dcf9a3429e94eb6da8ad355896dfcc6e59e227b47a"
+  "hash_publicacao": "af8a48a4ce2ffb8fc1f58ade50b04ecb224485df28f1183a7a53406bec3536cd"
 }
