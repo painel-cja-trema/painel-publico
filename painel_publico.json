@@ -129,7 +129,7 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "quantidade": 3
     },
     {
@@ -392,7 +392,7 @@
       "processo": "0600168-57.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "dias_tramitando": 74,
       "segredo_justica": "NÃO"
     },
@@ -498,8 +498,8 @@
           "TRIAGEM_URGENTE": 0,
           "TRIAGEM_ORDINARIA": 2,
           "MINUTAR_ATO": 1,
-          "ASSINAR_ATO": 3,
-          "LANCAR_MOVIMENTACAO": 0
+          "ASSINAR_ATO": 0,
+          "LANCAR_MOVIMENTACAO": 3
         }
       },
       {
@@ -519,8 +519,8 @@
       "TRIAGEM_URGENTE": 0,
       "TRIAGEM_ORDINARIA": 3,
       "MINUTAR_ATO": 2,
-      "ASSINAR_ATO": 8,
-      "LANCAR_MOVIMENTACAO": 0
+      "ASSINAR_ATO": 5,
+      "LANCAR_MOVIMENTACAO": 3
     },
     "total_acervo": 88
   },
@@ -602,20 +602,6 @@
     ],
     "ASSINAR_ATO": [
       {
-        "processo": "0600168-57.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "01/06/2026",
-        "desde": "14/08/2026",
-        "dias_tramitando": 74,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
         "processo": "0600364-27.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
@@ -626,20 +612,6 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600245-66.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "13/08/2026",
-        "desde": "14/08/2026",
-        "dias_tramitando": 1,
-        "julgado": true,
-        "data_julgamento": "06/08/2026",
-        "teor": "Julgado procedente em parte do pedido em 06/08/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -698,12 +670,42 @@
         "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
+      }
+    ],
+    "LANCAR_MOVIMENTACAO": [
+      {
+        "processo": "0600168-57.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Lançar movimento",
+        "autuacao": "01/06/2026",
+        "desde": "14/08/2026",
+        "dias_tramitando": 74,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600245-66.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Lançar movimento",
+        "autuacao": "13/08/2026",
+        "desde": "14/08/2026",
+        "dias_tramitando": 1,
+        "julgado": true,
+        "data_julgamento": "06/08/2026",
+        "teor": "Julgado procedente em parte do pedido em 06/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
       },
       {
         "processo": "0600255-13.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Assinar ato",
+        "tarefa_atual": "Lançar movimento",
         "autuacao": "14/08/2026",
         "desde": "14/08/2026",
         "dias_tramitando": 0,
@@ -713,8 +715,7 @@
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
-    ],
-    "LANCAR_MOVIMENTACAO": []
+    ]
   },
   "entrada_comissao": {
     "codigo": "LIMINAR_CERTIFICACAO",
@@ -766,10 +767,10 @@
         "tarefa": "Assinar ato",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 5,
-          "Gabinete Juiz Auxiliar 2": 3,
+          "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
         },
-        "total": 8
+        "total": 5
       },
       {
         "codigo": "aguarda-julgamento-incluido-em-pauta-virtual-elaborar-extrato-da-ata-processo-incluido-em-pauta-virtual-selecionar-documentos-para-acordao-gabinete",
@@ -797,6 +798,16 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 2,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 3
+      },
+      {
+        "codigo": "lancar-movimento",
+        "tarefa": "Lançar movimento",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 3,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 3
@@ -1607,20 +1618,6 @@
     ],
     "assinar-ato": [
       {
-        "processo": "0600168-57.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "01/06/2026",
-        "desde": "14/08/2026",
-        "dias_tramitando": 74,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
         "processo": "0600364-27.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
@@ -1631,20 +1628,6 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600245-66.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "13/08/2026",
-        "desde": "14/08/2026",
-        "dias_tramitando": 1,
-        "julgado": true,
-        "data_julgamento": "06/08/2026",
-        "teor": "Julgado procedente em parte do pedido em 06/08/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -1701,20 +1684,6 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600255-13.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "14/08/2026",
-        "desde": "14/08/2026",
-        "dias_tramitando": 0,
-        "julgado": true,
-        "data_julgamento": "07/08/2026",
-        "teor": "Julgado improcedente o pedido em 07/08/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -1861,6 +1830,50 @@
         "julgado": true,
         "data_julgamento": "09/07/2026",
         "teor": "Julgado procedente o pedido em 09/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "lancar-movimento": [
+      {
+        "processo": "0600168-57.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Lançar movimento",
+        "autuacao": "01/06/2026",
+        "desde": "14/08/2026",
+        "dias_tramitando": 74,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600245-66.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Lançar movimento",
+        "autuacao": "13/08/2026",
+        "desde": "14/08/2026",
+        "dias_tramitando": 1,
+        "julgado": true,
+        "data_julgamento": "06/08/2026",
+        "teor": "Julgado procedente em parte do pedido em 06/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600255-13.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Lançar movimento",
+        "autuacao": "14/08/2026",
+        "desde": "14/08/2026",
+        "dias_tramitando": 0,
+        "julgado": true,
+        "data_julgamento": "07/08/2026",
+        "teor": "Julgado improcedente o pedido em 07/08/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -2806,7 +2819,7 @@
         "processo": "0600168-57.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
+        "tarefa_atual": "Lançar movimento",
         "autuacao": "01/06/2026",
         "desde": "14/08/2026",
         "dias_tramitando": 74,
@@ -3240,7 +3253,7 @@
         "processo": "0600245-66.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Assinar ato",
+        "tarefa_atual": "Lançar movimento",
         "autuacao": "13/08/2026",
         "desde": "14/08/2026",
         "dias_tramitando": 1,
@@ -3268,7 +3281,7 @@
         "processo": "0600255-13.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Assinar ato",
+        "tarefa_atual": "Lançar movimento",
         "autuacao": "14/08/2026",
         "desde": "14/08/2026",
         "dias_tramitando": 0,
@@ -4059,7 +4072,7 @@
       "processo": "0600168-57.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "autuacao": "01/06/2026",
       "desde": "14/08/2026",
       "dias_tramitando": 74,
@@ -5339,7 +5352,7 @@
       "processo": "0600168-57.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "autuacao": "01/06/2026",
       "desde": "14/08/2026",
       "dias_tramitando": 74,
@@ -6461,7 +6474,7 @@
       "processo": "0600245-66.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "REC no(a) Rp",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "autuacao": "13/08/2026",
       "desde": "14/08/2026",
       "dias_tramitando": 1,
@@ -6489,7 +6502,7 @@
       "processo": "0600255-13.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "REC no(a) Rp",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "autuacao": "14/08/2026",
       "desde": "14/08/2026",
       "dias_tramitando": 0,
@@ -7012,8 +7025,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "14/08/2026 15:30",
+  "publicado_em": "14/08/2026 15:33",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "d74834afe74299895e43351f0e171037b5412c82f3d7da1fa599cb5731f37dff"
+  "hash_publicacao": "12d489b7ef4a764efa0e1cb88f80f49e1d17b24f99675a1d3d429c8dd0848f8a"
 }
