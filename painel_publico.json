@@ -27,7 +27,7 @@
       "juiz": "Dra. Manuella Ribeiro",
       "distribuidor": "Eduardo Daniel Pereira Neto",
       "quantidade": 32,
-      "media_dias": 36.8,
+      "media_dias": 36.9,
       "maior_tempo": 128,
       "urgentes": 0,
       "minutar": 2,
@@ -214,11 +214,6 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas; Petições não lidas; Petições não lidas",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Analisar Processos; Elaborar extrato da ata; Revisar acórdão ou resolução - Gabinete",
       "quantidade": 1
     },
@@ -230,6 +225,11 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Minutar ato",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Petições não lidas; Petições não lidas; Petições não lidas; Processo com prazo em curso",
       "quantidade": 1
     },
     {
@@ -906,16 +906,6 @@
         "total": 1
       },
       {
-        "codigo": "analisar-peticao-avulsa-analisar-resposta-do-expediente-peticoes-nao-lidas-peticoes-nao-lidas-peticoes-nao-lidas",
-        "tarefa": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas; Petições não lidas; Petições não lidas",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
         "codigo": "analisar-peticao-avulsa-peticoes-nao-lidas-realizar-triagem-ordinarios",
         "tarefa": "Analisar Petição Avulsa; Petições não lidas; Realizar triagem ordinários",
         "contagens": {
@@ -972,6 +962,16 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "peticoes-nao-lidas-peticoes-nao-lidas-peticoes-nao-lidas-processo-com-prazo-em-curso",
+        "tarefa": "Petições não lidas; Petições não lidas; Petições não lidas; Processo com prazo em curso",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 1
       },
@@ -1341,7 +1341,7 @@
         "tarefa_atual": "Processo com prazo em curso",
         "autuacao": "14/08/2026",
         "desde": "16/08/2026",
-        "dias_tramitando": 2,
+        "dias_tramitando": 3,
         "julgado": true,
         "data_julgamento": "07/08/2026",
         "teor": "Julgado improcedente o pedido em 07/08/2026",
@@ -2145,22 +2145,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-peticao-avulsa-analisar-resposta-do-expediente-peticoes-nao-lidas-peticoes-nao-lidas-peticoes-nao-lidas": [
-      {
-        "processo": "0600926-36.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas; Petições não lidas; Petições não lidas",
-        "autuacao": "15/08/2026",
-        "desde": "15/08/2026",
-        "dias_tramitando": 1,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "analisar-peticao-avulsa-peticoes-nao-lidas-realizar-triagem-ordinarios": [
       {
         "processo": "0600108-84.2026.6.10.0000",
@@ -2253,6 +2237,22 @@
         "julgado": true,
         "data_julgamento": "11/08/2026",
         "teor": "Julgado improcedente o pedido em 11/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "peticoes-nao-lidas-peticoes-nao-lidas-peticoes-nao-lidas-processo-com-prazo-em-curso": [
+      {
+        "processo": "0600926-36.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Petições não lidas; Petições não lidas; Petições não lidas; Processo com prazo em curso",
+        "autuacao": "15/08/2026",
+        "desde": "15/08/2026",
+        "dias_tramitando": 1,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -3325,6 +3325,20 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0600255-13.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Processo com prazo em curso",
+        "autuacao": "14/08/2026",
+        "desde": "16/08/2026",
+        "dias_tramitando": 3,
+        "julgado": true,
+        "data_julgamento": "07/08/2026",
+        "teor": "Julgado improcedente o pedido em 07/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0600357-35.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Ag no(a) RepEsp",
@@ -3349,20 +3363,6 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600255-13.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Processo com prazo em curso",
-        "autuacao": "14/08/2026",
-        "desde": "16/08/2026",
-        "dias_tramitando": 2,
-        "julgado": true,
-        "data_julgamento": "07/08/2026",
-        "teor": "Julgado improcedente o pedido em 07/08/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -3610,7 +3610,7 @@
         "processo": "0600926-36.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas",
+        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
         "autuacao": "15/08/2026",
         "desde": "15/08/2026",
         "dias_tramitando": 1,
@@ -3677,7 +3677,7 @@
       "classe": "REC no(a) Rp",
       "teor": "Julgado improcedente o pedido em 07/08/2026",
       "data_julgamento": "07/08/2026",
-      "dias_tramitando": 2
+      "dias_tramitando": 3
     },
     {
       "processo": "0600255-13.2026.6.10.0000",
@@ -4763,7 +4763,7 @@
       "processo": "0600926-36.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas",
+      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
       "autuacao": "15/08/2026",
       "desde": "15/08/2026",
       "dias_tramitando": 1,
@@ -6085,7 +6085,7 @@
       "processo": "0600926-36.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas",
+      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
       "autuacao": "15/08/2026",
       "desde": "15/08/2026",
       "dias_tramitando": 1,
@@ -6673,6 +6673,20 @@
       "responsavel_processo": ""
     },
     {
+      "processo": "0600255-13.2026.6.10.0000",
+      "gabinete": "Gab. JA 2",
+      "classe": "REC no(a) Rp",
+      "tarefa_atual": "Processo com prazo em curso",
+      "autuacao": "14/08/2026",
+      "desde": "16/08/2026",
+      "dias_tramitando": 3,
+      "julgado": true,
+      "data_julgamento": "07/08/2026",
+      "teor": "Julgado improcedente o pedido em 07/08/2026",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
+    },
+    {
       "processo": "0600357-35.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Ag no(a) RepEsp",
@@ -6683,20 +6697,6 @@
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
-      "segredo_justica": "NÃO",
-      "responsavel_processo": ""
-    },
-    {
-      "processo": "0600255-13.2026.6.10.0000",
-      "gabinete": "Gab. JA 2",
-      "classe": "REC no(a) Rp",
-      "tarefa_atual": "Processo com prazo em curso",
-      "autuacao": "14/08/2026",
-      "desde": "16/08/2026",
-      "dias_tramitando": 2,
-      "julgado": true,
-      "data_julgamento": "07/08/2026",
-      "teor": "Julgado improcedente o pedido em 07/08/2026",
       "segredo_justica": "NÃO",
       "responsavel_processo": ""
     },
@@ -7213,8 +7213,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "17/08/2026 08:52",
+  "publicado_em": "17/08/2026 08:58",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "ca347907ff4714fcba39039dfc81db139da2c70aec86717f220ca3089601d8d8"
+  "hash_publicacao": "76c314e3debbd878bea0cd8c8fdfcc4dcc2d8cb77193076bf6c5798a15ca9a11"
 }
