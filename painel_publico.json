@@ -164,12 +164,7 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Fechar expediente manualmente",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Informar data de trânsito em julgado",
+      "tarefa_atual": "Elaborar Documentos",
       "quantidade": 1
     },
     {
@@ -185,6 +180,11 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Verificar Pendências",
       "quantidade": 1
     },
     {
@@ -269,7 +269,7 @@
       "processo": "0600089-78.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Informar data de trânsito em julgado",
+      "tarefa_atual": "Verificar Pendências",
       "dias_tramitando": 128,
       "segredo_justica": "NÃO"
     },
@@ -581,7 +581,7 @@
         "tarefa_atual": "Realizar triagem ordinários",
         "autuacao": "13/07/2026",
         "desde": "17/08/2026",
-        "dias_tramitando": 34,
+        "dias_tramitando": 35,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -959,18 +959,8 @@
         "total": 1
       },
       {
-        "codigo": "fechar-expediente-manualmente",
-        "tarefa": "Fechar expediente manualmente",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "informar-data-de-transito-em-julgado",
-        "tarefa": "Informar data de trânsito em julgado",
+        "codigo": "elaborar-documentos",
+        "tarefa": "Elaborar Documentos",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -1044,6 +1034,16 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "verificar-pendencias",
+        "tarefa": "Verificar Pendências",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -1666,7 +1666,7 @@
         "tarefa_atual": "Realizar triagem ordinários",
         "autuacao": "13/07/2026",
         "desde": "17/08/2026",
-        "dias_tramitando": 34,
+        "dias_tramitando": 35,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -2220,34 +2220,18 @@
         "responsavel_processo": ""
       }
     ],
-    "fechar-expediente-manualmente": [
+    "elaborar-documentos": [
       {
         "processo": "0600250-88.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Fechar expediente manualmente",
+        "tarefa_atual": "Elaborar Documentos",
         "autuacao": "23/07/2026",
         "desde": "17/08/2026",
         "dias_tramitando": 24,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "informar-data-de-transito-em-julgado": [
-      {
-        "processo": "0600089-78.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Informar data de trânsito em julgado",
-        "autuacao": "10/04/2026",
-        "desde": "17/08/2026",
-        "dias_tramitando": 128,
-        "julgado": true,
-        "data_julgamento": "16/07/2026",
-        "teor": "Julgado procedente o pedido em 16/07/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -2360,6 +2344,22 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "verificar-pendencias": [
+      {
+        "processo": "0600089-78.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Verificar Pendências",
+        "autuacao": "10/04/2026",
+        "desde": "17/08/2026",
+        "dias_tramitando": 128,
+        "julgado": true,
+        "data_julgamento": "16/07/2026",
+        "teor": "Julgado procedente o pedido em 16/07/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -2779,7 +2779,7 @@
         "processo": "0600089-78.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Informar data de trânsito em julgado",
+        "tarefa_atual": "Verificar Pendências",
         "autuacao": "10/04/2026",
         "desde": "17/08/2026",
         "dias_tramitando": 128,
@@ -3129,7 +3129,7 @@
         "processo": "0600250-88.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Fechar expediente manualmente",
+        "tarefa_atual": "Elaborar Documentos",
         "autuacao": "23/07/2026",
         "desde": "17/08/2026",
         "dias_tramitando": 24,
@@ -3540,7 +3540,7 @@
         "tarefa_atual": "Realizar triagem ordinários",
         "autuacao": "13/07/2026",
         "desde": "17/08/2026",
-        "dias_tramitando": 34,
+        "dias_tramitando": 35,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -3962,7 +3962,7 @@
       "processo": "0600089-78.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Informar data de trânsito em julgado",
+      "tarefa_atual": "Verificar Pendências",
       "autuacao": "10/04/2026",
       "desde": "17/08/2026",
       "dias_tramitando": 128,
@@ -4441,7 +4441,7 @@
       "tarefa_atual": "Realizar triagem ordinários",
       "autuacao": "13/07/2026",
       "desde": "17/08/2026",
-      "dias_tramitando": 34,
+      "dias_tramitando": 35,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -4536,7 +4536,7 @@
       "processo": "0600250-88.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Fechar expediente manualmente",
+      "tarefa_atual": "Elaborar Documentos",
       "autuacao": "23/07/2026",
       "desde": "17/08/2026",
       "dias_tramitando": 24,
@@ -5284,7 +5284,7 @@
       "processo": "0600089-78.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Informar data de trânsito em julgado",
+      "tarefa_atual": "Verificar Pendências",
       "autuacao": "10/04/2026",
       "desde": "17/08/2026",
       "dias_tramitando": 128,
@@ -5763,7 +5763,7 @@
       "tarefa_atual": "Realizar triagem ordinários",
       "autuacao": "13/07/2026",
       "desde": "17/08/2026",
-      "dias_tramitando": 34,
+      "dias_tramitando": 35,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -5858,7 +5858,7 @@
       "processo": "0600250-88.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Fechar expediente manualmente",
+      "tarefa_atual": "Elaborar Documentos",
       "autuacao": "23/07/2026",
       "desde": "17/08/2026",
       "dias_tramitando": 24,
@@ -6792,7 +6792,7 @@
       "processo": "0600089-78.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Informar data de trânsito em julgado",
+      "tarefa_atual": "Verificar Pendências",
       "autuacao": "10/04/2026",
       "desde": "17/08/2026",
       "dias_tramitando": 128,
@@ -7224,8 +7224,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "17/08/2026 11:01",
+  "publicado_em": "17/08/2026 11:16",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "828582c7a3a7186b3342a3df5e2469415628f93833d709b428c9989ee050d712"
+  "hash_publicacao": "bfdc6fcc2707c83b976104f553d2037b83347f5911f226f0b6e79714b07cf8a6"
 }
