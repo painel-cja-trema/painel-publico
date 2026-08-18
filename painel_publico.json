@@ -11,7 +11,7 @@
       "distribuidor": "Flauberth Silva Santos",
       "quantidade": 20,
       "media_dias": 45.9,
-      "maior_tempo": 132,
+      "maior_tempo": 133,
       "urgentes": 0,
       "minutar": 0,
       "julgados": 12,
@@ -84,17 +84,12 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Petições não lidas; Realizar triagem ordinários",
+      "tarefa_atual": "Analisar Acórdão Assinado - SJD; Analisar Processos; Verificar Decisão - Petição Avulsa",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Analisar Processos; Assinar acórdão ou resolução - Gabinete",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado; Verificar Decisão - Petição Avulsa",
       "quantidade": 1
     },
     {
@@ -110,6 +105,11 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Conferir Relatório, Voto e Ementa",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Petições não lidas; Petições não lidas; Realizar triagem ordinários",
       "quantidade": 1
     },
     {
@@ -277,7 +277,7 @@
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
       "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
-      "dias_tramitando": 132,
+      "dias_tramitando": 133,
       "segredo_justica": "NÃO"
     },
     {
@@ -563,7 +563,7 @@
           "TRIAGEM_ORDINARIA": 1,
           "MINUTAR_ATO": 0,
           "ASSINAR_ATO": 1,
-          "LANCAR_MOVIMENTACAO": 1
+          "LANCAR_MOVIMENTACAO": 0
         }
       },
       {
@@ -596,7 +596,7 @@
       "TRIAGEM_ORDINARIA": 10,
       "MINUTAR_ATO": 6,
       "ASSINAR_ATO": 3,
-      "LANCAR_MOVIMENTACAO": 1
+      "LANCAR_MOVIMENTACAO": 0
     },
     "total_acervo": 96
   },
@@ -691,7 +691,7 @@
         "processo": "0600900-38.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Petições não lidas; Realizar triagem ordinários",
+        "tarefa_atual": "Petições não lidas; Petições não lidas; Realizar triagem ordinários",
         "autuacao": "13/08/2026",
         "desde": "13/08/2026",
         "dias_tramitando": 5,
@@ -874,22 +874,7 @@
         "responsavel_processo": ""
       }
     ],
-    "LANCAR_MOVIMENTACAO": [
-      {
-        "processo": "0600225-75.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado; Verificar Decisão - Petição Avulsa",
-        "autuacao": "23/07/2026",
-        "desde": "23/07/2026",
-        "dias_tramitando": 26,
-        "julgado": true,
-        "data_julgamento": "20/07/2026",
-        "teor": "Julgado improcedente o pedido em 20/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ]
+    "LANCAR_MOVIMENTACAO": []
   },
   "entrada_comissao": {
     "codigo": "LIMINAR_CERTIFICACAO",
@@ -1027,6 +1012,16 @@
         "total": 2
       },
       {
+        "codigo": "peticoes-nao-lidas-peticoes-nao-lidas-realizar-triagem-ordinarios",
+        "tarefa": "Petições não lidas; Petições não lidas; Realizar triagem ordinários",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 2
+      },
+      {
         "codigo": "processo-com-prazo-em-curso-registrar-recurso",
         "tarefa": "Processo com prazo em curso; Registrar recurso",
         "contagens": {
@@ -1087,8 +1082,8 @@
         "total": 1
       },
       {
-        "codigo": "analisar-peticao-avulsa-peticoes-nao-lidas-peticoes-nao-lidas-realizar-triagem-ordinarios",
-        "tarefa": "Analisar Petição Avulsa; Petições não lidas; Petições não lidas; Realizar triagem ordinários",
+        "codigo": "analisar-acordao-assinado-sjd-analisar-processos-verificar-decisao-peticao-avulsa",
+        "tarefa": "Analisar Acórdão Assinado - SJD; Analisar Processos; Verificar Decisão - Petição Avulsa",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -1099,16 +1094,6 @@
       {
         "codigo": "analisar-processos-assinar-acordao-ou-resolucao-gabinete",
         "tarefa": "Analisar Processos; Assinar acórdão ou resolução - Gabinete",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "analisar-processos-lancar-movimentos-de-julgamento-colegiado-verificar-decisao-peticao-avulsa",
-        "tarefa": "Analisar Processos; Lançar movimentos de julgamento colegiado; Verificar Decisão - Petição Avulsa",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -1183,16 +1168,6 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
-        "codigo": "peticoes-nao-lidas-peticoes-nao-lidas-realizar-triagem-ordinarios",
-        "tarefa": "Petições não lidas; Petições não lidas; Realizar triagem ordinários",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
       },
@@ -1778,8 +1753,8 @@
         "desde": "23/07/2026",
         "dias_tramitando": 41,
         "julgado": true,
-        "data_julgamento": "20/07/2026",
-        "teor": "Julgado improcedente o pedido em 20/07/2026",
+        "data_julgamento": "18/08/2026",
+        "teor": "Conhecido o recurso de PSD - PARTIDO SOCIAL DEMOCRATICO e não-provido em 18/08/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -2292,6 +2267,36 @@
         "responsavel_processo": ""
       }
     ],
+    "peticoes-nao-lidas-peticoes-nao-lidas-realizar-triagem-ordinarios": [
+      {
+        "processo": "0600900-38.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Petições não lidas; Petições não lidas; Realizar triagem ordinários",
+        "autuacao": "13/08/2026",
+        "desde": "13/08/2026",
+        "dias_tramitando": 5,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600939-35.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Petições não lidas; Petições não lidas; Realizar triagem ordinários",
+        "autuacao": "15/08/2026",
+        "desde": "15/08/2026",
+        "dias_tramitando": 3,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "processo-com-prazo-em-curso-registrar-recurso": [
       {
         "processo": "0600080-19.2026.6.10.0000",
@@ -2300,7 +2305,7 @@
         "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
         "autuacao": "07/04/2026",
         "desde": "07/04/2026",
-        "dias_tramitando": 132,
+        "dias_tramitando": 133,
         "julgado": true,
         "data_julgamento": "13/08/2026",
         "teor": "Julgado improcedente o pedido em 13/08/2026",
@@ -2416,18 +2421,18 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-peticao-avulsa-peticoes-nao-lidas-peticoes-nao-lidas-realizar-triagem-ordinarios": [
+    "analisar-acordao-assinado-sjd-analisar-processos-verificar-decisao-peticao-avulsa": [
       {
-        "processo": "0600900-38.2026.6.10.0000",
+        "processo": "0600225-75.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Petições não lidas; Realizar triagem ordinários",
-        "autuacao": "13/08/2026",
-        "desde": "13/08/2026",
-        "dias_tramitando": 5,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Analisar Acórdão Assinado - SJD; Analisar Processos; Verificar Decisão - Petição Avulsa",
+        "autuacao": "23/07/2026",
+        "desde": "23/07/2026",
+        "dias_tramitando": 26,
+        "julgado": true,
+        "data_julgamento": "18/08/2026",
+        "teor": "Conhecido o recurso de PSD - PARTIDO SOCIAL DEMOCRATICO e não-provido em 18/08/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -2444,22 +2449,6 @@
         "julgado": true,
         "data_julgamento": "09/07/2026",
         "teor": "Julgado procedente o pedido em 09/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "analisar-processos-lancar-movimentos-de-julgamento-colegiado-verificar-decisao-peticao-avulsa": [
-      {
-        "processo": "0600225-75.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado; Verificar Decisão - Petição Avulsa",
-        "autuacao": "23/07/2026",
-        "desde": "23/07/2026",
-        "dias_tramitando": 26,
-        "julgado": true,
-        "data_julgamento": "20/07/2026",
-        "teor": "Julgado improcedente o pedido em 20/07/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -2576,22 +2565,6 @@
         "responsavel_processo": ""
       }
     ],
-    "peticoes-nao-lidas-peticoes-nao-lidas-realizar-triagem-ordinarios": [
-      {
-        "processo": "0600939-35.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Petições não lidas; Petições não lidas; Realizar triagem ordinários",
-        "autuacao": "15/08/2026",
-        "desde": "15/08/2026",
-        "dias_tramitando": 3,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "peticoes-nao-lidas-processo-com-prazo-em-curso": [
       {
         "processo": "0600102-77.2026.6.10.0000",
@@ -2634,7 +2607,7 @@
         "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
         "autuacao": "07/04/2026",
         "desde": "07/04/2026",
-        "dias_tramitando": 132,
+        "dias_tramitando": 133,
         "julgado": true,
         "data_julgamento": "13/08/2026",
         "teor": "Julgado improcedente o pedido em 13/08/2026",
@@ -2832,8 +2805,8 @@
         "desde": "23/07/2026",
         "dias_tramitando": 41,
         "julgado": true,
-        "data_julgamento": "20/07/2026",
-        "teor": "Julgado improcedente o pedido em 20/07/2026",
+        "data_julgamento": "18/08/2026",
+        "teor": "Conhecido o recurso de PSD - PARTIDO SOCIAL DEMOCRATICO e não-provido em 18/08/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -2897,13 +2870,13 @@
         "processo": "0600225-75.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado; Verificar Decisão - Petição Avulsa",
+        "tarefa_atual": "Analisar Acórdão Assinado - SJD; Analisar Processos; Verificar Decisão - Petição Avulsa",
         "autuacao": "23/07/2026",
         "desde": "23/07/2026",
         "dias_tramitando": 26,
         "julgado": true,
-        "data_julgamento": "20/07/2026",
-        "teor": "Julgado improcedente o pedido em 20/07/2026",
+        "data_julgamento": "18/08/2026",
+        "teor": "Conhecido o recurso de PSD - PARTIDO SOCIAL DEMOCRATICO e não-provido em 18/08/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -3023,7 +2996,7 @@
         "processo": "0600900-38.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Realizar triagem ordinários",
+        "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
         "autuacao": "13/08/2026",
         "desde": "13/08/2026",
         "dias_tramitando": 5,
@@ -4011,6 +3984,22 @@
       "dias_tramitando": 53
     },
     {
+      "processo": "0600225-75.2026.6.10.0000",
+      "gabinete": "Gab. JA 1",
+      "classe": "REC no(a) Rp",
+      "teor": "Conhecido o recurso de PSD - PARTIDO SOCIAL DEMOCRATICO e não-provido em 18/08/2026",
+      "data_julgamento": "18/08/2026",
+      "dias_tramitando": 26
+    },
+    {
+      "processo": "0600225-75.2026.6.10.0000",
+      "gabinete": "Gab. JA 1",
+      "classe": "Rp",
+      "teor": "Conhecido o recurso de PSD - PARTIDO SOCIAL DEMOCRATICO e não-provido em 18/08/2026",
+      "data_julgamento": "18/08/2026",
+      "dias_tramitando": 41
+    },
+    {
       "processo": "0600109-69.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "REC no(a) Rp",
@@ -4128,7 +4117,7 @@
       "classe": "Rp",
       "teor": "Julgado improcedente o pedido em 13/08/2026",
       "data_julgamento": "13/08/2026",
-      "dias_tramitando": 132
+      "dias_tramitando": 133
     },
     {
       "processo": "0600155-58.2026.6.10.0000",
@@ -4201,22 +4190,6 @@
       "teor": "Julgado procedente em parte do pedido em 06/08/2026",
       "data_julgamento": "06/08/2026",
       "dias_tramitando": 5
-    },
-    {
-      "processo": "0600245-66.2026.6.10.0000",
-      "gabinete": "Gab. JA 2",
-      "classe": "Rp",
-      "teor": "Julgado procedente em parte do pedido em 06/08/2026",
-      "data_julgamento": "06/08/2026",
-      "dias_tramitando": 27
-    },
-    {
-      "processo": "0600167-72.2026.6.10.0000",
-      "gabinete": "Gab. JA 2",
-      "classe": "REC no(a) Rp",
-      "teor": "Julgado procedente em parte do pedido em 05/08/2026",
-      "data_julgamento": "05/08/2026",
-      "dias_tramitando": 8
     }
   ],
   "teores": [
@@ -4253,6 +4226,10 @@
       "quantidade": 2
     },
     {
+      "teor": "Conhecido o recurso de PSD - PARTIDO SOCIAL DEMOCRATICO e não-provido em 18/08/2026",
+      "quantidade": 2
+    },
+    {
       "teor": "Julgado improcedente o pedido em 03/08/2026",
       "quantidade": 2
     },
@@ -4263,22 +4240,18 @@
     {
       "teor": "Julgado improcedente o pedido em 11/08/2026",
       "quantidade": 2
-    },
-    {
-      "teor": "Julgado improcedente o pedido em 18/07/2026",
-      "quantidade": 2
     }
   ],
   "julgados_por_mes": [
     {
       "mes": "07/2026",
-      "Gab. JA 1": 10,
+      "Gab. JA 1": 8,
       "Gab. JA 2": 10,
       "Gab. JA 3": 0
     },
     {
       "mes": "08/2026",
-      "Gab. JA 1": 12,
+      "Gab. JA 1": 14,
       "Gab. JA 2": 19,
       "Gab. JA 3": 9
     }
@@ -4286,7 +4259,7 @@
   "distribuidos_total": 82,
   "cartas_precatorias_total": 10,
   "recursos_distribuidos_total": 32,
-  "recursos_julgados_total": 12,
+  "recursos_julgados_total": 13,
   "estoque_processos": [
     {
       "processo": "0600080-19.2026.6.10.0000",
@@ -4295,7 +4268,7 @@
       "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
       "autuacao": "07/04/2026",
       "desde": "07/04/2026",
-      "dias_tramitando": 132,
+      "dias_tramitando": 133,
       "julgado": true,
       "data_julgamento": "13/08/2026",
       "teor": "Julgado improcedente o pedido em 13/08/2026",
@@ -4759,8 +4732,8 @@
       "desde": "23/07/2026",
       "dias_tramitando": 41,
       "julgado": true,
-      "data_julgamento": "20/07/2026",
-      "teor": "Julgado improcedente o pedido em 20/07/2026",
+      "data_julgamento": "18/08/2026",
+      "teor": "Conhecido o recurso de PSD - PARTIDO SOCIAL DEMOCRATICO e não-provido em 18/08/2026",
       "segredo_justica": "NÃO",
       "responsavel_processo": ""
     },
@@ -5090,7 +5063,7 @@
       "processo": "0600900-38.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Realizar triagem ordinários",
+      "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
       "autuacao": "13/08/2026",
       "desde": "13/08/2026",
       "dias_tramitando": 5,
@@ -5687,7 +5660,7 @@
       "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
       "autuacao": "07/04/2026",
       "desde": "07/04/2026",
-      "dias_tramitando": 132,
+      "dias_tramitando": 133,
       "julgado": true,
       "data_julgamento": "13/08/2026",
       "teor": "Julgado improcedente o pedido em 13/08/2026",
@@ -6151,8 +6124,8 @@
       "desde": "23/07/2026",
       "dias_tramitando": 41,
       "julgado": true,
-      "data_julgamento": "20/07/2026",
-      "teor": "Julgado improcedente o pedido em 20/07/2026",
+      "data_julgamento": "18/08/2026",
+      "teor": "Conhecido o recurso de PSD - PARTIDO SOCIAL DEMOCRATICO e não-provido em 18/08/2026",
       "segredo_justica": "NÃO",
       "responsavel_processo": ""
     },
@@ -6482,7 +6455,7 @@
       "processo": "0600900-38.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Realizar triagem ordinários",
+      "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
       "autuacao": "13/08/2026",
       "desde": "13/08/2026",
       "dias_tramitando": 5,
@@ -6989,13 +6962,13 @@
       "processo": "0600225-75.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "REC no(a) Rp",
-      "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado; Verificar Decisão - Petição Avulsa",
+      "tarefa_atual": "Analisar Acórdão Assinado - SJD; Analisar Processos; Verificar Decisão - Petição Avulsa",
       "autuacao": "23/07/2026",
       "desde": "23/07/2026",
       "dias_tramitando": 26,
       "julgado": true,
-      "data_julgamento": "20/07/2026",
-      "teor": "Julgado improcedente o pedido em 20/07/2026",
+      "data_julgamento": "18/08/2026",
+      "teor": "Conhecido o recurso de PSD - PARTIDO SOCIAL DEMOCRATICO e não-provido em 18/08/2026",
       "segredo_justica": "NÃO",
       "responsavel_processo": ""
     },
@@ -7395,6 +7368,20 @@
       "teor": "Conhecido o recurso de PERON FIGUEIREDO DA CUNHA e não-provido em 18/08/2026",
       "segredo_justica": "NÃO",
       "responsavel_processo": ""
+    },
+    {
+      "processo": "0600225-75.2026.6.10.0000",
+      "gabinete": "Gab. JA 1",
+      "classe": "REC no(a) Rp",
+      "tarefa_atual": "Analisar Acórdão Assinado - SJD; Analisar Processos; Verificar Decisão - Petição Avulsa",
+      "autuacao": "23/07/2026",
+      "desde": "23/07/2026",
+      "dias_tramitando": 26,
+      "julgado": true,
+      "data_julgamento": "18/08/2026",
+      "teor": "Conhecido o recurso de PSD - PARTIDO SOCIAL DEMOCRATICO e não-provido em 18/08/2026",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
     }
   ],
   "julgados_processos": [
@@ -7405,7 +7392,7 @@
       "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
       "autuacao": "07/04/2026",
       "desde": "07/04/2026",
-      "dias_tramitando": 132,
+      "dias_tramitando": 133,
       "julgado": true,
       "data_julgamento": "13/08/2026",
       "teor": "Julgado improcedente o pedido em 13/08/2026",
@@ -7729,8 +7716,8 @@
       "desde": "23/07/2026",
       "dias_tramitando": 41,
       "julgado": true,
-      "data_julgamento": "20/07/2026",
-      "teor": "Julgado improcedente o pedido em 20/07/2026",
+      "data_julgamento": "18/08/2026",
+      "teor": "Conhecido o recurso de PSD - PARTIDO SOCIAL DEMOCRATICO e não-provido em 18/08/2026",
       "segredo_justica": "NÃO",
       "responsavel_processo": ""
     },
@@ -7848,8 +7835,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "18/08/2026 19:36",
+  "publicado_em": "18/08/2026 19:39",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "a5388d51add02c377e64a53379d51ed9c9802d43275703bfdfba266dcd8a185e"
+  "hash_publicacao": "df41f6bd7eb4ed6045f0d98fe02e837dff373aeca0cfb1d202178d1a0940be7e"
 }
