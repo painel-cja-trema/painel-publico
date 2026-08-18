@@ -46,7 +46,7 @@
       "quantidade": 14,
       "media_dias": 31.9,
       "maior_tempo": 112,
-      "urgentes": 1,
+      "urgentes": 0,
       "minutar": 5,
       "julgados": 5,
       "percentual_julgados": 50.0,
@@ -79,11 +79,6 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Analisar Processos; Processo julgado; Selecionar documentos para acórdão - Gabinete",
       "quantidade": 1
     },
@@ -94,7 +89,7 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Analisar resposta do expediente; Registrar recurso ; Registrar recurso",
+      "tarefa_atual": "Analisar resposta do expediente; Registrar recurso",
       "quantidade": 1
     },
     {
@@ -105,6 +100,11 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Conferir Relatório, Voto e Ementa",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
       "quantidade": 1
     },
     {
@@ -174,7 +174,7 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Analisar Processos; Processo julgado; Revisar acórdão ou resolução - Gabinete",
+      "tarefa_atual": "Analisar Processos; Assinar acórdão ou resolução - Gabinete; Processo julgado",
       "quantidade": 1
     },
     {
@@ -224,11 +224,6 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Analisar determinação - Urgentes",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Analisar resposta do expediente; Petições não lidas",
       "quantidade": 1
     },
@@ -240,6 +235,11 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Elaborar extrato da ata; Visualizar expediente DJE",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Preparar comunicação",
       "quantidade": 1
     },
     {
@@ -356,7 +356,7 @@
       "processo": "0600155-58.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar resposta do expediente; Registrar recurso ; Registrar recurso",
+      "tarefa_atual": "Analisar resposta do expediente; Registrar recurso",
       "dias_tramitando": 87,
       "segredo_justica": "NÃO"
     },
@@ -1044,6 +1044,16 @@
         "total": 2
       },
       {
+        "codigo": "peticoes-nao-lidas-processo-com-prazo-em-curso",
+        "tarefa": "Petições não lidas; Processo com prazo em curso",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 2
+      },
+      {
         "codigo": "verificar-e-certificar-dados-do-processo",
         "tarefa": "Verificar e Certificar dados do processo",
         "contagens": {
@@ -1084,16 +1094,6 @@
         "total": 1
       },
       {
-        "codigo": "analisar-peticao-avulsa-peticoes-nao-lidas-processo-com-prazo-em-curso",
-        "tarefa": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
         "codigo": "analisar-processos-assinar-acordao-ou-resolucao-gabinete-pauta-provisoria-virtual",
         "tarefa": "Analisar Processos; Assinar acórdão ou resolução - Gabinete; Pauta provisória virtual",
         "contagens": {
@@ -1104,8 +1104,8 @@
         "total": 1
       },
       {
-        "codigo": "analisar-processos-processo-julgado-revisar-acordao-ou-resolucao-gabinete",
-        "tarefa": "Analisar Processos; Processo julgado; Revisar acórdão ou resolução - Gabinete",
+        "codigo": "analisar-processos-assinar-acordao-ou-resolucao-gabinete-processo-julgado",
+        "tarefa": "Analisar Processos; Assinar acórdão ou resolução - Gabinete; Processo julgado",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -1120,16 +1120,6 @@
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "analisar-determinacao-urgentes",
-        "tarefa": "Analisar determinação - Urgentes",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 1
       },
@@ -1154,8 +1144,8 @@
         "total": 1
       },
       {
-        "codigo": "analisar-resposta-do-expediente-registrar-recurso-registrar-recurso",
-        "tarefa": "Analisar resposta do expediente; Registrar recurso ; Registrar recurso",
+        "codigo": "analisar-resposta-do-expediente-registrar-recurso",
+        "tarefa": "Analisar resposta do expediente; Registrar recurso",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -1214,12 +1204,12 @@
         "total": 1
       },
       {
-        "codigo": "peticoes-nao-lidas-processo-com-prazo-em-curso",
-        "tarefa": "Petições não lidas; Processo com prazo em curso",
+        "codigo": "preparar-comunicacao",
+        "tarefa": "Preparar comunicação",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 1
       },
@@ -2313,6 +2303,36 @@
         "responsavel_processo": ""
       }
     ],
+    "peticoes-nao-lidas-processo-com-prazo-em-curso": [
+      {
+        "processo": "0600102-77.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+        "autuacao": "17/04/2026",
+        "desde": "17/04/2026",
+        "dias_tramitando": 123,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600900-38.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+        "autuacao": "13/08/2026",
+        "desde": "13/08/2026",
+        "dias_tramitando": 5,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "verificar-e-certificar-dados-do-processo": [
       {
         "processo": "0600947-12.2026.6.10.0000",
@@ -2391,22 +2411,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-peticao-avulsa-peticoes-nao-lidas-processo-com-prazo-em-curso": [
-      {
-        "processo": "0600900-38.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
-        "autuacao": "13/08/2026",
-        "desde": "13/08/2026",
-        "dias_tramitando": 5,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "analisar-processos-assinar-acordao-ou-resolucao-gabinete-pauta-provisoria-virtual": [
       {
         "processo": "0600175-49.2026.6.10.0000",
@@ -2423,12 +2427,12 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-processos-processo-julgado-revisar-acordao-ou-resolucao-gabinete": [
+    "analisar-processos-assinar-acordao-ou-resolucao-gabinete-processo-julgado": [
       {
         "processo": "0600193-70.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos; Processo julgado; Revisar acórdão ou resolução - Gabinete",
+        "tarefa_atual": "Analisar Processos; Assinar acórdão ou resolução - Gabinete; Processo julgado",
         "autuacao": "22/07/2026",
         "desde": "22/07/2026",
         "dias_tramitando": 27,
@@ -2451,22 +2455,6 @@
         "julgado": true,
         "data_julgamento": "09/07/2026",
         "teor": "Julgado procedente o pedido em 09/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "analisar-determinacao-urgentes": [
-      {
-        "processo": "0600946-27.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação - Urgentes",
-        "autuacao": "18/08/2026",
-        "desde": "18/08/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -2503,12 +2491,12 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-resposta-do-expediente-registrar-recurso-registrar-recurso": [
+    "analisar-resposta-do-expediente-registrar-recurso": [
       {
         "processo": "0600155-58.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Analisar resposta do expediente; Registrar recurso ; Registrar recurso",
+        "tarefa_atual": "Analisar resposta do expediente; Registrar recurso",
         "autuacao": "23/05/2026",
         "desde": "23/05/2026",
         "dias_tramitando": 87,
@@ -2599,15 +2587,15 @@
         "responsavel_processo": ""
       }
     ],
-    "peticoes-nao-lidas-processo-com-prazo-em-curso": [
+    "preparar-comunicacao": [
       {
-        "processo": "0600102-77.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
+        "processo": "0600946-27.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
-        "autuacao": "17/04/2026",
-        "desde": "17/04/2026",
-        "dias_tramitando": 123,
+        "tarefa_atual": "Preparar comunicação",
+        "autuacao": "18/08/2026",
+        "desde": "18/08/2026",
+        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -3062,7 +3050,7 @@
         "processo": "0600900-38.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
+        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
         "autuacao": "13/08/2026",
         "desde": "13/08/2026",
         "dias_tramitando": 5,
@@ -3372,7 +3360,7 @@
         "processo": "0600193-70.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos; Processo julgado; Revisar acórdão ou resolução - Gabinete",
+        "tarefa_atual": "Analisar Processos; Assinar acórdão ou resolução - Gabinete; Processo julgado",
         "autuacao": "22/07/2026",
         "desde": "22/07/2026",
         "dias_tramitando": 27,
@@ -3976,7 +3964,7 @@
         "processo": "0600946-27.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Analisar determinação - Urgentes",
+        "tarefa_atual": "Preparar comunicação",
         "autuacao": "18/08/2026",
         "desde": "18/08/2026",
         "dias_tramitando": 0,
@@ -5129,7 +5117,7 @@
       "processo": "0600900-38.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
+      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
       "autuacao": "13/08/2026",
       "desde": "13/08/2026",
       "dias_tramitando": 5,
@@ -5213,7 +5201,7 @@
       "processo": "0600946-27.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação - Urgentes",
+      "tarefa_atual": "Preparar comunicação",
       "autuacao": "18/08/2026",
       "desde": "18/08/2026",
       "dias_tramitando": 0,
@@ -6521,7 +6509,7 @@
       "processo": "0600900-38.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
+      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
       "autuacao": "13/08/2026",
       "desde": "13/08/2026",
       "dias_tramitando": 5,
@@ -6605,7 +6593,7 @@
       "processo": "0600946-27.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação - Urgentes",
+      "tarefa_atual": "Preparar comunicação",
       "autuacao": "18/08/2026",
       "desde": "18/08/2026",
       "dias_tramitando": 0,
@@ -6986,7 +6974,7 @@
       "processo": "0600193-70.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "REC no(a) Rp",
-      "tarefa_atual": "Analisar Processos; Processo julgado; Revisar acórdão ou resolução - Gabinete",
+      "tarefa_atual": "Analisar Processos; Assinar acórdão ou resolução - Gabinete; Processo julgado",
       "autuacao": "22/07/2026",
       "desde": "22/07/2026",
       "dias_tramitando": 27,
@@ -7525,7 +7513,7 @@
       "processo": "0600155-58.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar resposta do expediente; Registrar recurso ; Registrar recurso",
+      "tarefa_atual": "Analisar resposta do expediente; Registrar recurso",
       "autuacao": "23/05/2026",
       "desde": "23/05/2026",
       "dias_tramitando": 87,
@@ -7873,8 +7861,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "18/08/2026 18:30",
+  "publicado_em": "18/08/2026 18:33",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "85724a87592178f737263768f2713cd05de35aeb44e14591745dd9ebb833f5f9"
+  "hash_publicacao": "37cc882c3973d29f38660d15909588b18d42ea07daf2c33c70bb29d168232e31"
 }
