@@ -60,7 +60,7 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Processo com prazo em curso",
-      "quantidade": 9
+      "quantidade": 8
     },
     {
       "gabinete": "Gab. JA 1",
@@ -90,6 +90,11 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Analisar determinação",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Analisar resposta do expediente; Registrar recurso",
       "quantidade": 1
     },
     {
@@ -199,6 +204,11 @@
     },
     {
       "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Analisar Acórdão Assinado - SJD; Visualizar expediente DJE",
+      "quantidade": 2
+    },
+    {
+      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Aguardando julgamento do recurso interno; Petições não lidas",
       "quantidade": 1
     },
@@ -210,16 +220,6 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Analisar Acórdão Assinado - SJD; Elaborar extrato da ata; Visualizar expediente DJE",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Analisar Acórdão Assinado - SJD; Preparar comunicação",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Analisar Acórdão Assinado - SJD; Visualizar expediente DJE",
       "quantidade": 1
     },
     {
@@ -351,7 +351,7 @@
       "processo": "0600155-58.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Processo com prazo em curso",
+      "tarefa_atual": "Analisar resposta do expediente; Registrar recurso",
       "dias_tramitando": 86,
       "segredo_justica": "NÃO"
     },
@@ -925,22 +925,22 @@
     ],
     "linhas": [
       {
-        "codigo": "processo-com-prazo-em-curso",
-        "tarefa": "Processo com prazo em curso",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 9,
-          "Gabinete Juiz Auxiliar 2": 13,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 22
-      },
-      {
         "codigo": "aguardando-julgamento-do-recurso-interno",
         "tarefa": "Aguardando julgamento do recurso interno",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 7,
           "Gabinete Juiz Auxiliar 2": 11,
           "Gabinete Juiz Auxiliar 3": 3
+        },
+        "total": 21
+      },
+      {
+        "codigo": "processo-com-prazo-em-curso",
+        "tarefa": "Processo com prazo em curso",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 8,
+          "Gabinete Juiz Auxiliar 2": 13,
+          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 21
       },
@@ -1001,6 +1001,16 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 2,
           "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 2
+      },
+      {
+        "codigo": "analisar-acordao-assinado-sjd-visualizar-expediente-dje",
+        "tarefa": "Analisar Acórdão Assinado - SJD; Visualizar expediente DJE",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 2
         },
         "total": 2
       },
@@ -1115,32 +1125,22 @@
         "total": 1
       },
       {
-        "codigo": "analisar-acordao-assinado-sjd-preparar-comunicacao",
-        "tarefa": "Analisar Acórdão Assinado - SJD; Preparar comunicação",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
-        "codigo": "analisar-acordao-assinado-sjd-visualizar-expediente-dje",
-        "tarefa": "Analisar Acórdão Assinado - SJD; Visualizar expediente DJE",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
         "codigo": "analisar-resposta-do-expediente",
         "tarefa": "Analisar resposta do expediente",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
+        "codigo": "analisar-resposta-do-expediente-registrar-recurso",
+        "tarefa": "Analisar resposta do expediente; Registrar recurso",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
       },
@@ -1218,316 +1218,6 @@
     "total_acervo": 95
   },
   "todas_tarefas_processos": {
-    "processo-com-prazo-em-curso": [
-      {
-        "processo": "0600102-77.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Processo com prazo em curso",
-        "autuacao": "17/04/2026",
-        "desde": "17/08/2026",
-        "dias_tramitando": 122,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600106-17.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "CumSen",
-        "tarefa_atual": "Processo com prazo em curso",
-        "autuacao": "24/04/2026",
-        "desde": "14/08/2026",
-        "dias_tramitando": 116,
-        "julgado": true,
-        "data_julgamento": "17/07/2026",
-        "teor": "Julgado procedente o pedido em 17/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600155-58.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Processo com prazo em curso",
-        "autuacao": "23/05/2026",
-        "desde": "17/08/2026",
-        "dias_tramitando": 86,
-        "julgado": true,
-        "data_julgamento": "13/08/2026",
-        "teor": "Julgado procedente o pedido em 13/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600162-50.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Processo com prazo em curso",
-        "autuacao": "27/05/2026",
-        "desde": "14/08/2026",
-        "dias_tramitando": 82,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600176-34.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Processo com prazo em curso",
-        "autuacao": "10/06/2026",
-        "desde": "13/08/2026",
-        "dias_tramitando": 69,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600181-56.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Processo com prazo em curso",
-        "autuacao": "12/06/2026",
-        "desde": "12/08/2026",
-        "dias_tramitando": 66,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600018-62.2026.6.10.0037",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Processo com prazo em curso",
-        "autuacao": "06/07/2026",
-        "desde": "16/08/2026",
-        "dias_tramitando": 42,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600134-82.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Processo com prazo em curso",
-        "autuacao": "23/07/2026",
-        "desde": "13/08/2026",
-        "dias_tramitando": 25,
-        "julgado": true,
-        "data_julgamento": "18/07/2026",
-        "teor": "Julgado improcedente o pedido em 18/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600250-88.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Processo com prazo em curso",
-        "autuacao": "23/07/2026",
-        "desde": "17/08/2026",
-        "dias_tramitando": 25,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600252-58.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Processo com prazo em curso",
-        "autuacao": "28/07/2026",
-        "desde": "14/08/2026",
-        "dias_tramitando": 21,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600364-27.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Processo com prazo em curso",
-        "autuacao": "04/08/2026",
-        "desde": "18/08/2026",
-        "dias_tramitando": 14,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600159-95.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Processo com prazo em curso",
-        "autuacao": "05/08/2026",
-        "desde": "08/08/2026",
-        "dias_tramitando": 12,
-        "julgado": true,
-        "data_julgamento": "30/07/2026",
-        "teor": "Julgado procedente o pedido em 30/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600239-59.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Processo com prazo em curso",
-        "autuacao": "05/08/2026",
-        "desde": "12/08/2026",
-        "dias_tramitando": 12,
-        "julgado": true,
-        "data_julgamento": "30/07/2026",
-        "teor": "Julgado improcedente o pedido em 30/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600140-89.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Processo com prazo em curso",
-        "autuacao": "07/08/2026",
-        "desde": "12/08/2026",
-        "dias_tramitando": 11,
-        "julgado": true,
-        "data_julgamento": "04/08/2026",
-        "teor": "Julgado improcedente o pedido em 04/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600160-80.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Processo com prazo em curso",
-        "autuacao": "07/08/2026",
-        "desde": "10/08/2026",
-        "dias_tramitando": 11,
-        "julgado": true,
-        "data_julgamento": "04/08/2026",
-        "teor": "Julgado improcedente o pedido em 04/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600167-72.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "ED no(a) Rp",
-        "tarefa_atual": "Processo com prazo em curso",
-        "autuacao": "10/08/2026",
-        "desde": "14/08/2026",
-        "dias_tramitando": 8,
-        "julgado": true,
-        "data_julgamento": "05/08/2026",
-        "teor": "Julgado procedente em parte do pedido em 05/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600241-29.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Processo com prazo em curso",
-        "autuacao": "10/08/2026",
-        "desde": "14/08/2026",
-        "dias_tramitando": 8,
-        "julgado": true,
-        "data_julgamento": "04/08/2026",
-        "teor": "Julgado improcedente o pedido em 04/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600357-35.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Ag no(a) RepEsp",
-        "tarefa_atual": "Processo com prazo em curso",
-        "autuacao": "13/08/2026",
-        "desde": "17/08/2026",
-        "dias_tramitando": 5,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600256-95.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Processo com prazo em curso",
-        "autuacao": "14/08/2026",
-        "desde": "17/08/2026",
-        "dias_tramitando": 4,
-        "julgado": true,
-        "data_julgamento": "11/08/2026",
-        "teor": "Julgado improcedente o pedido em 11/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600898-68.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Processo com prazo em curso",
-        "autuacao": "13/08/2026",
-        "desde": "18/08/2026",
-        "dias_tramitando": 4,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600900-38.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Processo com prazo em curso",
-        "autuacao": "13/08/2026",
-        "desde": "18/08/2026",
-        "dias_tramitando": 4,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600905-60.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Processo com prazo em curso",
-        "autuacao": "13/08/2026",
-        "desde": "17/08/2026",
-        "dias_tramitando": 4,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "aguardando-julgamento-do-recurso-interno": [
       {
         "processo": "0600109-69.2026.6.10.0000",
@@ -1817,6 +1507,302 @@
         "autuacao": "04/08/2026",
         "desde": "13/08/2026",
         "dias_tramitando": 14,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "processo-com-prazo-em-curso": [
+      {
+        "processo": "0600102-77.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Processo com prazo em curso",
+        "autuacao": "17/04/2026",
+        "desde": "17/08/2026",
+        "dias_tramitando": 122,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600106-17.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "CumSen",
+        "tarefa_atual": "Processo com prazo em curso",
+        "autuacao": "24/04/2026",
+        "desde": "14/08/2026",
+        "dias_tramitando": 116,
+        "julgado": true,
+        "data_julgamento": "17/07/2026",
+        "teor": "Julgado procedente o pedido em 17/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600162-50.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Processo com prazo em curso",
+        "autuacao": "27/05/2026",
+        "desde": "14/08/2026",
+        "dias_tramitando": 82,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600176-34.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Processo com prazo em curso",
+        "autuacao": "10/06/2026",
+        "desde": "13/08/2026",
+        "dias_tramitando": 69,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600181-56.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Processo com prazo em curso",
+        "autuacao": "12/06/2026",
+        "desde": "12/08/2026",
+        "dias_tramitando": 66,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600018-62.2026.6.10.0037",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Processo com prazo em curso",
+        "autuacao": "06/07/2026",
+        "desde": "16/08/2026",
+        "dias_tramitando": 42,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600134-82.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Processo com prazo em curso",
+        "autuacao": "23/07/2026",
+        "desde": "13/08/2026",
+        "dias_tramitando": 25,
+        "julgado": true,
+        "data_julgamento": "18/07/2026",
+        "teor": "Julgado improcedente o pedido em 18/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600250-88.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Processo com prazo em curso",
+        "autuacao": "23/07/2026",
+        "desde": "17/08/2026",
+        "dias_tramitando": 25,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600252-58.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Processo com prazo em curso",
+        "autuacao": "28/07/2026",
+        "desde": "14/08/2026",
+        "dias_tramitando": 21,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600364-27.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Processo com prazo em curso",
+        "autuacao": "04/08/2026",
+        "desde": "18/08/2026",
+        "dias_tramitando": 14,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600159-95.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Processo com prazo em curso",
+        "autuacao": "05/08/2026",
+        "desde": "08/08/2026",
+        "dias_tramitando": 12,
+        "julgado": true,
+        "data_julgamento": "30/07/2026",
+        "teor": "Julgado procedente o pedido em 30/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600239-59.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Processo com prazo em curso",
+        "autuacao": "05/08/2026",
+        "desde": "12/08/2026",
+        "dias_tramitando": 12,
+        "julgado": true,
+        "data_julgamento": "30/07/2026",
+        "teor": "Julgado improcedente o pedido em 30/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600140-89.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Processo com prazo em curso",
+        "autuacao": "07/08/2026",
+        "desde": "12/08/2026",
+        "dias_tramitando": 11,
+        "julgado": true,
+        "data_julgamento": "04/08/2026",
+        "teor": "Julgado improcedente o pedido em 04/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600160-80.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Processo com prazo em curso",
+        "autuacao": "07/08/2026",
+        "desde": "10/08/2026",
+        "dias_tramitando": 11,
+        "julgado": true,
+        "data_julgamento": "04/08/2026",
+        "teor": "Julgado improcedente o pedido em 04/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600167-72.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "ED no(a) Rp",
+        "tarefa_atual": "Processo com prazo em curso",
+        "autuacao": "10/08/2026",
+        "desde": "14/08/2026",
+        "dias_tramitando": 8,
+        "julgado": true,
+        "data_julgamento": "05/08/2026",
+        "teor": "Julgado procedente em parte do pedido em 05/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600241-29.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Processo com prazo em curso",
+        "autuacao": "10/08/2026",
+        "desde": "14/08/2026",
+        "dias_tramitando": 8,
+        "julgado": true,
+        "data_julgamento": "04/08/2026",
+        "teor": "Julgado improcedente o pedido em 04/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600357-35.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Ag no(a) RepEsp",
+        "tarefa_atual": "Processo com prazo em curso",
+        "autuacao": "13/08/2026",
+        "desde": "17/08/2026",
+        "dias_tramitando": 5,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600256-95.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Processo com prazo em curso",
+        "autuacao": "14/08/2026",
+        "desde": "17/08/2026",
+        "dias_tramitando": 4,
+        "julgado": true,
+        "data_julgamento": "11/08/2026",
+        "teor": "Julgado improcedente o pedido em 11/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600898-68.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Processo com prazo em curso",
+        "autuacao": "13/08/2026",
+        "desde": "18/08/2026",
+        "dias_tramitando": 4,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600900-38.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Processo com prazo em curso",
+        "autuacao": "13/08/2026",
+        "desde": "18/08/2026",
+        "dias_tramitando": 4,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600905-60.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Processo com prazo em curso",
+        "autuacao": "13/08/2026",
+        "desde": "17/08/2026",
+        "dias_tramitando": 4,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -2200,6 +2186,36 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-acordao-assinado-sjd-visualizar-expediente-dje": [
+      {
+        "processo": "0600174-64.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Analisar Acórdão Assinado - SJD; Visualizar expediente DJE",
+        "autuacao": "09/07/2026",
+        "desde": "09/07/2026",
+        "dias_tramitando": 39,
+        "julgado": true,
+        "data_julgamento": "17/08/2026",
+        "teor": "Conhecido o recurso de MOVIMENTO DEMOCRATICO BRASILEIRO - MDB, ANTIGO PMDB e provido em 17/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600192-85.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Analisar Acórdão Assinado - SJD; Visualizar expediente DJE",
+        "autuacao": "16/07/2026",
+        "desde": "16/07/2026",
+        "dias_tramitando": 33,
+        "julgado": true,
+        "data_julgamento": "17/08/2026",
+        "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e não-provido em 17/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "analisar-determinacao": [
       {
         "processo": "0600089-78.2026.6.10.0000",
@@ -2446,38 +2462,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-acordao-assinado-sjd-preparar-comunicacao": [
-      {
-        "processo": "0600192-85.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Acórdão Assinado - SJD; Preparar comunicação",
-        "autuacao": "16/07/2026",
-        "desde": "16/07/2026",
-        "dias_tramitando": 33,
-        "julgado": true,
-        "data_julgamento": "17/08/2026",
-        "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e não-provido em 17/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "analisar-acordao-assinado-sjd-visualizar-expediente-dje": [
-      {
-        "processo": "0600174-64.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Acórdão Assinado - SJD; Visualizar expediente DJE",
-        "autuacao": "09/07/2026",
-        "desde": "09/07/2026",
-        "dias_tramitando": 39,
-        "julgado": true,
-        "data_julgamento": "17/08/2026",
-        "teor": "Conhecido o recurso de MOVIMENTO DEMOCRATICO BRASILEIRO - MDB, ANTIGO PMDB e provido em 17/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "analisar-resposta-do-expediente": [
       {
         "processo": "0600222-23.2026.6.10.0000",
@@ -2490,6 +2474,22 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-resposta-do-expediente-registrar-recurso": [
+      {
+        "processo": "0600155-58.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar resposta do expediente; Registrar recurso",
+        "autuacao": "23/05/2026",
+        "desde": "23/05/2026",
+        "dias_tramitando": 86,
+        "julgado": true,
+        "data_julgamento": "13/08/2026",
+        "teor": "Julgado procedente o pedido em 13/08/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -2655,9 +2655,9 @@
         "processo": "0600155-58.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Processo com prazo em curso",
+        "tarefa_atual": "Analisar resposta do expediente; Registrar recurso",
         "autuacao": "23/05/2026",
-        "desde": "17/08/2026",
+        "desde": "23/05/2026",
         "dias_tramitando": 86,
         "julgado": true,
         "data_julgamento": "13/08/2026",
@@ -3835,7 +3835,7 @@
         "processo": "0600192-85.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Acórdão Assinado - SJD; Preparar comunicação",
+        "tarefa_atual": "Analisar Acórdão Assinado - SJD; Visualizar expediente DJE",
         "autuacao": "16/07/2026",
         "desde": "16/07/2026",
         "dias_tramitando": 33,
@@ -4400,9 +4400,9 @@
       "processo": "0600155-58.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Processo com prazo em curso",
+      "tarefa_atual": "Analisar resposta do expediente; Registrar recurso",
       "autuacao": "23/05/2026",
-      "desde": "17/08/2026",
+      "desde": "23/05/2026",
       "dias_tramitando": 86,
       "julgado": true,
       "data_julgamento": "13/08/2026",
@@ -5778,9 +5778,9 @@
       "processo": "0600155-58.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Processo com prazo em curso",
+      "tarefa_atual": "Analisar resposta do expediente; Registrar recurso",
       "autuacao": "23/05/2026",
-      "desde": "17/08/2026",
+      "desde": "23/05/2026",
       "dias_tramitando": 86,
       "julgado": true,
       "data_julgamento": "13/08/2026",
@@ -6831,7 +6831,7 @@
       "processo": "0600192-85.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "REC no(a) Rp",
-      "tarefa_atual": "Analisar Acórdão Assinado - SJD; Preparar comunicação",
+      "tarefa_atual": "Analisar Acórdão Assinado - SJD; Visualizar expediente DJE",
       "autuacao": "16/07/2026",
       "desde": "16/07/2026",
       "dias_tramitando": 33,
@@ -7284,7 +7284,7 @@
       "processo": "0600192-85.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "REC no(a) Rp",
-      "tarefa_atual": "Analisar Acórdão Assinado - SJD; Preparar comunicação",
+      "tarefa_atual": "Analisar Acórdão Assinado - SJD; Visualizar expediente DJE",
       "autuacao": "16/07/2026",
       "desde": "16/07/2026",
       "dias_tramitando": 33,
@@ -7426,9 +7426,9 @@
       "processo": "0600155-58.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Processo com prazo em curso",
+      "tarefa_atual": "Analisar resposta do expediente; Registrar recurso",
       "autuacao": "23/05/2026",
-      "desde": "17/08/2026",
+      "desde": "23/05/2026",
       "dias_tramitando": 86,
       "julgado": true,
       "data_julgamento": "13/08/2026",
@@ -7774,8 +7774,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "18/08/2026 14:10",
+  "publicado_em": "18/08/2026 14:13",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "60b184aa76ebf36455f6d2a36455b92e7ca44eab41822d490e447424502bb100"
+  "hash_publicacao": "ada241a7fa64064fb4243fa621e6cf52f9e8ecccec799b4052d0e3dac2627fde"
 }
