@@ -1,5 +1,5 @@
 {
-  "total": 66,
+  "total": 67,
   "sigilosos": 0,
   "julgados_total": 32,
   "arquivados_total": 15,
@@ -43,15 +43,15 @@
       "nome": "Gabinete Juiz Auxiliar 3",
       "juiz": "Dr. Rubem Filho",
       "distribuidor": "Danielle Cerqueira Castro",
-      "quantidade": 13,
-      "media_dias": 33.7,
+      "quantidade": 14,
+      "media_dias": 31.8,
       "maior_tempo": 111,
       "urgentes": 1,
       "minutar": 4,
       "julgados": 5,
-      "percentual_julgados": 52.9,
+      "percentual_julgados": 50.0,
       "arquivados": 4,
-      "distribuidos": 17,
+      "distribuidos": 18,
       "cartas_precatorias": 1,
       "recursos": 5
     }
@@ -199,6 +199,11 @@
     },
     {
       "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Verificar e Certificar dados do processo",
+      "quantidade": 2
+    },
+    {
+      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Analisar resposta do expediente; Petições não lidas",
       "quantidade": 1
     },
@@ -221,17 +226,12 @@
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Realizar triagem urgentes",
       "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Verificar e Certificar dados do processo",
-      "quantidade": 1
     }
   ],
   "por_faixa": [
     {
       "faixa": "Até 30 dias",
-      "quantidade": 48
+      "quantidade": 49
     },
     {
       "faixa": "31 a 60 dias",
@@ -570,7 +570,7 @@
       {
         "gabinete": "Gab. JA 3",
         "nome": "Gabinete Juiz Auxiliar 3",
-        "total_acervo": 17,
+        "total_acervo": 18,
         "contagens": {
           "TRIAGEM_URGENTE": 1,
           "TRIAGEM_ORDINARIA": 0,
@@ -587,7 +587,7 @@
       "ASSINAR_ATO": 3,
       "LANCAR_MOVIMENTACAO": 0
     },
-    "total_acervo": 95
+    "total_acervo": 96
   },
   "tarefas_criticas_processos": {
     "TRIAGEM_URGENTE": [
@@ -976,6 +976,16 @@
         "total": 3
       },
       {
+        "codigo": "verificar-e-certificar-dados-do-processo",
+        "tarefa": "Verificar e Certificar dados do processo",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 2
+        },
+        "total": 3
+      },
+      {
         "codigo": "aguardando-providencias",
         "tarefa": "Aguardando providências",
         "contagens": {
@@ -1012,16 +1022,6 @@
           "Gabinete Juiz Auxiliar 1": 2,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 2
-      },
-      {
-        "codigo": "verificar-e-certificar-dados-do-processo",
-        "tarefa": "Verificar e Certificar dados do processo",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 2
       },
@@ -1166,7 +1166,7 @@
         "total": 1
       }
     ],
-    "total_acervo": 95
+    "total_acervo": 96
   },
   "todas_tarefas_processos": {
     "aguardando-julgamento-do-recurso-interno": [
@@ -2177,6 +2177,50 @@
         "responsavel_processo": ""
       }
     ],
+    "verificar-e-certificar-dados-do-processo": [
+      {
+        "processo": "0600947-12.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "NIP",
+        "tarefa_atual": "Verificar e Certificar dados do processo",
+        "autuacao": "18/08/2026",
+        "desde": "18/08/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600948-94.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "NIP",
+        "tarefa_atual": "Verificar e Certificar dados do processo",
+        "autuacao": "18/08/2026",
+        "desde": "18/08/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600949-79.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Verificar e Certificar dados do processo",
+        "autuacao": "18/08/2026",
+        "desde": "18/08/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "aguardando-providencias": [
       {
         "processo": "0600263-87.2026.6.10.0000",
@@ -2293,36 +2337,6 @@
         "julgado": true,
         "data_julgamento": "13/08/2026",
         "teor": "Julgado procedente o pedido em 13/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "verificar-e-certificar-dados-do-processo": [
-      {
-        "processo": "0600947-12.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "NIP",
-        "tarefa_atual": "Verificar e Certificar dados do processo",
-        "autuacao": "18/08/2026",
-        "desde": "18/08/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600948-94.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "NIP",
-        "tarefa_atual": "Verificar e Certificar dados do processo",
-        "autuacao": "18/08/2026",
-        "desde": "18/08/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -3887,6 +3901,20 @@
         "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
+      },
+      {
+        "processo": "0600949-79.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Verificar e Certificar dados do processo",
+        "autuacao": "18/08/2026",
+        "desde": "18/08/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
       }
     ]
   },
@@ -4196,7 +4224,7 @@
       "Gab. JA 3": 9
     }
   ],
-  "distribuidos_total": 81,
+  "distribuidos_total": 82,
   "cartas_precatorias_total": 10,
   "recursos_distribuidos_total": 32,
   "recursos_julgados_total": 11,
@@ -5115,6 +5143,20 @@
       "processo": "0600948-94.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "NIP",
+      "tarefa_atual": "Verificar e Certificar dados do processo",
+      "autuacao": "18/08/2026",
+      "desde": "18/08/2026",
+      "dias_tramitando": 0,
+      "julgado": false,
+      "data_julgamento": "",
+      "teor": "",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
+    },
+    {
+      "processo": "0600949-79.2026.6.10.0000",
+      "gabinete": "Gab. JA 3",
+      "classe": "Rp",
       "tarefa_atual": "Verificar e Certificar dados do processo",
       "autuacao": "18/08/2026",
       "desde": "18/08/2026",
@@ -6502,6 +6544,20 @@
       "teor": "",
       "segredo_justica": "NÃO",
       "responsavel_processo": ""
+    },
+    {
+      "processo": "0600949-79.2026.6.10.0000",
+      "gabinete": "Gab. JA 3",
+      "classe": "Rp",
+      "tarefa_atual": "Verificar e Certificar dados do processo",
+      "autuacao": "18/08/2026",
+      "desde": "18/08/2026",
+      "dias_tramitando": 0,
+      "julgado": false,
+      "data_julgamento": "",
+      "teor": "",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
     }
   ],
   "cartas_precatorias_processos": [
@@ -7719,8 +7775,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "18/08/2026 16:41",
+  "publicado_em": "18/08/2026 16:44",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "384101443cd3b0d33413186fbfb1116d7463dbdff1f0d323d734f70bb92c4dc3"
+  "hash_publicacao": "0a331b3c773c1f54b787e07c91d49b28d2bcd1c1a51ecffcccdec7e7f87c58fa"
 }
