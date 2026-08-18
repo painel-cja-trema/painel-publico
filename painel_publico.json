@@ -29,7 +29,7 @@
       "quantidade": 33,
       "media_dias": 37.0,
       "maior_tempo": 130,
-      "urgentes": 0,
+      "urgentes": 1,
       "minutar": 2,
       "julgados": 15,
       "percentual_julgados": 60.4,
@@ -84,12 +84,12 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Analisar Processos; Assinar acórdão ou resolução - Gabinete; Lançar movimento - Petição avulsa",
+      "tarefa_atual": "Analisar Processos; Assinar acórdão ou resolução - Gabinete",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Analisar Processos; Revisar acórdão ou resolução - Gabinete",
+      "tarefa_atual": "Analisar Processos; Lançar movimento - Petição avulsa; Lançar movimentos de julgamento colegiado",
       "quantidade": 1
     },
     {
@@ -164,7 +164,7 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado",
+      "tarefa_atual": "Analisar Acórdão Assinado - SJD; Analisar Processos",
       "quantidade": 1
     },
     {
@@ -175,6 +175,11 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Analisar determinação",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Analisar determinação - Urgentes; Petições não lidas",
       "quantidade": 1
     },
     {
@@ -190,11 +195,6 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Petições não lidas; Remeter Processos - Gabinete",
       "quantidade": 1
     },
     {
@@ -575,7 +575,7 @@
           "TRIAGEM_ORDINARIA": 9,
           "MINUTAR_ATO": 2,
           "ASSINAR_ATO": 2,
-          "LANCAR_MOVIMENTACAO": 2
+          "LANCAR_MOVIMENTACAO": 1
         }
       },
       {
@@ -596,7 +596,7 @@
       "TRIAGEM_ORDINARIA": 10,
       "MINUTAR_ATO": 6,
       "ASSINAR_ATO": 2,
-      "LANCAR_MOVIMENTACAO": 3
+      "LANCAR_MOVIMENTACAO": 2
     },
     "total_acervo": 96
   },
@@ -876,24 +876,10 @@
         "responsavel_processo": ""
       },
       {
-        "processo": "0600193-70.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado",
-        "autuacao": "22/07/2026",
-        "desde": "22/07/2026",
-        "dias_tramitando": 27,
-        "julgado": true,
-        "data_julgamento": "16/07/2026",
-        "teor": "Julgado procedente o pedido em 16/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
         "processo": "0600225-75.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos; Assinar acórdão ou resolução - Gabinete; Lançar movimento - Petição avulsa",
+        "tarefa_atual": "Analisar Processos; Lançar movimento - Petição avulsa; Lançar movimentos de julgamento colegiado",
         "autuacao": "23/07/2026",
         "desde": "23/07/2026",
         "dias_tramitando": 26,
@@ -1081,8 +1067,18 @@
         "total": 1
       },
       {
-        "codigo": "analisar-processos-assinar-acordao-ou-resolucao-gabinete-lancar-movimento-peticao-avulsa",
-        "tarefa": "Analisar Processos; Assinar acórdão ou resolução - Gabinete; Lançar movimento - Petição avulsa",
+        "codigo": "analisar-acordao-assinado-sjd-analisar-processos",
+        "tarefa": "Analisar Acórdão Assinado - SJD; Analisar Processos",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "analisar-processos-assinar-acordao-ou-resolucao-gabinete",
+        "tarefa": "Analisar Processos; Assinar acórdão ou resolução - Gabinete",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -1091,11 +1087,11 @@
         "total": 1
       },
       {
-        "codigo": "analisar-processos-lancar-movimentos-de-julgamento-colegiado",
-        "tarefa": "Analisar Processos; Lançar movimentos de julgamento colegiado",
+        "codigo": "analisar-processos-lancar-movimento-peticao-avulsa-lancar-movimentos-de-julgamento-colegiado",
+        "tarefa": "Analisar Processos; Lançar movimento - Petição avulsa; Lançar movimentos de julgamento colegiado",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -1111,22 +1107,22 @@
         "total": 1
       },
       {
-        "codigo": "analisar-processos-revisar-acordao-ou-resolucao-gabinete",
-        "tarefa": "Analisar Processos; Revisar acórdão ou resolução - Gabinete",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
         "codigo": "analisar-determinacao-urgentes",
         "tarefa": "Analisar determinação - Urgentes",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
+        "codigo": "analisar-determinacao-urgentes-peticoes-nao-lidas",
+        "tarefa": "Analisar determinação - Urgentes; Petições não lidas",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
       },
@@ -1206,16 +1202,6 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "peticoes-nao-lidas-remeter-processos-gabinete",
-        "tarefa": "Petições não lidas; Remeter Processos - Gabinete",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -1788,8 +1774,8 @@
         "desde": "22/07/2026",
         "dias_tramitando": 53,
         "julgado": true,
-        "data_julgamento": "16/07/2026",
-        "teor": "Julgado procedente o pedido em 16/07/2026",
+        "data_julgamento": "18/08/2026",
+        "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e PARTIDO SOCIALISTA BRASILEIRO DIRETORIO ESTADUAL e não-provido em 18/08/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -2394,34 +2380,50 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-processos-assinar-acordao-ou-resolucao-gabinete-lancar-movimento-peticao-avulsa": [
+    "analisar-acordao-assinado-sjd-analisar-processos": [
+      {
+        "processo": "0600193-70.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Analisar Acórdão Assinado - SJD; Analisar Processos",
+        "autuacao": "22/07/2026",
+        "desde": "22/07/2026",
+        "dias_tramitando": 27,
+        "julgado": true,
+        "data_julgamento": "18/08/2026",
+        "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e PARTIDO SOCIALISTA BRASILEIRO DIRETORIO ESTADUAL e não-provido em 18/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-processos-assinar-acordao-ou-resolucao-gabinete": [
+      {
+        "processo": "0600157-28.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Analisar Processos; Assinar acórdão ou resolução - Gabinete",
+        "autuacao": "01/08/2026",
+        "desde": "01/08/2026",
+        "dias_tramitando": 17,
+        "julgado": true,
+        "data_julgamento": "09/07/2026",
+        "teor": "Julgado procedente o pedido em 09/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-processos-lancar-movimento-peticao-avulsa-lancar-movimentos-de-julgamento-colegiado": [
       {
         "processo": "0600225-75.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos; Assinar acórdão ou resolução - Gabinete; Lançar movimento - Petição avulsa",
+        "tarefa_atual": "Analisar Processos; Lançar movimento - Petição avulsa; Lançar movimentos de julgamento colegiado",
         "autuacao": "23/07/2026",
         "desde": "23/07/2026",
         "dias_tramitando": 26,
         "julgado": true,
         "data_julgamento": "20/07/2026",
         "teor": "Julgado improcedente o pedido em 20/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "analisar-processos-lancar-movimentos-de-julgamento-colegiado": [
-      {
-        "processo": "0600193-70.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado",
-        "autuacao": "22/07/2026",
-        "desde": "22/07/2026",
-        "dias_tramitando": 27,
-        "julgado": true,
-        "data_julgamento": "16/07/2026",
-        "teor": "Julgado procedente o pedido em 16/07/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -2442,22 +2444,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-processos-revisar-acordao-ou-resolucao-gabinete": [
-      {
-        "processo": "0600157-28.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos; Revisar acórdão ou resolução - Gabinete",
-        "autuacao": "01/08/2026",
-        "desde": "01/08/2026",
-        "dias_tramitando": 17,
-        "julgado": true,
-        "data_julgamento": "09/07/2026",
-        "teor": "Julgado procedente o pedido em 09/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "analisar-determinacao-urgentes": [
       {
         "processo": "0600949-79.2026.6.10.0000",
@@ -2467,6 +2453,22 @@
         "autuacao": "18/08/2026",
         "desde": "18/08/2026",
         "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-determinacao-urgentes-peticoes-nao-lidas": [
+      {
+        "processo": "0600944-57.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação - Urgentes; Petições não lidas",
+        "autuacao": "16/08/2026",
+        "desde": "16/08/2026",
+        "dias_tramitando": 1,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -2595,22 +2597,6 @@
         "autuacao": "13/08/2026",
         "desde": "13/08/2026",
         "dias_tramitando": 5,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "peticoes-nao-lidas-remeter-processos-gabinete": [
-      {
-        "processo": "0600944-57.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Petições não lidas; Remeter Processos - Gabinete",
-        "autuacao": "16/08/2026",
-        "desde": "16/08/2026",
-        "dias_tramitando": 1,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -2923,7 +2909,7 @@
         "processo": "0600225-75.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos; Assinar acórdão ou resolução - Gabinete; Lançar movimento - Petição avulsa",
+        "tarefa_atual": "Analisar Processos; Lançar movimento - Petição avulsa; Lançar movimentos de julgamento colegiado",
         "autuacao": "23/07/2026",
         "desde": "23/07/2026",
         "dias_tramitando": 26,
@@ -2937,7 +2923,7 @@
         "processo": "0600157-28.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos; Revisar acórdão ou resolução - Gabinete",
+        "tarefa_atual": "Analisar Processos; Assinar acórdão ou resolução - Gabinete",
         "autuacao": "01/08/2026",
         "desde": "01/08/2026",
         "dias_tramitando": 17,
@@ -3266,8 +3252,8 @@
         "desde": "22/07/2026",
         "dias_tramitando": 53,
         "julgado": true,
-        "data_julgamento": "16/07/2026",
-        "teor": "Julgado procedente o pedido em 16/07/2026",
+        "data_julgamento": "18/08/2026",
+        "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e PARTIDO SOCIALISTA BRASILEIRO DIRETORIO ESTADUAL e não-provido em 18/08/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -3359,13 +3345,13 @@
         "processo": "0600193-70.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado",
+        "tarefa_atual": "Analisar Acórdão Assinado - SJD; Analisar Processos",
         "autuacao": "22/07/2026",
         "desde": "22/07/2026",
         "dias_tramitando": 27,
         "julgado": true,
-        "data_julgamento": "16/07/2026",
-        "teor": "Julgado procedente o pedido em 16/07/2026",
+        "data_julgamento": "18/08/2026",
+        "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e PARTIDO SOCIALISTA BRASILEIRO DIRETORIO ESTADUAL e não-provido em 18/08/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -3709,7 +3695,7 @@
         "processo": "0600944-57.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Petições não lidas; Remeter Processos - Gabinete",
+        "tarefa_atual": "Analisar determinação - Urgentes; Petições não lidas",
         "autuacao": "16/08/2026",
         "desde": "16/08/2026",
         "dias_tramitando": 1,
@@ -4021,6 +4007,22 @@
       "dias_tramitando": 54
     },
     {
+      "processo": "0600193-70.2026.6.10.0000",
+      "gabinete": "Gab. JA 2",
+      "classe": "REC no(a) Rp",
+      "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e PARTIDO SOCIALISTA BRASILEIRO DIRETORIO ESTADUAL e não-provido em 18/08/2026",
+      "data_julgamento": "18/08/2026",
+      "dias_tramitando": 27
+    },
+    {
+      "processo": "0600193-70.2026.6.10.0000",
+      "gabinete": "Gab. JA 2",
+      "classe": "Rp",
+      "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e PARTIDO SOCIALISTA BRASILEIRO DIRETORIO ESTADUAL e não-provido em 18/08/2026",
+      "data_julgamento": "18/08/2026",
+      "dias_tramitando": 53
+    },
+    {
       "processo": "0600109-69.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "REC no(a) Rp",
@@ -4227,22 +4229,6 @@
       "teor": "Julgado procedente em parte do pedido em 05/08/2026",
       "data_julgamento": "05/08/2026",
       "dias_tramitando": 8
-    },
-    {
-      "processo": "0600167-72.2026.6.10.0000",
-      "gabinete": "Gab. JA 2",
-      "classe": "ED no(a) Rp",
-      "teor": "Julgado procedente em parte do pedido em 05/08/2026",
-      "data_julgamento": "05/08/2026",
-      "dias_tramitando": 8
-    },
-    {
-      "processo": "0600167-72.2026.6.10.0000",
-      "gabinete": "Gab. JA 2",
-      "classe": "Rp",
-      "teor": "Julgado procedente em parte do pedido em 05/08/2026",
-      "data_julgamento": "05/08/2026",
-      "dias_tramitando": 78
     }
   ],
   "teores": [
@@ -4267,8 +4253,8 @@
       "quantidade": 3
     },
     {
-      "teor": "Julgado procedente o pedido em 16/07/2026",
-      "quantidade": 3
+      "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e PARTIDO SOCIALISTA BRASILEIRO DIRETORIO ESTADUAL e não-provido em 18/08/2026",
+      "quantidade": 2
     },
     {
       "teor": "Conhecido o recurso de FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA (PRD/SOLIDARIEDADE) e não-provido em 17/08/2026",
@@ -4299,20 +4285,20 @@
     {
       "mes": "07/2026",
       "Gab. JA 1": 10,
-      "Gab. JA 2": 12,
+      "Gab. JA 2": 10,
       "Gab. JA 3": 0
     },
     {
       "mes": "08/2026",
       "Gab. JA 1": 12,
-      "Gab. JA 2": 17,
+      "Gab. JA 2": 19,
       "Gab. JA 3": 9
     }
   ],
   "distribuidos_total": 82,
   "cartas_precatorias_total": 10,
   "recursos_distribuidos_total": 32,
-  "recursos_julgados_total": 11,
+  "recursos_julgados_total": 12,
   "estoque_processos": [
     {
       "processo": "0600080-19.2026.6.10.0000",
@@ -4743,8 +4729,8 @@
       "desde": "22/07/2026",
       "dias_tramitando": 53,
       "julgado": true,
-      "data_julgamento": "16/07/2026",
-      "teor": "Julgado procedente o pedido em 16/07/2026",
+      "data_julgamento": "18/08/2026",
+      "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e PARTIDO SOCIALISTA BRASILEIRO DIRETORIO ESTADUAL e não-provido em 18/08/2026",
       "segredo_justica": "NÃO",
       "responsavel_processo": ""
     },
@@ -5172,7 +5158,7 @@
       "processo": "0600944-57.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Petições não lidas; Remeter Processos - Gabinete",
+      "tarefa_atual": "Analisar determinação - Urgentes; Petições não lidas",
       "autuacao": "16/08/2026",
       "desde": "16/08/2026",
       "dias_tramitando": 1,
@@ -6135,8 +6121,8 @@
       "desde": "22/07/2026",
       "dias_tramitando": 53,
       "julgado": true,
-      "data_julgamento": "16/07/2026",
-      "teor": "Julgado procedente o pedido em 16/07/2026",
+      "data_julgamento": "18/08/2026",
+      "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e PARTIDO SOCIALISTA BRASILEIRO DIRETORIO ESTADUAL e não-provido em 18/08/2026",
       "segredo_justica": "NÃO",
       "responsavel_processo": ""
     },
@@ -6564,7 +6550,7 @@
       "processo": "0600944-57.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Petições não lidas; Remeter Processos - Gabinete",
+      "tarefa_atual": "Analisar determinação - Urgentes; Petições não lidas",
       "autuacao": "16/08/2026",
       "desde": "16/08/2026",
       "dias_tramitando": 1,
@@ -6973,13 +6959,13 @@
       "processo": "0600193-70.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "REC no(a) Rp",
-      "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado",
+      "tarefa_atual": "Analisar Acórdão Assinado - SJD; Analisar Processos",
       "autuacao": "22/07/2026",
       "desde": "22/07/2026",
       "dias_tramitando": 27,
       "julgado": true,
-      "data_julgamento": "16/07/2026",
-      "teor": "Julgado procedente o pedido em 16/07/2026",
+      "data_julgamento": "18/08/2026",
+      "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e PARTIDO SOCIALISTA BRASILEIRO DIRETORIO ESTADUAL e não-provido em 18/08/2026",
       "segredo_justica": "NÃO",
       "responsavel_processo": ""
     },
@@ -7015,7 +7001,7 @@
       "processo": "0600225-75.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "REC no(a) Rp",
-      "tarefa_atual": "Analisar Processos; Assinar acórdão ou resolução - Gabinete; Lançar movimento - Petição avulsa",
+      "tarefa_atual": "Analisar Processos; Lançar movimento - Petição avulsa; Lançar movimentos de julgamento colegiado",
       "autuacao": "23/07/2026",
       "desde": "23/07/2026",
       "dias_tramitando": 26,
@@ -7029,7 +7015,7 @@
       "processo": "0600157-28.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "REC no(a) Rp",
-      "tarefa_atual": "Analisar Processos; Revisar acórdão ou resolução - Gabinete",
+      "tarefa_atual": "Analisar Processos; Assinar acórdão ou resolução - Gabinete",
       "autuacao": "01/08/2026",
       "desde": "01/08/2026",
       "dias_tramitando": 17,
@@ -7395,6 +7381,20 @@
       "responsavel_processo": ""
     },
     {
+      "processo": "0600193-70.2026.6.10.0000",
+      "gabinete": "Gab. JA 2",
+      "classe": "REC no(a) Rp",
+      "tarefa_atual": "Analisar Acórdão Assinado - SJD; Analisar Processos",
+      "autuacao": "22/07/2026",
+      "desde": "22/07/2026",
+      "dias_tramitando": 27,
+      "julgado": true,
+      "data_julgamento": "18/08/2026",
+      "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e PARTIDO SOCIALISTA BRASILEIRO DIRETORIO ESTADUAL e não-provido em 18/08/2026",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
+    },
+    {
       "processo": "0600190-18.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Ag no(a) Rp",
@@ -7727,8 +7727,8 @@
       "desde": "22/07/2026",
       "dias_tramitando": 53,
       "julgado": true,
-      "data_julgamento": "16/07/2026",
-      "teor": "Julgado procedente o pedido em 16/07/2026",
+      "data_julgamento": "18/08/2026",
+      "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e PARTIDO SOCIALISTA BRASILEIRO DIRETORIO ESTADUAL e não-provido em 18/08/2026",
       "segredo_justica": "NÃO",
       "responsavel_processo": ""
     },
@@ -7860,8 +7860,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "18/08/2026 19:12",
+  "publicado_em": "18/08/2026 19:15",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "575215e236b9f7e9263ddf6b5b6e5862664ab46f3cb72c030222d8801a2e3570"
+  "hash_publicacao": "0084418db7c55c16611fdc1ad1b5fe7dd2bc6cd4ce0592b7414a4df988be7830"
 }
