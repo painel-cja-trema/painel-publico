@@ -74,27 +74,27 @@
     },
     {
       "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
+      "quantidade": 2
+    },
+    {
+      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Aguardando julgamento do recurso interno; Aguardando julgamento do recurso interno; Registrar recurso",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Analisar Processos; Selecionar documentos para acórdão - Gabinete",
+      "tarefa_atual": "Analisar Processos; Assinar acórdão ou resolução - Gabinete; Assinar ato - Petição avulsa",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Analisar Processos; Elaborar acórdão ou resolução - Gabinete",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Analisar determinação",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Analisar resposta do expediente; Registrar recurso",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Assinar acórdão ou resolução - Gabinete; Assinar ato - Petição avulsa; Incluído em pauta",
       "quantidade": 1
     },
     {
@@ -105,11 +105,6 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
       "quantidade": 1
     },
     {
@@ -169,12 +164,12 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Analisar Processos; Assinar acórdão ou resolução - Gabinete",
+      "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Analisar Processos; Assinar acórdão ou resolução - Gabinete; Pauta provisória virtual",
+      "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado; Pauta provisória virtual",
       "quantidade": 1
     },
     {
@@ -356,7 +351,7 @@
       "processo": "0600155-58.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar resposta do expediente; Registrar recurso",
+      "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
       "dias_tramitando": 87,
       "segredo_justica": "NÃO"
     },
@@ -589,7 +584,7 @@
           "TRIAGEM_ORDINARIA": 9,
           "MINUTAR_ATO": 2,
           "ASSINAR_ATO": 3,
-          "LANCAR_MOVIMENTACAO": 0
+          "LANCAR_MOVIMENTACAO": 2
         }
       },
       {
@@ -610,7 +605,7 @@
       "TRIAGEM_ORDINARIA": 10,
       "MINUTAR_ATO": 7,
       "ASSINAR_ATO": 4,
-      "LANCAR_MOVIMENTACAO": 0
+      "LANCAR_MOVIMENTACAO": 2
     },
     "total_acervo": 96
   },
@@ -877,7 +872,7 @@
         "processo": "0600225-75.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Assinar acórdão ou resolução - Gabinete; Assinar ato - Petição avulsa; Incluído em pauta",
+        "tarefa_atual": "Analisar Processos; Assinar acórdão ou resolução - Gabinete; Assinar ato - Petição avulsa",
         "autuacao": "23/07/2026",
         "desde": "23/07/2026",
         "dias_tramitando": 26,
@@ -916,7 +911,36 @@
         "responsavel_processo": ""
       }
     ],
-    "LANCAR_MOVIMENTACAO": []
+    "LANCAR_MOVIMENTACAO": [
+      {
+        "processo": "0600175-49.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado; Pauta provisória virtual",
+        "autuacao": "21/07/2026",
+        "desde": "21/07/2026",
+        "dias_tramitando": 28,
+        "julgado": true,
+        "data_julgamento": "15/07/2026",
+        "teor": "Julgado procedente o pedido em 15/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600193-70.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado",
+        "autuacao": "22/07/2026",
+        "desde": "22/07/2026",
+        "dias_tramitando": 27,
+        "julgado": true,
+        "data_julgamento": "16/07/2026",
+        "teor": "Julgado procedente o pedido em 16/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ]
   },
   "entrada_comissao": {
     "codigo": "LIMINAR_CERTIFICACAO",
@@ -1054,6 +1078,16 @@
         "total": 2
       },
       {
+        "codigo": "processo-com-prazo-em-curso-registrar-recurso",
+        "tarefa": "Processo com prazo em curso; Registrar recurso",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 2,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 2
+      },
+      {
         "codigo": "verificar-e-certificar-dados-do-processo",
         "tarefa": "Verificar e Certificar dados do processo",
         "contagens": {
@@ -1084,31 +1118,41 @@
         "total": 1
       },
       {
-        "codigo": "analisar-processos-assinar-acordao-ou-resolucao-gabinete",
-        "tarefa": "Analisar Processos; Assinar acórdão ou resolução - Gabinete",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "analisar-processos-assinar-acordao-ou-resolucao-gabinete-pauta-provisoria-virtual",
-        "tarefa": "Analisar Processos; Assinar acórdão ou resolução - Gabinete; Pauta provisória virtual",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "analisar-processos-selecionar-documentos-para-acordao-gabinete",
-        "tarefa": "Analisar Processos; Selecionar documentos para acórdão - Gabinete",
+        "codigo": "analisar-processos-assinar-acordao-ou-resolucao-gabinete-assinar-ato-peticao-avulsa",
+        "tarefa": "Analisar Processos; Assinar acórdão ou resolução - Gabinete; Assinar ato - Petição avulsa",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "analisar-processos-elaborar-acordao-ou-resolucao-gabinete",
+        "tarefa": "Analisar Processos; Elaborar acórdão ou resolução - Gabinete",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "analisar-processos-lancar-movimentos-de-julgamento-colegiado",
+        "tarefa": "Analisar Processos; Lançar movimentos de julgamento colegiado",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "analisar-processos-lancar-movimentos-de-julgamento-colegiado-pauta-provisoria-virtual",
+        "tarefa": "Analisar Processos; Lançar movimentos de julgamento colegiado; Pauta provisória virtual",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -1130,26 +1174,6 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
-        "codigo": "analisar-resposta-do-expediente-registrar-recurso",
-        "tarefa": "Analisar resposta do expediente; Registrar recurso",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "assinar-acordao-ou-resolucao-gabinete-assinar-ato-peticao-avulsa-incluido-em-pauta",
-        "tarefa": "Assinar acórdão ou resolução - Gabinete; Assinar ato - Petição avulsa; Incluído em pauta",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
       },
@@ -1216,16 +1240,6 @@
       {
         "codigo": "peticoes-nao-lidas-realizar-triagem-ordinarios",
         "tarefa": "Petições não lidas; Realizar triagem ordinários",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "processo-com-prazo-em-curso-registrar-recurso",
-        "tarefa": "Processo com prazo em curso; Registrar recurso",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -2329,6 +2343,36 @@
         "responsavel_processo": ""
       }
     ],
+    "processo-com-prazo-em-curso-registrar-recurso": [
+      {
+        "processo": "0600080-19.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
+        "autuacao": "07/04/2026",
+        "desde": "07/04/2026",
+        "dias_tramitando": 132,
+        "julgado": true,
+        "data_julgamento": "13/08/2026",
+        "teor": "Julgado improcedente o pedido em 13/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600155-58.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
+        "autuacao": "23/05/2026",
+        "desde": "23/05/2026",
+        "dias_tramitando": 87,
+        "julgado": true,
+        "data_julgamento": "13/08/2026",
+        "teor": "Julgado procedente o pedido em 13/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "verificar-e-certificar-dados-do-processo": [
       {
         "processo": "0600947-12.2026.6.10.0000",
@@ -2391,12 +2435,44 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-processos-assinar-acordao-ou-resolucao-gabinete": [
+    "analisar-processos-assinar-acordao-ou-resolucao-gabinete-assinar-ato-peticao-avulsa": [
+      {
+        "processo": "0600225-75.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Analisar Processos; Assinar acórdão ou resolução - Gabinete; Assinar ato - Petição avulsa",
+        "autuacao": "23/07/2026",
+        "desde": "23/07/2026",
+        "dias_tramitando": 26,
+        "julgado": true,
+        "data_julgamento": "20/07/2026",
+        "teor": "Julgado improcedente o pedido em 20/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-processos-elaborar-acordao-ou-resolucao-gabinete": [
+      {
+        "processo": "0600157-28.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Analisar Processos; Elaborar acórdão ou resolução - Gabinete",
+        "autuacao": "01/08/2026",
+        "desde": "01/08/2026",
+        "dias_tramitando": 17,
+        "julgado": true,
+        "data_julgamento": "09/07/2026",
+        "teor": "Julgado procedente o pedido em 09/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-processos-lancar-movimentos-de-julgamento-colegiado": [
       {
         "processo": "0600193-70.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos; Assinar acórdão ou resolução - Gabinete",
+        "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado",
         "autuacao": "22/07/2026",
         "desde": "22/07/2026",
         "dias_tramitando": 27,
@@ -2407,34 +2483,18 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-processos-assinar-acordao-ou-resolucao-gabinete-pauta-provisoria-virtual": [
+    "analisar-processos-lancar-movimentos-de-julgamento-colegiado-pauta-provisoria-virtual": [
       {
         "processo": "0600175-49.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos; Assinar acórdão ou resolução - Gabinete; Pauta provisória virtual",
+        "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado; Pauta provisória virtual",
         "autuacao": "21/07/2026",
         "desde": "21/07/2026",
         "dias_tramitando": 28,
         "julgado": true,
         "data_julgamento": "15/07/2026",
         "teor": "Julgado procedente o pedido em 15/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "analisar-processos-selecionar-documentos-para-acordao-gabinete": [
-      {
-        "processo": "0600157-28.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos; Selecionar documentos para acórdão - Gabinete",
-        "autuacao": "01/08/2026",
-        "desde": "01/08/2026",
-        "dias_tramitando": 17,
-        "julgado": true,
-        "data_julgamento": "09/07/2026",
-        "teor": "Julgado procedente o pedido em 09/07/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -2467,38 +2527,6 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "analisar-resposta-do-expediente-registrar-recurso": [
-      {
-        "processo": "0600155-58.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar resposta do expediente; Registrar recurso",
-        "autuacao": "23/05/2026",
-        "desde": "23/05/2026",
-        "dias_tramitando": 87,
-        "julgado": true,
-        "data_julgamento": "13/08/2026",
-        "teor": "Julgado procedente o pedido em 13/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "assinar-acordao-ou-resolucao-gabinete-assinar-ato-peticao-avulsa-incluido-em-pauta": [
-      {
-        "processo": "0600225-75.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Assinar acórdão ou resolução - Gabinete; Assinar ato - Petição avulsa; Incluído em pauta",
-        "autuacao": "23/07/2026",
-        "desde": "23/07/2026",
-        "dias_tramitando": 26,
-        "julgado": true,
-        "data_julgamento": "20/07/2026",
-        "teor": "Julgado improcedente o pedido em 20/07/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -2615,22 +2643,6 @@
         "responsavel_processo": ""
       }
     ],
-    "processo-com-prazo-em-curso-registrar-recurso": [
-      {
-        "processo": "0600080-19.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
-        "autuacao": "07/04/2026",
-        "desde": "07/04/2026",
-        "dias_tramitando": 132,
-        "julgado": true,
-        "data_julgamento": "13/08/2026",
-        "teor": "Julgado improcedente o pedido em 13/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "registrar-ciencia-por-telefone-ou-pessoalmente": [
       {
         "processo": "0600899-53.2026.6.10.0000",
@@ -2712,7 +2724,7 @@
         "processo": "0600155-58.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Analisar resposta do expediente; Registrar recurso",
+        "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
         "autuacao": "23/05/2026",
         "desde": "23/05/2026",
         "dias_tramitando": 87,
@@ -2936,7 +2948,7 @@
         "processo": "0600225-75.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Assinar acórdão ou resolução - Gabinete; Assinar ato - Petição avulsa; Incluído em pauta",
+        "tarefa_atual": "Analisar Processos; Assinar acórdão ou resolução - Gabinete; Assinar ato - Petição avulsa",
         "autuacao": "23/07/2026",
         "desde": "23/07/2026",
         "dias_tramitando": 26,
@@ -2950,7 +2962,7 @@
         "processo": "0600157-28.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos; Selecionar documentos para acórdão - Gabinete",
+        "tarefa_atual": "Analisar Processos; Elaborar acórdão ou resolução - Gabinete",
         "autuacao": "01/08/2026",
         "desde": "01/08/2026",
         "dias_tramitando": 17,
@@ -3358,7 +3370,7 @@
         "processo": "0600175-49.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos; Assinar acórdão ou resolução - Gabinete; Pauta provisória virtual",
+        "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado; Pauta provisória virtual",
         "autuacao": "21/07/2026",
         "desde": "21/07/2026",
         "dias_tramitando": 28,
@@ -3372,7 +3384,7 @@
         "processo": "0600193-70.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos; Assinar acórdão ou resolução - Gabinete",
+        "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado",
         "autuacao": "22/07/2026",
         "desde": "22/07/2026",
         "dias_tramitando": 27,
@@ -4471,7 +4483,7 @@
       "processo": "0600155-58.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar resposta do expediente; Registrar recurso",
+      "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
       "autuacao": "23/05/2026",
       "desde": "23/05/2026",
       "dias_tramitando": 87,
@@ -5863,7 +5875,7 @@
       "processo": "0600155-58.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar resposta do expediente; Registrar recurso",
+      "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
       "autuacao": "23/05/2026",
       "desde": "23/05/2026",
       "dias_tramitando": 87,
@@ -6958,7 +6970,7 @@
       "processo": "0600175-49.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "REC no(a) Rp",
-      "tarefa_atual": "Analisar Processos; Assinar acórdão ou resolução - Gabinete; Pauta provisória virtual",
+      "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado; Pauta provisória virtual",
       "autuacao": "21/07/2026",
       "desde": "21/07/2026",
       "dias_tramitando": 28,
@@ -6986,7 +6998,7 @@
       "processo": "0600193-70.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "REC no(a) Rp",
-      "tarefa_atual": "Analisar Processos; Assinar acórdão ou resolução - Gabinete",
+      "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado",
       "autuacao": "22/07/2026",
       "desde": "22/07/2026",
       "dias_tramitando": 27,
@@ -7028,7 +7040,7 @@
       "processo": "0600225-75.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "REC no(a) Rp",
-      "tarefa_atual": "Assinar acórdão ou resolução - Gabinete; Assinar ato - Petição avulsa; Incluído em pauta",
+      "tarefa_atual": "Analisar Processos; Assinar acórdão ou resolução - Gabinete; Assinar ato - Petição avulsa",
       "autuacao": "23/07/2026",
       "desde": "23/07/2026",
       "dias_tramitando": 26,
@@ -7042,7 +7054,7 @@
       "processo": "0600157-28.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "REC no(a) Rp",
-      "tarefa_atual": "Analisar Processos; Selecionar documentos para acórdão - Gabinete",
+      "tarefa_atual": "Analisar Processos; Elaborar acórdão ou resolução - Gabinete",
       "autuacao": "01/08/2026",
       "desde": "01/08/2026",
       "dias_tramitando": 17,
@@ -7525,7 +7537,7 @@
       "processo": "0600155-58.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar resposta do expediente; Registrar recurso",
+      "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
       "autuacao": "23/05/2026",
       "desde": "23/05/2026",
       "dias_tramitando": 87,
@@ -7873,8 +7885,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "18/08/2026 18:57",
+  "publicado_em": "18/08/2026 19:00",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "5303da0950efe54dedafc247f73b84fa68bc9c403310283b0f6af99ed0e60daf"
+  "hash_publicacao": "fd99bd11513f787e87bd1b3069c771742e71af87a757a32b3b1a7e6aef91e478"
 }
