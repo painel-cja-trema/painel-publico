@@ -79,11 +79,6 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Analisar determinação",
-      "quantidade": 2
-    },
-    {
-      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Aguarda Sessão de Julgamento Virtual; Elaborar extrato da ata; Liberados para julgamento pelo gabinete virtual; Selecionar documentos para acórdão - Gabinete",
       "quantidade": 1
     },
@@ -99,6 +94,11 @@
     },
     {
       "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Analisar determinação",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Analisar determinação; Registrar recurso",
       "quantidade": 1
     },
@@ -110,6 +110,11 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Minutar ato; Petições não lidas; Petições não lidas",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Preparar comunicação",
       "quantidade": 1
     },
     {
@@ -978,16 +983,6 @@
         "total": 3
       },
       {
-        "codigo": "analisar-determinacao",
-        "tarefa": "Analisar determinação",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 2,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 3
-      },
-      {
         "codigo": "assinar-ato",
         "tarefa": "Assinar ato",
         "contagens": {
@@ -1030,6 +1025,16 @@
       {
         "codigo": "analisar-acordao-assinado-sjd-processo-com-prazo-em-curso",
         "tarefa": "Analisar Acórdão Assinado - SJD; Processo com prazo em curso",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 2
+      },
+      {
+        "codigo": "analisar-determinacao",
+        "tarefa": "Analisar determinação",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -1164,6 +1169,16 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
+        "codigo": "preparar-comunicacao",
+        "tarefa": "Preparar comunicação",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
       },
@@ -2147,50 +2162,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-determinacao": [
-      {
-        "processo": "0600089-78.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "10/04/2026",
-        "desde": "17/08/2026",
-        "dias_tramitando": 130,
-        "julgado": true,
-        "data_julgamento": "16/07/2026",
-        "teor": "Julgado procedente o pedido em 16/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600151-21.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "18/05/2026",
-        "desde": "14/08/2026",
-        "dias_tramitando": 92,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600945-42.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "PetCiv",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "17/08/2026",
-        "desde": "19/08/2026",
-        "dias_tramitando": 1,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "assinar-ato": [
       {
         "processo": "0600238-74.2026.6.10.0000",
@@ -2379,6 +2350,36 @@
         "julgado": true,
         "data_julgamento": "18/08/2026",
         "teor": "Conhecido o recurso de SERGIO ALENCAR MATIAS e não-provido em 18/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-determinacao": [
+      {
+        "processo": "0600089-78.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação",
+        "autuacao": "10/04/2026",
+        "desde": "17/08/2026",
+        "dias_tramitando": 130,
+        "julgado": true,
+        "data_julgamento": "16/07/2026",
+        "teor": "Julgado procedente o pedido em 16/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600151-21.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação",
+        "autuacao": "18/05/2026",
+        "desde": "14/08/2026",
+        "dias_tramitando": 92,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -2643,6 +2644,22 @@
         "julgado": true,
         "data_julgamento": "17/08/2026",
         "teor": "Conhecido o recurso de MOVIMENTO DEMOCRATICO BRASILEIRO - MDB, ANTIGO PMDB e provido em 17/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "preparar-comunicacao": [
+      {
+        "processo": "0600945-42.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "PetCiv",
+        "tarefa_atual": "Preparar comunicação",
+        "autuacao": "17/08/2026",
+        "desde": "19/08/2026",
+        "dias_tramitando": 1,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -3076,7 +3093,7 @@
         "processo": "0600945-42.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "PetCiv",
-        "tarefa_atual": "Analisar determinação",
+        "tarefa_atual": "Preparar comunicação",
         "autuacao": "17/08/2026",
         "desde": "19/08/2026",
         "dias_tramitando": 1,
@@ -5283,7 +5300,7 @@
       "processo": "0600945-42.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "PetCiv",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Preparar comunicação",
       "autuacao": "17/08/2026",
       "desde": "19/08/2026",
       "dias_tramitando": 1,
@@ -6675,7 +6692,7 @@
       "processo": "0600945-42.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "PetCiv",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Preparar comunicação",
       "autuacao": "17/08/2026",
       "desde": "19/08/2026",
       "dias_tramitando": 1,
@@ -8167,8 +8184,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "19/08/2026 11:20",
+  "publicado_em": "19/08/2026 11:23",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "1a081a8fc3dbcced0996768974aa0c07417d943530962cbfb9efd0f3b262cdb8"
+  "hash_publicacao": "f72557e89cf4670aee05e13361390e66a44a86cb89384625bfc21fe3215c7d28"
 }
