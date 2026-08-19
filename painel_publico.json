@@ -46,7 +46,7 @@
       "quantidade": 13,
       "media_dias": 32.7,
       "maior_tempo": 112,
-      "urgentes": 1,
+      "urgentes": 0,
       "minutar": 2,
       "julgados": 6,
       "percentual_julgados": 61.1,
@@ -65,7 +65,7 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Processo com prazo em curso",
-      "quantidade": 9
+      "quantidade": 10
     },
     {
       "gabinete": "Gab. JA 1",
@@ -75,11 +75,6 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Aguardando julgamento do recurso interno; Aguardando julgamento do recurso interno",
-      "quantidade": 2
-    },
-    {
-      "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Visualizar expediente DJE",
       "quantidade": 2
     },
     {
@@ -125,6 +120,11 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Revisar ato",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Visualizar expediente DJE",
       "quantidade": 1
     },
     {
@@ -224,12 +224,12 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Analisar determinação - Urgentes",
+      "tarefa_atual": "Elaborar extrato da ata; Processo com prazo em curso",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Elaborar extrato da ata; Processo com prazo em curso",
+      "tarefa_atual": "Verificar Pendências",
       "quantidade": 1
     }
   ],
@@ -853,11 +853,11 @@
         "codigo": "processo-com-prazo-em-curso",
         "tarefa": "Processo com prazo em curso",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 9,
+          "Gabinete Juiz Auxiliar 1": 10,
           "Gabinete Juiz Auxiliar 2": 12,
           "Gabinete Juiz Auxiliar 3": 3
         },
-        "total": 24
+        "total": 25
       },
       {
         "codigo": "realizar-triagem-ordinarios",
@@ -990,16 +990,6 @@
         "total": 2
       },
       {
-        "codigo": "visualizar-expediente-dje",
-        "tarefa": "Visualizar expediente DJE",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 2,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 2
-      },
-      {
         "codigo": "aguarda-sessao-de-julgamento-virtual-elaborar-extrato-da-ata-liberados-para-julgamento-pelo-gabinete-virtual-selecionar-documentos-para-acordao-gabinete",
         "tarefa": "Aguarda Sessão de Julgamento Virtual; Elaborar extrato da ata; Liberados para julgamento pelo gabinete virtual; Selecionar documentos para acórdão - Gabinete",
         "contagens": {
@@ -1040,16 +1030,6 @@
         "total": 1
       },
       {
-        "codigo": "analisar-determinacao-urgentes",
-        "tarefa": "Analisar determinação - Urgentes",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
         "codigo": "elaborar-extrato-da-ata-processo-com-prazo-em-curso",
         "tarefa": "Elaborar extrato da ata; Processo com prazo em curso",
         "contagens": {
@@ -1082,6 +1062,26 @@
       {
         "codigo": "revisar-ato",
         "tarefa": "Revisar ato",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "verificar-pendencias",
+        "tarefa": "Verificar Pendências",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
+        "codigo": "visualizar-expediente-dje",
+        "tarefa": "Visualizar expediente DJE",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -1583,6 +1583,20 @@
         "julgado": true,
         "data_julgamento": "17/08/2026",
         "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e não-provido em 17/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600177-19.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Processo com prazo em curso",
+        "autuacao": "17/07/2026",
+        "desde": "19/08/2026",
+        "dias_tramitando": 33,
+        "julgado": true,
+        "data_julgamento": "14/07/2026",
+        "teor": "Julgado procedente o pedido em 14/07/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -2397,36 +2411,6 @@
         "responsavel_processo": ""
       }
     ],
-    "visualizar-expediente-dje": [
-      {
-        "processo": "0600177-19.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Visualizar expediente DJE",
-        "autuacao": "17/07/2026",
-        "desde": "18/08/2026",
-        "dias_tramitando": 33,
-        "julgado": true,
-        "data_julgamento": "14/07/2026",
-        "teor": "Julgado procedente o pedido em 14/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600225-75.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "ED no(a) REC no(a) Rp",
-        "tarefa_atual": "Visualizar expediente DJE",
-        "autuacao": "19/08/2026",
-        "desde": "19/08/2026",
-        "dias_tramitando": 0,
-        "julgado": true,
-        "data_julgamento": "18/08/2026",
-        "teor": "Conhecido o recurso de PSD - PARTIDO SOCIAL DEMOCRATICO e não-provido em 18/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "aguarda-sessao-de-julgamento-virtual-elaborar-extrato-da-ata-liberados-para-julgamento-pelo-gabinete-virtual-selecionar-documentos-para-acordao-gabinete": [
       {
         "processo": "0600191-03.2026.6.10.0000",
@@ -2491,22 +2475,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-determinacao-urgentes": [
-      {
-        "processo": "0600585-10.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "TutAntAnt",
-        "tarefa_atual": "Analisar determinação - Urgentes",
-        "autuacao": "09/08/2026",
-        "desde": "19/08/2026",
-        "dias_tramitando": 10,
-        "julgado": true,
-        "data_julgamento": "09/08/2026",
-        "teor": "Não conhecido o recurso de ARNALDO SAMUEL AMORIM ARAGAO em 09/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "elaborar-extrato-da-ata-processo-com-prazo-em-curso": [
       {
         "processo": "0600173-79.2026.6.10.0000",
@@ -2567,6 +2535,38 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "verificar-pendencias": [
+      {
+        "processo": "0600585-10.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "TutAntAnt",
+        "tarefa_atual": "Verificar Pendências",
+        "autuacao": "09/08/2026",
+        "desde": "19/08/2026",
+        "dias_tramitando": 10,
+        "julgado": true,
+        "data_julgamento": "09/08/2026",
+        "teor": "Não conhecido o recurso de ARNALDO SAMUEL AMORIM ARAGAO em 09/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "visualizar-expediente-dje": [
+      {
+        "processo": "0600225-75.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "ED no(a) REC no(a) Rp",
+        "tarefa_atual": "Visualizar expediente DJE",
+        "autuacao": "19/08/2026",
+        "desde": "19/08/2026",
+        "dias_tramitando": 0,
+        "julgado": true,
+        "data_julgamento": "18/08/2026",
+        "teor": "Conhecido o recurso de PSD - PARTIDO SOCIAL DEMOCRATICO e não-provido em 18/08/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -2816,9 +2816,9 @@
         "processo": "0600177-19.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Visualizar expediente DJE",
+        "tarefa_atual": "Processo com prazo em curso",
         "autuacao": "17/07/2026",
-        "desde": "18/08/2026",
+        "desde": "19/08/2026",
         "dias_tramitando": 33,
         "julgado": true,
         "data_julgamento": "14/07/2026",
@@ -3926,7 +3926,7 @@
         "processo": "0600585-10.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "TutAntAnt",
-        "tarefa_atual": "Analisar determinação - Urgentes",
+        "tarefa_atual": "Verificar Pendências",
         "autuacao": "09/08/2026",
         "desde": "19/08/2026",
         "dias_tramitando": 10,
@@ -5065,7 +5065,7 @@
       "processo": "0600585-10.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "TutAntAnt",
-      "tarefa_atual": "Analisar determinação - Urgentes",
+      "tarefa_atual": "Verificar Pendências",
       "autuacao": "09/08/2026",
       "desde": "19/08/2026",
       "dias_tramitando": 10,
@@ -6457,7 +6457,7 @@
       "processo": "0600585-10.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "TutAntAnt",
-      "tarefa_atual": "Analisar determinação - Urgentes",
+      "tarefa_atual": "Verificar Pendências",
       "autuacao": "09/08/2026",
       "desde": "19/08/2026",
       "dias_tramitando": 10,
@@ -6936,9 +6936,9 @@
       "processo": "0600177-19.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "REC no(a) Rp",
-      "tarefa_atual": "Visualizar expediente DJE",
+      "tarefa_atual": "Processo com prazo em curso",
       "autuacao": "17/07/2026",
-      "desde": "18/08/2026",
+      "desde": "19/08/2026",
       "dias_tramitando": 33,
       "julgado": true,
       "data_julgamento": "14/07/2026",
@@ -8077,7 +8077,7 @@
       "processo": "0600585-10.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "TutAntAnt",
-      "tarefa_atual": "Analisar determinação - Urgentes",
+      "tarefa_atual": "Verificar Pendências",
       "autuacao": "09/08/2026",
       "desde": "19/08/2026",
       "dias_tramitando": 10,
@@ -8089,8 +8089,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "19/08/2026 14:21",
+  "publicado_em": "19/08/2026 14:24",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "80d3a6d455eaa9e3c261207fe188a6b31c1d8d14747332b3e1ca98db49be485a"
+  "hash_publicacao": "e2e1fd95f325702e940224b6c2743dadbe6ca740c029193a4c5646693ad611c1"
 }
