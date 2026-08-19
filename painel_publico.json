@@ -104,12 +104,12 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Conferir Relatório, Voto e Ementa",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Conferir Relatório, Voto e Ementa",
+      "tarefa_atual": "Lançar movimento",
       "quantidade": 1
     },
     {
@@ -572,8 +572,8 @@
           "TRIAGEM_URGENTE": 0,
           "TRIAGEM_ORDINARIA": 1,
           "MINUTAR_ATO": 0,
-          "ASSINAR_ATO": 1,
-          "LANCAR_MOVIMENTACAO": 1
+          "ASSINAR_ATO": 0,
+          "LANCAR_MOVIMENTACAO": 2
         }
       },
       {
@@ -605,8 +605,8 @@
       "TRIAGEM_URGENTE": 0,
       "TRIAGEM_ORDINARIA": 10,
       "MINUTAR_ATO": 6,
-      "ASSINAR_ATO": 3,
-      "LANCAR_MOVIMENTACAO": 2
+      "ASSINAR_ATO": 2,
+      "LANCAR_MOVIMENTACAO": 3
     },
     "total_acervo": 96
   },
@@ -868,20 +868,6 @@
         "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
-      },
-      {
-        "processo": "0600945-42.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "NIP",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "17/08/2026",
-        "desde": "18/08/2026",
-        "dias_tramitando": 1,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
       }
     ],
     "LANCAR_MOVIMENTACAO": [
@@ -910,6 +896,20 @@
         "julgado": true,
         "data_julgamento": "09/07/2026",
         "teor": "Julgado procedente o pedido em 09/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600945-42.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "NIP",
+        "tarefa_atual": "Lançar movimento",
+        "autuacao": "17/08/2026",
+        "desde": "18/08/2026",
+        "dias_tramitando": 1,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -1001,16 +1001,6 @@
         "total": 3
       },
       {
-        "codigo": "assinar-ato",
-        "tarefa": "Assinar ato",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 2,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 3
-      },
-      {
         "codigo": "aguardando-julgamento-do-recurso-interno-aguardando-julgamento-do-recurso-interno-registrar-recurso",
         "tarefa": "Aguardando julgamento do recurso interno; Aguardando julgamento do recurso interno; Registrar recurso",
         "contagens": {
@@ -1046,6 +1036,16 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 2
+      },
+      {
+        "codigo": "assinar-ato",
+        "tarefa": "Assinar ato",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 2,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 2
@@ -1207,6 +1207,16 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
+        "codigo": "lancar-movimento",
+        "tarefa": "Lançar movimento",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
       },
@@ -2128,50 +2138,6 @@
         "responsavel_processo": ""
       }
     ],
-    "assinar-ato": [
-      {
-        "processo": "0600238-74.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "13/07/2026",
-        "desde": "18/08/2026",
-        "dias_tramitando": 36,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600480-33.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "08/08/2026",
-        "desde": "18/08/2026",
-        "dias_tramitando": 10,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600945-42.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "NIP",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "17/08/2026",
-        "desde": "18/08/2026",
-        "dias_tramitando": 1,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "aguardando-julgamento-do-recurso-interno-aguardando-julgamento-do-recurso-interno-registrar-recurso": [
       {
         "processo": "0600186-78.2026.6.10.0000",
@@ -2285,6 +2251,36 @@
         "autuacao": "18/05/2026",
         "desde": "14/08/2026",
         "dias_tramitando": 92,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "assinar-ato": [
+      {
+        "processo": "0600238-74.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "13/07/2026",
+        "desde": "18/08/2026",
+        "dias_tramitando": 36,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600480-33.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "08/08/2026",
+        "desde": "18/08/2026",
+        "dias_tramitando": 10,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -2600,6 +2596,22 @@
         "julgado": true,
         "data_julgamento": "17/08/2026",
         "teor": "Conhecido o recurso de MOVIMENTO DEMOCRATICO BRASILEIRO - MDB, ANTIGO PMDB e provido em 17/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "lancar-movimento": [
+      {
+        "processo": "0600945-42.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "NIP",
+        "tarefa_atual": "Lançar movimento",
+        "autuacao": "17/08/2026",
+        "desde": "18/08/2026",
+        "dias_tramitando": 1,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -3049,7 +3061,7 @@
         "processo": "0600945-42.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "NIP",
-        "tarefa_atual": "Assinar ato",
+        "tarefa_atual": "Lançar movimento",
         "autuacao": "17/08/2026",
         "desde": "18/08/2026",
         "dias_tramitando": 1,
@@ -5172,7 +5184,7 @@
       "processo": "0600945-42.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "NIP",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "autuacao": "17/08/2026",
       "desde": "18/08/2026",
       "dias_tramitando": 1,
@@ -6564,7 +6576,7 @@
       "processo": "0600945-42.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "NIP",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "autuacao": "17/08/2026",
       "desde": "18/08/2026",
       "dias_tramitando": 1,
@@ -7874,8 +7886,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "18/08/2026 21:13",
+  "publicado_em": "18/08/2026 21:16",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "b645603fafe80836323d2d0eb8dfc1667cc92f1b64cd65af428576d774fc28a0"
+  "hash_publicacao": "0c66d31f248d550ad1c6514d87cee18b1d19384f903f0b1f7d1ca6573440e419"
 }
