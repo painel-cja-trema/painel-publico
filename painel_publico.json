@@ -13,7 +13,7 @@
       "media_dias": 38.4,
       "maior_tempo": 133,
       "urgentes": 0,
-      "minutar": 0,
+      "minutar": 1,
       "julgados": 12,
       "percentual_julgados": 75.0,
       "arquivados": 5,
@@ -27,7 +27,7 @@
       "juiz": "Dra. Manuella Ribeiro",
       "distribuidor": "Eduardo Daniel Pereira Neto",
       "quantidade": 33,
-      "media_dias": 37.5,
+      "media_dias": 37.6,
       "maior_tempo": 130,
       "urgentes": 0,
       "minutar": 3,
@@ -114,12 +114,12 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Preparar comunicação",
+      "tarefa_atual": "Minutar ato",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Realizar triagem ordinários",
+      "tarefa_atual": "Preparar comunicação",
       "quantidade": 1
     },
     {
@@ -438,7 +438,13 @@
       "segredo_justica": "NÃO"
     }
   ],
-  "minutar_cja1": [],
+  "minutar_cja1": [
+    {
+      "processo": "0600948-94.2026.6.10.0000",
+      "classe": "PetCiv",
+      "dias_tramitando": 0
+    }
+  ],
   "minutar_processos": [
     {
       "processo": "0600108-84.2026.6.10.0000",
@@ -523,6 +529,20 @@
       "teor": "",
       "segredo_justica": "NÃO",
       "responsavel_processo": ""
+    },
+    {
+      "processo": "0600948-94.2026.6.10.0000",
+      "gabinete": "Gab. JA 1",
+      "classe": "PetCiv",
+      "tarefa_atual": "Minutar ato",
+      "autuacao": "18/08/2026",
+      "desde": "19/08/2026",
+      "dias_tramitando": 0,
+      "julgado": false,
+      "data_julgamento": "",
+      "teor": "",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
     }
   ],
   "tarefas_criticas": {
@@ -565,8 +585,8 @@
         "total_acervo": 36,
         "contagens": {
           "TRIAGEM_URGENTE": 0,
-          "TRIAGEM_ORDINARIA": 1,
-          "MINUTAR_ATO": 0,
+          "TRIAGEM_ORDINARIA": 0,
+          "MINUTAR_ATO": 1,
           "ASSINAR_ATO": 1,
           "LANCAR_MOVIMENTACAO": 0
         }
@@ -598,8 +618,8 @@
     ],
     "totais": {
       "TRIAGEM_URGENTE": 0,
-      "TRIAGEM_ORDINARIA": 10,
-      "MINUTAR_ATO": 6,
+      "TRIAGEM_ORDINARIA": 9,
+      "MINUTAR_ATO": 7,
       "ASSINAR_ATO": 4,
       "LANCAR_MOVIMENTACAO": 0
     },
@@ -733,20 +753,6 @@
         "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
-      },
-      {
-        "processo": "0600948-94.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "PetCiv",
-        "tarefa_atual": "Realizar triagem ordinários",
-        "autuacao": "18/08/2026",
-        "desde": "19/08/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
       }
     ],
     "MINUTAR_ATO": [
@@ -828,6 +834,20 @@
         "autuacao": "15/08/2026",
         "desde": "15/08/2026",
         "dias_tramitando": 3,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600948-94.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "PetCiv",
+        "tarefa_atual": "Minutar ato",
+        "autuacao": "18/08/2026",
+        "desde": "19/08/2026",
+        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -944,11 +964,11 @@
         "codigo": "realizar-triagem-ordinarios",
         "tarefa": "Realizar triagem ordinários",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 8,
           "Gabinete Juiz Auxiliar 3": 0
         },
-        "total": 9
+        "total": 8
       },
       {
         "codigo": "analisar-processos",
@@ -959,6 +979,16 @@
           "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 5
+      },
+      {
+        "codigo": "minutar-ato",
+        "tarefa": "Minutar ato",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 3
+        },
+        "total": 4
       },
       {
         "codigo": "visualizar-expediente-dje",
@@ -987,16 +1017,6 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 2,
           "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 3
-      },
-      {
-        "codigo": "minutar-ato",
-        "tarefa": "Minutar ato",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 3
         },
         "total": 3
       },
@@ -1376,7 +1396,7 @@
         "tarefa_atual": "Aguardando julgamento do recurso interno",
         "autuacao": "10/06/2026",
         "desde": "21/07/2026",
-        "dias_tramitando": 69,
+        "dias_tramitando": 70,
         "julgado": true,
         "data_julgamento": "19/08/2026",
         "teor": "Conhecido o recurso de IPPI PESQUISAS E CONSULTORIA LTDA e provido em 19/08/2026",
@@ -1988,20 +2008,6 @@
         "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
-      },
-      {
-        "processo": "0600948-94.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "PetCiv",
-        "tarefa_atual": "Realizar triagem ordinários",
-        "autuacao": "18/08/2026",
-        "desde": "19/08/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
       }
     ],
     "analisar-processos": [
@@ -2072,6 +2078,64 @@
         "julgado": true,
         "data_julgamento": "18/08/2026",
         "teor": "Conhecido o recurso de PSD - PARTIDO SOCIAL DEMOCRATICO e não-provido em 18/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "minutar-ato": [
+      {
+        "processo": "0600235-22.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "RepEsp",
+        "tarefa_atual": "Minutar ato",
+        "autuacao": "13/07/2026",
+        "desde": "17/08/2026",
+        "dias_tramitando": 37,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600443-06.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Minutar ato",
+        "autuacao": "05/08/2026",
+        "desde": "17/08/2026",
+        "dias_tramitando": 14,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600926-36.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Minutar ato",
+        "autuacao": "15/08/2026",
+        "desde": "17/08/2026",
+        "dias_tramitando": 4,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600948-94.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "PetCiv",
+        "tarefa_atual": "Minutar ato",
+        "autuacao": "18/08/2026",
+        "desde": "19/08/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -2215,50 +2279,6 @@
         "autuacao": "08/08/2026",
         "desde": "18/08/2026",
         "dias_tramitando": 11,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "minutar-ato": [
-      {
-        "processo": "0600235-22.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "RepEsp",
-        "tarefa_atual": "Minutar ato",
-        "autuacao": "13/07/2026",
-        "desde": "17/08/2026",
-        "dias_tramitando": 37,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600443-06.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Minutar ato",
-        "autuacao": "05/08/2026",
-        "desde": "17/08/2026",
-        "dias_tramitando": 14,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600926-36.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Minutar ato",
-        "autuacao": "15/08/2026",
-        "desde": "17/08/2026",
-        "dias_tramitando": 4,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -3197,7 +3217,7 @@
         "processo": "0600948-94.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "PetCiv",
-        "tarefa_atual": "Realizar triagem ordinários",
+        "tarefa_atual": "Minutar ato",
         "autuacao": "18/08/2026",
         "desde": "19/08/2026",
         "dias_tramitando": 0,
@@ -3342,7 +3362,7 @@
         "tarefa_atual": "Aguardando julgamento do recurso interno",
         "autuacao": "10/06/2026",
         "desde": "21/07/2026",
-        "dias_tramitando": 69,
+        "dias_tramitando": 70,
         "julgado": true,
         "data_julgamento": "19/08/2026",
         "teor": "Conhecido o recurso de IPPI PESQUISAS E CONSULTORIA LTDA e provido em 19/08/2026",
@@ -4152,7 +4172,7 @@
       "classe": "Rp",
       "teor": "Conhecido o recurso de IPPI PESQUISAS E CONSULTORIA LTDA e provido em 19/08/2026",
       "data_julgamento": "19/08/2026",
-      "dias_tramitando": 69
+      "dias_tramitando": 70
     },
     {
       "processo": "0600157-28.2026.6.10.0000",
@@ -4735,7 +4755,7 @@
       "tarefa_atual": "Aguardando julgamento do recurso interno",
       "autuacao": "10/06/2026",
       "desde": "21/07/2026",
-      "dias_tramitando": 69,
+      "dias_tramitando": 70,
       "julgado": true,
       "data_julgamento": "19/08/2026",
       "teor": "Conhecido o recurso de IPPI PESQUISAS E CONSULTORIA LTDA e provido em 19/08/2026",
@@ -5362,7 +5382,7 @@
       "processo": "0600948-94.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "PetCiv",
-      "tarefa_atual": "Realizar triagem ordinários",
+      "tarefa_atual": "Minutar ato",
       "autuacao": "18/08/2026",
       "desde": "19/08/2026",
       "dias_tramitando": 0,
@@ -6127,7 +6147,7 @@
       "tarefa_atual": "Aguardando julgamento do recurso interno",
       "autuacao": "10/06/2026",
       "desde": "21/07/2026",
-      "dias_tramitando": 69,
+      "dias_tramitando": 70,
       "julgado": true,
       "data_julgamento": "19/08/2026",
       "teor": "Conhecido o recurso de IPPI PESQUISAS E CONSULTORIA LTDA e provido em 19/08/2026",
@@ -6754,7 +6774,7 @@
       "processo": "0600948-94.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "PetCiv",
-      "tarefa_atual": "Realizar triagem ordinários",
+      "tarefa_atual": "Minutar ato",
       "autuacao": "18/08/2026",
       "desde": "19/08/2026",
       "dias_tramitando": 0,
@@ -7957,7 +7977,7 @@
       "tarefa_atual": "Aguardando julgamento do recurso interno",
       "autuacao": "10/06/2026",
       "desde": "21/07/2026",
-      "dias_tramitando": 69,
+      "dias_tramitando": 70,
       "julgado": true,
       "data_julgamento": "19/08/2026",
       "teor": "Conhecido o recurso de IPPI PESQUISAS E CONSULTORIA LTDA e provido em 19/08/2026",
@@ -8204,8 +8224,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "19/08/2026 12:02",
+  "publicado_em": "19/08/2026 12:05",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "38e9abbc36c0fc1e81ba07ab1e2df3e0cdb3d8010eba22807f834e77c8a74b98"
+  "hash_publicacao": "5faf084739bc1e5f2bef59525139f63c67e73190df638a62c1d8d814e139f81b"
 }
