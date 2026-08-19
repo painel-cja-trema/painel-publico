@@ -114,17 +114,17 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Lançar movimento",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Petições não lidas; Petições não lidas; Realizar triagem ordinários",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Registrar ciência por telefone ou pessoalmente",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Remeter Processos - Gabinete",
       "quantidade": 1
     },
     {
@@ -578,7 +578,7 @@
           "TRIAGEM_ORDINARIA": 1,
           "MINUTAR_ATO": 0,
           "ASSINAR_ATO": 0,
-          "LANCAR_MOVIMENTACAO": 1
+          "LANCAR_MOVIMENTACAO": 0
         }
       },
       {
@@ -611,7 +611,7 @@
       "TRIAGEM_ORDINARIA": 10,
       "MINUTAR_ATO": 6,
       "ASSINAR_ATO": 2,
-      "LANCAR_MOVIMENTACAO": 2
+      "LANCAR_MOVIMENTACAO": 1
     },
     "total_acervo": 96
   },
@@ -887,20 +887,6 @@
         "julgado": true,
         "data_julgamento": "15/07/2026",
         "teor": "Julgado procedente o pedido em 15/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600945-42.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "NIP",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "17/08/2026",
-        "desde": "18/08/2026",
-        "dias_tramitando": 1,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -1202,16 +1188,6 @@
         "total": 1
       },
       {
-        "codigo": "lancar-movimento",
-        "tarefa": "Lançar movimento",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
         "codigo": "peticoes-nao-lidas-processo-com-prazo-em-curso",
         "tarefa": "Petições não lidas; Processo com prazo em curso",
         "contagens": {
@@ -1224,6 +1200,16 @@
       {
         "codigo": "registrar-ciencia-por-telefone-ou-pessoalmente",
         "tarefa": "Registrar ciência por telefone ou pessoalmente",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "remeter-processos-gabinete",
+        "tarefa": "Remeter Processos - Gabinete",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -2591,22 +2577,6 @@
         "responsavel_processo": ""
       }
     ],
-    "lancar-movimento": [
-      {
-        "processo": "0600945-42.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "NIP",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "17/08/2026",
-        "desde": "18/08/2026",
-        "dias_tramitando": 1,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "peticoes-nao-lidas-processo-com-prazo-em-curso": [
       {
         "processo": "0600102-77.2026.6.10.0000",
@@ -2632,6 +2602,22 @@
         "autuacao": "13/08/2026",
         "desde": "18/08/2026",
         "dias_tramitando": 5,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "remeter-processos-gabinete": [
+      {
+        "processo": "0600945-42.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "NIP",
+        "tarefa_atual": "Remeter Processos - Gabinete",
+        "autuacao": "17/08/2026",
+        "desde": "18/08/2026",
+        "dias_tramitando": 1,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -3052,7 +3038,7 @@
         "processo": "0600945-42.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "NIP",
-        "tarefa_atual": "Lançar movimento",
+        "tarefa_atual": "Remeter Processos - Gabinete",
         "autuacao": "17/08/2026",
         "desde": "18/08/2026",
         "dias_tramitando": 1,
@@ -5175,7 +5161,7 @@
       "processo": "0600945-42.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "NIP",
-      "tarefa_atual": "Lançar movimento",
+      "tarefa_atual": "Remeter Processos - Gabinete",
       "autuacao": "17/08/2026",
       "desde": "18/08/2026",
       "dias_tramitando": 1,
@@ -6567,7 +6553,7 @@
       "processo": "0600945-42.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "NIP",
-      "tarefa_atual": "Lançar movimento",
+      "tarefa_atual": "Remeter Processos - Gabinete",
       "autuacao": "17/08/2026",
       "desde": "18/08/2026",
       "dias_tramitando": 1,
@@ -7891,8 +7877,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "18/08/2026 21:33",
+  "publicado_em": "18/08/2026 21:40",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "4404b5ad1c2cf82693674ca526e8cfed9270117952efb58107360b7fc505778f"
+  "hash_publicacao": "6bad721db897e6bfd6c57ddca7ffc7629c2046d26ea4352bc28b3b2f47f6f434"
 }
