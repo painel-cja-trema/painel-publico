@@ -219,11 +219,6 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Analisar determinação",
-      "quantidade": 2
-    },
-    {
-      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
       "quantidade": 1
     },
@@ -234,7 +229,17 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Analisar determinação",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Elaborar Documentos",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Lançar movimento",
       "quantidade": 1
     },
     {
@@ -549,8 +554,8 @@
           "TRIAGEM_URGENTE": 0,
           "TRIAGEM_ORDINARIA": 1,
           "MINUTAR_ATO": 1,
-          "ASSINAR_ATO": 1,
-          "LANCAR_MOVIMENTACAO": 0
+          "ASSINAR_ATO": 0,
+          "LANCAR_MOVIMENTACAO": 1
         }
       }
     ],
@@ -558,8 +563,8 @@
       "TRIAGEM_URGENTE": 0,
       "TRIAGEM_ORDINARIA": 10,
       "MINUTAR_ATO": 3,
-      "ASSINAR_ATO": 7,
-      "LANCAR_MOVIMENTACAO": 0
+      "ASSINAR_ATO": 6,
+      "LANCAR_MOVIMENTACAO": 1
     },
     "total_acervo": 105
   },
@@ -835,12 +840,14 @@
         "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
-      },
+      }
+    ],
+    "LANCAR_MOVIMENTACAO": [
       {
         "processo": "0600954-04.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rcl",
-        "tarefa_atual": "Assinar ato",
+        "tarefa_atual": "Lançar movimento",
         "autuacao": "20/08/2026",
         "desde": "20/08/2026",
         "dias_tramitando": 0,
@@ -850,8 +857,7 @@
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
-    ],
-    "LANCAR_MOVIMENTACAO": []
+    ]
   },
   "entrada_comissao": {
     "codigo": "LIMINAR_CERTIFICACAO",
@@ -929,16 +935,6 @@
         "total": 5
       },
       {
-        "codigo": "analisar-determinacao",
-        "tarefa": "Analisar determinação",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 2,
-          "Gabinete Juiz Auxiliar 3": 2
-        },
-        "total": 5
-      },
-      {
         "codigo": "aguardando-julgamento-do-recurso-interno-registrar-recurso",
         "tarefa": "Aguardando julgamento do recurso interno; Registrar recurso",
         "contagens": {
@@ -949,14 +945,24 @@
         "total": 4
       },
       {
-        "codigo": "assinar-ato",
-        "tarefa": "Assinar ato",
+        "codigo": "analisar-determinacao",
+        "tarefa": "Analisar determinação",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 2,
           "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 4
+      },
+      {
+        "codigo": "assinar-ato",
+        "tarefa": "Assinar ato",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 2,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 3
       },
       {
         "codigo": "assinar-ato-peticoes-nao-lidas",
@@ -1005,6 +1011,16 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 2,
           "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 2
+      },
+      {
+        "codigo": "elaborar-documentos",
+        "tarefa": "Elaborar Documentos",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 2
       },
@@ -1069,12 +1085,12 @@
         "total": 1
       },
       {
-        "codigo": "elaborar-documentos",
-        "tarefa": "Elaborar Documentos",
+        "codigo": "lancar-movimento",
+        "tarefa": "Lançar movimento",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
+          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 1
       },
@@ -2074,78 +2090,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-determinacao": [
-      {
-        "processo": "0600089-78.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "10/04/2026",
-        "desde": "17/08/2026",
-        "dias_tramitando": 131,
-        "julgado": true,
-        "data_julgamento": "16/07/2026",
-        "teor": "Julgado procedente o pedido em 16/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600151-21.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "18/05/2026",
-        "desde": "14/08/2026",
-        "dias_tramitando": 93,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600222-23.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "07/07/2026",
-        "desde": "19/08/2026",
-        "dias_tramitando": 44,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600250-88.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "23/07/2026",
-        "desde": "20/08/2026",
-        "dias_tramitando": 27,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600946-27.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "18/08/2026",
-        "desde": "20/08/2026",
-        "dias_tramitando": 2,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "aguardando-julgamento-do-recurso-interno-registrar-recurso": [
       {
         "processo": "0600157-28.2026.6.10.0000",
@@ -2204,6 +2148,64 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-determinacao": [
+      {
+        "processo": "0600089-78.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação",
+        "autuacao": "10/04/2026",
+        "desde": "17/08/2026",
+        "dias_tramitando": 131,
+        "julgado": true,
+        "data_julgamento": "16/07/2026",
+        "teor": "Julgado procedente o pedido em 16/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600151-21.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação",
+        "autuacao": "18/05/2026",
+        "desde": "14/08/2026",
+        "dias_tramitando": 93,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600222-23.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação",
+        "autuacao": "07/07/2026",
+        "desde": "19/08/2026",
+        "dias_tramitando": 44,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600250-88.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação",
+        "autuacao": "23/07/2026",
+        "desde": "20/08/2026",
+        "dias_tramitando": 27,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "assinar-ato": [
       {
         "processo": "0600238-74.2026.6.10.0000",
@@ -2241,20 +2243,6 @@
         "autuacao": "17/08/2026",
         "desde": "20/08/2026",
         "dias_tramitando": 2,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600954-04.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rcl",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "20/08/2026",
-        "desde": "20/08/2026",
-        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -2440,6 +2428,36 @@
         "responsavel_processo": ""
       }
     ],
+    "elaborar-documentos": [
+      {
+        "processo": "0600900-38.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Elaborar Documentos",
+        "autuacao": "13/08/2026",
+        "desde": "20/08/2026",
+        "dias_tramitando": 6,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600946-27.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Elaborar Documentos",
+        "autuacao": "18/08/2026",
+        "desde": "20/08/2026",
+        "dias_tramitando": 2,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "minutar-relatorio-voto-e-ementa": [
       {
         "processo": "0600159-95.2026.6.10.0000",
@@ -2564,15 +2582,15 @@
         "responsavel_processo": ""
       }
     ],
-    "elaborar-documentos": [
+    "lancar-movimento": [
       {
-        "processo": "0600900-38.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Elaborar Documentos",
-        "autuacao": "13/08/2026",
+        "processo": "0600954-04.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rcl",
+        "tarefa_atual": "Lançar movimento",
+        "autuacao": "20/08/2026",
         "desde": "20/08/2026",
-        "dias_tramitando": 6,
+        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -4053,7 +4071,7 @@
         "processo": "0600946-27.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
+        "tarefa_atual": "Elaborar Documentos",
         "autuacao": "18/08/2026",
         "desde": "20/08/2026",
         "dias_tramitando": 2,
@@ -4095,7 +4113,7 @@
         "processo": "0600954-04.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rcl",
-        "tarefa_atual": "Assinar ato",
+        "tarefa_atual": "Lançar movimento",
         "autuacao": "20/08/2026",
         "desde": "20/08/2026",
         "dias_tramitando": 0,
@@ -5290,7 +5308,7 @@
       "processo": "0600946-27.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Elaborar Documentos",
       "autuacao": "18/08/2026",
       "desde": "20/08/2026",
       "dias_tramitando": 2,
@@ -5346,7 +5364,7 @@
       "processo": "0600954-04.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rcl",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "autuacao": "20/08/2026",
       "desde": "20/08/2026",
       "dias_tramitando": 0,
@@ -6712,7 +6730,7 @@
       "processo": "0600946-27.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Elaborar Documentos",
       "autuacao": "18/08/2026",
       "desde": "20/08/2026",
       "dias_tramitando": 2,
@@ -6768,7 +6786,7 @@
       "processo": "0600954-04.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rcl",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "autuacao": "20/08/2026",
       "desde": "20/08/2026",
       "dias_tramitando": 0,
@@ -8302,8 +8320,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "20/08/2026 13:36",
+  "publicado_em": "20/08/2026 13:39",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "d25d4b780e6ea369954848abf5f4a995c3c714c9d699597a0c92dbc14bb4bfd7"
+  "hash_publicacao": "946423759643ba706b6eae37720a1ad8323b1f64cb9a7058b2e2f92893dea520"
 }
