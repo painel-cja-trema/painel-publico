@@ -46,7 +46,7 @@
       "quantidade": 13,
       "media_dias": 33.1,
       "maior_tempo": 113,
-      "urgentes": 0,
+      "urgentes": 1,
       "minutar": 1,
       "julgados": 6,
       "percentual_julgados": 61.1,
@@ -224,6 +224,11 @@
     },
     {
       "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Analisar determinação - Urgentes",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Elaborar Documentos",
       "quantidade": 1
     },
@@ -240,11 +245,6 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Realizar triagem ordinários",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Redistribuir processo",
       "quantidade": 1
     },
     {
@@ -1036,6 +1036,16 @@
         "total": 1
       },
       {
+        "codigo": "analisar-determinacao-urgentes",
+        "tarefa": "Analisar determinação - Urgentes",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
         "codigo": "elaborar-documentos",
         "tarefa": "Elaborar Documentos",
         "contagens": {
@@ -1062,16 +1072,6 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "redistribuir-processo",
-        "tarefa": "Redistribuir processo",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 1
       },
@@ -2527,6 +2527,22 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-determinacao-urgentes": [
+      {
+        "processo": "0600954-04.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rcl",
+        "tarefa_atual": "Analisar determinação - Urgentes",
+        "autuacao": "20/08/2026",
+        "desde": "20/08/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "elaborar-documentos": [
       {
         "processo": "0600946-27.2026.6.10.0000",
@@ -2568,22 +2584,6 @@
         "autuacao": "15/08/2026",
         "desde": "15/08/2026",
         "dias_tramitando": 4,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "redistribuir-processo": [
-      {
-        "processo": "0600954-04.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rcl",
-        "tarefa_atual": "Redistribuir processo",
-        "autuacao": "20/08/2026",
-        "desde": "20/08/2026",
-        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -4074,7 +4074,7 @@
         "processo": "0600954-04.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rcl",
-        "tarefa_atual": "Redistribuir processo",
+        "tarefa_atual": "Analisar determinação - Urgentes",
         "autuacao": "20/08/2026",
         "desde": "20/08/2026",
         "dias_tramitando": 0,
@@ -5325,7 +5325,7 @@
       "processo": "0600954-04.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rcl",
-      "tarefa_atual": "Redistribuir processo",
+      "tarefa_atual": "Analisar determinação - Urgentes",
       "autuacao": "20/08/2026",
       "desde": "20/08/2026",
       "dias_tramitando": 0,
@@ -6747,7 +6747,7 @@
       "processo": "0600954-04.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rcl",
-      "tarefa_atual": "Redistribuir processo",
+      "tarefa_atual": "Analisar determinação - Urgentes",
       "autuacao": "20/08/2026",
       "desde": "20/08/2026",
       "dias_tramitando": 0,
@@ -8281,8 +8281,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "20/08/2026 15:00",
+  "publicado_em": "20/08/2026 15:06",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "9fa0984a4779fa7173377ef39307f70f5ec15a929e62b92ccd7e7cfc42880274"
+  "hash_publicacao": "06348359e75cd74d7b30e63491add6ed83319c95a421fc7dc6f97428a612f836"
 }
