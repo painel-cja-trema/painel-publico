@@ -84,11 +84,6 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Analisar determinação",
-      "quantidade": 2
-    },
-    {
-      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Lançar movimento",
       "quantidade": 2
     },
@@ -109,12 +104,22 @@
     },
     {
       "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Analisar determinação",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Minutar Relatório, Voto e Ementa",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Petições não lidas; Revisar ato",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Realizar triagem ordinários",
       "quantidade": 1
     },
     {
@@ -179,7 +184,7 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Analisar petição avulsa de autuação; Processo com prazo em curso",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Analisar petição avulsa de autuação; Petições não lidas",
       "quantidade": 1
     },
     {
@@ -214,18 +219,23 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Processo com prazo em curso",
-      "quantidade": 6
+      "tarefa_atual": "Aguardando julgamento do recurso interno",
+      "quantidade": 5
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Aguardando julgamento do recurso interno",
+      "tarefa_atual": "Processo com prazo em curso",
       "quantidade": 5
     },
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Analisar determinação",
       "quantidade": 2
+    },
+    {
+      "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Analisar resposta do expediente",
+      "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 3",
@@ -532,7 +542,7 @@
         "total_acervo": 37,
         "contagens": {
           "TRIAGEM_URGENTE": 0,
-          "TRIAGEM_ORDINARIA": 0,
+          "TRIAGEM_ORDINARIA": 1,
           "MINUTAR_ATO": 0,
           "ASSINAR_ATO": 0,
           "LANCAR_MOVIMENTACAO": 2
@@ -565,7 +575,7 @@
     ],
     "totais": {
       "TRIAGEM_URGENTE": 1,
-      "TRIAGEM_ORDINARIA": 8,
+      "TRIAGEM_ORDINARIA": 9,
       "MINUTAR_ATO": 4,
       "ASSINAR_ATO": 3,
       "LANCAR_MOVIMENTACAO": 2
@@ -685,6 +695,20 @@
         "julgado": true,
         "data_julgamento": "07/08/2026",
         "teor": "Julgado improcedente o pedido em 07/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600945-42.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "PetCiv",
+        "tarefa_atual": "Realizar triagem ordinários",
+        "autuacao": "17/08/2026",
+        "desde": "20/08/2026",
+        "dias_tramitando": 2,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -877,19 +901,19 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 10,
           "Gabinete Juiz Auxiliar 2": 9,
-          "Gabinete Juiz Auxiliar 3": 6
+          "Gabinete Juiz Auxiliar 3": 5
         },
-        "total": 25
+        "total": 24
       },
       {
         "codigo": "realizar-triagem-ordinarios",
         "tarefa": "Realizar triagem ordinários",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 7,
           "Gabinete Juiz Auxiliar 3": 1
         },
-        "total": 8
+        "total": 9
       },
       {
         "codigo": "analisar-processos",
@@ -905,11 +929,11 @@
         "codigo": "analisar-determinacao",
         "tarefa": "Analisar determinação",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 2,
+          "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 2,
           "Gabinete Juiz Auxiliar 3": 2
         },
-        "total": 6
+        "total": 5
       },
       {
         "codigo": "aguardando-julgamento-do-recurso-interno-peticoes-nao-lidas",
@@ -920,6 +944,16 @@
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 4
+      },
+      {
+        "codigo": "analisar-resposta-do-expediente",
+        "tarefa": "Analisar resposta do expediente",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 2,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 3
       },
       {
         "codigo": "aguardando-julgamento-do-recurso-interno-aguardando-julgamento-do-recurso-interno",
@@ -944,16 +978,6 @@
       {
         "codigo": "aguardando-providencias",
         "tarefa": "Aguardando providências",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 2,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 2
-      },
-      {
-        "codigo": "analisar-resposta-do-expediente",
-        "tarefa": "Analisar resposta do expediente",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 2,
@@ -1042,8 +1066,8 @@
         "total": 1
       },
       {
-        "codigo": "analisar-peticao-avulsa-de-autuacao-processo-com-prazo-em-curso",
-        "tarefa": "Analisar petição avulsa de autuação; Processo com prazo em curso",
+        "codigo": "analisar-peticao-avulsa-analisar-determinacao-analisar-peticao-avulsa-de-autuacao-peticoes-nao-lidas",
+        "tarefa": "Analisar Petição Avulsa; Analisar determinação; Analisar petição avulsa de autuação; Petições não lidas",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -1605,20 +1629,6 @@
         "responsavel_processo": ""
       },
       {
-        "processo": "0600235-22.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "RepEsp",
-        "tarefa_atual": "Processo com prazo em curso",
-        "autuacao": "13/07/2026",
-        "desde": "19/08/2026",
-        "dias_tramitando": 37,
-        "julgado": true,
-        "data_julgamento": "19/08/2026",
-        "teor": "Julgado procedente o pedido em 19/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
         "processo": "0600186-78.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "REC no(a) Rp",
@@ -1639,7 +1649,7 @@
         "tarefa_atual": "Processo com prazo em curso",
         "autuacao": "17/07/2026",
         "desde": "19/08/2026",
-        "dias_tramitando": 33,
+        "dias_tramitando": 34,
         "julgado": true,
         "data_julgamento": "14/07/2026",
         "teor": "Julgado procedente o pedido em 14/07/2026",
@@ -1793,7 +1803,7 @@
         "tarefa_atual": "Processo com prazo em curso",
         "autuacao": "13/08/2026",
         "desde": "19/08/2026",
-        "dias_tramitando": 6,
+        "dias_tramitando": 7,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -1943,6 +1953,20 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0600945-42.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "PetCiv",
+        "tarefa_atual": "Realizar triagem ordinários",
+        "autuacao": "17/08/2026",
+        "desde": "20/08/2026",
+        "dias_tramitando": 2,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0600947-12.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "PetCiv",
@@ -1973,6 +1997,20 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0600185-93.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "ED no(a) REC no(a) Rp",
+        "tarefa_atual": "Analisar Processos",
+        "autuacao": "19/08/2026",
+        "desde": "19/08/2026",
+        "dias_tramitando": 1,
+        "julgado": true,
+        "data_julgamento": "17/08/2026",
+        "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e não-provido em 17/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0600080-19.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "REC no(a) Rp",
@@ -1997,20 +2035,6 @@
         "julgado": true,
         "data_julgamento": "19/08/2026",
         "teor": "Conhecido o recurso de IPPI PESQUISAS E CONSULTORIA LTDA e provido em 19/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600185-93.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "ED no(a) REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos",
-        "autuacao": "19/08/2026",
-        "desde": "19/08/2026",
-        "dias_tramitando": 0,
-        "julgado": true,
-        "data_julgamento": "17/08/2026",
-        "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e não-provido em 17/08/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -2115,20 +2139,6 @@
         "responsavel_processo": ""
       },
       {
-        "processo": "0600945-42.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "PetCiv",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "17/08/2026",
-        "desde": "20/08/2026",
-        "dias_tramitando": 2,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
         "processo": "0600946-27.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
@@ -2197,6 +2207,50 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-resposta-do-expediente": [
+      {
+        "processo": "0600235-22.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "RepEsp",
+        "tarefa_atual": "Analisar resposta do expediente",
+        "autuacao": "13/07/2026",
+        "desde": "20/08/2026",
+        "dias_tramitando": 37,
+        "julgado": true,
+        "data_julgamento": "19/08/2026",
+        "teor": "Julgado procedente o pedido em 19/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600190-18.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Ag no(a) Rp",
+        "tarefa_atual": "Analisar resposta do expediente",
+        "autuacao": "23/07/2026",
+        "desde": "19/08/2026",
+        "dias_tramitando": 27,
+        "julgado": true,
+        "data_julgamento": "18/08/2026",
+        "teor": "Conhecido o recurso de PERON FIGUEIREDO DA CUNHA e não-provido em 18/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600480-33.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar resposta do expediente",
+        "autuacao": "08/08/2026",
+        "desde": "20/08/2026",
+        "dias_tramitando": 12,
+        "julgado": true,
+        "data_julgamento": "19/08/2026",
+        "teor": "Julgado procedente em parte do pedido em 19/08/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -2287,36 +2341,6 @@
         "julgado": true,
         "data_julgamento": "30/07/2026",
         "teor": "Julgado improcedente o pedido em 30/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "analisar-resposta-do-expediente": [
-      {
-        "processo": "0600190-18.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Ag no(a) Rp",
-        "tarefa_atual": "Analisar resposta do expediente",
-        "autuacao": "23/07/2026",
-        "desde": "19/08/2026",
-        "dias_tramitando": 27,
-        "julgado": true,
-        "data_julgamento": "18/08/2026",
-        "teor": "Conhecido o recurso de PERON FIGUEIREDO DA CUNHA e não-provido em 18/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600480-33.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar resposta do expediente",
-        "autuacao": "08/08/2026",
-        "desde": "20/08/2026",
-        "dias_tramitando": 12,
-        "julgado": true,
-        "data_julgamento": "19/08/2026",
-        "teor": "Julgado procedente em parte do pedido em 19/08/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -2519,12 +2543,12 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-peticao-avulsa-de-autuacao-processo-com-prazo-em-curso": [
+    "analisar-peticao-avulsa-analisar-determinacao-analisar-peticao-avulsa-de-autuacao-peticoes-nao-lidas": [
       {
         "processo": "0600944-57.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Analisar petição avulsa de autuação; Processo com prazo em curso",
+        "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Analisar petição avulsa de autuação; Petições não lidas",
         "autuacao": "16/08/2026",
         "desde": "16/08/2026",
         "dias_tramitando": 3,
@@ -2895,7 +2919,7 @@
         "tarefa_atual": "Processo com prazo em curso",
         "autuacao": "17/07/2026",
         "desde": "19/08/2026",
-        "dias_tramitando": 33,
+        "dias_tramitando": 34,
         "julgado": true,
         "data_julgamento": "14/07/2026",
         "teor": "Julgado procedente o pedido em 14/07/2026",
@@ -3060,7 +3084,7 @@
         "processo": "0600945-42.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "PetCiv",
-        "tarefa_atual": "Analisar determinação",
+        "tarefa_atual": "Realizar triagem ordinários",
         "autuacao": "17/08/2026",
         "desde": "20/08/2026",
         "dias_tramitando": 2,
@@ -3081,6 +3105,20 @@
         "julgado": true,
         "data_julgamento": "13/08/2026",
         "teor": "Julgado procedente o pedido em 13/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600185-93.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "ED no(a) REC no(a) Rp",
+        "tarefa_atual": "Analisar Processos",
+        "autuacao": "19/08/2026",
+        "desde": "19/08/2026",
+        "dias_tramitando": 1,
+        "julgado": true,
+        "data_julgamento": "17/08/2026",
+        "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e não-provido em 17/08/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -3123,20 +3161,6 @@
         "julgado": true,
         "data_julgamento": "13/08/2026",
         "teor": "Julgado improcedente o pedido em 13/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600185-93.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "ED no(a) REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos",
-        "autuacao": "19/08/2026",
-        "desde": "19/08/2026",
-        "dias_tramitando": 0,
-        "julgado": true,
-        "data_julgamento": "17/08/2026",
-        "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e não-provido em 17/08/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -3717,6 +3741,20 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0600357-35.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Ag no(a) RepEsp",
+        "tarefa_atual": "Processo com prazo em curso",
+        "autuacao": "13/08/2026",
+        "desde": "19/08/2026",
+        "dias_tramitando": 7,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0600245-66.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "REC no(a) Rp",
@@ -3759,20 +3797,6 @@
         "responsavel_processo": ""
       },
       {
-        "processo": "0600357-35.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Ag no(a) RepEsp",
-        "tarefa_atual": "Processo com prazo em curso",
-        "autuacao": "13/08/2026",
-        "desde": "19/08/2026",
-        "dias_tramitando": 6,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
         "processo": "0600905-60.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
@@ -3804,7 +3828,7 @@
         "processo": "0600944-57.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Analisar petição avulsa de autuação; Processo com prazo em curso",
+        "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Analisar petição avulsa de autuação; Petições não lidas",
         "autuacao": "16/08/2026",
         "desde": "16/08/2026",
         "dias_tramitando": 3,
@@ -3988,9 +4012,9 @@
         "processo": "0600235-22.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "RepEsp",
-        "tarefa_atual": "Processo com prazo em curso",
+        "tarefa_atual": "Analisar resposta do expediente",
         "autuacao": "13/07/2026",
-        "desde": "19/08/2026",
+        "desde": "20/08/2026",
         "dias_tramitando": 37,
         "julgado": true,
         "data_julgamento": "19/08/2026",
@@ -4309,7 +4333,7 @@
       "classe": "ED no(a) REC no(a) Rp",
       "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e não-provido em 17/08/2026",
       "data_julgamento": "17/08/2026",
-      "dias_tramitando": 0
+      "dias_tramitando": 1
     },
     {
       "processo": "0600185-93.2026.6.10.0000",
@@ -4931,9 +4955,9 @@
       "processo": "0600235-22.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "RepEsp",
-      "tarefa_atual": "Processo com prazo em curso",
+      "tarefa_atual": "Analisar resposta do expediente",
       "autuacao": "13/07/2026",
-      "desde": "19/08/2026",
+      "desde": "20/08/2026",
       "dias_tramitando": 37,
       "julgado": true,
       "data_julgamento": "19/08/2026",
@@ -5281,7 +5305,7 @@
       "processo": "0600944-57.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar petição avulsa de autuação; Processo com prazo em curso",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Analisar petição avulsa de autuação; Petições não lidas",
       "autuacao": "16/08/2026",
       "desde": "16/08/2026",
       "dias_tramitando": 3,
@@ -5295,7 +5319,7 @@
       "processo": "0600945-42.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "PetCiv",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Realizar triagem ordinários",
       "autuacao": "17/08/2026",
       "desde": "20/08/2026",
       "dias_tramitando": 2,
@@ -6353,9 +6377,9 @@
       "processo": "0600235-22.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "RepEsp",
-      "tarefa_atual": "Processo com prazo em curso",
+      "tarefa_atual": "Analisar resposta do expediente",
       "autuacao": "13/07/2026",
-      "desde": "19/08/2026",
+      "desde": "20/08/2026",
       "dias_tramitando": 37,
       "julgado": true,
       "data_julgamento": "19/08/2026",
@@ -6703,7 +6727,7 @@
       "processo": "0600944-57.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar petição avulsa de autuação; Processo com prazo em curso",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Analisar petição avulsa de autuação; Petições não lidas",
       "autuacao": "16/08/2026",
       "desde": "16/08/2026",
       "dias_tramitando": 3,
@@ -6717,7 +6741,7 @@
       "processo": "0600945-42.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "PetCiv",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Realizar triagem ordinários",
       "autuacao": "17/08/2026",
       "desde": "20/08/2026",
       "dias_tramitando": 2,
@@ -7067,6 +7091,20 @@
       "responsavel_processo": ""
     },
     {
+      "processo": "0600177-19.2026.6.10.0000",
+      "gabinete": "Gab. JA 1",
+      "classe": "REC no(a) Rp",
+      "tarefa_atual": "Processo com prazo em curso",
+      "autuacao": "17/07/2026",
+      "desde": "19/08/2026",
+      "dias_tramitando": 34,
+      "julgado": true,
+      "data_julgamento": "14/07/2026",
+      "teor": "Julgado procedente o pedido em 14/07/2026",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
+    },
+    {
       "processo": "0600192-85.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "REC no(a) Rp",
@@ -7077,20 +7115,6 @@
       "julgado": true,
       "data_julgamento": "17/08/2026",
       "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e não-provido em 17/08/2026",
-      "segredo_justica": "NÃO",
-      "responsavel_processo": ""
-    },
-    {
-      "processo": "0600177-19.2026.6.10.0000",
-      "gabinete": "Gab. JA 1",
-      "classe": "REC no(a) Rp",
-      "tarefa_atual": "Processo com prazo em curso",
-      "autuacao": "17/07/2026",
-      "desde": "19/08/2026",
-      "dias_tramitando": 33,
-      "julgado": true,
-      "data_julgamento": "14/07/2026",
-      "teor": "Julgado procedente o pedido em 14/07/2026",
       "segredo_justica": "NÃO",
       "responsavel_processo": ""
     },
@@ -7333,6 +7357,20 @@
       "responsavel_processo": ""
     },
     {
+      "processo": "0600357-35.2026.6.10.0000",
+      "gabinete": "Gab. JA 2",
+      "classe": "Ag no(a) RepEsp",
+      "tarefa_atual": "Processo com prazo em curso",
+      "autuacao": "13/08/2026",
+      "desde": "19/08/2026",
+      "dias_tramitando": 7,
+      "julgado": false,
+      "data_julgamento": "",
+      "teor": "",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
+    },
+    {
       "processo": "0600245-66.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "REC no(a) Rp",
@@ -7375,20 +7413,6 @@
       "responsavel_processo": ""
     },
     {
-      "processo": "0600357-35.2026.6.10.0000",
-      "gabinete": "Gab. JA 2",
-      "classe": "Ag no(a) RepEsp",
-      "tarefa_atual": "Processo com prazo em curso",
-      "autuacao": "13/08/2026",
-      "desde": "19/08/2026",
-      "dias_tramitando": 6,
-      "julgado": false,
-      "data_julgamento": "",
-      "teor": "",
-      "segredo_justica": "NÃO",
-      "responsavel_processo": ""
-    },
-    {
       "processo": "0600147-81.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "REC no(a) RepEsp",
@@ -7413,6 +7437,20 @@
       "julgado": true,
       "data_julgamento": "13/08/2026",
       "teor": "Julgado procedente o pedido em 13/08/2026",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
+    },
+    {
+      "processo": "0600185-93.2026.6.10.0000",
+      "gabinete": "Gab. JA 1",
+      "classe": "ED no(a) REC no(a) Rp",
+      "tarefa_atual": "Analisar Processos",
+      "autuacao": "19/08/2026",
+      "desde": "19/08/2026",
+      "dias_tramitando": 1,
+      "julgado": true,
+      "data_julgamento": "17/08/2026",
+      "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e não-provido em 17/08/2026",
       "segredo_justica": "NÃO",
       "responsavel_processo": ""
     },
@@ -7455,20 +7493,6 @@
       "julgado": true,
       "data_julgamento": "19/08/2026",
       "teor": "Conhecido o recurso de IPPI PESQUISAS E CONSULTORIA LTDA e provido em 19/08/2026",
-      "segredo_justica": "NÃO",
-      "responsavel_processo": ""
-    },
-    {
-      "processo": "0600185-93.2026.6.10.0000",
-      "gabinete": "Gab. JA 1",
-      "classe": "ED no(a) REC no(a) Rp",
-      "tarefa_atual": "Analisar Processos",
-      "autuacao": "19/08/2026",
-      "desde": "19/08/2026",
-      "dias_tramitando": 0,
-      "julgado": true,
-      "data_julgamento": "17/08/2026",
-      "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e não-provido em 17/08/2026",
       "segredo_justica": "NÃO",
       "responsavel_processo": ""
     },
@@ -7744,6 +7768,20 @@
       "responsavel_processo": ""
     },
     {
+      "processo": "0600185-93.2026.6.10.0000",
+      "gabinete": "Gab. JA 1",
+      "classe": "ED no(a) REC no(a) Rp",
+      "tarefa_atual": "Analisar Processos",
+      "autuacao": "19/08/2026",
+      "desde": "19/08/2026",
+      "dias_tramitando": 1,
+      "julgado": true,
+      "data_julgamento": "17/08/2026",
+      "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e não-provido em 17/08/2026",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
+    },
+    {
       "processo": "0600225-75.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "ED no(a) REC no(a) Rp",
@@ -7768,20 +7806,6 @@
       "julgado": true,
       "data_julgamento": "19/08/2026",
       "teor": "Conhecido o recurso de IPPI PESQUISAS E CONSULTORIA LTDA e provido em 19/08/2026",
-      "segredo_justica": "NÃO",
-      "responsavel_processo": ""
-    },
-    {
-      "processo": "0600185-93.2026.6.10.0000",
-      "gabinete": "Gab. JA 1",
-      "classe": "ED no(a) REC no(a) Rp",
-      "tarefa_atual": "Analisar Processos",
-      "autuacao": "19/08/2026",
-      "desde": "19/08/2026",
-      "dias_tramitando": 0,
-      "julgado": true,
-      "data_julgamento": "17/08/2026",
-      "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e não-provido em 17/08/2026",
       "segredo_justica": "NÃO",
       "responsavel_processo": ""
     },
@@ -8197,9 +8221,9 @@
       "processo": "0600235-22.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "RepEsp",
-      "tarefa_atual": "Processo com prazo em curso",
+      "tarefa_atual": "Analisar resposta do expediente",
       "autuacao": "13/07/2026",
-      "desde": "19/08/2026",
+      "desde": "20/08/2026",
       "dias_tramitando": 37,
       "julgado": true,
       "data_julgamento": "19/08/2026",
@@ -8321,8 +8345,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "20/08/2026 10:12",
+  "publicado_em": "20/08/2026 10:18",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "3c5f8189592cd3622289267a9a6a3fd9fbe1926d3ee456064213f5f9eff5406e"
+  "hash_publicacao": "6fd048526375c05cdb0bb301a5147ed5c3d44229185b76e81880af16dcd721a9"
 }
