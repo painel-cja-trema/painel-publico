@@ -89,7 +89,7 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Lançar movimento",
+      "tarefa_atual": "Remeter Processos - Gabinete",
       "quantidade": 2
     },
     {
@@ -134,12 +134,12 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Processo com prazo em curso",
-      "quantidade": 8
+      "tarefa_atual": "Realizar triagem ordinários",
+      "quantidade": 9
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Realizar triagem ordinários",
+      "tarefa_atual": "Processo com prazo em curso",
       "quantidade": 8
     },
     {
@@ -205,11 +205,6 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Minutar ato; Petições não lidas; Petições não lidas",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Verificar Pendências",
       "quantidade": 1
     },
     {
@@ -531,7 +526,7 @@
           "TRIAGEM_ORDINARIA": 1,
           "MINUTAR_ATO": 0,
           "ASSINAR_ATO": 0,
-          "LANCAR_MOVIMENTACAO": 2
+          "LANCAR_MOVIMENTACAO": 0
         }
       },
       {
@@ -540,7 +535,7 @@
         "total_acervo": 50,
         "contagens": {
           "TRIAGEM_URGENTE": 0,
-          "TRIAGEM_ORDINARIA": 8,
+          "TRIAGEM_ORDINARIA": 9,
           "MINUTAR_ATO": 2,
           "ASSINAR_ATO": 4,
           "LANCAR_MOVIMENTACAO": 0
@@ -561,10 +556,10 @@
     ],
     "totais": {
       "TRIAGEM_URGENTE": 1,
-      "TRIAGEM_ORDINARIA": 10,
+      "TRIAGEM_ORDINARIA": 11,
       "MINUTAR_ATO": 3,
       "ASSINAR_ATO": 4,
-      "LANCAR_MOVIMENTACAO": 2
+      "LANCAR_MOVIMENTACAO": 0
     },
     "total_acervo": 105
   },
@@ -699,6 +694,20 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0600256-95.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Realizar triagem ordinários",
+        "autuacao": "14/08/2026",
+        "desde": "20/08/2026",
+        "dias_tramitando": 6,
+        "julgado": true,
+        "data_julgamento": "11/08/2026",
+        "teor": "Julgado improcedente o pedido em 11/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0600945-42.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "PetCiv",
@@ -829,36 +838,7 @@
         "responsavel_processo": ""
       }
     ],
-    "LANCAR_MOVIMENTACAO": [
-      {
-        "processo": "0600900-38.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "13/08/2026",
-        "desde": "20/08/2026",
-        "dias_tramitando": 6,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600948-94.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "PetCiv",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "18/08/2026",
-        "desde": "20/08/2026",
-        "dias_tramitando": 1,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ]
+    "LANCAR_MOVIMENTACAO": []
   },
   "entrada_comissao": {
     "codigo": "LIMINAR_CERTIFICACAO",
@@ -910,10 +890,10 @@
         "tarefa": "Realizar triagem ordinários",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 8,
+          "Gabinete Juiz Auxiliar 2": 9,
           "Gabinete Juiz Auxiliar 3": 1
         },
-        "total": 10
+        "total": 11
       },
       {
         "codigo": "analisar-processos",
@@ -1016,16 +996,6 @@
         "total": 2
       },
       {
-        "codigo": "lancar-movimento",
-        "tarefa": "Lançar movimento",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 2,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 2
-      },
-      {
         "codigo": "minutar-relatorio-voto-e-ementa",
         "tarefa": "Minutar Relatório, Voto e Ementa",
         "contagens": {
@@ -1042,6 +1012,16 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 2
+      },
+      {
+        "codigo": "remeter-processos-gabinete",
+        "tarefa": "Remeter Processos - Gabinete",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 2,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 2
       },
@@ -1131,16 +1111,6 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "verificar-pendencias",
-        "tarefa": "Verificar Pendências",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -1911,6 +1881,20 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0600256-95.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Realizar triagem ordinários",
+        "autuacao": "14/08/2026",
+        "desde": "20/08/2026",
+        "dias_tramitando": 6,
+        "julgado": true,
+        "data_julgamento": "11/08/2026",
+        "teor": "Julgado improcedente o pedido em 11/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0600945-42.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "PetCiv",
@@ -2421,36 +2405,6 @@
         "responsavel_processo": ""
       }
     ],
-    "lancar-movimento": [
-      {
-        "processo": "0600900-38.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "13/08/2026",
-        "desde": "20/08/2026",
-        "dias_tramitando": 6,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600948-94.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "PetCiv",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "18/08/2026",
-        "desde": "20/08/2026",
-        "dias_tramitando": 1,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "minutar-relatorio-voto-e-ementa": [
       {
         "processo": "0600159-95.2026.6.10.0000",
@@ -2504,6 +2458,36 @@
         "autuacao": "15/08/2026",
         "desde": "17/08/2026",
         "dias_tramitando": 5,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "remeter-processos-gabinete": [
+      {
+        "processo": "0600900-38.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Remeter Processos - Gabinete",
+        "autuacao": "13/08/2026",
+        "desde": "20/08/2026",
+        "dias_tramitando": 6,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600948-94.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "PetCiv",
+        "tarefa_atual": "Remeter Processos - Gabinete",
+        "autuacao": "18/08/2026",
+        "desde": "20/08/2026",
+        "dias_tramitando": 1,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -2651,22 +2635,6 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "verificar-pendencias": [
-      {
-        "processo": "0600256-95.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Verificar Pendências",
-        "autuacao": "14/08/2026",
-        "desde": "20/08/2026",
-        "dias_tramitando": 6,
-        "julgado": true,
-        "data_julgamento": "11/08/2026",
-        "teor": "Julgado improcedente o pedido em 11/08/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -3070,7 +3038,7 @@
         "processo": "0600900-38.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Lançar movimento",
+        "tarefa_atual": "Remeter Processos - Gabinete",
         "autuacao": "13/08/2026",
         "desde": "20/08/2026",
         "dias_tramitando": 6,
@@ -3168,7 +3136,7 @@
         "processo": "0600948-94.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "PetCiv",
-        "tarefa_atual": "Lançar movimento",
+        "tarefa_atual": "Remeter Processos - Gabinete",
         "autuacao": "18/08/2026",
         "desde": "20/08/2026",
         "dias_tramitando": 1,
@@ -3786,7 +3754,7 @@
         "processo": "0600256-95.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Verificar Pendências",
+        "tarefa_atual": "Realizar triagem ordinários",
         "autuacao": "14/08/2026",
         "desde": "20/08/2026",
         "dias_tramitando": 6,
@@ -5249,7 +5217,7 @@
       "processo": "0600900-38.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Lançar movimento",
+      "tarefa_atual": "Remeter Processos - Gabinete",
       "autuacao": "13/08/2026",
       "desde": "20/08/2026",
       "dias_tramitando": 6,
@@ -5361,7 +5329,7 @@
       "processo": "0600948-94.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "PetCiv",
-      "tarefa_atual": "Lançar movimento",
+      "tarefa_atual": "Remeter Processos - Gabinete",
       "autuacao": "18/08/2026",
       "desde": "20/08/2026",
       "dias_tramitando": 1,
@@ -6671,7 +6639,7 @@
       "processo": "0600900-38.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Lançar movimento",
+      "tarefa_atual": "Remeter Processos - Gabinete",
       "autuacao": "13/08/2026",
       "desde": "20/08/2026",
       "dias_tramitando": 6,
@@ -6783,7 +6751,7 @@
       "processo": "0600948-94.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "PetCiv",
-      "tarefa_atual": "Lançar movimento",
+      "tarefa_atual": "Remeter Processos - Gabinete",
       "autuacao": "18/08/2026",
       "desde": "20/08/2026",
       "dias_tramitando": 1,
@@ -7402,7 +7370,7 @@
       "processo": "0600256-95.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "REC no(a) Rp",
-      "tarefa_atual": "Verificar Pendências",
+      "tarefa_atual": "Realizar triagem ordinários",
       "autuacao": "14/08/2026",
       "desde": "20/08/2026",
       "dias_tramitando": 6,
@@ -8345,8 +8313,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "20/08/2026 11:39",
+  "publicado_em": "20/08/2026 11:42",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "040492cda5d090e57fd3707591c7a7634a6d86b4ae3049b1fc90e8b45add7f72"
+  "hash_publicacao": "15bcfaa0c21ea77c40664e0b1f5c5c8d3820afd838db2011ad54ec04e4c93849"
 }
