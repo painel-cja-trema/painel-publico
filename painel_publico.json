@@ -114,11 +114,6 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Analisar determinação; Petições não lidas",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Assinar ato",
       "quantidade": 1
     },
@@ -130,6 +125,11 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Elaborar extrato da ata; Processo com prazo em curso",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Petições não lidas; Preparar comunicação",
       "quantidade": 1
     },
     {
@@ -886,16 +886,6 @@
         "total": 4
       },
       {
-        "codigo": "analisar-determinacao-peticoes-nao-lidas",
-        "tarefa": "Analisar determinação; Petições não lidas",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 2,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 3
-      },
-      {
         "codigo": "minutar-relatorio-voto-e-ementa",
         "tarefa": "Minutar Relatório, Voto e Ementa",
         "contagens": {
@@ -928,6 +918,16 @@
       {
         "codigo": "aguardando-providencias",
         "tarefa": "Aguardando providências",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 2,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 2
+      },
+      {
+        "codigo": "analisar-determinacao-peticoes-nao-lidas",
+        "tarefa": "Analisar determinação; Petições não lidas",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 2,
@@ -1052,6 +1052,16 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
+        "codigo": "peticoes-nao-lidas-preparar-comunicacao",
+        "tarefa": "Petições não lidas; Preparar comunicação",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
       },
@@ -2317,50 +2327,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-determinacao-peticoes-nao-lidas": [
-      {
-        "processo": "0600108-84.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação; Petições não lidas",
-        "autuacao": "28/04/2026",
-        "desde": "28/04/2026",
-        "dias_tramitando": 115,
-        "julgado": true,
-        "data_julgamento": "20/08/2026",
-        "teor": "Julgado procedente em parte do pedido em 20/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600181-56.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação; Petições não lidas",
-        "autuacao": "12/06/2026",
-        "desde": "12/06/2026",
-        "dias_tramitando": 70,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600898-68.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação; Petições não lidas",
-        "autuacao": "13/08/2026",
-        "desde": "13/08/2026",
-        "dias_tramitando": 8,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "minutar-relatorio-voto-e-ementa": [
       {
         "processo": "0600159-95.2026.6.10.0000",
@@ -2491,6 +2457,36 @@
         "julgado": true,
         "data_julgamento": "30/07/2026",
         "teor": "Julgado improcedente o pedido em 30/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-determinacao-peticoes-nao-lidas": [
+      {
+        "processo": "0600108-84.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação; Petições não lidas",
+        "autuacao": "28/04/2026",
+        "desde": "28/04/2026",
+        "dias_tramitando": 115,
+        "julgado": true,
+        "data_julgamento": "20/08/2026",
+        "teor": "Julgado procedente em parte do pedido em 20/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600181-56.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação; Petições não lidas",
+        "autuacao": "12/06/2026",
+        "desde": "12/06/2026",
+        "dias_tramitando": 70,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -2708,6 +2704,22 @@
         "autuacao": "15/08/2026",
         "desde": "17/08/2026",
         "dias_tramitando": 6,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "peticoes-nao-lidas-preparar-comunicacao": [
+      {
+        "processo": "0600898-68.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Petições não lidas; Preparar comunicação",
+        "autuacao": "13/08/2026",
+        "desde": "13/08/2026",
+        "dias_tramitando": 8,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -3088,7 +3100,7 @@
         "processo": "0600898-68.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Analisar determinação; Petições não lidas",
+        "tarefa_atual": "Petições não lidas; Preparar comunicação",
         "autuacao": "13/08/2026",
         "desde": "13/08/2026",
         "dias_tramitando": 8,
@@ -5421,7 +5433,7 @@
       "processo": "0600898-68.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação; Petições não lidas",
+      "tarefa_atual": "Petições não lidas; Preparar comunicação",
       "autuacao": "13/08/2026",
       "desde": "13/08/2026",
       "dias_tramitando": 8,
@@ -6927,7 +6939,7 @@
       "processo": "0600898-68.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação; Petições não lidas",
+      "tarefa_atual": "Petições não lidas; Preparar comunicação",
       "autuacao": "13/08/2026",
       "desde": "13/08/2026",
       "dias_tramitando": 8,
@@ -8883,8 +8895,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "21/08/2026 18:43",
+  "publicado_em": "21/08/2026 18:46",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "3d0ae7bc76ad3fa7cfc98b10f603a0bfdfc10a42411fefe3a00e8f4017483193"
+  "hash_publicacao": "c53ad7d2ed3c4d97a84ba63b848e32d606a990d5a4ef7fdb5a35972cf5673049"
 }
