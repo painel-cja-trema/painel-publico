@@ -44,7 +44,7 @@
       "juiz": "Dr. Rubem Filho",
       "distribuidor": "Danielle Cerqueira Castro",
       "quantidade": 15,
-      "media_dias": 26.9,
+      "media_dias": 27.0,
       "maior_tempo": 115,
       "urgentes": 0,
       "minutar": 1,
@@ -129,12 +129,12 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Lançar movimento",
+      "tarefa_atual": "Petições não lidas; Remeter Processos - Gabinete",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Petições não lidas; Remeter Processos - Gabinete",
+      "tarefa_atual": "Remeter Processos - Gabinete",
       "quantidade": 1
     },
     {
@@ -542,7 +542,7 @@
           "TRIAGEM_ORDINARIA": 0,
           "MINUTAR_ATO": 2,
           "ASSINAR_ATO": 1,
-          "LANCAR_MOVIMENTACAO": 1
+          "LANCAR_MOVIMENTACAO": 0
         }
       },
       {
@@ -575,7 +575,7 @@
       "TRIAGEM_ORDINARIA": 6,
       "MINUTAR_ATO": 3,
       "ASSINAR_ATO": 5,
-      "LANCAR_MOVIMENTACAO": 1
+      "LANCAR_MOVIMENTACAO": 0
     },
     "total_acervo": 115
   },
@@ -783,22 +783,7 @@
         "responsavel_processo": ""
       }
     ],
-    "LANCAR_MOVIMENTACAO": [
-      {
-        "processo": "0600945-42.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "PetCiv",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "17/08/2026",
-        "desde": "21/08/2026",
-        "dias_tramitando": 4,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ]
+    "LANCAR_MOVIMENTACAO": []
   },
   "entrada_comissao": {
     "codigo": "LIMINAR_CERTIFICACAO",
@@ -1066,16 +1051,6 @@
         "total": 1
       },
       {
-        "codigo": "lancar-movimento",
-        "tarefa": "Lançar movimento",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
         "codigo": "minutar-ato",
         "tarefa": "Minutar ato",
         "contagens": {
@@ -1088,6 +1063,16 @@
       {
         "codigo": "peticoes-nao-lidas-remeter-processos-gabinete",
         "tarefa": "Petições não lidas; Remeter Processos - Gabinete",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "remeter-processos-gabinete",
+        "tarefa": "Remeter Processos - Gabinete",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -1567,7 +1552,7 @@
         "tarefa_atual": "Processo com prazo em curso",
         "autuacao": "07/08/2026",
         "desde": "19/08/2026",
-        "dias_tramitando": 13,
+        "dias_tramitando": 14,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -1991,7 +1976,7 @@
         "tarefa_atual": "Analisar Processos",
         "autuacao": "08/07/2026",
         "desde": "21/08/2026",
-        "dias_tramitando": 43,
+        "dias_tramitando": 44,
         "julgado": true,
         "data_julgamento": "17/08/2026",
         "teor": "Conhecido o recurso de FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA (PRD/SOLIDARIEDADE) e não-provido em 17/08/2026",
@@ -2711,22 +2696,6 @@
         "responsavel_processo": ""
       }
     ],
-    "lancar-movimento": [
-      {
-        "processo": "0600945-42.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "PetCiv",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "17/08/2026",
-        "desde": "21/08/2026",
-        "dias_tramitando": 4,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "minutar-ato": [
       {
         "processo": "0600926-36.2026.6.10.0000",
@@ -2752,6 +2721,22 @@
         "autuacao": "13/08/2026",
         "desde": "13/08/2026",
         "dias_tramitando": 8,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "remeter-processos-gabinete": [
+      {
+        "processo": "0600945-42.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "PetCiv",
+        "tarefa_atual": "Remeter Processos - Gabinete",
+        "autuacao": "17/08/2026",
+        "desde": "21/08/2026",
+        "dias_tramitando": 4,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -3174,7 +3159,7 @@
         "processo": "0600945-42.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "PetCiv",
-        "tarefa_atual": "Lançar movimento",
+        "tarefa_atual": "Remeter Processos - Gabinete",
         "autuacao": "17/08/2026",
         "desde": "21/08/2026",
         "dias_tramitando": 4,
@@ -4147,7 +4132,7 @@
         "tarefa_atual": "Analisar Processos",
         "autuacao": "08/07/2026",
         "desde": "21/08/2026",
-        "dias_tramitando": 43,
+        "dias_tramitando": 44,
         "julgado": true,
         "data_julgamento": "17/08/2026",
         "teor": "Conhecido o recurso de FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA (PRD/SOLIDARIEDADE) e não-provido em 17/08/2026",
@@ -4231,7 +4216,7 @@
         "tarefa_atual": "Processo com prazo em curso",
         "autuacao": "07/08/2026",
         "desde": "19/08/2026",
-        "dias_tramitando": 13,
+        "dias_tramitando": 14,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -4561,7 +4546,7 @@
       "classe": "REC no(a) Rp",
       "teor": "Conhecido o recurso de FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA (PRD/SOLIDARIEDADE) e não-provido em 17/08/2026",
       "data_julgamento": "17/08/2026",
-      "dias_tramitando": 43
+      "dias_tramitando": 44
     },
     {
       "processo": "0600109-69.2026.6.10.0000",
@@ -5426,7 +5411,7 @@
       "tarefa_atual": "Processo com prazo em curso",
       "autuacao": "07/08/2026",
       "desde": "19/08/2026",
-      "dias_tramitando": 13,
+      "dias_tramitando": 14,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -5563,7 +5548,7 @@
       "processo": "0600945-42.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "PetCiv",
-      "tarefa_atual": "Lançar movimento",
+      "tarefa_atual": "Remeter Processos - Gabinete",
       "autuacao": "17/08/2026",
       "desde": "21/08/2026",
       "dias_tramitando": 4,
@@ -6932,7 +6917,7 @@
       "tarefa_atual": "Processo com prazo em curso",
       "autuacao": "07/08/2026",
       "desde": "19/08/2026",
-      "dias_tramitando": 13,
+      "dias_tramitando": 14,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -7069,7 +7054,7 @@
       "processo": "0600945-42.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "PetCiv",
-      "tarefa_atual": "Lançar movimento",
+      "tarefa_atual": "Remeter Processos - Gabinete",
       "autuacao": "17/08/2026",
       "desde": "21/08/2026",
       "dias_tramitando": 4,
@@ -7454,7 +7439,7 @@
       "tarefa_atual": "Analisar Processos",
       "autuacao": "08/07/2026",
       "desde": "21/08/2026",
-      "dias_tramitando": 43,
+      "dias_tramitando": 44,
       "julgado": true,
       "data_julgamento": "17/08/2026",
       "teor": "Conhecido o recurso de FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA (PRD/SOLIDARIEDADE) e não-provido em 17/08/2026",
@@ -8104,7 +8089,7 @@
       "tarefa_atual": "Analisar Processos",
       "autuacao": "08/07/2026",
       "desde": "21/08/2026",
-      "dias_tramitando": 43,
+      "dias_tramitando": 44,
       "julgado": true,
       "data_julgamento": "17/08/2026",
       "teor": "Conhecido o recurso de FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA (PRD/SOLIDARIEDADE) e não-provido em 17/08/2026",
@@ -8927,8 +8912,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "21/08/2026 18:40",
+  "publicado_em": "21/08/2026 18:41",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "be5b7571fb4fdaaeee5ed98a22aabf07f0e0d26f003bb9943d533888d119d98d"
+  "hash_publicacao": "2652a6882cc048b824a24c27117016f2c66366f0b02d5a6a074877a552d87f9d"
 }
