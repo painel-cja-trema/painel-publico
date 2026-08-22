@@ -29,7 +29,7 @@
       "quantidade": 37,
       "media_dias": 36.2,
       "maior_tempo": 133,
-      "urgentes": 0,
+      "urgentes": 1,
       "minutar": 0,
       "julgados": 17,
       "percentual_julgados": 61.1,
@@ -44,7 +44,7 @@
       "juiz": "Dr. Rubem Filho",
       "distribuidor": "Danielle Cerqueira Castro",
       "quantidade": 16,
-      "media_dias": 26.3,
+      "media_dias": 26.4,
       "maior_tempo": 115,
       "urgentes": 2,
       "minutar": 1,
@@ -199,7 +199,7 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Analisar Petição Avulsa; Definir procedimento; Petições não lidas",
+      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Realizar triagem urgentes",
       "quantidade": 1
     },
     {
@@ -244,11 +244,6 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Realizar triagem ordinários",
-      "quantidade": 2
-    },
-    {
-      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Aguardando julgamento do recurso interno; Elaborar extrato da ata",
       "quantidade": 1
     },
@@ -265,6 +260,16 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Minutar ato",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Realizar triagem ordinários",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Remeter Processos - Gabinete",
       "quantidade": 1
     }
   ],
@@ -574,7 +579,7 @@
         "nome": "Gabinete Juiz Auxiliar 2",
         "total_acervo": 54,
         "contagens": {
-          "TRIAGEM_URGENTE": 0,
+          "TRIAGEM_URGENTE": 1,
           "TRIAGEM_ORDINARIA": 6,
           "MINUTAR_ATO": 0,
           "ASSINAR_ATO": 4,
@@ -587,7 +592,7 @@
         "total_acervo": 24,
         "contagens": {
           "TRIAGEM_URGENTE": 0,
-          "TRIAGEM_ORDINARIA": 2,
+          "TRIAGEM_ORDINARIA": 1,
           "MINUTAR_ATO": 1,
           "ASSINAR_ATO": 0,
           "LANCAR_MOVIMENTACAO": 0
@@ -595,8 +600,8 @@
       }
     ],
     "totais": {
-      "TRIAGEM_URGENTE": 0,
-      "TRIAGEM_ORDINARIA": 8,
+      "TRIAGEM_URGENTE": 1,
+      "TRIAGEM_ORDINARIA": 7,
       "MINUTAR_ATO": 4,
       "ASSINAR_ATO": 4,
       "LANCAR_MOVIMENTACAO": 1
@@ -604,7 +609,22 @@
     "total_acervo": 118
   },
   "tarefas_criticas_processos": {
-    "TRIAGEM_URGENTE": [],
+    "TRIAGEM_URGENTE": [
+      {
+        "processo": "0600968-85.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Realizar triagem urgentes",
+        "autuacao": "22/08/2026",
+        "desde": "22/08/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "TRIAGEM_ORDINARIA": [
       {
         "processo": "0600134-82.2026.6.10.0000",
@@ -698,20 +718,6 @@
         "autuacao": "18/08/2026",
         "desde": "22/08/2026",
         "dias_tramitando": 3,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600072-41.2026.6.10.0065",
-        "gabinete": "Gab. JA 3",
-        "classe": "NIP",
-        "tarefa_atual": "Realizar triagem ordinários",
-        "autuacao": "20/08/2026",
-        "desde": "22/08/2026",
-        "dias_tramitando": 1,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -913,9 +919,9 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 6,
-          "Gabinete Juiz Auxiliar 3": 2
+          "Gabinete Juiz Auxiliar 3": 1
         },
-        "total": 8
+        "total": 7
       },
       {
         "codigo": "aguardando-julgamento-do-recurso-interno-peticoes-nao-lidas",
@@ -1098,8 +1104,8 @@
         "total": 1
       },
       {
-        "codigo": "analisar-peticao-avulsa-definir-procedimento-peticoes-nao-lidas",
-        "tarefa": "Analisar Petição Avulsa; Definir procedimento; Petições não lidas",
+        "codigo": "analisar-peticao-avulsa-peticoes-nao-lidas-realizar-triagem-urgentes",
+        "tarefa": "Analisar Petição Avulsa; Petições não lidas; Realizar triagem urgentes",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -1154,6 +1160,16 @@
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "remeter-processos-gabinete",
+        "tarefa": "Remeter Processos - Gabinete",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 1
       },
@@ -1967,7 +1983,7 @@
         "tarefa_atual": "Analisar determinação",
         "autuacao": "07/07/2026",
         "desde": "19/08/2026",
-        "dias_tramitando": 45,
+        "dias_tramitando": 46,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -2138,20 +2154,6 @@
         "autuacao": "18/08/2026",
         "desde": "22/08/2026",
         "dias_tramitando": 3,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600072-41.2026.6.10.0065",
-        "gabinete": "Gab. JA 3",
-        "classe": "NIP",
-        "tarefa_atual": "Realizar triagem ordinários",
-        "autuacao": "20/08/2026",
-        "desde": "22/08/2026",
-        "dias_tramitando": 1,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -2769,12 +2771,12 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-peticao-avulsa-definir-procedimento-peticoes-nao-lidas": [
+    "analisar-peticao-avulsa-peticoes-nao-lidas-realizar-triagem-urgentes": [
       {
         "processo": "0600968-85.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Definir procedimento; Petições não lidas",
+        "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Realizar triagem urgentes",
         "autuacao": "22/08/2026",
         "desde": "22/08/2026",
         "dias_tramitando": 0,
@@ -2858,6 +2860,22 @@
         "autuacao": "21/08/2026",
         "desde": "21/08/2026",
         "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "remeter-processos-gabinete": [
+      {
+        "processo": "0600072-41.2026.6.10.0065",
+        "gabinete": "Gab. JA 3",
+        "classe": "NIP",
+        "tarefa_atual": "Remeter Processos - Gabinete",
+        "autuacao": "20/08/2026",
+        "desde": "22/08/2026",
+        "dias_tramitando": 1,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -4192,7 +4210,7 @@
         "processo": "0600968-85.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Definir procedimento; Petições não lidas",
+        "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Realizar triagem urgentes",
         "autuacao": "22/08/2026",
         "desde": "22/08/2026",
         "dias_tramitando": 0,
@@ -4267,7 +4285,7 @@
         "tarefa_atual": "Analisar determinação",
         "autuacao": "07/07/2026",
         "desde": "19/08/2026",
-        "dias_tramitando": 45,
+        "dias_tramitando": 46,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -4446,7 +4464,7 @@
         "processo": "0600072-41.2026.6.10.0065",
         "gabinete": "Gab. JA 3",
         "classe": "NIP",
-        "tarefa_atual": "Realizar triagem ordinários",
+        "tarefa_atual": "Remeter Processos - Gabinete",
         "autuacao": "20/08/2026",
         "desde": "22/08/2026",
         "dias_tramitando": 1,
@@ -5308,7 +5326,7 @@
       "tarefa_atual": "Analisar determinação",
       "autuacao": "07/07/2026",
       "desde": "19/08/2026",
-      "dias_tramitando": 45,
+      "dias_tramitando": 46,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -5781,7 +5799,7 @@
       "processo": "0600072-41.2026.6.10.0065",
       "gabinete": "Gab. JA 3",
       "classe": "NIP",
-      "tarefa_atual": "Realizar triagem ordinários",
+      "tarefa_atual": "Remeter Processos - Gabinete",
       "autuacao": "20/08/2026",
       "desde": "22/08/2026",
       "dias_tramitando": 1,
@@ -5921,7 +5939,7 @@
       "processo": "0600968-85.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar Petição Avulsa; Definir procedimento; Petições não lidas",
+      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Realizar triagem urgentes",
       "autuacao": "22/08/2026",
       "desde": "22/08/2026",
       "dias_tramitando": 0,
@@ -6870,7 +6888,7 @@
       "tarefa_atual": "Analisar determinação",
       "autuacao": "07/07/2026",
       "desde": "19/08/2026",
-      "dias_tramitando": 45,
+      "dias_tramitando": 46,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -7343,7 +7361,7 @@
       "processo": "0600072-41.2026.6.10.0065",
       "gabinete": "Gab. JA 3",
       "classe": "NIP",
-      "tarefa_atual": "Realizar triagem ordinários",
+      "tarefa_atual": "Remeter Processos - Gabinete",
       "autuacao": "20/08/2026",
       "desde": "22/08/2026",
       "dias_tramitando": 1,
@@ -7483,7 +7501,7 @@
       "processo": "0600968-85.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar Petição Avulsa; Definir procedimento; Petições não lidas",
+      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Realizar triagem urgentes",
       "autuacao": "22/08/2026",
       "desde": "22/08/2026",
       "dias_tramitando": 0,
@@ -9173,8 +9191,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "22/08/2026 12:06",
+  "publicado_em": "22/08/2026 12:08",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "57b6ce59a0a3fe9ebee25c2518ca5bc366a1347ba952822d3b23d0a1a5559226"
+  "hash_publicacao": "7e41cdd0fb98be32af1f26b42a35a98cd8d7c840fd4efa7306003ac20f0fe67e"
 }
