@@ -9,15 +9,15 @@
       "nome": "Gabinete Juiz Auxiliar 1",
       "juiz": "Dr. Nilo Ribeiro",
       "distribuidor": "Flauberth Silva Santos",
-      "quantidade": 27,
-      "media_dias": 34.6,
+      "quantidade": 28,
+      "media_dias": 33.8,
       "maior_tempo": 137,
       "urgentes": 0,
       "minutar": 5,
       "julgados": 12,
-      "percentual_julgados": 65.1,
+      "percentual_julgados": 63.6,
       "arquivados": 5,
-      "distribuidos": 32,
+      "distribuidos": 33,
       "cartas_precatorias": 5,
       "recursos": 18
     },
@@ -26,15 +26,15 @@
       "nome": "Gabinete Juiz Auxiliar 2",
       "juiz": "Dra. Manuella Ribeiro",
       "distribuidor": "Eduardo Daniel Pereira Neto",
-      "quantidade": 40,
-      "media_dias": 35.6,
+      "quantidade": 39,
+      "media_dias": 36.2,
       "maior_tempo": 134,
       "urgentes": 1,
       "minutar": 0,
       "julgados": 19,
-      "percentual_julgados": 61.4,
+      "percentual_julgados": 62.5,
       "arquivados": 6,
-      "distribuidos": 46,
+      "distribuidos": 45,
       "cartas_precatorias": 4,
       "recursos": 18
     },
@@ -110,6 +110,11 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Realizar triagem ordinários",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Remeter Processo",
       "quantidade": 1
     },
     {
@@ -225,11 +230,6 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Realizar triagem urgentes",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Redistribuir de ofício",
       "quantidade": 1
     },
     {
@@ -619,7 +619,7 @@
       {
         "gabinete": "Gab. JA 1",
         "nome": "Gabinete Juiz Auxiliar 1",
-        "total_acervo": 43,
+        "total_acervo": 44,
         "contagens": {
           "TRIAGEM_URGENTE": 0,
           "TRIAGEM_ORDINARIA": 1,
@@ -631,7 +631,7 @@
       {
         "gabinete": "Gab. JA 2",
         "nome": "Gabinete Juiz Auxiliar 2",
-        "total_acervo": 57,
+        "total_acervo": 56,
         "contagens": {
           "TRIAGEM_URGENTE": 1,
           "TRIAGEM_ORDINARIA": 8,
@@ -1385,11 +1385,11 @@
         "total": 1
       },
       {
-        "codigo": "redistribuir-de-oficio",
-        "tarefa": "Redistribuir de ofício",
+        "codigo": "remeter-processo",
+        "tarefa": "Remeter Processo",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -3190,12 +3190,12 @@
         "responsavel_processo": ""
       }
     ],
-    "redistribuir-de-oficio": [
+    "remeter-processo": [
       {
         "processo": "0600976-62.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
+        "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Redistribuir de ofício",
+        "tarefa_atual": "Remeter Processo",
         "autuacao": "23/08/2026",
         "desde": "23/08/2026",
         "dias_tramitando": 0,
@@ -3834,6 +3834,20 @@
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
         "tarefa_atual": "Minutar ato",
+        "autuacao": "23/08/2026",
+        "desde": "23/08/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600976-62.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Remeter Processo",
         "autuacao": "23/08/2026",
         "desde": "23/08/2026",
         "dias_tramitando": 0,
@@ -4606,20 +4620,6 @@
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
         "tarefa_atual": "Realizar triagem urgentes",
-        "autuacao": "23/08/2026",
-        "desde": "23/08/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600976-62.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Redistribuir de ofício",
         "autuacao": "23/08/2026",
         "desde": "23/08/2026",
         "dias_tramitando": 0,
@@ -6472,9 +6472,9 @@
     },
     {
       "processo": "0600976-62.2026.6.10.0000",
-      "gabinete": "Gab. JA 2",
+      "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Redistribuir de ofício",
+      "tarefa_atual": "Remeter Processo",
       "autuacao": "23/08/2026",
       "desde": "23/08/2026",
       "dias_tramitando": 0,
@@ -8146,9 +8146,9 @@
     },
     {
       "processo": "0600976-62.2026.6.10.0000",
-      "gabinete": "Gab. JA 2",
+      "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Redistribuir de ofício",
+      "tarefa_atual": "Remeter Processo",
       "autuacao": "23/08/2026",
       "desde": "23/08/2026",
       "dias_tramitando": 0,
@@ -9882,8 +9882,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "23/08/2026 17:31",
+  "publicado_em": "23/08/2026 17:32",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "a7353739d611a7b99516e331d8e8d613232e900fb25d0b883f4ac43831870f31"
+  "hash_publicacao": "1ed30c1939d68dc7a157013499848859e1a57665eb3b49196415f8ff10fe79b7"
 }
