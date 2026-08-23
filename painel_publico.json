@@ -12,7 +12,7 @@
       "quantidade": 26,
       "media_dias": 35.3,
       "maior_tempo": 137,
-      "urgentes": 1,
+      "urgentes": 2,
       "minutar": 2,
       "julgados": 12,
       "percentual_julgados": 66.7,
@@ -99,6 +99,11 @@
     },
     {
       "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Analisar Processos - Urgentes",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Analisar determinação",
       "quantidade": 1
     },
@@ -125,11 +130,6 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Realizar triagem urgentes",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Remeter Processos - Gabinete",
       "quantidade": 1
     },
     {
@@ -1175,6 +1175,16 @@
         "total": 1
       },
       {
+        "codigo": "analisar-processos-urgentes",
+        "tarefa": "Analisar Processos - Urgentes",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
         "codigo": "analisar-determinacao-urgentes",
         "tarefa": "Analisar determinação - Urgentes",
         "contagens": {
@@ -1281,16 +1291,6 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
-        "codigo": "remeter-processos-gabinete",
-        "tarefa": "Remeter Processos - Gabinete",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
       }
@@ -2868,6 +2868,22 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-processos-urgentes": [
+      {
+        "processo": "0600971-40.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar Processos - Urgentes",
+        "autuacao": "23/08/2026",
+        "desde": "23/08/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "analisar-determinacao-urgentes": [
       {
         "processo": "0600958-41.2026.6.10.0000",
@@ -3040,22 +3056,6 @@
         "julgado": true,
         "data_julgamento": "19/08/2026",
         "teor": "Julgado procedente o pedido em 19/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "remeter-processos-gabinete": [
-      {
-        "processo": "0600971-40.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Remeter Processos - Gabinete",
-        "autuacao": "23/08/2026",
-        "desde": "23/08/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -3627,7 +3627,7 @@
         "processo": "0600971-40.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Remeter Processos - Gabinete",
+        "tarefa_atual": "Analisar Processos - Urgentes",
         "autuacao": "23/08/2026",
         "desde": "23/08/2026",
         "dias_tramitando": 0,
@@ -6184,7 +6184,7 @@
       "processo": "0600971-40.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Remeter Processos - Gabinete",
+      "tarefa_atual": "Analisar Processos - Urgentes",
       "autuacao": "23/08/2026",
       "desde": "23/08/2026",
       "dias_tramitando": 0,
@@ -7802,7 +7802,7 @@
       "processo": "0600971-40.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Remeter Processos - Gabinete",
+      "tarefa_atual": "Analisar Processos - Urgentes",
       "autuacao": "23/08/2026",
       "desde": "23/08/2026",
       "dias_tramitando": 0,
@@ -9536,8 +9536,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "23/08/2026 16:04",
+  "publicado_em": "23/08/2026 16:05",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "0ae8d6adf35039d25958ba79b7b6c8925813f9b1db1b4beffd3e9f689f865ed0"
+  "hash_publicacao": "4e27d5ba8e08bddb7df197314105a0a9242c2776c5ac29119bf6bbaf78c5455d"
 }
