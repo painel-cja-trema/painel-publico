@@ -269,17 +269,17 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Analisar resposta do expediente; Registrar recurso ; Registrar recurso",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Minutar ato",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Processo com prazo em curso; Registrar recurso ; Registrar recurso",
       "quantidade": 1
     }
   ],
@@ -1197,16 +1197,6 @@
         "total": 1
       },
       {
-        "codigo": "analisar-resposta-do-expediente-registrar-recurso-registrar-recurso",
-        "tarefa": "Analisar resposta do expediente; Registrar recurso ; Registrar recurso",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
         "codigo": "elaborar-extrato-da-ata-processo-com-prazo-em-curso",
         "tarefa": "Elaborar extrato da ata; Processo com prazo em curso",
         "contagens": {
@@ -1243,6 +1233,16 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "processo-com-prazo-em-curso-registrar-recurso-registrar-recurso",
+        "tarefa": "Processo com prazo em curso; Registrar recurso ; Registrar recurso",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 1
       },
@@ -2740,7 +2740,7 @@
         "tarefa_atual": "Visualizar expediente DJE",
         "autuacao": "18/08/2026",
         "desde": "22/08/2026",
-        "dias_tramitando": 4,
+        "dias_tramitando": 5,
         "julgado": true,
         "data_julgamento": "11/08/2026",
         "teor": "Julgado procedente em parte do pedido em 11/08/2026",
@@ -2876,22 +2876,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-resposta-do-expediente-registrar-recurso-registrar-recurso": [
-      {
-        "processo": "0600235-22.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "RepEsp",
-        "tarefa_atual": "Analisar resposta do expediente; Registrar recurso ; Registrar recurso",
-        "autuacao": "13/07/2026",
-        "desde": "13/07/2026",
-        "dias_tramitando": 40,
-        "julgado": true,
-        "data_julgamento": "19/08/2026",
-        "teor": "Julgado procedente o pedido em 19/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "elaborar-extrato-da-ata-processo-com-prazo-em-curso": [
       {
         "processo": "0600177-19.2026.6.10.0000",
@@ -2952,6 +2936,22 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "processo-com-prazo-em-curso-registrar-recurso-registrar-recurso": [
+      {
+        "processo": "0600235-22.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "RepEsp",
+        "tarefa_atual": "Processo com prazo em curso; Registrar recurso ; Registrar recurso",
+        "autuacao": "13/07/2026",
+        "desde": "13/07/2026",
+        "dias_tramitando": 40,
+        "julgado": true,
+        "data_julgamento": "19/08/2026",
+        "teor": "Julgado procedente o pedido em 19/08/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -4188,7 +4188,7 @@
         "tarefa_atual": "Visualizar expediente DJE",
         "autuacao": "18/08/2026",
         "desde": "22/08/2026",
-        "dias_tramitando": 4,
+        "dias_tramitando": 5,
         "julgado": true,
         "data_julgamento": "11/08/2026",
         "teor": "Julgado procedente em parte do pedido em 11/08/2026",
@@ -4397,7 +4397,7 @@
         "processo": "0600235-22.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "RepEsp",
-        "tarefa_atual": "Analisar resposta do expediente; Registrar recurso",
+        "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
         "autuacao": "13/07/2026",
         "desde": "13/07/2026",
         "dias_tramitando": 40,
@@ -5438,7 +5438,7 @@
       "processo": "0600235-22.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "RepEsp",
-      "tarefa_atual": "Analisar resposta do expediente; Registrar recurso",
+      "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
       "autuacao": "13/07/2026",
       "desde": "13/07/2026",
       "dias_tramitando": 40,
@@ -7014,7 +7014,7 @@
       "processo": "0600235-22.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "RepEsp",
-      "tarefa_atual": "Analisar resposta do expediente; Registrar recurso",
+      "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
       "autuacao": "13/07/2026",
       "desde": "13/07/2026",
       "dias_tramitando": 40,
@@ -8198,7 +8198,7 @@
       "tarefa_atual": "Visualizar expediente DJE",
       "autuacao": "18/08/2026",
       "desde": "22/08/2026",
-      "dias_tramitando": 4,
+      "dias_tramitando": 5,
       "julgado": true,
       "data_julgamento": "11/08/2026",
       "teor": "Julgado procedente em parte do pedido em 11/08/2026",
@@ -9156,7 +9156,7 @@
       "processo": "0600235-22.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "RepEsp",
-      "tarefa_atual": "Analisar resposta do expediente; Registrar recurso ; Registrar recurso",
+      "tarefa_atual": "Processo com prazo em curso; Registrar recurso ; Registrar recurso",
       "autuacao": "13/07/2026",
       "desde": "13/07/2026",
       "dias_tramitando": 40,
@@ -9322,8 +9322,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "23/08/2026 09:31",
+  "publicado_em": "23/08/2026 09:33",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "34d2d4f8a326e60006580e9d6c801be82f80a9563f6ec4c3920079d2f73dfea9"
+  "hash_publicacao": "480cff72c18c595ca04ac2625bea4177e563ccbaf95e81b5183f75f29c658d3b"
 }
