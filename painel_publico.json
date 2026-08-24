@@ -59,6 +59,11 @@
   "por_tarefa": [
     {
       "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Aguardando julgamento do recurso interno",
+      "quantidade": 8
+    },
+    {
+      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Processo com prazo em curso",
       "quantidade": 8
     },
@@ -66,11 +71,6 @@
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Realizar triagem ordinários",
       "quantidade": 8
-    },
-    {
-      "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Aguardando julgamento do recurso interno",
-      "quantidade": 7
     },
     {
       "gabinete": "Gab. JA 1",
@@ -101,11 +101,6 @@
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Registrar ciência por telefone ou pessoalmente",
       "quantidade": 2
-    },
-    {
-      "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
-      "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 1",
@@ -149,12 +144,12 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Analisar determinação",
-      "quantidade": 3
+      "tarefa_atual": "Analisar Processos",
+      "quantidade": 2
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Analisar Processos",
+      "tarefa_atual": "Analisar determinação",
       "quantidade": 2
     },
     {
@@ -219,6 +214,11 @@
     },
     {
       "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Verificar Pendências",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Visualizar expediente DJE",
       "quantidade": 1
     },
@@ -264,11 +264,6 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Analisar determinação; Petições não lidas",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Analisar resposta do expediente",
       "quantidade": 1
     },
@@ -290,6 +285,11 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Petições não lidas; Petições não lidas; Petições não lidas; Registrar ciência por telefone ou pessoalmente; Verificar Pendências",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
       "quantidade": 1
     },
     {
@@ -631,7 +631,7 @@
         "total_acervo": 26,
         "contagens": {
           "TRIAGEM_URGENTE": 1,
-          "TRIAGEM_ORDINARIA": 2,
+          "TRIAGEM_ORDINARIA": 3,
           "MINUTAR_ATO": 1,
           "ASSINAR_ATO": 0,
           "LANCAR_MOVIMENTACAO": 0
@@ -640,7 +640,7 @@
     ],
     "totais": {
       "TRIAGEM_URGENTE": 2,
-      "TRIAGEM_ORDINARIA": 17,
+      "TRIAGEM_ORDINARIA": 18,
       "MINUTAR_ATO": 5,
       "ASSINAR_ATO": 6,
       "LANCAR_MOVIMENTACAO": 0
@@ -799,6 +799,20 @@
         "autuacao": "13/08/2026",
         "desde": "24/08/2026",
         "dias_tramitando": 11,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600926-36.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
+        "autuacao": "15/08/2026",
+        "desde": "15/08/2026",
+        "dias_tramitando": 9,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -1104,6 +1118,16 @@
     ],
     "linhas": [
       {
+        "codigo": "aguardando-julgamento-do-recurso-interno",
+        "tarefa": "Aguardando julgamento do recurso interno",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 8,
+          "Gabinete Juiz Auxiliar 2": 14,
+          "Gabinete Juiz Auxiliar 3": 5
+        },
+        "total": 27
+      },
+      {
         "codigo": "processo-com-prazo-em-curso",
         "tarefa": "Processo com prazo em curso",
         "contagens": {
@@ -1112,16 +1136,6 @@
           "Gabinete Juiz Auxiliar 3": 4
         },
         "total": 27
-      },
-      {
-        "codigo": "aguardando-julgamento-do-recurso-interno",
-        "tarefa": "Aguardando julgamento do recurso interno",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 7,
-          "Gabinete Juiz Auxiliar 2": 14,
-          "Gabinete Juiz Auxiliar 3": 5
-        },
-        "total": 26
       },
       {
         "codigo": "realizar-triagem-ordinarios",
@@ -1154,16 +1168,6 @@
         "total": 6
       },
       {
-        "codigo": "analisar-determinacao",
-        "tarefa": "Analisar determinação",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 3,
-          "Gabinete Juiz Auxiliar 3": 2
-        },
-        "total": 5
-      },
-      {
         "codigo": "minutar-ato",
         "tarefa": "Minutar ato",
         "contagens": {
@@ -1172,6 +1176,16 @@
           "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 5
+      },
+      {
+        "codigo": "analisar-determinacao",
+        "tarefa": "Analisar determinação",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 2,
+          "Gabinete Juiz Auxiliar 3": 2
+        },
+        "total": 4
       },
       {
         "codigo": "minutar-relatorio-voto-e-ementa",
@@ -1219,16 +1233,6 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 2,
           "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 2
-      },
-      {
-        "codigo": "aguardando-julgamento-do-recurso-interno-registrar-recurso",
-        "tarefa": "Aguardando julgamento do recurso interno; Registrar recurso",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 2
@@ -1304,18 +1308,18 @@
         "total": 1
       },
       {
-        "codigo": "analisar-determinacao-urgentes",
-        "tarefa": "Analisar determinação - Urgentes",
+        "codigo": "aguardando-julgamento-do-recurso-interno-registrar-recurso",
+        "tarefa": "Aguardando julgamento do recurso interno; Registrar recurso",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
       },
       {
-        "codigo": "analisar-determinacao-peticoes-nao-lidas",
-        "tarefa": "Analisar determinação; Petições não lidas",
+        "codigo": "analisar-determinacao-urgentes",
+        "tarefa": "Analisar determinação - Urgentes",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -1374,6 +1378,16 @@
         "total": 1
       },
       {
+        "codigo": "peticoes-nao-lidas-realizar-triagem-ordinarios",
+        "tarefa": "Petições não lidas; Realizar triagem ordinários",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
         "codigo": "processo-com-prazo-em-curso-registrar-recurso",
         "tarefa": "Processo com prazo em curso; Registrar recurso",
         "contagens": {
@@ -1404,6 +1418,16 @@
         "total": 1
       },
       {
+        "codigo": "verificar-pendencias",
+        "tarefa": "Verificar Pendências",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
         "codigo": "visualizar-expediente-dje",
         "tarefa": "Visualizar expediente DJE",
         "contagens": {
@@ -1417,6 +1441,386 @@
     "total_acervo": 131
   },
   "todas_tarefas_processos": {
+    "aguardando-julgamento-do-recurso-interno": [
+      {
+        "processo": "0600134-82.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno",
+        "autuacao": "13/05/2026",
+        "desde": "23/07/2026",
+        "dias_tramitando": 103,
+        "julgado": true,
+        "data_julgamento": "18/07/2026",
+        "teor": "Julgado improcedente o pedido em 18/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600147-81.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "RepEsp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno",
+        "autuacao": "15/05/2026",
+        "desde": "18/08/2026",
+        "dias_tramitando": 101,
+        "julgado": true,
+        "data_julgamento": "11/08/2026",
+        "teor": "Julgado procedente em parte do pedido em 11/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600159-95.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno",
+        "autuacao": "26/05/2026",
+        "desde": "05/08/2026",
+        "dias_tramitando": 89,
+        "julgado": true,
+        "data_julgamento": "30/07/2026",
+        "teor": "Julgado procedente o pedido em 30/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600160-80.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno",
+        "autuacao": "26/05/2026",
+        "desde": "08/08/2026",
+        "dias_tramitando": 89,
+        "julgado": true,
+        "data_julgamento": "04/08/2026",
+        "teor": "Julgado improcedente o pedido em 04/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600167-72.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno",
+        "autuacao": "31/05/2026",
+        "desde": "10/08/2026",
+        "dias_tramitando": 84,
+        "julgado": true,
+        "data_julgamento": "05/08/2026",
+        "teor": "Julgado procedente em parte do pedido em 05/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600174-64.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno",
+        "autuacao": "09/06/2026",
+        "desde": "09/07/2026",
+        "dias_tramitando": 76,
+        "julgado": true,
+        "data_julgamento": "17/08/2026",
+        "teor": "Conhecido o recurso de MOVIMENTO DEMOCRATICO BRASILEIRO - MDB, ANTIGO PMDB e provido em 17/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600175-49.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno",
+        "autuacao": "10/06/2026",
+        "desde": "21/07/2026",
+        "dias_tramitando": 75,
+        "julgado": true,
+        "data_julgamento": "19/08/2026",
+        "teor": "Conhecido o recurso de IPPI PESQUISAS E CONSULTORIA LTDA e provido em 19/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600186-78.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno",
+        "autuacao": "23/06/2026",
+        "desde": "19/08/2026",
+        "dias_tramitando": 62,
+        "julgado": true,
+        "data_julgamento": "17/08/2026",
+        "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e não-provido em 17/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600191-03.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno",
+        "autuacao": "25/06/2026",
+        "desde": "24/08/2026",
+        "dias_tramitando": 59,
+        "julgado": true,
+        "data_julgamento": "22/08/2026",
+        "teor": "Conhecido o recurso de EDIDACIO LOPES DE OLIVEIRA e RUI FERNANDES RIBEIRO NETO e não-provido em 22/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600192-85.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno",
+        "autuacao": "26/06/2026",
+        "desde": "16/07/2026",
+        "dias_tramitando": 59,
+        "julgado": true,
+        "data_julgamento": "17/08/2026",
+        "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e não-provido em 17/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600193-70.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno",
+        "autuacao": "26/06/2026",
+        "desde": "24/08/2026",
+        "dias_tramitando": 59,
+        "julgado": true,
+        "data_julgamento": "18/08/2026",
+        "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e PARTIDO SOCIALISTA BRASILEIRO DIRETORIO ESTADUAL e não-provido em 18/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600225-75.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno",
+        "autuacao": "08/07/2026",
+        "desde": "23/07/2026",
+        "dias_tramitando": 46,
+        "julgado": true,
+        "data_julgamento": "18/08/2026",
+        "teor": "Conhecido o recurso de PSD - PARTIDO SOCIAL DEMOCRATICO e não-provido em 18/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600174-64.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno",
+        "autuacao": "09/07/2026",
+        "desde": "21/08/2026",
+        "dias_tramitando": 45,
+        "julgado": true,
+        "data_julgamento": "17/08/2026",
+        "teor": "Conhecido o recurso de MOVIMENTO DEMOCRATICO BRASILEIRO - MDB, ANTIGO PMDB e provido em 17/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600187-63.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno",
+        "autuacao": "14/07/2026",
+        "desde": "19/08/2026",
+        "dias_tramitando": 41,
+        "julgado": true,
+        "data_julgamento": "17/08/2026",
+        "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e não-provido em 17/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600192-85.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno",
+        "autuacao": "16/07/2026",
+        "desde": "19/08/2026",
+        "dias_tramitando": 39,
+        "julgado": true,
+        "data_julgamento": "17/08/2026",
+        "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e não-provido em 17/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600239-59.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno",
+        "autuacao": "16/07/2026",
+        "desde": "05/08/2026",
+        "dias_tramitando": 39,
+        "julgado": true,
+        "data_julgamento": "30/07/2026",
+        "teor": "Julgado improcedente o pedido em 30/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600241-29.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno",
+        "autuacao": "16/07/2026",
+        "desde": "10/08/2026",
+        "dias_tramitando": 38,
+        "julgado": true,
+        "data_julgamento": "04/08/2026",
+        "teor": "Julgado improcedente o pedido em 04/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600242-14.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno",
+        "autuacao": "16/07/2026",
+        "desde": "07/08/2026",
+        "dias_tramitando": 38,
+        "julgado": true,
+        "data_julgamento": "03/08/2026",
+        "teor": "Julgado improcedente o pedido em 03/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600185-93.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno",
+        "autuacao": "22/07/2026",
+        "desde": "19/08/2026",
+        "dias_tramitando": 33,
+        "julgado": true,
+        "data_julgamento": "17/08/2026",
+        "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e não-provido em 17/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600193-70.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno",
+        "autuacao": "22/07/2026",
+        "desde": "19/08/2026",
+        "dias_tramitando": 33,
+        "julgado": true,
+        "data_julgamento": "18/08/2026",
+        "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e PARTIDO SOCIALISTA BRASILEIRO DIRETORIO ESTADUAL e não-provido em 18/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600245-66.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno",
+        "autuacao": "22/07/2026",
+        "desde": "13/08/2026",
+        "dias_tramitando": 33,
+        "julgado": true,
+        "data_julgamento": "06/08/2026",
+        "teor": "Julgado procedente em parte do pedido em 06/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600255-13.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno",
+        "autuacao": "30/07/2026",
+        "desde": "14/08/2026",
+        "dias_tramitando": 25,
+        "julgado": true,
+        "data_julgamento": "07/08/2026",
+        "teor": "Julgado improcedente o pedido em 07/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600256-95.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno",
+        "autuacao": "30/07/2026",
+        "desde": "15/08/2026",
+        "dias_tramitando": 24,
+        "julgado": true,
+        "data_julgamento": "11/08/2026",
+        "teor": "Julgado improcedente o pedido em 11/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600157-28.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno",
+        "autuacao": "01/08/2026",
+        "desde": "20/08/2026",
+        "dias_tramitando": 22,
+        "julgado": true,
+        "data_julgamento": "18/08/2026",
+        "teor": "Conhecido o recurso de SERGIO ALENCAR MATIAS e não-provido em 18/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600357-35.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "RepEsp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno",
+        "autuacao": "04/08/2026",
+        "desde": "13/08/2026",
+        "dias_tramitando": 20,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600443-06.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno",
+        "autuacao": "05/08/2026",
+        "desde": "21/08/2026",
+        "dias_tramitando": 19,
+        "julgado": true,
+        "data_julgamento": "19/08/2026",
+        "teor": "Julgado procedente o pedido em 19/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600939-35.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno",
+        "autuacao": "15/08/2026",
+        "desde": "24/08/2026",
+        "dias_tramitando": 8,
+        "julgado": true,
+        "data_julgamento": "22/08/2026",
+        "teor": "Julgado procedente em parte do pedido em 22/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "processo-com-prazo-em-curso": [
       {
         "processo": "0600089-78.2026.6.10.0000",
@@ -1790,372 +2194,6 @@
         "autuacao": "24/08/2026",
         "desde": "24/08/2026",
         "dias_tramitando": 0,
-        "julgado": true,
-        "data_julgamento": "22/08/2026",
-        "teor": "Julgado procedente em parte do pedido em 22/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "aguardando-julgamento-do-recurso-interno": [
-      {
-        "processo": "0600134-82.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno",
-        "autuacao": "13/05/2026",
-        "desde": "23/07/2026",
-        "dias_tramitando": 103,
-        "julgado": true,
-        "data_julgamento": "18/07/2026",
-        "teor": "Julgado improcedente o pedido em 18/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600147-81.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "RepEsp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno",
-        "autuacao": "15/05/2026",
-        "desde": "18/08/2026",
-        "dias_tramitando": 101,
-        "julgado": true,
-        "data_julgamento": "11/08/2026",
-        "teor": "Julgado procedente em parte do pedido em 11/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600159-95.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno",
-        "autuacao": "26/05/2026",
-        "desde": "05/08/2026",
-        "dias_tramitando": 89,
-        "julgado": true,
-        "data_julgamento": "30/07/2026",
-        "teor": "Julgado procedente o pedido em 30/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600160-80.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno",
-        "autuacao": "26/05/2026",
-        "desde": "08/08/2026",
-        "dias_tramitando": 89,
-        "julgado": true,
-        "data_julgamento": "04/08/2026",
-        "teor": "Julgado improcedente o pedido em 04/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600167-72.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno",
-        "autuacao": "31/05/2026",
-        "desde": "10/08/2026",
-        "dias_tramitando": 84,
-        "julgado": true,
-        "data_julgamento": "05/08/2026",
-        "teor": "Julgado procedente em parte do pedido em 05/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600174-64.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno",
-        "autuacao": "09/06/2026",
-        "desde": "09/07/2026",
-        "dias_tramitando": 76,
-        "julgado": true,
-        "data_julgamento": "17/08/2026",
-        "teor": "Conhecido o recurso de MOVIMENTO DEMOCRATICO BRASILEIRO - MDB, ANTIGO PMDB e provido em 17/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600175-49.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno",
-        "autuacao": "10/06/2026",
-        "desde": "21/07/2026",
-        "dias_tramitando": 75,
-        "julgado": true,
-        "data_julgamento": "19/08/2026",
-        "teor": "Conhecido o recurso de IPPI PESQUISAS E CONSULTORIA LTDA e provido em 19/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600186-78.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno",
-        "autuacao": "23/06/2026",
-        "desde": "19/08/2026",
-        "dias_tramitando": 62,
-        "julgado": true,
-        "data_julgamento": "17/08/2026",
-        "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e não-provido em 17/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600192-85.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno",
-        "autuacao": "26/06/2026",
-        "desde": "16/07/2026",
-        "dias_tramitando": 59,
-        "julgado": true,
-        "data_julgamento": "17/08/2026",
-        "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e não-provido em 17/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600193-70.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno",
-        "autuacao": "26/06/2026",
-        "desde": "24/08/2026",
-        "dias_tramitando": 59,
-        "julgado": true,
-        "data_julgamento": "18/08/2026",
-        "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e PARTIDO SOCIALISTA BRASILEIRO DIRETORIO ESTADUAL e não-provido em 18/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600225-75.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno",
-        "autuacao": "08/07/2026",
-        "desde": "23/07/2026",
-        "dias_tramitando": 46,
-        "julgado": true,
-        "data_julgamento": "18/08/2026",
-        "teor": "Conhecido o recurso de PSD - PARTIDO SOCIAL DEMOCRATICO e não-provido em 18/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600174-64.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno",
-        "autuacao": "09/07/2026",
-        "desde": "21/08/2026",
-        "dias_tramitando": 45,
-        "julgado": true,
-        "data_julgamento": "17/08/2026",
-        "teor": "Conhecido o recurso de MOVIMENTO DEMOCRATICO BRASILEIRO - MDB, ANTIGO PMDB e provido em 17/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600187-63.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno",
-        "autuacao": "14/07/2026",
-        "desde": "19/08/2026",
-        "dias_tramitando": 41,
-        "julgado": true,
-        "data_julgamento": "17/08/2026",
-        "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e não-provido em 17/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600192-85.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno",
-        "autuacao": "16/07/2026",
-        "desde": "19/08/2026",
-        "dias_tramitando": 39,
-        "julgado": true,
-        "data_julgamento": "17/08/2026",
-        "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e não-provido em 17/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600239-59.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno",
-        "autuacao": "16/07/2026",
-        "desde": "05/08/2026",
-        "dias_tramitando": 39,
-        "julgado": true,
-        "data_julgamento": "30/07/2026",
-        "teor": "Julgado improcedente o pedido em 30/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600241-29.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno",
-        "autuacao": "16/07/2026",
-        "desde": "10/08/2026",
-        "dias_tramitando": 38,
-        "julgado": true,
-        "data_julgamento": "04/08/2026",
-        "teor": "Julgado improcedente o pedido em 04/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600242-14.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno",
-        "autuacao": "16/07/2026",
-        "desde": "07/08/2026",
-        "dias_tramitando": 38,
-        "julgado": true,
-        "data_julgamento": "03/08/2026",
-        "teor": "Julgado improcedente o pedido em 03/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600185-93.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno",
-        "autuacao": "22/07/2026",
-        "desde": "19/08/2026",
-        "dias_tramitando": 33,
-        "julgado": true,
-        "data_julgamento": "17/08/2026",
-        "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e não-provido em 17/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600193-70.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno",
-        "autuacao": "22/07/2026",
-        "desde": "19/08/2026",
-        "dias_tramitando": 33,
-        "julgado": true,
-        "data_julgamento": "18/08/2026",
-        "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e PARTIDO SOCIALISTA BRASILEIRO DIRETORIO ESTADUAL e não-provido em 18/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600245-66.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno",
-        "autuacao": "22/07/2026",
-        "desde": "13/08/2026",
-        "dias_tramitando": 33,
-        "julgado": true,
-        "data_julgamento": "06/08/2026",
-        "teor": "Julgado procedente em parte do pedido em 06/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600255-13.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno",
-        "autuacao": "30/07/2026",
-        "desde": "14/08/2026",
-        "dias_tramitando": 25,
-        "julgado": true,
-        "data_julgamento": "07/08/2026",
-        "teor": "Julgado improcedente o pedido em 07/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600256-95.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno",
-        "autuacao": "30/07/2026",
-        "desde": "15/08/2026",
-        "dias_tramitando": 24,
-        "julgado": true,
-        "data_julgamento": "11/08/2026",
-        "teor": "Julgado improcedente o pedido em 11/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600157-28.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno",
-        "autuacao": "01/08/2026",
-        "desde": "20/08/2026",
-        "dias_tramitando": 22,
-        "julgado": true,
-        "data_julgamento": "18/08/2026",
-        "teor": "Conhecido o recurso de SERGIO ALENCAR MATIAS e não-provido em 18/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600357-35.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "RepEsp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno",
-        "autuacao": "04/08/2026",
-        "desde": "13/08/2026",
-        "dias_tramitando": 20,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600443-06.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno",
-        "autuacao": "05/08/2026",
-        "desde": "21/08/2026",
-        "dias_tramitando": 19,
-        "julgado": true,
-        "data_julgamento": "19/08/2026",
-        "teor": "Julgado procedente o pedido em 19/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600939-35.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno",
-        "autuacao": "15/08/2026",
-        "desde": "24/08/2026",
-        "dias_tramitando": 8,
         "julgado": true,
         "data_julgamento": "22/08/2026",
         "teor": "Julgado procedente em parte do pedido em 22/08/2026",
@@ -2589,78 +2627,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-determinacao": [
-      {
-        "processo": "0600108-84.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "28/04/2026",
-        "desde": "24/08/2026",
-        "dias_tramitando": 118,
-        "julgado": true,
-        "data_julgamento": "20/08/2026",
-        "teor": "Julgado procedente em parte do pedido em 20/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600222-23.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "07/07/2026",
-        "desde": "19/08/2026",
-        "dias_tramitando": 48,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600252-58.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "28/07/2026",
-        "desde": "24/08/2026",
-        "dias_tramitando": 27,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600480-33.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "08/08/2026",
-        "desde": "22/08/2026",
-        "dias_tramitando": 16,
-        "julgado": true,
-        "data_julgamento": "19/08/2026",
-        "teor": "Julgado procedente em parte do pedido em 19/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600946-27.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "18/08/2026",
-        "desde": "23/08/2026",
-        "dias_tramitando": 6,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "minutar-ato": [
       {
         "processo": "0600018-62.2026.6.10.0037",
@@ -2726,6 +2692,64 @@
         "autuacao": "24/08/2026",
         "desde": "24/08/2026",
         "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-determinacao": [
+      {
+        "processo": "0600108-84.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação",
+        "autuacao": "28/04/2026",
+        "desde": "24/08/2026",
+        "dias_tramitando": 118,
+        "julgado": true,
+        "data_julgamento": "20/08/2026",
+        "teor": "Julgado procedente em parte do pedido em 20/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600222-23.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação",
+        "autuacao": "07/07/2026",
+        "desde": "19/08/2026",
+        "dias_tramitando": 48,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600480-33.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação",
+        "autuacao": "08/08/2026",
+        "desde": "22/08/2026",
+        "dias_tramitando": 16,
+        "julgado": true,
+        "data_julgamento": "19/08/2026",
+        "teor": "Julgado procedente em parte do pedido em 19/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600946-27.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação",
+        "autuacao": "18/08/2026",
+        "desde": "23/08/2026",
+        "dias_tramitando": 6,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -2953,36 +2977,6 @@
         "responsavel_processo": ""
       }
     ],
-    "aguardando-julgamento-do-recurso-interno-registrar-recurso": [
-      {
-        "processo": "0600190-18.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
-        "autuacao": "25/06/2026",
-        "desde": "25/06/2026",
-        "dias_tramitando": 59,
-        "julgado": true,
-        "data_julgamento": "18/08/2026",
-        "teor": "Conhecido o recurso de PERON FIGUEIREDO DA CUNHA e não-provido em 18/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600191-03.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
-        "autuacao": "25/06/2026",
-        "desde": "25/06/2026",
-        "dias_tramitando": 59,
-        "julgado": true,
-        "data_julgamento": "22/08/2026",
-        "teor": "Conhecido o recurso de EDIDACIO LOPES DE OLIVEIRA e RUI FERNANDES RIBEIRO NETO e não-provido em 22/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "conferir-relatorio-voto-e-ementa": [
       {
         "processo": "0600159-95.2026.6.10.0000",
@@ -3137,6 +3131,22 @@
         "responsavel_processo": ""
       }
     ],
+    "aguardando-julgamento-do-recurso-interno-registrar-recurso": [
+      {
+        "processo": "0600190-18.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
+        "autuacao": "25/06/2026",
+        "desde": "25/06/2026",
+        "dias_tramitando": 59,
+        "julgado": true,
+        "data_julgamento": "18/08/2026",
+        "teor": "Conhecido o recurso de PERON FIGUEIREDO DA CUNHA e não-provido em 18/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "analisar-determinacao-urgentes": [
       {
         "processo": "0600958-41.2026.6.10.0000",
@@ -3146,22 +3156,6 @@
         "autuacao": "21/08/2026",
         "desde": "23/08/2026",
         "dias_tramitando": 3,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "analisar-determinacao-peticoes-nao-lidas": [
-      {
-        "processo": "0600926-36.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação; Petições não lidas",
-        "autuacao": "15/08/2026",
-        "desde": "15/08/2026",
-        "dias_tramitando": 9,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -3249,6 +3243,22 @@
         "responsavel_processo": ""
       }
     ],
+    "peticoes-nao-lidas-realizar-triagem-ordinarios": [
+      {
+        "processo": "0600926-36.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
+        "autuacao": "15/08/2026",
+        "desde": "15/08/2026",
+        "dias_tramitando": 9,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "processo-com-prazo-em-curso-registrar-recurso": [
       {
         "processo": "0600235-22.2026.6.10.0000",
@@ -3293,6 +3303,22 @@
         "julgado": true,
         "data_julgamento": "04/08/2026",
         "teor": "Julgado improcedente o pedido em 04/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "verificar-pendencias": [
+      {
+        "processo": "0600252-58.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Verificar Pendências",
+        "autuacao": "28/07/2026",
+        "desde": "24/08/2026",
+        "dias_tramitando": 27,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -3488,9 +3514,9 @@
         "processo": "0600191-03.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
+        "tarefa_atual": "Aguardando julgamento do recurso interno",
         "autuacao": "25/06/2026",
-        "desde": "25/06/2026",
+        "desde": "24/08/2026",
         "dias_tramitando": 59,
         "julgado": true,
         "data_julgamento": "22/08/2026",
@@ -4330,7 +4356,7 @@
         "processo": "0600252-58.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
+        "tarefa_atual": "Verificar Pendências",
         "autuacao": "28/07/2026",
         "desde": "24/08/2026",
         "dias_tramitando": 27,
@@ -4948,7 +4974,7 @@
         "processo": "0600926-36.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Analisar determinação; Petições não lidas",
+        "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
         "autuacao": "15/08/2026",
         "desde": "15/08/2026",
         "dias_tramitando": 9,
@@ -5863,9 +5889,9 @@
       "processo": "0600191-03.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
+      "tarefa_atual": "Aguardando julgamento do recurso interno",
       "autuacao": "25/06/2026",
-      "desde": "25/06/2026",
+      "desde": "24/08/2026",
       "dias_tramitando": 59,
       "julgado": true,
       "data_julgamento": "22/08/2026",
@@ -6073,7 +6099,7 @@
       "processo": "0600252-58.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Verificar Pendências",
       "autuacao": "28/07/2026",
       "desde": "24/08/2026",
       "dias_tramitando": 27,
@@ -6269,7 +6295,7 @@
       "processo": "0600926-36.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação; Petições não lidas",
+      "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
       "autuacao": "15/08/2026",
       "desde": "15/08/2026",
       "dias_tramitando": 9,
@@ -7593,9 +7619,9 @@
       "processo": "0600191-03.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
+      "tarefa_atual": "Aguardando julgamento do recurso interno",
       "autuacao": "25/06/2026",
-      "desde": "25/06/2026",
+      "desde": "24/08/2026",
       "dias_tramitando": 59,
       "julgado": true,
       "data_julgamento": "22/08/2026",
@@ -7803,7 +7829,7 @@
       "processo": "0600252-58.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Verificar Pendências",
       "autuacao": "28/07/2026",
       "desde": "24/08/2026",
       "dias_tramitando": 27,
@@ -7999,7 +8025,7 @@
       "processo": "0600926-36.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação; Petições não lidas",
+      "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
       "autuacao": "15/08/2026",
       "desde": "15/08/2026",
       "dias_tramitando": 9,
@@ -9959,9 +9985,9 @@
       "processo": "0600191-03.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
+      "tarefa_atual": "Aguardando julgamento do recurso interno",
       "autuacao": "25/06/2026",
-      "desde": "25/06/2026",
+      "desde": "24/08/2026",
       "dias_tramitando": 59,
       "julgado": true,
       "data_julgamento": "22/08/2026",
@@ -10195,8 +10221,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "24/08/2026 16:42",
+  "publicado_em": "24/08/2026 16:43",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "6707e4408f7cb0af14b095ad27f3ad504ceef2dd5746e3d74942acd5d1f5dfca"
+  "hash_publicacao": "fbf2f47c39217d47203676857f6f9fc1a8b6cd5b5246c99e27ccd4f90b29751a"
 }
