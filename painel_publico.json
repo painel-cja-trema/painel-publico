@@ -46,7 +46,7 @@
       "quantidade": 19,
       "media_dias": 24.2,
       "maior_tempo": 117,
-      "urgentes": 2,
+      "urgentes": 3,
       "minutar": 1,
       "julgados": 7,
       "percentual_julgados": 53.8,
@@ -89,6 +89,11 @@
     },
     {
       "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Analisar Processos",
+      "quantidade": 2
+    },
+    {
+      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Conferir Relatório, Voto e Ementa",
       "quantidade": 2
     },
@@ -109,22 +114,12 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Analisar Processos",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Analisar determinação",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Elaborar extrato da ata; Processo com prazo em curso",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Remeter Processos - Gabinete",
       "quantidade": 1
     },
     {
@@ -149,12 +144,12 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Aguardando providências",
-      "quantidade": 3
+      "tarefa_atual": "Analisar determinação",
+      "quantidade": 4
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Aguardando providências",
       "quantidade": 3
     },
     {
@@ -205,11 +200,6 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Analisar resposta do expediente",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Atualizar dados do processo",
       "quantidade": 1
     },
     {
@@ -284,11 +274,6 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Definir procedimento",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Informar data de trânsito em julgado",
       "quantidade": 1
     },
@@ -300,6 +285,11 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Realizar triagem urgentes",
       "quantidade": 1
     }
   ],
@@ -644,7 +634,7 @@
         "nome": "Gabinete Juiz Auxiliar 3",
         "total_acervo": 26,
         "contagens": {
-          "TRIAGEM_URGENTE": 0,
+          "TRIAGEM_URGENTE": 1,
           "TRIAGEM_ORDINARIA": 2,
           "MINUTAR_ATO": 1,
           "ASSINAR_ATO": 0,
@@ -653,7 +643,7 @@
       }
     ],
     "totais": {
-      "TRIAGEM_URGENTE": 1,
+      "TRIAGEM_URGENTE": 2,
       "TRIAGEM_ORDINARIA": 16,
       "MINUTAR_ATO": 6,
       "ASSINAR_ATO": 5,
@@ -667,6 +657,20 @@
         "processo": "0600981-84.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
+        "tarefa_atual": "Realizar triagem urgentes",
+        "autuacao": "24/08/2026",
+        "desde": "24/08/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600982-69.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "RepEsp",
         "tarefa_atual": "Realizar triagem urgentes",
         "autuacao": "24/08/2026",
         "desde": "24/08/2026",
@@ -998,7 +1002,7 @@
         "tarefa_atual": "Assinar ato",
         "autuacao": "23/08/2026",
         "desde": "24/08/2026",
-        "dias_tramitando": 0,
+        "dias_tramitando": 1,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -1124,10 +1128,10 @@
         "tarefa": "Analisar determinação",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 3,
+          "Gabinete Juiz Auxiliar 2": 4,
           "Gabinete Juiz Auxiliar 3": 2
         },
-        "total": 6
+        "total": 7
       },
       {
         "codigo": "minutar-ato",
@@ -1160,6 +1164,16 @@
         "total": 5
       },
       {
+        "codigo": "analisar-processos",
+        "tarefa": "Analisar Processos",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 2,
+          "Gabinete Juiz Auxiliar 2": 2,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 4
+      },
+      {
         "codigo": "minutar-relatorio-voto-e-ementa",
         "tarefa": "Minutar Relatório, Voto e Ementa",
         "contagens": {
@@ -1175,16 +1189,6 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 3,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 3
-      },
-      {
-        "codigo": "analisar-processos",
-        "tarefa": "Analisar Processos",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 2,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 3
@@ -1206,6 +1210,16 @@
           "Gabinete Juiz Auxiliar 1": 2,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 2
+      },
+      {
+        "codigo": "realizar-triagem-urgentes",
+        "tarefa": "Realizar triagem urgentes",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 2
       },
@@ -1340,26 +1354,6 @@
         "total": 1
       },
       {
-        "codigo": "atualizar-dados-do-processo",
-        "tarefa": "Atualizar dados do processo",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "definir-procedimento",
-        "tarefa": "Definir procedimento",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
         "codigo": "elaborar-extrato-da-ata-processo-com-prazo-em-curso",
         "tarefa": "Elaborar extrato da ata; Processo com prazo em curso",
         "contagens": {
@@ -1400,31 +1394,11 @@
         "total": 1
       },
       {
-        "codigo": "realizar-triagem-urgentes",
-        "tarefa": "Realizar triagem urgentes",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
         "codigo": "registrar-ciencia-intimacao-pessoal",
         "tarefa": "Registrar ciência intimação pessoal",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "remeter-processos-gabinete",
-        "tarefa": "Remeter Processos - Gabinete",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -2441,6 +2415,20 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0600181-56.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação",
+        "autuacao": "12/06/2026",
+        "desde": "24/08/2026",
+        "dias_tramitando": 72,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0600222-23.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
@@ -2677,7 +2665,7 @@
         "tarefa_atual": "Assinar ato",
         "autuacao": "23/08/2026",
         "desde": "24/08/2026",
-        "dias_tramitando": 0,
+        "dias_tramitando": 1,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -2737,6 +2725,64 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-processos": [
+      {
+        "processo": "0600080-19.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Analisar Processos",
+        "autuacao": "19/08/2026",
+        "desde": "24/08/2026",
+        "dias_tramitando": 5,
+        "julgado": true,
+        "data_julgamento": "13/08/2026",
+        "teor": "Julgado improcedente o pedido em 13/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600175-49.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "ED no(a) REC no(a) Rp",
+        "tarefa_atual": "Analisar Processos",
+        "autuacao": "19/08/2026",
+        "desde": "19/08/2026",
+        "dias_tramitando": 4,
+        "julgado": true,
+        "data_julgamento": "19/08/2026",
+        "teor": "Conhecido o recurso de IPPI PESQUISAS E CONSULTORIA LTDA e provido em 19/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600193-70.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "ED no(a) REC no(a) Rp",
+        "tarefa_atual": "Analisar Processos",
+        "autuacao": "19/08/2026",
+        "desde": "19/08/2026",
+        "dias_tramitando": 4,
+        "julgado": true,
+        "data_julgamento": "18/08/2026",
+        "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e PARTIDO SOCIALISTA BRASILEIRO DIRETORIO ESTADUAL e não-provido em 18/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600177-19.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "ED no(a) REC no(a) Rp",
+        "tarefa_atual": "Analisar Processos",
+        "autuacao": "21/08/2026",
+        "desde": "24/08/2026",
+        "dias_tramitando": 3,
+        "julgado": true,
+        "data_julgamento": "17/08/2026",
+        "teor": "Conhecido o recurso de EDUARDO SALIM BRAIDE e não-provido em 17/08/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -2843,50 +2889,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-processos": [
-      {
-        "processo": "0600175-49.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "ED no(a) REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos",
-        "autuacao": "19/08/2026",
-        "desde": "19/08/2026",
-        "dias_tramitando": 4,
-        "julgado": true,
-        "data_julgamento": "19/08/2026",
-        "teor": "Conhecido o recurso de IPPI PESQUISAS E CONSULTORIA LTDA e provido em 19/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600193-70.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "ED no(a) REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos",
-        "autuacao": "19/08/2026",
-        "desde": "19/08/2026",
-        "dias_tramitando": 4,
-        "julgado": true,
-        "data_julgamento": "18/08/2026",
-        "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e PARTIDO SOCIALISTA BRASILEIRO DIRETORIO ESTADUAL e não-provido em 18/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600177-19.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "ED no(a) REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos",
-        "autuacao": "21/08/2026",
-        "desde": "24/08/2026",
-        "dias_tramitando": 3,
-        "julgado": true,
-        "data_julgamento": "17/08/2026",
-        "teor": "Conhecido o recurso de EDUARDO SALIM BRAIDE e não-provido em 17/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "aguardando-julgamento-do-recurso-interno-aguardando-julgamento-do-recurso-interno": [
       {
         "processo": "0600185-93.2026.6.10.0000",
@@ -2943,6 +2945,36 @@
         "julgado": true,
         "data_julgamento": "04/08/2026",
         "teor": "Julgado improcedente o pedido em 04/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "realizar-triagem-urgentes": [
+      {
+        "processo": "0600981-84.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem urgentes",
+        "autuacao": "24/08/2026",
+        "desde": "24/08/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600982-69.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "RepEsp",
+        "tarefa_atual": "Realizar triagem urgentes",
+        "autuacao": "24/08/2026",
+        "desde": "24/08/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -3169,38 +3201,6 @@
         "responsavel_processo": ""
       }
     ],
-    "atualizar-dados-do-processo": [
-      {
-        "processo": "0600181-56.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Atualizar dados do processo",
-        "autuacao": "12/06/2026",
-        "desde": "24/08/2026",
-        "dias_tramitando": 72,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "definir-procedimento": [
-      {
-        "processo": "0600982-69.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "RepEsp",
-        "tarefa_atual": "Definir procedimento",
-        "autuacao": "24/08/2026",
-        "desde": "24/08/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "elaborar-extrato-da-ata-processo-com-prazo-em-curso": [
       {
         "processo": "0600177-19.2026.6.10.0000",
@@ -3265,22 +3265,6 @@
         "responsavel_processo": ""
       }
     ],
-    "realizar-triagem-urgentes": [
-      {
-        "processo": "0600981-84.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Realizar triagem urgentes",
-        "autuacao": "24/08/2026",
-        "desde": "24/08/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "registrar-ciencia-intimacao-pessoal": [
       {
         "processo": "0600968-85.2026.6.10.0000",
@@ -3293,22 +3277,6 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "remeter-processos-gabinete": [
-      {
-        "processo": "0600080-19.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Remeter Processos - Gabinete",
-        "autuacao": "19/08/2026",
-        "desde": "24/08/2026",
-        "dias_tramitando": 5,
-        "julgado": true,
-        "data_julgamento": "13/08/2026",
-        "teor": "Julgado improcedente o pedido em 13/08/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -3758,7 +3726,7 @@
         "processo": "0600080-19.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Remeter Processos - Gabinete",
+        "tarefa_atual": "Analisar Processos",
         "autuacao": "19/08/2026",
         "desde": "24/08/2026",
         "dias_tramitando": 5,
@@ -3915,7 +3883,7 @@
         "tarefa_atual": "Assinar ato",
         "autuacao": "23/08/2026",
         "desde": "24/08/2026",
-        "dias_tramitando": 0,
+        "dias_tramitando": 1,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -4138,7 +4106,7 @@
         "processo": "0600181-56.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Atualizar dados do processo",
+        "tarefa_atual": "Analisar determinação",
         "autuacao": "12/06/2026",
         "desde": "24/08/2026",
         "dias_tramitando": 72,
@@ -5162,7 +5130,7 @@
         "processo": "0600982-69.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "RepEsp",
-        "tarefa_atual": "Definir procedimento",
+        "tarefa_atual": "Realizar triagem urgentes",
         "autuacao": "24/08/2026",
         "desde": "24/08/2026",
         "dias_tramitando": 0,
@@ -5811,7 +5779,7 @@
       "processo": "0600181-56.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Atualizar dados do processo",
+      "tarefa_atual": "Analisar determinação",
       "autuacao": "12/06/2026",
       "desde": "24/08/2026",
       "dias_tramitando": 72,
@@ -6584,7 +6552,7 @@
       "tarefa_atual": "Assinar ato",
       "autuacao": "23/08/2026",
       "desde": "24/08/2026",
-      "dias_tramitando": 0,
+      "dias_tramitando": 1,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -6721,7 +6689,7 @@
       "processo": "0600982-69.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "RepEsp",
-      "tarefa_atual": "Definir procedimento",
+      "tarefa_atual": "Realizar triagem urgentes",
       "autuacao": "24/08/2026",
       "desde": "24/08/2026",
       "dias_tramitando": 0,
@@ -7541,7 +7509,7 @@
       "processo": "0600181-56.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Atualizar dados do processo",
+      "tarefa_atual": "Analisar determinação",
       "autuacao": "12/06/2026",
       "desde": "24/08/2026",
       "dias_tramitando": 72,
@@ -8314,7 +8282,7 @@
       "tarefa_atual": "Assinar ato",
       "autuacao": "23/08/2026",
       "desde": "24/08/2026",
-      "dias_tramitando": 0,
+      "dias_tramitando": 1,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -8451,7 +8419,7 @@
       "processo": "0600982-69.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "RepEsp",
-      "tarefa_atual": "Definir procedimento",
+      "tarefa_atual": "Realizar triagem urgentes",
       "autuacao": "24/08/2026",
       "desde": "24/08/2026",
       "dias_tramitando": 0,
@@ -9058,7 +9026,7 @@
       "processo": "0600080-19.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "REC no(a) Rp",
-      "tarefa_atual": "Remeter Processos - Gabinete",
+      "tarefa_atual": "Analisar Processos",
       "autuacao": "19/08/2026",
       "desde": "24/08/2026",
       "dias_tramitando": 5,
@@ -10185,8 +10153,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "24/08/2026 15:21",
+  "publicado_em": "24/08/2026 15:23",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "0a46d5855fc3691a20340c3b364a4de273e8ce0dd24d2cc01e90ce7e52b4c344"
+  "hash_publicacao": "d257f7aa06fb2901f4471cadcb5027b0e99adf81d644ab2f506e1bf461852ed1"
 }
