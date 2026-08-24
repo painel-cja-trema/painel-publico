@@ -264,12 +264,12 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Informar data de trânsito em julgado",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Informar data de trânsito em julgado",
+      "tarefa_atual": "Lançar movimento",
       "quantidade": 1
     },
     {
@@ -637,8 +637,8 @@
           "TRIAGEM_URGENTE": 0,
           "TRIAGEM_ORDINARIA": 3,
           "MINUTAR_ATO": 1,
-          "ASSINAR_ATO": 1,
-          "LANCAR_MOVIMENTACAO": 0
+          "ASSINAR_ATO": 0,
+          "LANCAR_MOVIMENTACAO": 1
         }
       }
     ],
@@ -646,8 +646,8 @@
       "TRIAGEM_URGENTE": 1,
       "TRIAGEM_ORDINARIA": 18,
       "MINUTAR_ATO": 6,
-      "ASSINAR_ATO": 7,
-      "LANCAR_MOVIMENTACAO": 0
+      "ASSINAR_ATO": 6,
+      "LANCAR_MOVIMENTACAO": 1
     },
     "total_acervo": 131
   },
@@ -1092,12 +1092,14 @@
         "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
-      },
+      }
+    ],
+    "LANCAR_MOVIMENTACAO": [
       {
         "processo": "0600982-69.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "RepEsp",
-        "tarefa_atual": "Assinar ato",
+        "tarefa_atual": "Lançar movimento",
         "autuacao": "24/08/2026",
         "desde": "24/08/2026",
         "dias_tramitando": 0,
@@ -1107,8 +1109,7 @@
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
-    ],
-    "LANCAR_MOVIMENTACAO": []
+    ]
   },
   "entrada_comissao": {
     "codigo": "LIMINAR_CERTIFICACAO",
@@ -1181,9 +1182,9 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 5,
           "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 1
+          "Gabinete Juiz Auxiliar 3": 0
         },
-        "total": 7
+        "total": 6
       },
       {
         "codigo": "minutar-ato",
@@ -1368,6 +1369,16 @@
       {
         "codigo": "informar-data-de-transito-em-julgado",
         "tarefa": "Informar data de trânsito em julgado",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
+        "codigo": "lancar-movimento",
+        "tarefa": "Lançar movimento",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -2657,20 +2668,6 @@
         "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
-      },
-      {
-        "processo": "0600982-69.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "RepEsp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "24/08/2026",
-        "desde": "24/08/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
       }
     ],
     "minutar-ato": [
@@ -2941,7 +2938,7 @@
         "tarefa_atual": "Analisar Processos",
         "autuacao": "19/08/2026",
         "desde": "19/08/2026",
-        "dias_tramitando": 4,
+        "dias_tramitando": 5,
         "julgado": true,
         "data_julgamento": "18/08/2026",
         "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e PARTIDO SOCIALISTA BRASILEIRO DIRETORIO ESTADUAL e não-provido em 18/08/2026",
@@ -3225,6 +3222,22 @@
         "julgado": true,
         "data_julgamento": "17/08/2026",
         "teor": "Conhecido o recurso de FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA (PRD/SOLIDARIEDADE) e não-provido em 17/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "lancar-movimento": [
+      {
+        "processo": "0600982-69.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "RepEsp",
+        "tarefa_atual": "Lançar movimento",
+        "autuacao": "24/08/2026",
+        "desde": "24/08/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -4699,7 +4712,7 @@
         "tarefa_atual": "Analisar Processos",
         "autuacao": "19/08/2026",
         "desde": "19/08/2026",
-        "dias_tramitando": 4,
+        "dias_tramitando": 5,
         "julgado": true,
         "data_julgamento": "18/08/2026",
         "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e PARTIDO SOCIALISTA BRASILEIRO DIRETORIO ESTADUAL e não-provido em 18/08/2026",
@@ -5188,7 +5201,7 @@
         "processo": "0600982-69.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "RepEsp",
-        "tarefa_atual": "Assinar ato",
+        "tarefa_atual": "Lançar movimento",
         "autuacao": "24/08/2026",
         "desde": "24/08/2026",
         "dias_tramitando": 0,
@@ -5367,7 +5380,7 @@
       "classe": "ED no(a) REC no(a) Rp",
       "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e PARTIDO SOCIALISTA BRASILEIRO DIRETORIO ESTADUAL e não-provido em 18/08/2026",
       "data_julgamento": "18/08/2026",
-      "dias_tramitando": 4
+      "dias_tramitando": 5
     },
     {
       "processo": "0600193-70.2026.6.10.0000",
@@ -6747,7 +6760,7 @@
       "processo": "0600982-69.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "RepEsp",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "autuacao": "24/08/2026",
       "desde": "24/08/2026",
       "dias_tramitando": 0,
@@ -8477,7 +8490,7 @@
       "processo": "0600982-69.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "RepEsp",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "autuacao": "24/08/2026",
       "desde": "24/08/2026",
       "dias_tramitando": 0,
@@ -9179,6 +9192,20 @@
       "responsavel_processo": ""
     },
     {
+      "processo": "0600193-70.2026.6.10.0000",
+      "gabinete": "Gab. JA 2",
+      "classe": "ED no(a) REC no(a) Rp",
+      "tarefa_atual": "Analisar Processos",
+      "autuacao": "19/08/2026",
+      "desde": "19/08/2026",
+      "dias_tramitando": 5,
+      "julgado": true,
+      "data_julgamento": "18/08/2026",
+      "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e PARTIDO SOCIALISTA BRASILEIRO DIRETORIO ESTADUAL e não-provido em 18/08/2026",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
+    },
+    {
       "processo": "0600225-75.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "ED no(a) REC no(a) Rp",
@@ -9203,20 +9230,6 @@
       "julgado": true,
       "data_julgamento": "18/08/2026",
       "teor": "Conhecido o recurso de SERGIO ALENCAR MATIAS e não-provido em 18/08/2026",
-      "segredo_justica": "NÃO",
-      "responsavel_processo": ""
-    },
-    {
-      "processo": "0600193-70.2026.6.10.0000",
-      "gabinete": "Gab. JA 2",
-      "classe": "ED no(a) REC no(a) Rp",
-      "tarefa_atual": "Analisar Processos",
-      "autuacao": "19/08/2026",
-      "desde": "19/08/2026",
-      "dias_tramitando": 4,
-      "julgado": true,
-      "data_julgamento": "18/08/2026",
-      "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e PARTIDO SOCIALISTA BRASILEIRO DIRETORIO ESTADUAL e não-provido em 18/08/2026",
       "segredo_justica": "NÃO",
       "responsavel_processo": ""
     },
@@ -9606,6 +9619,20 @@
       "responsavel_processo": ""
     },
     {
+      "processo": "0600193-70.2026.6.10.0000",
+      "gabinete": "Gab. JA 2",
+      "classe": "ED no(a) REC no(a) Rp",
+      "tarefa_atual": "Analisar Processos",
+      "autuacao": "19/08/2026",
+      "desde": "19/08/2026",
+      "dias_tramitando": 5,
+      "julgado": true,
+      "data_julgamento": "18/08/2026",
+      "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e PARTIDO SOCIALISTA BRASILEIRO DIRETORIO ESTADUAL e não-provido em 18/08/2026",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
+    },
+    {
       "processo": "0600225-75.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "ED no(a) REC no(a) Rp",
@@ -9630,20 +9657,6 @@
       "julgado": true,
       "data_julgamento": "18/08/2026",
       "teor": "Conhecido o recurso de SERGIO ALENCAR MATIAS e não-provido em 18/08/2026",
-      "segredo_justica": "NÃO",
-      "responsavel_processo": ""
-    },
-    {
-      "processo": "0600193-70.2026.6.10.0000",
-      "gabinete": "Gab. JA 2",
-      "classe": "ED no(a) REC no(a) Rp",
-      "tarefa_atual": "Analisar Processos",
-      "autuacao": "19/08/2026",
-      "desde": "19/08/2026",
-      "dias_tramitando": 4,
-      "julgado": true,
-      "data_julgamento": "18/08/2026",
-      "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e PARTIDO SOCIALISTA BRASILEIRO DIRETORIO ESTADUAL e não-provido em 18/08/2026",
       "segredo_justica": "NÃO",
       "responsavel_processo": ""
     },
@@ -10239,8 +10252,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "24/08/2026 17:51",
+  "publicado_em": "24/08/2026 17:53",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "1cfc5f69fbe93973d753fe9486d15d90860b4b474782dd13a46e9fd2c954e8d2"
+  "hash_publicacao": "eb787abaa99c32af50203c555e8210b5cc0bbc5c1872fbf8795b170afa00cf28"
 }
