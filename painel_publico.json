@@ -13,7 +13,7 @@
       "media_dias": 33.7,
       "maior_tempo": 139,
       "urgentes": 0,
-      "minutar": 1,
+      "minutar": 2,
       "julgados": 13,
       "percentual_julgados": 63.8,
       "arquivados": 5,
@@ -94,6 +94,11 @@
     },
     {
       "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Minutar ato",
+      "quantidade": 2
+    },
+    {
+      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Revisar Relatório, Voto e Ementa",
       "quantidade": 2
     },
@@ -115,16 +120,6 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Elaborar extrato da ata; Processo com prazo em curso",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Minutar ato",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Realizar triagem ordinários",
       "quantidade": 1
     },
     {
@@ -385,7 +380,7 @@
       "processo": "0600151-21.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Realizar triagem ordinários",
+      "tarefa_atual": "Minutar ato",
       "dias_tramitando": 99,
       "segredo_justica": "NÃO"
     },
@@ -480,12 +475,31 @@
   ],
   "minutar_cja1": [
     {
+      "processo": "0600151-21.2026.6.10.0000",
+      "classe": "Rp",
+      "dias_tramitando": 99
+    },
+    {
       "processo": "0600364-27.2026.6.10.0000",
       "classe": "Rp",
       "dias_tramitando": 21
     }
   ],
   "minutar_processos": [
+    {
+      "processo": "0600151-21.2026.6.10.0000",
+      "gabinete": "Gab. JA 1",
+      "classe": "Rp",
+      "tarefa_atual": "Minutar ato",
+      "autuacao": "18/05/2026",
+      "desde": "25/08/2026",
+      "dias_tramitando": 99,
+      "julgado": false,
+      "data_julgamento": "",
+      "teor": "",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
+    },
     {
       "processo": "0600176-34.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
@@ -625,8 +639,8 @@
         "total_acervo": 47,
         "contagens": {
           "TRIAGEM_URGENTE": 0,
-          "TRIAGEM_ORDINARIA": 1,
-          "MINUTAR_ATO": 1,
+          "TRIAGEM_ORDINARIA": 0,
+          "MINUTAR_ATO": 2,
           "ASSINAR_ATO": 4,
           "LANCAR_MOVIMENTACAO": 0
         }
@@ -658,8 +672,8 @@
     ],
     "totais": {
       "TRIAGEM_URGENTE": 1,
-      "TRIAGEM_ORDINARIA": 9,
-      "MINUTAR_ATO": 7,
+      "TRIAGEM_ORDINARIA": 8,
+      "MINUTAR_ATO": 8,
       "ASSINAR_ATO": 5,
       "LANCAR_MOVIMENTACAO": 1
     },
@@ -694,20 +708,6 @@
         "julgado": true,
         "data_julgamento": "16/07/2026",
         "teor": "Julgado procedente o pedido em 16/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600151-21.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Realizar triagem ordinários",
-        "autuacao": "18/05/2026",
-        "desde": "24/08/2026",
-        "dias_tramitando": 99,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -811,6 +811,20 @@
       }
     ],
     "MINUTAR_ATO": [
+      {
+        "processo": "0600151-21.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Minutar ato",
+        "autuacao": "18/05/2026",
+        "desde": "25/08/2026",
+        "dias_tramitando": 99,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
       {
         "processo": "0600176-34.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
@@ -1045,14 +1059,24 @@
         "total": 32
       },
       {
+        "codigo": "minutar-ato",
+        "tarefa": "Minutar ato",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 2,
+          "Gabinete Juiz Auxiliar 2": 5,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 8
+      },
+      {
         "codigo": "realizar-triagem-ordinarios",
         "tarefa": "Realizar triagem ordinários",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 6,
           "Gabinete Juiz Auxiliar 3": 2
         },
-        "total": 9
+        "total": 8
       },
       {
         "codigo": "minutar-relatorio-voto-e-ementa",
@@ -1061,16 +1085,6 @@
           "Gabinete Juiz Auxiliar 1": 3,
           "Gabinete Juiz Auxiliar 2": 2,
           "Gabinete Juiz Auxiliar 3": 2
-        },
-        "total": 7
-      },
-      {
-        "codigo": "minutar-ato",
-        "tarefa": "Minutar ato",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 5,
-          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 7
       },
@@ -2242,6 +2256,120 @@
         "responsavel_processo": ""
       }
     ],
+    "minutar-ato": [
+      {
+        "processo": "0600151-21.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Minutar ato",
+        "autuacao": "18/05/2026",
+        "desde": "25/08/2026",
+        "dias_tramitando": 99,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600176-34.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Minutar ato",
+        "autuacao": "10/06/2026",
+        "desde": "25/08/2026",
+        "dias_tramitando": 76,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600190-18.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Minutar ato",
+        "autuacao": "25/06/2026",
+        "desde": "25/08/2026",
+        "dias_tramitando": 61,
+        "julgado": true,
+        "data_julgamento": "18/08/2026",
+        "teor": "Conhecido o recurso de PERON FIGUEIREDO DA CUNHA e não-provido em 18/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600252-58.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Minutar ato",
+        "autuacao": "28/07/2026",
+        "desde": "24/08/2026",
+        "dias_tramitando": 28,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600364-27.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Minutar ato",
+        "autuacao": "04/08/2026",
+        "desde": "21/08/2026",
+        "dias_tramitando": 21,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600905-60.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Minutar ato",
+        "autuacao": "13/08/2026",
+        "desde": "24/08/2026",
+        "dias_tramitando": 12,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600192-85.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "ED no(a) ED no(a) Rp",
+        "tarefa_atual": "Minutar ato",
+        "autuacao": "19/08/2026",
+        "desde": "23/08/2026",
+        "dias_tramitando": 6,
+        "julgado": true,
+        "data_julgamento": "17/08/2026",
+        "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e não-provido em 17/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600990-46.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Minutar ato",
+        "autuacao": "24/08/2026",
+        "desde": "25/08/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "realizar-triagem-ordinarios": [
       {
         "processo": "0600089-78.2026.6.10.0000",
@@ -2254,20 +2382,6 @@
         "julgado": true,
         "data_julgamento": "16/07/2026",
         "teor": "Julgado procedente o pedido em 16/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600151-21.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Realizar triagem ordinários",
-        "autuacao": "18/05/2026",
-        "desde": "24/08/2026",
-        "dias_tramitando": 99,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -2461,106 +2575,6 @@
         "classe": "Rp",
         "tarefa_atual": "Minutar Relatório, Voto e Ementa",
         "autuacao": "25/08/2026",
-        "desde": "25/08/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "minutar-ato": [
-      {
-        "processo": "0600176-34.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Minutar ato",
-        "autuacao": "10/06/2026",
-        "desde": "25/08/2026",
-        "dias_tramitando": 76,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600190-18.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Minutar ato",
-        "autuacao": "25/06/2026",
-        "desde": "25/08/2026",
-        "dias_tramitando": 61,
-        "julgado": true,
-        "data_julgamento": "18/08/2026",
-        "teor": "Conhecido o recurso de PERON FIGUEIREDO DA CUNHA e não-provido em 18/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600252-58.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Minutar ato",
-        "autuacao": "28/07/2026",
-        "desde": "24/08/2026",
-        "dias_tramitando": 28,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600364-27.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Minutar ato",
-        "autuacao": "04/08/2026",
-        "desde": "21/08/2026",
-        "dias_tramitando": 21,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600905-60.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Minutar ato",
-        "autuacao": "13/08/2026",
-        "desde": "24/08/2026",
-        "dias_tramitando": 12,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600192-85.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "ED no(a) ED no(a) Rp",
-        "tarefa_atual": "Minutar ato",
-        "autuacao": "19/08/2026",
-        "desde": "23/08/2026",
-        "dias_tramitando": 6,
-        "julgado": true,
-        "data_julgamento": "17/08/2026",
-        "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e não-provido em 17/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600990-46.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Minutar ato",
-        "autuacao": "24/08/2026",
         "desde": "25/08/2026",
         "dias_tramitando": 0,
         "julgado": false,
@@ -3355,9 +3369,9 @@
         "processo": "0600151-21.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Realizar triagem ordinários",
+        "tarefa_atual": "Minutar ato",
         "autuacao": "18/05/2026",
-        "desde": "24/08/2026",
+        "desde": "25/08/2026",
         "dias_tramitando": 99,
         "julgado": false,
         "data_julgamento": "",
@@ -5688,9 +5702,9 @@
       "processo": "0600151-21.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Realizar triagem ordinários",
+      "tarefa_atual": "Minutar ato",
       "autuacao": "18/05/2026",
-      "desde": "24/08/2026",
+      "desde": "25/08/2026",
       "dias_tramitando": 99,
       "julgado": false,
       "data_julgamento": "",
@@ -7578,9 +7592,9 @@
       "processo": "0600151-21.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Realizar triagem ordinários",
+      "tarefa_atual": "Minutar ato",
       "autuacao": "18/05/2026",
-      "desde": "24/08/2026",
+      "desde": "25/08/2026",
       "dias_tramitando": 99,
       "julgado": false,
       "data_julgamento": "",
@@ -10572,8 +10586,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "25/08/2026 19:14",
+  "publicado_em": "25/08/2026 19:15",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "1c8747e760920a041aa8453d62ebe5251d475a69f4d54740eda8d03b6b633752"
+  "hash_publicacao": "cb4070436e5958b97311ab97270cf8d4b9f3a66cbe7213d595df8930a5820a77"
 }
