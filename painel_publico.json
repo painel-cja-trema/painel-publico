@@ -104,7 +104,7 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Analisar Processos",
+      "tarefa_atual": "Alterar partes",
       "quantidade": 1
     },
     {
@@ -1137,16 +1137,6 @@
         "total": 3
       },
       {
-        "codigo": "analisar-processos",
-        "tarefa": "Analisar Processos",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 2,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 3
-      },
-      {
         "codigo": "analisar-determinacao",
         "tarefa": "Analisar determinação",
         "contagens": {
@@ -1172,6 +1162,16 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 2,
           "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 2
+      },
+      {
+        "codigo": "analisar-processos",
+        "tarefa": "Analisar Processos",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 2,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 2
@@ -1242,6 +1242,16 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "alterar-partes",
+        "tarefa": "Alterar partes",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -2866,50 +2876,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-processos": [
-      {
-        "processo": "0600175-49.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "ED no(a) REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos",
-        "autuacao": "19/08/2026",
-        "desde": "19/08/2026",
-        "dias_tramitando": 5,
-        "julgado": true,
-        "data_julgamento": "19/08/2026",
-        "teor": "Conhecido o recurso de IPPI PESQUISAS E CONSULTORIA LTDA e provido em 19/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600193-70.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "ED no(a) REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos",
-        "autuacao": "19/08/2026",
-        "desde": "19/08/2026",
-        "dias_tramitando": 5,
-        "julgado": true,
-        "data_julgamento": "18/08/2026",
-        "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e PARTIDO SOCIALISTA BRASILEIRO DIRETORIO ESTADUAL e não-provido em 18/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600191-03.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "ED no(a) REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos",
-        "autuacao": "24/08/2026",
-        "desde": "24/08/2026",
-        "dias_tramitando": 1,
-        "julgado": true,
-        "data_julgamento": "22/08/2026",
-        "teor": "Conhecido o recurso de EDIDACIO LOPES DE OLIVEIRA e RUI FERNANDES RIBEIRO NETO e não-provido em 22/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "analisar-determinacao": [
       {
         "processo": "0600108-84.2026.6.10.0000",
@@ -3024,6 +2990,36 @@
         "julgado": true,
         "data_julgamento": "17/08/2026",
         "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e não-provido em 17/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-processos": [
+      {
+        "processo": "0600175-49.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "ED no(a) REC no(a) Rp",
+        "tarefa_atual": "Analisar Processos",
+        "autuacao": "19/08/2026",
+        "desde": "19/08/2026",
+        "dias_tramitando": 5,
+        "julgado": true,
+        "data_julgamento": "19/08/2026",
+        "teor": "Conhecido o recurso de IPPI PESQUISAS E CONSULTORIA LTDA e provido em 19/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600193-70.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "ED no(a) REC no(a) Rp",
+        "tarefa_atual": "Analisar Processos",
+        "autuacao": "19/08/2026",
+        "desde": "19/08/2026",
+        "dias_tramitando": 5,
+        "julgado": true,
+        "data_julgamento": "18/08/2026",
+        "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e PARTIDO SOCIALISTA BRASILEIRO DIRETORIO ESTADUAL e não-provido em 18/08/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -3178,6 +3174,22 @@
         "julgado": true,
         "data_julgamento": "19/08/2026",
         "teor": "Conhecido o recurso de IPPI PESQUISAS E CONSULTORIA LTDA e provido em 19/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "alterar-partes": [
+      {
+        "processo": "0600191-03.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "ED no(a) REC no(a) Rp",
+        "tarefa_atual": "Alterar partes",
+        "autuacao": "24/08/2026",
+        "desde": "25/08/2026",
+        "dias_tramitando": 1,
+        "julgado": true,
+        "data_julgamento": "22/08/2026",
+        "teor": "Conhecido o recurso de EDIDACIO LOPES DE OLIVEIRA e RUI FERNANDES RIBEIRO NETO e não-provido em 22/08/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -3951,9 +3963,9 @@
         "processo": "0600191-03.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "ED no(a) REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos",
+        "tarefa_atual": "Alterar partes",
         "autuacao": "24/08/2026",
-        "desde": "24/08/2026",
+        "desde": "25/08/2026",
         "dias_tramitando": 1,
         "julgado": true,
         "data_julgamento": "22/08/2026",
@@ -9593,9 +9605,9 @@
       "processo": "0600191-03.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "ED no(a) REC no(a) Rp",
-      "tarefa_atual": "Analisar Processos",
+      "tarefa_atual": "Alterar partes",
       "autuacao": "24/08/2026",
-      "desde": "24/08/2026",
+      "desde": "25/08/2026",
       "dias_tramitando": 1,
       "julgado": true,
       "data_julgamento": "22/08/2026",
@@ -10034,9 +10046,9 @@
       "processo": "0600191-03.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "ED no(a) REC no(a) Rp",
-      "tarefa_atual": "Analisar Processos",
+      "tarefa_atual": "Alterar partes",
       "autuacao": "24/08/2026",
-      "desde": "24/08/2026",
+      "desde": "25/08/2026",
       "dias_tramitando": 1,
       "julgado": true,
       "data_julgamento": "22/08/2026",
@@ -10594,8 +10606,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "25/08/2026 16:48",
+  "publicado_em": "25/08/2026 16:49",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "596a1d2394510b943166262678d0e4e15f6bf7f4f019ce5ac1467e494a6bca62"
+  "hash_publicacao": "bb301c2936ff17d23b204fb3ad67d3a27f1d23c814b098630204c7ce87789c99"
 }
