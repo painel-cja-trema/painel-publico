@@ -10,7 +10,7 @@
       "juiz": "Dr. Nilo Ribeiro",
       "distribuidor": "Flauberth Silva Santos",
       "quantidade": 30,
-      "media_dias": 33.5,
+      "media_dias": 33.6,
       "maior_tempo": 139,
       "urgentes": 1,
       "minutar": 2,
@@ -46,7 +46,7 @@
       "quantidade": 19,
       "media_dias": 19.7,
       "maior_tempo": 77,
-      "urgentes": 3,
+      "urgentes": 2,
       "minutar": 1,
       "julgados": 7,
       "percentual_julgados": 55.6,
@@ -249,11 +249,6 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Analisar determinação - Urgentes; Petições não lidas",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Analisar determinação; Petições não lidas",
       "quantidade": 1
     },
@@ -275,6 +270,11 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Petições não lidas; Petições não lidas; Realizar triagem urgentes",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Petições não lidas; Preparar comunicação",
       "quantidade": 1
     },
     {
@@ -1224,16 +1224,6 @@
         "total": 1
       },
       {
-        "codigo": "analisar-determinacao-urgentes-peticoes-nao-lidas",
-        "tarefa": "Analisar determinação - Urgentes; Petições não lidas",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
         "codigo": "analisar-determinacao-peticoes-nao-lidas",
         "tarefa": "Analisar determinação; Petições não lidas",
         "contagens": {
@@ -1286,6 +1276,16 @@
       {
         "codigo": "peticoes-nao-lidas-peticoes-nao-lidas-realizar-triagem-urgentes",
         "tarefa": "Petições não lidas; Petições não lidas; Realizar triagem urgentes",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
+        "codigo": "peticoes-nao-lidas-preparar-comunicacao",
+        "tarefa": "Petições não lidas; Preparar comunicação",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -2781,7 +2781,7 @@
         "tarefa_atual": "Registrar ciência por telefone ou pessoalmente",
         "autuacao": "23/08/2026",
         "desde": "25/08/2026",
-        "dias_tramitando": 1,
+        "dias_tramitando": 2,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -3165,22 +3165,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-determinacao-urgentes-peticoes-nao-lidas": [
-      {
-        "processo": "0600986-09.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação - Urgentes; Petições não lidas",
-        "autuacao": "24/08/2026",
-        "desde": "24/08/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "analisar-determinacao-peticoes-nao-lidas": [
       {
         "processo": "0600926-36.2026.6.10.0000",
@@ -3270,6 +3254,22 @@
         "autuacao": "22/08/2026",
         "desde": "22/08/2026",
         "dias_tramitando": 3,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "peticoes-nao-lidas-preparar-comunicacao": [
+      {
+        "processo": "0600986-09.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Petições não lidas; Preparar comunicação",
+        "autuacao": "24/08/2026",
+        "desde": "24/08/2026",
+        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -3915,6 +3915,20 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0600976-62.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Registrar ciência por telefone ou pessoalmente",
+        "autuacao": "23/08/2026",
+        "desde": "25/08/2026",
+        "dias_tramitando": 2,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0600191-03.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "ED no(a) REC no(a) Rp",
@@ -3925,20 +3939,6 @@
         "julgado": true,
         "data_julgamento": "22/08/2026",
         "teor": "Conhecido o recurso de EDIDACIO LOPES DE OLIVEIRA e RUI FERNANDES RIBEIRO NETO e não-provido em 22/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600976-62.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Registrar ciência por telefone ou pessoalmente",
-        "autuacao": "23/08/2026",
-        "desde": "25/08/2026",
-        "dias_tramitando": 1,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -5224,7 +5224,7 @@
         "processo": "0600986-09.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Analisar determinação - Urgentes; Petições não lidas",
+        "tarefa_atual": "Petições não lidas; Preparar comunicação",
         "autuacao": "24/08/2026",
         "desde": "24/08/2026",
         "dias_tramitando": 0,
@@ -6688,7 +6688,7 @@
       "tarefa_atual": "Registrar ciência por telefone ou pessoalmente",
       "autuacao": "23/08/2026",
       "desde": "25/08/2026",
-      "dias_tramitando": 1,
+      "dias_tramitando": 2,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -6797,7 +6797,7 @@
       "processo": "0600986-09.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação - Urgentes; Petições não lidas",
+      "tarefa_atual": "Petições não lidas; Preparar comunicação",
       "autuacao": "24/08/2026",
       "desde": "24/08/2026",
       "dias_tramitando": 0,
@@ -8578,7 +8578,7 @@
       "tarefa_atual": "Registrar ciência por telefone ou pessoalmente",
       "autuacao": "23/08/2026",
       "desde": "25/08/2026",
-      "dias_tramitando": 1,
+      "dias_tramitando": 2,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -8687,7 +8687,7 @@
       "processo": "0600986-09.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação - Urgentes; Petições não lidas",
+      "tarefa_atual": "Petições não lidas; Preparar comunicação",
       "autuacao": "24/08/2026",
       "desde": "24/08/2026",
       "dias_tramitando": 0,
@@ -10564,5 +10564,5 @@
   "publicado_em": "25/08/2026 17:16",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "0f68c7d6a39b519cabeed1d40d595c9b6d99efafc51086bffb77945e523a8abb"
+  "hash_publicacao": "14950a4d0bdc386de592ee8ccea3290396d81e4001ef3325dd4a6256b86cfcbe"
 }
