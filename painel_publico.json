@@ -46,7 +46,7 @@
       "quantidade": 21,
       "media_dias": 22.8,
       "maior_tempo": 118,
-      "urgentes": 3,
+      "urgentes": 4,
       "minutar": 1,
       "julgados": 7,
       "percentual_julgados": 50.0,
@@ -274,6 +274,11 @@
     },
     {
       "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação - Urgentes; Petições não lidas; Petições não lidas; Petições não lidas",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas; Registrar recurso",
       "quantidade": 1
     },
@@ -300,11 +305,6 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Petições não lidas; Petições não lidas; Petições não lidas; Processo com prazo em curso; Registrar ciência por telefone ou pessoalmente",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Petições não lidas; Petições não lidas; Processo com prazo em curso",
       "quantidade": 1
     },
     {
@@ -1424,6 +1424,16 @@
         "total": 1
       },
       {
+        "codigo": "analisar-peticao-avulsa-analisar-determinacao-urgentes-peticoes-nao-lidas-peticoes-nao-lidas-peticoes-nao-lidas",
+        "tarefa": "Analisar Petição Avulsa; Analisar determinação - Urgentes; Petições não lidas; Petições não lidas; Petições não lidas",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
         "codigo": "analisar-peticao-avulsa-analisar-resposta-do-expediente-peticoes-nao-lidas-registrar-recurso",
         "tarefa": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas; Registrar recurso",
         "contagens": {
@@ -1516,16 +1526,6 @@
       {
         "codigo": "peticoes-nao-lidas-peticoes-nao-lidas-peticoes-nao-lidas-processo-com-prazo-em-curso-registrar-ciencia-por-telefone-ou-pessoalmente",
         "tarefa": "Petições não lidas; Petições não lidas; Petições não lidas; Processo com prazo em curso; Registrar ciência por telefone ou pessoalmente",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
-        "codigo": "peticoes-nao-lidas-peticoes-nao-lidas-processo-com-prazo-em-curso",
-        "tarefa": "Petições não lidas; Petições não lidas; Processo com prazo em curso",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -3325,6 +3325,22 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-peticao-avulsa-analisar-determinacao-urgentes-peticoes-nao-lidas-peticoes-nao-lidas-peticoes-nao-lidas": [
+      {
+        "processo": "0600965-33.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação - Urgentes; Petições não lidas; Petições não lidas; Petições não lidas",
+        "autuacao": "21/08/2026",
+        "desde": "21/08/2026",
+        "dias_tramitando": 3,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "analisar-peticao-avulsa-analisar-resposta-do-expediente-peticoes-nao-lidas-registrar-recurso": [
       {
         "processo": "0600235-22.2026.6.10.0000",
@@ -3478,22 +3494,6 @@
         "autuacao": "23/08/2026",
         "desde": "23/08/2026",
         "dias_tramitando": 1,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "peticoes-nao-lidas-peticoes-nao-lidas-processo-com-prazo-em-curso": [
-      {
-        "processo": "0600965-33.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Petições não lidas; Petições não lidas; Processo com prazo em curso",
-        "autuacao": "21/08/2026",
-        "desde": "21/08/2026",
-        "dias_tramitando": 3,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -5350,7 +5350,7 @@
         "processo": "0600965-33.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+        "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação - Urgentes; Petições não lidas",
         "autuacao": "21/08/2026",
         "desde": "21/08/2026",
         "dias_tramitando": 3,
@@ -6783,7 +6783,7 @@
       "processo": "0600965-33.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação - Urgentes; Petições não lidas",
       "autuacao": "21/08/2026",
       "desde": "21/08/2026",
       "dias_tramitando": 3,
@@ -8613,7 +8613,7 @@
       "processo": "0600965-33.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação - Urgentes; Petições não lidas",
       "autuacao": "21/08/2026",
       "desde": "21/08/2026",
       "dias_tramitando": 3,
@@ -10655,8 +10655,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "24/08/2026 21:40",
+  "publicado_em": "24/08/2026 21:46",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "223fe364cb90532514c655e0ed6dc6428bf4ae34d493235d382426be0874589a"
+  "hash_publicacao": "b08a36d88c53c42b01be9e20d28973d919b33923cc8e5a79c453a42ab6e441dd"
 }
