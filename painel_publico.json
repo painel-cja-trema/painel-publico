@@ -69,6 +69,11 @@
     },
     {
       "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Assinar ato",
+      "quantidade": 4
+    },
+    {
+      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Realizar triagem ordinários",
       "quantidade": 4
     },
@@ -76,11 +81,6 @@
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Registrar ciência por telefone ou pessoalmente",
       "quantidade": 4
-    },
-    {
-      "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Assinar ato",
-      "quantidade": 3
     },
     {
       "gabinete": "Gab. JA 1",
@@ -123,11 +123,6 @@
       "quantidade": 1
     },
     {
-      "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Revisar ato",
-      "quantidade": 1
-    },
-    {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Aguardando julgamento do recurso interno",
       "quantidade": 15
@@ -145,7 +140,7 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Analisar determinação",
-      "quantidade": 5
+      "quantidade": 4
     },
     {
       "gabinete": "Gab. JA 2",
@@ -200,6 +195,11 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Conferir Relatório, Voto e Ementa",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Elaborar Documentos",
       "quantidade": 1
     },
     {
@@ -613,7 +613,7 @@
           "TRIAGEM_URGENTE": 0,
           "TRIAGEM_ORDINARIA": 4,
           "MINUTAR_ATO": 3,
-          "ASSINAR_ATO": 3,
+          "ASSINAR_ATO": 4,
           "LANCAR_MOVIMENTACAO": 0
         }
       },
@@ -646,7 +646,7 @@
       "TRIAGEM_URGENTE": 1,
       "TRIAGEM_ORDINARIA": 17,
       "MINUTAR_ATO": 6,
-      "ASSINAR_ATO": 5,
+      "ASSINAR_ATO": 6,
       "LANCAR_MOVIMENTACAO": 0
     },
     "total_acervo": 137
@@ -996,6 +996,20 @@
     ],
     "ASSINAR_ATO": [
       {
+        "processo": "0600899-53.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "13/08/2026",
+        "desde": "25/08/2026",
+        "dias_tramitando": 11,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0600185-93.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "ED no(a) REC no(a) Rp",
@@ -1128,10 +1142,20 @@
         "tarefa": "Analisar determinação",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 5,
+          "Gabinete Juiz Auxiliar 2": 4,
           "Gabinete Juiz Auxiliar 3": 2
         },
-        "total": 7
+        "total": 6
+      },
+      {
+        "codigo": "assinar-ato",
+        "tarefa": "Assinar ato",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 4,
+          "Gabinete Juiz Auxiliar 2": 2,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 6
       },
       {
         "codigo": "minutar-relatorio-voto-e-ementa",
@@ -1152,16 +1176,6 @@
           "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 6
-      },
-      {
-        "codigo": "assinar-ato",
-        "tarefa": "Assinar ato",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 3,
-          "Gabinete Juiz Auxiliar 2": 2,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 5
       },
       {
         "codigo": "registrar-ciencia-por-telefone-ou-pessoalmente",
@@ -1324,6 +1338,16 @@
         "total": 1
       },
       {
+        "codigo": "elaborar-documentos",
+        "tarefa": "Elaborar Documentos",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
         "codigo": "elaborar-extrato-da-ata-processo-com-prazo-em-curso",
         "tarefa": "Elaborar extrato da ata; Processo com prazo em curso",
         "contagens": {
@@ -1379,16 +1403,6 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "revisar-ato",
-        "tarefa": "Revisar ato",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -2483,20 +2497,6 @@
         "responsavel_processo": ""
       },
       {
-        "processo": "0600176-34.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "10/06/2026",
-        "desde": "24/08/2026",
-        "dias_tramitando": 75,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
         "processo": "0600222-23.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
@@ -2560,6 +2560,92 @@
         "autuacao": "21/08/2026",
         "desde": "25/08/2026",
         "dias_tramitando": 3,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "assinar-ato": [
+      {
+        "processo": "0600899-53.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "13/08/2026",
+        "desde": "25/08/2026",
+        "dias_tramitando": 11,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600185-93.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "ED no(a) REC no(a) Rp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "19/08/2026",
+        "desde": "25/08/2026",
+        "dias_tramitando": 6,
+        "julgado": true,
+        "data_julgamento": "17/08/2026",
+        "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e não-provido em 17/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600187-63.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "ED no(a) REC no(a) Rp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "19/08/2026",
+        "desde": "25/08/2026",
+        "dias_tramitando": 6,
+        "julgado": true,
+        "data_julgamento": "17/08/2026",
+        "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e não-provido em 17/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600985-24.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "24/08/2026",
+        "desde": "25/08/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600987-91.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "24/08/2026",
+        "desde": "25/08/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600989-61.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "24/08/2026",
+        "desde": "25/08/2026",
+        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -2732,78 +2818,6 @@
         "autuacao": "21/08/2026",
         "desde": "25/08/2026",
         "dias_tramitando": 3,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "assinar-ato": [
-      {
-        "processo": "0600185-93.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "ED no(a) REC no(a) Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "19/08/2026",
-        "desde": "25/08/2026",
-        "dias_tramitando": 6,
-        "julgado": true,
-        "data_julgamento": "17/08/2026",
-        "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e não-provido em 17/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600187-63.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "ED no(a) REC no(a) Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "19/08/2026",
-        "desde": "25/08/2026",
-        "dias_tramitando": 6,
-        "julgado": true,
-        "data_julgamento": "17/08/2026",
-        "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e não-provido em 17/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600985-24.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "24/08/2026",
-        "desde": "25/08/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600987-91.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "24/08/2026",
-        "desde": "25/08/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600989-61.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "24/08/2026",
-        "desde": "25/08/2026",
-        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -3263,6 +3277,22 @@
         "responsavel_processo": ""
       }
     ],
+    "elaborar-documentos": [
+      {
+        "processo": "0600176-34.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Elaborar Documentos",
+        "autuacao": "10/06/2026",
+        "desde": "25/08/2026",
+        "dias_tramitando": 75,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "elaborar-extrato-da-ata-processo-com-prazo-em-curso": [
       {
         "processo": "0600177-19.2026.6.10.0000",
@@ -3352,22 +3382,6 @@
         "autuacao": "24/08/2026",
         "desde": "24/08/2026",
         "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "revisar-ato": [
-      {
-        "processo": "0600899-53.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Revisar ato",
-        "autuacao": "13/08/2026",
-        "desde": "25/08/2026",
-        "dias_tramitando": 11,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -3732,7 +3746,7 @@
         "processo": "0600899-53.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Revisar ato",
+        "tarefa_atual": "Assinar ato",
         "autuacao": "13/08/2026",
         "desde": "25/08/2026",
         "dias_tramitando": 11,
@@ -4182,9 +4196,9 @@
         "processo": "0600176-34.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
+        "tarefa_atual": "Elaborar Documentos",
         "autuacao": "10/06/2026",
-        "desde": "24/08/2026",
+        "desde": "25/08/2026",
         "dias_tramitando": 75,
         "julgado": false,
         "data_julgamento": "",
@@ -5897,9 +5911,9 @@
       "processo": "0600176-34.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Elaborar Documentos",
       "autuacao": "10/06/2026",
-      "desde": "24/08/2026",
+      "desde": "25/08/2026",
       "dias_tramitando": 75,
       "julgado": false,
       "data_julgamento": "",
@@ -6359,7 +6373,7 @@
       "processo": "0600899-53.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Revisar ato",
+      "tarefa_atual": "Assinar ato",
       "autuacao": "13/08/2026",
       "desde": "25/08/2026",
       "dias_tramitando": 11,
@@ -7713,9 +7727,9 @@
       "processo": "0600176-34.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Elaborar Documentos",
       "autuacao": "10/06/2026",
-      "desde": "24/08/2026",
+      "desde": "25/08/2026",
       "dias_tramitando": 75,
       "julgado": false,
       "data_julgamento": "",
@@ -8175,7 +8189,7 @@
       "processo": "0600899-53.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Revisar ato",
+      "tarefa_atual": "Assinar ato",
       "autuacao": "13/08/2026",
       "desde": "25/08/2026",
       "dias_tramitando": 11,
@@ -10497,8 +10511,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "25/08/2026 12:35",
+  "publicado_em": "25/08/2026 12:36",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "73cce0226d2c48631a2b286bcc7e5986c1a2820630c1facdc6a8e8abd09e8290"
+  "hash_publicacao": "592c3b98521709d29cc87f118a51a9f02ae6b3e5506b553337b78925ca2d5d51"
 }
