@@ -79,6 +79,11 @@
     },
     {
       "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+      "quantidade": 3
+    },
+    {
+      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Registrar ciência por telefone ou pessoalmente",
       "quantidade": 3
     },
@@ -91,16 +96,6 @@
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Aguardando julgamento do recurso interno; Aguardando julgamento do recurso interno",
       "quantidade": 2
-    },
-    {
-      "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
-      "quantidade": 2
-    },
-    {
-      "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
-      "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 1",
@@ -284,12 +279,12 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Conferir Relatório, Voto e Ementa",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Conferir Relatório, Voto e Ementa",
+      "tarefa_atual": "Lançar movimento",
       "quantidade": 1
     },
     {
@@ -742,8 +737,8 @@
           "TRIAGEM_URGENTE": 2,
           "TRIAGEM_ORDINARIA": 7,
           "MINUTAR_ATO": 2,
-          "ASSINAR_ATO": 1,
-          "LANCAR_MOVIMENTACAO": 0
+          "ASSINAR_ATO": 0,
+          "LANCAR_MOVIMENTACAO": 1
         }
       }
     ],
@@ -751,8 +746,8 @@
       "TRIAGEM_URGENTE": 3,
       "TRIAGEM_ORDINARIA": 23,
       "MINUTAR_ATO": 11,
-      "ASSINAR_ATO": 2,
-      "LANCAR_MOVIMENTACAO": 0
+      "ASSINAR_ATO": 1,
+      "LANCAR_MOVIMENTACAO": 1
     },
     "total_acervo": 154
   },
@@ -1295,12 +1290,14 @@
         "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
-      },
+      }
+    ],
+    "LANCAR_MOVIMENTACAO": [
       {
         "processo": "0601008-67.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "RepEsp",
-        "tarefa_atual": "Assinar ato",
+        "tarefa_atual": "Lançar movimento",
         "autuacao": "27/08/2026",
         "desde": "27/08/2026",
         "dias_tramitando": 0,
@@ -1310,8 +1307,7 @@
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
-    ],
-    "LANCAR_MOVIMENTACAO": []
+    ]
   },
   "entrada_comissao": {
     "codigo": "LIMINAR_CERTIFICACAO",
@@ -1429,6 +1425,16 @@
         "total": 4
       },
       {
+        "codigo": "peticoes-nao-lidas-processo-com-prazo-em-curso",
+        "tarefa": "Petições não lidas; Processo com prazo em curso",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 3,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 4
+      },
+      {
         "codigo": "revisar-relatorio-voto-e-ementa",
         "tarefa": "Revisar Relatório, Voto e Ementa",
         "contagens": {
@@ -1479,16 +1485,6 @@
         "total": 3
       },
       {
-        "codigo": "peticoes-nao-lidas-processo-com-prazo-em-curso",
-        "tarefa": "Petições não lidas; Processo com prazo em curso",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 2,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 3
-      },
-      {
         "codigo": "registrar-ciencia-por-telefone-ou-pessoalmente",
         "tarefa": "Registrar ciência por telefone ou pessoalmente",
         "contagens": {
@@ -1535,16 +1531,6 @@
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 2
-      },
-      {
-        "codigo": "assinar-ato",
-        "tarefa": "Assinar ato",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 2
       },
@@ -1619,16 +1605,6 @@
         "total": 1
       },
       {
-        "codigo": "analisar-peticao-avulsa-peticoes-nao-lidas-processo-com-prazo-em-curso",
-        "tarefa": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
         "codigo": "analisar-processo-jud",
         "tarefa": "Analisar Processo - JUD",
         "contagens": {
@@ -1659,12 +1635,32 @@
         "total": 1
       },
       {
+        "codigo": "assinar-ato",
+        "tarefa": "Assinar ato",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
         "codigo": "elaborar-extrato-da-ata-processo-com-prazo-em-curso",
         "tarefa": "Elaborar extrato da ata; Processo com prazo em curso",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "lancar-movimento",
+        "tarefa": "Lançar movimento",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 1
       },
@@ -3142,6 +3138,64 @@
         "responsavel_processo": ""
       }
     ],
+    "peticoes-nao-lidas-processo-com-prazo-em-curso": [
+      {
+        "processo": "0600976-62.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+        "autuacao": "23/08/2026",
+        "desde": "23/08/2026",
+        "dias_tramitando": 3,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600977-47.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+        "autuacao": "23/08/2026",
+        "desde": "23/08/2026",
+        "dias_tramitando": 3,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600989-61.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+        "autuacao": "24/08/2026",
+        "desde": "24/08/2026",
+        "dias_tramitando": 2,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600996-53.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+        "autuacao": "25/08/2026",
+        "desde": "25/08/2026",
+        "dias_tramitando": 1,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "revisar-relatorio-voto-e-ementa": [
       {
         "processo": "0600140-89.2026.6.10.0000",
@@ -3376,50 +3430,6 @@
         "responsavel_processo": ""
       }
     ],
-    "peticoes-nao-lidas-processo-com-prazo-em-curso": [
-      {
-        "processo": "0600976-62.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
-        "autuacao": "23/08/2026",
-        "desde": "23/08/2026",
-        "dias_tramitando": 3,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600989-61.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
-        "autuacao": "24/08/2026",
-        "desde": "24/08/2026",
-        "dias_tramitando": 2,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600996-53.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
-        "autuacao": "25/08/2026",
-        "desde": "25/08/2026",
-        "dias_tramitando": 1,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "registrar-ciencia-por-telefone-ou-pessoalmente": [
       {
         "processo": "0600900-38.2026.6.10.0000",
@@ -3584,36 +3594,6 @@
         "responsavel_processo": ""
       }
     ],
-    "assinar-ato": [
-      {
-        "processo": "0601006-97.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "26/08/2026",
-        "desde": "27/08/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601008-67.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "RepEsp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "27/08/2026",
-        "desde": "27/08/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "conferir-relatorio-voto-e-ementa": [
       {
         "processo": "0600239-59.2026.6.10.0000",
@@ -3768,22 +3748,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-peticao-avulsa-peticoes-nao-lidas-processo-com-prazo-em-curso": [
-      {
-        "processo": "0600977-47.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
-        "autuacao": "23/08/2026",
-        "desde": "23/08/2026",
-        "dias_tramitando": 3,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "analisar-processo-jud": [
       {
         "processo": "0601003-45.2026.6.10.0000",
@@ -3832,6 +3796,22 @@
         "responsavel_processo": ""
       }
     ],
+    "assinar-ato": [
+      {
+        "processo": "0601006-97.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "26/08/2026",
+        "desde": "27/08/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "elaborar-extrato-da-ata-processo-com-prazo-em-curso": [
       {
         "processo": "0600177-19.2026.6.10.0000",
@@ -3844,6 +3824,22 @@
         "julgado": true,
         "data_julgamento": "17/08/2026",
         "teor": "Conhecido o recurso de EDUARDO SALIM BRAIDE e não-provido em 17/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "lancar-movimento": [
+      {
+        "processo": "0601008-67.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "RepEsp",
+        "tarefa_atual": "Lançar movimento",
+        "autuacao": "27/08/2026",
+        "desde": "27/08/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -4589,7 +4585,7 @@
         "processo": "0600977-47.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
+        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
         "autuacao": "23/08/2026",
         "desde": "23/08/2026",
         "dias_tramitando": 3,
@@ -6133,7 +6129,7 @@
         "processo": "0601008-67.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "RepEsp",
-        "tarefa_atual": "Assinar ato",
+        "tarefa_atual": "Lançar movimento",
         "autuacao": "27/08/2026",
         "desde": "27/08/2026",
         "dias_tramitando": 0,
@@ -7594,7 +7590,7 @@
       "processo": "0600977-47.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
+      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
       "autuacao": "23/08/2026",
       "desde": "23/08/2026",
       "dias_tramitando": 3,
@@ -7902,7 +7898,7 @@
       "processo": "0601008-67.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "RepEsp",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "autuacao": "27/08/2026",
       "desde": "27/08/2026",
       "dias_tramitando": 0,
@@ -9696,7 +9692,7 @@
       "processo": "0600977-47.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
+      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
       "autuacao": "23/08/2026",
       "desde": "23/08/2026",
       "dias_tramitando": 3,
@@ -10004,7 +10000,7 @@
       "processo": "0601008-67.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "RepEsp",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "autuacao": "27/08/2026",
       "desde": "27/08/2026",
       "dias_tramitando": 0,
@@ -11948,8 +11944,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "27/08/2026 16:14",
+  "publicado_em": "27/08/2026 16:15",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "8f44ffe4e21c3c7b05a6b2414fac5785f93a895e6014a53c7308186a2d76a28b"
+  "hash_publicacao": "c1b802ddd25c553dfb712a56399684da52773a9722f6e252262e6fb6155730f1"
 }
