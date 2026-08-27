@@ -109,17 +109,17 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Assinar ato",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Atualizar dados do processo",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Elaborar extrato da ata; Processo com prazo em curso",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Lançar movimento",
       "quantidade": 1
     },
     {
@@ -713,8 +713,8 @@
           "TRIAGEM_URGENTE": 2,
           "TRIAGEM_ORDINARIA": 5,
           "MINUTAR_ATO": 2,
-          "ASSINAR_ATO": 1,
-          "LANCAR_MOVIMENTACAO": 0
+          "ASSINAR_ATO": 0,
+          "LANCAR_MOVIMENTACAO": 1
         }
       },
       {
@@ -746,8 +746,8 @@
       "TRIAGEM_URGENTE": 6,
       "TRIAGEM_ORDINARIA": 24,
       "MINUTAR_ATO": 11,
-      "ASSINAR_ATO": 1,
-      "LANCAR_MOVIMENTACAO": 0
+      "ASSINAR_ATO": 0,
+      "LANCAR_MOVIMENTACAO": 1
     },
     "total_acervo": 155
   },
@@ -1332,12 +1332,13 @@
         "responsavel_processo": ""
       }
     ],
-    "ASSINAR_ATO": [
+    "ASSINAR_ATO": [],
+    "LANCAR_MOVIMENTACAO": [
       {
         "processo": "0601004-30.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
+        "tarefa_atual": "Lançar movimento",
         "autuacao": "26/08/2026",
         "desde": "27/08/2026",
         "dias_tramitando": 0,
@@ -1347,8 +1348,7 @@
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
-    ],
-    "LANCAR_MOVIMENTACAO": []
+    ]
   },
   "entrada_comissao": {
     "codigo": "LIMINAR_CERTIFICACAO",
@@ -1616,16 +1616,6 @@
         "total": 1
       },
       {
-        "codigo": "assinar-ato",
-        "tarefa": "Assinar ato",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
         "codigo": "atualizar-dados-do-processo",
         "tarefa": "Atualizar dados do processo",
         "contagens": {
@@ -1638,6 +1628,16 @@
       {
         "codigo": "elaborar-extrato-da-ata-processo-com-prazo-em-curso",
         "tarefa": "Elaborar extrato da ata; Processo com prazo em curso",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "lancar-movimento",
+        "tarefa": "Lançar movimento",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -3797,22 +3797,6 @@
         "responsavel_processo": ""
       }
     ],
-    "assinar-ato": [
-      {
-        "processo": "0601004-30.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "26/08/2026",
-        "desde": "27/08/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "atualizar-dados-do-processo": [
       {
         "processo": "0601011-22.2026.6.10.0000",
@@ -3841,6 +3825,22 @@
         "julgado": true,
         "data_julgamento": "17/08/2026",
         "teor": "Conhecido o recurso de EDUARDO SALIM BRAIDE e não-provido em 17/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "lancar-movimento": [
+      {
+        "processo": "0601004-30.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Lançar movimento",
+        "autuacao": "26/08/2026",
+        "desde": "27/08/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -4608,7 +4608,7 @@
         "processo": "0601004-30.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
+        "tarefa_atual": "Lançar movimento",
         "autuacao": "26/08/2026",
         "desde": "27/08/2026",
         "dias_tramitando": 0,
@@ -7809,7 +7809,7 @@
       "processo": "0601004-30.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "autuacao": "26/08/2026",
       "desde": "27/08/2026",
       "dias_tramitando": 0,
@@ -9925,7 +9925,7 @@
       "processo": "0601004-30.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "autuacao": "26/08/2026",
       "desde": "27/08/2026",
       "dias_tramitando": 0,
@@ -11939,8 +11939,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "27/08/2026 18:09",
+  "publicado_em": "27/08/2026 18:11",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "19c182642e62a4d5b3d68b53490223a370320fd5cab3eecdc2103bc62173ed00"
+  "hash_publicacao": "aaf8c7d91e568eb5bf8d9f91596734c71772e7887b8fdb0c8ec94727fb93edce"
 }
