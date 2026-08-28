@@ -10,10 +10,10 @@
       "juiz": "Dr. Nilo Ribeiro",
       "distribuidor": "Flauberth Silva Santos",
       "quantidade": 35,
-      "media_dias": 31.0,
+      "media_dias": 31.1,
       "maior_tempo": 142,
       "urgentes": 1,
-      "minutar": 1,
+      "minutar": 0,
       "julgados": 15,
       "percentual_julgados": 60.4,
       "arquivados": 7,
@@ -104,6 +104,11 @@
     },
     {
       "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Petições não lidas; Revisar ato",
+      "quantidade": 2
+    },
+    {
+      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Analisar Processos",
       "quantidade": 1
     },
@@ -119,17 +124,7 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Minutar ato; Petições não lidas",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Petições não lidas; Petições não lidas; Preparar comunicação",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Petições não lidas; Revisar ato",
       "quantidade": 1
     },
     {
@@ -508,13 +503,7 @@
       "segredo_justica": "NÃO"
     }
   ],
-  "minutar_cja1": [
-    {
-      "processo": "0600997-38.2026.6.10.0000",
-      "classe": "NIP",
-      "dias_tramitando": 2
-    }
-  ],
+  "minutar_cja1": [],
   "minutar_processos": [
     {
       "processo": "0600190-18.2026.6.10.0000",
@@ -685,20 +674,6 @@
       "responsavel_processo": ""
     },
     {
-      "processo": "0600997-38.2026.6.10.0000",
-      "gabinete": "Gab. JA 1",
-      "classe": "NIP",
-      "tarefa_atual": "Minutar ato; Petições não lidas",
-      "autuacao": "26/08/2026",
-      "desde": "26/08/2026",
-      "dias_tramitando": 2,
-      "julgado": false,
-      "data_julgamento": "",
-      "teor": "",
-      "segredo_justica": "NÃO",
-      "responsavel_processo": ""
-    },
-    {
       "processo": "0600998-23.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
@@ -754,7 +729,7 @@
         "contagens": {
           "TRIAGEM_URGENTE": 1,
           "TRIAGEM_ORDINARIA": 3,
-          "MINUTAR_ATO": 1,
+          "MINUTAR_ATO": 0,
           "ASSINAR_ATO": 0,
           "LANCAR_MOVIMENTACAO": 0
         }
@@ -787,7 +762,7 @@
     "totais": {
       "TRIAGEM_URGENTE": 4,
       "TRIAGEM_ORDINARIA": 24,
-      "MINUTAR_ATO": 14,
+      "MINUTAR_ATO": 13,
       "ASSINAR_ATO": 0,
       "LANCAR_MOVIMENTACAO": 0
     },
@@ -1360,20 +1335,6 @@
         "responsavel_processo": ""
       },
       {
-        "processo": "0600997-38.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "NIP",
-        "tarefa_atual": "Minutar ato; Petições não lidas",
-        "autuacao": "26/08/2026",
-        "desde": "26/08/2026",
-        "dias_tramitando": 2,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
         "processo": "0600998-23.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
@@ -1577,16 +1538,6 @@
         "total": 2
       },
       {
-        "codigo": "minutar-ato-peticoes-nao-lidas",
-        "tarefa": "Minutar ato; Petições não lidas",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 2
-      },
-      {
         "codigo": "minutar-ato-peticoes-nao-lidas-peticoes-nao-lidas",
         "tarefa": "Minutar ato; Petições não lidas; Petições não lidas",
         "contagens": {
@@ -1613,6 +1564,16 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 2
+        },
+        "total": 2
+      },
+      {
+        "codigo": "peticoes-nao-lidas-revisar-ato",
+        "tarefa": "Petições não lidas; Revisar ato",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 2,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 2
       },
@@ -1707,6 +1668,16 @@
         "total": 1
       },
       {
+        "codigo": "minutar-ato-peticoes-nao-lidas",
+        "tarefa": "Minutar ato; Petições não lidas",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
         "codigo": "peticoes-descartadas-peticoes-nao-lidas-processo-com-prazo-em-curso",
         "tarefa": "Petições descartadas; Petições não lidas; Processo com prazo em curso",
         "contagens": {
@@ -1773,16 +1744,6 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
-        "codigo": "peticoes-nao-lidas-revisar-ato",
-        "tarefa": "Petições não lidas; Revisar ato",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
       }
@@ -3246,6 +3207,20 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0600225-75.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "ED no(a) REC no(a) Rp",
+        "tarefa_atual": "Revisar Relatório, Voto e Ementa",
+        "autuacao": "19/08/2026",
+        "desde": "27/08/2026",
+        "dias_tramitando": 9,
+        "julgado": true,
+        "data_julgamento": "18/08/2026",
+        "teor": "Conhecido o recurso de PSD - PARTIDO SOCIAL DEMOCRATICO e não-provido em 18/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0600186-78.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "ED no(a) REC no(a) Rp",
@@ -3256,20 +3231,6 @@
         "julgado": true,
         "data_julgamento": "17/08/2026",
         "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e não-provido em 17/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600225-75.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "ED no(a) REC no(a) Rp",
-        "tarefa_atual": "Revisar Relatório, Voto e Ementa",
-        "autuacao": "19/08/2026",
-        "desde": "27/08/2026",
-        "dias_tramitando": 8,
-        "julgado": true,
-        "data_julgamento": "18/08/2026",
-        "teor": "Conhecido o recurso de PSD - PARTIDO SOCIAL DEMOCRATICO e não-provido em 18/08/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -3684,36 +3645,6 @@
         "responsavel_processo": ""
       }
     ],
-    "minutar-ato-peticoes-nao-lidas": [
-      {
-        "processo": "0600959-26.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Minutar ato; Petições não lidas",
-        "autuacao": "21/08/2026",
-        "desde": "21/08/2026",
-        "dias_tramitando": 6,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600997-38.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "NIP",
-        "tarefa_atual": "Minutar ato; Petições não lidas",
-        "autuacao": "26/08/2026",
-        "desde": "26/08/2026",
-        "dias_tramitando": 2,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "minutar-ato-peticoes-nao-lidas-peticoes-nao-lidas": [
       {
         "processo": "0600969-70.2026.6.10.0000",
@@ -3797,6 +3728,36 @@
         "autuacao": "21/08/2026",
         "desde": "21/08/2026",
         "dias_tramitando": 6,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "peticoes-nao-lidas-revisar-ato": [
+      {
+        "processo": "0600967-03.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Petições não lidas; Revisar ato",
+        "autuacao": "22/08/2026",
+        "desde": "22/08/2026",
+        "dias_tramitando": 6,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600997-38.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "NIP",
+        "tarefa_atual": "Petições não lidas; Revisar ato",
+        "autuacao": "26/08/2026",
+        "desde": "26/08/2026",
+        "dias_tramitando": 2,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -3962,6 +3923,22 @@
         "responsavel_processo": ""
       }
     ],
+    "minutar-ato-peticoes-nao-lidas": [
+      {
+        "processo": "0600959-26.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Minutar ato; Petições não lidas",
+        "autuacao": "21/08/2026",
+        "desde": "21/08/2026",
+        "dias_tramitando": 6,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "peticoes-descartadas-peticoes-nao-lidas-processo-com-prazo-em-curso": [
       {
         "processo": "0600985-24.2026.6.10.0000",
@@ -4067,22 +4044,6 @@
         "autuacao": "25/08/2026",
         "desde": "25/08/2026",
         "dias_tramitando": 2,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "peticoes-nao-lidas-revisar-ato": [
-      {
-        "processo": "0600967-03.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Petições não lidas; Revisar ato",
-        "autuacao": "22/08/2026",
-        "desde": "22/08/2026",
-        "dias_tramitando": 6,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -4472,6 +4433,20 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0600225-75.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "ED no(a) REC no(a) Rp",
+        "tarefa_atual": "Revisar Relatório, Voto e Ementa",
+        "autuacao": "19/08/2026",
+        "desde": "27/08/2026",
+        "dias_tramitando": 9,
+        "julgado": true,
+        "data_julgamento": "18/08/2026",
+        "teor": "Conhecido o recurso de PSD - PARTIDO SOCIAL DEMOCRATICO e não-provido em 18/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0600080-19.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "REC no(a) Rp",
@@ -4524,20 +4499,6 @@
         "julgado": true,
         "data_julgamento": "17/08/2026",
         "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e não-provido em 17/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600225-75.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "ED no(a) REC no(a) Rp",
-        "tarefa_atual": "Revisar Relatório, Voto e Ementa",
-        "autuacao": "19/08/2026",
-        "desde": "27/08/2026",
-        "dias_tramitando": 8,
-        "julgado": true,
-        "data_julgamento": "18/08/2026",
-        "teor": "Conhecido o recurso de PSD - PARTIDO SOCIAL DEMOCRATICO e não-provido em 18/08/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -4713,7 +4674,7 @@
         "processo": "0600997-38.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "NIP",
-        "tarefa_atual": "Minutar ato; Petições não lidas",
+        "tarefa_atual": "Petições não lidas; Revisar ato",
         "autuacao": "26/08/2026",
         "desde": "26/08/2026",
         "dias_tramitando": 2,
@@ -7928,7 +7889,7 @@
       "processo": "0600997-38.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "NIP",
-      "tarefa_atual": "Minutar ato; Petições não lidas",
+      "tarefa_atual": "Petições não lidas; Revisar ato",
       "autuacao": "26/08/2026",
       "desde": "26/08/2026",
       "dias_tramitando": 2,
@@ -10146,7 +10107,7 @@
       "processo": "0600997-38.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "NIP",
-      "tarefa_atual": "Minutar ato; Petições não lidas",
+      "tarefa_atual": "Petições não lidas; Revisar ato",
       "autuacao": "26/08/2026",
       "desde": "26/08/2026",
       "dias_tramitando": 2,
@@ -11059,6 +11020,20 @@
       "responsavel_processo": ""
     },
     {
+      "processo": "0600225-75.2026.6.10.0000",
+      "gabinete": "Gab. JA 1",
+      "classe": "ED no(a) REC no(a) Rp",
+      "tarefa_atual": "Revisar Relatório, Voto e Ementa",
+      "autuacao": "19/08/2026",
+      "desde": "27/08/2026",
+      "dias_tramitando": 9,
+      "julgado": true,
+      "data_julgamento": "18/08/2026",
+      "teor": "Conhecido o recurso de PSD - PARTIDO SOCIAL DEMOCRATICO e não-provido em 18/08/2026",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
+    },
+    {
       "processo": "0600080-19.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "REC no(a) Rp",
@@ -11153,20 +11128,6 @@
       "julgado": true,
       "data_julgamento": "18/08/2026",
       "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e PARTIDO SOCIALISTA BRASILEIRO DIRETORIO ESTADUAL e não-provido em 18/08/2026",
-      "segredo_justica": "NÃO",
-      "responsavel_processo": ""
-    },
-    {
-      "processo": "0600225-75.2026.6.10.0000",
-      "gabinete": "Gab. JA 1",
-      "classe": "ED no(a) REC no(a) Rp",
-      "tarefa_atual": "Revisar Relatório, Voto e Ementa",
-      "autuacao": "19/08/2026",
-      "desde": "27/08/2026",
-      "dias_tramitando": 8,
-      "julgado": true,
-      "data_julgamento": "18/08/2026",
-      "teor": "Conhecido o recurso de PSD - PARTIDO SOCIAL DEMOCRATICO e não-provido em 18/08/2026",
       "segredo_justica": "NÃO",
       "responsavel_processo": ""
     },
@@ -11571,6 +11532,20 @@
       "responsavel_processo": ""
     },
     {
+      "processo": "0600225-75.2026.6.10.0000",
+      "gabinete": "Gab. JA 1",
+      "classe": "ED no(a) REC no(a) Rp",
+      "tarefa_atual": "Revisar Relatório, Voto e Ementa",
+      "autuacao": "19/08/2026",
+      "desde": "27/08/2026",
+      "dias_tramitando": 9,
+      "julgado": true,
+      "data_julgamento": "18/08/2026",
+      "teor": "Conhecido o recurso de PSD - PARTIDO SOCIAL DEMOCRATICO e não-provido em 18/08/2026",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
+    },
+    {
       "processo": "0600175-49.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "ED no(a) REC no(a) Rp",
@@ -11651,20 +11626,6 @@
       "julgado": true,
       "data_julgamento": "18/08/2026",
       "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e PARTIDO SOCIALISTA BRASILEIRO DIRETORIO ESTADUAL e não-provido em 18/08/2026",
-      "segredo_justica": "NÃO",
-      "responsavel_processo": ""
-    },
-    {
-      "processo": "0600225-75.2026.6.10.0000",
-      "gabinete": "Gab. JA 1",
-      "classe": "ED no(a) REC no(a) Rp",
-      "tarefa_atual": "Revisar Relatório, Voto e Ementa",
-      "autuacao": "19/08/2026",
-      "desde": "27/08/2026",
-      "dias_tramitando": 8,
-      "julgado": true,
-      "data_julgamento": "18/08/2026",
-      "teor": "Conhecido o recurso de PSD - PARTIDO SOCIAL DEMOCRATICO e não-provido em 18/08/2026",
       "segredo_justica": "NÃO",
       "responsavel_processo": ""
     },
@@ -12330,8 +12291,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "28/08/2026 09:22",
+  "publicado_em": "28/08/2026 09:23",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "9f4ca07034b558de5e47dbb41331821b7da74553ba4437ea1bd42ffc92c025d1"
+  "hash_publicacao": "23ca2685acc62d54186bad504ee04c0eb3e2ee67ae62b3bb7385e6d7fef0f5ff"
 }
