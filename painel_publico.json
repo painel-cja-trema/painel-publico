@@ -174,11 +174,6 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Lançar movimento",
-      "quantidade": 2
-    },
-    {
-      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Aguarda Sessão de Julgamento Virtual; Elaborar extrato da ata; Pauta provisória virtual; Selecionar documentos para acórdão - Gabinete",
       "quantidade": 1
     },
@@ -204,6 +199,11 @@
     },
     {
       "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Lançar movimento",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Minutar Relatório, Voto e Ementa",
       "quantidade": 1
     },
@@ -219,13 +219,18 @@
     },
     {
       "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Remeter Processos - Gabinete",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Revisar ato",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Realizar triagem ordinários",
-      "quantidade": 7
+      "quantidade": 8
     },
     {
       "gabinete": "Gab. JA 3",
@@ -311,11 +316,6 @@
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Realizar triagem urgentes",
       "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Verificar e Certificar dados do processo",
-      "quantidade": 1
     }
   ],
   "por_faixa": [
@@ -349,7 +349,7 @@
       "processo": "0600089-78.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "CumSen",
-      "tarefa_atual": "Lançar movimento",
+      "tarefa_atual": "Remeter Processos - Gabinete",
       "dias_tramitando": 139,
       "segredo_justica": "NÃO"
     },
@@ -682,7 +682,7 @@
           "TRIAGEM_ORDINARIA": 7,
           "MINUTAR_ATO": 6,
           "ASSINAR_ATO": 5,
-          "LANCAR_MOVIMENTACAO": 2
+          "LANCAR_MOVIMENTACAO": 1
         }
       },
       {
@@ -691,7 +691,7 @@
         "total_acervo": 38,
         "contagens": {
           "TRIAGEM_URGENTE": 2,
-          "TRIAGEM_ORDINARIA": 11,
+          "TRIAGEM_ORDINARIA": 12,
           "MINUTAR_ATO": 3,
           "ASSINAR_ATO": 1,
           "LANCAR_MOVIMENTACAO": 0
@@ -700,10 +700,10 @@
     ],
     "totais": {
       "TRIAGEM_URGENTE": 3,
-      "TRIAGEM_ORDINARIA": 19,
+      "TRIAGEM_ORDINARIA": 20,
       "MINUTAR_ATO": 9,
       "ASSINAR_ATO": 12,
-      "LANCAR_MOVIMENTACAO": 2
+      "LANCAR_MOVIMENTACAO": 1
     },
     "total_acervo": 162
   },
@@ -957,6 +957,20 @@
         "autuacao": "27/08/2026",
         "desde": "27/08/2026",
         "dias_tramitando": 1,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600048-77.2026.6.10.0076",
+        "gabinete": "Gab. JA 3",
+        "classe": "NIP",
+        "tarefa_atual": "Realizar triagem ordinários",
+        "autuacao": "28/08/2026",
+        "desde": "28/08/2026",
+        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -1320,20 +1334,6 @@
     ],
     "LANCAR_MOVIMENTACAO": [
       {
-        "processo": "0600089-78.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "CumSen",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "10/04/2026",
-        "desde": "28/08/2026",
-        "dias_tramitando": 139,
-        "julgado": true,
-        "data_julgamento": "16/07/2026",
-        "teor": "Julgado procedente o pedido em 16/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
         "processo": "0600357-35.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Ag no(a) RepEsp",
@@ -1400,9 +1400,9 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 7,
-          "Gabinete Juiz Auxiliar 3": 7
+          "Gabinete Juiz Auxiliar 3": 8
         },
-        "total": 15
+        "total": 16
       },
       {
         "codigo": "assinar-ato",
@@ -1525,16 +1525,6 @@
         "total": 2
       },
       {
-        "codigo": "lancar-movimento",
-        "tarefa": "Lançar movimento",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 2,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 2
-      },
-      {
         "codigo": "minutar-ato-peticoes-nao-lidas-peticoes-nao-lidas",
         "tarefa": "Minutar ato; Petições não lidas; Petições não lidas",
         "contagens": {
@@ -1567,16 +1557,6 @@
       {
         "codigo": "realizar-triagem-urgentes",
         "tarefa": "Realizar triagem urgentes",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 2
-      },
-      {
-        "codigo": "verificar-e-certificar-dados-do-processo",
-        "tarefa": "Verificar e Certificar dados do processo",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -1655,6 +1635,16 @@
         "total": 1
       },
       {
+        "codigo": "lancar-movimento",
+        "tarefa": "Lançar movimento",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
         "codigo": "minutar-ato-peticoes-nao-lidas",
         "tarefa": "Minutar ato; Petições não lidas",
         "contagens": {
@@ -1695,11 +1685,31 @@
         "total": 1
       },
       {
+        "codigo": "remeter-processos-gabinete",
+        "tarefa": "Remeter Processos - Gabinete",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
         "codigo": "revisar-ato",
         "tarefa": "Revisar ato",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "verificar-e-certificar-dados-do-processo",
+        "tarefa": "Verificar e Certificar dados do processo",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -2848,6 +2858,20 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0600048-77.2026.6.10.0076",
+        "gabinete": "Gab. JA 3",
+        "classe": "NIP",
+        "tarefa_atual": "Realizar triagem ordinários",
+        "autuacao": "28/08/2026",
+        "desde": "28/08/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0601014-74.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "NIP",
@@ -3670,36 +3694,6 @@
         "responsavel_processo": ""
       }
     ],
-    "lancar-movimento": [
-      {
-        "processo": "0600089-78.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "CumSen",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "10/04/2026",
-        "desde": "28/08/2026",
-        "dias_tramitando": 139,
-        "julgado": true,
-        "data_julgamento": "16/07/2026",
-        "teor": "Julgado procedente o pedido em 16/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600357-35.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Ag no(a) RepEsp",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "13/08/2026",
-        "desde": "28/08/2026",
-        "dias_tramitando": 15,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "minutar-ato-peticoes-nao-lidas-peticoes-nao-lidas": [
       {
         "processo": "0600969-70.2026.6.10.0000",
@@ -3820,36 +3814,6 @@
         "responsavel_processo": ""
       }
     ],
-    "verificar-e-certificar-dados-do-processo": [
-      {
-        "processo": "0600048-77.2026.6.10.0076",
-        "gabinete": "Gab. JA 3",
-        "classe": "NIP",
-        "tarefa_atual": "Verificar e Certificar dados do processo",
-        "autuacao": "28/08/2026",
-        "desde": "28/08/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601022-51.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "NIP",
-        "tarefa_atual": "Verificar e Certificar dados do processo",
-        "autuacao": "28/08/2026",
-        "desde": "28/08/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "aguardando-julgamento-do-recurso-interno-elaborar-extrato-da-ata": [
       {
         "processo": "0600173-79.2026.6.10.0000",
@@ -3962,6 +3926,22 @@
         "responsavel_processo": ""
       }
     ],
+    "lancar-movimento": [
+      {
+        "processo": "0600357-35.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Ag no(a) RepEsp",
+        "tarefa_atual": "Lançar movimento",
+        "autuacao": "13/08/2026",
+        "desde": "28/08/2026",
+        "dias_tramitando": 15,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "minutar-ato-peticoes-nao-lidas": [
       {
         "processo": "0600996-53.2026.6.10.0000",
@@ -4026,6 +4006,22 @@
         "responsavel_processo": ""
       }
     ],
+    "remeter-processos-gabinete": [
+      {
+        "processo": "0600089-78.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "CumSen",
+        "tarefa_atual": "Remeter Processos - Gabinete",
+        "autuacao": "10/04/2026",
+        "desde": "28/08/2026",
+        "dias_tramitando": 139,
+        "julgado": true,
+        "data_julgamento": "16/07/2026",
+        "teor": "Julgado procedente o pedido em 16/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "revisar-ato": [
       {
         "processo": "0600190-18.2026.6.10.0000",
@@ -4038,6 +4034,22 @@
         "julgado": true,
         "data_julgamento": "19/07/2026",
         "teor": "Julgado procedente o pedido em 19/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "verificar-e-certificar-dados-do-processo": [
+      {
+        "processo": "0601022-51.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "NIP",
+        "tarefa_atual": "Verificar e Certificar dados do processo",
+        "autuacao": "28/08/2026",
+        "desde": "28/08/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -4807,7 +4819,7 @@
         "processo": "0600089-78.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "CumSen",
-        "tarefa_atual": "Lançar movimento",
+        "tarefa_atual": "Remeter Processos - Gabinete",
         "autuacao": "10/04/2026",
         "desde": "28/08/2026",
         "dias_tramitando": 139,
@@ -6223,7 +6235,7 @@
         "processo": "0600048-77.2026.6.10.0076",
         "gabinete": "Gab. JA 3",
         "classe": "NIP",
-        "tarefa_atual": "Verificar e Certificar dados do processo",
+        "tarefa_atual": "Realizar triagem ordinários",
         "autuacao": "28/08/2026",
         "desde": "28/08/2026",
         "dias_tramitando": 0,
@@ -6648,7 +6660,7 @@
       "processo": "0600089-78.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "CumSen",
-      "tarefa_atual": "Lançar movimento",
+      "tarefa_atual": "Remeter Processos - Gabinete",
       "autuacao": "10/04/2026",
       "desde": "28/08/2026",
       "dias_tramitando": 139,
@@ -8076,7 +8088,7 @@
       "processo": "0600048-77.2026.6.10.0076",
       "gabinete": "Gab. JA 3",
       "classe": "NIP",
-      "tarefa_atual": "Verificar e Certificar dados do processo",
+      "tarefa_atual": "Realizar triagem ordinários",
       "autuacao": "28/08/2026",
       "desde": "28/08/2026",
       "dias_tramitando": 0,
@@ -8908,7 +8920,7 @@
       "processo": "0600089-78.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "CumSen",
-      "tarefa_atual": "Lançar movimento",
+      "tarefa_atual": "Remeter Processos - Gabinete",
       "autuacao": "10/04/2026",
       "desde": "28/08/2026",
       "dias_tramitando": 139,
@@ -10336,7 +10348,7 @@
       "processo": "0600048-77.2026.6.10.0076",
       "gabinete": "Gab. JA 3",
       "classe": "NIP",
-      "tarefa_atual": "Verificar e Certificar dados do processo",
+      "tarefa_atual": "Realizar triagem ordinários",
       "autuacao": "28/08/2026",
       "desde": "28/08/2026",
       "dias_tramitando": 0,
@@ -11514,7 +11526,7 @@
       "processo": "0600089-78.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "CumSen",
-      "tarefa_atual": "Lançar movimento",
+      "tarefa_atual": "Remeter Processos - Gabinete",
       "autuacao": "10/04/2026",
       "desde": "28/08/2026",
       "dias_tramitando": 139,
@@ -12086,8 +12098,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "28/08/2026 13:05",
+  "publicado_em": "28/08/2026 13:07",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "80e8863817dabc937173a7cf0358e37ce1e1640d3233f2edc3be4d17d5df47c3"
+  "hash_publicacao": "0ec2309cbef3ec81d7bef0c60aa0a6be27cce08f1a3d93d0020e580f1583c830"
 }
