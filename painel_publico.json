@@ -29,7 +29,7 @@
       "quantidade": 52,
       "media_dias": 32.3,
       "maior_tempo": 139,
-      "urgentes": 0,
+      "urgentes": 1,
       "minutar": 6,
       "julgados": 21,
       "percentual_julgados": 29.2,
@@ -204,12 +204,12 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Revisar ato",
+      "tarefa_atual": "Realizar triagem urgentes",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Verificar e certificar dados do processo com liminar",
+      "tarefa_atual": "Revisar ato",
       "quantidade": 1
     },
     {
@@ -664,7 +664,7 @@
         "nome": "Gabinete Juiz Auxiliar 2",
         "total_acervo": 72,
         "contagens": {
-          "TRIAGEM_URGENTE": 0,
+          "TRIAGEM_URGENTE": 1,
           "TRIAGEM_ORDINARIA": 7,
           "MINUTAR_ATO": 6,
           "ASSINAR_ATO": 6,
@@ -685,7 +685,7 @@
       }
     ],
     "totais": {
-      "TRIAGEM_URGENTE": 3,
+      "TRIAGEM_URGENTE": 4,
       "TRIAGEM_ORDINARIA": 21,
       "MINUTAR_ATO": 9,
       "ASSINAR_ATO": 12,
@@ -726,6 +726,20 @@
       {
         "processo": "0601023-36.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem urgentes",
+        "autuacao": "28/08/2026",
+        "desde": "28/08/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601024-21.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
         "classe": "Rp",
         "tarefa_atual": "Realizar triagem urgentes",
         "autuacao": "28/08/2026",
@@ -1339,22 +1353,8 @@
     "rotulo": "Verificar e certificar dados do processo com liminar",
     "curto": "Liminares",
     "descricao": "Porta de entrada da Comissão: processos com liminar aguardando conferência/certificação inicial antes da distribuição aos gabinetes.",
-    "total": 2,
+    "total": 1,
     "processos": [
-      {
-        "processo": "0601024-21.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Verificar e certificar dados do processo com liminar",
-        "autuacao": "28/08/2026",
-        "desde": "28/08/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
       {
         "processo": "0601025-06.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
@@ -1372,20 +1372,6 @@
     ]
   },
   "entrada_comissao_processos": [
-    {
-      "processo": "0601024-21.2026.6.10.0000",
-      "gabinete": "Gab. JA 2",
-      "classe": "Rp",
-      "tarefa_atual": "Verificar e certificar dados do processo com liminar",
-      "autuacao": "28/08/2026",
-      "desde": "28/08/2026",
-      "dias_tramitando": 0,
-      "julgado": false,
-      "data_julgamento": "",
-      "teor": "",
-      "segredo_justica": "NÃO",
-      "responsavel_processo": ""
-    },
     {
       "processo": "0601025-06.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
@@ -1528,6 +1514,16 @@
         "total": 3
       },
       {
+        "codigo": "realizar-triagem-urgentes",
+        "tarefa": "Realizar triagem urgentes",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 3
+      },
+      {
         "codigo": "registrar-ciencia-por-telefone-ou-pessoalmente",
         "tarefa": "Registrar ciência por telefone ou pessoalmente",
         "contagens": {
@@ -1574,26 +1570,6 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 2
-        },
-        "total": 2
-      },
-      {
-        "codigo": "realizar-triagem-urgentes",
-        "tarefa": "Realizar triagem urgentes",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 2
-      },
-      {
-        "codigo": "verificar-e-certificar-dados-do-processo-com-liminar",
-        "tarefa": "Verificar e certificar dados do processo com liminar",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 2
       },
@@ -1743,6 +1719,16 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "verificar-e-certificar-dados-do-processo-com-liminar",
+        "tarefa": "Verificar e certificar dados do processo com liminar",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -2475,7 +2461,7 @@
         "tarefa_atual": "Aguardando julgamento do recurso interno",
         "autuacao": "06/07/2026",
         "desde": "28/08/2026",
-        "dias_tramitando": 52,
+        "dias_tramitando": 53,
         "julgado": true,
         "data_julgamento": "25/08/2026",
         "teor": "Julgado improcedente o pedido em 25/08/2026",
@@ -3663,6 +3649,50 @@
         "responsavel_processo": ""
       }
     ],
+    "realizar-triagem-urgentes": [
+      {
+        "processo": "0600962-78.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem urgentes",
+        "autuacao": "21/08/2026",
+        "desde": "26/08/2026",
+        "dias_tramitando": 6,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601023-36.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem urgentes",
+        "autuacao": "28/08/2026",
+        "desde": "28/08/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601024-21.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem urgentes",
+        "autuacao": "28/08/2026",
+        "desde": "28/08/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "registrar-ciencia-por-telefone-ou-pessoalmente": [
       {
         "processo": "0600900-38.2026.6.10.0000",
@@ -3820,66 +3850,6 @@
         "autuacao": "26/08/2026",
         "desde": "26/08/2026",
         "dias_tramitando": 1,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "realizar-triagem-urgentes": [
-      {
-        "processo": "0600962-78.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Realizar triagem urgentes",
-        "autuacao": "21/08/2026",
-        "desde": "26/08/2026",
-        "dias_tramitando": 6,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601023-36.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Realizar triagem urgentes",
-        "autuacao": "28/08/2026",
-        "desde": "28/08/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "verificar-e-certificar-dados-do-processo-com-liminar": [
-      {
-        "processo": "0601024-21.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Verificar e certificar dados do processo com liminar",
-        "autuacao": "28/08/2026",
-        "desde": "28/08/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601025-06.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Verificar e certificar dados do processo com liminar",
-        "autuacao": "28/08/2026",
-        "desde": "28/08/2026",
-        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -4126,6 +4096,22 @@
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
+    ],
+    "verificar-e-certificar-dados-do-processo-com-liminar": [
+      {
+        "processo": "0601025-06.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Verificar e certificar dados do processo com liminar",
+        "autuacao": "28/08/2026",
+        "desde": "28/08/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
     ]
   },
   "acervo_por_gabinete": {
@@ -4319,7 +4305,7 @@
         "tarefa_atual": "Aguardando julgamento do recurso interno",
         "autuacao": "06/07/2026",
         "desde": "28/08/2026",
-        "dias_tramitando": 52,
+        "dias_tramitando": 53,
         "julgado": true,
         "data_julgamento": "25/08/2026",
         "teor": "Julgado improcedente o pedido em 25/08/2026",
@@ -5914,7 +5900,7 @@
         "processo": "0601024-21.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Verificar e certificar dados do processo com liminar",
+        "tarefa_atual": "Realizar triagem urgentes",
         "autuacao": "28/08/2026",
         "desde": "28/08/2026",
         "dias_tramitando": 0,
@@ -6477,7 +6463,7 @@
       "classe": "Rp",
       "teor": "Julgado improcedente o pedido em 25/08/2026",
       "data_julgamento": "25/08/2026",
-      "dias_tramitando": 52
+      "dias_tramitando": 53
     },
     {
       "processo": "0600252-58.2026.6.10.0000",
@@ -7184,7 +7170,7 @@
       "tarefa_atual": "Aguardando julgamento do recurso interno",
       "autuacao": "06/07/2026",
       "desde": "28/08/2026",
-      "dias_tramitando": 52,
+      "dias_tramitando": 53,
       "julgado": true,
       "data_julgamento": "25/08/2026",
       "teor": "Julgado improcedente o pedido em 25/08/2026",
@@ -8371,7 +8357,7 @@
       "processo": "0601024-21.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Verificar e certificar dados do processo com liminar",
+      "tarefa_atual": "Realizar triagem urgentes",
       "autuacao": "28/08/2026",
       "desde": "28/08/2026",
       "dias_tramitando": 0,
@@ -9516,7 +9502,7 @@
       "tarefa_atual": "Aguardando julgamento do recurso interno",
       "autuacao": "06/07/2026",
       "desde": "28/08/2026",
-      "dias_tramitando": 52,
+      "dias_tramitando": 53,
       "julgado": true,
       "data_julgamento": "25/08/2026",
       "teor": "Julgado improcedente o pedido em 25/08/2026",
@@ -10703,7 +10689,7 @@
       "processo": "0601024-21.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Verificar e certificar dados do processo com liminar",
+      "tarefa_atual": "Realizar triagem urgentes",
       "autuacao": "28/08/2026",
       "desde": "28/08/2026",
       "dias_tramitando": 0,
@@ -12066,7 +12052,7 @@
       "tarefa_atual": "Aguardando julgamento do recurso interno",
       "autuacao": "06/07/2026",
       "desde": "28/08/2026",
-      "dias_tramitando": 52,
+      "dias_tramitando": 53,
       "julgado": true,
       "data_julgamento": "25/08/2026",
       "teor": "Julgado improcedente o pedido em 25/08/2026",
@@ -12341,8 +12327,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "28/08/2026 14:52",
+  "publicado_em": "28/08/2026 14:56",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "2b4f56d4c7fc6fee26e1e95be54e226f2b52dc764afaf2e1e4975efcc87e4c1b"
+  "hash_publicacao": "a85e55113ff9f7b1f13138f93a9134956e00e39e7ec8fb093e64bc7b311fbbe7"
 }
