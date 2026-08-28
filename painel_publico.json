@@ -269,6 +269,11 @@
     },
     {
       "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Definir procedimento",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Minutar Relatório, Voto e Ementa",
       "quantidade": 1
     },
@@ -300,11 +305,6 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Realizar triagem urgentes",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Redistribuir de ofício",
       "quantidade": 1
     },
     {
@@ -1681,6 +1681,16 @@
         "total": 1
       },
       {
+        "codigo": "definir-procedimento",
+        "tarefa": "Definir procedimento",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
         "codigo": "elaborar-extrato-da-ata-processo-com-prazo-em-curso",
         "tarefa": "Elaborar extrato da ata; Processo com prazo em curso",
         "contagens": {
@@ -1737,16 +1747,6 @@
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "redistribuir-de-oficio",
-        "tarefa": "Redistribuir de ofício",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 1
       },
@@ -4010,7 +4010,7 @@
         "tarefa_atual": "Analisar determinação - Urgentes",
         "autuacao": "23/08/2026",
         "desde": "28/08/2026",
-        "dias_tramitando": 4,
+        "dias_tramitando": 5,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -4043,6 +4043,22 @@
         "autuacao": "23/07/2026",
         "desde": "19/08/2026",
         "dias_tramitando": 36,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "definir-procedimento": [
+      {
+        "processo": "0600068-45.2026.6.10.0019",
+        "gabinete": "Gab. JA 3",
+        "classe": "NIP",
+        "tarefa_atual": "Definir procedimento",
+        "autuacao": "28/08/2026",
+        "desde": "28/08/2026",
+        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -4139,22 +4155,6 @@
         "autuacao": "04/08/2026",
         "desde": "27/08/2026",
         "dias_tramitando": 24,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "redistribuir-de-oficio": [
-      {
-        "processo": "0600068-45.2026.6.10.0019",
-        "gabinete": "Gab. JA 3",
-        "classe": "NIP",
-        "tarefa_atual": "Redistribuir de ofício",
-        "autuacao": "28/08/2026",
-        "desde": "28/08/2026",
-        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -5740,13 +5740,13 @@
         "responsavel_processo": ""
       },
       {
-        "processo": "0600939-35.2026.6.10.0000",
+        "processo": "0600974-92.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos",
-        "autuacao": "24/08/2026",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação - Urgentes",
+        "autuacao": "23/08/2026",
         "desde": "28/08/2026",
-        "dias_tramitando": 4,
+        "dias_tramitando": 5,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -5754,11 +5754,11 @@
         "responsavel_processo": ""
       },
       {
-        "processo": "0600974-92.2026.6.10.0000",
+        "processo": "0600939-35.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação - Urgentes",
-        "autuacao": "23/08/2026",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Analisar Processos",
+        "autuacao": "24/08/2026",
         "desde": "28/08/2026",
         "dias_tramitando": 4,
         "julgado": false,
@@ -6487,7 +6487,7 @@
         "processo": "0600068-45.2026.6.10.0019",
         "gabinete": "Gab. JA 3",
         "classe": "NIP",
-        "tarefa_atual": "Redistribuir de ofício",
+        "tarefa_atual": "Definir procedimento",
         "autuacao": "28/08/2026",
         "desde": "28/08/2026",
         "dias_tramitando": 0,
@@ -7937,7 +7937,7 @@
       "tarefa_atual": "Analisar determinação - Urgentes",
       "autuacao": "23/08/2026",
       "desde": "28/08/2026",
-      "dias_tramitando": 4,
+      "dias_tramitando": 5,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -8396,7 +8396,7 @@
       "processo": "0600068-45.2026.6.10.0019",
       "gabinete": "Gab. JA 3",
       "classe": "NIP",
-      "tarefa_atual": "Redistribuir de ofício",
+      "tarefa_atual": "Definir procedimento",
       "autuacao": "28/08/2026",
       "desde": "28/08/2026",
       "dias_tramitando": 0,
@@ -10311,7 +10311,7 @@
       "tarefa_atual": "Analisar determinação - Urgentes",
       "autuacao": "23/08/2026",
       "desde": "28/08/2026",
-      "dias_tramitando": 4,
+      "dias_tramitando": 5,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -10770,7 +10770,7 @@
       "processo": "0600068-45.2026.6.10.0019",
       "gabinete": "Gab. JA 3",
       "classe": "NIP",
-      "tarefa_atual": "Redistribuir de ofício",
+      "tarefa_atual": "Definir procedimento",
       "autuacao": "28/08/2026",
       "desde": "28/08/2026",
       "dias_tramitando": 0,
@@ -12534,8 +12534,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "28/08/2026 16:23",
+  "publicado_em": "28/08/2026 16:24",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "6a413bef74a531966a974c0c0100f3207db52281280d7344e0c5f5c7ae006e41"
+  "hash_publicacao": "9f3dd1c9df1f2727208f834fb333e51ad08569a731d96fd7ee558adeaaefb56e"
 }
