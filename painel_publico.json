@@ -109,11 +109,6 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Analisar Processos",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Analisar determinação",
       "quantidade": 1
     },
@@ -130,6 +125,11 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Petições não lidas; Petições não lidas; Preparar comunicação",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Preparar comunicação",
       "quantidade": 1
     },
     {
@@ -1471,16 +1471,6 @@
         "total": 3
       },
       {
-        "codigo": "analisar-processos",
-        "tarefa": "Analisar Processos",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 2,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 3
-      },
-      {
         "codigo": "peticoes-nao-lidas-processo-com-prazo-em-curso",
         "tarefa": "Petições não lidas; Processo com prazo em curso",
         "contagens": {
@@ -1503,6 +1493,16 @@
       {
         "codigo": "aguardando-providencias",
         "tarefa": "Aguardando providências",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 2,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 2
+      },
+      {
+        "codigo": "analisar-processos",
+        "tarefa": "Analisar Processos",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 2,
@@ -1566,6 +1566,16 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 2,
           "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 2
+      },
+      {
+        "codigo": "preparar-comunicacao",
+        "tarefa": "Preparar comunicação",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 2
@@ -1727,16 +1737,6 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
-        "codigo": "preparar-comunicacao",
-        "tarefa": "Preparar comunicação",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
       }
@@ -3432,50 +3432,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-processos": [
-      {
-        "processo": "0600175-49.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "ED no(a) REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos",
-        "autuacao": "19/08/2026",
-        "desde": "19/08/2026",
-        "dias_tramitando": 8,
-        "julgado": true,
-        "data_julgamento": "19/08/2026",
-        "teor": "Conhecido o recurso de IPPI PESQUISAS E CONSULTORIA LTDA e provido em 19/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600193-70.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "ED no(a) REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos",
-        "autuacao": "19/08/2026",
-        "desde": "19/08/2026",
-        "dias_tramitando": 8,
-        "julgado": true,
-        "data_julgamento": "18/08/2026",
-        "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e PARTIDO SOCIALISTA BRASILEIRO DIRETORIO ESTADUAL e não-provido em 18/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600018-62.2026.6.10.0037",
-        "gabinete": "Gab. JA 1",
-        "classe": "ED no(a) Rp",
-        "tarefa_atual": "Analisar Processos",
-        "autuacao": "28/08/2026",
-        "desde": "28/08/2026",
-        "dias_tramitando": 0,
-        "julgado": true,
-        "data_julgamento": "25/08/2026",
-        "teor": "Julgado improcedente o pedido em 25/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "peticoes-nao-lidas-processo-com-prazo-em-curso": [
       {
         "processo": "0600976-62.2026.6.10.0000",
@@ -3576,6 +3532,36 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-processos": [
+      {
+        "processo": "0600175-49.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "ED no(a) REC no(a) Rp",
+        "tarefa_atual": "Analisar Processos",
+        "autuacao": "19/08/2026",
+        "desde": "19/08/2026",
+        "dias_tramitando": 8,
+        "julgado": true,
+        "data_julgamento": "19/08/2026",
+        "teor": "Conhecido o recurso de IPPI PESQUISAS E CONSULTORIA LTDA e provido em 19/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600193-70.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "ED no(a) REC no(a) Rp",
+        "tarefa_atual": "Analisar Processos",
+        "autuacao": "19/08/2026",
+        "desde": "19/08/2026",
+        "dias_tramitando": 8,
+        "julgado": true,
+        "data_julgamento": "18/08/2026",
+        "teor": "Conhecido o recurso de CARLOS ORLEANS BRAIDE BRANDAO e PARTIDO SOCIALISTA BRASILEIRO DIRETORIO ESTADUAL e não-provido em 18/08/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -3753,6 +3739,36 @@
         "autuacao": "26/08/2026",
         "desde": "26/08/2026",
         "dias_tramitando": 2,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "preparar-comunicacao": [
+      {
+        "processo": "0600018-62.2026.6.10.0037",
+        "gabinete": "Gab. JA 1",
+        "classe": "ED no(a) Rp",
+        "tarefa_atual": "Preparar comunicação",
+        "autuacao": "28/08/2026",
+        "desde": "28/08/2026",
+        "dias_tramitando": 0,
+        "julgado": true,
+        "data_julgamento": "25/08/2026",
+        "teor": "Julgado improcedente o pedido em 25/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601015-59.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "RepEsp",
+        "tarefa_atual": "Preparar comunicação",
+        "autuacao": "27/08/2026",
+        "desde": "28/08/2026",
+        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -4023,22 +4039,6 @@
         "autuacao": "25/08/2026",
         "desde": "25/08/2026",
         "dias_tramitando": 2,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "preparar-comunicacao": [
-      {
-        "processo": "0601015-59.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "RepEsp",
-        "tarefa_atual": "Preparar comunicação",
-        "autuacao": "27/08/2026",
-        "desde": "28/08/2026",
-        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -4739,7 +4739,7 @@
         "processo": "0600018-62.2026.6.10.0037",
         "gabinete": "Gab. JA 1",
         "classe": "ED no(a) Rp",
-        "tarefa_atual": "Analisar Processos",
+        "tarefa_atual": "Preparar comunicação",
         "autuacao": "28/08/2026",
         "desde": "28/08/2026",
         "dias_tramitando": 0,
@@ -11270,7 +11270,7 @@
       "processo": "0600018-62.2026.6.10.0037",
       "gabinete": "Gab. JA 1",
       "classe": "ED no(a) Rp",
-      "tarefa_atual": "Analisar Processos",
+      "tarefa_atual": "Preparar comunicação",
       "autuacao": "28/08/2026",
       "desde": "28/08/2026",
       "dias_tramitando": 0,
@@ -12286,8 +12286,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "28/08/2026 09:31",
+  "publicado_em": "28/08/2026 09:33",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "7ce66f517e2646c00850e641b3d6a5c59e23f761e47a541e9beda2f112267d07"
+  "hash_publicacao": "d18e93d035cf34e5eab41d477679d565547b900f017f0563c118d3d62856d8ab"
 }
