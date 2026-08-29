@@ -46,7 +46,7 @@
       "quantidade": 31,
       "media_dias": 15.1,
       "maior_tempo": 80,
-      "urgentes": 2,
+      "urgentes": 3,
       "minutar": 15,
       "julgados": 7,
       "percentual_julgados": 17.1,
@@ -314,12 +314,12 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Analisar petição avulsa de autuação; Petições descartadas; Processo com prazo em curso",
+      "tarefa_atual": "Analisar determinação - Urgentes",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Lançar movimento",
+      "tarefa_atual": "Analisar petição avulsa de autuação; Petições descartadas; Processo com prazo em curso",
       "quantidade": 1
     },
     {
@@ -936,7 +936,7 @@
           "TRIAGEM_ORDINARIA": 2,
           "MINUTAR_ATO": 15,
           "ASSINAR_ATO": 0,
-          "LANCAR_MOVIMENTACAO": 1
+          "LANCAR_MOVIMENTACAO": 0
         }
       }
     ],
@@ -945,7 +945,7 @@
       "TRIAGEM_ORDINARIA": 16,
       "MINUTAR_ATO": 23,
       "ASSINAR_ATO": 7,
-      "LANCAR_MOVIMENTACAO": 2
+      "LANCAR_MOVIMENTACAO": 1
     },
     "total_acervo": 172
   },
@@ -1686,20 +1686,6 @@
         "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
-      },
-      {
-        "processo": "0601027-73.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "RepEsp",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "28/08/2026",
-        "desde": "28/08/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
       }
     ]
   },
@@ -1919,16 +1905,6 @@
         "total": 2
       },
       {
-        "codigo": "lancar-movimento",
-        "tarefa": "Lançar movimento",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 2
-      },
-      {
         "codigo": "registrar-ciencia-por-telefone-ou-pessoalmente",
         "tarefa": "Registrar ciência por telefone ou pessoalmente",
         "contagens": {
@@ -2069,6 +2045,16 @@
         "total": 1
       },
       {
+        "codigo": "analisar-determinacao-urgentes",
+        "tarefa": "Analisar determinação - Urgentes",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
         "codigo": "analisar-peticao-avulsa-de-autuacao-peticoes-descartadas-processo-com-prazo-em-curso",
         "tarefa": "Analisar petição avulsa de autuação; Petições descartadas; Processo com prazo em curso",
         "contagens": {
@@ -2104,6 +2090,16 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "lancar-movimento",
+        "tarefa": "Lançar movimento",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -4208,36 +4204,6 @@
         "responsavel_processo": ""
       }
     ],
-    "lancar-movimento": [
-      {
-        "processo": "0600168-57.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "01/06/2026",
-        "desde": "28/08/2026",
-        "dias_tramitando": 88,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601027-73.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "RepEsp",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "28/08/2026",
-        "desde": "28/08/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "registrar-ciencia-por-telefone-ou-pessoalmente": [
       {
         "processo": "0600900-38.2026.6.10.0000",
@@ -4490,6 +4456,22 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-determinacao-urgentes": [
+      {
+        "processo": "0601027-73.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "RepEsp",
+        "tarefa_atual": "Analisar determinação - Urgentes",
+        "autuacao": "28/08/2026",
+        "desde": "28/08/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "analisar-peticao-avulsa-de-autuacao-peticoes-descartadas-processo-com-prazo-em-curso": [
       {
         "processo": "0601007-82.2026.6.10.0000",
@@ -4547,6 +4529,22 @@
         "autuacao": "17/07/2026",
         "desde": "17/07/2026",
         "dias_tramitando": 42,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "lancar-movimento": [
+      {
+        "processo": "0600168-57.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Lançar movimento",
+        "autuacao": "01/06/2026",
+        "desde": "28/08/2026",
+        "dias_tramitando": 88,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -7103,7 +7101,7 @@
         "processo": "0601027-73.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "RepEsp",
-        "tarefa_atual": "Lançar movimento",
+        "tarefa_atual": "Analisar determinação - Urgentes",
         "autuacao": "28/08/2026",
         "desde": "28/08/2026",
         "dias_tramitando": 0,
@@ -9124,7 +9122,7 @@
       "processo": "0601027-73.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "RepEsp",
-      "tarefa_atual": "Lançar movimento",
+      "tarefa_atual": "Analisar determinação - Urgentes",
       "autuacao": "28/08/2026",
       "desde": "28/08/2026",
       "dias_tramitando": 0,
@@ -11554,7 +11552,7 @@
       "processo": "0601027-73.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "RepEsp",
-      "tarefa_atual": "Lançar movimento",
+      "tarefa_atual": "Analisar determinação - Urgentes",
       "autuacao": "28/08/2026",
       "desde": "28/08/2026",
       "dias_tramitando": 0,
@@ -13206,8 +13204,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "28/08/2026 21:04",
+  "publicado_em": "28/08/2026 21:06",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "e2232cefc3f2a589d7e92baa0e5dacbcc2d8434a949886136896181b4643178d"
+  "hash_publicacao": "68841e31b15ca568c127221ce7d0a74d854fc2579573408bfda0f49f47869193"
 }
