@@ -269,6 +269,11 @@
     },
     {
       "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Petições descartadas; Processo com prazo em curso",
+      "quantidade": 2
+    },
+    {
+      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
       "quantidade": 2
     },
@@ -340,16 +345,6 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Petições descartadas; Petições não lidas; Petições não lidas; Realizar triagem ordinários",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Petições descartadas; Preparar comunicação",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Petições descartadas; Processo com prazo em curso",
       "quantidade": 1
     },
     {
@@ -1736,6 +1731,16 @@
         "total": 2
       },
       {
+        "codigo": "peticoes-descartadas-processo-com-prazo-em-curso",
+        "tarefa": "Petições descartadas; Processo com prazo em curso",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 2
+        },
+        "total": 2
+      },
+      {
         "codigo": "revisar-relatorio-voto-e-ementa",
         "tarefa": "Revisar Relatório, Voto e Ementa",
         "contagens": {
@@ -1918,26 +1923,6 @@
       {
         "codigo": "peticoes-descartadas-peticoes-nao-lidas-peticoes-nao-lidas-realizar-triagem-ordinarios",
         "tarefa": "Petições descartadas; Petições não lidas; Petições não lidas; Realizar triagem ordinários",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
-        "codigo": "peticoes-descartadas-preparar-comunicacao",
-        "tarefa": "Petições descartadas; Preparar comunicação",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
-        "codigo": "peticoes-descartadas-processo-com-prazo-em-curso",
-        "tarefa": "Petições descartadas; Processo com prazo em curso",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -4081,6 +4066,36 @@
         "responsavel_processo": ""
       }
     ],
+    "peticoes-descartadas-processo-com-prazo-em-curso": [
+      {
+        "processo": "0600479-48.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Petições descartadas; Processo com prazo em curso",
+        "autuacao": "07/08/2026",
+        "desde": "07/08/2026",
+        "dias_tramitando": 21,
+        "julgado": true,
+        "data_julgamento": "29/08/2026",
+        "teor": "Julgado improcedente o pedido em 29/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600996-53.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Petições descartadas; Processo com prazo em curso",
+        "autuacao": "25/08/2026",
+        "desde": "25/08/2026",
+        "dias_tramitando": 3,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "revisar-relatorio-voto-e-ementa": [
       {
         "processo": "0600186-78.2026.6.10.0000",
@@ -4406,38 +4421,6 @@
         "autuacao": "26/08/2026",
         "desde": "26/08/2026",
         "dias_tramitando": 2,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "peticoes-descartadas-preparar-comunicacao": [
-      {
-        "processo": "0600479-48.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Petições descartadas; Preparar comunicação",
-        "autuacao": "07/08/2026",
-        "desde": "07/08/2026",
-        "dias_tramitando": 21,
-        "julgado": true,
-        "data_julgamento": "29/08/2026",
-        "teor": "Julgado improcedente o pedido em 29/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "peticoes-descartadas-processo-com-prazo-em-curso": [
-      {
-        "processo": "0600996-53.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Petições descartadas; Processo com prazo em curso",
-        "autuacao": "25/08/2026",
-        "desde": "25/08/2026",
-        "dias_tramitando": 3,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -6480,7 +6463,7 @@
         "processo": "0600479-48.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Petições descartadas; Preparar comunicação",
+        "tarefa_atual": "Petições descartadas; Processo com prazo em curso",
         "autuacao": "07/08/2026",
         "desde": "07/08/2026",
         "dias_tramitando": 21,
@@ -7969,7 +7952,7 @@
       "processo": "0600479-48.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Petições descartadas; Preparar comunicação",
+      "tarefa_atual": "Petições descartadas; Processo com prazo em curso",
       "autuacao": "07/08/2026",
       "desde": "07/08/2026",
       "dias_tramitando": 21,
@@ -10529,7 +10512,7 @@
       "processo": "0600479-48.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Petições descartadas; Preparar comunicação",
+      "tarefa_atual": "Petições descartadas; Processo com prazo em curso",
       "autuacao": "07/08/2026",
       "desde": "07/08/2026",
       "dias_tramitando": 21,
@@ -13150,7 +13133,7 @@
       "processo": "0600479-48.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Petições descartadas; Preparar comunicação",
+      "tarefa_atual": "Petições descartadas; Processo com prazo em curso",
       "autuacao": "07/08/2026",
       "desde": "07/08/2026",
       "dias_tramitando": 21,
@@ -13274,8 +13257,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "29/08/2026 18:28",
+  "publicado_em": "29/08/2026 18:31",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "eef20c0d9839a080021d1aec2cebf35a91e11334107fe6b88ccb760c06ec6acd"
+  "hash_publicacao": "cd000ff9c5e32728e65143636f07595dd038cc86ac5b80eb612302c37c74a2ae"
 }
