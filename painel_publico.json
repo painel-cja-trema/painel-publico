@@ -214,6 +214,11 @@
     },
     {
       "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Atualizar dados do processo",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Conferir Relatório, Voto e Ementa",
       "quantidade": 1
     },
@@ -230,11 +235,6 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Minutar ato; Petições não lidas",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Preparar comunicação",
       "quantidade": 1
     },
     {
@@ -1826,16 +1826,6 @@
         "total": 3
       },
       {
-        "codigo": "preparar-comunicacao",
-        "tarefa": "Preparar comunicação",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 2,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 3
-      },
-      {
         "codigo": "aguardando-julgamento-do-recurso-interno-aguardando-julgamento-do-recurso-interno",
         "tarefa": "Aguardando julgamento do recurso interno; Aguardando julgamento do recurso interno",
         "contagens": {
@@ -1871,6 +1861,16 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 2
+      },
+      {
+        "codigo": "preparar-comunicacao",
+        "tarefa": "Preparar comunicação",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 2,
+          "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 2
@@ -1958,6 +1958,16 @@
       {
         "codigo": "analisar-resposta-do-expediente",
         "tarefa": "Analisar resposta do expediente",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "atualizar-dados-do-processo",
+        "tarefa": "Atualizar dados do processo",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -4033,50 +4043,6 @@
         "responsavel_processo": ""
       }
     ],
-    "preparar-comunicacao": [
-      {
-        "processo": "0600364-27.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Preparar comunicação",
-        "autuacao": "04/08/2026",
-        "desde": "27/08/2026",
-        "dias_tramitando": 25,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601008-67.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "RepEsp",
-        "tarefa_atual": "Preparar comunicação",
-        "autuacao": "27/08/2026",
-        "desde": "29/08/2026",
-        "dias_tramitando": 2,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601028-58.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "DR",
-        "tarefa_atual": "Preparar comunicação",
-        "autuacao": "28/08/2026",
-        "desde": "29/08/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "aguardando-julgamento-do-recurso-interno-aguardando-julgamento-do-recurso-interno": [
       {
         "processo": "0600185-93.2026.6.10.0000",
@@ -4190,6 +4156,36 @@
         "autuacao": "19/08/2026",
         "desde": "29/08/2026",
         "dias_tramitando": 10,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "preparar-comunicacao": [
+      {
+        "processo": "0600364-27.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Preparar comunicação",
+        "autuacao": "04/08/2026",
+        "desde": "27/08/2026",
+        "dias_tramitando": 25,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601008-67.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "RepEsp",
+        "tarefa_atual": "Preparar comunicação",
+        "autuacao": "27/08/2026",
+        "desde": "29/08/2026",
+        "dias_tramitando": 2,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -4348,6 +4344,22 @@
         "autuacao": "23/07/2026",
         "desde": "19/08/2026",
         "dias_tramitando": 36,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "atualizar-dados-do-processo": [
+      {
+        "processo": "0601028-58.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "DR",
+        "tarefa_atual": "Atualizar dados do processo",
+        "autuacao": "28/08/2026",
+        "desde": "29/08/2026",
+        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -6348,7 +6360,7 @@
         "processo": "0601028-58.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "DR",
-        "tarefa_atual": "Preparar comunicação",
+        "tarefa_atual": "Atualizar dados do processo",
         "autuacao": "28/08/2026",
         "desde": "29/08/2026",
         "dias_tramitando": 0,
@@ -8945,7 +8957,7 @@
       "processo": "0601028-58.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "DR",
-      "tarefa_atual": "Preparar comunicação",
+      "tarefa_atual": "Atualizar dados do processo",
       "autuacao": "28/08/2026",
       "desde": "29/08/2026",
       "dias_tramitando": 0,
@@ -11375,7 +11387,7 @@
       "processo": "0601028-58.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "DR",
-      "tarefa_atual": "Preparar comunicação",
+      "tarefa_atual": "Atualizar dados do processo",
       "autuacao": "28/08/2026",
       "desde": "29/08/2026",
       "dias_tramitando": 0,
@@ -13013,8 +13025,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "29/08/2026 13:55",
+  "publicado_em": "29/08/2026 13:56",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "7d20bd1f3ae014665809a4a29e9df78ea745117bfd9b2cb618adaf560aeac2fb"
+  "hash_publicacao": "6496b78f72c3b04f5f863ee47209584693ae932080cb4014d05f2f2fb573c11b"
 }
