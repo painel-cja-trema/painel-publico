@@ -304,12 +304,12 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Analisar determinação - Urgentes; Petições descartadas; Petições descartadas",
+      "tarefa_atual": "Analisar determinação",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Lançar movimento",
+      "tarefa_atual": "Analisar determinação - Urgentes; Petições descartadas; Petições descartadas",
       "quantidade": 1
     },
     {
@@ -899,7 +899,7 @@
           "TRIAGEM_ORDINARIA": 2,
           "MINUTAR_ATO": 9,
           "ASSINAR_ATO": 0,
-          "LANCAR_MOVIMENTACAO": 1
+          "LANCAR_MOVIMENTACAO": 0
         }
       }
     ],
@@ -908,7 +908,7 @@
       "TRIAGEM_ORDINARIA": 14,
       "MINUTAR_ATO": 20,
       "ASSINAR_ATO": 5,
-      "LANCAR_MOVIMENTACAO": 2
+      "LANCAR_MOVIMENTACAO": 1
     },
     "total_acervo": 174
   },
@@ -1523,20 +1523,6 @@
         "teor": "Julgado procedente o pedido em 19/07/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
-      },
-      {
-        "processo": "0600222-23.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "07/07/2026",
-        "desde": "29/08/2026",
-        "dias_tramitando": 53,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
       }
     ]
   },
@@ -1611,9 +1597,9 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 4,
-          "Gabinete Juiz Auxiliar 3": 0
+          "Gabinete Juiz Auxiliar 3": 1
         },
-        "total": 5
+        "total": 6
       },
       {
         "codigo": "assinar-ato",
@@ -1732,16 +1718,6 @@
           "Gabinete Juiz Auxiliar 1": 2,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 2
-      },
-      {
-        "codigo": "lancar-movimento",
-        "tarefa": "Lançar movimento",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 2
       },
@@ -1878,6 +1854,16 @@
       {
         "codigo": "analisar-resposta-do-expediente",
         "tarefa": "Analisar resposta do expediente",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "lancar-movimento",
+        "tarefa": "Lançar movimento",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -3431,6 +3417,20 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0600222-23.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação",
+        "autuacao": "07/07/2026",
+        "desde": "29/08/2026",
+        "dias_tramitando": 53,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0600252-58.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
@@ -4043,36 +4043,6 @@
         "responsavel_processo": ""
       }
     ],
-    "lancar-movimento": [
-      {
-        "processo": "0600190-18.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "25/06/2026",
-        "desde": "29/08/2026",
-        "dias_tramitando": 64,
-        "julgado": true,
-        "data_julgamento": "19/07/2026",
-        "teor": "Julgado procedente o pedido em 19/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600222-23.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "07/07/2026",
-        "desde": "29/08/2026",
-        "dias_tramitando": 53,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "minutar-ato-peticoes-nao-lidas": [
       {
         "processo": "0600249-06.2026.6.10.0000",
@@ -4349,6 +4319,22 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "lancar-movimento": [
+      {
+        "processo": "0600190-18.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Lançar movimento",
+        "autuacao": "25/06/2026",
+        "desde": "29/08/2026",
+        "dias_tramitando": 64,
+        "julgado": true,
+        "data_julgamento": "19/07/2026",
+        "teor": "Julgado procedente o pedido em 19/07/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -6384,7 +6370,7 @@
         "processo": "0600222-23.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Lançar movimento",
+        "tarefa_atual": "Analisar determinação",
         "autuacao": "07/07/2026",
         "desde": "29/08/2026",
         "dias_tramitando": 53,
@@ -7691,7 +7677,7 @@
       "processo": "0600222-23.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Lançar movimento",
+      "tarefa_atual": "Analisar determinação",
       "autuacao": "07/07/2026",
       "desde": "29/08/2026",
       "dias_tramitando": 53,
@@ -10251,7 +10237,7 @@
       "processo": "0600222-23.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Lançar movimento",
+      "tarefa_atual": "Analisar determinação",
       "autuacao": "07/07/2026",
       "desde": "29/08/2026",
       "dias_tramitando": 53,
@@ -13262,8 +13248,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "29/08/2026 17:53",
+  "publicado_em": "29/08/2026 17:55",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "93ed7260076c7fa5fbe9bcdbc6631ed36bd58a0ae21df17d3a990595bc43087d"
+  "hash_publicacao": "38226a984a823c8233f5097270f2d59fe47e665a823b2ee94fd947b1a0bcf949"
 }
