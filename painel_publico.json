@@ -46,7 +46,7 @@
       "quantidade": 34,
       "media_dias": 15.3,
       "maior_tempo": 81,
-      "urgentes": 4,
+      "urgentes": 5,
       "minutar": 9,
       "julgados": 9,
       "percentual_julgados": 20.5,
@@ -309,17 +309,17 @@
     },
     {
       "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Analisar determinação - Urgentes; Petições não lidas",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Analisar resposta do expediente",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Atualizar dados do processo",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Lançar movimento; Petições não lidas",
       "quantidade": 1
     },
     {
@@ -898,7 +898,7 @@
           "TRIAGEM_ORDINARIA": 1,
           "MINUTAR_ATO": 9,
           "ASSINAR_ATO": 0,
-          "LANCAR_MOVIMENTACAO": 1
+          "LANCAR_MOVIMENTACAO": 0
         }
       }
     ],
@@ -907,7 +907,7 @@
       "TRIAGEM_ORDINARIA": 15,
       "MINUTAR_ATO": 20,
       "ASSINAR_ATO": 5,
-      "LANCAR_MOVIMENTACAO": 2
+      "LANCAR_MOVIMENTACAO": 1
     },
     "total_acervo": 174
   },
@@ -1132,7 +1132,7 @@
         "tarefa_atual": "Realizar triagem ordinários",
         "autuacao": "25/08/2026",
         "desde": "29/08/2026",
-        "dias_tramitando": 4,
+        "dias_tramitando": 5,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -1536,20 +1536,6 @@
         "teor": "Julgado procedente o pedido em 19/07/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
-      },
-      {
-        "processo": "0600958-41.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "DR",
-        "tarefa_atual": "Lançar movimento; Petições não lidas",
-        "autuacao": "21/08/2026",
-        "desde": "21/08/2026",
-        "dias_tramitando": 8,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
       }
     ]
   },
@@ -1879,6 +1865,16 @@
         "total": 1
       },
       {
+        "codigo": "analisar-determinacao-urgentes-peticoes-nao-lidas",
+        "tarefa": "Analisar determinação - Urgentes; Petições não lidas",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
         "codigo": "atualizar-dados-do-processo",
         "tarefa": "Atualizar dados do processo",
         "contagens": {
@@ -1895,16 +1891,6 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "lancar-movimento-peticoes-nao-lidas",
-        "tarefa": "Lançar movimento; Petições não lidas",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 1
       },
@@ -3458,7 +3444,7 @@
         "tarefa_atual": "Realizar triagem ordinários",
         "autuacao": "25/08/2026",
         "desde": "29/08/2026",
-        "dias_tramitando": 4,
+        "dias_tramitando": 5,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -4330,6 +4316,22 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-determinacao-urgentes-peticoes-nao-lidas": [
+      {
+        "processo": "0600958-41.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "DR",
+        "tarefa_atual": "Analisar determinação - Urgentes; Petições não lidas",
+        "autuacao": "21/08/2026",
+        "desde": "21/08/2026",
+        "dias_tramitando": 8,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "atualizar-dados-do-processo": [
       {
         "processo": "0601041-57.2026.6.10.0000",
@@ -4358,22 +4360,6 @@
         "julgado": true,
         "data_julgamento": "19/07/2026",
         "teor": "Julgado procedente o pedido em 19/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "lancar-movimento-peticoes-nao-lidas": [
-      {
-        "processo": "0600958-41.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "DR",
-        "tarefa_atual": "Lançar movimento; Petições não lidas",
-        "autuacao": "21/08/2026",
-        "desde": "21/08/2026",
-        "dias_tramitando": 8,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -6138,6 +6124,20 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0600238-74.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Realizar triagem ordinários",
+        "autuacao": "25/08/2026",
+        "desde": "29/08/2026",
+        "dias_tramitando": 5,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0600981-84.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
@@ -6173,20 +6173,6 @@
         "autuacao": "24/08/2026",
         "desde": "29/08/2026",
         "dias_tramitando": 5,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600238-74.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Realizar triagem ordinários",
-        "autuacao": "25/08/2026",
-        "desde": "29/08/2026",
-        "dias_tramitando": 4,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -6577,7 +6563,7 @@
         "processo": "0600958-41.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "DR",
-        "tarefa_atual": "Lançar movimento; Petições não lidas",
+        "tarefa_atual": "Analisar determinação - Urgentes; Petições não lidas",
         "autuacao": "21/08/2026",
         "desde": "21/08/2026",
         "dias_tramitando": 8,
@@ -8136,7 +8122,7 @@
       "processo": "0600958-41.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "DR",
-      "tarefa_atual": "Lançar movimento; Petições não lidas",
+      "tarefa_atual": "Analisar determinação - Urgentes; Petições não lidas",
       "autuacao": "21/08/2026",
       "desde": "21/08/2026",
       "dias_tramitando": 8,
@@ -10696,7 +10682,7 @@
       "processo": "0600958-41.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "DR",
-      "tarefa_atual": "Lançar movimento; Petições não lidas",
+      "tarefa_atual": "Analisar determinação - Urgentes; Petições não lidas",
       "autuacao": "21/08/2026",
       "desde": "21/08/2026",
       "dias_tramitando": 8,
@@ -12513,7 +12499,7 @@
       "tarefa_atual": "Realizar triagem ordinários",
       "autuacao": "25/08/2026",
       "desde": "29/08/2026",
-      "dias_tramitando": 4,
+      "dias_tramitando": 5,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -13288,8 +13274,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "30/08/2026 11:19",
+  "publicado_em": "30/08/2026 11:26",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "3a33a5b4e991c40cd4f5ab3589c1d5b2113f6f0c5a329038f38918c232f229b5"
+  "hash_publicacao": "e8d7ab17b24b402d9b07f34761c0ee061f0c6ab279f029de47579decad94065b"
 }
