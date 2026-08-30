@@ -309,7 +309,7 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Assinar ato; Petições descartadas",
+      "tarefa_atual": "Lançar movimento; Petições descartadas",
       "quantidade": 1
     },
     {
@@ -916,8 +916,8 @@
           "TRIAGEM_URGENTE": 2,
           "TRIAGEM_ORDINARIA": 1,
           "MINUTAR_ATO": 8,
-          "ASSINAR_ATO": 1,
-          "LANCAR_MOVIMENTACAO": 0
+          "ASSINAR_ATO": 0,
+          "LANCAR_MOVIMENTACAO": 1
         }
       }
     ],
@@ -925,8 +925,8 @@
       "TRIAGEM_URGENTE": 3,
       "TRIAGEM_ORDINARIA": 14,
       "MINUTAR_ATO": 22,
-      "ASSINAR_ATO": 6,
-      "LANCAR_MOVIMENTACAO": 1
+      "ASSINAR_ATO": 5,
+      "LANCAR_MOVIMENTACAO": 2
     },
     "total_acervo": 174
   },
@@ -1499,20 +1499,6 @@
         "responsavel_processo": ""
       },
       {
-        "processo": "0600926-36.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato; Petições descartadas",
-        "autuacao": "15/08/2026",
-        "desde": "15/08/2026",
-        "dias_tramitando": 15,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
         "processo": "0600998-23.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
@@ -1581,6 +1567,20 @@
         "julgado": true,
         "data_julgamento": "19/07/2026",
         "teor": "Julgado procedente o pedido em 19/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600926-36.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Lançar movimento; Petições descartadas",
+        "autuacao": "15/08/2026",
+        "desde": "15/08/2026",
+        "dias_tramitando": 15,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -1912,22 +1912,22 @@
         "total": 1
       },
       {
-        "codigo": "assinar-ato-peticoes-descartadas",
-        "tarefa": "Assinar ato; Petições descartadas",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
         "codigo": "lancar-movimento",
         "tarefa": "Lançar movimento",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "lancar-movimento-peticoes-descartadas",
+        "tarefa": "Lançar movimento; Petições descartadas",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 1
       },
@@ -4375,22 +4375,6 @@
         "responsavel_processo": ""
       }
     ],
-    "assinar-ato-peticoes-descartadas": [
-      {
-        "processo": "0600926-36.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato; Petições descartadas",
-        "autuacao": "15/08/2026",
-        "desde": "15/08/2026",
-        "dias_tramitando": 15,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "lancar-movimento": [
       {
         "processo": "0600190-18.2026.6.10.0000",
@@ -4403,6 +4387,22 @@
         "julgado": true,
         "data_julgamento": "19/07/2026",
         "teor": "Julgado procedente o pedido em 19/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "lancar-movimento-peticoes-descartadas": [
+      {
+        "processo": "0600926-36.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Lançar movimento; Petições descartadas",
+        "autuacao": "15/08/2026",
+        "desde": "15/08/2026",
+        "dias_tramitando": 15,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -6504,7 +6504,7 @@
         "processo": "0600926-36.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Assinar ato; Petições descartadas",
+        "tarefa_atual": "Lançar movimento; Petições descartadas",
         "autuacao": "15/08/2026",
         "desde": "15/08/2026",
         "dias_tramitando": 15,
@@ -8035,7 +8035,7 @@
       "processo": "0600926-36.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Assinar ato; Petições descartadas",
+      "tarefa_atual": "Lançar movimento; Petições descartadas",
       "autuacao": "15/08/2026",
       "desde": "15/08/2026",
       "dias_tramitando": 15,
@@ -10595,7 +10595,7 @@
       "processo": "0600926-36.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Assinar ato; Petições descartadas",
+      "tarefa_atual": "Lançar movimento; Petições descartadas",
       "autuacao": "15/08/2026",
       "desde": "15/08/2026",
       "dias_tramitando": 15,
@@ -13285,8 +13285,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "30/08/2026 12:11",
+  "publicado_em": "30/08/2026 12:13",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "3cbb12ddcb7e0999793bf84335226d7c36422dfe9ffec58b69a17320e1bad7d6"
+  "hash_publicacao": "0919cb8e2848707349fa0b0f12620f7dbc335ec68033fdf0daac0ebd330a5b49"
 }
