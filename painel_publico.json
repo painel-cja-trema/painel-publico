@@ -69,13 +69,13 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Minutar ato",
       "quantidade": 5
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Minutar ato",
-      "quantidade": 5
+      "tarefa_atual": "Analisar determinação",
+      "quantidade": 4
     },
     {
       "gabinete": "Gab. JA 1",
@@ -125,6 +125,11 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Assinar ato; Petições não lidas",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Fechar expediente manualmente",
       "quantidade": 1
     },
     {
@@ -245,7 +250,7 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Analisar determinação",
-      "quantidade": 7
+      "quantidade": 8
     },
     {
       "gabinete": "Gab. JA 3",
@@ -295,11 +300,6 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Elaborar certidão de trânsito em julgado",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Preparar comunicação",
       "quantidade": 1
     },
     {
@@ -1531,9 +1531,9 @@
         "codigo": "analisar-determinacao",
         "tarefa": "Analisar determinação",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 5,
+          "Gabinete Juiz Auxiliar 1": 4,
           "Gabinete Juiz Auxiliar 2": 6,
-          "Gabinete Juiz Auxiliar 3": 7
+          "Gabinete Juiz Auxiliar 3": 8
         },
         "total": 18
       },
@@ -1768,6 +1768,16 @@
         "total": 1
       },
       {
+        "codigo": "fechar-expediente-manualmente",
+        "tarefa": "Fechar expediente manualmente",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
         "codigo": "peticoes-nao-lidas-peticoes-nao-lidas-processo-com-prazo-em-curso",
         "tarefa": "Petições não lidas; Petições não lidas; Processo com prazo em curso",
         "contagens": {
@@ -1784,16 +1794,6 @@
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "preparar-comunicacao",
-        "tarefa": "Preparar comunicação",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 1
       },
@@ -3193,20 +3193,6 @@
         "responsavel_processo": ""
       },
       {
-        "processo": "0600997-38.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "NIP",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "26/08/2026",
-        "desde": "30/08/2026",
-        "dias_tramitando": 5,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
         "processo": "0600998-23.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
@@ -3237,6 +3223,20 @@
       {
         "processo": "0601013-89.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
+        "classe": "NIP",
+        "tarefa_atual": "Analisar determinação",
+        "autuacao": "27/08/2026",
+        "desde": "31/08/2026",
+        "dias_tramitando": 4,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601014-74.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
         "classe": "NIP",
         "tarefa_atual": "Analisar determinação",
         "autuacao": "27/08/2026",
@@ -4373,6 +4373,22 @@
         "responsavel_processo": ""
       }
     ],
+    "fechar-expediente-manualmente": [
+      {
+        "processo": "0600997-38.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "NIP",
+        "tarefa_atual": "Fechar expediente manualmente",
+        "autuacao": "26/08/2026",
+        "desde": "31/08/2026",
+        "dias_tramitando": 5,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "peticoes-nao-lidas-peticoes-nao-lidas-processo-com-prazo-em-curso": [
       {
         "processo": "0601043-27.2026.6.10.0000",
@@ -4398,22 +4414,6 @@
         "autuacao": "28/08/2026",
         "desde": "28/08/2026",
         "dias_tramitando": 3,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "preparar-comunicacao": [
-      {
-        "processo": "0601014-74.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "NIP",
-        "tarefa_atual": "Preparar comunicação",
-        "autuacao": "27/08/2026",
-        "desde": "31/08/2026",
-        "dias_tramitando": 4,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -5066,9 +5066,9 @@
         "processo": "0600997-38.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "NIP",
-        "tarefa_atual": "Analisar determinação",
+        "tarefa_atual": "Fechar expediente manualmente",
         "autuacao": "26/08/2026",
-        "desde": "30/08/2026",
+        "desde": "31/08/2026",
         "dias_tramitando": 5,
         "julgado": false,
         "data_julgamento": "",
@@ -6792,7 +6792,7 @@
         "processo": "0601014-74.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "NIP",
-        "tarefa_atual": "Preparar comunicação",
+        "tarefa_atual": "Analisar determinação",
         "autuacao": "27/08/2026",
         "desde": "31/08/2026",
         "dias_tramitando": 4,
@@ -8617,9 +8617,9 @@
       "processo": "0600997-38.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "NIP",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Fechar expediente manualmente",
       "autuacao": "26/08/2026",
-      "desde": "30/08/2026",
+      "desde": "31/08/2026",
       "dias_tramitando": 5,
       "julgado": false,
       "data_julgamento": "",
@@ -8785,7 +8785,7 @@
       "processo": "0601014-74.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "NIP",
-      "tarefa_atual": "Preparar comunicação",
+      "tarefa_atual": "Analisar determinação",
       "autuacao": "27/08/2026",
       "desde": "31/08/2026",
       "dias_tramitando": 4,
@@ -11407,9 +11407,9 @@
       "processo": "0600997-38.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "NIP",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Fechar expediente manualmente",
       "autuacao": "26/08/2026",
-      "desde": "30/08/2026",
+      "desde": "31/08/2026",
       "dias_tramitando": 5,
       "julgado": false,
       "data_julgamento": "",
@@ -11575,7 +11575,7 @@
       "processo": "0601014-74.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "NIP",
-      "tarefa_atual": "Preparar comunicação",
+      "tarefa_atual": "Analisar determinação",
       "autuacao": "27/08/2026",
       "desde": "31/08/2026",
       "dias_tramitando": 4,
@@ -13789,8 +13789,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "31/08/2026 17:13",
+  "publicado_em": "31/08/2026 17:14",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "78898fb0ba57eb1f24d71adcc330d8d3d3987dfb909a05d5fcbc0367d90e19a2"
+  "hash_publicacao": "93491474bc09bbcfb386c9729c63fbdfda1e16dcb44e1a0ec4db5099c2bffff1"
 }
