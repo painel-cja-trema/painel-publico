@@ -29,7 +29,7 @@
       "quantidade": 56,
       "media_dias": 33.6,
       "maior_tempo": 142,
-      "urgentes": 0,
+      "urgentes": 1,
       "minutar": 6,
       "julgados": 24,
       "percentual_julgados": 32.0,
@@ -229,12 +229,12 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Conferir Relatório, Voto e Ementa",
+      "tarefa_atual": "Analisar determinação - Urgentes",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Registrar ciência por telefone ou pessoalmente",
+      "tarefa_atual": "Conferir Relatório, Voto e Ementa",
       "quantidade": 1
     },
     {
@@ -1471,16 +1471,6 @@
         "total": 2
       },
       {
-        "codigo": "registrar-ciencia-por-telefone-ou-pessoalmente",
-        "tarefa": "Registrar ciência por telefone ou pessoalmente",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 2
-      },
-      {
         "codigo": "aguarda-sessao-de-julgamento-virtual-elaborar-extrato-da-ata-elaborar-extrato-da-ata-pauta-provisoria-virtual-selecionar-documentos-para-acordao-gabinete-selecionar-documentos-para-acordao-gabinete",
         "tarefa": "Aguarda Sessão de Julgamento Virtual; Elaborar extrato da ata; Elaborar extrato da ata; Pauta provisória virtual; Selecionar documentos para acórdão - Gabinete; Selecionar documentos para acórdão - Gabinete",
         "contagens": {
@@ -1583,6 +1573,16 @@
       {
         "codigo": "analisar-peticao-avulsa-processo-com-prazo-em-curso",
         "tarefa": "Analisar Petição Avulsa; Processo com prazo em curso",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "analisar-determinacao-urgentes",
+        "tarefa": "Analisar determinação - Urgentes",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -1733,6 +1733,16 @@
       {
         "codigo": "registrar-ciencia-intimacao-pessoal",
         "tarefa": "Registrar ciência intimação pessoal",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "registrar-ciencia-por-telefone-ou-pessoalmente",
+        "tarefa": "Registrar ciência por telefone ou pessoalmente",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -3926,36 +3936,6 @@
         "responsavel_processo": ""
       }
     ],
-    "registrar-ciencia-por-telefone-ou-pessoalmente": [
-      {
-        "processo": "0600900-38.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Registrar ciência por telefone ou pessoalmente",
-        "autuacao": "13/08/2026",
-        "desde": "22/08/2026",
-        "dias_tramitando": 17,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601042-42.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "RepEsp",
-        "tarefa_atual": "Registrar ciência por telefone ou pessoalmente",
-        "autuacao": "30/08/2026",
-        "desde": "31/08/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "aguarda-sessao-de-julgamento-virtual-elaborar-extrato-da-ata-elaborar-extrato-da-ata-pauta-provisoria-virtual-selecionar-documentos-para-acordao-gabinete-selecionar-documentos-para-acordao-gabinete": [
       {
         "processo": "0600173-79.2026.6.10.0000",
@@ -4125,6 +4105,22 @@
         "autuacao": "27/08/2026",
         "desde": "27/08/2026",
         "dias_tramitando": 3,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-determinacao-urgentes": [
+      {
+        "processo": "0601042-42.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "RepEsp",
+        "tarefa_atual": "Analisar determinação - Urgentes",
+        "autuacao": "30/08/2026",
+        "desde": "31/08/2026",
+        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -4365,6 +4361,22 @@
         "autuacao": "28/08/2026",
         "desde": "30/08/2026",
         "dias_tramitando": 2,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "registrar-ciencia-por-telefone-ou-pessoalmente": [
+      {
+        "processo": "0600900-38.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Registrar ciência por telefone ou pessoalmente",
+        "autuacao": "13/08/2026",
+        "desde": "22/08/2026",
+        "dias_tramitando": 17,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -6243,7 +6255,7 @@
         "processo": "0601042-42.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "RepEsp",
-        "tarefa_atual": "Registrar ciência por telefone ou pessoalmente",
+        "tarefa_atual": "Analisar determinação - Urgentes",
         "autuacao": "30/08/2026",
         "desde": "31/08/2026",
         "dias_tramitando": 0,
@@ -9078,7 +9090,7 @@
       "processo": "0601042-42.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "RepEsp",
-      "tarefa_atual": "Registrar ciência por telefone ou pessoalmente",
+      "tarefa_atual": "Analisar determinação - Urgentes",
       "autuacao": "30/08/2026",
       "desde": "31/08/2026",
       "dias_tramitando": 0,
@@ -11796,7 +11808,7 @@
       "processo": "0601042-42.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "RepEsp",
-      "tarefa_atual": "Registrar ciência por telefone ou pessoalmente",
+      "tarefa_atual": "Analisar determinação - Urgentes",
       "autuacao": "30/08/2026",
       "desde": "31/08/2026",
       "dias_tramitando": 0,
@@ -13520,8 +13532,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "31/08/2026 10:00",
+  "publicado_em": "31/08/2026 10:01",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "18787d81f49c19f9aa1c9143788651f0c5229f4a5299ea81328277a47ea30cab"
+  "hash_publicacao": "a3a4decea208d5621128f88e34adf0ae34c982b1a287204dfc37c4bbac8d9a24"
 }
