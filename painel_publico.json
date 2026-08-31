@@ -9,15 +9,15 @@
       "nome": "Gabinete Juiz Auxiliar 1",
       "juiz": "Dr. Nilo Ribeiro",
       "distribuidor": "Flauberth Silva Santos",
-      "quantidade": 44,
-      "media_dias": 29.6,
+      "quantidade": 45,
+      "media_dias": 29.2,
       "maior_tempo": 145,
       "urgentes": 0,
       "minutar": 5,
       "julgados": 15,
-      "percentual_julgados": 25.0,
+      "percentual_julgados": 24.6,
       "arquivados": 9,
-      "distribuidos": 53,
+      "distribuidos": 54,
       "cartas_precatorias": 6,
       "recursos": 19
     },
@@ -43,15 +43,15 @@
       "nome": "Gabinete Juiz Auxiliar 3",
       "juiz": "Dr. Rubem Filho",
       "distribuidor": "Danielle Cerqueira Castro",
-      "quantidade": 40,
-      "media_dias": 14.6,
+      "quantidade": 39,
+      "media_dias": 14.9,
       "maior_tempo": 83,
       "urgentes": 2,
       "minutar": 9,
       "julgados": 11,
-      "percentual_julgados": 22.0,
+      "percentual_julgados": 22.4,
       "arquivados": 11,
-      "distribuidos": 51,
+      "distribuidos": 50,
       "cartas_precatorias": 2,
       "recursos": 11
     }
@@ -135,6 +135,11 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Assinar ato; Petições não lidas",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Definir procedimento",
       "quantidade": 1
     },
     {
@@ -310,11 +315,6 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Redistribuir de ofício",
       "quantidade": 1
     },
     {
@@ -854,7 +854,7 @@
       {
         "gabinete": "Gab. JA 1",
         "nome": "Gabinete Juiz Auxiliar 1",
-        "total_acervo": 60,
+        "total_acervo": 61,
         "contagens": {
           "TRIAGEM_URGENTE": 0,
           "TRIAGEM_ORDINARIA": 2,
@@ -878,7 +878,7 @@
       {
         "gabinete": "Gab. JA 3",
         "nome": "Gabinete Juiz Auxiliar 3",
-        "total_acervo": 50,
+        "total_acervo": 49,
         "contagens": {
           "TRIAGEM_URGENTE": 0,
           "TRIAGEM_ORDINARIA": 0,
@@ -1831,6 +1831,16 @@
         "total": 1
       },
       {
+        "codigo": "definir-procedimento",
+        "tarefa": "Definir procedimento",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
         "codigo": "elaborar-certidao-de-transito-em-julgado",
         "tarefa": "Elaborar certidão de trânsito em julgado",
         "contagens": {
@@ -1863,16 +1873,6 @@
       {
         "codigo": "processo-com-prazo-em-curso-registrar-recurso",
         "tarefa": "Processo com prazo em curso; Registrar recurso",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
-        "codigo": "redistribuir-de-oficio",
-        "tarefa": "Redistribuir de ofício",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -4470,6 +4470,22 @@
         "responsavel_processo": ""
       }
     ],
+    "definir-procedimento": [
+      {
+        "processo": "0601051-04.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "NIP",
+        "tarefa_atual": "Definir procedimento",
+        "autuacao": "31/08/2026",
+        "desde": "31/08/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "elaborar-certidao-de-transito-em-julgado": [
       {
         "processo": "0600970-55.2026.6.10.0000",
@@ -4530,22 +4546,6 @@
         "julgado": true,
         "data_julgamento": "29/08/2026",
         "teor": "Julgado procedente o pedido em 29/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "redistribuir-de-oficio": [
-      {
-        "processo": "0601051-04.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "NIP",
-        "tarefa_atual": "Redistribuir de ofício",
-        "autuacao": "31/08/2026",
-        "desde": "31/08/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -5386,6 +5386,20 @@
         "gabinete": "Gab. JA 1",
         "classe": "NIP",
         "tarefa_atual": "Realizar triagem ordinários",
+        "autuacao": "31/08/2026",
+        "desde": "31/08/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601051-04.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "NIP",
+        "tarefa_atual": "Definir procedimento",
         "autuacao": "31/08/2026",
         "desde": "31/08/2026",
         "dias_tramitando": 0,
@@ -7141,20 +7155,6 @@
         "classe": "Rp",
         "tarefa_atual": "Processo com prazo em curso",
         "autuacao": "30/08/2026",
-        "desde": "31/08/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601051-04.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "NIP",
-        "tarefa_atual": "Redistribuir de ofício",
-        "autuacao": "31/08/2026",
         "desde": "31/08/2026",
         "dias_tramitando": 0,
         "julgado": false,
@@ -9424,9 +9424,9 @@
     },
     {
       "processo": "0601051-04.2026.6.10.0000",
-      "gabinete": "Gab. JA 3",
+      "gabinete": "Gab. JA 1",
       "classe": "NIP",
-      "tarefa_atual": "Redistribuir de ofício",
+      "tarefa_atual": "Definir procedimento",
       "autuacao": "31/08/2026",
       "desde": "31/08/2026",
       "dias_tramitando": 0,
@@ -12242,9 +12242,9 @@
     },
     {
       "processo": "0601051-04.2026.6.10.0000",
-      "gabinete": "Gab. JA 3",
+      "gabinete": "Gab. JA 1",
       "classe": "NIP",
-      "tarefa_atual": "Redistribuir de ofício",
+      "tarefa_atual": "Definir procedimento",
       "autuacao": "31/08/2026",
       "desde": "31/08/2026",
       "dias_tramitando": 0,
@@ -13968,8 +13968,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "31/08/2026 18:01",
+  "publicado_em": "31/08/2026 18:02",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "beccd6631ed52718dd5a5ce78afab2924cec34566b8e3001c3ce22dc5c758f87"
+  "hash_publicacao": "241843b1d2e13333fa72cb1db0a2a51f992c936c89c5998595963f6eef36a360"
 }
