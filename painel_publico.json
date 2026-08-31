@@ -129,12 +129,12 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+      "tarefa_atual": "Assinar ato; Petições não lidas",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Petições não lidas; Revisar ato",
+      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
       "quantidade": 1
     },
     {
@@ -155,7 +155,7 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Processo com prazo em curso",
-      "quantidade": 22
+      "quantidade": 21
     },
     {
       "gabinete": "Gab. JA 2",
@@ -205,6 +205,11 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Analisar resposta do expediente",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Analisar resposta do expediente; Registrar recurso",
       "quantidade": 1
     },
     {
@@ -727,7 +732,7 @@
           "TRIAGEM_URGENTE": 0,
           "TRIAGEM_ORDINARIA": 4,
           "MINUTAR_ATO": 4,
-          "ASSINAR_ATO": 1,
+          "ASSINAR_ATO": 2,
           "LANCAR_MOVIMENTACAO": 0
         }
       },
@@ -760,7 +765,7 @@
       "TRIAGEM_URGENTE": 3,
       "TRIAGEM_ORDINARIA": 15,
       "MINUTAR_ATO": 12,
-      "ASSINAR_ATO": 12,
+      "ASSINAR_ATO": 13,
       "LANCAR_MOVIMENTACAO": 0
     },
     "total_acervo": 181
@@ -1306,6 +1311,20 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0600967-03.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Assinar ato; Petições não lidas",
+        "autuacao": "22/08/2026",
+        "desde": "22/08/2026",
+        "dias_tramitando": 9,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0600979-17.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "DR",
@@ -1434,10 +1453,10 @@
         "tarefa": "Processo com prazo em curso",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 8,
-          "Gabinete Juiz Auxiliar 2": 22,
+          "Gabinete Juiz Auxiliar 2": 21,
           "Gabinete Juiz Auxiliar 3": 5
         },
-        "total": 35
+        "total": 34
       },
       {
         "codigo": "analisar-determinacao",
@@ -1660,6 +1679,26 @@
         "total": 1
       },
       {
+        "codigo": "analisar-resposta-do-expediente-registrar-recurso",
+        "tarefa": "Analisar resposta do expediente; Registrar recurso",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "assinar-ato-peticoes-nao-lidas",
+        "tarefa": "Assinar ato; Petições não lidas",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
         "codigo": "aviso-publicacao-mural",
         "tarefa": "Aviso publicação mural",
         "contagens": {
@@ -1682,16 +1721,6 @@
       {
         "codigo": "peticoes-nao-lidas-processo-com-prazo-em-curso",
         "tarefa": "Petições não lidas; Processo com prazo em curso",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "peticoes-nao-lidas-revisar-ato",
-        "tarefa": "Petições não lidas; Revisar ato",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -2433,20 +2462,6 @@
         "julgado": true,
         "data_julgamento": "30/08/2026",
         "teor": "Extinto o processo por ausência de pressupostos processuais em 30/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600953-19.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Processo com prazo em curso",
-        "autuacao": "19/08/2026",
-        "desde": "31/08/2026",
-        "dias_tramitando": 11,
-        "julgado": true,
-        "data_julgamento": "29/08/2026",
-        "teor": "Julgado procedente o pedido em 29/08/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -4217,6 +4232,38 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-resposta-do-expediente-registrar-recurso": [
+      {
+        "processo": "0600953-19.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar resposta do expediente; Registrar recurso",
+        "autuacao": "19/08/2026",
+        "desde": "19/08/2026",
+        "dias_tramitando": 11,
+        "julgado": true,
+        "data_julgamento": "29/08/2026",
+        "teor": "Julgado procedente o pedido em 29/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "assinar-ato-peticoes-nao-lidas": [
+      {
+        "processo": "0600967-03.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Assinar ato; Petições não lidas",
+        "autuacao": "22/08/2026",
+        "desde": "22/08/2026",
+        "dias_tramitando": 9,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "aviso-publicacao-mural": [
       {
         "processo": "0601048-49.2026.6.10.0000",
@@ -4258,22 +4305,6 @@
         "autuacao": "29/08/2026",
         "desde": "29/08/2026",
         "dias_tramitando": 1,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "peticoes-nao-lidas-revisar-ato": [
-      {
-        "processo": "0600967-03.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Petições não lidas; Revisar ato",
-        "autuacao": "22/08/2026",
-        "desde": "22/08/2026",
-        "dias_tramitando": 9,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -4798,7 +4829,7 @@
         "processo": "0600967-03.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Petições não lidas; Revisar ato",
+        "tarefa_atual": "Assinar ato; Petições não lidas",
         "autuacao": "22/08/2026",
         "desde": "22/08/2026",
         "dias_tramitando": 9,
@@ -5836,9 +5867,9 @@
         "processo": "0600953-19.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Processo com prazo em curso",
+        "tarefa_atual": "Analisar resposta do expediente; Registrar recurso",
         "autuacao": "19/08/2026",
-        "desde": "31/08/2026",
+        "desde": "19/08/2026",
         "dias_tramitando": 11,
         "julgado": true,
         "data_julgamento": "29/08/2026",
@@ -7999,9 +8030,9 @@
       "processo": "0600953-19.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Processo com prazo em curso",
+      "tarefa_atual": "Analisar resposta do expediente; Registrar recurso",
       "autuacao": "19/08/2026",
-      "desde": "31/08/2026",
+      "desde": "19/08/2026",
       "dias_tramitando": 11,
       "julgado": true,
       "data_julgamento": "29/08/2026",
@@ -8125,7 +8156,7 @@
       "processo": "0600967-03.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Petições não lidas; Revisar ato",
+      "tarefa_atual": "Assinar ato; Petições não lidas",
       "autuacao": "22/08/2026",
       "desde": "22/08/2026",
       "dias_tramitando": 9,
@@ -10717,9 +10748,9 @@
       "processo": "0600953-19.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Processo com prazo em curso",
+      "tarefa_atual": "Analisar resposta do expediente; Registrar recurso",
       "autuacao": "19/08/2026",
-      "desde": "31/08/2026",
+      "desde": "19/08/2026",
       "dias_tramitando": 11,
       "julgado": true,
       "data_julgamento": "29/08/2026",
@@ -10843,7 +10874,7 @@
       "processo": "0600967-03.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Petições não lidas; Revisar ato",
+      "tarefa_atual": "Assinar ato; Petições não lidas",
       "autuacao": "22/08/2026",
       "desde": "22/08/2026",
       "dias_tramitando": 9,
@@ -13395,9 +13426,9 @@
       "processo": "0600953-19.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Processo com prazo em curso",
+      "tarefa_atual": "Analisar resposta do expediente; Registrar recurso",
       "autuacao": "19/08/2026",
-      "desde": "31/08/2026",
+      "desde": "19/08/2026",
       "dias_tramitando": 11,
       "julgado": true,
       "data_julgamento": "29/08/2026",
@@ -13477,8 +13508,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "31/08/2026 14:22",
+  "publicado_em": "31/08/2026 14:24",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "1d6758649e04c8fd92dbe4ac46087d00c57b6cb5caecc124d52445498c818bd9"
+  "hash_publicacao": "58138116d579a35c3a2cfe1aecaf45b07feacbac4efd3255a7d2ee8c6977050d"
 }
