@@ -44,7 +44,7 @@
       "juiz": "Dr. Rubem Filho",
       "distribuidor": "Danielle Cerqueira Castro",
       "quantidade": 38,
-      "media_dias": 15.2,
+      "media_dias": 15.3,
       "maior_tempo": 83,
       "urgentes": 1,
       "minutar": 9,
@@ -144,11 +144,6 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Definir procedimento",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Petições não lidas; Petições não lidas; Processo com prazo em curso",
       "quantidade": 1
     },
@@ -170,6 +165,11 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Registrar ciência por telefone ou pessoalmente",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Remeter Processo",
       "quantidade": 1
     },
     {
@@ -1836,16 +1836,6 @@
         "total": 1
       },
       {
-        "codigo": "definir-procedimento",
-        "tarefa": "Definir procedimento",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
         "codigo": "elaborar-certidao-de-transito-em-julgado",
         "tarefa": "Elaborar certidão de trânsito em julgado",
         "contagens": {
@@ -1898,6 +1888,16 @@
       {
         "codigo": "registrar-ciencia-intimacao-pessoal",
         "tarefa": "Registrar ciência intimação pessoal",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "remeter-processo",
+        "tarefa": "Remeter Processo",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -3589,6 +3589,20 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0601017-29.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "NIP",
+        "tarefa_atual": "Aguardando Manifestação do MPE",
+        "autuacao": "27/08/2026",
+        "desde": "31/08/2026",
+        "dias_tramitando": 4,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0600067-60.2026.6.10.0019",
         "gabinete": "Gab. JA 3",
         "classe": "NIP",
@@ -3608,20 +3622,6 @@
         "classe": "NIP",
         "tarefa_atual": "Aguardando Manifestação do MPE",
         "autuacao": "28/08/2026",
-        "desde": "31/08/2026",
-        "dias_tramitando": 3,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601017-29.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "NIP",
-        "tarefa_atual": "Aguardando Manifestação do MPE",
-        "autuacao": "27/08/2026",
         "desde": "31/08/2026",
         "dias_tramitando": 3,
         "julgado": false,
@@ -3983,7 +3983,7 @@
         "tarefa_atual": "Analisar resposta do expediente",
         "autuacao": "07/08/2026",
         "desde": "30/08/2026",
-        "dias_tramitando": 23,
+        "dias_tramitando": 24,
         "julgado": true,
         "data_julgamento": "29/08/2026",
         "teor": "Julgado improcedente o pedido em 29/08/2026",
@@ -4473,22 +4473,6 @@
         "responsavel_processo": ""
       }
     ],
-    "definir-procedimento": [
-      {
-        "processo": "0601053-71.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Definir procedimento",
-        "autuacao": "31/08/2026",
-        "desde": "31/08/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "elaborar-certidao-de-transito-em-julgado": [
       {
         "processo": "0600970-55.2026.6.10.0000",
@@ -4578,6 +4562,22 @@
         "autuacao": "28/08/2026",
         "desde": "30/08/2026",
         "dias_tramitando": 3,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "remeter-processo": [
+      {
+        "processo": "0601053-71.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Remeter Processo",
+        "autuacao": "31/08/2026",
+        "desde": "31/08/2026",
+        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -5446,7 +5446,7 @@
         "processo": "0601053-71.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Definir procedimento",
+        "tarefa_atual": "Remeter Processo",
         "autuacao": "31/08/2026",
         "desde": "31/08/2026",
         "dias_tramitando": 0,
@@ -6657,7 +6657,7 @@
         "tarefa_atual": "Analisar resposta do expediente",
         "autuacao": "07/08/2026",
         "desde": "30/08/2026",
-        "dias_tramitando": 23,
+        "dias_tramitando": 24,
         "julgado": true,
         "data_julgamento": "29/08/2026",
         "teor": "Julgado improcedente o pedido em 29/08/2026",
@@ -6945,6 +6945,20 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0601017-29.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "NIP",
+        "tarefa_atual": "Aguardando Manifestação do MPE",
+        "autuacao": "27/08/2026",
+        "desde": "31/08/2026",
+        "dias_tramitando": 4,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0600048-77.2026.6.10.0076",
         "gabinete": "Gab. JA 3",
         "classe": "NIP",
@@ -6992,20 +7006,6 @@
         "classe": "NIP",
         "tarefa_atual": "Aguardando Manifestação do MPE",
         "autuacao": "28/08/2026",
-        "desde": "31/08/2026",
-        "dias_tramitando": 3,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601017-29.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "NIP",
-        "tarefa_atual": "Aguardando Manifestação do MPE",
-        "autuacao": "27/08/2026",
         "desde": "31/08/2026",
         "dias_tramitando": 3,
         "julgado": false,
@@ -7237,7 +7237,7 @@
       "classe": "Rp",
       "teor": "Julgado improcedente o pedido em 29/08/2026",
       "data_julgamento": "29/08/2026",
-      "dias_tramitando": 23
+      "dias_tramitando": 24
     },
     {
       "processo": "0600953-19.2026.6.10.0000",
@@ -8202,7 +8202,7 @@
       "tarefa_atual": "Analisar resposta do expediente",
       "autuacao": "07/08/2026",
       "desde": "30/08/2026",
-      "dias_tramitando": 23,
+      "dias_tramitando": 24,
       "julgado": true,
       "data_julgamento": "29/08/2026",
       "teor": "Julgado improcedente o pedido em 29/08/2026",
@@ -8952,6 +8952,20 @@
       "responsavel_processo": ""
     },
     {
+      "processo": "0601017-29.2026.6.10.0000",
+      "gabinete": "Gab. JA 3",
+      "classe": "NIP",
+      "tarefa_atual": "Aguardando Manifestação do MPE",
+      "autuacao": "27/08/2026",
+      "desde": "31/08/2026",
+      "dias_tramitando": 4,
+      "julgado": false,
+      "data_julgamento": "",
+      "teor": "",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
+    },
+    {
       "processo": "0600048-77.2026.6.10.0076",
       "gabinete": "Gab. JA 3",
       "classe": "NIP",
@@ -8999,20 +9013,6 @@
       "classe": "NIP",
       "tarefa_atual": "Aguardando Manifestação do MPE",
       "autuacao": "28/08/2026",
-      "desde": "31/08/2026",
-      "dias_tramitando": 3,
-      "julgado": false,
-      "data_julgamento": "",
-      "teor": "",
-      "segredo_justica": "NÃO",
-      "responsavel_processo": ""
-    },
-    {
-      "processo": "0601017-29.2026.6.10.0000",
-      "gabinete": "Gab. JA 3",
-      "classe": "NIP",
-      "tarefa_atual": "Aguardando Manifestação do MPE",
-      "autuacao": "27/08/2026",
       "desde": "31/08/2026",
       "dias_tramitando": 3,
       "julgado": false,
@@ -9473,7 +9473,7 @@
       "processo": "0601053-71.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Definir procedimento",
+      "tarefa_atual": "Remeter Processo",
       "autuacao": "31/08/2026",
       "desde": "31/08/2026",
       "dias_tramitando": 0,
@@ -11020,7 +11020,7 @@
       "tarefa_atual": "Analisar resposta do expediente",
       "autuacao": "07/08/2026",
       "desde": "30/08/2026",
-      "dias_tramitando": 23,
+      "dias_tramitando": 24,
       "julgado": true,
       "data_julgamento": "29/08/2026",
       "teor": "Julgado improcedente o pedido em 29/08/2026",
@@ -11770,6 +11770,20 @@
       "responsavel_processo": ""
     },
     {
+      "processo": "0601017-29.2026.6.10.0000",
+      "gabinete": "Gab. JA 3",
+      "classe": "NIP",
+      "tarefa_atual": "Aguardando Manifestação do MPE",
+      "autuacao": "27/08/2026",
+      "desde": "31/08/2026",
+      "dias_tramitando": 4,
+      "julgado": false,
+      "data_julgamento": "",
+      "teor": "",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
+    },
+    {
       "processo": "0600048-77.2026.6.10.0076",
       "gabinete": "Gab. JA 3",
       "classe": "NIP",
@@ -11817,20 +11831,6 @@
       "classe": "NIP",
       "tarefa_atual": "Aguardando Manifestação do MPE",
       "autuacao": "28/08/2026",
-      "desde": "31/08/2026",
-      "dias_tramitando": 3,
-      "julgado": false,
-      "data_julgamento": "",
-      "teor": "",
-      "segredo_justica": "NÃO",
-      "responsavel_processo": ""
-    },
-    {
-      "processo": "0601017-29.2026.6.10.0000",
-      "gabinete": "Gab. JA 3",
-      "classe": "NIP",
-      "tarefa_atual": "Aguardando Manifestação do MPE",
-      "autuacao": "27/08/2026",
       "desde": "31/08/2026",
       "dias_tramitando": 3,
       "julgado": false,
@@ -12291,7 +12291,7 @@
       "processo": "0601053-71.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Definir procedimento",
+      "tarefa_atual": "Remeter Processo",
       "autuacao": "31/08/2026",
       "desde": "31/08/2026",
       "dias_tramitando": 0,
@@ -13824,7 +13824,7 @@
       "tarefa_atual": "Analisar resposta do expediente",
       "autuacao": "07/08/2026",
       "desde": "30/08/2026",
-      "dias_tramitando": 23,
+      "dias_tramitando": 24,
       "julgado": true,
       "data_julgamento": "29/08/2026",
       "teor": "Julgado improcedente o pedido em 29/08/2026",
@@ -13987,8 +13987,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "31/08/2026 18:38",
+  "publicado_em": "31/08/2026 18:41",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "0ae2d1b5f14ee2178935b599ff74c80a20d0c13261cfb1bbe715650154fb87d3"
+  "hash_publicacao": "7f41658953702bfd8c00c1595b7bd937bb54d2b054eb7f35f6c0d71b25cf6361"
 }
