@@ -46,7 +46,7 @@
       "quantidade": 38,
       "media_dias": 15.4,
       "maior_tempo": 83,
-      "urgentes": 1,
+      "urgentes": 2,
       "minutar": 9,
       "julgados": 11,
       "percentual_julgados": 22.9,
@@ -309,12 +309,12 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Analisar Petição Avulsa; Minutar ato; Petições não lidas",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar Petição Avulsa; Analisar determinação - Urgentes; Petições não lidas; Petições não lidas",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
+      "tarefa_atual": "Analisar Petição Avulsa; Minutar ato; Petições não lidas",
       "quantidade": 1
     },
     {
@@ -1765,16 +1765,6 @@
         "total": 2
       },
       {
-        "codigo": "analisar-peticao-avulsa-peticoes-nao-lidas-processo-com-prazo-em-curso",
-        "tarefa": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 2
-      },
-      {
         "codigo": "aguarda-sessao-de-julgamento-virtual-elaborar-extrato-da-ata-elaborar-extrato-da-ata-pauta-provisoria-virtual-selecionar-documentos-para-acordao-gabinete-selecionar-documentos-para-acordao-gabinete",
         "tarefa": "Aguarda Sessão de Julgamento Virtual; Elaborar extrato da ata; Elaborar extrato da ata; Pauta provisória virtual; Selecionar documentos para acórdão - Gabinete; Selecionar documentos para acórdão - Gabinete",
         "contagens": {
@@ -1797,6 +1787,16 @@
       {
         "codigo": "aguardando-providencias",
         "tarefa": "Aguardando providências",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
+        "codigo": "analisar-peticao-avulsa-analisar-peticao-avulsa-analisar-determinacao-urgentes-peticoes-nao-lidas-peticoes-nao-lidas",
+        "tarefa": "Analisar Petição Avulsa; Analisar Petição Avulsa; Analisar determinação - Urgentes; Petições não lidas; Petições não lidas",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -1841,6 +1841,16 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
+        "codigo": "analisar-peticao-avulsa-peticoes-nao-lidas-processo-com-prazo-em-curso",
+        "tarefa": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
       },
@@ -4320,36 +4330,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-peticao-avulsa-peticoes-nao-lidas-processo-com-prazo-em-curso": [
-      {
-        "processo": "0601021-66.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
-        "autuacao": "28/08/2026",
-        "desde": "28/08/2026",
-        "dias_tramitando": 3,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601035-50.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
-        "autuacao": "29/08/2026",
-        "desde": "29/08/2026",
-        "dias_tramitando": 2,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "aguarda-sessao-de-julgamento-virtual-elaborar-extrato-da-ata-elaborar-extrato-da-ata-pauta-provisoria-virtual-selecionar-documentos-para-acordao-gabinete-selecionar-documentos-para-acordao-gabinete": [
       {
         "processo": "0600173-79.2026.6.10.0000",
@@ -4390,6 +4370,22 @@
         "tarefa_atual": "Aguardando providências",
         "autuacao": "29/08/2026",
         "desde": "30/08/2026",
+        "dias_tramitando": 2,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-peticao-avulsa-analisar-peticao-avulsa-analisar-determinacao-urgentes-peticoes-nao-lidas-peticoes-nao-lidas": [
+      {
+        "processo": "0601035-50.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar Petição Avulsa; Analisar Petição Avulsa; Analisar determinação - Urgentes; Petições não lidas; Petições não lidas",
+        "autuacao": "29/08/2026",
+        "desde": "29/08/2026",
         "dias_tramitando": 2,
         "julgado": false,
         "data_julgamento": "",
@@ -4455,6 +4451,22 @@
         "autuacao": "21/08/2026",
         "desde": "21/08/2026",
         "dias_tramitando": 9,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-peticao-avulsa-peticoes-nao-lidas-processo-com-prazo-em-curso": [
+      {
+        "processo": "0601021-66.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
+        "autuacao": "28/08/2026",
+        "desde": "28/08/2026",
+        "dias_tramitando": 3,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -7155,7 +7167,7 @@
         "processo": "0601035-50.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
+        "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação - Urgentes; Petições não lidas",
         "autuacao": "29/08/2026",
         "desde": "29/08/2026",
         "dias_tramitando": 2,
@@ -9274,7 +9286,7 @@
       "processo": "0601035-50.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação - Urgentes; Petições não lidas",
       "autuacao": "29/08/2026",
       "desde": "29/08/2026",
       "dias_tramitando": 2,
@@ -12092,7 +12104,7 @@
       "processo": "0601035-50.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação - Urgentes; Petições não lidas",
       "autuacao": "29/08/2026",
       "desde": "29/08/2026",
       "dias_tramitando": 2,
@@ -14040,8 +14052,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "31/08/2026 21:11",
+  "publicado_em": "31/08/2026 21:15",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "b7a8a0bd5de7cdddf33e9a4a5e8857644cd760a8cb29cd4f18baa30159622e65"
+  "hash_publicacao": "d25727670fcc49353e9c1a77a4bdf06e9bc2969bf638d20f0949fd2b861460c6"
 }
