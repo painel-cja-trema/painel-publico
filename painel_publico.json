@@ -304,17 +304,17 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Assinar ato; Petições não lidas",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Elaborar Documentos",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Elaborar certidão de trânsito em julgado",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Lançar movimento; Petições não lidas",
       "quantidade": 1
     },
     {
@@ -856,8 +856,8 @@
           "TRIAGEM_URGENTE": 1,
           "TRIAGEM_ORDINARIA": 0,
           "MINUTAR_ATO": 6,
-          "ASSINAR_ATO": 1,
-          "LANCAR_MOVIMENTACAO": 0
+          "ASSINAR_ATO": 0,
+          "LANCAR_MOVIMENTACAO": 1
         }
       }
     ],
@@ -865,8 +865,8 @@
       "TRIAGEM_URGENTE": 1,
       "TRIAGEM_ORDINARIA": 20,
       "MINUTAR_ATO": 17,
-      "ASSINAR_ATO": 3,
-      "LANCAR_MOVIMENTACAO": 0
+      "ASSINAR_ATO": 2,
+      "LANCAR_MOVIMENTACAO": 1
     },
     "total_acervo": 186
   },
@@ -1425,20 +1425,6 @@
         "responsavel_processo": ""
       },
       {
-        "processo": "0600965-33.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato; Petições não lidas",
-        "autuacao": "21/08/2026",
-        "desde": "21/08/2026",
-        "dias_tramitando": 10,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
         "processo": "0601056-26.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
@@ -1453,7 +1439,22 @@
         "responsavel_processo": ""
       }
     ],
-    "LANCAR_MOVIMENTACAO": []
+    "LANCAR_MOVIMENTACAO": [
+      {
+        "processo": "0600965-33.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Lançar movimento; Petições não lidas",
+        "autuacao": "21/08/2026",
+        "desde": "21/08/2026",
+        "dias_tramitando": 10,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ]
   },
   "entrada_comissao": {
     "codigo": "LIMINAR_CERTIFICACAO",
@@ -1761,16 +1762,6 @@
         "total": 1
       },
       {
-        "codigo": "assinar-ato-peticoes-nao-lidas",
-        "tarefa": "Assinar ato; Petições não lidas",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
         "codigo": "elaborar-certidao-de-transito-em-julgado",
         "tarefa": "Elaborar certidão de trânsito em julgado",
         "contagens": {
@@ -1787,6 +1778,16 @@
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "lancar-movimento-peticoes-nao-lidas",
+        "tarefa": "Lançar movimento; Petições não lidas",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 1
       },
@@ -4376,22 +4377,6 @@
         "responsavel_processo": ""
       }
     ],
-    "assinar-ato-peticoes-nao-lidas": [
-      {
-        "processo": "0600965-33.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato; Petições não lidas",
-        "autuacao": "21/08/2026",
-        "desde": "21/08/2026",
-        "dias_tramitando": 10,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "elaborar-certidao-de-transito-em-julgado": [
       {
         "processo": "0600970-55.2026.6.10.0000",
@@ -4420,6 +4405,22 @@
         "julgado": true,
         "data_julgamento": "30/08/2026",
         "teor": "Julgado procedente em parte do pedido em 30/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "lancar-movimento-peticoes-nao-lidas": [
+      {
+        "processo": "0600965-33.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Lançar movimento; Petições não lidas",
+        "autuacao": "21/08/2026",
+        "desde": "21/08/2026",
+        "dias_tramitando": 10,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -6707,7 +6708,7 @@
         "processo": "0600965-33.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Assinar ato; Petições não lidas",
+        "tarefa_atual": "Lançar movimento; Petições não lidas",
         "autuacao": "21/08/2026",
         "desde": "21/08/2026",
         "dias_tramitando": 10,
@@ -8412,7 +8413,7 @@
       "processo": "0600965-33.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Assinar ato; Petições não lidas",
+      "tarefa_atual": "Lançar movimento; Petições não lidas",
       "autuacao": "21/08/2026",
       "desde": "21/08/2026",
       "dias_tramitando": 10,
@@ -11272,7 +11273,7 @@
       "processo": "0600965-33.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Assinar ato; Petições não lidas",
+      "tarefa_atual": "Lançar movimento; Petições não lidas",
       "autuacao": "21/08/2026",
       "desde": "21/08/2026",
       "dias_tramitando": 10,
@@ -14102,8 +14103,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "01/09/2026 13:12",
+  "publicado_em": "01/09/2026 13:14",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "4ebda909470c1ed729d59255b115004376d394ffb4c5fd32e10dc6e22787281c"
+  "hash_publicacao": "49877fd56bc0a0ded94997192fd663f91df1f22b0ccfcb20435b5fd4520ebd40"
 }
