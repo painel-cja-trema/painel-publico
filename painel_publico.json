@@ -134,11 +134,6 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Lançar movimento; Petições descartadas",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Petições descartadas; Petições descartadas; Petições descartadas; Processo com prazo em curso",
       "quantidade": 1
     },
@@ -155,6 +150,11 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Petições descartadas; Realizar triagem ordinários",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Petições descartadas; Remeter Processos - Gabinete",
       "quantidade": 1
     },
     {
@@ -785,7 +785,7 @@
           "TRIAGEM_ORDINARIA": 10,
           "MINUTAR_ATO": 4,
           "ASSINAR_ATO": 0,
-          "LANCAR_MOVIMENTACAO": 1
+          "LANCAR_MOVIMENTACAO": 0
         }
       },
       {
@@ -818,7 +818,7 @@
       "TRIAGEM_ORDINARIA": 18,
       "MINUTAR_ATO": 15,
       "ASSINAR_ATO": 2,
-      "LANCAR_MOVIMENTACAO": 1
+      "LANCAR_MOVIMENTACAO": 0
     },
     "total_acervo": 195
   },
@@ -1335,22 +1335,7 @@
         "responsavel_processo": ""
       }
     ],
-    "LANCAR_MOVIMENTACAO": [
-      {
-        "processo": "0601069-25.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Lançar movimento; Petições descartadas",
-        "autuacao": "02/09/2026",
-        "desde": "02/09/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ]
+    "LANCAR_MOVIMENTACAO": []
   },
   "entrada_comissao": {
     "codigo": "LIMINAR_CERTIFICACAO",
@@ -1698,16 +1683,6 @@
         "total": 1
       },
       {
-        "codigo": "lancar-movimento-peticoes-descartadas",
-        "tarefa": "Lançar movimento; Petições descartadas",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
         "codigo": "peticoes-descartadas-peticoes-descartadas-peticoes-descartadas-processo-com-prazo-em-curso",
         "tarefa": "Petições descartadas; Petições descartadas; Petições descartadas; Processo com prazo em curso",
         "contagens": {
@@ -1740,6 +1715,16 @@
       {
         "codigo": "peticoes-descartadas-realizar-triagem-ordinarios",
         "tarefa": "Petições descartadas; Realizar triagem ordinários",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "peticoes-descartadas-remeter-processos-gabinete",
+        "tarefa": "Petições descartadas; Remeter Processos - Gabinete",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -4467,22 +4452,6 @@
         "responsavel_processo": ""
       }
     ],
-    "lancar-movimento-peticoes-descartadas": [
-      {
-        "processo": "0601069-25.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Lançar movimento; Petições descartadas",
-        "autuacao": "02/09/2026",
-        "desde": "02/09/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "peticoes-descartadas-peticoes-descartadas-peticoes-descartadas-processo-com-prazo-em-curso": [
       {
         "processo": "0601040-72.2026.6.10.0000",
@@ -4540,6 +4509,22 @@
         "autuacao": "18/05/2026",
         "desde": "18/05/2026",
         "dias_tramitando": 107,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "peticoes-descartadas-remeter-processos-gabinete": [
+      {
+        "processo": "0601069-25.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Petições descartadas; Remeter Processos - Gabinete",
+        "autuacao": "02/09/2026",
+        "desde": "02/09/2026",
+        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -5398,7 +5383,7 @@
         "processo": "0601069-25.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Lançar movimento; Petições descartadas",
+        "tarefa_atual": "Petições descartadas; Remeter Processos - Gabinete",
         "autuacao": "02/09/2026",
         "desde": "02/09/2026",
         "dias_tramitando": 0,
@@ -9641,7 +9626,7 @@
       "processo": "0601069-25.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Lançar movimento; Petições descartadas",
+      "tarefa_atual": "Petições descartadas; Remeter Processos - Gabinete",
       "autuacao": "02/09/2026",
       "desde": "02/09/2026",
       "dias_tramitando": 0,
@@ -12633,7 +12618,7 @@
       "processo": "0601069-25.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Lançar movimento; Petições descartadas",
+      "tarefa_atual": "Petições descartadas; Remeter Processos - Gabinete",
       "autuacao": "02/09/2026",
       "desde": "02/09/2026",
       "dias_tramitando": 0,
@@ -14591,8 +14576,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "02/09/2026 18:53",
+  "publicado_em": "02/09/2026 18:56",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "cc23863f0622f71014b4149176811f760b75b83c5d2be3416c139e364bd32bdf"
+  "hash_publicacao": "ebdcc107b8fb4fd3a736c74e226b3dc6b1e53975a7098fd1c30a687a8bdb3bf1"
 }
