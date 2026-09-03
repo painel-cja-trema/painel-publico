@@ -46,7 +46,7 @@
       "quantidade": 45,
       "media_dias": 14.6,
       "maior_tempo": 85,
-      "urgentes": 2,
+      "urgentes": 3,
       "minutar": 1,
       "julgados": 10,
       "percentual_julgados": 17.2,
@@ -269,12 +269,12 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Aguardando providências",
-      "quantidade": 2
+      "tarefa_atual": "Analisar determinação - Urgentes",
+      "quantidade": 3
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Analisar determinação - Urgentes",
+      "tarefa_atual": "Aguardando providências",
       "quantidade": 2
     },
     {
@@ -319,17 +319,12 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Analisar Petição Avulsa; Assinar ato; Petições não lidas",
+      "tarefa_atual": "Analisar Petição Avulsa; Lançar movimento; Petições não lidas",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Registrar ciência por telefone ou pessoalmente",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Fechar expediente manualmente",
       "quantidade": 1
     },
     {
@@ -837,8 +832,8 @@
           "TRIAGEM_URGENTE": 0,
           "TRIAGEM_ORDINARIA": 0,
           "MINUTAR_ATO": 1,
-          "ASSINAR_ATO": 1,
-          "LANCAR_MOVIMENTACAO": 0
+          "ASSINAR_ATO": 0,
+          "LANCAR_MOVIMENTACAO": 1
         }
       }
     ],
@@ -846,8 +841,8 @@
       "TRIAGEM_URGENTE": 0,
       "TRIAGEM_ORDINARIA": 20,
       "MINUTAR_ATO": 16,
-      "ASSINAR_ATO": 5,
-      "LANCAR_MOVIMENTACAO": 0
+      "ASSINAR_ATO": 4,
+      "LANCAR_MOVIMENTACAO": 1
     },
     "total_acervo": 197
   },
@@ -1391,20 +1386,6 @@
         "responsavel_processo": ""
       },
       {
-        "processo": "0601027-73.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "RepEsp",
-        "tarefa_atual": "Analisar Petição Avulsa; Assinar ato; Petições não lidas",
-        "autuacao": "28/08/2026",
-        "desde": "28/08/2026",
-        "dias_tramitando": 5,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
         "processo": "0601063-18.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
@@ -1433,7 +1414,22 @@
         "responsavel_processo": ""
       }
     ],
-    "LANCAR_MOVIMENTACAO": []
+    "LANCAR_MOVIMENTACAO": [
+      {
+        "processo": "0601027-73.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "RepEsp",
+        "tarefa_atual": "Analisar Petição Avulsa; Lançar movimento; Petições não lidas",
+        "autuacao": "28/08/2026",
+        "desde": "28/08/2026",
+        "dias_tramitando": 5,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ]
   },
   "entrada_comissao": {
     "codigo": "LIMINAR_CERTIFICACAO",
@@ -1611,6 +1607,16 @@
         "total": 3
       },
       {
+        "codigo": "analisar-determinacao-urgentes",
+        "tarefa": "Analisar determinação - Urgentes",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 3
+        },
+        "total": 3
+      },
+      {
         "codigo": "aguarda-julgamento-incluido-em-pauta-virtual-elaborar-extrato-da-ata-processo-incluido-em-pauta-virtual-selecionar-documentos-para-acordao-gabinete",
         "tarefa": "Aguarda Julgamento - incluído em pauta virtual; Elaborar extrato da ata; Processo incluído em pauta virtual; Selecionar documentos para acórdão - Gabinete",
         "contagens": {
@@ -1637,16 +1643,6 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 2,
           "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 2
-      },
-      {
-        "codigo": "analisar-determinacao-urgentes",
-        "tarefa": "Analisar determinação - Urgentes",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 2
         },
         "total": 2
       },
@@ -1761,8 +1757,8 @@
         "total": 1
       },
       {
-        "codigo": "analisar-peticao-avulsa-assinar-ato-peticoes-nao-lidas",
-        "tarefa": "Analisar Petição Avulsa; Assinar ato; Petições não lidas",
+        "codigo": "analisar-peticao-avulsa-lancar-movimento-peticoes-nao-lidas",
+        "tarefa": "Analisar Petição Avulsa; Lançar movimento; Petições não lidas",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -1827,16 +1823,6 @@
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "fechar-expediente-manualmente",
-        "tarefa": "Fechar expediente manualmente",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 1
       },
@@ -4172,6 +4158,50 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-determinacao-urgentes": [
+      {
+        "processo": "0601070-10.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação - Urgentes",
+        "autuacao": "02/09/2026",
+        "desde": "02/09/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601073-62.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação - Urgentes",
+        "autuacao": "02/09/2026",
+        "desde": "03/09/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601077-02.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "RepEsp",
+        "tarefa_atual": "Analisar determinação - Urgentes",
+        "autuacao": "02/09/2026",
+        "desde": "03/09/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "aguarda-julgamento-incluido-em-pauta-virtual-elaborar-extrato-da-ata-processo-incluido-em-pauta-virtual-selecionar-documentos-para-acordao-gabinete": [
       {
         "processo": "0600147-81.2026.6.10.0000",
@@ -4258,36 +4288,6 @@
         "julgado": true,
         "data_julgamento": "31/08/2026",
         "teor": "Julgado procedente o pedido em 31/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "analisar-determinacao-urgentes": [
-      {
-        "processo": "0601070-10.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação - Urgentes",
-        "autuacao": "02/09/2026",
-        "desde": "02/09/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601077-02.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "RepEsp",
-        "tarefa_atual": "Analisar determinação - Urgentes",
-        "autuacao": "02/09/2026",
-        "desde": "03/09/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -4538,12 +4538,12 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-peticao-avulsa-assinar-ato-peticoes-nao-lidas": [
+    "analisar-peticao-avulsa-lancar-movimento-peticoes-nao-lidas": [
       {
         "processo": "0601027-73.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "RepEsp",
-        "tarefa_atual": "Analisar Petição Avulsa; Assinar ato; Petições não lidas",
+        "tarefa_atual": "Analisar Petição Avulsa; Lançar movimento; Petições não lidas",
         "autuacao": "28/08/2026",
         "desde": "28/08/2026",
         "dias_tramitando": 5,
@@ -4646,22 +4646,6 @@
         "julgado": true,
         "data_julgamento": "25/08/2026",
         "teor": "Julgado procedente em parte do pedido em 25/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "fechar-expediente-manualmente": [
-      {
-        "processo": "0601073-62.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Fechar expediente manualmente",
-        "autuacao": "02/09/2026",
-        "desde": "03/09/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -7189,7 +7173,7 @@
         "processo": "0601027-73.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "RepEsp",
-        "tarefa_atual": "Analisar Petição Avulsa; Assinar ato; Petições não lidas",
+        "tarefa_atual": "Analisar Petição Avulsa; Lançar movimento; Petições não lidas",
         "autuacao": "28/08/2026",
         "desde": "28/08/2026",
         "dias_tramitando": 5,
@@ -7455,7 +7439,7 @@
         "processo": "0601073-62.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Fechar expediente manualmente",
+        "tarefa_atual": "Analisar determinação - Urgentes",
         "autuacao": "02/09/2026",
         "desde": "03/09/2026",
         "dias_tramitando": 0,
@@ -9300,7 +9284,7 @@
       "processo": "0601027-73.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "RepEsp",
-      "tarefa_atual": "Analisar Petição Avulsa; Assinar ato; Petições não lidas",
+      "tarefa_atual": "Analisar Petição Avulsa; Lançar movimento; Petições não lidas",
       "autuacao": "28/08/2026",
       "desde": "28/08/2026",
       "dias_tramitando": 5,
@@ -9846,7 +9830,7 @@
       "processo": "0601073-62.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Fechar expediente manualmente",
+      "tarefa_atual": "Analisar determinação - Urgentes",
       "autuacao": "02/09/2026",
       "desde": "03/09/2026",
       "dias_tramitando": 0,
@@ -12320,7 +12304,7 @@
       "processo": "0601027-73.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "RepEsp",
-      "tarefa_atual": "Analisar Petição Avulsa; Assinar ato; Petições não lidas",
+      "tarefa_atual": "Analisar Petição Avulsa; Lançar movimento; Petições não lidas",
       "autuacao": "28/08/2026",
       "desde": "28/08/2026",
       "dias_tramitando": 5,
@@ -12866,7 +12850,7 @@
       "processo": "0601073-62.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Fechar expediente manualmente",
+      "tarefa_atual": "Analisar determinação - Urgentes",
       "autuacao": "02/09/2026",
       "desde": "03/09/2026",
       "dias_tramitando": 0,
@@ -14796,8 +14780,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "03/09/2026 11:34",
+  "publicado_em": "03/09/2026 11:35",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "db8ca80741aa6aa8a4c710f67fbb74459999c62bda1f4608b8f63e26eaa6bbd5"
+  "hash_publicacao": "4dbcab2cd7f8f32d77c9435bba4ca33fb5a6867ee235c811879f1292314d2d4f"
 }
