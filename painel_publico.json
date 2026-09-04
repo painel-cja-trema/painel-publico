@@ -12,7 +12,7 @@
       "quantidade": 48,
       "media_dias": 28.0,
       "maior_tempo": 149,
-      "urgentes": 0,
+      "urgentes": 1,
       "minutar": 5,
       "julgados": 13,
       "percentual_julgados": 20.3,
@@ -119,17 +119,17 @@
     },
     {
       "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Analisar determinação - Urgentes",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Analisar determinação; Petições não lidas",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Analisar petição avulsa de autuação; Registrar ciência por telefone ou pessoalmente",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Elaborar Documentos",
       "quantidade": 1
     },
     {
@@ -1547,6 +1547,16 @@
         "total": 1
       },
       {
+        "codigo": "analisar-determinacao-urgentes",
+        "tarefa": "Analisar determinação - Urgentes",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
         "codigo": "analisar-determinacao-peticoes-nao-lidas",
         "tarefa": "Analisar determinação; Petições não lidas",
         "contagens": {
@@ -1569,16 +1579,6 @@
       {
         "codigo": "analisar-peticao-avulsa-de-autuacao-registrar-ciencia-por-telefone-ou-pessoalmente",
         "tarefa": "Analisar petição avulsa de autuação; Registrar ciência por telefone ou pessoalmente",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "elaborar-documentos",
-        "tarefa": "Elaborar Documentos",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -4508,6 +4508,22 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-determinacao-urgentes": [
+      {
+        "processo": "0601052-86.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação - Urgentes",
+        "autuacao": "31/08/2026",
+        "desde": "04/09/2026",
+        "dias_tramitando": 3,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "analisar-determinacao-peticoes-nao-lidas": [
       {
         "processo": "0601065-85.2026.6.10.0000",
@@ -4549,22 +4565,6 @@
         "autuacao": "03/09/2026",
         "desde": "03/09/2026",
         "dias_tramitando": 1,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "elaborar-documentos": [
-      {
-        "processo": "0601052-86.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Elaborar Documentos",
-        "autuacao": "31/08/2026",
-        "desde": "04/09/2026",
-        "dias_tramitando": 3,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -5385,7 +5385,7 @@
         "processo": "0601052-86.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Elaborar Documentos",
+        "tarefa_atual": "Analisar determinação - Urgentes",
         "autuacao": "31/08/2026",
         "desde": "04/09/2026",
         "dias_tramitando": 3,
@@ -9684,7 +9684,7 @@
       "processo": "0601052-86.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Elaborar Documentos",
+      "tarefa_atual": "Analisar determinação - Urgentes",
       "autuacao": "31/08/2026",
       "desde": "04/09/2026",
       "dias_tramitando": 3,
@@ -13084,7 +13084,7 @@
       "processo": "0601052-86.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Elaborar Documentos",
+      "tarefa_atual": "Analisar determinação - Urgentes",
       "autuacao": "31/08/2026",
       "desde": "04/09/2026",
       "dias_tramitando": 3,
@@ -15562,8 +15562,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "04/09/2026 11:44",
+  "publicado_em": "04/09/2026 11:45",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "050da3925f2954eaed7773a08afb94bebd73a9056b22b6542141444fcf0ea45b"
+  "hash_publicacao": "e243fb29ecff231517c31d0391caa76b77179cc51beb1a892b63ecd96c04b222"
 }
