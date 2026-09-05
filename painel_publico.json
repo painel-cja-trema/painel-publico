@@ -47,7 +47,7 @@
       "media_dias": 16.0,
       "maior_tempo": 88,
       "urgentes": 2,
-      "minutar": 3,
+      "minutar": 4,
       "julgados": 13,
       "percentual_julgados": 22.0,
       "arquivados": 14,
@@ -170,7 +170,7 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Analisar resposta do expediente",
-      "quantidade": 3
+      "quantidade": 2
     },
     {
       "gabinete": "Gab. JA 2",
@@ -200,6 +200,11 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Aguardando providências",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Analisar petição avulsa de autuação; Analisar resposta do expediente",
       "quantidade": 1
     },
     {
@@ -250,7 +255,7 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Minutar ato",
-      "quantidade": 3
+      "quantidade": 4
     },
     {
       "gabinete": "Gab. JA 3",
@@ -305,11 +310,6 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Analisar Processos",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Realizar triagem ordinários",
       "quantidade": 1
     },
     {
@@ -535,6 +535,20 @@
       "responsavel_processo": ""
     },
     {
+      "processo": "0600235-22.2026.6.10.0000",
+      "gabinete": "Gab. JA 3",
+      "classe": "RepEsp",
+      "tarefa_atual": "Minutar ato",
+      "autuacao": "13/07/2026",
+      "desde": "05/09/2026",
+      "dias_tramitando": 54,
+      "julgado": true,
+      "data_julgamento": "19/08/2026",
+      "teor": "Julgado procedente o pedido em 19/08/2026",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
+    },
+    {
       "processo": "0600944-57.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
@@ -739,8 +753,8 @@
         "total_acervo": 59,
         "contagens": {
           "TRIAGEM_URGENTE": 0,
-          "TRIAGEM_ORDINARIA": 1,
-          "MINUTAR_ATO": 3,
+          "TRIAGEM_ORDINARIA": 0,
+          "MINUTAR_ATO": 4,
           "ASSINAR_ATO": 0,
           "LANCAR_MOVIMENTACAO": 4
         }
@@ -748,8 +762,8 @@
     ],
     "totais": {
       "TRIAGEM_URGENTE": 0,
-      "TRIAGEM_ORDINARIA": 10,
-      "MINUTAR_ATO": 12,
+      "TRIAGEM_ORDINARIA": 9,
+      "MINUTAR_ATO": 13,
       "ASSINAR_ATO": 8,
       "LANCAR_MOVIMENTACAO": 4
     },
@@ -758,20 +772,6 @@
   "tarefas_criticas_processos": {
     "TRIAGEM_URGENTE": [],
     "TRIAGEM_ORDINARIA": [
-      {
-        "processo": "0600235-22.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "RepEsp",
-        "tarefa_atual": "Realizar triagem ordinários",
-        "autuacao": "13/07/2026",
-        "desde": "05/09/2026",
-        "dias_tramitando": 54,
-        "julgado": true,
-        "data_julgamento": "19/08/2026",
-        "teor": "Julgado procedente o pedido em 19/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
       {
         "processo": "0600167-72.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
@@ -925,6 +925,20 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600235-22.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "RepEsp",
+        "tarefa_atual": "Minutar ato",
+        "autuacao": "13/07/2026",
+        "desde": "05/09/2026",
+        "dias_tramitando": 54,
+        "julgado": true,
+        "data_julgamento": "19/08/2026",
+        "teor": "Julgado procedente o pedido em 19/08/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -1303,19 +1317,9 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 8,
-          "Gabinete Juiz Auxiliar 3": 3
+          "Gabinete Juiz Auxiliar 3": 4
         },
-        "total": 11
-      },
-      {
-        "codigo": "realizar-triagem-ordinarios",
-        "tarefa": "Realizar triagem ordinários",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 8,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 10
+        "total": 12
       },
       {
         "codigo": "aguarda-sessao-de-julgamento-virtual-elaborar-extrato-da-ata-pauta-provisoria-virtual-selecionar-documentos-para-acordao-gabinete",
@@ -1324,6 +1328,16 @@
           "Gabinete Juiz Auxiliar 1": 6,
           "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 2
+        },
+        "total": 9
+      },
+      {
+        "codigo": "realizar-triagem-ordinarios",
+        "tarefa": "Realizar triagem ordinários",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 8,
+          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 9
       },
@@ -1338,16 +1352,6 @@
         "total": 8
       },
       {
-        "codigo": "analisar-resposta-do-expediente",
-        "tarefa": "Analisar resposta do expediente",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 3,
-          "Gabinete Juiz Auxiliar 3": 5
-        },
-        "total": 8
-      },
-      {
         "codigo": "assinar-ato",
         "tarefa": "Assinar ato",
         "contagens": {
@@ -1356,6 +1360,16 @@
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 8
+      },
+      {
+        "codigo": "analisar-resposta-do-expediente",
+        "tarefa": "Analisar resposta do expediente",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 2,
+          "Gabinete Juiz Auxiliar 3": 5
+        },
+        "total": 7
       },
       {
         "codigo": "revisar-ato",
@@ -1534,6 +1548,16 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
+        "codigo": "analisar-peticao-avulsa-de-autuacao-analisar-resposta-do-expediente",
+        "tarefa": "Analisar petição avulsa de autuação; Analisar resposta do expediente",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
       },
@@ -3229,6 +3253,20 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0600235-22.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "RepEsp",
+        "tarefa_atual": "Minutar ato",
+        "autuacao": "13/07/2026",
+        "desde": "05/09/2026",
+        "dias_tramitando": 54,
+        "julgado": true,
+        "data_julgamento": "19/08/2026",
+        "teor": "Julgado procedente o pedido em 19/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0600944-57.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
@@ -3348,148 +3386,6 @@
         "autuacao": "02/09/2026",
         "desde": "05/09/2026",
         "dias_tramitando": 2,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "realizar-triagem-ordinarios": [
-      {
-        "processo": "0600235-22.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "RepEsp",
-        "tarefa_atual": "Realizar triagem ordinários",
-        "autuacao": "13/07/2026",
-        "desde": "05/09/2026",
-        "dias_tramitando": 54,
-        "julgado": true,
-        "data_julgamento": "19/08/2026",
-        "teor": "Julgado procedente o pedido em 19/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600167-72.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Realizar triagem ordinários",
-        "autuacao": "10/08/2026",
-        "desde": "17/08/2026",
-        "dias_tramitando": 26,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600193-70.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "ED no(a) REC no(a) Rp",
-        "tarefa_atual": "Realizar triagem ordinários",
-        "autuacao": "19/08/2026",
-        "desde": "05/09/2026",
-        "dias_tramitando": 16,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601001-75.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "RepEsp",
-        "tarefa_atual": "Realizar triagem ordinários",
-        "autuacao": "26/08/2026",
-        "desde": "03/09/2026",
-        "dias_tramitando": 9,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601029-43.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Realizar triagem ordinários",
-        "autuacao": "28/08/2026",
-        "desde": "04/09/2026",
-        "dias_tramitando": 7,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601037-20.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Realizar triagem ordinários",
-        "autuacao": "29/08/2026",
-        "desde": "04/09/2026",
-        "dias_tramitando": 6,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601049-34.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Realizar triagem ordinários",
-        "autuacao": "31/08/2026",
-        "desde": "05/09/2026",
-        "dias_tramitando": 5,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601059-78.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Realizar triagem ordinários",
-        "autuacao": "01/09/2026",
-        "desde": "05/09/2026",
-        "dias_tramitando": 4,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600245-66.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "ED no(a) REC no(a) Rp",
-        "tarefa_atual": "Realizar triagem ordinários",
-        "autuacao": "02/09/2026",
-        "desde": "04/09/2026",
-        "dias_tramitando": 3,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601063-18.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Realizar triagem ordinários",
-        "autuacao": "01/09/2026",
-        "desde": "05/09/2026",
-        "dias_tramitando": 3,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -3625,6 +3521,134 @@
         "responsavel_processo": ""
       }
     ],
+    "realizar-triagem-ordinarios": [
+      {
+        "processo": "0600167-72.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Realizar triagem ordinários",
+        "autuacao": "10/08/2026",
+        "desde": "17/08/2026",
+        "dias_tramitando": 26,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600193-70.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "ED no(a) REC no(a) Rp",
+        "tarefa_atual": "Realizar triagem ordinários",
+        "autuacao": "19/08/2026",
+        "desde": "05/09/2026",
+        "dias_tramitando": 16,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601001-75.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "RepEsp",
+        "tarefa_atual": "Realizar triagem ordinários",
+        "autuacao": "26/08/2026",
+        "desde": "03/09/2026",
+        "dias_tramitando": 9,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601029-43.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem ordinários",
+        "autuacao": "28/08/2026",
+        "desde": "04/09/2026",
+        "dias_tramitando": 7,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601037-20.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem ordinários",
+        "autuacao": "29/08/2026",
+        "desde": "04/09/2026",
+        "dias_tramitando": 6,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601049-34.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem ordinários",
+        "autuacao": "31/08/2026",
+        "desde": "05/09/2026",
+        "dias_tramitando": 5,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601059-78.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem ordinários",
+        "autuacao": "01/09/2026",
+        "desde": "05/09/2026",
+        "dias_tramitando": 4,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600245-66.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "ED no(a) REC no(a) Rp",
+        "tarefa_atual": "Realizar triagem ordinários",
+        "autuacao": "02/09/2026",
+        "desde": "04/09/2026",
+        "dias_tramitando": 3,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601063-18.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem ordinários",
+        "autuacao": "01/09/2026",
+        "desde": "05/09/2026",
+        "dias_tramitando": 3,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "analisar-processos": [
       {
         "processo": "0600134-82.2026.6.10.0000",
@@ -3732,120 +3756,6 @@
         "autuacao": "05/09/2026",
         "desde": "05/09/2026",
         "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "analisar-resposta-do-expediente": [
-      {
-        "processo": "0600181-56.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar resposta do expediente",
-        "autuacao": "12/06/2026",
-        "desde": "04/09/2026",
-        "dias_tramitando": 84,
-        "julgado": true,
-        "data_julgamento": "03/09/2026",
-        "teor": "Julgado procedente em parte do pedido em 03/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600965-33.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar resposta do expediente",
-        "autuacao": "21/08/2026",
-        "desde": "05/09/2026",
-        "dias_tramitando": 14,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600996-53.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar resposta do expediente",
-        "autuacao": "25/08/2026",
-        "desde": "04/09/2026",
-        "dias_tramitando": 10,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601028-58.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "DR",
-        "tarefa_atual": "Analisar resposta do expediente",
-        "autuacao": "28/08/2026",
-        "desde": "04/09/2026",
-        "dias_tramitando": 7,
-        "julgado": true,
-        "data_julgamento": "03/09/2026",
-        "teor": "Julgado procedente o pedido em 03/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601070-10.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar resposta do expediente",
-        "autuacao": "02/09/2026",
-        "desde": "04/09/2026",
-        "dias_tramitando": 3,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600980-02.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar resposta do expediente",
-        "autuacao": "04/09/2026",
-        "desde": "04/09/2026",
-        "dias_tramitando": 1,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601088-31.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar resposta do expediente",
-        "autuacao": "03/09/2026",
-        "desde": "05/09/2026",
-        "dias_tramitando": 1,
-        "julgado": true,
-        "data_julgamento": "05/09/2026",
-        "teor": "Extinto o processo por ausência das condições da ação em 05/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601096-08.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar resposta do expediente",
-        "autuacao": "04/09/2026",
-        "desde": "05/09/2026",
-        "dias_tramitando": 1,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -3963,6 +3873,106 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-resposta-do-expediente": [
+      {
+        "processo": "0600181-56.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar resposta do expediente",
+        "autuacao": "12/06/2026",
+        "desde": "04/09/2026",
+        "dias_tramitando": 84,
+        "julgado": true,
+        "data_julgamento": "03/09/2026",
+        "teor": "Julgado procedente em parte do pedido em 03/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600965-33.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar resposta do expediente",
+        "autuacao": "21/08/2026",
+        "desde": "05/09/2026",
+        "dias_tramitando": 14,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600996-53.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar resposta do expediente",
+        "autuacao": "25/08/2026",
+        "desde": "04/09/2026",
+        "dias_tramitando": 10,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601028-58.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "DR",
+        "tarefa_atual": "Analisar resposta do expediente",
+        "autuacao": "28/08/2026",
+        "desde": "04/09/2026",
+        "dias_tramitando": 7,
+        "julgado": true,
+        "data_julgamento": "03/09/2026",
+        "teor": "Julgado procedente o pedido em 03/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601070-10.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar resposta do expediente",
+        "autuacao": "02/09/2026",
+        "desde": "04/09/2026",
+        "dias_tramitando": 3,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600980-02.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Analisar resposta do expediente",
+        "autuacao": "04/09/2026",
+        "desde": "04/09/2026",
+        "dias_tramitando": 1,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601088-31.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar resposta do expediente",
+        "autuacao": "03/09/2026",
+        "desde": "05/09/2026",
+        "dias_tramitando": 1,
+        "julgado": true,
+        "data_julgamento": "05/09/2026",
+        "teor": "Extinto o processo por ausência das condições da ação em 05/09/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -4119,7 +4129,7 @@
         "tarefa_atual": "Aguardando providências",
         "autuacao": "21/08/2026",
         "desde": "02/09/2026",
-        "dias_tramitando": 14,
+        "dias_tramitando": 15,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -4531,6 +4541,22 @@
         "julgado": true,
         "data_julgamento": "23/08/2026",
         "teor": "Julgado procedente o pedido em 23/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-peticao-avulsa-de-autuacao-analisar-resposta-do-expediente": [
+      {
+        "processo": "0601096-08.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar petição avulsa de autuação; Analisar resposta do expediente",
+        "autuacao": "04/09/2026",
+        "desde": "04/09/2026",
+        "dias_tramitando": 1,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -6770,9 +6796,9 @@
         "processo": "0601096-08.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Analisar resposta do expediente",
+        "tarefa_atual": "Analisar petição avulsa de autuação; Analisar resposta do expediente",
         "autuacao": "04/09/2026",
-        "desde": "05/09/2026",
+        "desde": "04/09/2026",
         "dias_tramitando": 1,
         "julgado": false,
         "data_julgamento": "",
@@ -6884,7 +6910,7 @@
         "processo": "0600235-22.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "RepEsp",
-        "tarefa_atual": "Realizar triagem ordinários",
+        "tarefa_atual": "Minutar ato",
         "autuacao": "13/07/2026",
         "desde": "05/09/2026",
         "dias_tramitando": 54,
@@ -7013,7 +7039,7 @@
         "tarefa_atual": "Aguardando providências",
         "autuacao": "21/08/2026",
         "desde": "02/09/2026",
-        "dias_tramitando": 14,
+        "dias_tramitando": 15,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -8393,7 +8419,7 @@
       "processo": "0600235-22.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "RepEsp",
-      "tarefa_atual": "Realizar triagem ordinários",
+      "tarefa_atual": "Minutar ato",
       "autuacao": "13/07/2026",
       "desde": "05/09/2026",
       "dias_tramitando": 54,
@@ -8746,7 +8772,7 @@
       "tarefa_atual": "Aguardando providências",
       "autuacao": "21/08/2026",
       "desde": "02/09/2026",
-      "dias_tramitando": 14,
+      "dias_tramitando": 15,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -10129,9 +10155,9 @@
       "processo": "0601096-08.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar resposta do expediente",
+      "tarefa_atual": "Analisar petição avulsa de autuação; Analisar resposta do expediente",
       "autuacao": "04/09/2026",
-      "desde": "05/09/2026",
+      "desde": "04/09/2026",
       "dias_tramitando": 1,
       "julgado": false,
       "data_julgamento": "",
@@ -11883,7 +11909,7 @@
       "processo": "0600235-22.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "RepEsp",
-      "tarefa_atual": "Realizar triagem ordinários",
+      "tarefa_atual": "Minutar ato",
       "autuacao": "13/07/2026",
       "desde": "05/09/2026",
       "dias_tramitando": 54,
@@ -12236,7 +12262,7 @@
       "tarefa_atual": "Aguardando providências",
       "autuacao": "21/08/2026",
       "desde": "02/09/2026",
-      "dias_tramitando": 14,
+      "dias_tramitando": 15,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -13619,9 +13645,9 @@
       "processo": "0601096-08.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar resposta do expediente",
+      "tarefa_atual": "Analisar petição avulsa de autuação; Analisar resposta do expediente",
       "autuacao": "04/09/2026",
-      "desde": "05/09/2026",
+      "desde": "04/09/2026",
       "dias_tramitando": 1,
       "julgado": false,
       "data_julgamento": "",
@@ -15374,7 +15400,7 @@
       "processo": "0600235-22.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "RepEsp",
-      "tarefa_atual": "Realizar triagem ordinários",
+      "tarefa_atual": "Minutar ato",
       "autuacao": "13/07/2026",
       "desde": "05/09/2026",
       "dias_tramitando": 54,
@@ -15806,8 +15832,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "05/09/2026 16:25",
+  "publicado_em": "05/09/2026 16:27",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "3d410d7b6228e2bd64de1cac7ac9fb667cd1821ba6aa9aa6a9facf91a358b39d"
+  "hash_publicacao": "fb1ce023e6e494da8374e549cfa160cbc2fd9bd61e7ed0eb06e9535baaef341d"
 }
