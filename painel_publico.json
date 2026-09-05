@@ -114,7 +114,7 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições descartadas",
       "quantidade": 1
     },
     {
@@ -129,7 +129,7 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Analisar Processos; Assinar acórdão ou resolução - Gabinete; Processo julgado",
+      "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado; Processo julgado",
       "quantidade": 1
     },
     {
@@ -149,12 +149,12 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Petições descartadas; Realizar triagem urgentes",
+      "tarefa_atual": "Petições descartadas; Petições não lidas; Revisar ato",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Petições não lidas; Petições não lidas; Revisar ato",
+      "tarefa_atual": "Petições descartadas; Realizar triagem urgentes",
       "quantidade": 1
     },
     {
@@ -839,7 +839,7 @@
           "TRIAGEM_ORDINARIA": 1,
           "MINUTAR_ATO": 2,
           "ASSINAR_ATO": 0,
-          "LANCAR_MOVIMENTACAO": 0
+          "LANCAR_MOVIMENTACAO": 1
         }
       },
       {
@@ -872,7 +872,7 @@
       "TRIAGEM_ORDINARIA": 9,
       "MINUTAR_ATO": 16,
       "ASSINAR_ATO": 1,
-      "LANCAR_MOVIMENTACAO": 6
+      "LANCAR_MOVIMENTACAO": 7
     },
     "total_acervo": 210
   },
@@ -1293,6 +1293,20 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0600155-58.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado; Processo julgado",
+        "autuacao": "19/08/2026",
+        "desde": "19/08/2026",
+        "dias_tramitando": 16,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0600173-79.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "ED no(a) REC no(a) Rp",
@@ -1476,6 +1490,16 @@
         "total": 5
       },
       {
+        "codigo": "analisar-processos-lancar-movimentos-de-julgamento-colegiado-processo-julgado",
+        "tarefa": "Analisar Processos; Lançar movimentos de julgamento colegiado; Processo julgado",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 2,
+          "Gabinete Juiz Auxiliar 3": 2
+        },
+        "total": 5
+      },
+      {
         "codigo": "minutar-relatorio-voto-e-ementa",
         "tarefa": "Minutar Relatório, Voto e Ementa",
         "contagens": {
@@ -1484,16 +1508,6 @@
           "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 5
-      },
-      {
-        "codigo": "analisar-processos-lancar-movimentos-de-julgamento-colegiado-processo-julgado",
-        "tarefa": "Analisar Processos; Lançar movimentos de julgamento colegiado; Processo julgado",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 2,
-          "Gabinete Juiz Auxiliar 3": 2
-        },
-        "total": 4
       },
       {
         "codigo": "aguarda-sessao-de-julgamento-virtual-elaborar-extrato-da-ata-pauta-provisoria-virtual-selecionar-documentos-para-acordao-gabinete",
@@ -1572,16 +1586,6 @@
           "Gabinete Juiz Auxiliar 1": 2,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 2
-      },
-      {
-        "codigo": "analisar-peticao-avulsa-analisar-resposta-do-expediente-peticoes-nao-lidas",
-        "tarefa": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 2
       },
@@ -1676,8 +1680,8 @@
         "total": 1
       },
       {
-        "codigo": "analisar-peticao-avulsa-peticoes-descartadas-peticoes-nao-lidas-processo-com-prazo-em-curso",
-        "tarefa": "Analisar Petição Avulsa; Petições descartadas; Petições não lidas; Processo com prazo em curso",
+        "codigo": "analisar-peticao-avulsa-analisar-resposta-do-expediente-peticoes-descartadas",
+        "tarefa": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições descartadas",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -1686,8 +1690,18 @@
         "total": 1
       },
       {
-        "codigo": "analisar-processos-assinar-acordao-ou-resolucao-gabinete-processo-julgado",
-        "tarefa": "Analisar Processos; Assinar acórdão ou resolução - Gabinete; Processo julgado",
+        "codigo": "analisar-peticao-avulsa-analisar-resposta-do-expediente-peticoes-nao-lidas",
+        "tarefa": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
+        "codigo": "analisar-peticao-avulsa-peticoes-descartadas-peticoes-nao-lidas-processo-com-prazo-em-curso",
+        "tarefa": "Analisar Petição Avulsa; Petições descartadas; Petições não lidas; Processo com prazo em curso",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -1736,6 +1750,16 @@
         "total": 1
       },
       {
+        "codigo": "peticoes-descartadas-peticoes-nao-lidas-revisar-ato",
+        "tarefa": "Petições descartadas; Petições não lidas; Revisar ato",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
         "codigo": "peticoes-descartadas-realizar-triagem-urgentes",
         "tarefa": "Petições descartadas; Realizar triagem urgentes",
         "contagens": {
@@ -1751,16 +1775,6 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "peticoes-nao-lidas-peticoes-nao-lidas-revisar-ato",
-        "tarefa": "Petições não lidas; Petições não lidas; Revisar ato",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -1923,7 +1937,7 @@
         "tarefa_atual": "Processo com prazo em curso",
         "autuacao": "21/08/2026",
         "desde": "04/09/2026",
-        "dias_tramitando": 13,
+        "dias_tramitando": 14,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -3965,6 +3979,78 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-processos-lancar-movimentos-de-julgamento-colegiado-processo-julgado": [
+      {
+        "processo": "0600134-82.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado; Processo julgado",
+        "autuacao": "23/07/2026",
+        "desde": "23/07/2026",
+        "dias_tramitando": 43,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600239-59.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado; Processo julgado",
+        "autuacao": "05/08/2026",
+        "desde": "05/08/2026",
+        "dias_tramitando": 30,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600155-58.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado; Processo julgado",
+        "autuacao": "19/08/2026",
+        "desde": "19/08/2026",
+        "dias_tramitando": 16,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600174-64.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "ED no(a) REC no(a) Rp",
+        "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado; Processo julgado",
+        "autuacao": "21/08/2026",
+        "desde": "21/08/2026",
+        "dias_tramitando": 14,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600192-85.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "ED no(a) REC no(a) Rp",
+        "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado; Processo julgado",
+        "autuacao": "30/08/2026",
+        "desde": "30/08/2026",
+        "dias_tramitando": 5,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "minutar-relatorio-voto-e-ementa": [
       {
         "processo": "0600187-63.2026.6.10.0000",
@@ -4030,64 +4116,6 @@
         "autuacao": "02/09/2026",
         "desde": "04/09/2026",
         "dias_tramitando": 2,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "analisar-processos-lancar-movimentos-de-julgamento-colegiado-processo-julgado": [
-      {
-        "processo": "0600134-82.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado; Processo julgado",
-        "autuacao": "23/07/2026",
-        "desde": "23/07/2026",
-        "dias_tramitando": 43,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600239-59.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado; Processo julgado",
-        "autuacao": "05/08/2026",
-        "desde": "05/08/2026",
-        "dias_tramitando": 30,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600174-64.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "ED no(a) REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado; Processo julgado",
-        "autuacao": "21/08/2026",
-        "desde": "21/08/2026",
-        "dias_tramitando": 14,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600192-85.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "ED no(a) REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado; Processo julgado",
-        "autuacao": "30/08/2026",
-        "desde": "30/08/2026",
-        "dias_tramitando": 5,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -4391,36 +4419,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-peticao-avulsa-analisar-resposta-do-expediente-peticoes-nao-lidas": [
-      {
-        "processo": "0600996-53.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas",
-        "autuacao": "25/08/2026",
-        "desde": "25/08/2026",
-        "dias_tramitando": 10,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601051-04.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "NIP",
-        "tarefa_atual": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas",
-        "autuacao": "31/08/2026",
-        "desde": "31/08/2026",
-        "dias_tramitando": 4,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "analisar-processos-lancar-movimentos-de-julgamento-colegiado-processo-julgado-selecionar-documentos-para-acordao-gabinete": [
       {
         "processo": "0600173-79.2026.6.10.0000",
@@ -4635,6 +4633,38 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-peticao-avulsa-analisar-resposta-do-expediente-peticoes-descartadas": [
+      {
+        "processo": "0601051-04.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "NIP",
+        "tarefa_atual": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições descartadas",
+        "autuacao": "31/08/2026",
+        "desde": "31/08/2026",
+        "dias_tramitando": 4,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-peticao-avulsa-analisar-resposta-do-expediente-peticoes-nao-lidas": [
+      {
+        "processo": "0600996-53.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas",
+        "autuacao": "25/08/2026",
+        "desde": "25/08/2026",
+        "dias_tramitando": 10,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "analisar-peticao-avulsa-peticoes-descartadas-peticoes-nao-lidas-processo-com-prazo-em-curso": [
       {
         "processo": "0601089-16.2026.6.10.0000",
@@ -4644,22 +4674,6 @@
         "autuacao": "03/09/2026",
         "desde": "03/09/2026",
         "dias_tramitando": 1,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "analisar-processos-assinar-acordao-ou-resolucao-gabinete-processo-julgado": [
-      {
-        "processo": "0600155-58.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos; Assinar acórdão ou resolução - Gabinete; Processo julgado",
-        "autuacao": "19/08/2026",
-        "desde": "19/08/2026",
-        "dias_tramitando": 16,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -4731,6 +4745,22 @@
         "responsavel_processo": ""
       }
     ],
+    "peticoes-descartadas-peticoes-nao-lidas-revisar-ato": [
+      {
+        "processo": "0601069-25.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Petições descartadas; Petições não lidas; Revisar ato",
+        "autuacao": "02/09/2026",
+        "desde": "02/09/2026",
+        "dias_tramitando": 2,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "peticoes-descartadas-realizar-triagem-urgentes": [
       {
         "processo": "0601033-80.2026.6.10.0000",
@@ -4756,22 +4786,6 @@
         "autuacao": "31/08/2026",
         "desde": "31/08/2026",
         "dias_tramitando": 4,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "peticoes-nao-lidas-peticoes-nao-lidas-revisar-ato": [
-      {
-        "processo": "0601069-25.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Petições não lidas; Petições não lidas; Revisar ato",
-        "autuacao": "02/09/2026",
-        "desde": "02/09/2026",
-        "dias_tramitando": 2,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -5112,7 +5126,7 @@
         "processo": "0600155-58.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos; Assinar acórdão ou resolução - Gabinete; Processo julgado",
+        "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado; Processo julgado",
         "autuacao": "19/08/2026",
         "desde": "19/08/2026",
         "dias_tramitando": 16,
@@ -5532,7 +5546,7 @@
         "processo": "0601051-04.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "NIP",
-        "tarefa_atual": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas",
+        "tarefa_atual": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições descartadas",
         "autuacao": "31/08/2026",
         "desde": "31/08/2026",
         "dias_tramitando": 4,
@@ -5616,7 +5630,7 @@
         "processo": "0601069-25.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Petições não lidas; Revisar ato",
+        "tarefa_atual": "Petições descartadas; Petições não lidas; Revisar ato",
         "autuacao": "02/09/2026",
         "desde": "02/09/2026",
         "dias_tramitando": 2,
@@ -7177,7 +7191,7 @@
         "tarefa_atual": "Processo com prazo em curso",
         "autuacao": "21/08/2026",
         "desde": "04/09/2026",
-        "dias_tramitando": 13,
+        "dias_tramitando": 14,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -8924,7 +8938,7 @@
       "tarefa_atual": "Processo com prazo em curso",
       "autuacao": "21/08/2026",
       "desde": "04/09/2026",
-      "dias_tramitando": 13,
+      "dias_tramitando": 14,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -9831,7 +9845,7 @@
       "processo": "0601051-04.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "NIP",
-      "tarefa_atual": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições descartadas",
       "autuacao": "31/08/2026",
       "desde": "31/08/2026",
       "dias_tramitando": 4,
@@ -10041,7 +10055,7 @@
       "processo": "0601069-25.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Petições não lidas; Revisar ato",
+      "tarefa_atual": "Petições descartadas; Petições não lidas; Revisar ato",
       "autuacao": "02/09/2026",
       "desde": "02/09/2026",
       "dias_tramitando": 2,
@@ -12384,7 +12398,7 @@
       "tarefa_atual": "Processo com prazo em curso",
       "autuacao": "21/08/2026",
       "desde": "04/09/2026",
-      "dias_tramitando": 13,
+      "dias_tramitando": 14,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -13291,7 +13305,7 @@
       "processo": "0601051-04.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "NIP",
-      "tarefa_atual": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições descartadas",
       "autuacao": "31/08/2026",
       "desde": "31/08/2026",
       "dias_tramitando": 4,
@@ -13501,7 +13515,7 @@
       "processo": "0601069-25.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Petições não lidas; Revisar ato",
+      "tarefa_atual": "Petições descartadas; Petições não lidas; Revisar ato",
       "autuacao": "02/09/2026",
       "desde": "02/09/2026",
       "dias_tramitando": 2,
@@ -14427,7 +14441,7 @@
       "processo": "0600155-58.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "REC no(a) Rp",
-      "tarefa_atual": "Analisar Processos; Assinar acórdão ou resolução - Gabinete; Processo julgado",
+      "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado; Processo julgado",
       "autuacao": "19/08/2026",
       "desde": "19/08/2026",
       "dias_tramitando": 16,
@@ -15856,8 +15870,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "04/09/2026 21:23",
+  "publicado_em": "04/09/2026 21:24",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "f952e183ee78ca4c935c84ee604fc9d61ba0c08b2c90eb851b96bde5f0ccbfe9"
+  "hash_publicacao": "0cea3db7e982912de4b2b09d4df147df1b1acd65131d57d562d3fa87f1972179"
 }
