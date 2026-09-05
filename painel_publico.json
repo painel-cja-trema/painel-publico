@@ -46,7 +46,7 @@
       "quantidade": 45,
       "media_dias": 16.0,
       "maior_tempo": 88,
-      "urgentes": 1,
+      "urgentes": 2,
       "minutar": 3,
       "julgados": 13,
       "percentual_julgados": 22.0,
@@ -284,6 +284,11 @@
     },
     {
       "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Analisar determinação - Urgentes",
+      "quantidade": 2
+    },
+    {
+      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Visualizar expediente DJE",
       "quantidade": 2
     },
@@ -300,16 +305,6 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Analisar Processos",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Analisar determinação - Urgentes",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Atualizar dados do processo",
       "quantidade": 1
     },
     {
@@ -1433,6 +1428,16 @@
         "total": 2
       },
       {
+        "codigo": "analisar-determinacao-urgentes",
+        "tarefa": "Analisar determinação - Urgentes",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 2
+        },
+        "total": 2
+      },
+      {
         "codigo": "fechar-expediente-manualmente",
         "tarefa": "Fechar expediente manualmente",
         "contagens": {
@@ -1525,26 +1530,6 @@
       {
         "codigo": "aguardando-julgamento-do-recurso-interno-verificar-decisao-peticao-avulsa",
         "tarefa": "Aguardando julgamento do recurso interno; Verificar Decisão - Petição Avulsa",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
-        "codigo": "analisar-determinacao-urgentes",
-        "tarefa": "Analisar determinação - Urgentes",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
-        "codigo": "atualizar-dados-do-processo",
-        "tarefa": "Atualizar dados do processo",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -3860,7 +3845,7 @@
         "tarefa_atual": "Analisar resposta do expediente",
         "autuacao": "04/09/2026",
         "desde": "05/09/2026",
-        "dias_tramitando": 0,
+        "dias_tramitando": 1,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -4276,6 +4261,36 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-determinacao-urgentes": [
+      {
+        "processo": "0600958-41.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "DR",
+        "tarefa_atual": "Analisar determinação - Urgentes",
+        "autuacao": "21/08/2026",
+        "desde": "04/09/2026",
+        "dias_tramitando": 15,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601057-11.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação - Urgentes",
+        "autuacao": "01/09/2026",
+        "desde": "05/09/2026",
+        "dias_tramitando": 4,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "fechar-expediente-manualmente": [
       {
         "processo": "0600175-49.2026.6.10.0000",
@@ -4516,38 +4531,6 @@
         "julgado": true,
         "data_julgamento": "23/08/2026",
         "teor": "Julgado procedente o pedido em 23/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "analisar-determinacao-urgentes": [
-      {
-        "processo": "0600958-41.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "DR",
-        "tarefa_atual": "Analisar determinação - Urgentes",
-        "autuacao": "21/08/2026",
-        "desde": "04/09/2026",
-        "dias_tramitando": 15,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "atualizar-dados-do-processo": [
-      {
-        "processo": "0601057-11.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Atualizar dados do processo",
-        "autuacao": "01/09/2026",
-        "desde": "05/09/2026",
-        "dias_tramitando": 4,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -6790,7 +6773,7 @@
         "tarefa_atual": "Analisar resposta do expediente",
         "autuacao": "04/09/2026",
         "desde": "05/09/2026",
-        "dias_tramitando": 0,
+        "dias_tramitando": 1,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -7461,7 +7444,7 @@
         "processo": "0601057-11.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Atualizar dados do processo",
+        "tarefa_atual": "Analisar determinação - Urgentes",
         "autuacao": "01/09/2026",
         "desde": "05/09/2026",
         "dias_tramitando": 4,
@@ -9782,7 +9765,7 @@
       "processo": "0601057-11.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Atualizar dados do processo",
+      "tarefa_atual": "Analisar determinação - Urgentes",
       "autuacao": "01/09/2026",
       "desde": "05/09/2026",
       "dias_tramitando": 4,
@@ -10149,7 +10132,7 @@
       "tarefa_atual": "Analisar resposta do expediente",
       "autuacao": "04/09/2026",
       "desde": "05/09/2026",
-      "dias_tramitando": 0,
+      "dias_tramitando": 1,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -13272,7 +13255,7 @@
       "processo": "0601057-11.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Atualizar dados do processo",
+      "tarefa_atual": "Analisar determinação - Urgentes",
       "autuacao": "01/09/2026",
       "desde": "05/09/2026",
       "dias_tramitando": 4,
@@ -13639,7 +13622,7 @@
       "tarefa_atual": "Analisar resposta do expediente",
       "autuacao": "04/09/2026",
       "desde": "05/09/2026",
-      "dias_tramitando": 0,
+      "dias_tramitando": 1,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -15823,8 +15806,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "05/09/2026 16:24",
+  "publicado_em": "05/09/2026 16:25",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "a6560b32c4fa48c6d954b35de2a3768939a0a7cc129ead9af3752247948d870a"
+  "hash_publicacao": "3d410d7b6228e2bd64de1cac7ac9fb667cd1821ba6aa9aa6a9facf91a358b39d"
 }
