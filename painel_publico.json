@@ -145,7 +145,7 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Analisar Processos",
-      "quantidade": 14
+      "quantidade": 13
     },
     {
       "gabinete": "Gab. JA 2",
@@ -165,6 +165,11 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Assinar ato",
+      "quantidade": 2
+    },
+    {
+      "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Fechar expediente manualmente",
       "quantidade": 2
     },
     {
@@ -200,11 +205,6 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Elaborar extrato da ata; Processos retirados de julgamento; Visualizar expediente DJE",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Fechar expediente manualmente",
       "quantidade": 1
     },
     {
@@ -1259,10 +1259,10 @@
         "tarefa": "Analisar Processos",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 3,
-          "Gabinete Juiz Auxiliar 2": 14,
+          "Gabinete Juiz Auxiliar 2": 13,
           "Gabinete Juiz Auxiliar 3": 1
         },
-        "total": 18
+        "total": 17
       },
       {
         "codigo": "minutar-ato",
@@ -1395,6 +1395,16 @@
         "total": 2
       },
       {
+        "codigo": "fechar-expediente-manualmente",
+        "tarefa": "Fechar expediente manualmente",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 2,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 2
+      },
+      {
         "codigo": "revisar-relatorio-voto-e-ementa",
         "tarefa": "Revisar Relatório, Voto e Ementa",
         "contagens": {
@@ -1487,16 +1497,6 @@
       {
         "codigo": "elaborar-extrato-da-ata-processos-retirados-de-julgamento-visualizar-expediente-dje",
         "tarefa": "Elaborar extrato da ata; Processos retirados de julgamento; Visualizar expediente DJE",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "fechar-expediente-manualmente",
-        "tarefa": "Fechar expediente manualmente",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -3160,20 +3160,6 @@
     ],
     "analisar-processos": [
       {
-        "processo": "0600134-82.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos",
-        "autuacao": "23/07/2026",
-        "desde": "04/09/2026",
-        "dias_tramitando": 44,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
         "processo": "0600190-18.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Ag no(a) Rp",
@@ -4404,6 +4390,36 @@
         "responsavel_processo": ""
       }
     ],
+    "fechar-expediente-manualmente": [
+      {
+        "processo": "0600175-49.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Fechar expediente manualmente",
+        "autuacao": "10/06/2026",
+        "desde": "05/09/2026",
+        "dias_tramitando": 88,
+        "julgado": true,
+        "data_julgamento": "15/07/2026",
+        "teor": "Julgado procedente o pedido em 15/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600134-82.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Fechar expediente manualmente",
+        "autuacao": "23/07/2026",
+        "desde": "06/09/2026",
+        "dias_tramitando": 44,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "revisar-relatorio-voto-e-ementa": [
       {
         "processo": "0600080-19.2026.6.10.0000",
@@ -4574,22 +4590,6 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "fechar-expediente-manualmente": [
-      {
-        "processo": "0600175-49.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Fechar expediente manualmente",
-        "autuacao": "10/06/2026",
-        "desde": "05/09/2026",
-        "dias_tramitando": 88,
-        "julgado": true,
-        "data_julgamento": "15/07/2026",
-        "teor": "Julgado procedente o pedido em 15/07/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -5839,9 +5839,9 @@
         "processo": "0600134-82.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos",
+        "tarefa_atual": "Fechar expediente manualmente",
         "autuacao": "23/07/2026",
-        "desde": "04/09/2026",
+        "desde": "06/09/2026",
         "dias_tramitando": 44,
         "julgado": false,
         "data_julgamento": "",
@@ -14305,9 +14305,9 @@
       "processo": "0600134-82.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "REC no(a) Rp",
-      "tarefa_atual": "Analisar Processos",
+      "tarefa_atual": "Fechar expediente manualmente",
       "autuacao": "23/07/2026",
-      "desde": "04/09/2026",
+      "desde": "06/09/2026",
       "dias_tramitando": 44,
       "julgado": false,
       "data_julgamento": "",
@@ -16057,8 +16057,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "06/09/2026 13:33",
+  "publicado_em": "06/09/2026 13:39",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "0d3139c9f51cee408b3e29d367b1347ea933597f14f466299b3dc1129c6be4c8"
+  "hash_publicacao": "6d7fb287009d20302c51d96aeeee630657963955112400976eea5a9ec413a55b"
 }
