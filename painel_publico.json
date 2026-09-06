@@ -46,7 +46,7 @@
       "quantidade": 46,
       "media_dias": 16.2,
       "maior_tempo": 88,
-      "urgentes": 1,
+      "urgentes": 2,
       "minutar": 4,
       "julgados": 13,
       "percentual_julgados": 21.7,
@@ -334,6 +334,11 @@
     },
     {
       "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Analisar Acórdão Assinado - SJD; Analisar Processos",
+      "quantidade": 2
+    },
+    {
+      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Analisar Processos",
       "quantidade": 2
     },
@@ -350,11 +355,6 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Aguardando julgamento do recurso interno; Verificar Decisão - Petição Avulsa",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Analisar Acórdão Assinado - SJD; Analisar Processos",
       "quantidade": 1
     },
     {
@@ -379,17 +379,12 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Analisar Petição Avulsa; Verificar Pendências",
+      "tarefa_atual": "Analisar Petição Avulsa; Realizar triagem urgentes",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Analisar Petição Avulsa; Verificar e certificar dados do processo com liminar",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado",
       "quantidade": 1
     },
     {
@@ -852,25 +847,39 @@
         "nome": "Gabinete Juiz Auxiliar 3",
         "total_acervo": 60,
         "contagens": {
-          "TRIAGEM_URGENTE": 0,
+          "TRIAGEM_URGENTE": 1,
           "TRIAGEM_ORDINARIA": 0,
           "MINUTAR_ATO": 4,
           "ASSINAR_ATO": 0,
-          "LANCAR_MOVIMENTACAO": 2
+          "LANCAR_MOVIMENTACAO": 1
         }
       }
     ],
     "totais": {
-      "TRIAGEM_URGENTE": 2,
+      "TRIAGEM_URGENTE": 3,
       "TRIAGEM_ORDINARIA": 11,
       "MINUTAR_ATO": 13,
       "ASSINAR_ATO": 4,
-      "LANCAR_MOVIMENTACAO": 3
+      "LANCAR_MOVIMENTACAO": 2
     },
     "total_acervo": 214
   },
   "tarefas_criticas_processos": {
     "TRIAGEM_URGENTE": [
+      {
+        "processo": "0601060-63.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar Petição Avulsa; Realizar triagem urgentes",
+        "autuacao": "01/09/2026",
+        "desde": "01/09/2026",
+        "dias_tramitando": 4,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
       {
         "processo": "0601087-46.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
@@ -1314,20 +1323,6 @@
         "responsavel_processo": ""
       },
       {
-        "processo": "0600174-64.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "ED no(a) REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado",
-        "autuacao": "21/08/2026",
-        "desde": "21/08/2026",
-        "dias_tramitando": 15,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
         "processo": "0600443-06.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "REC no(a) Rp",
@@ -1579,6 +1574,16 @@
         "total": 2
       },
       {
+        "codigo": "analisar-acordao-assinado-sjd-analisar-processos",
+        "tarefa": "Analisar Acórdão Assinado - SJD; Analisar Processos",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 2
+        },
+        "total": 2
+      },
+      {
         "codigo": "analisar-determinacao-urgentes",
         "tarefa": "Analisar determinação - Urgentes",
         "contagens": {
@@ -1641,16 +1646,6 @@
       {
         "codigo": "aguardando-julgamento-do-recurso-interno-verificar-decisao-peticao-avulsa",
         "tarefa": "Aguardando julgamento do recurso interno; Verificar Decisão - Petição Avulsa",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
-        "codigo": "analisar-acordao-assinado-sjd-analisar-processos",
-        "tarefa": "Analisar Acórdão Assinado - SJD; Analisar Processos",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -1749,8 +1744,8 @@
         "total": 1
       },
       {
-        "codigo": "analisar-peticao-avulsa-verificar-pendencias",
-        "tarefa": "Analisar Petição Avulsa; Verificar Pendências",
+        "codigo": "analisar-peticao-avulsa-realizar-triagem-urgentes",
+        "tarefa": "Analisar Petição Avulsa; Realizar triagem urgentes",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -1761,16 +1756,6 @@
       {
         "codigo": "analisar-peticao-avulsa-verificar-e-certificar-dados-do-processo-com-liminar",
         "tarefa": "Analisar Petição Avulsa; Verificar e certificar dados do processo com liminar",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
-        "codigo": "analisar-processos-lancar-movimentos-de-julgamento-colegiado",
-        "tarefa": "Analisar Processos; Lançar movimentos de julgamento colegiado",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -4070,12 +4055,12 @@
         "responsavel_processo": ""
       },
       {
-        "processo": "0600939-35.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "REC no(a) Rp",
+        "processo": "0600235-22.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "REC no(a) RepEsp",
         "tarefa_atual": "Minutar Relatório, Voto e Ementa",
-        "autuacao": "24/08/2026",
-        "desde": "30/08/2026",
+        "autuacao": "25/08/2026",
+        "desde": "06/09/2026",
         "dias_tramitando": 12,
         "julgado": false,
         "data_julgamento": "",
@@ -4084,13 +4069,13 @@
         "responsavel_processo": ""
       },
       {
-        "processo": "0600235-22.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "REC no(a) RepEsp",
+        "processo": "0600939-35.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "REC no(a) Rp",
         "tarefa_atual": "Minutar Relatório, Voto e Ementa",
-        "autuacao": "25/08/2026",
-        "desde": "06/09/2026",
-        "dias_tramitando": 11,
+        "autuacao": "24/08/2026",
+        "desde": "30/08/2026",
+        "dias_tramitando": 12,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -4436,6 +4421,36 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-acordao-assinado-sjd-analisar-processos": [
+      {
+        "processo": "0600174-64.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "ED no(a) REC no(a) Rp",
+        "tarefa_atual": "Analisar Acórdão Assinado - SJD; Analisar Processos",
+        "autuacao": "21/08/2026",
+        "desde": "21/08/2026",
+        "dias_tramitando": 15,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600192-85.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "ED no(a) REC no(a) Rp",
+        "tarefa_atual": "Analisar Acórdão Assinado - SJD; Analisar Processos",
+        "autuacao": "30/08/2026",
+        "desde": "30/08/2026",
+        "dias_tramitando": 6,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "analisar-determinacao-urgentes": [
       {
         "processo": "0600958-41.2026.6.10.0000",
@@ -4590,22 +4605,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-acordao-assinado-sjd-analisar-processos": [
-      {
-        "processo": "0600192-85.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "ED no(a) REC no(a) Rp",
-        "tarefa_atual": "Analisar Acórdão Assinado - SJD; Analisar Processos",
-        "autuacao": "30/08/2026",
-        "desde": "30/08/2026",
-        "dias_tramitando": 6,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "analisar-acordao-assinado-sjd-analisar-processos-selecionar-documentos-para-acordao-gabinete": [
       {
         "processo": "0600173-79.2026.6.10.0000",
@@ -4750,12 +4749,12 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-peticao-avulsa-verificar-pendencias": [
+    "analisar-peticao-avulsa-realizar-triagem-urgentes": [
       {
         "processo": "0601060-63.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Verificar Pendências",
+        "tarefa_atual": "Analisar Petição Avulsa; Realizar triagem urgentes",
         "autuacao": "01/09/2026",
         "desde": "01/09/2026",
         "dias_tramitando": 4,
@@ -4775,22 +4774,6 @@
         "autuacao": "05/09/2026",
         "desde": "05/09/2026",
         "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "analisar-processos-lancar-movimentos-de-julgamento-colegiado": [
-      {
-        "processo": "0600174-64.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "ED no(a) REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado",
-        "autuacao": "21/08/2026",
-        "desde": "21/08/2026",
-        "dias_tramitando": 15,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -7357,7 +7340,7 @@
         "processo": "0600174-64.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "ED no(a) REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado",
+        "tarefa_atual": "Analisar Acórdão Assinado - SJD; Analisar Processos",
         "autuacao": "21/08/2026",
         "desde": "21/08/2026",
         "dias_tramitando": 15,
@@ -7438,6 +7421,20 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0600235-22.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "REC no(a) RepEsp",
+        "tarefa_atual": "Minutar Relatório, Voto e Ementa",
+        "autuacao": "25/08/2026",
+        "desde": "06/09/2026",
+        "dias_tramitando": 12,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0600982-69.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "RepEsp",
@@ -7476,20 +7473,6 @@
         "julgado": true,
         "data_julgamento": "04/09/2026",
         "teor": "Julgado procedente o pedido em 04/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600235-22.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "REC no(a) RepEsp",
-        "tarefa_atual": "Minutar Relatório, Voto e Ementa",
-        "autuacao": "25/08/2026",
-        "desde": "06/09/2026",
-        "dias_tramitando": 11,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -7847,7 +7830,7 @@
         "processo": "0601060-63.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Verificar Pendências",
+        "tarefa_atual": "Analisar Petição Avulsa; Realizar triagem urgentes",
         "autuacao": "01/09/2026",
         "desde": "01/09/2026",
         "dias_tramitando": 4,
@@ -10196,7 +10179,7 @@
       "processo": "0601060-63.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Analisar Petição Avulsa; Verificar Pendências",
+      "tarefa_atual": "Analisar Petição Avulsa; Realizar triagem urgentes",
       "autuacao": "01/09/2026",
       "desde": "01/09/2026",
       "dias_tramitando": 4,
@@ -13774,7 +13757,7 @@
       "processo": "0601060-63.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Analisar Petição Avulsa; Verificar Pendências",
+      "tarefa_atual": "Analisar Petição Avulsa; Realizar triagem urgentes",
       "autuacao": "01/09/2026",
       "desde": "01/09/2026",
       "dias_tramitando": 4,
@@ -14981,7 +14964,7 @@
       "processo": "0600174-64.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "ED no(a) REC no(a) Rp",
-      "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado",
+      "tarefa_atual": "Analisar Acórdão Assinado - SJD; Analisar Processos",
       "autuacao": "21/08/2026",
       "desde": "21/08/2026",
       "dias_tramitando": 15,
@@ -15034,12 +15017,12 @@
       "responsavel_processo": ""
     },
     {
-      "processo": "0600939-35.2026.6.10.0000",
-      "gabinete": "Gab. JA 2",
-      "classe": "REC no(a) Rp",
+      "processo": "0600235-22.2026.6.10.0000",
+      "gabinete": "Gab. JA 3",
+      "classe": "REC no(a) RepEsp",
       "tarefa_atual": "Minutar Relatório, Voto e Ementa",
-      "autuacao": "24/08/2026",
-      "desde": "30/08/2026",
+      "autuacao": "25/08/2026",
+      "desde": "06/09/2026",
       "dias_tramitando": 12,
       "julgado": false,
       "data_julgamento": "",
@@ -15048,13 +15031,13 @@
       "responsavel_processo": ""
     },
     {
-      "processo": "0600235-22.2026.6.10.0000",
-      "gabinete": "Gab. JA 3",
-      "classe": "REC no(a) RepEsp",
+      "processo": "0600939-35.2026.6.10.0000",
+      "gabinete": "Gab. JA 2",
+      "classe": "REC no(a) Rp",
       "tarefa_atual": "Minutar Relatório, Voto e Ementa",
-      "autuacao": "25/08/2026",
-      "desde": "06/09/2026",
-      "dias_tramitando": 11,
+      "autuacao": "24/08/2026",
+      "desde": "30/08/2026",
+      "dias_tramitando": 12,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -16355,8 +16338,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "06/09/2026 08:35",
+  "publicado_em": "06/09/2026 08:36",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "49296f54cbdc99df78c3fe7a203ab948f6d16beb839a612e667bd906fdf10aa7"
+  "hash_publicacao": "6f288c6dcc0e863e4ce1a2545760988bb0226050166c277c89d6c3b815c1a498"
 }
