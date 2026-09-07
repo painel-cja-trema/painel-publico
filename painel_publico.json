@@ -70,7 +70,7 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Lançar movimento",
-      "quantidade": 9
+      "quantidade": 10
     },
     {
       "gabinete": "Gab. JA 1",
@@ -109,11 +109,6 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Assinar ato",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Conferir Relatório, Voto e Ementa",
       "quantidade": 1
     },
@@ -135,7 +130,7 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Processo com prazo em curso",
-      "quantidade": 29
+      "quantidade": 28
     },
     {
       "gabinete": "Gab. JA 2",
@@ -175,6 +170,11 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Aguardando providências",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
       "quantidade": 1
     },
     {
@@ -786,8 +786,8 @@
           "TRIAGEM_URGENTE": 0,
           "TRIAGEM_ORDINARIA": 0,
           "MINUTAR_ATO": 3,
-          "ASSINAR_ATO": 1,
-          "LANCAR_MOVIMENTACAO": 9
+          "ASSINAR_ATO": 0,
+          "LANCAR_MOVIMENTACAO": 10
         }
       },
       {
@@ -819,8 +819,8 @@
       "TRIAGEM_URGENTE": 1,
       "TRIAGEM_ORDINARIA": 14,
       "MINUTAR_ATO": 18,
-      "ASSINAR_ATO": 1,
-      "LANCAR_MOVIMENTACAO": 9
+      "ASSINAR_ATO": 0,
+      "LANCAR_MOVIMENTACAO": 10
     },
     "total_acervo": 220
   },
@@ -1293,22 +1293,7 @@
         "responsavel_processo": ""
       }
     ],
-    "ASSINAR_ATO": [
-      {
-        "processo": "0601083-09.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "PetCiv",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "03/09/2026",
-        "desde": "07/09/2026",
-        "dias_tramitando": 4,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
+    "ASSINAR_ATO": [],
     "LANCAR_MOVIMENTACAO": [
       {
         "processo": "0600151-21.2026.6.10.0000",
@@ -1435,6 +1420,20 @@
         "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
+      },
+      {
+        "processo": "0601083-09.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "PetCiv",
+        "tarefa_atual": "Lançar movimento",
+        "autuacao": "03/09/2026",
+        "desde": "07/09/2026",
+        "dias_tramitando": 4,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
       }
     ]
   },
@@ -1468,10 +1467,10 @@
         "tarefa": "Processo com prazo em curso",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 18,
-          "Gabinete Juiz Auxiliar 2": 29,
+          "Gabinete Juiz Auxiliar 2": 28,
           "Gabinete Juiz Auxiliar 3": 10
         },
-        "total": 57
+        "total": 56
       },
       {
         "codigo": "aguardando-julgamento-do-recurso-interno",
@@ -1527,11 +1526,11 @@
         "codigo": "lancar-movimento",
         "tarefa": "Lançar movimento",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 9,
+          "Gabinete Juiz Auxiliar 1": 10,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
         },
-        "total": 9
+        "total": 10
       },
       {
         "codigo": "aguarda-julgamento-incluido-em-pauta-virtual-elaborar-extrato-da-ata-processo-incluido-em-pauta-virtual-selecionar-documentos-para-acordao-gabinete-verificar-inclusao-de-notas-orais",
@@ -1694,6 +1693,16 @@
         "total": 1
       },
       {
+        "codigo": "analisar-peticao-avulsa-peticoes-nao-lidas-processo-com-prazo-em-curso",
+        "tarefa": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
         "codigo": "analisar-determinacao-urgentes-minutar-ato-peticao-avulsa",
         "tarefa": "Analisar determinação - Urgentes; Minutar ato - Petição avulsa",
         "contagens": {
@@ -1710,16 +1719,6 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
-        "codigo": "assinar-ato",
-        "tarefa": "Assinar ato",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
       },
@@ -2400,20 +2399,6 @@
         "classe": "REC no(a) Rp",
         "tarefa_atual": "Processo com prazo em curso",
         "autuacao": "04/09/2026",
-        "desde": "07/09/2026",
-        "dias_tramitando": 3,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601087-46.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Processo com prazo em curso",
-        "autuacao": "03/09/2026",
         "desde": "07/09/2026",
         "dias_tramitando": 3,
         "julgado": false,
@@ -4183,6 +4168,20 @@
         "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
+      },
+      {
+        "processo": "0601083-09.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "PetCiv",
+        "tarefa_atual": "Lançar movimento",
+        "autuacao": "03/09/2026",
+        "desde": "07/09/2026",
+        "dias_tramitando": 4,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
       }
     ],
     "aguarda-julgamento-incluido-em-pauta-virtual-elaborar-extrato-da-ata-processo-incluido-em-pauta-virtual-selecionar-documentos-para-acordao-gabinete-verificar-inclusao-de-notas-orais": [
@@ -4791,6 +4790,22 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-peticao-avulsa-peticoes-nao-lidas-processo-com-prazo-em-curso": [
+      {
+        "processo": "0601087-46.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
+        "autuacao": "03/09/2026",
+        "desde": "03/09/2026",
+        "dias_tramitando": 3,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "analisar-determinacao-urgentes-minutar-ato-peticao-avulsa": [
       {
         "processo": "0601057-11.2026.6.10.0000",
@@ -4816,22 +4831,6 @@
         "autuacao": "24/08/2026",
         "desde": "24/08/2026",
         "dias_tramitando": 13,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "assinar-ato": [
-      {
-        "processo": "0601083-09.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "PetCiv",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "03/09/2026",
-        "desde": "07/09/2026",
-        "dias_tramitando": 4,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -5724,7 +5723,7 @@
         "processo": "0601083-09.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "PetCiv",
-        "tarefa_atual": "Assinar ato",
+        "tarefa_atual": "Lançar movimento",
         "autuacao": "03/09/2026",
         "desde": "07/09/2026",
         "dias_tramitando": 4,
@@ -7042,9 +7041,9 @@
         "processo": "0601087-46.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Processo com prazo em curso",
+        "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
         "autuacao": "03/09/2026",
-        "desde": "07/09/2026",
+        "desde": "03/09/2026",
         "dias_tramitando": 3,
         "julgado": false,
         "data_julgamento": "",
@@ -10359,7 +10358,7 @@
       "processo": "0601083-09.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "PetCiv",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "autuacao": "03/09/2026",
       "desde": "07/09/2026",
       "dias_tramitando": 4,
@@ -10415,9 +10414,9 @@
       "processo": "0601087-46.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Processo com prazo em curso",
+      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
       "autuacao": "03/09/2026",
-      "desde": "07/09/2026",
+      "desde": "03/09/2026",
       "dias_tramitando": 3,
       "julgado": false,
       "data_julgamento": "",
@@ -14025,7 +14024,7 @@
       "processo": "0601083-09.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "PetCiv",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "autuacao": "03/09/2026",
       "desde": "07/09/2026",
       "dias_tramitando": 4,
@@ -14081,9 +14080,9 @@
       "processo": "0601087-46.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Processo com prazo em curso",
+      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
       "autuacao": "03/09/2026",
-      "desde": "07/09/2026",
+      "desde": "03/09/2026",
       "dias_tramitando": 3,
       "julgado": false,
       "data_julgamento": "",
@@ -16650,8 +16649,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "07/09/2026 16:28",
+  "publicado_em": "07/09/2026 16:30",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "f63667cc55d44d04c265b67b07d1988a1a88efc9a8c49c64f2a2f2031f166cbc"
+  "hash_publicacao": "fbb44bb645a7ec5cd4b69891331cf0f22b533b12a5a227e3ed5e0ae273ad44e0"
 }
