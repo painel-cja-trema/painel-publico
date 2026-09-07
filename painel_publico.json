@@ -46,7 +46,7 @@
       "quantidade": 46,
       "media_dias": 17.4,
       "maior_tempo": 90,
-      "urgentes": 2,
+      "urgentes": 3,
       "minutar": 6,
       "julgados": 15,
       "percentual_julgados": 25.0,
@@ -199,12 +199,12 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Aguardando julgamento do recurso interno",
-      "quantidade": 10
+      "tarefa_atual": "Processo com prazo em curso",
+      "quantidade": 11
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Processo com prazo em curso",
+      "tarefa_atual": "Aguardando julgamento do recurso interno",
       "quantidade": 10
     },
     {
@@ -279,11 +279,6 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Analisar petição avulsa de autuação; Processo com prazo em curso",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Elaborar Documentos",
       "quantidade": 1
     },
@@ -294,7 +289,7 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Verificar e certificar dados do processo com liminar",
+      "tarefa_atual": "Realizar triagem urgentes",
       "quantidade": 1
     }
   ],
@@ -826,7 +821,7 @@
         "nome": "Gabinete Juiz Auxiliar 3",
         "total_acervo": 60,
         "contagens": {
-          "TRIAGEM_URGENTE": 0,
+          "TRIAGEM_URGENTE": 1,
           "TRIAGEM_ORDINARIA": 0,
           "MINUTAR_ATO": 6,
           "ASSINAR_ATO": 0,
@@ -835,7 +830,7 @@
       }
     ],
     "totais": {
-      "TRIAGEM_URGENTE": 1,
+      "TRIAGEM_URGENTE": 2,
       "TRIAGEM_ORDINARIA": 13,
       "MINUTAR_ATO": 19,
       "ASSINAR_ATO": 7,
@@ -853,6 +848,20 @@
         "autuacao": "02/09/2026",
         "desde": "07/09/2026",
         "dias_tramitando": 4,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601112-59.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem urgentes",
+        "autuacao": "07/09/2026",
+        "desde": "07/09/2026",
+        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -1419,40 +1428,10 @@
     "rotulo": "Verificar e certificar dados do processo com liminar",
     "curto": "Liminares",
     "descricao": "Porta de entrada da Comissão: processos com liminar aguardando conferência/certificação inicial antes da distribuição aos gabinetes.",
-    "total": 1,
-    "processos": [
-      {
-        "processo": "0601112-59.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Verificar e certificar dados do processo com liminar",
-        "autuacao": "07/09/2026",
-        "desde": "07/09/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ]
+    "total": 0,
+    "processos": []
   },
-  "entrada_comissao_processos": [
-    {
-      "processo": "0601112-59.2026.6.10.0000",
-      "gabinete": "Gab. JA 3",
-      "classe": "Rp",
-      "tarefa_atual": "Verificar e certificar dados do processo com liminar",
-      "autuacao": "07/09/2026",
-      "desde": "07/09/2026",
-      "dias_tramitando": 0,
-      "julgado": false,
-      "data_julgamento": "",
-      "teor": "",
-      "segredo_justica": "NÃO",
-      "responsavel_processo": ""
-    }
-  ],
+  "entrada_comissao_processos": [],
   "todas_tarefas": {
     "colunas": [
       {
@@ -1475,9 +1454,9 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 17,
           "Gabinete Juiz Auxiliar 2": 20,
-          "Gabinete Juiz Auxiliar 3": 10
+          "Gabinete Juiz Auxiliar 3": 11
         },
-        "total": 47
+        "total": 48
       },
       {
         "codigo": "aguardando-julgamento-do-recurso-interno",
@@ -1640,8 +1619,8 @@
         "total": 2
       },
       {
-        "codigo": "analisar-peticao-avulsa-de-autuacao-processo-com-prazo-em-curso",
-        "tarefa": "Analisar petição avulsa de autuação; Processo com prazo em curso",
+        "codigo": "realizar-triagem-urgentes",
+        "tarefa": "Realizar triagem urgentes",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -1710,6 +1689,16 @@
         "total": 1
       },
       {
+        "codigo": "analisar-peticao-avulsa-de-autuacao-processo-com-prazo-em-curso",
+        "tarefa": "Analisar petição avulsa de autuação; Processo com prazo em curso",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
         "codigo": "conferir-relatorio-voto-e-ementa",
         "tarefa": "Conferir Relatório, Voto e Ementa",
         "contagens": {
@@ -1756,26 +1745,6 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "realizar-triagem-urgentes",
-        "tarefa": "Realizar triagem urgentes",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "verificar-e-certificar-dados-do-processo-com-liminar",
-        "tarefa": "Verificar e certificar dados do processo com liminar",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 1
       }
@@ -1935,6 +1904,20 @@
         "julgado": true,
         "data_julgamento": "04/09/2026",
         "teor": "Julgado procedente o pedido em 04/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600996-53.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Processo com prazo em curso",
+        "autuacao": "25/08/2026",
+        "desde": "06/09/2026",
+        "dias_tramitando": 12,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -4645,29 +4628,29 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-peticao-avulsa-de-autuacao-processo-com-prazo-em-curso": [
+    "realizar-triagem-urgentes": [
       {
-        "processo": "0600242-14.2026.6.10.0000",
+        "processo": "0601073-62.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Analisar petição avulsa de autuação; Processo com prazo em curso",
-        "autuacao": "16/07/2026",
-        "desde": "16/07/2026",
-        "dias_tramitando": 52,
-        "julgado": true,
-        "data_julgamento": "03/08/2026",
-        "teor": "Julgado improcedente o pedido em 03/08/2026",
+        "tarefa_atual": "Realizar triagem urgentes",
+        "autuacao": "02/09/2026",
+        "desde": "07/09/2026",
+        "dias_tramitando": 4,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
       {
-        "processo": "0600996-53.2026.6.10.0000",
+        "processo": "0601112-59.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Analisar petição avulsa de autuação; Processo com prazo em curso",
-        "autuacao": "25/08/2026",
-        "desde": "25/08/2026",
-        "dias_tramitando": 12,
+        "tarefa_atual": "Realizar triagem urgentes",
+        "autuacao": "07/09/2026",
+        "desde": "07/09/2026",
+        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -4785,6 +4768,22 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-peticao-avulsa-de-autuacao-processo-com-prazo-em-curso": [
+      {
+        "processo": "0600242-14.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar petição avulsa de autuação; Processo com prazo em curso",
+        "autuacao": "16/07/2026",
+        "desde": "16/07/2026",
+        "dias_tramitando": 52,
+        "julgado": true,
+        "data_julgamento": "03/08/2026",
+        "teor": "Julgado improcedente o pedido em 03/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "conferir-relatorio-voto-e-ementa": [
       {
         "processo": "0600238-74.2026.6.10.0000",
@@ -4858,38 +4857,6 @@
         "autuacao": "31/08/2026",
         "desde": "07/09/2026",
         "dias_tramitando": 7,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "realizar-triagem-urgentes": [
-      {
-        "processo": "0601073-62.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Realizar triagem urgentes",
-        "autuacao": "02/09/2026",
-        "desde": "07/09/2026",
-        "dias_tramitando": 4,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "verificar-e-certificar-dados-do-processo-com-liminar": [
-      {
-        "processo": "0601112-59.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Verificar e certificar dados do processo com liminar",
-        "autuacao": "07/09/2026",
-        "desde": "07/09/2026",
-        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -7442,9 +7409,9 @@
         "processo": "0600996-53.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Analisar petição avulsa de autuação; Processo com prazo em curso",
+        "tarefa_atual": "Processo com prazo em curso",
         "autuacao": "25/08/2026",
-        "desde": "25/08/2026",
+        "desde": "06/09/2026",
         "dias_tramitando": 12,
         "julgado": false,
         "data_julgamento": "",
@@ -7946,7 +7913,7 @@
         "processo": "0601112-59.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Verificar e certificar dados do processo com liminar",
+        "tarefa_atual": "Realizar triagem urgentes",
         "autuacao": "07/09/2026",
         "desde": "07/09/2026",
         "dias_tramitando": 0,
@@ -9357,9 +9324,9 @@
       "processo": "0600996-53.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Analisar petição avulsa de autuação; Processo com prazo em curso",
+      "tarefa_atual": "Processo com prazo em curso",
       "autuacao": "25/08/2026",
-      "desde": "25/08/2026",
+      "desde": "06/09/2026",
       "dias_tramitando": 12,
       "julgado": false,
       "data_julgamento": "",
@@ -10519,7 +10486,7 @@
       "processo": "0601112-59.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Verificar e certificar dados do processo com liminar",
+      "tarefa_atual": "Realizar triagem urgentes",
       "autuacao": "07/09/2026",
       "desde": "07/09/2026",
       "dias_tramitando": 0,
@@ -12995,9 +12962,9 @@
       "processo": "0600996-53.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Analisar petição avulsa de autuação; Processo com prazo em curso",
+      "tarefa_atual": "Processo com prazo em curso",
       "autuacao": "25/08/2026",
-      "desde": "25/08/2026",
+      "desde": "06/09/2026",
       "dias_tramitando": 12,
       "julgado": false,
       "data_julgamento": "",
@@ -14157,7 +14124,7 @@
       "processo": "0601112-59.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Verificar e certificar dados do processo com liminar",
+      "tarefa_atual": "Realizar triagem urgentes",
       "autuacao": "07/09/2026",
       "desde": "07/09/2026",
       "dias_tramitando": 0,
@@ -16502,8 +16469,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "07/09/2026 14:44",
+  "publicado_em": "07/09/2026 14:45",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "b681605796bedf8f010efb1fb96f6a0945f86e55eca6fdc3a4ddbc8187ed9b67"
+  "hash_publicacao": "84cacf9b881af23b90e4c17970d025aed4ab43d57eb2b80addace0a8ff22e1b8"
 }
