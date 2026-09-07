@@ -229,6 +229,11 @@
     },
     {
       "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Analisar determinação",
+      "quantidade": 11
+    },
+    {
+      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Processo com prazo em curso",
       "quantidade": 11
     },
@@ -239,22 +244,12 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Analisar determinação",
-      "quantidade": 10
-    },
-    {
-      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Analisar Processos",
       "quantidade": 6
     },
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Aguardando Manifestação do MPE",
-      "quantidade": 2
-    },
-    {
-      "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Aguardando julgamento do recurso interno; Verificar Decisão - Petição Avulsa",
       "quantidade": 2
     },
     {
@@ -295,6 +290,11 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Aguarda Sessão de Julgamento; Iniciar Acórdão - Gabinete; Processo incluído em pauta",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Aguardando julgamento do recurso interno; Verificar Decisão - Petição Avulsa",
       "quantidade": 1
     },
     {
@@ -1448,9 +1448,9 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 9,
           "Gabinete Juiz Auxiliar 2": 14,
-          "Gabinete Juiz Auxiliar 3": 10
+          "Gabinete Juiz Auxiliar 3": 11
         },
-        "total": 33
+        "total": 34
       },
       {
         "codigo": "processo-com-prazo-em-curso",
@@ -1563,16 +1563,6 @@
         "total": 2
       },
       {
-        "codigo": "aguardando-julgamento-do-recurso-interno-verificar-decisao-peticao-avulsa",
-        "tarefa": "Aguardando julgamento do recurso interno; Verificar Decisão - Petição Avulsa",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 2
-        },
-        "total": 2
-      },
-      {
         "codigo": "fechar-expediente-manualmente",
         "tarefa": "Fechar expediente manualmente",
         "contagens": {
@@ -1639,6 +1629,16 @@
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "aguardando-julgamento-do-recurso-interno-verificar-decisao-peticao-avulsa",
+        "tarefa": "Aguardando julgamento do recurso interno; Verificar Decisão - Petição Avulsa",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 1
       },
@@ -2674,6 +2674,20 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601020-81.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação",
+        "autuacao": "28/08/2026",
+        "desde": "07/09/2026",
+        "dias_tramitando": 9,
+        "julgado": true,
+        "data_julgamento": "31/08/2026",
+        "teor": "Julgado improcedente o pedido em 31/08/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -4478,36 +4492,6 @@
         "responsavel_processo": ""
       }
     ],
-    "aguardando-julgamento-do-recurso-interno-verificar-decisao-peticao-avulsa": [
-      {
-        "processo": "0600949-79.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno; Verificar Decisão - Petição Avulsa",
-        "autuacao": "18/08/2026",
-        "desde": "18/08/2026",
-        "dias_tramitando": 19,
-        "julgado": true,
-        "data_julgamento": "23/08/2026",
-        "teor": "Julgado procedente o pedido em 23/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601020-81.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno; Verificar Decisão - Petição Avulsa",
-        "autuacao": "28/08/2026",
-        "desde": "28/08/2026",
-        "dias_tramitando": 9,
-        "julgado": true,
-        "data_julgamento": "31/08/2026",
-        "teor": "Julgado improcedente o pedido em 31/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "fechar-expediente-manualmente": [
       {
         "processo": "0600175-49.2026.6.10.0000",
@@ -4658,6 +4642,22 @@
         "julgado": true,
         "data_julgamento": "09/07/2026",
         "teor": "Não conhecido o recurso de PARTIDO SOCIALISTA BRASILEIRO DIRETORIO ESTADUAL em 09/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "aguardando-julgamento-do-recurso-interno-verificar-decisao-peticao-avulsa": [
+      {
+        "processo": "0600949-79.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno; Verificar Decisão - Petição Avulsa",
+        "autuacao": "18/08/2026",
+        "desde": "18/08/2026",
+        "dias_tramitando": 19,
+        "julgado": true,
+        "data_julgamento": "23/08/2026",
+        "teor": "Julgado procedente o pedido em 23/08/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -7603,9 +7603,9 @@
         "processo": "0601020-81.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno; Verificar Decisão - Petição Avulsa",
+        "tarefa_atual": "Analisar determinação",
         "autuacao": "28/08/2026",
-        "desde": "28/08/2026",
+        "desde": "07/09/2026",
         "dias_tramitando": 9,
         "julgado": true,
         "data_julgamento": "31/08/2026",
@@ -9644,9 +9644,9 @@
       "processo": "0601020-81.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Aguardando julgamento do recurso interno; Verificar Decisão - Petição Avulsa",
+      "tarefa_atual": "Analisar determinação",
       "autuacao": "28/08/2026",
-      "desde": "28/08/2026",
+      "desde": "07/09/2026",
       "dias_tramitando": 9,
       "julgado": true,
       "data_julgamento": "31/08/2026",
@@ -13268,9 +13268,9 @@
       "processo": "0601020-81.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Aguardando julgamento do recurso interno; Verificar Decisão - Petição Avulsa",
+      "tarefa_atual": "Analisar determinação",
       "autuacao": "28/08/2026",
-      "desde": "28/08/2026",
+      "desde": "07/09/2026",
       "dias_tramitando": 9,
       "julgado": true,
       "data_julgamento": "31/08/2026",
@@ -16371,9 +16371,9 @@
       "processo": "0601020-81.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Aguardando julgamento do recurso interno; Verificar Decisão - Petição Avulsa",
+      "tarefa_atual": "Analisar determinação",
       "autuacao": "28/08/2026",
-      "desde": "28/08/2026",
+      "desde": "07/09/2026",
       "dias_tramitando": 9,
       "julgado": true,
       "data_julgamento": "31/08/2026",
@@ -16481,8 +16481,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "07/09/2026 10:28",
+  "publicado_em": "07/09/2026 10:30",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "a975b23b7b541d8273eeee06bf032a09e81a4a48d64e7234b95043304891c2c3"
+  "hash_publicacao": "f008774b532c303fca3bae999f6327340e31989713bc7a021b0c57d10e217af3"
 }
