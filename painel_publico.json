@@ -214,17 +214,17 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Analisar determinação - Urgentes",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Conferir Relatório, Voto e Ementa",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Elaborar extrato da ata; Processos retirados de julgamento; Visualizar expediente DJE",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Realizar triagem urgentes",
       "quantidade": 1
     },
     {
@@ -821,7 +821,7 @@
         "nome": "Gabinete Juiz Auxiliar 2",
         "total_acervo": 93,
         "contagens": {
-          "TRIAGEM_URGENTE": 0,
+          "TRIAGEM_URGENTE": 1,
           "TRIAGEM_ORDINARIA": 13,
           "MINUTAR_ATO": 9,
           "ASSINAR_ATO": 4,
@@ -842,7 +842,7 @@
       }
     ],
     "totais": {
-      "TRIAGEM_URGENTE": 1,
+      "TRIAGEM_URGENTE": 2,
       "TRIAGEM_ORDINARIA": 19,
       "MINUTAR_ATO": 17,
       "ASSINAR_ATO": 8,
@@ -852,6 +852,20 @@
   },
   "tarefas_criticas_processos": {
     "TRIAGEM_URGENTE": [
+      {
+        "processo": "0601073-62.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem urgentes",
+        "autuacao": "02/09/2026",
+        "desde": "07/09/2026",
+        "dias_tramitando": 4,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
       {
         "processo": "0601110-89.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
@@ -1657,16 +1671,6 @@
         "total": 2
       },
       {
-        "codigo": "analisar-determinacao-urgentes",
-        "tarefa": "Analisar determinação - Urgentes",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 2
-      },
-      {
         "codigo": "fechar-expediente-manualmente",
         "tarefa": "Fechar expediente manualmente",
         "contagens": {
@@ -1682,6 +1686,16 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 2,
           "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 2
+      },
+      {
+        "codigo": "realizar-triagem-urgentes",
+        "tarefa": "Realizar triagem urgentes",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 2
@@ -1749,6 +1763,16 @@
       {
         "codigo": "aguardando-julgamento-do-recurso-interno-verificar-decisao-peticao-avulsa",
         "tarefa": "Aguardando julgamento do recurso interno; Verificar Decisão - Petição Avulsa",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
+        "codigo": "analisar-determinacao-urgentes",
+        "tarefa": "Analisar determinação - Urgentes",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -1829,16 +1853,6 @@
       {
         "codigo": "peticoes-nao-lidas-revisar-ato",
         "tarefa": "Petições não lidas; Revisar ato",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "realizar-triagem-urgentes",
-        "tarefa": "Realizar triagem urgentes",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -4576,36 +4590,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-determinacao-urgentes": [
-      {
-        "processo": "0601073-62.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação - Urgentes",
-        "autuacao": "02/09/2026",
-        "desde": "07/09/2026",
-        "dias_tramitando": 4,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601077-02.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "RepEsp",
-        "tarefa_atual": "Analisar determinação - Urgentes",
-        "autuacao": "02/09/2026",
-        "desde": "06/09/2026",
-        "dias_tramitando": 4,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "fechar-expediente-manualmente": [
       {
         "processo": "0600175-49.2026.6.10.0000",
@@ -4659,6 +4643,36 @@
         "autuacao": "03/09/2026",
         "desde": "03/09/2026",
         "dias_tramitando": 3,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "realizar-triagem-urgentes": [
+      {
+        "processo": "0601073-62.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem urgentes",
+        "autuacao": "02/09/2026",
+        "desde": "07/09/2026",
+        "dias_tramitando": 4,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601110-89.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem urgentes",
+        "autuacao": "06/09/2026",
+        "desde": "06/09/2026",
+        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -4806,6 +4820,22 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-determinacao-urgentes": [
+      {
+        "processo": "0601077-02.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "RepEsp",
+        "tarefa_atual": "Analisar determinação - Urgentes",
+        "autuacao": "02/09/2026",
+        "desde": "06/09/2026",
+        "dias_tramitando": 4,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "analisar-determinacao-minutar-ato-peticao-avulsa": [
       {
         "processo": "0601057-11.2026.6.10.0000",
@@ -4927,22 +4957,6 @@
         "autuacao": "18/05/2026",
         "desde": "18/05/2026",
         "dias_tramitando": 111,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "realizar-triagem-urgentes": [
-      {
-        "processo": "0601110-89.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Realizar triagem urgentes",
-        "autuacao": "06/09/2026",
-        "desde": "06/09/2026",
-        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -6977,7 +6991,7 @@
         "processo": "0601073-62.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Analisar determinação - Urgentes",
+        "tarefa_atual": "Realizar triagem urgentes",
         "autuacao": "02/09/2026",
         "desde": "07/09/2026",
         "dias_tramitando": 4,
@@ -10308,7 +10322,7 @@
       "processo": "0601073-62.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação - Urgentes",
+      "tarefa_atual": "Realizar triagem urgentes",
       "autuacao": "02/09/2026",
       "desde": "07/09/2026",
       "dias_tramitando": 4,
@@ -13932,7 +13946,7 @@
       "processo": "0601073-62.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação - Urgentes",
+      "tarefa_atual": "Realizar triagem urgentes",
       "autuacao": "02/09/2026",
       "desde": "07/09/2026",
       "dias_tramitando": 4,
@@ -16529,8 +16543,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "07/09/2026 11:04",
+  "publicado_em": "07/09/2026 11:05",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "fb0cb5bbac6793508c60540b5b0d95a63a9a4cdfa9b6dfe7fcbd82191cf9b162"
+  "hash_publicacao": "39aeedc509f784972ff27aeddfaac95b853419f9e5e124928cd2a2a5c92a48fb"
 }
