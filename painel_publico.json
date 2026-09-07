@@ -60,7 +60,7 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Processo com prazo em curso",
-      "quantidade": 22
+      "quantidade": 23
     },
     {
       "gabinete": "Gab. JA 1",
@@ -110,11 +110,6 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Elaborar extrato da ata; Minutar ato; Selecionar documentos para acórdão - Gabinete",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Preparar comunicação",
       "quantidade": 1
     },
     {
@@ -169,17 +164,17 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Assinar ato",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Conferir Relatório, Voto e Ementa",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Elaborar extrato da ata; Processos retirados de julgamento; Visualizar expediente DJE",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Lançar movimento",
       "quantidade": 1
     },
     {
@@ -779,8 +774,8 @@
           "TRIAGEM_URGENTE": 1,
           "TRIAGEM_ORDINARIA": 13,
           "MINUTAR_ATO": 9,
-          "ASSINAR_ATO": 1,
-          "LANCAR_MOVIMENTACAO": 0
+          "ASSINAR_ATO": 0,
+          "LANCAR_MOVIMENTACAO": 1
         }
       },
       {
@@ -800,8 +795,8 @@
       "TRIAGEM_URGENTE": 1,
       "TRIAGEM_ORDINARIA": 13,
       "MINUTAR_ATO": 17,
-      "ASSINAR_ATO": 2,
-      "LANCAR_MOVIMENTACAO": 0
+      "ASSINAR_ATO": 1,
+      "LANCAR_MOVIMENTACAO": 1
     },
     "total_acervo": 218
   },
@@ -1260,12 +1255,14 @@
         "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
-      },
+      }
+    ],
+    "LANCAR_MOVIMENTACAO": [
       {
         "processo": "0600974-92.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
+        "tarefa_atual": "Lançar movimento",
         "autuacao": "23/08/2026",
         "desde": "07/09/2026",
         "dias_tramitando": 15,
@@ -1275,8 +1272,7 @@
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
-    ],
-    "LANCAR_MOVIMENTACAO": []
+    ]
   },
   "entrada_comissao": {
     "codigo": "LIMINAR_CERTIFICACAO",
@@ -1307,11 +1303,11 @@
         "codigo": "processo-com-prazo-em-curso",
         "tarefa": "Processo com prazo em curso",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 22,
+          "Gabinete Juiz Auxiliar 1": 23,
           "Gabinete Juiz Auxiliar 2": 29,
           "Gabinete Juiz Auxiliar 3": 11
         },
-        "total": 62
+        "total": 63
       },
       {
         "codigo": "aguardando-julgamento-do-recurso-interno",
@@ -1544,16 +1540,6 @@
         "total": 1
       },
       {
-        "codigo": "assinar-ato",
-        "tarefa": "Assinar ato",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
         "codigo": "assinar-ato-peticao-avulsa-minutar-relatorio-voto-e-ementa-peticoes-nao-lidas-peticoes-nao-lidas",
         "tarefa": "Assinar ato - Petição avulsa; Minutar Relatório, Voto e Ementa; Petições não lidas; Petições não lidas",
         "contagens": {
@@ -1584,11 +1570,11 @@
         "total": 1
       },
       {
-        "codigo": "preparar-comunicacao",
-        "tarefa": "Preparar comunicação",
+        "codigo": "lancar-movimento",
+        "tarefa": "Lançar movimento",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -1802,6 +1788,20 @@
       },
       {
         "processo": "0600972-25.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Processo com prazo em curso",
+        "autuacao": "23/08/2026",
+        "desde": "07/09/2026",
+        "dias_tramitando": 15,
+        "julgado": true,
+        "data_julgamento": "07/09/2026",
+        "teor": "Julgado procedente em parte do pedido em 07/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600973-10.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
         "tarefa_atual": "Processo com prazo em curso",
@@ -4619,22 +4619,6 @@
         "responsavel_processo": ""
       }
     ],
-    "assinar-ato": [
-      {
-        "processo": "0600974-92.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "23/08/2026",
-        "desde": "07/09/2026",
-        "dias_tramitando": 15,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "assinar-ato-peticao-avulsa-minutar-relatorio-voto-e-ementa-peticoes-nao-lidas-peticoes-nao-lidas": [
       {
         "processo": "0600080-19.2026.6.10.0000",
@@ -4683,18 +4667,18 @@
         "responsavel_processo": ""
       }
     ],
-    "preparar-comunicacao": [
+    "lancar-movimento": [
       {
-        "processo": "0600973-10.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
+        "processo": "0600974-92.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Preparar comunicação",
+        "tarefa_atual": "Lançar movimento",
         "autuacao": "23/08/2026",
         "desde": "07/09/2026",
         "dias_tramitando": 15,
-        "julgado": true,
-        "data_julgamento": "07/09/2026",
-        "teor": "Julgado procedente em parte do pedido em 07/09/2026",
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -5172,7 +5156,7 @@
         "processo": "0600973-10.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Preparar comunicação",
+        "tarefa_atual": "Processo com prazo em curso",
         "autuacao": "23/08/2026",
         "desde": "07/09/2026",
         "dias_tramitando": 15,
@@ -6266,7 +6250,7 @@
         "processo": "0600974-92.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
+        "tarefa_atual": "Lançar movimento",
         "autuacao": "23/08/2026",
         "desde": "07/09/2026",
         "dias_tramitando": 15,
@@ -9023,7 +9007,7 @@
       "processo": "0600973-10.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Preparar comunicação",
+      "tarefa_atual": "Processo com prazo em curso",
       "autuacao": "23/08/2026",
       "desde": "07/09/2026",
       "dias_tramitando": 15,
@@ -9037,7 +9021,7 @@
       "processo": "0600974-92.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "autuacao": "23/08/2026",
       "desde": "07/09/2026",
       "dias_tramitando": 15,
@@ -12661,7 +12645,7 @@
       "processo": "0600973-10.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Preparar comunicação",
+      "tarefa_atual": "Processo com prazo em curso",
       "autuacao": "23/08/2026",
       "desde": "07/09/2026",
       "dias_tramitando": 15,
@@ -12675,7 +12659,7 @@
       "processo": "0600974-92.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "autuacao": "23/08/2026",
       "desde": "07/09/2026",
       "dias_tramitando": 15,
@@ -16100,7 +16084,7 @@
       "processo": "0600973-10.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Preparar comunicação",
+      "tarefa_atual": "Processo com prazo em curso",
       "autuacao": "23/08/2026",
       "desde": "07/09/2026",
       "dias_tramitando": 15,
@@ -16420,8 +16404,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "07/09/2026 17:29",
+  "publicado_em": "07/09/2026 17:31",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "ecf3930886e41869b9741aa26d18de2d065787544d3749dbc11b9e86e8c64a96"
+  "hash_publicacao": "8e13e20683809120845d12e9a600e8943c8f75f56fa1303a5c4e5fdc7ab3cea1"
 }
