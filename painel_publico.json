@@ -26,15 +26,15 @@
       "nome": "Gabinete Juiz Auxiliar 2",
       "juiz": "Dra. Manuella Ribeiro",
       "distribuidor": "Eduardo Daniel Pereira Neto",
-      "quantidade": 66,
-      "media_dias": 30.6,
+      "quantidade": 67,
+      "media_dias": 30.3,
       "maior_tempo": 149,
       "urgentes": 0,
       "minutar": 10,
       "julgados": 30,
-      "percentual_julgados": 32.6,
+      "percentual_julgados": 32.3,
       "arquivados": 13,
-      "distribuidos": 79,
+      "distribuidos": 80,
       "cartas_precatorias": 5,
       "recursos": 32
     },
@@ -43,15 +43,15 @@
       "nome": "Gabinete Juiz Auxiliar 3",
       "juiz": "Dr. Rubem Filho",
       "distribuidor": "Danielle Cerqueira Castro",
-      "quantidade": 45,
-      "media_dias": 17.4,
+      "quantidade": 44,
+      "media_dias": 17.7,
       "maior_tempo": 89,
       "urgentes": 1,
       "minutar": 3,
       "julgados": 15,
-      "percentual_julgados": 25.4,
+      "percentual_julgados": 25.9,
       "arquivados": 16,
-      "distribuidos": 61,
+      "distribuidos": 60,
       "cartas_precatorias": 2,
       "recursos": 17
     }
@@ -224,6 +224,11 @@
     },
     {
       "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Elaborar Documentos",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Elaborar extrato da ata; Processos retirados de julgamento; Visualizar expediente DJE",
       "quantidade": 1
     },
@@ -330,11 +335,6 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Realizar triagem ordinários",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Redistribuir processo",
       "quantidade": 1
     },
     {
@@ -834,7 +834,7 @@
       {
         "gabinete": "Gab. JA 2",
         "nome": "Gabinete Juiz Auxiliar 2",
-        "total_acervo": 92,
+        "total_acervo": 93,
         "contagens": {
           "TRIAGEM_URGENTE": 0,
           "TRIAGEM_ORDINARIA": 12,
@@ -846,7 +846,7 @@
       {
         "gabinete": "Gab. JA 3",
         "nome": "Gabinete Juiz Auxiliar 3",
-        "total_acervo": 59,
+        "total_acervo": 58,
         "contagens": {
           "TRIAGEM_URGENTE": 0,
           "TRIAGEM_ORDINARIA": 2,
@@ -1630,6 +1630,16 @@
         "total": 2
       },
       {
+        "codigo": "elaborar-documentos",
+        "tarefa": "Elaborar Documentos",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 2
+      },
+      {
         "codigo": "fechar-expediente-manualmente",
         "tarefa": "Fechar expediente manualmente",
         "contagens": {
@@ -1750,16 +1760,6 @@
         "total": 1
       },
       {
-        "codigo": "elaborar-documentos",
-        "tarefa": "Elaborar Documentos",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
         "codigo": "elaborar-extrato-da-ata-minutar-ato-selecionar-documentos-para-acordao-gabinete",
         "tarefa": "Elaborar extrato da ata; Minutar ato; Selecionar documentos para acórdão - Gabinete",
         "contagens": {
@@ -1836,16 +1836,6 @@
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "redistribuir-processo",
-        "tarefa": "Redistribuir processo",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 1
       },
@@ -4561,6 +4551,36 @@
         "responsavel_processo": ""
       }
     ],
+    "elaborar-documentos": [
+      {
+        "processo": "0600958-41.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "DR",
+        "tarefa_atual": "Elaborar Documentos",
+        "autuacao": "21/08/2026",
+        "desde": "06/09/2026",
+        "dias_tramitando": 16,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601073-62.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Elaborar Documentos",
+        "autuacao": "02/09/2026",
+        "desde": "07/09/2026",
+        "dias_tramitando": 4,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "fechar-expediente-manualmente": [
       {
         "processo": "0600175-49.2026.6.10.0000",
@@ -4795,22 +4815,6 @@
         "responsavel_processo": ""
       }
     ],
-    "elaborar-documentos": [
-      {
-        "processo": "0600958-41.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "DR",
-        "tarefa_atual": "Elaborar Documentos",
-        "autuacao": "21/08/2026",
-        "desde": "06/09/2026",
-        "dias_tramitando": 16,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "elaborar-extrato-da-ata-minutar-ato-selecionar-documentos-para-acordao-gabinete": [
       {
         "processo": "0600018-62.2026.6.10.0037",
@@ -4932,22 +4936,6 @@
         "autuacao": "06/09/2026",
         "desde": "06/09/2026",
         "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "redistribuir-processo": [
-      {
-        "processo": "0601073-62.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Redistribuir processo",
-        "autuacao": "02/09/2026",
-        "desde": "07/09/2026",
-        "dias_tramitando": 4,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -6995,6 +6983,20 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0601073-62.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Elaborar Documentos",
+        "autuacao": "02/09/2026",
+        "desde": "07/09/2026",
+        "dias_tramitando": 4,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0601076-17.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
@@ -7941,20 +7943,6 @@
         "tarefa_atual": "Minutar ato",
         "autuacao": "02/09/2026",
         "desde": "05/09/2026",
-        "dias_tramitando": 4,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601073-62.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Redistribuir processo",
-        "autuacao": "02/09/2026",
-        "desde": "07/09/2026",
         "dias_tramitando": 4,
         "julgado": false,
         "data_julgamento": "",
@@ -10327,9 +10315,9 @@
     },
     {
       "processo": "0601073-62.2026.6.10.0000",
-      "gabinete": "Gab. JA 3",
+      "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Redistribuir processo",
+      "tarefa_atual": "Elaborar Documentos",
       "autuacao": "02/09/2026",
       "desde": "07/09/2026",
       "dias_tramitando": 4,
@@ -13951,9 +13939,9 @@
     },
     {
       "processo": "0601073-62.2026.6.10.0000",
-      "gabinete": "Gab. JA 3",
+      "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Redistribuir processo",
+      "tarefa_atual": "Elaborar Documentos",
       "autuacao": "02/09/2026",
       "desde": "07/09/2026",
       "dias_tramitando": 4,
@@ -16550,8 +16538,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "07/09/2026 10:43",
+  "publicado_em": "07/09/2026 10:44",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "d3e782426d4f400eb050f747187cacc682f0a64fa0bcd55788cb9176465dc865"
+  "hash_publicacao": "d5965e5bd903e57fcea31049c63ea424e532e2c0ade4b24fbb768ada85370475"
 }
