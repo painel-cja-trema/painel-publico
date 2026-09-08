@@ -1,7 +1,7 @@
 {
   "total": 157,
   "sigilosos": 0,
-  "julgados_total": 67,
+  "julgados_total": 68,
   "arquivados_total": 56,
   "comparativo": [
     {
@@ -31,8 +31,8 @@
       "maior_tempo": 151,
       "urgentes": 1,
       "minutar": 11,
-      "julgados": 30,
-      "percentual_julgados": 32.6,
+      "julgados": 31,
+      "percentual_julgados": 33.7,
       "arquivados": 17,
       "distribuidos": 82,
       "cartas_precatorias": 6,
@@ -204,11 +204,6 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Lançar movimento",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
       "quantidade": 1
     },
@@ -225,6 +220,11 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Registrar ciência por telefone ou pessoalmente",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Remeter Processos - Gabinete",
       "quantidade": 1
     },
     {
@@ -795,7 +795,7 @@
           "TRIAGEM_ORDINARIA": 12,
           "MINUTAR_ATO": 11,
           "ASSINAR_ATO": 3,
-          "LANCAR_MOVIMENTACAO": 1
+          "LANCAR_MOVIMENTACAO": 0
         }
       },
       {
@@ -816,7 +816,7 @@
       "TRIAGEM_ORDINARIA": 12,
       "MINUTAR_ATO": 17,
       "ASSINAR_ATO": 3,
-      "LANCAR_MOVIMENTACAO": 1
+      "LANCAR_MOVIMENTACAO": 0
     },
     "total_acervo": 217
   },
@@ -1291,22 +1291,7 @@
         "responsavel_processo": ""
       }
     ],
-    "LANCAR_MOVIMENTACAO": [
-      {
-        "processo": "0601001-75.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "RepEsp",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "26/08/2026",
-        "desde": "08/09/2026",
-        "dias_tramitando": 13,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ]
+    "LANCAR_MOVIMENTACAO": []
   },
   "entrada_comissao": {
     "codigo": "LIMINAR_CERTIFICACAO",
@@ -1614,16 +1599,6 @@
         "total": 1
       },
       {
-        "codigo": "lancar-movimento",
-        "tarefa": "Lançar movimento",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
         "codigo": "minutar-ato-peticoes-nao-lidas",
         "tarefa": "Minutar ato; Petições não lidas",
         "contagens": {
@@ -1666,6 +1641,16 @@
       {
         "codigo": "processo-com-prazo-em-curso-registrar-recurso",
         "tarefa": "Processo com prazo em curso; Registrar recurso",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "remeter-processos-gabinete",
+        "tarefa": "Remeter Processos - Gabinete",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -4679,22 +4664,6 @@
         "responsavel_processo": ""
       }
     ],
-    "lancar-movimento": [
-      {
-        "processo": "0601001-75.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "RepEsp",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "26/08/2026",
-        "desde": "08/09/2026",
-        "dias_tramitando": 13,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "minutar-ato-peticoes-nao-lidas": [
       {
         "processo": "0600900-38.2026.6.10.0000",
@@ -4771,6 +4740,22 @@
         "julgado": true,
         "data_julgamento": "07/09/2026",
         "teor": "Julgado procedente o pedido em 07/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "remeter-processos-gabinete": [
+      {
+        "processo": "0601001-75.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "RepEsp",
+        "tarefa_atual": "Remeter Processos - Gabinete",
+        "autuacao": "26/08/2026",
+        "desde": "08/09/2026",
+        "dias_tramitando": 13,
+        "julgado": true,
+        "data_julgamento": "08/09/2026",
+        "teor": "Julgado improcedente o pedido em 08/09/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -6454,13 +6439,13 @@
         "processo": "0601001-75.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "RepEsp",
-        "tarefa_atual": "Lançar movimento",
+        "tarefa_atual": "Remeter Processos - Gabinete",
         "autuacao": "26/08/2026",
         "desde": "08/09/2026",
         "dias_tramitando": 13,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
+        "julgado": true,
+        "data_julgamento": "08/09/2026",
+        "teor": "Julgado improcedente o pedido em 08/09/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -7856,6 +7841,14 @@
   },
   "julgados_recentes": [
     {
+      "processo": "0601001-75.2026.6.10.0000",
+      "gabinete": "Gab. JA 2",
+      "classe": "RepEsp",
+      "teor": "Julgado improcedente o pedido em 08/09/2026",
+      "data_julgamento": "08/09/2026",
+      "dias_tramitando": 13
+    },
+    {
       "processo": "0601069-25.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
@@ -8086,14 +8079,6 @@
       "teor": "Julgado procedente o pedido em 31/08/2026",
       "data_julgamento": "31/08/2026",
       "dias_tramitando": 12
-    },
-    {
-      "processo": "0601020-81.2026.6.10.0000",
-      "gabinete": "Gab. JA 3",
-      "classe": "Rp",
-      "teor": "Julgado improcedente o pedido em 31/08/2026",
-      "data_julgamento": "31/08/2026",
-      "dias_tramitando": 11
     }
   ],
   "teores": [
@@ -8162,7 +8147,7 @@
     {
       "mes": "09/2026",
       "Gab. JA 1": 10,
-      "Gab. JA 2": 8,
+      "Gab. JA 2": 9,
       "Gab. JA 3": 5
     }
   ],
@@ -9253,13 +9238,13 @@
       "processo": "0601001-75.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "RepEsp",
-      "tarefa_atual": "Lançar movimento",
+      "tarefa_atual": "Remeter Processos - Gabinete",
       "autuacao": "26/08/2026",
       "desde": "08/09/2026",
       "dias_tramitando": 13,
-      "julgado": false,
-      "data_julgamento": "",
-      "teor": "",
+      "julgado": true,
+      "data_julgamento": "08/09/2026",
+      "teor": "Julgado improcedente o pedido em 08/09/2026",
       "segredo_justica": "NÃO",
       "responsavel_processo": ""
     },
@@ -13135,13 +13120,13 @@
       "processo": "0601001-75.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "RepEsp",
-      "tarefa_atual": "Lançar movimento",
+      "tarefa_atual": "Remeter Processos - Gabinete",
       "autuacao": "26/08/2026",
       "desde": "08/09/2026",
       "dias_tramitando": 13,
-      "julgado": false,
-      "data_julgamento": "",
-      "teor": "",
+      "julgado": true,
+      "data_julgamento": "08/09/2026",
+      "teor": "Julgado improcedente o pedido em 08/09/2026",
       "segredo_justica": "NÃO",
       "responsavel_processo": ""
     },
@@ -16577,6 +16562,20 @@
       "responsavel_processo": ""
     },
     {
+      "processo": "0601001-75.2026.6.10.0000",
+      "gabinete": "Gab. JA 2",
+      "classe": "RepEsp",
+      "tarefa_atual": "Remeter Processos - Gabinete",
+      "autuacao": "26/08/2026",
+      "desde": "08/09/2026",
+      "dias_tramitando": 13,
+      "julgado": true,
+      "data_julgamento": "08/09/2026",
+      "teor": "Julgado improcedente o pedido em 08/09/2026",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
+    },
+    {
       "processo": "0601003-45.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
@@ -16774,8 +16773,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "08/09/2026 18:01",
+  "publicado_em": "08/09/2026 18:02",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "dfc5af8d1060f780b6717e467aa9a19b365005519464dbeb5a0841ea2558f6d0"
+  "hash_publicacao": "f68492c9620741594b3717e7f047ed13439cba1c514dad6d22594517bcb2b1fc"
 }
