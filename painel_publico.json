@@ -60,7 +60,7 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Processo com prazo em curso",
-      "quantidade": 17
+      "quantidade": 18
     },
     {
       "gabinete": "Gab. JA 1",
@@ -125,11 +125,6 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Conferir Relatório, Voto e Ementa",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Preparar comunicação",
       "quantidade": 1
     },
     {
@@ -244,11 +239,6 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Analisar determinação - Urgentes",
-      "quantidade": 3
-    },
-    {
-      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Minutar ato",
       "quantidade": 3
     },
@@ -265,6 +255,11 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Analisar determinação",
+      "quantidade": 2
+    },
+    {
+      "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Analisar determinação - Urgentes",
       "quantidade": 2
     },
     {
@@ -305,6 +300,11 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Minutar Relatório, Voto e Ementa",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Realizar triagem urgentes",
       "quantidade": 1
     }
   ],
@@ -822,7 +822,7 @@
         "nome": "Gabinete Juiz Auxiliar 3",
         "total_acervo": 60,
         "contagens": {
-          "TRIAGEM_URGENTE": 0,
+          "TRIAGEM_URGENTE": 1,
           "TRIAGEM_ORDINARIA": 0,
           "MINUTAR_ATO": 3,
           "ASSINAR_ATO": 0,
@@ -831,7 +831,7 @@
       }
     ],
     "totais": {
-      "TRIAGEM_URGENTE": 1,
+      "TRIAGEM_URGENTE": 2,
       "TRIAGEM_ORDINARIA": 13,
       "MINUTAR_ATO": 18,
       "ASSINAR_ATO": 7,
@@ -841,6 +841,20 @@
   },
   "tarefas_criticas_processos": {
     "TRIAGEM_URGENTE": [
+      {
+        "processo": "0601060-63.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem urgentes",
+        "autuacao": "01/09/2026",
+        "desde": "08/09/2026",
+        "dias_tramitando": 6,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
       {
         "processo": "0601117-81.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
@@ -1425,11 +1439,11 @@
         "codigo": "processo-com-prazo-em-curso",
         "tarefa": "Processo com prazo em curso",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 17,
+          "Gabinete Juiz Auxiliar 1": 18,
           "Gabinete Juiz Auxiliar 2": 18,
           "Gabinete Juiz Auxiliar 3": 16
         },
-        "total": 51
+        "total": 52
       },
       {
         "codigo": "aguardando-julgamento-do-recurso-interno",
@@ -1532,16 +1546,6 @@
         "total": 3
       },
       {
-        "codigo": "analisar-determinacao-urgentes",
-        "tarefa": "Analisar determinação - Urgentes",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 3
-        },
-        "total": 3
-      },
-      {
         "codigo": "registrar-ciencia-por-telefone-ou-pessoalmente",
         "tarefa": "Registrar ciência por telefone ou pessoalmente",
         "contagens": {
@@ -1562,12 +1566,32 @@
         "total": 2
       },
       {
+        "codigo": "analisar-determinacao-urgentes",
+        "tarefa": "Analisar determinação - Urgentes",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 2
+        },
+        "total": 2
+      },
+      {
         "codigo": "processo-com-prazo-em-curso-registrar-recurso",
         "tarefa": "Processo com prazo em curso; Registrar recurso",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 2,
           "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 2
+      },
+      {
+        "codigo": "realizar-triagem-urgentes",
+        "tarefa": "Realizar triagem urgentes",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 2
       },
@@ -1697,26 +1721,6 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "preparar-comunicacao",
-        "tarefa": "Preparar comunicação",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "realizar-triagem-urgentes",
-        "tarefa": "Realizar triagem urgentes",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -2421,6 +2425,20 @@
       {
         "processo": "0601003-45.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Processo com prazo em curso",
+        "autuacao": "08/09/2026",
+        "desde": "08/09/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601023-36.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
         "classe": "REC no(a) Rp",
         "tarefa_atual": "Processo com prazo em curso",
         "autuacao": "08/09/2026",
@@ -4413,50 +4431,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-determinacao-urgentes": [
-      {
-        "processo": "0600958-41.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "DR",
-        "tarefa_atual": "Analisar determinação - Urgentes",
-        "autuacao": "21/08/2026",
-        "desde": "08/09/2026",
-        "dias_tramitando": 18,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601060-63.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação - Urgentes",
-        "autuacao": "01/09/2026",
-        "desde": "08/09/2026",
-        "dias_tramitando": 6,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601077-02.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "RepEsp",
-        "tarefa_atual": "Analisar determinação - Urgentes",
-        "autuacao": "02/09/2026",
-        "desde": "06/09/2026",
-        "dias_tramitando": 5,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "registrar-ciencia-por-telefone-ou-pessoalmente": [
       {
         "processo": "0601099-60.2026.6.10.0000",
@@ -4531,6 +4505,36 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-determinacao-urgentes": [
+      {
+        "processo": "0600958-41.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "DR",
+        "tarefa_atual": "Analisar determinação - Urgentes",
+        "autuacao": "21/08/2026",
+        "desde": "08/09/2026",
+        "dias_tramitando": 18,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601077-02.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "RepEsp",
+        "tarefa_atual": "Analisar determinação - Urgentes",
+        "autuacao": "02/09/2026",
+        "desde": "06/09/2026",
+        "dias_tramitando": 5,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "processo-com-prazo-em-curso-registrar-recurso": [
       {
         "processo": "0600981-84.2026.6.10.0000",
@@ -4557,6 +4561,36 @@
         "julgado": true,
         "data_julgamento": "07/09/2026",
         "teor": "Julgado procedente o pedido em 07/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "realizar-triagem-urgentes": [
+      {
+        "processo": "0601060-63.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem urgentes",
+        "autuacao": "01/09/2026",
+        "desde": "08/09/2026",
+        "dias_tramitando": 6,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601117-81.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem urgentes",
+        "autuacao": "08/09/2026",
+        "desde": "08/09/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -4762,38 +4796,6 @@
         "autuacao": "18/08/2026",
         "desde": "18/08/2026",
         "dias_tramitando": 21,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "preparar-comunicacao": [
-      {
-        "processo": "0601023-36.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Preparar comunicação",
-        "autuacao": "08/09/2026",
-        "desde": "08/09/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "realizar-triagem-urgentes": [
-      {
-        "processo": "0601117-81.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Realizar triagem urgentes",
-        "autuacao": "08/09/2026",
-        "desde": "08/09/2026",
-        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -5694,7 +5696,7 @@
         "processo": "0601023-36.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Preparar comunicação",
+        "tarefa_atual": "Processo com prazo em curso",
         "autuacao": "08/09/2026",
         "desde": "08/09/2026",
         "dias_tramitando": 0,
@@ -7686,7 +7688,7 @@
         "processo": "0601060-63.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Analisar determinação - Urgentes",
+        "tarefa_atual": "Realizar triagem urgentes",
         "autuacao": "01/09/2026",
         "desde": "08/09/2026",
         "dias_tramitando": 6,
@@ -9895,7 +9897,7 @@
       "processo": "0601060-63.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação - Urgentes",
+      "tarefa_atual": "Realizar triagem urgentes",
       "autuacao": "01/09/2026",
       "desde": "08/09/2026",
       "dias_tramitando": 6,
@@ -13747,7 +13749,7 @@
       "processo": "0601060-63.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação - Urgentes",
+      "tarefa_atual": "Realizar triagem urgentes",
       "autuacao": "01/09/2026",
       "desde": "08/09/2026",
       "dias_tramitando": 6,
@@ -15490,7 +15492,7 @@
       "processo": "0601023-36.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "REC no(a) Rp",
-      "tarefa_atual": "Preparar comunicação",
+      "tarefa_atual": "Processo com prazo em curso",
       "autuacao": "08/09/2026",
       "desde": "08/09/2026",
       "dias_tramitando": 0,
@@ -16728,8 +16730,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "08/09/2026 15:11",
+  "publicado_em": "08/09/2026 15:14",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "d8ff8ba3b8c036df761c6a642c938bbc335b3545db62ec7243cbc4a82204f5aa"
+  "hash_publicacao": "773b08074c286d751a5c85a1aa7d113feb956c9084885a2a2bec7bf279694004"
 }
