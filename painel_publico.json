@@ -59,12 +59,12 @@
   "por_tarefa": [
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Analisar determinação",
-      "quantidade": 13
+      "tarefa_atual": "Aguardando julgamento do recurso interno",
+      "quantidade": 12
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Aguardando julgamento do recurso interno",
+      "tarefa_atual": "Analisar determinação",
       "quantidade": 12
     },
     {
@@ -90,6 +90,11 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Minutar ato",
+      "quantidade": 2
+    },
+    {
+      "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Realizar triagem ordinários",
       "quantidade": 2
     },
     {
@@ -143,11 +148,6 @@
       "quantidade": 1
     },
     {
-      "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Realizar triagem ordinários",
-      "quantidade": 1
-    },
-    {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Aguardando julgamento do recurso interno",
       "quantidade": 18
@@ -165,7 +165,7 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Analisar determinação",
-      "quantidade": 11
+      "quantidade": 10
     },
     {
       "gabinete": "Gab. JA 2",
@@ -239,6 +239,11 @@
     },
     {
       "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Elaborar Documentos",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Elaborar extrato da ata; Processos retirados de julgamento; Visualizar expediente DJE",
       "quantidade": 1
     },
@@ -270,7 +275,7 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Analisar determinação",
-      "quantidade": 8
+      "quantidade": 7
     },
     {
       "gabinete": "Gab. JA 3",
@@ -370,6 +375,11 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Minutar ato - Petição avulsa; Processo com prazo em curso",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Preparar comunicação",
       "quantidade": 1
     }
   ],
@@ -794,7 +804,7 @@
         "total_acervo": 62,
         "contagens": {
           "TRIAGEM_URGENTE": 1,
-          "TRIAGEM_ORDINARIA": 1,
+          "TRIAGEM_ORDINARIA": 2,
           "MINUTAR_ATO": 3,
           "ASSINAR_ATO": 1,
           "LANCAR_MOVIMENTACAO": 0
@@ -827,7 +837,7 @@
     ],
     "totais": {
       "TRIAGEM_URGENTE": 2,
-      "TRIAGEM_ORDINARIA": 15,
+      "TRIAGEM_ORDINARIA": 16,
       "MINUTAR_ATO": 13,
       "ASSINAR_ATO": 4,
       "LANCAR_MOVIMENTACAO": 0
@@ -1014,6 +1024,20 @@
         "autuacao": "02/09/2026",
         "desde": "06/09/2026",
         "dias_tramitando": 5,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600047-92.2026.6.10.0076",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem ordinários",
+        "autuacao": "03/09/2026",
+        "desde": "08/09/2026",
+        "dias_tramitando": 4,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -1370,21 +1394,21 @@
         "codigo": "analisar-determinacao",
         "tarefa": "Analisar determinação",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 13,
-          "Gabinete Juiz Auxiliar 2": 11,
-          "Gabinete Juiz Auxiliar 3": 8
+          "Gabinete Juiz Auxiliar 1": 12,
+          "Gabinete Juiz Auxiliar 2": 10,
+          "Gabinete Juiz Auxiliar 3": 7
         },
-        "total": 32
+        "total": 29
       },
       {
         "codigo": "realizar-triagem-ordinarios",
         "tarefa": "Realizar triagem ordinários",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 1": 2,
           "Gabinete Juiz Auxiliar 2": 14,
           "Gabinete Juiz Auxiliar 3": 0
         },
-        "total": 15
+        "total": 16
       },
       {
         "codigo": "analisar-processos",
@@ -1487,6 +1511,16 @@
         "total": 3
       },
       {
+        "codigo": "elaborar-documentos",
+        "tarefa": "Elaborar Documentos",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 2
+        },
+        "total": 3
+      },
+      {
         "codigo": "aguarda-sessao-de-julgamento-virtual-elaborar-extrato-da-ata-liberados-para-julgamento-pelo-gabinete-virtual-selecionar-documentos-para-acordao-gabinete",
         "tarefa": "Aguarda Sessão de Julgamento Virtual; Elaborar extrato da ata; Liberados para julgamento pelo gabinete virtual; Selecionar documentos para acórdão - Gabinete",
         "contagens": {
@@ -1527,22 +1561,22 @@
         "total": 2
       },
       {
-        "codigo": "elaborar-documentos",
-        "tarefa": "Elaborar Documentos",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 2
-        },
-        "total": 2
-      },
-      {
         "codigo": "informar-data-de-transito-em-julgado",
         "tarefa": "Informar data de trânsito em julgado",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 2
+      },
+      {
+        "codigo": "preparar-comunicacao",
+        "tarefa": "Preparar comunicação",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 2
       },
@@ -1762,16 +1796,6 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "preparar-comunicacao",
-        "tarefa": "Preparar comunicação",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -2878,20 +2902,6 @@
         "responsavel_processo": ""
       },
       {
-        "processo": "0600357-35.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "RepEsp",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "04/08/2026",
-        "desde": "07/09/2026",
-        "dias_tramitando": 34,
-        "julgado": true,
-        "data_julgamento": "28/08/2026",
-        "teor": "Não conhecido o recurso de JULIO CESAR DE SOUZA MATOS FILHO em 28/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
         "processo": "0600364-27.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
@@ -3200,20 +3210,6 @@
         "responsavel_processo": ""
       },
       {
-        "processo": "0600047-92.2026.6.10.0076",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "03/09/2026",
-        "desde": "08/09/2026",
-        "dias_tramitando": 4,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
         "processo": "0601097-90.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "CartPrecCiv",
@@ -3235,20 +3231,6 @@
         "autuacao": "05/09/2026",
         "desde": "07/09/2026",
         "dias_tramitando": 2,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601111-74.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "NIP",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "07/09/2026",
-        "desde": "08/09/2026",
-        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -3419,6 +3401,20 @@
         "autuacao": "02/09/2026",
         "desde": "06/09/2026",
         "dias_tramitando": 5,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600047-92.2026.6.10.0076",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem ordinários",
+        "autuacao": "03/09/2026",
+        "desde": "08/09/2026",
+        "dias_tramitando": 4,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -4314,6 +4310,50 @@
         "responsavel_processo": ""
       }
     ],
+    "elaborar-documentos": [
+      {
+        "processo": "0600357-35.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "RepEsp",
+        "tarefa_atual": "Elaborar Documentos",
+        "autuacao": "04/08/2026",
+        "desde": "08/09/2026",
+        "dias_tramitando": 34,
+        "julgado": true,
+        "data_julgamento": "28/08/2026",
+        "teor": "Não conhecido o recurso de JULIO CESAR DE SOUZA MATOS FILHO em 28/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600958-41.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "DR",
+        "tarefa_atual": "Elaborar Documentos",
+        "autuacao": "21/08/2026",
+        "desde": "06/09/2026",
+        "dias_tramitando": 17,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601112-59.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Elaborar Documentos",
+        "autuacao": "07/09/2026",
+        "desde": "07/09/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "aguarda-sessao-de-julgamento-virtual-elaborar-extrato-da-ata-liberados-para-julgamento-pelo-gabinete-virtual-selecionar-documentos-para-acordao-gabinete": [
       {
         "processo": "0600235-22.2026.6.10.0000",
@@ -4434,36 +4474,6 @@
         "responsavel_processo": ""
       }
     ],
-    "elaborar-documentos": [
-      {
-        "processo": "0600958-41.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "DR",
-        "tarefa_atual": "Elaborar Documentos",
-        "autuacao": "21/08/2026",
-        "desde": "06/09/2026",
-        "dias_tramitando": 17,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601112-59.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Elaborar Documentos",
-        "autuacao": "07/09/2026",
-        "desde": "07/09/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "informar-data-de-transito-em-julgado": [
       {
         "processo": "0600134-82.2026.6.10.0000",
@@ -4490,6 +4500,36 @@
         "julgado": true,
         "data_julgamento": "09/07/2026",
         "teor": "Julgado procedente o pedido em 09/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "preparar-comunicacao": [
+      {
+        "processo": "0601086-61.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "DR",
+        "tarefa_atual": "Preparar comunicação",
+        "autuacao": "03/09/2026",
+        "desde": "08/09/2026",
+        "dias_tramitando": 4,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601111-74.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "NIP",
+        "tarefa_atual": "Preparar comunicação",
+        "autuacao": "07/09/2026",
+        "desde": "08/09/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -4838,22 +4878,6 @@
         "tarefa_atual": "Petições não lidas; Realizar triagem urgentes",
         "autuacao": "03/09/2026",
         "desde": "03/09/2026",
-        "dias_tramitando": 4,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "preparar-comunicacao": [
-      {
-        "processo": "0601086-61.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "DR",
-        "tarefa_atual": "Preparar comunicação",
-        "autuacao": "03/09/2026",
-        "desde": "08/09/2026",
         "dias_tramitando": 4,
         "julgado": false,
         "data_julgamento": "",
@@ -5583,7 +5607,7 @@
         "processo": "0600047-92.2026.6.10.0076",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
+        "tarefa_atual": "Realizar triagem ordinários",
         "autuacao": "03/09/2026",
         "desde": "08/09/2026",
         "dias_tramitando": 4,
@@ -6089,9 +6113,9 @@
         "processo": "0600357-35.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "RepEsp",
-        "tarefa_atual": "Analisar determinação",
+        "tarefa_atual": "Elaborar Documentos",
         "autuacao": "04/08/2026",
-        "desde": "07/09/2026",
+        "desde": "08/09/2026",
         "dias_tramitando": 34,
         "julgado": true,
         "data_julgamento": "28/08/2026",
@@ -7827,7 +7851,7 @@
         "processo": "0601111-74.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "NIP",
-        "tarefa_atual": "Analisar determinação",
+        "tarefa_atual": "Preparar comunicação",
         "autuacao": "07/09/2026",
         "desde": "08/09/2026",
         "dias_tramitando": 0,
@@ -8762,9 +8786,9 @@
       "processo": "0600357-35.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "RepEsp",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Elaborar Documentos",
       "autuacao": "04/08/2026",
-      "desde": "07/09/2026",
+      "desde": "08/09/2026",
       "dias_tramitando": 34,
       "julgado": true,
       "data_julgamento": "28/08/2026",
@@ -10162,7 +10186,7 @@
       "processo": "0600047-92.2026.6.10.0076",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Realizar triagem ordinários",
       "autuacao": "03/09/2026",
       "desde": "08/09/2026",
       "dias_tramitando": 4,
@@ -10372,7 +10396,7 @@
       "processo": "0601111-74.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "NIP",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Preparar comunicação",
       "autuacao": "07/09/2026",
       "desde": "08/09/2026",
       "dias_tramitando": 0,
@@ -12476,9 +12500,9 @@
       "processo": "0600357-35.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "RepEsp",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Elaborar Documentos",
       "autuacao": "04/08/2026",
-      "desde": "07/09/2026",
+      "desde": "08/09/2026",
       "dias_tramitando": 34,
       "julgado": true,
       "data_julgamento": "28/08/2026",
@@ -13876,7 +13900,7 @@
       "processo": "0600047-92.2026.6.10.0076",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Realizar triagem ordinários",
       "autuacao": "03/09/2026",
       "desde": "08/09/2026",
       "dias_tramitando": 4,
@@ -14086,7 +14110,7 @@
       "processo": "0601111-74.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "NIP",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Preparar comunicação",
       "autuacao": "07/09/2026",
       "desde": "08/09/2026",
       "dias_tramitando": 0,
@@ -16013,9 +16037,9 @@
       "processo": "0600357-35.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "RepEsp",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Elaborar Documentos",
       "autuacao": "04/08/2026",
-      "desde": "07/09/2026",
+      "desde": "08/09/2026",
       "dias_tramitando": 34,
       "julgado": true,
       "data_julgamento": "28/08/2026",
@@ -16515,8 +16539,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "08/09/2026 08:26",
+  "publicado_em": "08/09/2026 08:28",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "430c44dc2f487f6b02cfd860db7cf34bbe26e3e21af9484758e31e891a67f7d7"
+  "hash_publicacao": "82f76e611fab6fe3b376bc59c9f0c3d2e9eb9cf1f77bbb180ea7abfdae09f22e"
 }
