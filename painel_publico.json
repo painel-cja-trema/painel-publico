@@ -294,12 +294,12 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
+      "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado; Processo julgado",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado; Processo julgado",
+      "tarefa_atual": "Analisar resposta do expediente; Petições não lidas",
       "quantidade": 1
     },
     {
@@ -1577,16 +1577,6 @@
         "total": 1
       },
       {
-        "codigo": "analisar-peticao-avulsa-peticoes-nao-lidas-processo-com-prazo-em-curso",
-        "tarefa": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
         "codigo": "analisar-processos-conferir-relatorio-voto-e-ementa",
         "tarefa": "Analisar Processos; Conferir Relatório, Voto e Ementa",
         "contagens": {
@@ -1623,6 +1613,16 @@
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "analisar-resposta-do-expediente-peticoes-nao-lidas",
+        "tarefa": "Analisar resposta do expediente; Petições não lidas",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 1
       },
@@ -4476,7 +4476,7 @@
         "tarefa_atual": "Conferir Relatório, Voto e Ementa",
         "autuacao": "01/09/2026",
         "desde": "07/09/2026",
-        "dias_tramitando": 7,
+        "dias_tramitando": 8,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -4624,22 +4624,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-peticao-avulsa-peticoes-nao-lidas-processo-com-prazo-em-curso": [
-      {
-        "processo": "0600222-23.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
-        "autuacao": "07/07/2026",
-        "desde": "07/07/2026",
-        "dias_tramitando": 63,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "analisar-processos-conferir-relatorio-voto-e-ementa": [
       {
         "processo": "0600080-19.2026.6.10.0000",
@@ -4697,6 +4681,22 @@
         "autuacao": "29/08/2026",
         "desde": "29/08/2026",
         "dias_tramitando": 10,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-resposta-do-expediente-peticoes-nao-lidas": [
+      {
+        "processo": "0600222-23.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar resposta do expediente; Petições não lidas",
+        "autuacao": "07/07/2026",
+        "desde": "07/07/2026",
+        "dias_tramitando": 63,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -5404,6 +5404,20 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0600159-95.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "ED no(a) REC no(a) Rp",
+        "tarefa_atual": "Conferir Relatório, Voto e Ementa",
+        "autuacao": "01/09/2026",
+        "desde": "07/09/2026",
+        "dias_tramitando": 8,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0601052-86.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
@@ -5425,20 +5439,6 @@
         "autuacao": "31/08/2026",
         "desde": "08/09/2026",
         "dias_tramitando": 8,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600159-95.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "ED no(a) REC no(a) Rp",
-        "tarefa_atual": "Conferir Relatório, Voto e Ementa",
-        "autuacao": "01/09/2026",
-        "desde": "07/09/2026",
-        "dias_tramitando": 7,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -7035,7 +7035,7 @@
         "processo": "0600222-23.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
+        "tarefa_atual": "Analisar resposta do expediente; Petições não lidas",
         "autuacao": "07/07/2026",
         "desde": "07/07/2026",
         "dias_tramitando": 63,
@@ -8530,7 +8530,7 @@
       "processo": "0600222-23.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
+      "tarefa_atual": "Analisar resposta do expediente; Petições não lidas",
       "autuacao": "07/07/2026",
       "desde": "07/07/2026",
       "dias_tramitando": 63,
@@ -12412,7 +12412,7 @@
       "processo": "0600222-23.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
+      "tarefa_atual": "Analisar resposta do expediente; Petições não lidas",
       "autuacao": "07/07/2026",
       "desde": "07/07/2026",
       "dias_tramitando": 63,
@@ -15203,10 +15203,10 @@
       "responsavel_processo": ""
     },
     {
-      "processo": "0600953-19.2026.6.10.0000",
-      "gabinete": "Gab. JA 2",
-      "classe": "REC no(a) Rp",
-      "tarefa_atual": "Realizar triagem ordinários",
+      "processo": "0600159-95.2026.6.10.0000",
+      "gabinete": "Gab. JA 1",
+      "classe": "ED no(a) REC no(a) Rp",
+      "tarefa_atual": "Conferir Relatório, Voto e Ementa",
       "autuacao": "01/09/2026",
       "desde": "07/09/2026",
       "dias_tramitando": 8,
@@ -15217,13 +15217,13 @@
       "responsavel_processo": ""
     },
     {
-      "processo": "0600159-95.2026.6.10.0000",
-      "gabinete": "Gab. JA 1",
-      "classe": "ED no(a) REC no(a) Rp",
-      "tarefa_atual": "Conferir Relatório, Voto e Ementa",
+      "processo": "0600953-19.2026.6.10.0000",
+      "gabinete": "Gab. JA 2",
+      "classe": "REC no(a) Rp",
+      "tarefa_atual": "Realizar triagem ordinários",
       "autuacao": "01/09/2026",
       "desde": "07/09/2026",
-      "dias_tramitando": 7,
+      "dias_tramitando": 8,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -16837,8 +16837,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "09/09/2026 09:21",
+  "publicado_em": "09/09/2026 09:22",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "351ece41fc189a9b82f9b50bb518aabe911ea5494b257f52448ae6a388d9d040"
+  "hash_publicacao": "1442535169d529c8c35efb5cb0a8965a16c0ba18aac66b1aa6fd5a7055bea474"
 }
