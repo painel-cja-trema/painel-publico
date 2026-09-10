@@ -9,15 +9,15 @@
       "nome": "Gabinete Juiz Auxiliar 1",
       "juiz": "Dr. Nilo Ribeiro",
       "distribuidor": "Flauberth Silva Santos",
-      "quantidade": 54,
-      "media_dias": 29.1,
+      "quantidade": 53,
+      "media_dias": 29.6,
       "maior_tempo": 155,
       "urgentes": 1,
       "minutar": 7,
       "julgados": 24,
-      "percentual_julgados": 35.3,
+      "percentual_julgados": 35.8,
       "arquivados": 20,
-      "distribuidos": 74,
+      "distribuidos": 73,
       "cartas_precatorias": 7,
       "recursos": 26
     },
@@ -43,15 +43,15 @@
       "nome": "Gabinete Juiz Auxiliar 3",
       "juiz": "Dr. Rubem Filho",
       "distribuidor": "Danielle Cerqueira Castro",
-      "quantidade": 47,
-      "media_dias": 17.7,
+      "quantidade": 48,
+      "media_dias": 17.4,
       "maior_tempo": 93,
-      "urgentes": 3,
+      "urgentes": 4,
       "minutar": 6,
       "julgados": 17,
-      "percentual_julgados": 29.3,
+      "percentual_julgados": 28.8,
       "arquivados": 22,
-      "distribuidos": 69,
+      "distribuidos": 70,
       "cartas_precatorias": 2,
       "recursos": 18
     }
@@ -155,11 +155,6 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Realizar triagem ordinários",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Redistribuir de ofício",
       "quantidade": 1
     },
     {
@@ -380,6 +375,11 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Minutar Relatório, Voto e Ementa",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Realizar triagem urgentes",
       "quantidade": 1
     },
     {
@@ -957,7 +957,7 @@
       {
         "gabinete": "Gab. JA 1",
         "nome": "Gabinete Juiz Auxiliar 1",
-        "total_acervo": 68,
+        "total_acervo": 67,
         "contagens": {
           "TRIAGEM_URGENTE": 0,
           "TRIAGEM_ORDINARIA": 1,
@@ -981,9 +981,9 @@
       {
         "gabinete": "Gab. JA 3",
         "nome": "Gabinete Juiz Auxiliar 3",
-        "total_acervo": 58,
+        "total_acervo": 59,
         "contagens": {
-          "TRIAGEM_URGENTE": 0,
+          "TRIAGEM_URGENTE": 1,
           "TRIAGEM_ORDINARIA": 0,
           "MINUTAR_ATO": 6,
           "ASSINAR_ATO": 0,
@@ -992,7 +992,7 @@
       }
     ],
     "totais": {
-      "TRIAGEM_URGENTE": 0,
+      "TRIAGEM_URGENTE": 1,
       "TRIAGEM_ORDINARIA": 12,
       "MINUTAR_ATO": 22,
       "ASSINAR_ATO": 8,
@@ -1001,7 +1001,22 @@
     "total_acervo": 220
   },
   "tarefas_criticas_processos": {
-    "TRIAGEM_URGENTE": [],
+    "TRIAGEM_URGENTE": [
+      {
+        "processo": "0601157-63.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem urgentes",
+        "autuacao": "10/09/2026",
+        "desde": "10/09/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "TRIAGEM_ORDINARIA": [
       {
         "processo": "0600263-87.2026.6.10.0000",
@@ -2044,12 +2059,12 @@
         "total": 1
       },
       {
-        "codigo": "redistribuir-de-oficio",
-        "tarefa": "Redistribuir de ofício",
+        "codigo": "realizar-triagem-urgentes",
+        "tarefa": "Realizar triagem urgentes",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
+          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 1
       },
@@ -5185,12 +5200,12 @@
         "responsavel_processo": ""
       }
     ],
-    "redistribuir-de-oficio": [
+    "realizar-triagem-urgentes": [
       {
         "processo": "0601157-63.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
+        "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Redistribuir de ofício",
+        "tarefa_atual": "Realizar triagem urgentes",
         "autuacao": "10/09/2026",
         "desde": "10/09/2026",
         "dias_tramitando": 0,
@@ -6197,20 +6212,6 @@
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
         "tarefa_atual": "Assinar ato",
-        "autuacao": "10/09/2026",
-        "desde": "10/09/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601157-63.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Redistribuir de ofício",
         "autuacao": "10/09/2026",
         "desde": "10/09/2026",
         "dias_tramitando": 0,
@@ -8343,6 +8344,20 @@
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
         "tarefa_atual": "Minutar ato",
+        "autuacao": "10/09/2026",
+        "desde": "10/09/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601157-63.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem urgentes",
         "autuacao": "10/09/2026",
         "desde": "10/09/2026",
         "dias_tramitando": 0,
@@ -11025,9 +11040,9 @@
     },
     {
       "processo": "0601157-63.2026.6.10.0000",
-      "gabinete": "Gab. JA 1",
+      "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Redistribuir de ofício",
+      "tarefa_atual": "Realizar triagem urgentes",
       "autuacao": "10/09/2026",
       "desde": "10/09/2026",
       "dias_tramitando": 0,
@@ -15179,9 +15194,9 @@
     },
     {
       "processo": "0601157-63.2026.6.10.0000",
-      "gabinete": "Gab. JA 1",
+      "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Redistribuir de ofício",
+      "tarefa_atual": "Realizar triagem urgentes",
       "autuacao": "10/09/2026",
       "desde": "10/09/2026",
       "dias_tramitando": 0,
@@ -18029,8 +18044,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "10/09/2026 14:50",
+  "publicado_em": "10/09/2026 14:51",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "c73d256b3a4ce5eb43217b319133b00379f9517c1fc28e52e1f383d380cec548"
+  "hash_publicacao": "ac07ac75b18361110c0aea54ab57c91f373f6b283a88c01f592f5040dbcf32f2"
 }
