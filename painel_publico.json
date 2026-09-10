@@ -254,11 +254,6 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Aguardando providências",
       "quantidade": 1
     },
@@ -269,17 +264,22 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Lançar movimento; Petições não lidas",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Petições não lidas; Petições não lidas; Processo com prazo em curso",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Petições não lidas; Remeter Processos - Gabinete",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Preparar comunicação",
       "quantidade": 1
     },
     {
@@ -980,7 +980,7 @@
           "TRIAGEM_ORDINARIA": 11,
           "MINUTAR_ATO": 9,
           "ASSINAR_ATO": 3,
-          "LANCAR_MOVIMENTACAO": 1
+          "LANCAR_MOVIMENTACAO": 0
         }
       },
       {
@@ -1001,7 +1001,7 @@
       "TRIAGEM_ORDINARIA": 12,
       "MINUTAR_ATO": 22,
       "ASSINAR_ATO": 9,
-      "LANCAR_MOVIMENTACAO": 1
+      "LANCAR_MOVIMENTACAO": 0
     },
     "total_acervo": 221
   },
@@ -1658,22 +1658,7 @@
         "responsavel_processo": ""
       }
     ],
-    "LANCAR_MOVIMENTACAO": [
-      {
-        "processo": "0601096-08.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Lançar movimento; Petições não lidas",
-        "autuacao": "04/09/2026",
-        "desde": "04/09/2026",
-        "dias_tramitando": 6,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ]
+    "LANCAR_MOVIMENTACAO": []
   },
   "entrada_comissao": {
     "codigo": "LIMINAR_CERTIFICACAO",
@@ -1801,16 +1786,6 @@
         "total": 6
       },
       {
-        "codigo": "aguardando-julgamento-do-recurso-interno-registrar-recurso",
-        "tarefa": "Aguardando julgamento do recurso interno; Registrar recurso",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 3
-      },
-      {
         "codigo": "aguardando-providencias",
         "tarefa": "Aguardando providências",
         "contagens": {
@@ -1867,6 +1842,16 @@
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 2
+      },
+      {
+        "codigo": "aguardando-julgamento-do-recurso-interno-registrar-recurso",
+        "tarefa": "Aguardando julgamento do recurso interno; Registrar recurso",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 2
       },
@@ -2101,16 +2086,6 @@
         "total": 1
       },
       {
-        "codigo": "lancar-movimento-peticoes-nao-lidas",
-        "tarefa": "Lançar movimento; Petições não lidas",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
         "codigo": "minutar-ato-peticoes-nao-lidas-peticoes-nao-lidas-peticoes-nao-lidas",
         "tarefa": "Minutar ato; Petições não lidas; Petições não lidas; Petições não lidas",
         "contagens": {
@@ -2141,11 +2116,31 @@
         "total": 1
       },
       {
+        "codigo": "peticoes-nao-lidas-remeter-processos-gabinete",
+        "tarefa": "Petições não lidas; Remeter Processos - Gabinete",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
         "codigo": "peticoes-nao-lidas-revisar-ato",
         "tarefa": "Petições não lidas; Revisar ato",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "preparar-comunicacao",
+        "tarefa": "Preparar comunicação",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -4500,50 +4495,6 @@
         "responsavel_processo": ""
       }
     ],
-    "aguardando-julgamento-do-recurso-interno-registrar-recurso": [
-      {
-        "processo": "0600018-62.2026.6.10.0037",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
-        "autuacao": "06/07/2026",
-        "desde": "06/07/2026",
-        "dias_tramitando": 66,
-        "julgado": true,
-        "data_julgamento": "25/08/2026",
-        "teor": "Julgado improcedente o pedido em 25/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600242-14.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
-        "autuacao": "16/07/2026",
-        "desde": "16/07/2026",
-        "dias_tramitando": 55,
-        "julgado": true,
-        "data_julgamento": "03/08/2026",
-        "teor": "Julgado improcedente o pedido em 03/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600969-70.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
-        "autuacao": "22/08/2026",
-        "desde": "22/08/2026",
-        "dias_tramitando": 19,
-        "julgado": true,
-        "data_julgamento": "29/08/2026",
-        "teor": "Julgado procedente o pedido em 29/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "aguardando-providencias": [
       {
         "processo": "0600962-78.2026.6.10.0000",
@@ -4790,6 +4741,36 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "aguardando-julgamento-do-recurso-interno-registrar-recurso": [
+      {
+        "processo": "0600018-62.2026.6.10.0037",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
+        "autuacao": "06/07/2026",
+        "desde": "06/07/2026",
+        "dias_tramitando": 66,
+        "julgado": true,
+        "data_julgamento": "25/08/2026",
+        "teor": "Julgado improcedente o pedido em 25/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600969-70.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
+        "autuacao": "22/08/2026",
+        "desde": "22/08/2026",
+        "dias_tramitando": 19,
+        "julgado": true,
+        "data_julgamento": "29/08/2026",
+        "teor": "Julgado procedente o pedido em 29/08/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -5246,22 +5227,6 @@
         "responsavel_processo": ""
       }
     ],
-    "lancar-movimento-peticoes-nao-lidas": [
-      {
-        "processo": "0601096-08.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Lançar movimento; Petições não lidas",
-        "autuacao": "04/09/2026",
-        "desde": "04/09/2026",
-        "dias_tramitando": 6,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "minutar-ato-peticoes-nao-lidas-peticoes-nao-lidas-peticoes-nao-lidas": [
       {
         "processo": "0601110-89.2026.6.10.0000",
@@ -5310,6 +5275,22 @@
         "responsavel_processo": ""
       }
     ],
+    "peticoes-nao-lidas-remeter-processos-gabinete": [
+      {
+        "processo": "0601096-08.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Petições não lidas; Remeter Processos - Gabinete",
+        "autuacao": "04/09/2026",
+        "desde": "04/09/2026",
+        "dias_tramitando": 6,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "peticoes-nao-lidas-revisar-ato": [
       {
         "processo": "0601065-85.2026.6.10.0000",
@@ -5322,6 +5303,22 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "preparar-comunicacao": [
+      {
+        "processo": "0600242-14.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Preparar comunicação",
+        "autuacao": "16/07/2026",
+        "desde": "10/09/2026",
+        "dias_tramitando": 55,
+        "julgado": true,
+        "data_julgamento": "03/08/2026",
+        "teor": "Julgado improcedente o pedido em 03/08/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -6545,9 +6542,9 @@
         "processo": "0600242-14.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
+        "tarefa_atual": "Preparar comunicação",
         "autuacao": "16/07/2026",
-        "desde": "16/07/2026",
+        "desde": "10/09/2026",
         "dias_tramitando": 55,
         "julgado": true,
         "data_julgamento": "03/08/2026",
@@ -7441,7 +7438,7 @@
         "processo": "0601096-08.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Lançar movimento; Petições não lidas",
+        "tarefa_atual": "Petições não lidas; Remeter Processos - Gabinete",
         "autuacao": "04/09/2026",
         "desde": "04/09/2026",
         "dias_tramitando": 6,
@@ -9274,9 +9271,9 @@
       "processo": "0600242-14.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
+      "tarefa_atual": "Preparar comunicação",
       "autuacao": "16/07/2026",
-      "desde": "16/07/2026",
+      "desde": "10/09/2026",
       "dias_tramitando": 55,
       "julgado": true,
       "data_julgamento": "03/08/2026",
@@ -10744,7 +10741,7 @@
       "processo": "0601096-08.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Lançar movimento; Petições não lidas",
+      "tarefa_atual": "Petições não lidas; Remeter Processos - Gabinete",
       "autuacao": "04/09/2026",
       "desde": "04/09/2026",
       "dias_tramitando": 6,
@@ -13472,9 +13469,9 @@
       "processo": "0600242-14.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
+      "tarefa_atual": "Preparar comunicação",
       "autuacao": "16/07/2026",
-      "desde": "16/07/2026",
+      "desde": "10/09/2026",
       "dias_tramitando": 55,
       "julgado": true,
       "data_julgamento": "03/08/2026",
@@ -14942,7 +14939,7 @@
       "processo": "0601096-08.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Lançar movimento; Petições não lidas",
+      "tarefa_atual": "Petições não lidas; Remeter Processos - Gabinete",
       "autuacao": "04/09/2026",
       "desde": "04/09/2026",
       "dias_tramitando": 6,
@@ -17569,9 +17566,9 @@
       "processo": "0600242-14.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
+      "tarefa_atual": "Preparar comunicação",
       "autuacao": "16/07/2026",
-      "desde": "16/07/2026",
+      "desde": "10/09/2026",
       "dias_tramitando": 55,
       "julgado": true,
       "data_julgamento": "03/08/2026",
@@ -18211,8 +18208,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "10/09/2026 16:34",
+  "publicado_em": "10/09/2026 16:36",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "c21e9e2e76bc6a1d957a965ff94cbb56e9b6f3f98eded1c33d9546fc8188a9d6"
+  "hash_publicacao": "de76c8a958b8a9355cfcd1a098f551a39c573a51e678d8d1e2361ad7009d62f0"
 }
