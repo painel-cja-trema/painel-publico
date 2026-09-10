@@ -29,7 +29,7 @@
       "quantidade": 69,
       "media_dias": 29.8,
       "maior_tempo": 152,
-      "urgentes": 1,
+      "urgentes": 2,
       "minutar": 9,
       "julgados": 35,
       "percentual_julgados": 37.2,
@@ -264,17 +264,17 @@
     },
     {
       "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Analisar determinação - Urgentes; Petições não lidas",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Petições não lidas; Petições não lidas; Processo com prazo em curso",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Petições não lidas; Remeter Processos - Gabinete",
       "quantidade": 1
     },
     {
@@ -2066,6 +2066,16 @@
         "total": 1
       },
       {
+        "codigo": "analisar-determinacao-urgentes-peticoes-nao-lidas",
+        "tarefa": "Analisar determinação - Urgentes; Petições não lidas",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
         "codigo": "analisar-resposta-do-expediente-elaborar-extrato-da-ata-selecionar-documentos-para-acordao-gabinete",
         "tarefa": "Analisar resposta do expediente; Elaborar extrato da ata; Selecionar documentos para acórdão - Gabinete",
         "contagens": {
@@ -2108,16 +2118,6 @@
       {
         "codigo": "peticoes-nao-lidas-processo-com-prazo-em-curso",
         "tarefa": "Petições não lidas; Processo com prazo em curso",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "peticoes-nao-lidas-remeter-processos-gabinete",
-        "tarefa": "Petições não lidas; Remeter Processos - Gabinete",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -5195,6 +5195,22 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-determinacao-urgentes-peticoes-nao-lidas": [
+      {
+        "processo": "0601096-08.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação - Urgentes; Petições não lidas",
+        "autuacao": "04/09/2026",
+        "desde": "04/09/2026",
+        "dias_tramitando": 6,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "analisar-resposta-do-expediente-elaborar-extrato-da-ata-selecionar-documentos-para-acordao-gabinete": [
       {
         "processo": "0600018-62.2026.6.10.0037",
@@ -5267,22 +5283,6 @@
         "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
         "autuacao": "03/09/2026",
         "desde": "03/09/2026",
-        "dias_tramitando": 6,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "peticoes-nao-lidas-remeter-processos-gabinete": [
-      {
-        "processo": "0601096-08.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Petições não lidas; Remeter Processos - Gabinete",
-        "autuacao": "04/09/2026",
-        "desde": "04/09/2026",
         "dias_tramitando": 6,
         "julgado": false,
         "data_julgamento": "",
@@ -7438,7 +7438,7 @@
         "processo": "0601096-08.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Petições não lidas; Remeter Processos - Gabinete",
+        "tarefa_atual": "Analisar determinação - Urgentes; Petições não lidas",
         "autuacao": "04/09/2026",
         "desde": "04/09/2026",
         "dias_tramitando": 6,
@@ -10741,7 +10741,7 @@
       "processo": "0601096-08.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Petições não lidas; Remeter Processos - Gabinete",
+      "tarefa_atual": "Analisar determinação - Urgentes; Petições não lidas",
       "autuacao": "04/09/2026",
       "desde": "04/09/2026",
       "dias_tramitando": 6,
@@ -14939,7 +14939,7 @@
       "processo": "0601096-08.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Petições não lidas; Remeter Processos - Gabinete",
+      "tarefa_atual": "Analisar determinação - Urgentes; Petições não lidas",
       "autuacao": "04/09/2026",
       "desde": "04/09/2026",
       "dias_tramitando": 6,
@@ -18208,8 +18208,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "10/09/2026 16:36",
+  "publicado_em": "10/09/2026 16:37",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "de76c8a958b8a9355cfcd1a098f551a39c573a51e678d8d1e2361ad7009d62f0"
+  "hash_publicacao": "4b709a569076503d323535168d8b9d3fdbc0690f64e92696022c17bf22ea76e1"
 }
