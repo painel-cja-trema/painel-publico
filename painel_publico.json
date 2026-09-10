@@ -309,11 +309,6 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Aguarda Julgamento - incluído em pauta; Iniciar Acórdão - Gabinete; Processo incluído em pauta; Verificar inclusão de notas orais",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Aguardando julgamento do recurso interno; Minutar ato - Petição avulsa; Petições não lidas",
       "quantidade": 1
     },
@@ -325,6 +320,11 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Aguardando julgamento do recurso interno; Selecionar documentos para acórdão - Gabinete",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Analisar Processos; Elaborar extrato da ata; Processo julgado; Selecionar documentos para acórdão - Gabinete; Verificar inclusão de notas orais",
       "quantidade": 1
     },
     {
@@ -1900,16 +1900,6 @@
         "total": 1
       },
       {
-        "codigo": "aguarda-julgamento-incluido-em-pauta-iniciar-acordao-gabinete-processo-incluido-em-pauta-verificar-inclusao-de-notas-orais",
-        "tarefa": "Aguarda Julgamento - incluído em pauta; Iniciar Acórdão - Gabinete; Processo incluído em pauta; Verificar inclusão de notas orais",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
         "codigo": "aguarda-sessao-de-julgamento-elaborar-extrato-da-ata-elaborar-extrato-da-ata-liberados-para-julgamento-pelo-gabinete-selecionar-documentos-para-acordao-gabinete",
         "tarefa": "Aguarda Sessão de Julgamento; Elaborar extrato da ata; Elaborar extrato da ata; Liberados para julgamento pelo gabinete; Selecionar documentos para acórdão - Gabinete",
         "contagens": {
@@ -1966,6 +1956,16 @@
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "analisar-processos-elaborar-extrato-da-ata-processo-julgado-selecionar-documentos-para-acordao-gabinete-verificar-inclusao-de-notas-orais",
+        "tarefa": "Analisar Processos; Elaborar extrato da ata; Processo julgado; Selecionar documentos para acórdão - Gabinete; Verificar inclusão de notas orais",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 1
       },
@@ -5001,22 +5001,6 @@
         "responsavel_processo": ""
       }
     ],
-    "aguarda-julgamento-incluido-em-pauta-iniciar-acordao-gabinete-processo-incluido-em-pauta-verificar-inclusao-de-notas-orais": [
-      {
-        "processo": "0600949-79.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Aguarda Julgamento - incluído em pauta; Iniciar Acórdão - Gabinete; Processo incluído em pauta; Verificar inclusão de notas orais",
-        "autuacao": "26/08/2026",
-        "desde": "26/08/2026",
-        "dias_tramitando": 15,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "aguarda-sessao-de-julgamento-elaborar-extrato-da-ata-elaborar-extrato-da-ata-liberados-para-julgamento-pelo-gabinete-selecionar-documentos-para-acordao-gabinete": [
       {
         "processo": "0600147-81.2026.6.10.0000",
@@ -5106,6 +5090,22 @@
         "autuacao": "19/08/2026",
         "desde": "19/08/2026",
         "dias_tramitando": 22,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-processos-elaborar-extrato-da-ata-processo-julgado-selecionar-documentos-para-acordao-gabinete-verificar-inclusao-de-notas-orais": [
+      {
+        "processo": "0600949-79.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Analisar Processos; Elaborar extrato da ata; Processo julgado; Selecionar documentos para acórdão - Gabinete; Verificar inclusão de notas orais",
+        "autuacao": "26/08/2026",
+        "desde": "26/08/2026",
+        "dias_tramitando": 15,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -7738,7 +7738,7 @@
         "processo": "0600949-79.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Aguarda Julgamento - incluído em pauta; Iniciar Acórdão - Gabinete; Processo incluído em pauta; Verificar inclusão de notas orais",
+        "tarefa_atual": "Analisar Processos; Elaborar extrato da ata; Processo julgado; Selecionar documentos para acórdão - Gabinete; Verificar inclusão de notas orais",
         "autuacao": "26/08/2026",
         "desde": "26/08/2026",
         "dias_tramitando": 15,
@@ -16180,7 +16180,7 @@
       "processo": "0600949-79.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "REC no(a) Rp",
-      "tarefa_atual": "Aguarda Julgamento - incluído em pauta; Iniciar Acórdão - Gabinete; Processo incluído em pauta; Verificar inclusão de notas orais",
+      "tarefa_atual": "Analisar Processos; Elaborar extrato da ata; Processo julgado; Selecionar documentos para acórdão - Gabinete; Verificar inclusão de notas orais",
       "autuacao": "26/08/2026",
       "desde": "26/08/2026",
       "dias_tramitando": 15,
@@ -18016,8 +18016,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "10/09/2026 19:38",
+  "publicado_em": "10/09/2026 19:40",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "693a9c62433395ec4e23548599f8a68f29a7e17aa84106ce4c067aa9aebc1892"
+  "hash_publicacao": "9f5a840fc2245a82554b315797596506632fc07661b1d0524390e1f563a8ee87"
 }
