@@ -204,12 +204,12 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Analisar Processos; Elaborar extrato da ata; Retificar partes; Selecionar documentos para acórdão - Gabinete",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Elaborar extrato da ata; Preparar comunicação; Retificar partes; Selecionar documentos para acórdão - Gabinete",
+      "tarefa_atual": "Assinar ato",
       "quantidade": 1
     },
     {
@@ -284,7 +284,7 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Analisar Petição Avulsa; Assinar ato - Petição avulsa; Elaborar Documentos",
+      "tarefa_atual": "Analisar Petição Avulsa; Verificar Decisão - Petição Avulsa; Verificar Pendências",
       "quantidade": 1
     },
     {
@@ -299,7 +299,7 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "quantidade": 1
     },
     {
@@ -812,8 +812,8 @@
           "TRIAGEM_URGENTE": 0,
           "TRIAGEM_ORDINARIA": 0,
           "MINUTAR_ATO": 3,
-          "ASSINAR_ATO": 2,
-          "LANCAR_MOVIMENTACAO": 0
+          "ASSINAR_ATO": 0,
+          "LANCAR_MOVIMENTACAO": 1
         }
       }
     ],
@@ -821,8 +821,8 @@
       "TRIAGEM_URGENTE": 1,
       "TRIAGEM_ORDINARIA": 14,
       "MINUTAR_ATO": 16,
-      "ASSINAR_ATO": 3,
-      "LANCAR_MOVIMENTACAO": 0
+      "ASSINAR_ATO": 1,
+      "LANCAR_MOVIMENTACAO": 1
     },
     "total_acervo": 221
   },
@@ -1269,34 +1269,6 @@
     ],
     "ASSINAR_ATO": [
       {
-        "processo": "0601057-11.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "01/09/2026",
-        "desde": "11/09/2026",
-        "dias_tramitando": 9,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601129-95.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Assinar ato - Petição avulsa; Elaborar Documentos",
-        "autuacao": "09/09/2026",
-        "desde": "09/09/2026",
-        "dias_tramitando": 1,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
         "processo": "0601142-94.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "RepEsp",
@@ -1311,7 +1283,22 @@
         "responsavel_processo": ""
       }
     ],
-    "LANCAR_MOVIMENTACAO": []
+    "LANCAR_MOVIMENTACAO": [
+      {
+        "processo": "0601057-11.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Lançar movimento",
+        "autuacao": "01/09/2026",
+        "desde": "11/09/2026",
+        "dias_tramitando": 9,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ]
   },
   "entrada_comissao": {
     "codigo": "LIMINAR_CERTIFICACAO",
@@ -1499,16 +1486,6 @@
         "total": 2
       },
       {
-        "codigo": "assinar-ato",
-        "tarefa": "Assinar ato",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 2
-      },
-      {
         "codigo": "peticoes-nao-lidas-processo-com-prazo-em-curso",
         "tarefa": "Petições não lidas; Processo com prazo em curso",
         "contagens": {
@@ -1579,8 +1556,8 @@
         "total": 1
       },
       {
-        "codigo": "analisar-peticao-avulsa-assinar-ato-peticao-avulsa-elaborar-documentos",
-        "tarefa": "Analisar Petição Avulsa; Assinar ato - Petição avulsa; Elaborar Documentos",
+        "codigo": "analisar-peticao-avulsa-verificar-decisao-peticao-avulsa-verificar-pendencias",
+        "tarefa": "Analisar Petição Avulsa; Verificar Decisão - Petição Avulsa; Verificar Pendências",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -1609,6 +1586,16 @@
         "total": 1
       },
       {
+        "codigo": "analisar-processos-elaborar-extrato-da-ata-retificar-partes-selecionar-documentos-para-acordao-gabinete",
+        "tarefa": "Analisar Processos; Elaborar extrato da ata; Retificar partes; Selecionar documentos para acórdão - Gabinete",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
         "codigo": "analisar-determinacao-peticoes-nao-lidas",
         "tarefa": "Analisar determinação; Petições não lidas",
         "contagens": {
@@ -1619,12 +1606,22 @@
         "total": 1
       },
       {
-        "codigo": "elaborar-extrato-da-ata-preparar-comunicacao-retificar-partes-selecionar-documentos-para-acordao-gabinete",
-        "tarefa": "Elaborar extrato da ata; Preparar comunicação; Retificar partes; Selecionar documentos para acórdão - Gabinete",
+        "codigo": "assinar-ato",
+        "tarefa": "Assinar ato",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "lancar-movimento",
+        "tarefa": "Lançar movimento",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 1
       },
@@ -3644,7 +3641,7 @@
         "tarefa_atual": "Analisar Processos",
         "autuacao": "26/08/2026",
         "desde": "10/09/2026",
-        "dias_tramitando": 15,
+        "dias_tramitando": 16,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -4486,36 +4483,6 @@
         "responsavel_processo": ""
       }
     ],
-    "assinar-ato": [
-      {
-        "processo": "0601057-11.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "01/09/2026",
-        "desde": "11/09/2026",
-        "dias_tramitando": 9,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601142-94.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "RepEsp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "09/09/2026",
-        "desde": "11/09/2026",
-        "dias_tramitando": 1,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "peticoes-nao-lidas-processo-com-prazo-em-curso": [
       {
         "processo": "0601087-46.2026.6.10.0000",
@@ -4684,12 +4651,12 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-peticao-avulsa-assinar-ato-peticao-avulsa-elaborar-documentos": [
+    "analisar-peticao-avulsa-verificar-decisao-peticao-avulsa-verificar-pendencias": [
       {
         "processo": "0601129-95.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Assinar ato - Petição avulsa; Elaborar Documentos",
+        "tarefa_atual": "Analisar Petição Avulsa; Verificar Decisão - Petição Avulsa; Verificar Pendências",
         "autuacao": "09/09/2026",
         "desde": "09/09/2026",
         "dias_tramitando": 1,
@@ -4732,6 +4699,22 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-processos-elaborar-extrato-da-ata-retificar-partes-selecionar-documentos-para-acordao-gabinete": [
+      {
+        "processo": "0600238-74.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Analisar Processos; Elaborar extrato da ata; Retificar partes; Selecionar documentos para acórdão - Gabinete",
+        "autuacao": "25/08/2026",
+        "desde": "25/08/2026",
+        "dias_tramitando": 16,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "analisar-determinacao-peticoes-nao-lidas": [
       {
         "processo": "0601003-45.2026.6.10.0000",
@@ -4748,15 +4731,31 @@
         "responsavel_processo": ""
       }
     ],
-    "elaborar-extrato-da-ata-preparar-comunicacao-retificar-partes-selecionar-documentos-para-acordao-gabinete": [
+    "assinar-ato": [
       {
-        "processo": "0600238-74.2026.6.10.0000",
+        "processo": "0601142-94.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Elaborar extrato da ata; Preparar comunicação; Retificar partes; Selecionar documentos para acórdão - Gabinete",
-        "autuacao": "25/08/2026",
-        "desde": "25/08/2026",
-        "dias_tramitando": 16,
+        "classe": "RepEsp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "09/09/2026",
+        "desde": "11/09/2026",
+        "dias_tramitando": 1,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "lancar-movimento": [
+      {
+        "processo": "0601057-11.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Lançar movimento",
+        "autuacao": "01/09/2026",
+        "desde": "11/09/2026",
+        "dias_tramitando": 9,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -6407,7 +6406,7 @@
         "processo": "0600238-74.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Elaborar extrato da ata; Preparar comunicação; Retificar partes; Selecionar documentos para acórdão - Gabinete",
+        "tarefa_atual": "Analisar Processos; Elaborar extrato da ata; Retificar partes; Selecionar documentos para acórdão - Gabinete",
         "autuacao": "25/08/2026",
         "desde": "25/08/2026",
         "dias_tramitando": 16,
@@ -7344,12 +7343,12 @@
         "responsavel_processo": ""
       },
       {
-        "processo": "0600996-53.2026.6.10.0000",
+        "processo": "0600949-79.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Minutar ato",
-        "autuacao": "25/08/2026",
-        "desde": "09/09/2026",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Analisar Processos",
+        "autuacao": "26/08/2026",
+        "desde": "10/09/2026",
         "dias_tramitando": 16,
         "julgado": false,
         "data_julgamento": "",
@@ -7358,13 +7357,13 @@
         "responsavel_processo": ""
       },
       {
-        "processo": "0600949-79.2026.6.10.0000",
+        "processo": "0600996-53.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos",
-        "autuacao": "26/08/2026",
-        "desde": "10/09/2026",
-        "dias_tramitando": 15,
+        "classe": "Rp",
+        "tarefa_atual": "Minutar ato",
+        "autuacao": "25/08/2026",
+        "desde": "09/09/2026",
+        "dias_tramitando": 16,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -7627,7 +7626,7 @@
         "processo": "0601057-11.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
+        "tarefa_atual": "Lançar movimento",
         "autuacao": "01/09/2026",
         "desde": "11/09/2026",
         "dias_tramitando": 9,
@@ -7823,7 +7822,7 @@
         "processo": "0601129-95.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Assinar ato - Petição avulsa; Elaborar Documentos",
+        "tarefa_atual": "Analisar Petição Avulsa; Verificar Decisão - Petição Avulsa; Verificar Pendências",
         "autuacao": "09/09/2026",
         "desde": "09/09/2026",
         "dias_tramitando": 1,
@@ -9892,7 +9891,7 @@
       "processo": "0601057-11.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "autuacao": "01/09/2026",
       "desde": "11/09/2026",
       "dias_tramitando": 9,
@@ -10382,7 +10381,7 @@
       "processo": "0601129-95.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Analisar Petição Avulsa; Assinar ato - Petição avulsa; Elaborar Documentos",
+      "tarefa_atual": "Analisar Petição Avulsa; Verificar Decisão - Petição Avulsa; Verificar Pendências",
       "autuacao": "09/09/2026",
       "desde": "09/09/2026",
       "dias_tramitando": 1,
@@ -14062,7 +14061,7 @@
       "processo": "0601057-11.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "autuacao": "01/09/2026",
       "desde": "11/09/2026",
       "dias_tramitando": 9,
@@ -14552,7 +14551,7 @@
       "processo": "0601129-95.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Analisar Petição Avulsa; Assinar ato - Petição avulsa; Elaborar Documentos",
+      "tarefa_atual": "Analisar Petição Avulsa; Verificar Decisão - Petição Avulsa; Verificar Pendências",
       "autuacao": "09/09/2026",
       "desde": "09/09/2026",
       "dias_tramitando": 1,
@@ -15761,7 +15760,7 @@
       "processo": "0600238-74.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "REC no(a) Rp",
-      "tarefa_atual": "Elaborar extrato da ata; Preparar comunicação; Retificar partes; Selecionar documentos para acórdão - Gabinete",
+      "tarefa_atual": "Analisar Processos; Elaborar extrato da ata; Retificar partes; Selecionar documentos para acórdão - Gabinete",
       "autuacao": "25/08/2026",
       "desde": "25/08/2026",
       "dias_tramitando": 16,
@@ -15778,7 +15777,7 @@
       "tarefa_atual": "Analisar Processos",
       "autuacao": "26/08/2026",
       "desde": "10/09/2026",
-      "dias_tramitando": 15,
+      "dias_tramitando": 16,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -17709,8 +17708,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "11/09/2026 11:05",
+  "publicado_em": "11/09/2026 11:06",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "fe49704cee65c4f8f88cb1d6013715b76bbd72b90019f602ee67817427dff310"
+  "hash_publicacao": "937802a625046e22a08062341b082ca2a3b792210c58992fae32db82146cf296"
 }
