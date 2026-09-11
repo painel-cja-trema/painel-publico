@@ -59,13 +59,13 @@
   "por_tarefa": [
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Processo com prazo em curso",
+      "tarefa_atual": "Analisar determinação",
       "quantidade": 16
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Analisar determinação",
-      "quantidade": 15
+      "tarefa_atual": "Processo com prazo em curso",
+      "quantidade": 16
     },
     {
       "gabinete": "Gab. JA 1",
@@ -90,11 +90,6 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Analisar resposta do expediente",
-      "quantidade": 2
-    },
-    {
-      "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Elaborar Documentos",
       "quantidade": 2
     },
     {
@@ -125,6 +120,11 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Analisar Processos; Analisar Processos",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Elaborar Documentos",
       "quantidade": 1
     },
     {
@@ -1403,11 +1403,11 @@
         "codigo": "analisar-determinacao",
         "tarefa": "Analisar determinação",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 15,
+          "Gabinete Juiz Auxiliar 1": 16,
           "Gabinete Juiz Auxiliar 2": 5,
           "Gabinete Juiz Auxiliar 3": 9
         },
-        "total": 29
+        "total": 30
       },
       {
         "codigo": "minutar-ato",
@@ -1570,16 +1570,6 @@
         "total": 2
       },
       {
-        "codigo": "elaborar-documentos",
-        "tarefa": "Elaborar Documentos",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 2,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 2
-      },
-      {
         "codigo": "revisar-relatorio-voto-e-ementa",
         "tarefa": "Revisar Relatório, Voto e Ementa",
         "contagens": {
@@ -1646,6 +1636,16 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
+        "codigo": "elaborar-documentos",
+        "tarefa": "Elaborar Documentos",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
       },
@@ -3100,6 +3100,20 @@
       },
       {
         "processo": "0600971-40.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação",
+        "autuacao": "23/08/2026",
+        "desde": "11/09/2026",
+        "dias_tramitando": 18,
+        "julgado": true,
+        "data_julgamento": "07/09/2026",
+        "teor": "Julgado procedente em parte do pedido em 07/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600972-25.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
         "tarefa_atual": "Analisar determinação",
@@ -4657,36 +4671,6 @@
         "responsavel_processo": ""
       }
     ],
-    "elaborar-documentos": [
-      {
-        "processo": "0600972-25.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Elaborar Documentos",
-        "autuacao": "23/08/2026",
-        "desde": "11/09/2026",
-        "dias_tramitando": 18,
-        "julgado": true,
-        "data_julgamento": "07/09/2026",
-        "teor": "Julgado procedente em parte do pedido em 07/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601041-57.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Elaborar Documentos",
-        "autuacao": "29/08/2026",
-        "desde": "11/09/2026",
-        "dias_tramitando": 12,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "revisar-relatorio-voto-e-ementa": [
       {
         "processo": "0601006-97.2026.6.10.0000",
@@ -4806,6 +4790,22 @@
         "autuacao": "07/09/2026",
         "desde": "07/09/2026",
         "dias_tramitando": 3,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "elaborar-documentos": [
+      {
+        "processo": "0601041-57.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Elaborar Documentos",
+        "autuacao": "29/08/2026",
+        "desde": "11/09/2026",
+        "dias_tramitando": 12,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -5234,7 +5234,7 @@
         "processo": "0600972-25.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Elaborar Documentos",
+        "tarefa_atual": "Analisar determinação",
         "autuacao": "23/08/2026",
         "desde": "11/09/2026",
         "dias_tramitando": 18,
@@ -9197,7 +9197,7 @@
       "processo": "0600972-25.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Elaborar Documentos",
+      "tarefa_atual": "Analisar determinação",
       "autuacao": "23/08/2026",
       "desde": "11/09/2026",
       "dias_tramitando": 18,
@@ -13367,7 +13367,7 @@
       "processo": "0600972-25.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Elaborar Documentos",
+      "tarefa_atual": "Analisar determinação",
       "autuacao": "23/08/2026",
       "desde": "11/09/2026",
       "dias_tramitando": 18,
@@ -17352,7 +17352,7 @@
       "processo": "0600972-25.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Elaborar Documentos",
+      "tarefa_atual": "Analisar determinação",
       "autuacao": "23/08/2026",
       "desde": "11/09/2026",
       "dias_tramitando": 18,
@@ -17798,8 +17798,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "11/09/2026 12:33",
+  "publicado_em": "11/09/2026 12:34",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "754382ca6dfdeab55cbc5fa45d9e3888c21f370c0fc3e77456db5efccbf5970f"
+  "hash_publicacao": "5571e9f6abc1b08980aadc99f829c1d356385bec7ec9dc8a6e462d84531cd12f"
 }
