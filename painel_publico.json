@@ -215,7 +215,7 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Aguardando julgamento do recurso interno",
-      "quantidade": 10
+      "quantidade": 11
     },
     {
       "gabinete": "Gab. JA 3",
@@ -254,11 +254,6 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Verificar Pendências",
-      "quantidade": 2
-    },
-    {
-      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Visualizar expediente DJE",
       "quantidade": 2
     },
@@ -290,6 +285,11 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Preparar comunicação",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Verificar Pendências",
       "quantidade": 1
     }
   ],
@@ -1502,9 +1502,9 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 7,
           "Gabinete Juiz Auxiliar 2": 20,
-          "Gabinete Juiz Auxiliar 3": 10
+          "Gabinete Juiz Auxiliar 3": 11
         },
-        "total": 37
+        "total": 38
       },
       {
         "codigo": "analisar-determinacao",
@@ -1667,16 +1667,6 @@
         "total": 2
       },
       {
-        "codigo": "verificar-pendencias",
-        "tarefa": "Verificar Pendências",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 2
-        },
-        "total": 2
-      },
-      {
         "codigo": "visualizar-expediente-dje",
         "tarefa": "Visualizar expediente DJE",
         "contagens": {
@@ -1803,6 +1793,16 @@
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "verificar-pendencias",
+        "tarefa": "Verificar Pendências",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 1
       }
@@ -2664,6 +2664,20 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600235-22.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "RepEsp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno",
+        "autuacao": "13/07/2026",
+        "desde": "12/09/2026",
+        "dias_tramitando": 61,
+        "julgado": true,
+        "data_julgamento": "19/08/2026",
+        "teor": "Julgado procedente o pedido em 19/08/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -4758,36 +4772,6 @@
         "responsavel_processo": ""
       }
     ],
-    "verificar-pendencias": [
-      {
-        "processo": "0600235-22.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "RepEsp",
-        "tarefa_atual": "Verificar Pendências",
-        "autuacao": "13/07/2026",
-        "desde": "12/09/2026",
-        "dias_tramitando": 61,
-        "julgado": true,
-        "data_julgamento": "19/08/2026",
-        "teor": "Julgado procedente o pedido em 19/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601028-58.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "DR",
-        "tarefa_atual": "Verificar Pendências",
-        "autuacao": "28/08/2026",
-        "desde": "09/09/2026",
-        "dias_tramitando": 14,
-        "julgado": true,
-        "data_julgamento": "03/09/2026",
-        "teor": "Julgado procedente o pedido em 03/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "visualizar-expediente-dje": [
       {
         "processo": "0601077-02.2026.6.10.0000",
@@ -5006,6 +4990,22 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "verificar-pendencias": [
+      {
+        "processo": "0601028-58.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "DR",
+        "tarefa_atual": "Verificar Pendências",
+        "autuacao": "28/08/2026",
+        "desde": "09/09/2026",
+        "dias_tramitando": 14,
+        "julgado": true,
+        "data_julgamento": "03/09/2026",
+        "teor": "Julgado procedente o pedido em 03/09/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -7303,7 +7303,7 @@
         "processo": "0600235-22.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "RepEsp",
-        "tarefa_atual": "Verificar Pendências",
+        "tarefa_atual": "Aguardando julgamento do recurso interno",
         "autuacao": "13/07/2026",
         "desde": "12/09/2026",
         "dias_tramitando": 61,
@@ -8854,7 +8854,7 @@
       "processo": "0600235-22.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "RepEsp",
-      "tarefa_atual": "Verificar Pendências",
+      "tarefa_atual": "Aguardando julgamento do recurso interno",
       "autuacao": "13/07/2026",
       "desde": "12/09/2026",
       "dias_tramitando": 61,
@@ -13288,7 +13288,7 @@
       "processo": "0600235-22.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "RepEsp",
-      "tarefa_atual": "Verificar Pendências",
+      "tarefa_atual": "Aguardando julgamento do recurso interno",
       "autuacao": "13/07/2026",
       "desde": "12/09/2026",
       "dias_tramitando": 61,
@@ -17713,7 +17713,7 @@
       "processo": "0600235-22.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "RepEsp",
-      "tarefa_atual": "Verificar Pendências",
+      "tarefa_atual": "Aguardando julgamento do recurso interno",
       "autuacao": "13/07/2026",
       "desde": "12/09/2026",
       "dias_tramitando": 61,
@@ -18495,8 +18495,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "12/09/2026 16:38",
+  "publicado_em": "12/09/2026 16:39",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "4c170efa54701fe59a78d0f5b1d6aeee73617a57cdfc4bedf6759cc369fca6c9"
+  "hash_publicacao": "b63e3f34e059394accedccee973ba4ae689566038b9ec28c559172c73b98f0b9"
 }
