@@ -46,7 +46,7 @@
       "quantidade": 50,
       "media_dias": 17.4,
       "maior_tempo": 95,
-      "urgentes": 4,
+      "urgentes": 5,
       "minutar": 2,
       "julgados": 19,
       "percentual_julgados": 29.2,
@@ -299,7 +299,7 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Analisar resposta do expediente; Lançar movimento - Petição avulsa; Verificar Decisão - Petição Avulsa",
+      "tarefa_atual": "Analisar resposta do expediente; Verificar Decisão - Petição Avulsa; Verificar Decisão - Petição Avulsa",
       "quantidade": 1
     },
     {
@@ -309,7 +309,7 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Registrar ciência por telefone ou pessoalmente; Verificar Decisão - Petição Avulsa",
+      "tarefa_atual": "Realizar triagem urgentes; Verificar Decisão - Petição Avulsa",
       "quantidade": 1
     },
     {
@@ -870,20 +870,20 @@
         "nome": "Gabinete Juiz Auxiliar 3",
         "total_acervo": 65,
         "contagens": {
-          "TRIAGEM_URGENTE": 0,
+          "TRIAGEM_URGENTE": 1,
           "TRIAGEM_ORDINARIA": 0,
           "MINUTAR_ATO": 2,
           "ASSINAR_ATO": 0,
-          "LANCAR_MOVIMENTACAO": 1
+          "LANCAR_MOVIMENTACAO": 0
         }
       }
     ],
     "totais": {
-      "TRIAGEM_URGENTE": 2,
+      "TRIAGEM_URGENTE": 3,
       "TRIAGEM_ORDINARIA": 14,
       "MINUTAR_ATO": 20,
       "ASSINAR_ATO": 1,
-      "LANCAR_MOVIMENTACAO": 1
+      "LANCAR_MOVIMENTACAO": 0
     },
     "total_acervo": 224
   },
@@ -897,6 +897,20 @@
         "autuacao": "04/09/2026",
         "desde": "12/09/2026",
         "dias_tramitando": 7,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601145-49.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem urgentes; Verificar Decisão - Petição Avulsa",
+        "autuacao": "09/09/2026",
+        "desde": "09/09/2026",
+        "dias_tramitando": 2,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -1414,22 +1428,7 @@
         "responsavel_processo": ""
       }
     ],
-    "LANCAR_MOVIMENTACAO": [
-      {
-        "processo": "0601129-95.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar resposta do expediente; Lançar movimento - Petição avulsa; Verificar Decisão - Petição Avulsa",
-        "autuacao": "09/09/2026",
-        "desde": "09/09/2026",
-        "dias_tramitando": 2,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ]
+    "LANCAR_MOVIMENTACAO": []
   },
   "entrada_comissao": {
     "codigo": "LIMINAR_CERTIFICACAO",
@@ -1707,8 +1706,8 @@
         "total": 1
       },
       {
-        "codigo": "analisar-resposta-do-expediente-lancar-movimento-peticao-avulsa-verificar-decisao-peticao-avulsa",
-        "tarefa": "Analisar resposta do expediente; Lançar movimento - Petição avulsa; Verificar Decisão - Petição Avulsa",
+        "codigo": "analisar-resposta-do-expediente-verificar-decisao-peticao-avulsa-verificar-decisao-peticao-avulsa",
+        "tarefa": "Analisar resposta do expediente; Verificar Decisão - Petição Avulsa; Verificar Decisão - Petição Avulsa",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -1767,22 +1766,22 @@
         "total": 1
       },
       {
+        "codigo": "realizar-triagem-urgentes-verificar-decisao-peticao-avulsa",
+        "tarefa": "Realizar triagem urgentes; Verificar Decisão - Petição Avulsa",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
         "codigo": "registrar-ciencia-intimacao-pessoal",
         "tarefa": "Registrar ciência intimação pessoal",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "registrar-ciencia-por-telefone-ou-pessoalmente-verificar-decisao-peticao-avulsa",
-        "tarefa": "Registrar ciência por telefone ou pessoalmente; Verificar Decisão - Petição Avulsa",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 1
       },
@@ -4856,12 +4855,12 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-resposta-do-expediente-lancar-movimento-peticao-avulsa-verificar-decisao-peticao-avulsa": [
+    "analisar-resposta-do-expediente-verificar-decisao-peticao-avulsa-verificar-decisao-peticao-avulsa": [
       {
         "processo": "0601129-95.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Analisar resposta do expediente; Lançar movimento - Petição avulsa; Verificar Decisão - Petição Avulsa",
+        "tarefa_atual": "Analisar resposta do expediente; Verificar Decisão - Petição Avulsa; Verificar Decisão - Petição Avulsa",
         "autuacao": "09/09/2026",
         "desde": "09/09/2026",
         "dias_tramitando": 2,
@@ -4952,6 +4951,22 @@
         "responsavel_processo": ""
       }
     ],
+    "realizar-triagem-urgentes-verificar-decisao-peticao-avulsa": [
+      {
+        "processo": "0601145-49.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem urgentes; Verificar Decisão - Petição Avulsa",
+        "autuacao": "09/09/2026",
+        "desde": "09/09/2026",
+        "dias_tramitando": 2,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "registrar-ciencia-intimacao-pessoal": [
       {
         "processo": "0600959-26.2026.6.10.0000",
@@ -4961,22 +4976,6 @@
         "autuacao": "21/08/2026",
         "desde": "11/09/2026",
         "dias_tramitando": 21,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "registrar-ciencia-por-telefone-ou-pessoalmente-verificar-decisao-peticao-avulsa": [
-      {
-        "processo": "0601145-49.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Registrar ciência por telefone ou pessoalmente; Verificar Decisão - Petição Avulsa",
-        "autuacao": "09/09/2026",
-        "desde": "09/09/2026",
-        "dias_tramitando": 2,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -7981,7 +7980,7 @@
         "processo": "0601129-95.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Analisar resposta do expediente; Lançar movimento - Petição avulsa; Verificar Decisão - Petição Avulsa",
+        "tarefa_atual": "Analisar resposta do expediente; Verificar Decisão - Petição Avulsa",
         "autuacao": "09/09/2026",
         "desde": "09/09/2026",
         "dias_tramitando": 2,
@@ -8023,7 +8022,7 @@
         "processo": "0601145-49.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Registrar ciência por telefone ou pessoalmente; Verificar Decisão - Petição Avulsa",
+        "tarefa_atual": "Realizar triagem urgentes; Verificar Decisão - Petição Avulsa",
         "autuacao": "09/09/2026",
         "desde": "09/09/2026",
         "dias_tramitando": 2,
@@ -10554,7 +10553,7 @@
       "processo": "0601129-95.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Analisar resposta do expediente; Lançar movimento - Petição avulsa; Verificar Decisão - Petição Avulsa",
+      "tarefa_atual": "Analisar resposta do expediente; Verificar Decisão - Petição Avulsa",
       "autuacao": "09/09/2026",
       "desde": "09/09/2026",
       "dias_tramitando": 2,
@@ -10666,7 +10665,7 @@
       "processo": "0601145-49.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Registrar ciência por telefone ou pessoalmente; Verificar Decisão - Petição Avulsa",
+      "tarefa_atual": "Realizar triagem urgentes; Verificar Decisão - Petição Avulsa",
       "autuacao": "09/09/2026",
       "desde": "09/09/2026",
       "dias_tramitando": 2,
@@ -14808,7 +14807,7 @@
       "processo": "0601129-95.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Analisar resposta do expediente; Lançar movimento - Petição avulsa; Verificar Decisão - Petição Avulsa",
+      "tarefa_atual": "Analisar resposta do expediente; Verificar Decisão - Petição Avulsa",
       "autuacao": "09/09/2026",
       "desde": "09/09/2026",
       "dias_tramitando": 2,
@@ -14920,7 +14919,7 @@
       "processo": "0601145-49.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Registrar ciência por telefone ou pessoalmente; Verificar Decisão - Petição Avulsa",
+      "tarefa_atual": "Realizar triagem urgentes; Verificar Decisão - Petição Avulsa",
       "autuacao": "09/09/2026",
       "desde": "09/09/2026",
       "dias_tramitando": 2,
@@ -18021,8 +18020,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "12/09/2026 11:49",
+  "publicado_em": "12/09/2026 11:52",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "6cc66b1b82904ad47e0481e357b1964358b5da0fd2342c421b2edfc9aa1bdbdb"
+  "hash_publicacao": "b1b966d2e60c16fea93fd49bc0f7f61489c278526053a20fe04d518809628e20"
 }
