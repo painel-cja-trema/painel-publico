@@ -46,7 +46,7 @@
       "quantidade": 50,
       "media_dias": 17.4,
       "maior_tempo": 95,
-      "urgentes": 4,
+      "urgentes": 5,
       "minutar": 2,
       "julgados": 19,
       "percentual_julgados": 29.2,
@@ -299,17 +299,17 @@
     },
     {
       "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Analisar determinação - Urgentes; Verificar Decisão - Petição Avulsa",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Analisar resposta do expediente",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Analisar resposta do expediente; Verificar Decisão - Petição Avulsa; Verificar Decisão - Petição Avulsa",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Lançar movimento; Verificar Decisão - Petição Avulsa",
       "quantidade": 1
     },
     {
@@ -472,7 +472,7 @@
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
       "tarefa_atual": "Aguardando julgamento do recurso interno",
-      "dias_tramitando": 93,
+      "dias_tramitando": 94,
       "segredo_justica": "NÃO"
     },
     {
@@ -860,7 +860,7 @@
           "TRIAGEM_ORDINARIA": 0,
           "MINUTAR_ATO": 2,
           "ASSINAR_ATO": 0,
-          "LANCAR_MOVIMENTACAO": 1
+          "LANCAR_MOVIMENTACAO": 0
         }
       }
     ],
@@ -869,7 +869,7 @@
       "TRIAGEM_ORDINARIA": 13,
       "MINUTAR_ATO": 19,
       "ASSINAR_ATO": 2,
-      "LANCAR_MOVIMENTACAO": 1
+      "LANCAR_MOVIMENTACAO": 0
     },
     "total_acervo": 224
   },
@@ -1386,22 +1386,7 @@
         "responsavel_processo": ""
       }
     ],
-    "LANCAR_MOVIMENTACAO": [
-      {
-        "processo": "0601145-49.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Lançar movimento; Verificar Decisão - Petição Avulsa",
-        "autuacao": "09/09/2026",
-        "desde": "09/09/2026",
-        "dias_tramitando": 2,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ]
+    "LANCAR_MOVIMENTACAO": []
   },
   "entrada_comissao": {
     "codigo": "LIMINAR_CERTIFICACAO",
@@ -1689,6 +1674,16 @@
         "total": 1
       },
       {
+        "codigo": "analisar-determinacao-urgentes-verificar-decisao-peticao-avulsa",
+        "tarefa": "Analisar determinação - Urgentes; Verificar Decisão - Petição Avulsa",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
         "codigo": "analisar-determinacao-peticoes-nao-lidas-peticoes-nao-lidas",
         "tarefa": "Analisar determinação; Petições não lidas; Petições não lidas",
         "contagens": {
@@ -1715,16 +1710,6 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "lancar-movimento-verificar-decisao-peticao-avulsa",
-        "tarefa": "Lançar movimento; Verificar Decisão - Petição Avulsa",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 1
       },
@@ -2502,7 +2487,7 @@
         "tarefa_atual": "Aguardando julgamento do recurso interno",
         "autuacao": "10/06/2026",
         "desde": "08/09/2026",
-        "dias_tramitando": 93,
+        "dias_tramitando": 94,
         "julgado": true,
         "data_julgamento": "15/07/2026",
         "teor": "Julgado procedente o pedido em 15/07/2026",
@@ -4840,6 +4825,22 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-determinacao-urgentes-verificar-decisao-peticao-avulsa": [
+      {
+        "processo": "0601145-49.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação - Urgentes; Verificar Decisão - Petição Avulsa",
+        "autuacao": "09/09/2026",
+        "desde": "09/09/2026",
+        "dias_tramitando": 2,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "analisar-determinacao-peticoes-nao-lidas-peticoes-nao-lidas": [
       {
         "processo": "0601138-57.2026.6.10.0000",
@@ -4881,22 +4882,6 @@
         "autuacao": "02/09/2026",
         "desde": "11/09/2026",
         "dias_tramitando": 10,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "lancar-movimento-verificar-decisao-peticao-avulsa": [
-      {
-        "processo": "0601145-49.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Lançar movimento; Verificar Decisão - Petição Avulsa",
-        "autuacao": "09/09/2026",
-        "desde": "09/09/2026",
-        "dias_tramitando": 2,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -5978,7 +5963,7 @@
         "tarefa_atual": "Aguardando julgamento do recurso interno",
         "autuacao": "10/06/2026",
         "desde": "08/09/2026",
-        "dias_tramitando": 93,
+        "dias_tramitando": 94,
         "julgado": true,
         "data_julgamento": "15/07/2026",
         "teor": "Julgado procedente o pedido em 15/07/2026",
@@ -8007,7 +7992,7 @@
         "processo": "0601145-49.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Lançar movimento; Verificar Decisão - Petição Avulsa",
+        "tarefa_atual": "Analisar determinação - Urgentes; Verificar Decisão - Petição Avulsa",
         "autuacao": "09/09/2026",
         "desde": "09/09/2026",
         "dias_tramitando": 2,
@@ -8665,7 +8650,7 @@
       "tarefa_atual": "Aguardando julgamento do recurso interno",
       "autuacao": "10/06/2026",
       "desde": "08/09/2026",
-      "dias_tramitando": 93,
+      "dias_tramitando": 94,
       "julgado": true,
       "data_julgamento": "15/07/2026",
       "teor": "Julgado procedente o pedido em 15/07/2026",
@@ -10650,7 +10635,7 @@
       "processo": "0601145-49.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Lançar movimento; Verificar Decisão - Petição Avulsa",
+      "tarefa_atual": "Analisar determinação - Urgentes; Verificar Decisão - Petição Avulsa",
       "autuacao": "09/09/2026",
       "desde": "09/09/2026",
       "dias_tramitando": 2,
@@ -12919,7 +12904,7 @@
       "tarefa_atual": "Aguardando julgamento do recurso interno",
       "autuacao": "10/06/2026",
       "desde": "08/09/2026",
-      "dias_tramitando": 93,
+      "dias_tramitando": 94,
       "julgado": true,
       "data_julgamento": "15/07/2026",
       "teor": "Julgado procedente o pedido em 15/07/2026",
@@ -14904,7 +14889,7 @@
       "processo": "0601145-49.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Lançar movimento; Verificar Decisão - Petição Avulsa",
+      "tarefa_atual": "Analisar determinação - Urgentes; Verificar Decisão - Petição Avulsa",
       "autuacao": "09/09/2026",
       "desde": "09/09/2026",
       "dias_tramitando": 2,
@@ -17072,7 +17057,7 @@
       "tarefa_atual": "Aguardando julgamento do recurso interno",
       "autuacao": "10/06/2026",
       "desde": "08/09/2026",
-      "dias_tramitando": 93,
+      "dias_tramitando": 94,
       "julgado": true,
       "data_julgamento": "15/07/2026",
       "teor": "Julgado procedente o pedido em 15/07/2026",
@@ -18005,8 +17990,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "12/09/2026 12:00",
+  "publicado_em": "12/09/2026 12:02",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "fb4baf6943c6d99fa10eaf02cab17a3ea5d70cbf00d6aff57ef6139c3aa843ef"
+  "hash_publicacao": "dc77c44511ff78d711de8eddf98665bb88b84252e4d22524bffd81b692d12b13"
 }
