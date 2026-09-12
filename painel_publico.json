@@ -114,7 +114,12 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Analisar petição avulsa de autuação; Processo com prazo em curso",
+      "tarefa_atual": "Analisar resposta do expediente",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Atualizar dados do processo; Petições não lidas; Petições não lidas",
       "quantidade": 1
     },
     {
@@ -125,11 +130,6 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Minutar ato",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Petições não lidas; Petições não lidas; Processo com prazo em curso",
       "quantidade": 1
     },
     {
@@ -1605,6 +1605,16 @@
         "total": 2
       },
       {
+        "codigo": "analisar-resposta-do-expediente",
+        "tarefa": "Analisar resposta do expediente",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 2
+      },
+      {
         "codigo": "registrar-ciencia-por-telefone-ou-pessoalmente",
         "tarefa": "Registrar ciência por telefone ou pessoalmente",
         "contagens": {
@@ -1735,28 +1745,8 @@
         "total": 1
       },
       {
-        "codigo": "analisar-peticao-avulsa-de-autuacao-processo-com-prazo-em-curso",
-        "tarefa": "Analisar petição avulsa de autuação; Processo com prazo em curso",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
         "codigo": "analisar-peticao-avulsa-de-autuacao-verificar-e-certificar-dados-do-processo-com-liminar",
         "tarefa": "Analisar petição avulsa de autuação; Verificar e certificar dados do processo com liminar",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
-        "codigo": "analisar-resposta-do-expediente",
-        "tarefa": "Analisar resposta do expediente",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -1775,21 +1765,21 @@
         "total": 1
       },
       {
-        "codigo": "conferir-relatorio-voto-e-ementa",
-        "tarefa": "Conferir Relatório, Voto e Ementa",
+        "codigo": "atualizar-dados-do-processo-peticoes-nao-lidas-peticoes-nao-lidas",
+        "tarefa": "Atualizar dados do processo; Petições não lidas; Petições não lidas",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
       },
       {
-        "codigo": "peticoes-nao-lidas-peticoes-nao-lidas-processo-com-prazo-em-curso",
-        "tarefa": "Petições não lidas; Petições não lidas; Processo com prazo em curso",
+        "codigo": "conferir-relatorio-voto-e-ementa",
+        "tarefa": "Conferir Relatório, Voto e Ementa",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -4748,6 +4738,36 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-resposta-do-expediente": [
+      {
+        "processo": "0601036-35.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar resposta do expediente",
+        "autuacao": "29/08/2026",
+        "desde": "12/09/2026",
+        "dias_tramitando": 13,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601143-79.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar resposta do expediente",
+        "autuacao": "09/09/2026",
+        "desde": "11/09/2026",
+        "dias_tramitando": 2,
+        "julgado": true,
+        "data_julgamento": "10/09/2026",
+        "teor": "Julgado improcedente o pedido em 10/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "registrar-ciencia-por-telefone-ou-pessoalmente": [
       {
         "processo": "0601099-60.2026.6.10.0000",
@@ -4998,22 +5018,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-peticao-avulsa-de-autuacao-processo-com-prazo-em-curso": [
-      {
-        "processo": "0601036-35.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar petição avulsa de autuação; Processo com prazo em curso",
-        "autuacao": "29/08/2026",
-        "desde": "29/08/2026",
-        "dias_tramitando": 13,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "analisar-peticao-avulsa-de-autuacao-verificar-e-certificar-dados-do-processo-com-liminar": [
       {
         "processo": "0601287-53.2026.6.10.0000",
@@ -5026,22 +5030,6 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "analisar-resposta-do-expediente": [
-      {
-        "processo": "0601143-79.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar resposta do expediente",
-        "autuacao": "09/09/2026",
-        "desde": "11/09/2026",
-        "dias_tramitando": 2,
-        "julgado": true,
-        "data_julgamento": "10/09/2026",
-        "teor": "Julgado improcedente o pedido em 10/09/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -5062,6 +5050,22 @@
         "responsavel_processo": ""
       }
     ],
+    "atualizar-dados-do-processo-peticoes-nao-lidas-peticoes-nao-lidas": [
+      {
+        "processo": "0601138-57.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Atualizar dados do processo; Petições não lidas; Petições não lidas",
+        "autuacao": "09/09/2026",
+        "desde": "09/09/2026",
+        "dias_tramitando": 2,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "conferir-relatorio-voto-e-ementa": [
       {
         "processo": "0600979-17.2026.6.10.0000",
@@ -5071,22 +5075,6 @@
         "autuacao": "02/09/2026",
         "desde": "11/09/2026",
         "dias_tramitando": 9,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "peticoes-nao-lidas-peticoes-nao-lidas-processo-com-prazo-em-curso": [
-      {
-        "processo": "0601138-57.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Petições não lidas; Petições não lidas; Processo com prazo em curso",
-        "autuacao": "09/09/2026",
-        "desde": "09/09/2026",
-        "dias_tramitando": 2,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -5749,9 +5737,9 @@
         "processo": "0601036-35.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Analisar petição avulsa de autuação; Processo com prazo em curso",
+        "tarefa_atual": "Analisar resposta do expediente",
         "autuacao": "29/08/2026",
-        "desde": "29/08/2026",
+        "desde": "12/09/2026",
         "dias_tramitando": 13,
         "julgado": false,
         "data_julgamento": "",
@@ -6071,7 +6059,7 @@
         "processo": "0601138-57.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+        "tarefa_atual": "Atualizar dados do processo; Petições não lidas",
         "autuacao": "09/09/2026",
         "desde": "09/09/2026",
         "dias_tramitando": 2,
@@ -10230,9 +10218,9 @@
       "processo": "0601036-35.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar petição avulsa de autuação; Processo com prazo em curso",
+      "tarefa_atual": "Analisar resposta do expediente",
       "autuacao": "29/08/2026",
-      "desde": "29/08/2026",
+      "desde": "12/09/2026",
       "dias_tramitando": 13,
       "julgado": false,
       "data_julgamento": "",
@@ -10958,7 +10946,7 @@
       "processo": "0601138-57.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+      "tarefa_atual": "Atualizar dados do processo; Petições não lidas",
       "autuacao": "09/09/2026",
       "desde": "09/09/2026",
       "dias_tramitando": 2,
@@ -14498,9 +14486,9 @@
       "processo": "0601036-35.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar petição avulsa de autuação; Processo com prazo em curso",
+      "tarefa_atual": "Analisar resposta do expediente",
       "autuacao": "29/08/2026",
-      "desde": "29/08/2026",
+      "desde": "12/09/2026",
       "dias_tramitando": 13,
       "julgado": false,
       "data_julgamento": "",
@@ -15226,7 +15214,7 @@
       "processo": "0601138-57.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+      "tarefa_atual": "Atualizar dados do processo; Petições não lidas",
       "autuacao": "09/09/2026",
       "desde": "09/09/2026",
       "dias_tramitando": 2,
@@ -18509,8 +18497,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "12/09/2026 08:46",
+  "publicado_em": "12/09/2026 08:47",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "df21021f173779301f94f3163cc3004e2a1cba052a1bde39ac511785343127cd"
+  "hash_publicacao": "01d077458b6fe5ca07f0bce8cf716195411c62bda26fd807e1daa824781db0ea"
 }
