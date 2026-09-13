@@ -46,7 +46,7 @@
       "quantidade": 51,
       "media_dias": 18.1,
       "maior_tempo": 95,
-      "urgentes": 2,
+      "urgentes": 1,
       "minutar": 4,
       "julgados": 22,
       "percentual_julgados": 33.3,
@@ -254,7 +254,7 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Informar data de trânsito em julgado; Petições não lidas",
+      "tarefa_atual": "Elaborar certidão de trânsito em julgado; Petições não lidas",
       "quantidade": 1
     },
     {
@@ -344,7 +344,7 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Analisar determinação - Urgentes; Analisar petição avulsa de autuação",
+      "tarefa_atual": "Atualizar dados do processo",
       "quantidade": 1
     },
     {
@@ -1678,6 +1678,16 @@
         "total": 2
       },
       {
+        "codigo": "atualizar-dados-do-processo",
+        "tarefa": "Atualizar dados do processo",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 2
+      },
+      {
         "codigo": "realizar-triagem-urgentes",
         "tarefa": "Realizar triagem urgentes",
         "contagens": {
@@ -1828,26 +1838,6 @@
         "total": 1
       },
       {
-        "codigo": "analisar-determinacao-urgentes-analisar-peticao-avulsa-de-autuacao",
-        "tarefa": "Analisar determinação - Urgentes; Analisar petição avulsa de autuação",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
-        "codigo": "atualizar-dados-do-processo",
-        "tarefa": "Atualizar dados do processo",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
         "codigo": "elaborar-documentos",
         "tarefa": "Elaborar Documentos",
         "contagens": {
@@ -1858,8 +1848,8 @@
         "total": 1
       },
       {
-        "codigo": "informar-data-de-transito-em-julgado-peticoes-nao-lidas",
-        "tarefa": "Informar data de trânsito em julgado; Petições não lidas",
+        "codigo": "elaborar-certidao-de-transito-em-julgado-peticoes-nao-lidas",
+        "tarefa": "Elaborar certidão de trânsito em julgado; Petições não lidas",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -4739,6 +4729,36 @@
         "responsavel_processo": ""
       }
     ],
+    "atualizar-dados-do-processo": [
+      {
+        "processo": "0601040-72.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Atualizar dados do processo",
+        "autuacao": "29/08/2026",
+        "desde": "13/09/2026",
+        "dias_tramitando": 14,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601222-58.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Atualizar dados do processo",
+        "autuacao": "11/09/2026",
+        "desde": "13/09/2026",
+        "dias_tramitando": 1,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "realizar-triagem-urgentes": [
       {
         "processo": "0601096-08.2026.6.10.0000",
@@ -5007,38 +5027,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-determinacao-urgentes-analisar-peticao-avulsa-de-autuacao": [
-      {
-        "processo": "0601222-58.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação - Urgentes; Analisar petição avulsa de autuação",
-        "autuacao": "11/09/2026",
-        "desde": "11/09/2026",
-        "dias_tramitando": 1,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "atualizar-dados-do-processo": [
-      {
-        "processo": "0601040-72.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Atualizar dados do processo",
-        "autuacao": "29/08/2026",
-        "desde": "13/09/2026",
-        "dias_tramitando": 14,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "elaborar-documentos": [
       {
         "processo": "0601057-11.2026.6.10.0000",
@@ -5055,12 +5043,12 @@
         "responsavel_processo": ""
       }
     ],
-    "informar-data-de-transito-em-julgado-peticoes-nao-lidas": [
+    "elaborar-certidao-de-transito-em-julgado-peticoes-nao-lidas": [
       {
         "processo": "0601039-87.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Informar data de trânsito em julgado; Petições não lidas",
+        "tarefa_atual": "Elaborar certidão de trânsito em julgado; Petições não lidas",
         "autuacao": "29/08/2026",
         "desde": "29/08/2026",
         "dias_tramitando": 14,
@@ -6846,7 +6834,7 @@
         "processo": "0601039-87.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Informar data de trânsito em julgado; Petições não lidas",
+        "tarefa_atual": "Elaborar certidão de trânsito em julgado; Petições não lidas",
         "autuacao": "29/08/2026",
         "desde": "29/08/2026",
         "dias_tramitando": 14,
@@ -8332,9 +8320,9 @@
         "processo": "0601222-58.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Analisar determinação - Urgentes; Analisar petição avulsa de autuação",
+        "tarefa_atual": "Atualizar dados do processo",
         "autuacao": "11/09/2026",
-        "desde": "11/09/2026",
+        "desde": "13/09/2026",
         "dias_tramitando": 1,
         "julgado": false,
         "data_julgamento": "",
@@ -10107,7 +10095,7 @@
       "processo": "0601039-87.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Informar data de trânsito em julgado; Petições não lidas",
+      "tarefa_atual": "Elaborar certidão de trânsito em julgado; Petições não lidas",
       "autuacao": "29/08/2026",
       "desde": "29/08/2026",
       "dias_tramitando": 14,
@@ -11059,9 +11047,9 @@
       "processo": "0601222-58.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação - Urgentes; Analisar petição avulsa de autuação",
+      "tarefa_atual": "Atualizar dados do processo",
       "autuacao": "11/09/2026",
-      "desde": "11/09/2026",
+      "desde": "13/09/2026",
       "dias_tramitando": 1,
       "julgado": false,
       "data_julgamento": "",
@@ -14569,7 +14557,7 @@
       "processo": "0601039-87.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Informar data de trânsito em julgado; Petições não lidas",
+      "tarefa_atual": "Elaborar certidão de trânsito em julgado; Petições não lidas",
       "autuacao": "29/08/2026",
       "desde": "29/08/2026",
       "dias_tramitando": 14,
@@ -15521,9 +15509,9 @@
       "processo": "0601222-58.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação - Urgentes; Analisar petição avulsa de autuação",
+      "tarefa_atual": "Atualizar dados do processo",
       "autuacao": "11/09/2026",
-      "desde": "11/09/2026",
+      "desde": "13/09/2026",
       "dias_tramitando": 1,
       "julgado": false,
       "data_julgamento": "",
@@ -18644,7 +18632,7 @@
       "processo": "0601039-87.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Informar data de trânsito em julgado; Petições não lidas",
+      "tarefa_atual": "Elaborar certidão de trânsito em julgado; Petições não lidas",
       "autuacao": "29/08/2026",
       "desde": "29/08/2026",
       "dias_tramitando": 14,
@@ -18838,8 +18826,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "13/09/2026 11:19",
+  "publicado_em": "13/09/2026 11:20",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "6bf49b6c26d68f566096179fd769bf768c6a7bdbf558adf84b377c5d2bc7fbc4"
+  "hash_publicacao": "bee66e9722d8336fdbd6c3f8e88355299f274b3e3917e220f5d026563e4fdec7"
 }
