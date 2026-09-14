@@ -274,11 +274,6 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação - Urgentes; Petições não lidas",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Analisar Processos",
       "quantidade": 1
     },
@@ -295,6 +290,11 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Minutar ato; Verificar Decisão - Petição Avulsa",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Petições não lidas; Realizar triagem urgentes",
       "quantidade": 1
     }
   ],
@@ -378,7 +378,7 @@
       "gabinete": "Gab. JA 1",
       "classe": "CumSen",
       "tarefa_atual": "Processo com prazo em curso",
-      "dias_tramitando": 113,
+      "dias_tramitando": 114,
       "segredo_justica": "NÃO"
     },
     {
@@ -831,7 +831,7 @@
         "nome": "Gabinete Juiz Auxiliar 3",
         "total_acervo": 60,
         "contagens": {
-          "TRIAGEM_URGENTE": 0,
+          "TRIAGEM_URGENTE": 1,
           "TRIAGEM_ORDINARIA": 0,
           "MINUTAR_ATO": 4,
           "ASSINAR_ATO": 0,
@@ -840,7 +840,7 @@
       }
     ],
     "totais": {
-      "TRIAGEM_URGENTE": 2,
+      "TRIAGEM_URGENTE": 3,
       "TRIAGEM_ORDINARIA": 7,
       "MINUTAR_ATO": 19,
       "ASSINAR_ATO": 7,
@@ -850,6 +850,20 @@
   },
   "tarefas_criticas_processos": {
     "TRIAGEM_URGENTE": [
+      {
+        "processo": "0601152-41.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Petições não lidas; Realizar triagem urgentes",
+        "autuacao": "10/09/2026",
+        "desde": "10/09/2026",
+        "dias_tramitando": 4,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
       {
         "processo": "0601158-48.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
@@ -1605,16 +1619,6 @@
         "total": 1
       },
       {
-        "codigo": "analisar-peticao-avulsa-analisar-determinacao-urgentes-peticoes-nao-lidas",
-        "tarefa": "Analisar Petição Avulsa; Analisar determinação - Urgentes; Petições não lidas",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
         "codigo": "analisar-determinacao-urgentes",
         "tarefa": "Analisar determinação - Urgentes",
         "contagens": {
@@ -1675,6 +1679,16 @@
         "total": 1
       },
       {
+        "codigo": "peticoes-nao-lidas-realizar-triagem-urgentes",
+        "tarefa": "Petições não lidas; Realizar triagem urgentes",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
         "codigo": "revisar-relatorio-voto-e-ementa",
         "tarefa": "Revisar Relatório, Voto e Ementa",
         "contagens": {
@@ -1724,7 +1738,7 @@
         "tarefa_atual": "Processo com prazo em curso",
         "autuacao": "23/05/2026",
         "desde": "14/09/2026",
-        "dias_tramitando": 113,
+        "dias_tramitando": 114,
         "julgado": true,
         "data_julgamento": "13/08/2026",
         "teor": "Julgado procedente o pedido em 13/08/2026",
@@ -4674,22 +4688,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-peticao-avulsa-analisar-determinacao-urgentes-peticoes-nao-lidas": [
-      {
-        "processo": "0601152-41.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação - Urgentes; Petições não lidas",
-        "autuacao": "10/09/2026",
-        "desde": "10/09/2026",
-        "dias_tramitando": 4,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "analisar-determinacao-urgentes": [
       {
         "processo": "0600958-41.2026.6.10.0000",
@@ -4786,6 +4784,22 @@
         "responsavel_processo": ""
       }
     ],
+    "peticoes-nao-lidas-realizar-triagem-urgentes": [
+      {
+        "processo": "0601152-41.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Petições não lidas; Realizar triagem urgentes",
+        "autuacao": "10/09/2026",
+        "desde": "10/09/2026",
+        "dias_tramitando": 4,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "revisar-relatorio-voto-e-ementa": [
       {
         "processo": "0600018-62.2026.6.10.0037",
@@ -4840,7 +4854,7 @@
         "tarefa_atual": "Processo com prazo em curso",
         "autuacao": "23/05/2026",
         "desde": "14/09/2026",
-        "dias_tramitando": 113,
+        "dias_tramitando": 114,
         "julgado": true,
         "data_julgamento": "13/08/2026",
         "teor": "Julgado procedente o pedido em 13/08/2026",
@@ -7697,7 +7711,7 @@
         "processo": "0601152-41.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação - Urgentes; Petições não lidas",
+        "tarefa_atual": "Petições não lidas; Realizar triagem urgentes",
         "autuacao": "10/09/2026",
         "desde": "10/09/2026",
         "dias_tramitando": 4,
@@ -8271,7 +8285,7 @@
       "tarefa_atual": "Processo com prazo em curso",
       "autuacao": "23/05/2026",
       "desde": "14/09/2026",
-      "dias_tramitando": 113,
+      "dias_tramitando": 114,
       "julgado": true,
       "data_julgamento": "13/08/2026",
       "teor": "Julgado procedente o pedido em 13/08/2026",
@@ -10298,7 +10312,7 @@
       "processo": "0601152-41.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação - Urgentes; Petições não lidas",
+      "tarefa_atual": "Petições não lidas; Realizar triagem urgentes",
       "autuacao": "10/09/2026",
       "desde": "10/09/2026",
       "dias_tramitando": 4,
@@ -12663,7 +12677,7 @@
       "tarefa_atual": "Processo com prazo em curso",
       "autuacao": "23/05/2026",
       "desde": "14/09/2026",
-      "dias_tramitando": 113,
+      "dias_tramitando": 114,
       "julgado": true,
       "data_julgamento": "13/08/2026",
       "teor": "Julgado procedente o pedido em 13/08/2026",
@@ -14690,7 +14704,7 @@
       "processo": "0601152-41.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação - Urgentes; Petições não lidas",
+      "tarefa_atual": "Petições não lidas; Realizar triagem urgentes",
       "autuacao": "10/09/2026",
       "desde": "10/09/2026",
       "dias_tramitando": 4,
@@ -17046,7 +17060,7 @@
       "tarefa_atual": "Processo com prazo em curso",
       "autuacao": "23/05/2026",
       "desde": "14/09/2026",
-      "dias_tramitando": 113,
+      "dias_tramitando": 114,
       "julgado": true,
       "data_julgamento": "13/08/2026",
       "teor": "Julgado procedente o pedido em 13/08/2026",
@@ -18161,8 +18175,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "14/09/2026 17:12",
+  "publicado_em": "14/09/2026 17:14",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "c8adae93a74b866f8fe1e7d7174597e872233802c9518d76863c8ad948539872"
+  "hash_publicacao": "53261ff8681deabef1f7166860e7df557ec95d2438a83dca13c1043a18958c25"
 }
