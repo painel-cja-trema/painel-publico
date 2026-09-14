@@ -114,12 +114,12 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Elaborar certidão de trânsito em julgado",
+      "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
+      "tarefa_atual": "Verificar Pendências",
       "quantidade": 1
     },
     {
@@ -144,13 +144,13 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Assinar ato",
       "quantidade": 7
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Assinar ato",
-      "quantidade": 7
+      "tarefa_atual": "Analisar determinação",
+      "quantidade": 6
     },
     {
       "gabinete": "Gab. JA 2",
@@ -170,7 +170,7 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Preparar comunicação",
-      "quantidade": 2
+      "quantidade": 3
     },
     {
       "gabinete": "Gab. JA 2",
@@ -294,11 +294,6 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Elaborar certidão de trânsito em julgado",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Minutar Relatório, Voto e Ementa",
       "quantidade": 1
     },
@@ -310,6 +305,11 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Processo com prazo em curso; Verificar Decisão - Petição Avulsa",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Verificar Pendências",
       "quantidade": 1
     }
   ],
@@ -1339,10 +1339,10 @@
         "tarefa": "Analisar determinação",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 14,
-          "Gabinete Juiz Auxiliar 2": 7,
+          "Gabinete Juiz Auxiliar 2": 6,
           "Gabinete Juiz Auxiliar 3": 7
         },
-        "total": 28
+        "total": 27
       },
       {
         "codigo": "minutar-ato",
@@ -1445,6 +1445,16 @@
         "total": 3
       },
       {
+        "codigo": "preparar-comunicacao",
+        "tarefa": "Preparar comunicação",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 3,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 3
+      },
+      {
         "codigo": "revisar-ato",
         "tarefa": "Revisar ato",
         "contagens": {
@@ -1495,22 +1505,12 @@
         "total": 2
       },
       {
-        "codigo": "elaborar-certidao-de-transito-em-julgado",
-        "tarefa": "Elaborar certidão de trânsito em julgado",
+        "codigo": "verificar-pendencias",
+        "tarefa": "Verificar Pendências",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 2
-      },
-      {
-        "codigo": "preparar-comunicacao",
-        "tarefa": "Preparar comunicação",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 2,
-          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 2
       },
@@ -3146,20 +3146,6 @@
         "responsavel_processo": ""
       },
       {
-        "processo": "0600998-23.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "26/08/2026",
-        "desde": "14/09/2026",
-        "dias_tramitando": 19,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
         "processo": "0601011-22.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
@@ -4342,6 +4328,50 @@
         "responsavel_processo": ""
       }
     ],
+    "preparar-comunicacao": [
+      {
+        "processo": "0600998-23.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Preparar comunicação",
+        "autuacao": "26/08/2026",
+        "desde": "14/09/2026",
+        "dias_tramitando": 19,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601096-08.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Preparar comunicação",
+        "autuacao": "04/09/2026",
+        "desde": "14/09/2026",
+        "dias_tramitando": 9,
+        "julgado": true,
+        "data_julgamento": "14/09/2026",
+        "teor": "Julgado procedente o pedido em 14/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600038-80.2026.6.10.0028",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Preparar comunicação",
+        "autuacao": "14/09/2026",
+        "desde": "14/09/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "revisar-ato": [
       {
         "processo": "0601052-86.2026.6.10.0000",
@@ -4520,12 +4550,12 @@
         "responsavel_processo": ""
       }
     ],
-    "elaborar-certidao-de-transito-em-julgado": [
+    "verificar-pendencias": [
       {
         "processo": "0601055-41.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Elaborar certidão de trânsito em julgado",
+        "tarefa_atual": "Verificar Pendências",
         "autuacao": "31/08/2026",
         "desde": "14/09/2026",
         "dias_tramitando": 13,
@@ -4539,40 +4569,10 @@
         "processo": "0601219-06.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "NIP",
-        "tarefa_atual": "Elaborar certidão de trânsito em julgado",
+        "tarefa_atual": "Verificar Pendências",
         "autuacao": "11/09/2026",
         "desde": "14/09/2026",
         "dias_tramitando": 2,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "preparar-comunicacao": [
-      {
-        "processo": "0601096-08.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Preparar comunicação",
-        "autuacao": "04/09/2026",
-        "desde": "14/09/2026",
-        "dias_tramitando": 9,
-        "julgado": true,
-        "data_julgamento": "14/09/2026",
-        "teor": "Julgado procedente o pedido em 14/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600038-80.2026.6.10.0028",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Preparar comunicação",
-        "autuacao": "14/09/2026",
-        "desde": "14/09/2026",
-        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -5533,7 +5533,7 @@
         "processo": "0601219-06.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "NIP",
-        "tarefa_atual": "Elaborar certidão de trânsito em julgado",
+        "tarefa_atual": "Verificar Pendências",
         "autuacao": "11/09/2026",
         "desde": "14/09/2026",
         "dias_tramitando": 2,
@@ -6249,7 +6249,7 @@
         "processo": "0600998-23.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
+        "tarefa_atual": "Preparar comunicação",
         "autuacao": "26/08/2026",
         "desde": "14/09/2026",
         "dias_tramitando": 19,
@@ -7399,7 +7399,7 @@
         "processo": "0601055-41.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Elaborar certidão de trânsito em julgado",
+        "tarefa_atual": "Verificar Pendências",
         "autuacao": "31/08/2026",
         "desde": "14/09/2026",
         "dias_tramitando": 13,
@@ -9146,7 +9146,7 @@
       "processo": "0600998-23.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Preparar comunicação",
       "autuacao": "26/08/2026",
       "desde": "14/09/2026",
       "dias_tramitando": 19,
@@ -9664,7 +9664,7 @@
       "processo": "0601055-41.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Elaborar certidão de trânsito em julgado",
+      "tarefa_atual": "Verificar Pendências",
       "autuacao": "31/08/2026",
       "desde": "14/09/2026",
       "dias_tramitando": 13,
@@ -10392,7 +10392,7 @@
       "processo": "0601219-06.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "NIP",
-      "tarefa_atual": "Elaborar certidão de trânsito em julgado",
+      "tarefa_atual": "Verificar Pendências",
       "autuacao": "11/09/2026",
       "desde": "14/09/2026",
       "dias_tramitando": 2,
@@ -13552,7 +13552,7 @@
       "processo": "0600998-23.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Preparar comunicação",
       "autuacao": "26/08/2026",
       "desde": "14/09/2026",
       "dias_tramitando": 19,
@@ -14070,7 +14070,7 @@
       "processo": "0601055-41.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Elaborar certidão de trânsito em julgado",
+      "tarefa_atual": "Verificar Pendências",
       "autuacao": "31/08/2026",
       "desde": "14/09/2026",
       "dias_tramitando": 13,
@@ -14798,7 +14798,7 @@
       "processo": "0601219-06.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "NIP",
-      "tarefa_atual": "Elaborar certidão de trânsito em julgado",
+      "tarefa_atual": "Verificar Pendências",
       "autuacao": "11/09/2026",
       "desde": "14/09/2026",
       "dias_tramitando": 2,
@@ -17949,7 +17949,7 @@
       "processo": "0601055-41.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Elaborar certidão de trânsito em julgado",
+      "tarefa_atual": "Verificar Pendências",
       "autuacao": "31/08/2026",
       "desde": "14/09/2026",
       "dias_tramitando": 13,
@@ -18171,8 +18171,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "14/09/2026 15:13",
+  "publicado_em": "14/09/2026 15:14",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "62b011bd7dd1d391b31768f33ea88d429fe7a0340770a230b64f592f10bb332d"
+  "hash_publicacao": "1718d205dc94c909d965677768922f501a1c2525d96617c20b3736cecb273fa1"
 }
