@@ -155,7 +155,7 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Aguardando julgamento do recurso interno",
-      "quantidade": 25
+      "quantidade": 24
     },
     {
       "gabinete": "Gab. JA 2",
@@ -219,6 +219,11 @@
     },
     {
       "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Analisar Processos",
       "quantidade": 1
     },
@@ -229,7 +234,7 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Pauta provisória; Processo com prazo em curso",
+      "tarefa_atual": "Analisar resposta do expediente; Pauta provisória",
       "quantidade": 1
     },
     {
@@ -1386,10 +1391,10 @@
         "tarefa": "Aguardando julgamento do recurso interno",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 8,
-          "Gabinete Juiz Auxiliar 2": 25,
+          "Gabinete Juiz Auxiliar 2": 24,
           "Gabinete Juiz Auxiliar 3": 10
         },
-        "total": 43
+        "total": 42
       },
       {
         "codigo": "analisar-determinacao",
@@ -1612,6 +1617,16 @@
         "total": 1
       },
       {
+        "codigo": "aguardando-julgamento-do-recurso-interno-registrar-recurso",
+        "tarefa": "Aguardando julgamento do recurso interno; Registrar recurso",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
         "codigo": "analisar-acordao-assinado-sjd-analisar-processos-processo-julgado",
         "tarefa": "Analisar Acórdão Assinado - SJD; Analisar Processos; Processo julgado",
         "contagens": {
@@ -1642,6 +1657,16 @@
         "total": 1
       },
       {
+        "codigo": "analisar-resposta-do-expediente-pauta-provisoria",
+        "tarefa": "Analisar resposta do expediente; Pauta provisória",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
         "codigo": "minutar-ato-peticoes-nao-lidas",
         "tarefa": "Minutar ato; Petições não lidas",
         "contagens": {
@@ -1658,16 +1683,6 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
-        "codigo": "pauta-provisoria-processo-com-prazo-em-curso",
-        "tarefa": "Pauta provisória; Processo com prazo em curso",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
       },
@@ -2517,20 +2532,6 @@
         "julgado": true,
         "data_julgamento": "19/08/2026",
         "teor": "Julgado procedente o pedido em 19/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600238-74.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno",
-        "autuacao": "13/07/2026",
-        "desde": "08/09/2026",
-        "dias_tramitando": 63,
-        "julgado": true,
-        "data_julgamento": "22/08/2026",
-        "teor": "Julgado procedente em parte do pedido em 22/08/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -4693,6 +4694,22 @@
         "responsavel_processo": ""
       }
     ],
+    "aguardando-julgamento-do-recurso-interno-registrar-recurso": [
+      {
+        "processo": "0600238-74.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
+        "autuacao": "13/07/2026",
+        "desde": "13/07/2026",
+        "dias_tramitando": 63,
+        "julgado": true,
+        "data_julgamento": "22/08/2026",
+        "teor": "Julgado procedente em parte do pedido em 22/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "analisar-acordao-assinado-sjd-analisar-processos-processo-julgado": [
       {
         "processo": "0601003-45.2026.6.10.0000",
@@ -4741,6 +4758,22 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-resposta-do-expediente-pauta-provisoria": [
+      {
+        "processo": "0600238-74.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Analisar resposta do expediente; Pauta provisória",
+        "autuacao": "25/08/2026",
+        "desde": "25/08/2026",
+        "dias_tramitando": 21,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "minutar-ato-peticoes-nao-lidas": [
       {
         "processo": "0600177-19.2026.6.10.0000",
@@ -4766,22 +4799,6 @@
         "autuacao": "10/09/2026",
         "desde": "10/09/2026",
         "dias_tramitando": 5,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "pauta-provisoria-processo-com-prazo-em-curso": [
-      {
-        "processo": "0600238-74.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Pauta provisória; Processo com prazo em curso",
-        "autuacao": "25/08/2026",
-        "desde": "25/08/2026",
-        "dias_tramitando": 21,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -5952,9 +5969,9 @@
         "processo": "0600238-74.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno",
+        "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
         "autuacao": "13/07/2026",
-        "desde": "08/09/2026",
+        "desde": "13/07/2026",
         "dias_tramitando": 63,
         "julgado": true,
         "data_julgamento": "22/08/2026",
@@ -6386,7 +6403,7 @@
         "processo": "0600238-74.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Pauta provisória; Processo com prazo em curso",
+        "tarefa_atual": "Analisar resposta do expediente; Pauta provisória",
         "autuacao": "25/08/2026",
         "desde": "25/08/2026",
         "dias_tramitando": 21,
@@ -8765,9 +8782,9 @@
       "processo": "0600238-74.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Aguardando julgamento do recurso interno",
+      "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
       "autuacao": "13/07/2026",
-      "desde": "08/09/2026",
+      "desde": "13/07/2026",
       "dias_tramitando": 63,
       "julgado": true,
       "data_julgamento": "22/08/2026",
@@ -13457,9 +13474,9 @@
       "processo": "0600238-74.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Aguardando julgamento do recurso interno",
+      "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
       "autuacao": "13/07/2026",
-      "desde": "08/09/2026",
+      "desde": "13/07/2026",
       "dias_tramitando": 63,
       "julgado": true,
       "data_julgamento": "22/08/2026",
@@ -16472,7 +16489,7 @@
       "processo": "0600238-74.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "REC no(a) Rp",
-      "tarefa_atual": "Pauta provisória; Processo com prazo em curso",
+      "tarefa_atual": "Analisar resposta do expediente; Pauta provisória",
       "autuacao": "25/08/2026",
       "desde": "25/08/2026",
       "dias_tramitando": 21,
@@ -17960,9 +17977,9 @@
       "processo": "0600238-74.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Aguardando julgamento do recurso interno",
+      "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
       "autuacao": "13/07/2026",
-      "desde": "08/09/2026",
+      "desde": "13/07/2026",
       "dias_tramitando": 63,
       "julgado": true,
       "data_julgamento": "22/08/2026",
@@ -18854,8 +18871,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "15/09/2026 19:15",
+  "publicado_em": "15/09/2026 19:16",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "c16b507c57fc0f00618b3d684f4737a426c50d262bb1eaf2c806980a3b736a15"
+  "hash_publicacao": "de8ed2a0eed31f4449efdfcc50fca6f97c30eb3612776cb66200eee1344ac3aa"
 }
