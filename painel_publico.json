@@ -109,17 +109,17 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Analisar Processos",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Analisar determinação - Urgentes; Petições não lidas",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Analisar determinação; Petições não lidas; Petições não lidas",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Fechar expediente manualmente",
       "quantidade": 1
     },
     {
@@ -1364,16 +1364,6 @@
         "total": 4
       },
       {
-        "codigo": "analisar-processos",
-        "tarefa": "Analisar Processos",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 3
-      },
-      {
         "codigo": "analisar-determinacao-registrar-recurso",
         "tarefa": "Analisar determinação; Registrar recurso",
         "contagens": {
@@ -1420,6 +1410,16 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 2
+        },
+        "total": 2
+      },
+      {
+        "codigo": "analisar-processos",
+        "tarefa": "Analisar Processos",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 2
       },
@@ -1570,6 +1570,16 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
+        "codigo": "fechar-expediente-manualmente",
+        "tarefa": "Fechar expediente manualmente",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
       },
@@ -4083,50 +4093,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-processos": [
-      {
-        "processo": "0600190-18.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Ag no(a) Rp",
-        "tarefa_atual": "Analisar Processos",
-        "autuacao": "23/07/2026",
-        "desde": "03/09/2026",
-        "dias_tramitando": 53,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600080-19.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos",
-        "autuacao": "19/08/2026",
-        "desde": "14/09/2026",
-        "dias_tramitando": 26,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600949-79.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos",
-        "autuacao": "26/08/2026",
-        "desde": "14/09/2026",
-        "dias_tramitando": 19,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "analisar-determinacao-registrar-recurso": [
       {
         "processo": "0600996-53.2026.6.10.0000",
@@ -4326,6 +4292,36 @@
         "autuacao": "28/08/2026",
         "desde": "14/09/2026",
         "dias_tramitando": 17,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-processos": [
+      {
+        "processo": "0600190-18.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Ag no(a) Rp",
+        "tarefa_atual": "Analisar Processos",
+        "autuacao": "23/07/2026",
+        "desde": "03/09/2026",
+        "dias_tramitando": 53,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600949-79.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Analisar Processos",
+        "autuacao": "26/08/2026",
+        "desde": "14/09/2026",
+        "dias_tramitando": 19,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -4657,6 +4653,22 @@
         "responsavel_processo": ""
       }
     ],
+    "fechar-expediente-manualmente": [
+      {
+        "processo": "0600080-19.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Fechar expediente manualmente",
+        "autuacao": "19/08/2026",
+        "desde": "15/09/2026",
+        "dias_tramitando": 26,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "minutar-ato-verificar-decisao-peticao-avulsa": [
       {
         "processo": "0601157-63.2026.6.10.0000",
@@ -4940,9 +4952,9 @@
         "processo": "0600080-19.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos",
+        "tarefa_atual": "Fechar expediente manualmente",
         "autuacao": "19/08/2026",
-        "desde": "14/09/2026",
+        "desde": "15/09/2026",
         "dias_tramitando": 26,
         "julgado": false,
         "data_julgamento": "",
@@ -16092,9 +16104,9 @@
       "processo": "0600080-19.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "REC no(a) Rp",
-      "tarefa_atual": "Analisar Processos",
+      "tarefa_atual": "Fechar expediente manualmente",
       "autuacao": "19/08/2026",
-      "desde": "14/09/2026",
+      "desde": "15/09/2026",
       "dias_tramitando": 26,
       "julgado": false,
       "data_julgamento": "",
@@ -18544,8 +18556,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "15/09/2026 10:10",
+  "publicado_em": "15/09/2026 10:11",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "cad1bb555fafc3d0bc8f4f1b0896b36ed7ab2d523ea28ba5f849a43688331637"
+  "hash_publicacao": "15c80d879aa80fa3e69341b5688d0a7d696158c3fab1f0f397073a5830d5d50f"
 }
