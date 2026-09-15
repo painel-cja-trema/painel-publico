@@ -12,7 +12,7 @@
       "quantidade": 50,
       "media_dias": 31.4,
       "maior_tempo": 160,
-      "urgentes": 0,
+      "urgentes": 1,
       "minutar": 1,
       "julgados": 28,
       "percentual_julgados": 47.5,
@@ -109,12 +109,12 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Analisar determinação; Petições não lidas; Petições não lidas",
+      "tarefa_atual": "Analisar determinação - Urgentes; Petições não lidas",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Atualizar dados do processo; Petições não lidas",
+      "tarefa_atual": "Analisar determinação; Petições não lidas; Petições não lidas",
       "quantidade": 1
     },
     {
@@ -1524,6 +1524,16 @@
         "total": 1
       },
       {
+        "codigo": "analisar-determinacao-urgentes-peticoes-nao-lidas",
+        "tarefa": "Analisar determinação - Urgentes; Petições não lidas",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
         "codigo": "analisar-determinacao-peticoes-nao-lidas-peticoes-nao-lidas",
         "tarefa": "Analisar determinação; Petições não lidas; Petições não lidas",
         "contagens": {
@@ -1539,16 +1549,6 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "atualizar-dados-do-processo-peticoes-nao-lidas",
-        "tarefa": "Atualizar dados do processo; Petições não lidas",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -4577,6 +4577,22 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-determinacao-urgentes-peticoes-nao-lidas": [
+      {
+        "processo": "0601287-53.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação - Urgentes; Petições não lidas",
+        "autuacao": "11/09/2026",
+        "desde": "11/09/2026",
+        "dias_tramitando": 3,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "analisar-determinacao-peticoes-nao-lidas-peticoes-nao-lidas": [
       {
         "processo": "0601371-54.2026.6.10.0000",
@@ -4601,22 +4617,6 @@
         "tarefa_atual": "Atualizar dados do processo",
         "autuacao": "11/09/2026",
         "desde": "15/09/2026",
-        "dias_tramitando": 3,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "atualizar-dados-do-processo-peticoes-nao-lidas": [
-      {
-        "processo": "0601287-53.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Atualizar dados do processo; Petições não lidas",
-        "autuacao": "11/09/2026",
-        "desde": "11/09/2026",
         "dias_tramitando": 3,
         "julgado": false,
         "data_julgamento": "",
@@ -5514,7 +5514,7 @@
         "processo": "0601287-53.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Atualizar dados do processo; Petições não lidas",
+        "tarefa_atual": "Analisar determinação - Urgentes; Petições não lidas",
         "autuacao": "11/09/2026",
         "desde": "11/09/2026",
         "dias_tramitando": 3,
@@ -10345,7 +10345,7 @@
       "processo": "0601287-53.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Atualizar dados do processo; Petições não lidas",
+      "tarefa_atual": "Analisar determinação - Urgentes; Petições não lidas",
       "autuacao": "11/09/2026",
       "desde": "11/09/2026",
       "dias_tramitando": 3,
@@ -15009,7 +15009,7 @@
       "processo": "0601287-53.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Atualizar dados do processo; Petições não lidas",
+      "tarefa_atual": "Analisar determinação - Urgentes; Petições não lidas",
       "autuacao": "11/09/2026",
       "desde": "11/09/2026",
       "dias_tramitando": 3,
@@ -18544,8 +18544,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "15/09/2026 10:08",
+  "publicado_em": "15/09/2026 10:09",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "48ce4f4098e087b3250062e5b13576869d3b3b6e4788d78adf05c087893c7f08"
+  "hash_publicacao": "ffce9ae894d87796c6773e6a6469f12338f5a595814c6771c6b1bd437d02f629"
 }
