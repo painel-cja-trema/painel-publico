@@ -119,17 +119,17 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Assinar ato; Petições não lidas",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Atualizar dados do processo; Petições não lidas; Petições não lidas",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Elaborar Documentos",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Lançar movimento; Petições não lidas",
       "quantidade": 1
     },
     {
@@ -779,8 +779,8 @@
           "TRIAGEM_URGENTE": 0,
           "TRIAGEM_ORDINARIA": 4,
           "MINUTAR_ATO": 1,
-          "ASSINAR_ATO": 5,
-          "LANCAR_MOVIMENTACAO": 2
+          "ASSINAR_ATO": 4,
+          "LANCAR_MOVIMENTACAO": 3
         }
       },
       {
@@ -812,8 +812,8 @@
       "TRIAGEM_URGENTE": 2,
       "TRIAGEM_ORDINARIA": 7,
       "MINUTAR_ATO": 15,
-      "ASSINAR_ATO": 8,
-      "LANCAR_MOVIMENTACAO": 9
+      "ASSINAR_ATO": 7,
+      "LANCAR_MOVIMENTACAO": 10
     },
     "total_acervo": 218
   },
@@ -1246,20 +1246,6 @@
         "responsavel_processo": ""
       },
       {
-        "processo": "0601161-03.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato; Petições não lidas",
-        "autuacao": "10/09/2026",
-        "desde": "10/09/2026",
-        "dias_tramitando": 4,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
         "processo": "0601709-28.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
@@ -1367,6 +1353,20 @@
         "autuacao": "09/09/2026",
         "desde": "14/09/2026",
         "dias_tramitando": 5,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601161-03.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Lançar movimento; Petições não lidas",
+        "autuacao": "10/09/2026",
+        "desde": "10/09/2026",
+        "dias_tramitando": 4,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -1719,8 +1719,8 @@
         "total": 1
       },
       {
-        "codigo": "assinar-ato-peticoes-nao-lidas",
-        "tarefa": "Assinar ato; Petições não lidas",
+        "codigo": "atualizar-dados-do-processo-peticoes-nao-lidas-peticoes-nao-lidas",
+        "tarefa": "Atualizar dados do processo; Petições não lidas; Petições não lidas",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -1729,8 +1729,8 @@
         "total": 1
       },
       {
-        "codigo": "atualizar-dados-do-processo-peticoes-nao-lidas-peticoes-nao-lidas",
-        "tarefa": "Atualizar dados do processo; Petições não lidas; Petições não lidas",
+        "codigo": "lancar-movimento-peticoes-nao-lidas",
+        "tarefa": "Lançar movimento; Petições não lidas",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -4808,22 +4808,6 @@
         "responsavel_processo": ""
       }
     ],
-    "assinar-ato-peticoes-nao-lidas": [
-      {
-        "processo": "0601161-03.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato; Petições não lidas",
-        "autuacao": "10/09/2026",
-        "desde": "10/09/2026",
-        "dias_tramitando": 4,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "atualizar-dados-do-processo-peticoes-nao-lidas-peticoes-nao-lidas": [
       {
         "processo": "0601371-54.2026.6.10.0000",
@@ -4833,6 +4817,22 @@
         "autuacao": "12/09/2026",
         "desde": "12/09/2026",
         "dias_tramitando": 2,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "lancar-movimento-peticoes-nao-lidas": [
+      {
+        "processo": "0601161-03.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Lançar movimento; Petições não lidas",
+        "autuacao": "10/09/2026",
+        "desde": "10/09/2026",
+        "dias_tramitando": 4,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -5625,7 +5625,7 @@
         "processo": "0601161-03.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Assinar ato; Petições não lidas",
+        "tarefa_atual": "Lançar movimento; Petições não lidas",
         "autuacao": "10/09/2026",
         "desde": "10/09/2026",
         "dias_tramitando": 4,
@@ -10456,7 +10456,7 @@
       "processo": "0601161-03.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Assinar ato; Petições não lidas",
+      "tarefa_atual": "Lançar movimento; Petições não lidas",
       "autuacao": "10/09/2026",
       "desde": "10/09/2026",
       "dias_tramitando": 4,
@@ -14834,7 +14834,7 @@
       "processo": "0601161-03.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Assinar ato; Petições não lidas",
+      "tarefa_atual": "Lançar movimento; Petições não lidas",
       "autuacao": "10/09/2026",
       "desde": "10/09/2026",
       "dias_tramitando": 4,
@@ -18249,8 +18249,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "14/09/2026 21:58",
+  "publicado_em": "14/09/2026 22:01",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "31e0e8df9eccdcb6411cce1de5cdd008b64683dcab9a1e1118dea7ccee2a1497"
+  "hash_publicacao": "bbab591af560d4a1e4e57e0e50011d9f31569c1c30d28d247473aa3424e73b0b"
 }
