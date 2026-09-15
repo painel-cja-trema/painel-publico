@@ -44,7 +44,7 @@
       "juiz": "Dr. Rubem Filho",
       "distribuidor": "Danielle Cerqueira Castro",
       "quantidade": 50,
-      "media_dias": 18.4,
+      "media_dias": 18.5,
       "maior_tempo": 97,
       "urgentes": 2,
       "minutar": 3,
@@ -109,6 +109,11 @@
     },
     {
       "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Aguardando Manifestação do MPE",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Analisar determinação; Petições não lidas; Petições não lidas",
       "quantidade": 1
     },
@@ -125,11 +130,6 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Minutar ato; Petições não lidas",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Preparar comunicação",
       "quantidade": 1
     },
     {
@@ -219,17 +219,17 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Analisar resposta do expediente",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Assinar ato",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Atualizar dados do processo",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Elaborar Documentos",
       "quantidade": 1
     },
     {
@@ -1429,14 +1429,34 @@
         "total": 4
       },
       {
+        "codigo": "aguardando-manifestacao-do-mpe",
+        "tarefa": "Aguardando Manifestação do MPE",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 2
+        },
+        "total": 3
+      },
+      {
         "codigo": "analisar-resposta-do-expediente",
         "tarefa": "Analisar resposta do expediente",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 3
         },
-        "total": 4
+        "total": 3
+      },
+      {
+        "codigo": "elaborar-documentos",
+        "tarefa": "Elaborar Documentos",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 2
+        },
+        "total": 3
       },
       {
         "codigo": "registrar-ciencia-por-telefone-ou-pessoalmente",
@@ -1447,16 +1467,6 @@
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 3
-      },
-      {
-        "codigo": "aguardando-manifestacao-do-mpe",
-        "tarefa": "Aguardando Manifestação do MPE",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 2
-        },
-        "total": 2
       },
       {
         "codigo": "analisar-processos-lancar-movimentos-de-julgamento-colegiado-processo-julgado",
@@ -1471,16 +1481,6 @@
       {
         "codigo": "analisar-determinacao-urgentes",
         "tarefa": "Analisar determinação - Urgentes",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 2
-        },
-        "total": 2
-      },
-      {
-        "codigo": "elaborar-documentos",
-        "tarefa": "Elaborar Documentos",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -1635,16 +1635,6 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
-        "codigo": "preparar-comunicacao",
-        "tarefa": "Preparar comunicação",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
       },
@@ -2560,7 +2550,7 @@
         "tarefa_atual": "Processo com prazo em curso",
         "autuacao": "28/08/2026",
         "desde": "14/09/2026",
-        "dias_tramitando": 17,
+        "dias_tramitando": 18,
         "julgado": true,
         "data_julgamento": "31/08/2026",
         "teor": "Julgado improcedente o pedido em 31/08/2026",
@@ -4238,21 +4228,51 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-resposta-do-expediente": [
+    "aguardando-manifestacao-do-mpe": [
       {
-        "processo": "0600250-88.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar resposta do expediente",
-        "autuacao": "23/07/2026",
-        "desde": "15/09/2026",
-        "dias_tramitando": 53,
+        "processo": "0601017-29.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "NIP",
+        "tarefa_atual": "Aguardando Manifestação do MPE",
+        "autuacao": "27/08/2026",
+        "desde": "08/09/2026",
+        "dias_tramitando": 18,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
+      {
+        "processo": "0600066-75.2026.6.10.0019",
+        "gabinete": "Gab. JA 3",
+        "classe": "NIP",
+        "tarefa_atual": "Aguardando Manifestação do MPE",
+        "autuacao": "28/08/2026",
+        "desde": "14/09/2026",
+        "dias_tramitando": 17,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601026-88.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "RepEsp",
+        "tarefa_atual": "Aguardando Manifestação do MPE",
+        "autuacao": "28/08/2026",
+        "desde": "15/09/2026",
+        "dias_tramitando": 17,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-resposta-do-expediente": [
       {
         "processo": "0601112-59.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
@@ -4296,6 +4316,50 @@
         "responsavel_processo": ""
       }
     ],
+    "elaborar-documentos": [
+      {
+        "processo": "0600250-88.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Elaborar Documentos",
+        "autuacao": "23/07/2026",
+        "desde": "15/09/2026",
+        "dias_tramitando": 53,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600067-73.2026.6.10.0047",
+        "gabinete": "Gab. JA 3",
+        "classe": "NIP",
+        "tarefa_atual": "Elaborar Documentos",
+        "autuacao": "13/09/2026",
+        "desde": "15/09/2026",
+        "dias_tramitando": 1,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600072-95.2026.6.10.0047",
+        "gabinete": "Gab. JA 3",
+        "classe": "NIP",
+        "tarefa_atual": "Elaborar Documentos",
+        "autuacao": "13/09/2026",
+        "desde": "15/09/2026",
+        "dias_tramitando": 1,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "registrar-ciencia-por-telefone-ou-pessoalmente": [
       {
         "processo": "0600998-23.2026.6.10.0000",
@@ -4333,36 +4397,6 @@
         "autuacao": "05/09/2026",
         "desde": "07/09/2026",
         "dias_tramitando": 10,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "aguardando-manifestacao-do-mpe": [
-      {
-        "processo": "0601017-29.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "NIP",
-        "tarefa_atual": "Aguardando Manifestação do MPE",
-        "autuacao": "27/08/2026",
-        "desde": "08/09/2026",
-        "dias_tramitando": 18,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600066-75.2026.6.10.0019",
-        "gabinete": "Gab. JA 3",
-        "classe": "NIP",
-        "tarefa_atual": "Aguardando Manifestação do MPE",
-        "autuacao": "28/08/2026",
-        "desde": "14/09/2026",
-        "dias_tramitando": 17,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -4423,36 +4457,6 @@
         "autuacao": "10/09/2026",
         "desde": "14/09/2026",
         "dias_tramitando": 4,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "elaborar-documentos": [
-      {
-        "processo": "0600067-73.2026.6.10.0047",
-        "gabinete": "Gab. JA 3",
-        "classe": "NIP",
-        "tarefa_atual": "Elaborar Documentos",
-        "autuacao": "13/09/2026",
-        "desde": "15/09/2026",
-        "dias_tramitando": 1,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600072-95.2026.6.10.0047",
-        "gabinete": "Gab. JA 3",
-        "classe": "NIP",
-        "tarefa_atual": "Elaborar Documentos",
-        "autuacao": "13/09/2026",
-        "desde": "15/09/2026",
-        "dias_tramitando": 1,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -4763,22 +4767,6 @@
         "autuacao": "10/09/2026",
         "desde": "10/09/2026",
         "dias_tramitando": 4,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "preparar-comunicacao": [
-      {
-        "processo": "0601026-88.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "RepEsp",
-        "tarefa_atual": "Preparar comunicação",
-        "autuacao": "28/08/2026",
-        "desde": "15/09/2026",
-        "dias_tramitando": 17,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -5177,7 +5165,7 @@
         "processo": "0601026-88.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "RepEsp",
-        "tarefa_atual": "Preparar comunicação",
+        "tarefa_atual": "Aguardando Manifestação do MPE",
         "autuacao": "28/08/2026",
         "desde": "15/09/2026",
         "dias_tramitando": 17,
@@ -5977,7 +5965,7 @@
         "processo": "0600250-88.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Analisar resposta do expediente",
+        "tarefa_atual": "Elaborar Documentos",
         "autuacao": "23/07/2026",
         "desde": "15/09/2026",
         "dias_tramitando": 53,
@@ -7348,6 +7336,20 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0601020-81.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Processo com prazo em curso",
+        "autuacao": "28/08/2026",
+        "desde": "14/09/2026",
+        "dias_tramitando": 18,
+        "julgado": true,
+        "data_julgamento": "31/08/2026",
+        "teor": "Julgado improcedente o pedido em 31/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0600066-75.2026.6.10.0019",
         "gabinete": "Gab. JA 3",
         "classe": "NIP",
@@ -7386,20 +7388,6 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601020-81.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Processo com prazo em curso",
-        "autuacao": "28/08/2026",
-        "desde": "14/09/2026",
-        "dias_tramitando": 17,
-        "julgado": true,
-        "data_julgamento": "31/08/2026",
-        "teor": "Julgado improcedente o pedido em 31/08/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -8720,7 +8708,7 @@
       "processo": "0600250-88.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar resposta do expediente",
+      "tarefa_atual": "Elaborar Documentos",
       "autuacao": "23/07/2026",
       "desde": "15/09/2026",
       "dias_tramitando": 53,
@@ -9403,6 +9391,20 @@
       "responsavel_processo": ""
     },
     {
+      "processo": "0601020-81.2026.6.10.0000",
+      "gabinete": "Gab. JA 3",
+      "classe": "Rp",
+      "tarefa_atual": "Processo com prazo em curso",
+      "autuacao": "28/08/2026",
+      "desde": "14/09/2026",
+      "dias_tramitando": 18,
+      "julgado": true,
+      "data_julgamento": "31/08/2026",
+      "teor": "Julgado improcedente o pedido em 31/08/2026",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
+    },
+    {
       "processo": "0600066-75.2026.6.10.0019",
       "gabinete": "Gab. JA 3",
       "classe": "NIP",
@@ -9441,20 +9443,6 @@
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
-      "segredo_justica": "NÃO",
-      "responsavel_processo": ""
-    },
-    {
-      "processo": "0601020-81.2026.6.10.0000",
-      "gabinete": "Gab. JA 3",
-      "classe": "Rp",
-      "tarefa_atual": "Processo com prazo em curso",
-      "autuacao": "28/08/2026",
-      "desde": "14/09/2026",
-      "dias_tramitando": 17,
-      "julgado": true,
-      "data_julgamento": "31/08/2026",
-      "teor": "Julgado improcedente o pedido em 31/08/2026",
       "segredo_justica": "NÃO",
       "responsavel_processo": ""
     },
@@ -9504,7 +9492,7 @@
       "processo": "0601026-88.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "RepEsp",
-      "tarefa_atual": "Preparar comunicação",
+      "tarefa_atual": "Aguardando Manifestação do MPE",
       "autuacao": "28/08/2026",
       "desde": "15/09/2026",
       "dias_tramitando": 17,
@@ -13398,7 +13386,7 @@
       "processo": "0600250-88.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar resposta do expediente",
+      "tarefa_atual": "Elaborar Documentos",
       "autuacao": "23/07/2026",
       "desde": "15/09/2026",
       "dias_tramitando": 53,
@@ -14081,6 +14069,20 @@
       "responsavel_processo": ""
     },
     {
+      "processo": "0601020-81.2026.6.10.0000",
+      "gabinete": "Gab. JA 3",
+      "classe": "Rp",
+      "tarefa_atual": "Processo com prazo em curso",
+      "autuacao": "28/08/2026",
+      "desde": "14/09/2026",
+      "dias_tramitando": 18,
+      "julgado": true,
+      "data_julgamento": "31/08/2026",
+      "teor": "Julgado improcedente o pedido em 31/08/2026",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
+    },
+    {
       "processo": "0600066-75.2026.6.10.0019",
       "gabinete": "Gab. JA 3",
       "classe": "NIP",
@@ -14119,20 +14121,6 @@
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
-      "segredo_justica": "NÃO",
-      "responsavel_processo": ""
-    },
-    {
-      "processo": "0601020-81.2026.6.10.0000",
-      "gabinete": "Gab. JA 3",
-      "classe": "Rp",
-      "tarefa_atual": "Processo com prazo em curso",
-      "autuacao": "28/08/2026",
-      "desde": "14/09/2026",
-      "dias_tramitando": 17,
-      "julgado": true,
-      "data_julgamento": "31/08/2026",
-      "teor": "Julgado improcedente o pedido em 31/08/2026",
       "segredo_justica": "NÃO",
       "responsavel_processo": ""
     },
@@ -14182,7 +14170,7 @@
       "processo": "0601026-88.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "RepEsp",
-      "tarefa_atual": "Preparar comunicação",
+      "tarefa_atual": "Aguardando Manifestação do MPE",
       "autuacao": "28/08/2026",
       "desde": "15/09/2026",
       "dias_tramitando": 17,
@@ -18324,7 +18312,7 @@
       "tarefa_atual": "Processo com prazo em curso",
       "autuacao": "28/08/2026",
       "desde": "14/09/2026",
-      "dias_tramitando": 17,
+      "dias_tramitando": 18,
       "julgado": true,
       "data_julgamento": "31/08/2026",
       "teor": "Julgado improcedente o pedido em 31/08/2026",
@@ -18725,8 +18713,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "15/09/2026 11:10",
+  "publicado_em": "15/09/2026 11:11",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "b194c57562a4aa645c73499355abac1fa1b3884356584708c025b82b139ab0f4"
+  "hash_publicacao": "f2ab6af67bb595ddf35c9789dcbe3f7fbf9e5b90509c72c2858fdf0aae15c506"
 }
