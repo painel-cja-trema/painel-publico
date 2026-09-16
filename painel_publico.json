@@ -99,12 +99,12 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Analisar Petição Avulsa; Analisar petição avulsa de autuação; Minutar ato; Petições não lidas",
+      "tarefa_atual": "Analisar determinação - Urgentes",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Analisar determinação - Urgentes",
+      "tarefa_atual": "Analisar petição avulsa de autuação; Minutar ato; Petições descartadas",
       "quantidade": 1
     },
     {
@@ -244,13 +244,13 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Processo com prazo em curso",
       "quantidade": 12
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Processo com prazo em curso",
-      "quantidade": 12
+      "tarefa_atual": "Analisar determinação",
+      "quantidade": 11
     },
     {
       "gabinete": "Gab. JA 3",
@@ -315,6 +315,11 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Minutar ato; Verificar Decisão - Petição Avulsa",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Preparar comunicação",
       "quantidade": 1
     },
     {
@@ -844,7 +849,7 @@
       "processo": "0601135-05.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar Petição Avulsa; Analisar petição avulsa de autuação; Minutar ato; Petições não lidas",
+      "tarefa_atual": "Analisar petição avulsa de autuação; Minutar ato; Petições descartadas",
       "autuacao": "09/09/2026",
       "desde": "09/09/2026",
       "dias_tramitando": 7,
@@ -1407,7 +1412,7 @@
         "processo": "0601135-05.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Analisar petição avulsa de autuação; Minutar ato; Petições não lidas",
+        "tarefa_atual": "Analisar petição avulsa de autuação; Minutar ato; Petições descartadas",
         "autuacao": "09/09/2026",
         "desde": "09/09/2026",
         "dias_tramitando": 7,
@@ -1725,9 +1730,9 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 13,
           "Gabinete Juiz Auxiliar 2": 6,
-          "Gabinete Juiz Auxiliar 3": 12
+          "Gabinete Juiz Auxiliar 3": 11
         },
-        "total": 31
+        "total": 30
       },
       {
         "codigo": "minutar-ato",
@@ -1880,6 +1885,16 @@
         "total": 2
       },
       {
+        "codigo": "preparar-comunicacao",
+        "tarefa": "Preparar comunicação",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 2
+      },
+      {
         "codigo": "processo-com-prazo-em-curso-processo-julgado",
         "tarefa": "Processo com prazo em curso; Processo julgado",
         "contagens": {
@@ -1910,16 +1925,6 @@
         "total": 1
       },
       {
-        "codigo": "analisar-peticao-avulsa-analisar-peticao-avulsa-de-autuacao-minutar-ato-peticoes-nao-lidas",
-        "tarefa": "Analisar Petição Avulsa; Analisar petição avulsa de autuação; Minutar ato; Petições não lidas",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
         "codigo": "analisar-peticao-avulsa-peticoes-nao-lidas-registrar-ciencia-por-telefone-ou-pessoalmente",
         "tarefa": "Analisar Petição Avulsa; Petições não lidas; Registrar ciência por telefone ou pessoalmente",
         "contagens": {
@@ -1942,6 +1947,16 @@
       {
         "codigo": "analisar-determinacao-urgentes",
         "tarefa": "Analisar determinação - Urgentes",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "analisar-peticao-avulsa-de-autuacao-minutar-ato-peticoes-descartadas",
+        "tarefa": "Analisar petição avulsa de autuação; Minutar ato; Petições descartadas",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -1985,16 +2000,6 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "preparar-comunicacao",
-        "tarefa": "Preparar comunicação",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -3699,20 +3704,6 @@
         "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
-      },
-      {
-        "processo": "0600081-11.2026.6.10.0030",
-        "gabinete": "Gab. JA 3",
-        "classe": "NIP",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "16/09/2026",
-        "desde": "16/09/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
       }
     ],
     "minutar-ato": [
@@ -5061,6 +5052,36 @@
         "responsavel_processo": ""
       }
     ],
+    "preparar-comunicacao": [
+      {
+        "processo": "0600967-03.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "CumSen",
+        "tarefa_atual": "Preparar comunicação",
+        "autuacao": "22/08/2026",
+        "desde": "16/09/2026",
+        "dias_tramitando": 25,
+        "julgado": true,
+        "data_julgamento": "07/09/2026",
+        "teor": "Julgado procedente em parte do pedido em 07/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600081-11.2026.6.10.0030",
+        "gabinete": "Gab. JA 3",
+        "classe": "NIP",
+        "tarefa_atual": "Preparar comunicação",
+        "autuacao": "16/09/2026",
+        "desde": "16/09/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "processo-com-prazo-em-curso-processo-julgado": [
       {
         "processo": "0600245-66.2026.6.10.0000",
@@ -5123,22 +5144,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-peticao-avulsa-analisar-peticao-avulsa-de-autuacao-minutar-ato-peticoes-nao-lidas": [
-      {
-        "processo": "0601135-05.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Analisar petição avulsa de autuação; Minutar ato; Petições não lidas",
-        "autuacao": "09/09/2026",
-        "desde": "09/09/2026",
-        "dias_tramitando": 7,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "analisar-peticao-avulsa-peticoes-nao-lidas-registrar-ciencia-por-telefone-ou-pessoalmente": [
       {
         "processo": "0600038-80.2026.6.10.0028",
@@ -5180,6 +5185,22 @@
         "autuacao": "15/09/2026",
         "desde": "16/09/2026",
         "dias_tramitando": 1,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-peticao-avulsa-de-autuacao-minutar-ato-peticoes-descartadas": [
+      {
+        "processo": "0601135-05.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar petição avulsa de autuação; Minutar ato; Petições descartadas",
+        "autuacao": "09/09/2026",
+        "desde": "09/09/2026",
+        "dias_tramitando": 7,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -5247,22 +5268,6 @@
         "julgado": true,
         "data_julgamento": "15/09/2026",
         "teor": "Julgado procedente em parte do pedido em 15/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "preparar-comunicacao": [
-      {
-        "processo": "0600967-03.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "CumSen",
-        "tarefa_atual": "Preparar comunicação",
-        "autuacao": "22/08/2026",
-        "desde": "16/09/2026",
-        "dias_tramitando": 25,
-        "julgado": true,
-        "data_julgamento": "07/09/2026",
-        "teor": "Julgado procedente em parte do pedido em 07/09/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -5954,7 +5959,7 @@
         "processo": "0601135-05.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Analisar petição avulsa de autuação; Minutar ato; Petições não lidas",
+        "tarefa_atual": "Analisar petição avulsa de autuação; Minutar ato; Petições descartadas",
         "autuacao": "09/09/2026",
         "desde": "09/09/2026",
         "dias_tramitando": 7,
@@ -8492,7 +8497,7 @@
         "processo": "0600081-11.2026.6.10.0030",
         "gabinete": "Gab. JA 3",
         "classe": "NIP",
-        "tarefa_atual": "Analisar determinação",
+        "tarefa_atual": "Preparar comunicação",
         "autuacao": "16/09/2026",
         "desde": "16/09/2026",
         "dias_tramitando": 0,
@@ -10813,7 +10818,7 @@
       "processo": "0601135-05.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar Petição Avulsa; Analisar petição avulsa de autuação; Minutar ato; Petições não lidas",
+      "tarefa_atual": "Analisar petição avulsa de autuação; Minutar ato; Petições descartadas",
       "autuacao": "09/09/2026",
       "desde": "09/09/2026",
       "dias_tramitando": 7,
@@ -11261,7 +11266,7 @@
       "processo": "0600081-11.2026.6.10.0030",
       "gabinete": "Gab. JA 3",
       "classe": "NIP",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Preparar comunicação",
       "autuacao": "16/09/2026",
       "desde": "16/09/2026",
       "dias_tramitando": 0,
@@ -15589,7 +15594,7 @@
       "processo": "0601135-05.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar Petição Avulsa; Analisar petição avulsa de autuação; Minutar ato; Petições não lidas",
+      "tarefa_atual": "Analisar petição avulsa de autuação; Minutar ato; Petições descartadas",
       "autuacao": "09/09/2026",
       "desde": "09/09/2026",
       "dias_tramitando": 7,
@@ -16037,7 +16042,7 @@
       "processo": "0600081-11.2026.6.10.0030",
       "gabinete": "Gab. JA 3",
       "classe": "NIP",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Preparar comunicação",
       "autuacao": "16/09/2026",
       "desde": "16/09/2026",
       "dias_tramitando": 0,
@@ -19572,8 +19577,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "16/09/2026 17:11",
+  "publicado_em": "16/09/2026 17:12",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "11b75c2e2573e3f7c03f28654284436cae97493fba848bd42aa0b914b5c80053"
+  "hash_publicacao": "c1d65f9b2a09994d2738589ef45712469793411d97d4505ecf7936fe964e541f"
 }
