@@ -12,7 +12,7 @@
       "quantidade": 50,
       "media_dias": 31.1,
       "maior_tempo": 161,
-      "urgentes": 1,
+      "urgentes": 2,
       "minutar": 1,
       "julgados": 27,
       "percentual_julgados": 45.0,
@@ -60,7 +60,7 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Analisar determinação",
-      "quantidade": 13
+      "quantidade": 14
     },
     {
       "gabinete": "Gab. JA 1",
@@ -99,11 +99,6 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Remeter Processos - Gabinete",
-      "quantidade": 2
-    },
-    {
-      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Revisar ato",
       "quantidade": 2
     },
@@ -119,7 +114,12 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Lançar movimento; Petições não lidas",
+      "tarefa_atual": "Analisar determinação - Urgentes",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Analisar determinação; Petições não lidas",
       "quantidade": 1
     },
     {
@@ -863,7 +863,7 @@
           "TRIAGEM_ORDINARIA": 8,
           "MINUTAR_ATO": 1,
           "ASSINAR_ATO": 0,
-          "LANCAR_MOVIMENTACAO": 1
+          "LANCAR_MOVIMENTACAO": 0
         }
       },
       {
@@ -896,7 +896,7 @@
       "TRIAGEM_ORDINARIA": 12,
       "MINUTAR_ATO": 17,
       "ASSINAR_ATO": 1,
-      "LANCAR_MOVIMENTACAO": 1
+      "LANCAR_MOVIMENTACAO": 0
     },
     "total_acervo": 223
   },
@@ -1371,22 +1371,7 @@
         "responsavel_processo": ""
       }
     ],
-    "LANCAR_MOVIMENTACAO": [
-      {
-        "processo": "0600967-03.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "CumSen",
-        "tarefa_atual": "Lançar movimento; Petições não lidas",
-        "autuacao": "22/08/2026",
-        "desde": "22/08/2026",
-        "dias_tramitando": 25,
-        "julgado": true,
-        "data_julgamento": "07/09/2026",
-        "teor": "Julgado procedente em parte do pedido em 07/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ]
+    "LANCAR_MOVIMENTACAO": []
   },
   "entrada_comissao": {
     "codigo": "LIMINAR_CERTIFICACAO",
@@ -1427,11 +1412,11 @@
         "codigo": "analisar-determinacao",
         "tarefa": "Analisar determinação",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 13,
+          "Gabinete Juiz Auxiliar 1": 14,
           "Gabinete Juiz Auxiliar 2": 7,
           "Gabinete Juiz Auxiliar 3": 20
         },
-        "total": 40
+        "total": 41
       },
       {
         "codigo": "processo-com-prazo-em-curso",
@@ -1604,6 +1589,16 @@
         "total": 2
       },
       {
+        "codigo": "analisar-determinacao-urgentes",
+        "tarefa": "Analisar determinação - Urgentes",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 2
+      },
+      {
         "codigo": "analisar-resposta-do-expediente",
         "tarefa": "Analisar resposta do expediente",
         "contagens": {
@@ -1636,16 +1631,6 @@
       {
         "codigo": "peticoes-nao-lidas-realizar-triagem-ordinarios",
         "tarefa": "Petições não lidas; Realizar triagem ordinários",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 2,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 2
-      },
-      {
-        "codigo": "remeter-processos-gabinete",
-        "tarefa": "Remeter Processos - Gabinete",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 2,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -1754,8 +1739,8 @@
         "total": 1
       },
       {
-        "codigo": "analisar-determinacao-urgentes",
-        "tarefa": "Analisar determinação - Urgentes",
+        "codigo": "analisar-determinacao-urgentes-assinar-documentos",
+        "tarefa": "Analisar determinação - Urgentes; Assinar Documentos",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -1764,12 +1749,12 @@
         "total": 1
       },
       {
-        "codigo": "analisar-determinacao-urgentes-assinar-documentos",
-        "tarefa": "Analisar determinação - Urgentes; Assinar Documentos",
+        "codigo": "analisar-determinacao-peticoes-nao-lidas",
+        "tarefa": "Analisar determinação; Petições não lidas",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
+          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
       },
@@ -1799,16 +1784,6 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "lancar-movimento-peticoes-nao-lidas",
-        "tarefa": "Lançar movimento; Petições não lidas",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -2757,6 +2732,20 @@
         "julgado": true,
         "data_julgamento": "13/09/2026",
         "teor": "Julgado procedente em parte do pedido em 13/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601008-67.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "RepEsp",
+        "tarefa_atual": "Analisar determinação",
+        "autuacao": "27/08/2026",
+        "desde": "16/09/2026",
+        "dias_tramitando": 20,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -4023,7 +4012,7 @@
         "tarefa_atual": "Conferir Relatório, Voto e Ementa",
         "autuacao": "01/09/2026",
         "desde": "14/09/2026",
-        "dias_tramitando": 14,
+        "dias_tramitando": 15,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -4559,6 +4548,36 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-determinacao-urgentes": [
+      {
+        "processo": "0601222-58.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação - Urgentes",
+        "autuacao": "11/09/2026",
+        "desde": "15/09/2026",
+        "dias_tramitando": 4,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601720-57.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação - Urgentes",
+        "autuacao": "15/09/2026",
+        "desde": "16/09/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "analisar-resposta-do-expediente": [
       {
         "processo": "0601027-73.2026.6.10.0000",
@@ -4672,36 +4691,6 @@
         "autuacao": "11/09/2026",
         "desde": "11/09/2026",
         "dias_tramitando": 4,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "remeter-processos-gabinete": [
-      {
-        "processo": "0601008-67.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "RepEsp",
-        "tarefa_atual": "Remeter Processos - Gabinete",
-        "autuacao": "27/08/2026",
-        "desde": "16/09/2026",
-        "dias_tramitando": 20,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601720-57.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Remeter Processos - Gabinete",
-        "autuacao": "15/09/2026",
-        "desde": "16/09/2026",
-        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -4883,22 +4872,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-determinacao-urgentes": [
-      {
-        "processo": "0601222-58.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação - Urgentes",
-        "autuacao": "11/09/2026",
-        "desde": "15/09/2026",
-        "dias_tramitando": 4,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "analisar-determinacao-urgentes-assinar-documentos": [
       {
         "processo": "0600958-41.2026.6.10.0000",
@@ -4908,6 +4881,22 @@
         "autuacao": "21/08/2026",
         "desde": "21/08/2026",
         "dias_tramitando": 25,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-determinacao-peticoes-nao-lidas": [
+      {
+        "processo": "0601004-30.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação; Petições não lidas",
+        "autuacao": "26/08/2026",
+        "desde": "26/08/2026",
+        "dias_tramitando": 20,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -4959,22 +4948,6 @@
         "julgado": true,
         "data_julgamento": "14/09/2026",
         "teor": "Julgado procedente o pedido em 14/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "lancar-movimento-peticoes-nao-lidas": [
-      {
-        "processo": "0600967-03.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "CumSen",
-        "tarefa_atual": "Lançar movimento; Petições não lidas",
-        "autuacao": "22/08/2026",
-        "desde": "22/08/2026",
-        "dias_tramitando": 25,
-        "julgado": true,
-        "data_julgamento": "07/09/2026",
-        "teor": "Julgado procedente em parte do pedido em 07/09/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -5045,16 +5018,16 @@
     ],
     "peticoes-nao-lidas-remeter-processos-gabinete": [
       {
-        "processo": "0601004-30.2026.6.10.0000",
+        "processo": "0600967-03.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
-        "classe": "Rp",
+        "classe": "CumSen",
         "tarefa_atual": "Petições não lidas; Remeter Processos - Gabinete",
-        "autuacao": "26/08/2026",
-        "desde": "26/08/2026",
-        "dias_tramitando": 20,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
+        "autuacao": "22/08/2026",
+        "desde": "22/08/2026",
+        "dias_tramitando": 25,
+        "julgado": true,
+        "data_julgamento": "07/09/2026",
+        "teor": "Julgado procedente em parte do pedido em 07/09/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -5356,7 +5329,7 @@
         "processo": "0600967-03.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "CumSen",
-        "tarefa_atual": "Lançar movimento; Petições não lidas",
+        "tarefa_atual": "Petições não lidas; Remeter Processos - Gabinete",
         "autuacao": "22/08/2026",
         "desde": "22/08/2026",
         "dias_tramitando": 25,
@@ -5426,7 +5399,7 @@
         "processo": "0601004-30.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Petições não lidas; Remeter Processos - Gabinete",
+        "tarefa_atual": "Analisar determinação; Petições não lidas",
         "autuacao": "26/08/2026",
         "desde": "26/08/2026",
         "dias_tramitando": 20,
@@ -5454,7 +5427,7 @@
         "processo": "0601008-67.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "RepEsp",
-        "tarefa_atual": "Remeter Processos - Gabinete",
+        "tarefa_atual": "Analisar determinação",
         "autuacao": "27/08/2026",
         "desde": "16/09/2026",
         "dias_tramitando": 20,
@@ -5958,7 +5931,7 @@
         "processo": "0601720-57.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Remeter Processos - Gabinete",
+        "tarefa_atual": "Analisar determinação - Urgentes",
         "autuacao": "15/09/2026",
         "desde": "16/09/2026",
         "dias_tramitando": 0,
@@ -6769,6 +6742,20 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0600953-19.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Conferir Relatório, Voto e Ementa",
+        "autuacao": "01/09/2026",
+        "desde": "14/09/2026",
+        "dias_tramitando": 15,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0601050-19.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
@@ -6790,20 +6777,6 @@
         "autuacao": "31/08/2026",
         "desde": "15/09/2026",
         "dias_tramitando": 15,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600953-19.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Conferir Relatório, Voto e Ementa",
-        "autuacao": "01/09/2026",
-        "desde": "14/09/2026",
-        "dias_tramitando": 14,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -9347,7 +9320,7 @@
       "processo": "0600967-03.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "CumSen",
-      "tarefa_atual": "Lançar movimento; Petições não lidas",
+      "tarefa_atual": "Petições não lidas; Remeter Processos - Gabinete",
       "autuacao": "22/08/2026",
       "desde": "22/08/2026",
       "dias_tramitando": 25,
@@ -9627,7 +9600,7 @@
       "processo": "0601004-30.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Petições não lidas; Remeter Processos - Gabinete",
+      "tarefa_atual": "Analisar determinação; Petições não lidas",
       "autuacao": "26/08/2026",
       "desde": "26/08/2026",
       "dias_tramitando": 20,
@@ -9669,7 +9642,7 @@
       "processo": "0601008-67.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "RepEsp",
-      "tarefa_atual": "Remeter Processos - Gabinete",
+      "tarefa_atual": "Analisar determinação",
       "autuacao": "27/08/2026",
       "desde": "16/09/2026",
       "dias_tramitando": 20,
@@ -10915,7 +10888,7 @@
       "processo": "0601720-57.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Remeter Processos - Gabinete",
+      "tarefa_atual": "Analisar determinação - Urgentes",
       "autuacao": "15/09/2026",
       "desde": "16/09/2026",
       "dias_tramitando": 0,
@@ -14067,7 +14040,7 @@
       "processo": "0600967-03.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "CumSen",
-      "tarefa_atual": "Lançar movimento; Petições não lidas",
+      "tarefa_atual": "Petições não lidas; Remeter Processos - Gabinete",
       "autuacao": "22/08/2026",
       "desde": "22/08/2026",
       "dias_tramitando": 25,
@@ -14347,7 +14320,7 @@
       "processo": "0601004-30.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Petições não lidas; Remeter Processos - Gabinete",
+      "tarefa_atual": "Analisar determinação; Petições não lidas",
       "autuacao": "26/08/2026",
       "desde": "26/08/2026",
       "dias_tramitando": 20,
@@ -14389,7 +14362,7 @@
       "processo": "0601008-67.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "RepEsp",
-      "tarefa_atual": "Remeter Processos - Gabinete",
+      "tarefa_atual": "Analisar determinação",
       "autuacao": "27/08/2026",
       "desde": "16/09/2026",
       "dias_tramitando": 20,
@@ -15635,7 +15608,7 @@
       "processo": "0601720-57.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Remeter Processos - Gabinete",
+      "tarefa_atual": "Analisar determinação - Urgentes",
       "autuacao": "15/09/2026",
       "desde": "16/09/2026",
       "dias_tramitando": 0,
@@ -16771,13 +16744,13 @@
       "responsavel_processo": ""
     },
     {
-      "processo": "0600159-95.2026.6.10.0000",
-      "gabinete": "Gab. JA 1",
-      "classe": "ED no(a) REC no(a) Rp",
-      "tarefa_atual": "Analisar Acórdão Assinado - SJD; Analisar Processos; Processo julgado",
+      "processo": "0600953-19.2026.6.10.0000",
+      "gabinete": "Gab. JA 2",
+      "classe": "REC no(a) Rp",
+      "tarefa_atual": "Conferir Relatório, Voto e Ementa",
       "autuacao": "01/09/2026",
-      "desde": "01/09/2026",
-      "dias_tramitando": 14,
+      "desde": "14/09/2026",
+      "dias_tramitando": 15,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -16785,12 +16758,12 @@
       "responsavel_processo": ""
     },
     {
-      "processo": "0600953-19.2026.6.10.0000",
-      "gabinete": "Gab. JA 2",
-      "classe": "REC no(a) Rp",
-      "tarefa_atual": "Conferir Relatório, Voto e Ementa",
+      "processo": "0600159-95.2026.6.10.0000",
+      "gabinete": "Gab. JA 1",
+      "classe": "ED no(a) REC no(a) Rp",
+      "tarefa_atual": "Analisar Acórdão Assinado - SJD; Analisar Processos; Processo julgado",
       "autuacao": "01/09/2026",
-      "desde": "14/09/2026",
+      "desde": "01/09/2026",
       "dias_tramitando": 14,
       "julgado": false,
       "data_julgamento": "",
@@ -18458,7 +18431,7 @@
       "processo": "0600967-03.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "CumSen",
-      "tarefa_atual": "Lançar movimento; Petições não lidas",
+      "tarefa_atual": "Petições não lidas; Remeter Processos - Gabinete",
       "autuacao": "22/08/2026",
       "desde": "22/08/2026",
       "dias_tramitando": 25,
@@ -19128,8 +19101,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "16/09/2026 09:15",
+  "publicado_em": "16/09/2026 09:16",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "c21a5894a27660f75047b1412ae91e35eb63de5ff5255688ef952f8c2f9c8ae3"
+  "hash_publicacao": "4ae4b9ea089ead0c11f8dbd2ff6b1361cf09794df6a9cac817eb0bb909b5ab67"
 }
