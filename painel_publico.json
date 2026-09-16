@@ -12,7 +12,7 @@
       "quantidade": 53,
       "media_dias": 29.9,
       "maior_tempo": 161,
-      "urgentes": 0,
+      "urgentes": 1,
       "minutar": 8,
       "julgados": 28,
       "percentual_julgados": 43.8,
@@ -59,13 +59,13 @@
   "por_tarefa": [
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Processo com prazo em curso",
+      "tarefa_atual": "Analisar determinação",
       "quantidade": 14
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Analisar determinação",
-      "quantidade": 13
+      "tarefa_atual": "Processo com prazo em curso",
+      "quantidade": 14
     },
     {
       "gabinete": "Gab. JA 1",
@@ -94,17 +94,17 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Remeter Processos - Gabinete",
-      "quantidade": 2
-    },
-    {
-      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Analisar Petição Avulsa; Minutar ato; Petições não lidas",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Analisar Processos",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Analisar determinação - Urgentes",
       "quantidade": 1
     },
     {
@@ -1687,11 +1687,11 @@
         "codigo": "analisar-determinacao",
         "tarefa": "Analisar determinação",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 13,
+          "Gabinete Juiz Auxiliar 1": 14,
           "Gabinete Juiz Auxiliar 2": 6,
           "Gabinete Juiz Auxiliar 3": 11
         },
-        "total": 30
+        "total": 31
       },
       {
         "codigo": "minutar-ato",
@@ -1854,16 +1854,6 @@
         "total": 2
       },
       {
-        "codigo": "remeter-processos-gabinete",
-        "tarefa": "Remeter Processos - Gabinete",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 2,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 2
-      },
-      {
         "codigo": "aguarda-sessao-de-julgamento-iniciar-acordao-gabinete-processo-incluido-em-pauta-selecionar-documentos-para-acordao-gabinete-verificar-inclusao-de-notas-orais",
         "tarefa": "Aguarda Sessão de Julgamento; Iniciar Acórdão - Gabinete; Processo incluído em pauta; Selecionar documentos para acórdão - Gabinete; Verificar inclusão de notas orais",
         "contagens": {
@@ -1896,6 +1886,16 @@
       {
         "codigo": "analisar-peticao-avulsa-minutar-ato-peticoes-nao-lidas",
         "tarefa": "Analisar Petição Avulsa; Minutar ato; Petições não lidas",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "analisar-determinacao-urgentes",
+        "tarefa": "Analisar determinação - Urgentes",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -3695,6 +3695,20 @@
         "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
+      },
+      {
+        "processo": "0600089-48.2026.6.10.0010",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação",
+        "autuacao": "16/09/2026",
+        "desde": "16/09/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
       }
     ],
     "minutar-ato": [
@@ -5087,36 +5101,6 @@
         "responsavel_processo": ""
       }
     ],
-    "remeter-processos-gabinete": [
-      {
-        "processo": "0601726-64.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Remeter Processos - Gabinete",
-        "autuacao": "15/09/2026",
-        "desde": "16/09/2026",
-        "dias_tramitando": 1,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600089-48.2026.6.10.0010",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Remeter Processos - Gabinete",
-        "autuacao": "16/09/2026",
-        "desde": "16/09/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "aguarda-sessao-de-julgamento-iniciar-acordao-gabinete-processo-incluido-em-pauta-selecionar-documentos-para-acordao-gabinete-verificar-inclusao-de-notas-orais": [
       {
         "processo": "0600147-81.2026.6.10.0000",
@@ -5174,6 +5158,22 @@
         "autuacao": "09/09/2026",
         "desde": "09/09/2026",
         "dias_tramitando": 7,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-determinacao-urgentes": [
+      {
+        "processo": "0601726-64.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação - Urgentes",
+        "autuacao": "15/09/2026",
+        "desde": "16/09/2026",
+        "dias_tramitando": 1,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -6144,7 +6144,7 @@
         "processo": "0601726-64.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Remeter Processos - Gabinete",
+        "tarefa_atual": "Analisar determinação - Urgentes",
         "autuacao": "15/09/2026",
         "desde": "16/09/2026",
         "dias_tramitando": 1,
@@ -6186,7 +6186,7 @@
         "processo": "0600089-48.2026.6.10.0010",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Remeter Processos - Gabinete",
+        "tarefa_atual": "Analisar determinação",
         "autuacao": "16/09/2026",
         "desde": "16/09/2026",
         "dias_tramitando": 0,
@@ -11255,7 +11255,7 @@
       "processo": "0601726-64.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Remeter Processos - Gabinete",
+      "tarefa_atual": "Analisar determinação - Urgentes",
       "autuacao": "15/09/2026",
       "desde": "16/09/2026",
       "dias_tramitando": 1,
@@ -11353,7 +11353,7 @@
       "processo": "0600089-48.2026.6.10.0010",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Remeter Processos - Gabinete",
+      "tarefa_atual": "Analisar determinação",
       "autuacao": "16/09/2026",
       "desde": "16/09/2026",
       "dias_tramitando": 0,
@@ -16209,7 +16209,7 @@
       "processo": "0601726-64.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Remeter Processos - Gabinete",
+      "tarefa_atual": "Analisar determinação - Urgentes",
       "autuacao": "15/09/2026",
       "desde": "16/09/2026",
       "dias_tramitando": 1,
@@ -16307,7 +16307,7 @@
       "processo": "0600089-48.2026.6.10.0010",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Remeter Processos - Gabinete",
+      "tarefa_atual": "Analisar determinação",
       "autuacao": "16/09/2026",
       "desde": "16/09/2026",
       "dias_tramitando": 0,
@@ -19858,8 +19858,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "16/09/2026 18:53",
+  "publicado_em": "16/09/2026 18:54",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "d74adb999c571ef5c3bf41e359df9f042768d5902d08afca29c91a20ef12fb21"
+  "hash_publicacao": "5e4f5cdf731812561b5003d9824423667d5411e8917caf1bc7dbf8ec87d6794d"
 }
