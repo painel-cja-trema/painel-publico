@@ -46,7 +46,7 @@
       "quantidade": 55,
       "media_dias": 18.2,
       "maior_tempo": 99,
-      "urgentes": 0,
+      "urgentes": 1,
       "minutar": 6,
       "julgados": 23,
       "percentual_julgados": 33.8,
@@ -60,7 +60,7 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Analisar determinação",
-      "quantidade": 17
+      "quantidade": 16
     },
     {
       "gabinete": "Gab. JA 1",
@@ -120,6 +120,11 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Minutar ato; Petições não lidas",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Preparar comunicação",
       "quantidade": 1
     },
     {
@@ -224,11 +229,6 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Lançar movimento",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Pauta provisória; Processo com prazo em curso",
       "quantidade": 1
     },
@@ -250,6 +250,11 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Remeter Processos - Gabinete",
       "quantidade": 1
     },
     {
@@ -319,7 +324,7 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação - Urgentes; Petições não lidas; Verificar Decisão - Petição Avulsa",
       "quantidade": 1
     },
     {
@@ -334,7 +339,7 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Processo com prazo em curso; Verificar Decisão - Petição Avulsa",
+      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
       "quantidade": 1
     },
     {
@@ -1000,7 +1005,7 @@
           "TRIAGEM_ORDINARIA": 4,
           "MINUTAR_ATO": 13,
           "ASSINAR_ATO": 2,
-          "LANCAR_MOVIMENTACAO": 1
+          "LANCAR_MOVIMENTACAO": 0
         }
       },
       {
@@ -1021,7 +1026,7 @@
       "TRIAGEM_ORDINARIA": 4,
       "MINUTAR_ATO": 27,
       "ASSINAR_ATO": 3,
-      "LANCAR_MOVIMENTACAO": 5
+      "LANCAR_MOVIMENTACAO": 4
     },
     "total_acervo": 233
   },
@@ -1540,20 +1545,6 @@
     ],
     "LANCAR_MOVIMENTACAO": [
       {
-        "processo": "0600263-87.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "31/07/2026",
-        "desde": "16/09/2026",
-        "dias_tramitando": 47,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
         "processo": "0601040-72.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
@@ -1660,11 +1651,11 @@
         "codigo": "analisar-determinacao",
         "tarefa": "Analisar determinação",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 17,
+          "Gabinete Juiz Auxiliar 1": 16,
           "Gabinete Juiz Auxiliar 2": 7,
           "Gabinete Juiz Auxiliar 3": 11
         },
-        "total": 35
+        "total": 34
       },
       {
         "codigo": "minutar-ato",
@@ -1731,10 +1722,10 @@
         "tarefa": "Lançar movimento",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 4,
-          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
         },
-        "total": 5
+        "total": 4
       },
       {
         "codigo": "aguardando-providencias",
@@ -1827,6 +1818,16 @@
         "total": 2
       },
       {
+        "codigo": "peticoes-nao-lidas-processo-com-prazo-em-curso",
+        "tarefa": "Petições não lidas; Processo com prazo em curso",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 2
+      },
+      {
         "codigo": "realizar-triagem-urgentes",
         "tarefa": "Realizar triagem urgentes",
         "contagens": {
@@ -1867,8 +1868,8 @@
         "total": 1
       },
       {
-        "codigo": "analisar-peticao-avulsa-peticoes-nao-lidas-processo-com-prazo-em-curso",
-        "tarefa": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
+        "codigo": "analisar-peticao-avulsa-analisar-determinacao-urgentes-peticoes-nao-lidas-verificar-decisao-peticao-avulsa",
+        "tarefa": "Analisar Petição Avulsa; Analisar determinação - Urgentes; Petições não lidas; Verificar Decisão - Petição Avulsa",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -1907,16 +1908,6 @@
         "total": 1
       },
       {
-        "codigo": "peticoes-nao-lidas-processo-com-prazo-em-curso",
-        "tarefa": "Petições não lidas; Processo com prazo em curso",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
         "codigo": "peticoes-nao-lidas-realizar-triagem-ordinarios",
         "tarefa": "Petições não lidas; Realizar triagem ordinários",
         "contagens": {
@@ -1937,6 +1928,16 @@
         "total": 1
       },
       {
+        "codigo": "preparar-comunicacao",
+        "tarefa": "Preparar comunicação",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
         "codigo": "processo-com-prazo-em-curso-registrar-recurso",
         "tarefa": "Processo com prazo em curso; Registrar recurso",
         "contagens": {
@@ -1947,21 +1948,21 @@
         "total": 1
       },
       {
-        "codigo": "processo-com-prazo-em-curso-verificar-decisao-peticao-avulsa",
-        "tarefa": "Processo com prazo em curso; Verificar Decisão - Petição Avulsa",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
         "codigo": "registrar-ciencia-por-telefone-ou-pessoalmente",
         "tarefa": "Registrar ciência por telefone ou pessoalmente",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "remeter-processos-gabinete",
+        "tarefa": "Remeter Processos - Gabinete",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -3748,20 +3749,6 @@
         "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
-      },
-      {
-        "processo": "0600089-48.2026.6.10.0010",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "16/09/2026",
-        "desde": "16/09/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
       }
     ],
     "minutar-ato": [
@@ -4618,20 +4605,6 @@
     ],
     "lancar-movimento": [
       {
-        "processo": "0600263-87.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "31/07/2026",
-        "desde": "16/09/2026",
-        "dias_tramitando": 47,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
         "processo": "0601040-72.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
@@ -5056,6 +5029,36 @@
         "responsavel_processo": ""
       }
     ],
+    "peticoes-nao-lidas-processo-com-prazo-em-curso": [
+      {
+        "processo": "0601709-28.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+        "autuacao": "14/09/2026",
+        "desde": "14/09/2026",
+        "dias_tramitando": 2,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601731-86.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+        "autuacao": "15/09/2026",
+        "desde": "15/09/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "realizar-triagem-urgentes": [
       {
         "processo": "0601158-48.2026.6.10.0000",
@@ -5134,15 +5137,15 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-peticao-avulsa-peticoes-nao-lidas-processo-com-prazo-em-curso": [
+    "analisar-peticao-avulsa-analisar-determinacao-urgentes-peticoes-nao-lidas-verificar-decisao-peticao-avulsa": [
       {
-        "processo": "0601731-86.2026.6.10.0000",
+        "processo": "0601034-65.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
-        "autuacao": "15/09/2026",
-        "desde": "15/09/2026",
-        "dias_tramitando": 0,
+        "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação - Urgentes; Petições não lidas; Verificar Decisão - Petição Avulsa",
+        "autuacao": "29/08/2026",
+        "desde": "29/08/2026",
+        "dias_tramitando": 18,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -5198,22 +5201,6 @@
         "responsavel_processo": ""
       }
     ],
-    "peticoes-nao-lidas-processo-com-prazo-em-curso": [
-      {
-        "processo": "0601709-28.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
-        "autuacao": "14/09/2026",
-        "desde": "14/09/2026",
-        "dias_tramitando": 2,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "peticoes-nao-lidas-realizar-triagem-ordinarios": [
       {
         "processo": "0601124-73.2026.6.10.0000",
@@ -5246,6 +5233,22 @@
         "responsavel_processo": ""
       }
     ],
+    "preparar-comunicacao": [
+      {
+        "processo": "0600089-48.2026.6.10.0010",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Preparar comunicação",
+        "autuacao": "16/09/2026",
+        "desde": "16/09/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "processo-com-prazo-em-curso-registrar-recurso": [
       {
         "processo": "0600176-34.2026.6.10.0000",
@@ -5262,22 +5265,6 @@
         "responsavel_processo": ""
       }
     ],
-    "processo-com-prazo-em-curso-verificar-decisao-peticao-avulsa": [
-      {
-        "processo": "0601034-65.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Processo com prazo em curso; Verificar Decisão - Petição Avulsa",
-        "autuacao": "29/08/2026",
-        "desde": "29/08/2026",
-        "dias_tramitando": 18,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "registrar-ciencia-por-telefone-ou-pessoalmente": [
       {
         "processo": "0601720-57.2026.6.10.0000",
@@ -5287,6 +5274,22 @@
         "autuacao": "15/09/2026",
         "desde": "16/09/2026",
         "dias_tramitando": 1,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "remeter-processos-gabinete": [
+      {
+        "processo": "0600263-87.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Remeter Processos - Gabinete",
+        "autuacao": "31/07/2026",
+        "desde": "16/09/2026",
+        "dias_tramitando": 47,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -6171,7 +6174,7 @@
         "processo": "0600089-48.2026.6.10.0010",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
+        "tarefa_atual": "Preparar comunicação",
         "autuacao": "16/09/2026",
         "desde": "16/09/2026",
         "dias_tramitando": 0,
@@ -6495,7 +6498,7 @@
         "processo": "0600263-87.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Lançar movimento",
+        "tarefa_atual": "Remeter Processos - Gabinete",
         "autuacao": "31/07/2026",
         "desde": "16/09/2026",
         "dias_tramitando": 47,
@@ -8009,7 +8012,7 @@
         "processo": "0601034-65.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Processo com prazo em curso; Verificar Decisão - Petição Avulsa",
+        "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação - Urgentes; Petições não lidas; Verificar Decisão - Petição Avulsa",
         "autuacao": "29/08/2026",
         "desde": "29/08/2026",
         "dias_tramitando": 18,
@@ -8555,7 +8558,7 @@
         "processo": "0601731-86.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
+        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
         "autuacao": "15/09/2026",
         "desde": "15/09/2026",
         "dias_tramitando": 0,
@@ -9378,7 +9381,7 @@
       "processo": "0600263-87.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Lançar movimento",
+      "tarefa_atual": "Remeter Processos - Gabinete",
       "autuacao": "31/07/2026",
       "desde": "16/09/2026",
       "dias_tramitando": 47,
@@ -10190,7 +10193,7 @@
       "processo": "0601034-65.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Processo com prazo em curso; Verificar Decisão - Petição Avulsa",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação - Urgentes; Petições não lidas; Verificar Decisão - Petição Avulsa",
       "autuacao": "29/08/2026",
       "desde": "29/08/2026",
       "dias_tramitando": 18,
@@ -11338,7 +11341,7 @@
       "processo": "0600089-48.2026.6.10.0010",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Preparar comunicação",
       "autuacao": "16/09/2026",
       "desde": "16/09/2026",
       "dias_tramitando": 0,
@@ -11366,7 +11369,7 @@
       "processo": "0601731-86.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
+      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
       "autuacao": "15/09/2026",
       "desde": "15/09/2026",
       "dias_tramitando": 0,
@@ -14332,7 +14335,7 @@
       "processo": "0600263-87.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Lançar movimento",
+      "tarefa_atual": "Remeter Processos - Gabinete",
       "autuacao": "31/07/2026",
       "desde": "16/09/2026",
       "dias_tramitando": 47,
@@ -15144,7 +15147,7 @@
       "processo": "0601034-65.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Processo com prazo em curso; Verificar Decisão - Petição Avulsa",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação - Urgentes; Petições não lidas; Verificar Decisão - Petição Avulsa",
       "autuacao": "29/08/2026",
       "desde": "29/08/2026",
       "dias_tramitando": 18,
@@ -16292,7 +16295,7 @@
       "processo": "0600089-48.2026.6.10.0010",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Preparar comunicação",
       "autuacao": "16/09/2026",
       "desde": "16/09/2026",
       "dias_tramitando": 0,
@@ -16320,7 +16323,7 @@
       "processo": "0601731-86.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
+      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
       "autuacao": "15/09/2026",
       "desde": "15/09/2026",
       "dias_tramitando": 0,
@@ -19857,8 +19860,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "16/09/2026 19:16",
+  "publicado_em": "16/09/2026 19:17",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "922594ace44b4ecb46bb50aaada8107c98fbdf9186b3ca88e3f436fa66c74404"
+  "hash_publicacao": "cea902b4d3f4217c9f42c0329152ea94ee5c6a47e70fce20528d5b611b630ff6"
 }
