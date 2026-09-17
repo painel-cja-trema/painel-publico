@@ -65,7 +65,7 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Analisar determinação",
-      "quantidade": 13
+      "quantidade": 12
     },
     {
       "gabinete": "Gab. JA 1",
@@ -134,6 +134,11 @@
     },
     {
       "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Informar data de trânsito em julgado",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
       "quantidade": 1
     },
@@ -169,12 +174,12 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Realizar triagem ordinários",
       "quantidade": 9
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Realizar triagem ordinários",
+      "tarefa_atual": "Analisar determinação",
       "quantidade": 8
     },
     {
@@ -339,12 +344,12 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
+      "tarefa_atual": "Atualizar dados do processo",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Atualizar dados do processo",
+      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
       "quantidade": 1
     },
     {
@@ -965,7 +970,7 @@
         "total_acervo": 103,
         "contagens": {
           "TRIAGEM_URGENTE": 1,
-          "TRIAGEM_ORDINARIA": 8,
+          "TRIAGEM_ORDINARIA": 9,
           "MINUTAR_ATO": 13,
           "ASSINAR_ATO": 3,
           "LANCAR_MOVIMENTACAO": 0
@@ -986,7 +991,7 @@
     ],
     "totais": {
       "TRIAGEM_URGENTE": 1,
-      "TRIAGEM_ORDINARIA": 14,
+      "TRIAGEM_ORDINARIA": 15,
       "MINUTAR_ATO": 24,
       "ASSINAR_ATO": 4,
       "LANCAR_MOVIMENTACAO": 0
@@ -1120,6 +1125,20 @@
         "julgado": true,
         "data_julgamento": "15/09/2026",
         "teor": "Julgado procedente em parte do pedido em 15/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601190-53.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem ordinários",
+        "autuacao": "11/09/2026",
+        "desde": "17/09/2026",
+        "dias_tramitando": 6,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -1655,11 +1674,11 @@
         "codigo": "analisar-determinacao",
         "tarefa": "Analisar determinação",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 13,
-          "Gabinete Juiz Auxiliar 2": 9,
+          "Gabinete Juiz Auxiliar 1": 12,
+          "Gabinete Juiz Auxiliar 2": 8,
           "Gabinete Juiz Auxiliar 3": 11
         },
-        "total": 33
+        "total": 31
       },
       {
         "codigo": "minutar-ato",
@@ -1676,10 +1695,10 @@
         "tarefa": "Realizar triagem ordinários",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 4,
-          "Gabinete Juiz Auxiliar 2": 8,
+          "Gabinete Juiz Auxiliar 2": 9,
           "Gabinete Juiz Auxiliar 3": 1
         },
-        "total": 13
+        "total": 14
       },
       {
         "codigo": "aguarda-julgamento-incluido-em-pauta-virtual-elaborar-extrato-da-ata-processo-incluido-em-pauta-virtual-selecionar-documentos-para-acordao-gabinete-verificar-inclusao-de-notas-orais",
@@ -1902,16 +1921,6 @@
         "total": 1
       },
       {
-        "codigo": "analisar-peticao-avulsa-peticoes-nao-lidas-processo-com-prazo-em-curso",
-        "tarefa": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
         "codigo": "analisar-determinacao-elaborar-documentos-magistrado-assinar",
         "tarefa": "Analisar determinação; Elaborar documentos - Magistrado Assinar",
         "contagens": {
@@ -1982,12 +1991,32 @@
         "total": 1
       },
       {
+        "codigo": "informar-data-de-transito-em-julgado",
+        "tarefa": "Informar data de trânsito em julgado",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
         "codigo": "pauta-provisoria-processo-com-prazo-em-curso",
         "tarefa": "Pauta provisória; Processo com prazo em curso",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "peticoes-nao-lidas-processo-com-prazo-em-curso",
+        "tarefa": "Petições não lidas; Processo com prazo em curso",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 1
       },
@@ -3693,20 +3722,6 @@
         "responsavel_processo": ""
       },
       {
-        "processo": "0601138-57.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "09/09/2026",
-        "desde": "17/09/2026",
-        "dias_tramitando": 7,
-        "julgado": true,
-        "data_julgamento": "14/09/2026",
-        "teor": "Julgado procedente o pedido em 14/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
         "processo": "0601145-49.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
@@ -3731,20 +3746,6 @@
         "julgado": true,
         "data_julgamento": "14/09/2026",
         "teor": "Julgado procedente o pedido em 14/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601190-53.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "11/09/2026",
-        "desde": "17/09/2026",
-        "dias_tramitando": 6,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -4225,6 +4226,20 @@
         "julgado": true,
         "data_julgamento": "15/09/2026",
         "teor": "Julgado procedente em parte do pedido em 15/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601190-53.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem ordinários",
+        "autuacao": "11/09/2026",
+        "desde": "17/09/2026",
+        "dias_tramitando": 6,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -5211,22 +5226,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-peticao-avulsa-peticoes-nao-lidas-processo-com-prazo-em-curso": [
-      {
-        "processo": "0601111-74.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
-        "autuacao": "07/09/2026",
-        "desde": "07/09/2026",
-        "dias_tramitando": 9,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "analisar-determinacao-elaborar-documentos-magistrado-assinar": [
       {
         "processo": "0601004-30.2026.6.10.0000",
@@ -5339,6 +5338,22 @@
         "responsavel_processo": ""
       }
     ],
+    "informar-data-de-transito-em-julgado": [
+      {
+        "processo": "0601138-57.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Informar data de trânsito em julgado",
+        "autuacao": "09/09/2026",
+        "desde": "17/09/2026",
+        "dias_tramitando": 7,
+        "julgado": true,
+        "data_julgamento": "14/09/2026",
+        "teor": "Julgado procedente o pedido em 14/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "pauta-provisoria-processo-com-prazo-em-curso": [
       {
         "processo": "0600238-74.2026.6.10.0000",
@@ -5348,6 +5363,22 @@
         "autuacao": "25/08/2026",
         "desde": "25/08/2026",
         "dias_tramitando": 23,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "peticoes-nao-lidas-processo-com-prazo-em-curso": [
+      {
+        "processo": "0601111-74.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+        "autuacao": "07/09/2026",
+        "desde": "07/09/2026",
+        "dias_tramitando": 9,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -6056,7 +6087,7 @@
         "processo": "0601138-57.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
+        "tarefa_atual": "Informar data de trânsito em julgado",
         "autuacao": "09/09/2026",
         "desde": "17/09/2026",
         "dias_tramitando": 7,
@@ -7528,7 +7559,7 @@
         "processo": "0601190-53.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
+        "tarefa_atual": "Realizar triagem ordinários",
         "autuacao": "11/09/2026",
         "desde": "17/09/2026",
         "dias_tramitando": 6,
@@ -8342,7 +8373,7 @@
         "processo": "0601111-74.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
+        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
         "autuacao": "07/09/2026",
         "desde": "07/09/2026",
         "dias_tramitando": 9,
@@ -10845,7 +10876,7 @@
       "processo": "0601111-74.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
+      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
       "autuacao": "07/09/2026",
       "desde": "07/09/2026",
       "dias_tramitando": 9,
@@ -10999,7 +11030,7 @@
       "processo": "0601138-57.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Informar data de trânsito em julgado",
       "autuacao": "09/09/2026",
       "desde": "17/09/2026",
       "dias_tramitando": 7,
@@ -11139,7 +11170,7 @@
       "processo": "0601190-53.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Realizar triagem ordinários",
       "autuacao": "11/09/2026",
       "desde": "17/09/2026",
       "dias_tramitando": 6,
@@ -15841,7 +15872,7 @@
       "processo": "0601111-74.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
+      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
       "autuacao": "07/09/2026",
       "desde": "07/09/2026",
       "dias_tramitando": 9,
@@ -15995,7 +16026,7 @@
       "processo": "0601138-57.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Informar data de trânsito em julgado",
       "autuacao": "09/09/2026",
       "desde": "17/09/2026",
       "dias_tramitando": 7,
@@ -16135,7 +16166,7 @@
       "processo": "0601190-53.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Realizar triagem ordinários",
       "autuacao": "11/09/2026",
       "desde": "17/09/2026",
       "dias_tramitando": 6,
@@ -20010,7 +20041,7 @@
       "processo": "0601138-57.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Informar data de trânsito em julgado",
       "autuacao": "09/09/2026",
       "desde": "17/09/2026",
       "dias_tramitando": 7,
@@ -20092,8 +20123,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "17/09/2026 12:51",
+  "publicado_em": "17/09/2026 12:53",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "f57038d365a9946df35acc0d133b2a535a928f6410ade22b29f3ae4e16d282cf"
+  "hash_publicacao": "ffb1efc22bd133bc2ccb0fae1aac8f79ba2c8dc5c5526b5cffb1209e816a6ec0"
 }
