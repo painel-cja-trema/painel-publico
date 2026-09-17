@@ -60,7 +60,7 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Analisar determinação",
-      "quantidade": 20
+      "quantidade": 19
     },
     {
       "gabinete": "Gab. JA 1",
@@ -129,6 +129,11 @@
     },
     {
       "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Preparar comunicação",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Processo com prazo em curso; Processo julgado",
       "quantidade": 1
     },
@@ -165,7 +170,7 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Analisar determinação",
-      "quantidade": 13
+      "quantidade": 14
     },
     {
       "gabinete": "Gab. JA 2",
@@ -255,11 +260,6 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Assinar ato",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Elaborar Documentos",
       "quantidade": 1
     },
     {
@@ -1632,8 +1632,8 @@
         "codigo": "analisar-determinacao",
         "tarefa": "Analisar determinação",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 20,
-          "Gabinete Juiz Auxiliar 2": 13,
+          "Gabinete Juiz Auxiliar 1": 19,
+          "Gabinete Juiz Auxiliar 2": 14,
           "Gabinete Juiz Auxiliar 3": 11
         },
         "total": 44
@@ -1969,16 +1969,6 @@
         "total": 1
       },
       {
-        "codigo": "elaborar-documentos",
-        "tarefa": "Elaborar Documentos",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
         "codigo": "informar-data-de-transito-em-julgado",
         "tarefa": "Informar data de trânsito em julgado",
         "contagens": {
@@ -2024,6 +2014,16 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "preparar-comunicacao",
+        "tarefa": "Preparar comunicação",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -2602,6 +2602,20 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0601209-59.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação",
+        "autuacao": "11/09/2026",
+        "desde": "17/09/2026",
+        "dias_tramitando": 5,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0601371-54.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
@@ -2651,20 +2665,6 @@
         "autuacao": "14/09/2026",
         "desde": "16/09/2026",
         "dias_tramitando": 2,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600067-83.2026.6.10.0076",
-        "gabinete": "Gab. JA 1",
-        "classe": "NIP",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "15/09/2026",
-        "desde": "16/09/2026",
-        "dias_tramitando": 1,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -5300,22 +5300,6 @@
         "responsavel_processo": ""
       }
     ],
-    "elaborar-documentos": [
-      {
-        "processo": "0601209-59.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Elaborar Documentos",
-        "autuacao": "11/09/2026",
-        "desde": "17/09/2026",
-        "dias_tramitando": 5,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "informar-data-de-transito-em-julgado": [
       {
         "processo": "0601126-43.2026.6.10.0000",
@@ -5389,6 +5373,22 @@
         "autuacao": "14/09/2026",
         "desde": "14/09/2026",
         "dias_tramitando": 3,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "preparar-comunicacao": [
+      {
+        "processo": "0600067-83.2026.6.10.0076",
+        "gabinete": "Gab. JA 1",
+        "classe": "NIP",
+        "tarefa_atual": "Preparar comunicação",
+        "autuacao": "15/09/2026",
+        "desde": "17/09/2026",
+        "dias_tramitando": 1,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -6253,9 +6253,9 @@
         "processo": "0600067-83.2026.6.10.0076",
         "gabinete": "Gab. JA 1",
         "classe": "NIP",
-        "tarefa_atual": "Analisar determinação",
+        "tarefa_atual": "Preparar comunicação",
         "autuacao": "15/09/2026",
-        "desde": "16/09/2026",
+        "desde": "17/09/2026",
         "dias_tramitando": 1,
         "julgado": false,
         "data_julgamento": "",
@@ -7641,7 +7641,7 @@
         "processo": "0601209-59.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Elaborar Documentos",
+        "tarefa_atual": "Analisar determinação",
         "autuacao": "11/09/2026",
         "desde": "17/09/2026",
         "dias_tramitando": 5,
@@ -11210,7 +11210,7 @@
       "processo": "0601209-59.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Elaborar Documentos",
+      "tarefa_atual": "Analisar determinação",
       "autuacao": "11/09/2026",
       "desde": "17/09/2026",
       "dias_tramitando": 5,
@@ -11392,9 +11392,9 @@
       "processo": "0600067-83.2026.6.10.0076",
       "gabinete": "Gab. JA 1",
       "classe": "NIP",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Preparar comunicação",
       "autuacao": "15/09/2026",
-      "desde": "16/09/2026",
+      "desde": "17/09/2026",
       "dias_tramitando": 1,
       "julgado": false,
       "data_julgamento": "",
@@ -16192,7 +16192,7 @@
       "processo": "0601209-59.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Elaborar Documentos",
+      "tarefa_atual": "Analisar determinação",
       "autuacao": "11/09/2026",
       "desde": "17/09/2026",
       "dias_tramitando": 5,
@@ -16374,9 +16374,9 @@
       "processo": "0600067-83.2026.6.10.0076",
       "gabinete": "Gab. JA 1",
       "classe": "NIP",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Preparar comunicação",
       "autuacao": "15/09/2026",
-      "desde": "16/09/2026",
+      "desde": "17/09/2026",
       "dias_tramitando": 1,
       "julgado": false,
       "data_julgamento": "",
@@ -20135,8 +20135,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "17/09/2026 10:09",
+  "publicado_em": "17/09/2026 10:10",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "1b95eedd74c9940e0669732f615f4d097e29c0652a6be18d2fcf3c86721b6096"
+  "hash_publicacao": "019c47d07e6dc64588152191d66a44422f14778c0e80b498f44f8789b4a1a11b"
 }
