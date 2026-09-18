@@ -109,6 +109,11 @@
     },
     {
       "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Visualizar expediente DJE",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Assinar ato; Petições não lidas",
       "quantidade": 1
     },
@@ -130,11 +135,6 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Revisar Relatório, Voto e Ementa",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Visualizar expediente DJE",
       "quantidade": 1
     },
     {
@@ -1861,18 +1861,18 @@
         "total": 4
       },
       {
-        "codigo": "visualizar-expediente-dje",
-        "tarefa": "Visualizar expediente DJE",
+        "codigo": "aguardando-providencias",
+        "tarefa": "Aguardando providências",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 3
         },
-        "total": 4
+        "total": 3
       },
       {
-        "codigo": "aguardando-providencias",
-        "tarefa": "Aguardando providências",
+        "codigo": "visualizar-expediente-dje",
+        "tarefa": "Visualizar expediente DJE",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -2003,6 +2003,16 @@
       {
         "codigo": "analisar-peticao-avulsa-peticoes-nao-lidas-registrar-ciencia-por-telefone-ou-pessoalmente",
         "tarefa": "Analisar Petição Avulsa; Petições não lidas; Registrar ciência por telefone ou pessoalmente",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "analisar-peticao-avulsa-peticoes-nao-lidas-visualizar-expediente-dje",
+        "tarefa": "Analisar Petição Avulsa; Petições não lidas; Visualizar expediente DJE",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -4960,64 +4970,6 @@
         "responsavel_processo": ""
       }
     ],
-    "visualizar-expediente-dje": [
-      {
-        "processo": "0601026-88.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "RepEsp",
-        "tarefa_atual": "Visualizar expediente DJE",
-        "autuacao": "28/08/2026",
-        "desde": "18/09/2026",
-        "dias_tramitando": 20,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601027-73.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "RepEsp",
-        "tarefa_atual": "Visualizar expediente DJE",
-        "autuacao": "28/08/2026",
-        "desde": "18/09/2026",
-        "dias_tramitando": 20,
-        "julgado": true,
-        "data_julgamento": "18/09/2026",
-        "teor": "Julgado procedente em parte do pedido em 18/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601077-02.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "RepEsp",
-        "tarefa_atual": "Visualizar expediente DJE",
-        "autuacao": "02/09/2026",
-        "desde": "11/09/2026",
-        "dias_tramitando": 15,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600982-69.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "REC no(a) RepEsp",
-        "tarefa_atual": "Visualizar expediente DJE",
-        "autuacao": "11/09/2026",
-        "desde": "12/09/2026",
-        "dias_tramitando": 7,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "aguardando-providencias": [
       {
         "processo": "0600222-23.2026.6.10.0000",
@@ -5055,6 +5007,50 @@
         "autuacao": "01/09/2026",
         "desde": "14/09/2026",
         "dias_tramitando": 17,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "visualizar-expediente-dje": [
+      {
+        "processo": "0601027-73.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "RepEsp",
+        "tarefa_atual": "Visualizar expediente DJE",
+        "autuacao": "28/08/2026",
+        "desde": "18/09/2026",
+        "dias_tramitando": 20,
+        "julgado": true,
+        "data_julgamento": "18/09/2026",
+        "teor": "Julgado procedente em parte do pedido em 18/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601077-02.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "RepEsp",
+        "tarefa_atual": "Visualizar expediente DJE",
+        "autuacao": "02/09/2026",
+        "desde": "11/09/2026",
+        "dias_tramitando": 15,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600982-69.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "REC no(a) RepEsp",
+        "tarefa_atual": "Visualizar expediente DJE",
+        "autuacao": "11/09/2026",
+        "desde": "12/09/2026",
+        "dias_tramitando": 7,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -5361,6 +5357,22 @@
         "autuacao": "17/09/2026",
         "desde": "17/09/2026",
         "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-peticao-avulsa-peticoes-nao-lidas-visualizar-expediente-dje": [
+      {
+        "processo": "0601026-88.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "RepEsp",
+        "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Visualizar expediente DJE",
+        "autuacao": "28/08/2026",
+        "desde": "28/08/2026",
+        "dias_tramitando": 20,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -5839,9 +5851,9 @@
         "processo": "0601026-88.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "RepEsp",
-        "tarefa_atual": "Visualizar expediente DJE",
+        "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Visualizar expediente DJE",
         "autuacao": "28/08/2026",
-        "desde": "18/09/2026",
+        "desde": "28/08/2026",
         "dias_tramitando": 20,
         "julgado": false,
         "data_julgamento": "",
@@ -10390,9 +10402,9 @@
       "processo": "0601026-88.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "RepEsp",
-      "tarefa_atual": "Visualizar expediente DJE",
+      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Visualizar expediente DJE",
       "autuacao": "28/08/2026",
-      "desde": "18/09/2026",
+      "desde": "28/08/2026",
       "dias_tramitando": 20,
       "julgado": false,
       "data_julgamento": "",
@@ -15460,9 +15472,9 @@
       "processo": "0601026-88.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "RepEsp",
-      "tarefa_atual": "Visualizar expediente DJE",
+      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Visualizar expediente DJE",
       "autuacao": "28/08/2026",
-      "desde": "18/09/2026",
+      "desde": "28/08/2026",
       "dias_tramitando": 20,
       "julgado": false,
       "data_julgamento": "",
@@ -20258,8 +20270,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "18/09/2026 15:09",
+  "publicado_em": "18/09/2026 15:10",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "5ebb8bceef207559d6c99ceebd7e6ed42acdaf66d2a97569c4ed64338591c4e7"
+  "hash_publicacao": "5d4a4762cc74e9903aec03d13dbf706faa22a00d92f8f1b5bec6309718c8fbac"
 }
