@@ -70,7 +70,7 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Processo com prazo em curso",
-      "quantidade": 8
+      "quantidade": 9
     },
     {
       "gabinete": "Gab. JA 1",
@@ -119,12 +119,12 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Analisar Acórdão Assinado - SJD; Processo com prazo em curso; Processo julgado",
+      "tarefa_atual": "Aguardando julgamento do recurso interno; Petições não lidas; Petições não lidas",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Analisar determinação; Petições não lidas; Petições não lidas",
+      "tarefa_atual": "Analisar Acórdão Assinado - SJD; Processo com prazo em curso; Processo julgado",
       "quantidade": 1
     },
     {
@@ -145,11 +145,6 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Petições não lidas; Visualizar expediente DJE",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Preparar comunicação",
       "quantidade": 1
     },
     {
@@ -1903,11 +1898,11 @@
         "codigo": "processo-com-prazo-em-curso",
         "tarefa": "Processo com prazo em curso",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 8,
+          "Gabinete Juiz Auxiliar 1": 9,
           "Gabinete Juiz Auxiliar 2": 14,
           "Gabinete Juiz Auxiliar 3": 8
         },
-        "total": 30
+        "total": 31
       },
       {
         "codigo": "minutar-ato",
@@ -2180,6 +2175,16 @@
         "total": 1
       },
       {
+        "codigo": "aguardando-julgamento-do-recurso-interno-peticoes-nao-lidas-peticoes-nao-lidas",
+        "tarefa": "Aguardando julgamento do recurso interno; Petições não lidas; Petições não lidas",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
         "codigo": "aguardando-julgamento-do-recurso-interno-registrar-recurso",
         "tarefa": "Aguardando julgamento do recurso interno; Registrar recurso",
         "contagens": {
@@ -2240,16 +2245,6 @@
         "total": 1
       },
       {
-        "codigo": "analisar-determinacao-peticoes-nao-lidas-peticoes-nao-lidas",
-        "tarefa": "Analisar determinação; Petições não lidas; Petições não lidas",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
         "codigo": "analisar-determinacao-registrar-recurso",
         "tarefa": "Analisar determinação; Registrar recurso",
         "contagens": {
@@ -2302,16 +2297,6 @@
       {
         "codigo": "peticoes-nao-lidas-visualizar-expediente-dje",
         "tarefa": "Petições não lidas; Visualizar expediente DJE",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "preparar-comunicacao",
-        "tarefa": "Preparar comunicação",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -3845,6 +3830,20 @@
         "tarefa_atual": "Processo com prazo em curso",
         "autuacao": "16/09/2026",
         "desde": "18/09/2026",
+        "dias_tramitando": 2,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601161-03.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Processo com prazo em curso",
+        "autuacao": "17/09/2026",
+        "desde": "19/09/2026",
         "dias_tramitando": 2,
         "julgado": false,
         "data_julgamento": "",
@@ -5531,6 +5530,22 @@
         "responsavel_processo": ""
       }
     ],
+    "aguardando-julgamento-do-recurso-interno-peticoes-nao-lidas-peticoes-nao-lidas": [
+      {
+        "processo": "0601161-03.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno; Petições não lidas; Petições não lidas",
+        "autuacao": "10/09/2026",
+        "desde": "10/09/2026",
+        "dias_tramitando": 8,
+        "julgado": true,
+        "data_julgamento": "14/09/2026",
+        "teor": "Julgado improcedente o pedido em 14/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "aguardando-julgamento-do-recurso-interno-registrar-recurso": [
       {
         "processo": "0600193-70.2026.6.10.0000",
@@ -5627,22 +5642,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-determinacao-peticoes-nao-lidas-peticoes-nao-lidas": [
-      {
-        "processo": "0601161-03.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação; Petições não lidas; Petições não lidas",
-        "autuacao": "10/09/2026",
-        "desde": "10/09/2026",
-        "dias_tramitando": 8,
-        "julgado": true,
-        "data_julgamento": "14/09/2026",
-        "teor": "Julgado improcedente o pedido em 14/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "analisar-determinacao-registrar-recurso": [
       {
         "processo": "0600245-66.2026.6.10.0000",
@@ -5732,22 +5731,6 @@
         "autuacao": "28/08/2026",
         "desde": "28/08/2026",
         "dias_tramitando": 21,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "preparar-comunicacao": [
-      {
-        "processo": "0601161-03.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Preparar comunicação",
-        "autuacao": "17/09/2026",
-        "desde": "19/09/2026",
-        "dias_tramitando": 2,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -6470,7 +6453,7 @@
         "processo": "0601161-03.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Analisar determinação; Petições não lidas",
+        "tarefa_atual": "Aguardando julgamento do recurso interno; Petições não lidas",
         "autuacao": "10/09/2026",
         "desde": "10/09/2026",
         "dias_tramitando": 8,
@@ -6666,7 +6649,7 @@
         "processo": "0601161-03.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Preparar comunicação",
+        "tarefa_atual": "Processo com prazo em curso",
         "autuacao": "17/09/2026",
         "desde": "19/09/2026",
         "dias_tramitando": 2,
@@ -11483,7 +11466,7 @@
       "processo": "0601161-03.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação; Petições não lidas",
+      "tarefa_atual": "Aguardando julgamento do recurso interno; Petições não lidas",
       "autuacao": "10/09/2026",
       "desde": "10/09/2026",
       "dias_tramitando": 8,
@@ -16609,7 +16592,7 @@
       "processo": "0601161-03.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação; Petições não lidas",
+      "tarefa_atual": "Aguardando julgamento do recurso interno; Petições não lidas",
       "autuacao": "10/09/2026",
       "desde": "10/09/2026",
       "dias_tramitando": 8,
@@ -18786,7 +18769,7 @@
       "processo": "0601161-03.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "REC no(a) Rp",
-      "tarefa_atual": "Preparar comunicação",
+      "tarefa_atual": "Processo com prazo em curso",
       "autuacao": "17/09/2026",
       "desde": "19/09/2026",
       "dias_tramitando": 2,
@@ -20723,7 +20706,7 @@
       "processo": "0601161-03.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação; Petições não lidas; Petições não lidas",
+      "tarefa_atual": "Aguardando julgamento do recurso interno; Petições não lidas; Petições não lidas",
       "autuacao": "10/09/2026",
       "desde": "10/09/2026",
       "dias_tramitando": 8,
@@ -20749,8 +20732,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "19/09/2026 09:47",
+  "publicado_em": "19/09/2026 09:48",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "2e8432c56c16c2d4d2f92b6ec3a8e23b35e73e79187725519f308c59569439e2"
+  "hash_publicacao": "c358e83ab42de9775f248017804ab8c57f07b1a60c0a3c17fe4cb4eddd9da5e1"
 }
