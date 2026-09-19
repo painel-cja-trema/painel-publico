@@ -285,7 +285,7 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Analisar determinação",
-      "quantidade": 12
+      "quantidade": 14
     },
     {
       "gabinete": "Gab. JA 3",
@@ -301,11 +301,6 @@
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Analisar Processos",
       "quantidade": 6
-    },
-    {
-      "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Lançar movimento",
-      "quantidade": 4
     },
     {
       "gabinete": "Gab. JA 3",
@@ -340,6 +335,11 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Analisar determinação - Urgentes",
+      "quantidade": 2
+    },
+    {
+      "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Lançar movimento",
       "quantidade": 2
     },
     {
@@ -1025,7 +1025,7 @@
           "TRIAGEM_ORDINARIA": 0,
           "MINUTAR_ATO": 4,
           "ASSINAR_ATO": 0,
-          "LANCAR_MOVIMENTACAO": 6
+          "LANCAR_MOVIMENTACAO": 4
         }
       }
     ],
@@ -1034,7 +1034,7 @@
       "TRIAGEM_ORDINARIA": 13,
       "MINUTAR_ATO": 24,
       "ASSINAR_ATO": 3,
-      "LANCAR_MOVIMENTACAO": 9
+      "LANCAR_MOVIMENTACAO": 7
     },
     "total_acervo": 242
   },
@@ -1707,20 +1707,6 @@
         "responsavel_processo": ""
       },
       {
-        "processo": "0600072-95.2026.6.10.0047",
-        "gabinete": "Gab. JA 3",
-        "classe": "NIP",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "13/09/2026",
-        "desde": "18/09/2026",
-        "dias_tramitando": 5,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
         "processo": "0600044-97.2026.6.10.0057",
         "gabinete": "Gab. JA 3",
         "classe": "NIP",
@@ -1728,20 +1714,6 @@
         "autuacao": "15/09/2026",
         "desde": "19/09/2026",
         "dias_tramitando": 4,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600052-75.2026.6.10.0089",
-        "gabinete": "Gab. JA 3",
-        "classe": "NIP",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "16/09/2026",
-        "desde": "18/09/2026",
-        "dias_tramitando": 2,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -1849,9 +1821,9 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 16,
           "Gabinete Juiz Auxiliar 2": 10,
-          "Gabinete Juiz Auxiliar 3": 12
+          "Gabinete Juiz Auxiliar 3": 14
         },
-        "total": 38
+        "total": 40
       },
       {
         "codigo": "processo-com-prazo-em-curso",
@@ -1912,16 +1884,6 @@
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 7
-      },
-      {
-        "codigo": "lancar-movimento",
-        "tarefa": "Lançar movimento",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 4
-        },
-        "total": 4
       },
       {
         "codigo": "revisar-ato",
@@ -2116,6 +2078,16 @@
       {
         "codigo": "analisar-determinacao-urgentes",
         "tarefa": "Analisar determinação - Urgentes",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 2
+        },
+        "total": 2
+      },
+      {
+        "codigo": "lancar-movimento",
+        "tarefa": "Lançar movimento",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -3417,6 +3389,34 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0600072-95.2026.6.10.0047",
+        "gabinete": "Gab. JA 3",
+        "classe": "NIP",
+        "tarefa_atual": "Analisar determinação",
+        "autuacao": "13/09/2026",
+        "desde": "19/09/2026",
+        "dias_tramitando": 5,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600052-75.2026.6.10.0089",
+        "gabinete": "Gab. JA 3",
+        "classe": "NIP",
+        "tarefa_atual": "Analisar determinação",
+        "autuacao": "16/09/2026",
+        "desde": "19/09/2026",
+        "dias_tramitando": 2,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0600089-48.2026.6.10.0010",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
@@ -4675,64 +4675,6 @@
         "responsavel_processo": ""
       }
     ],
-    "lancar-movimento": [
-      {
-        "processo": "0600067-73.2026.6.10.0047",
-        "gabinete": "Gab. JA 3",
-        "classe": "NIP",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "13/09/2026",
-        "desde": "18/09/2026",
-        "dias_tramitando": 5,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600072-95.2026.6.10.0047",
-        "gabinete": "Gab. JA 3",
-        "classe": "NIP",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "13/09/2026",
-        "desde": "18/09/2026",
-        "dias_tramitando": 5,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600044-97.2026.6.10.0057",
-        "gabinete": "Gab. JA 3",
-        "classe": "NIP",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "15/09/2026",
-        "desde": "19/09/2026",
-        "dias_tramitando": 4,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600052-75.2026.6.10.0089",
-        "gabinete": "Gab. JA 3",
-        "classe": "NIP",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "16/09/2026",
-        "desde": "18/09/2026",
-        "dias_tramitando": 2,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "revisar-ato": [
       {
         "processo": "0600192-85.2026.6.10.0000",
@@ -5480,6 +5422,36 @@
         "autuacao": "11/09/2026",
         "desde": "17/09/2026",
         "dias_tramitando": 7,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "lancar-movimento": [
+      {
+        "processo": "0600067-73.2026.6.10.0047",
+        "gabinete": "Gab. JA 3",
+        "classe": "NIP",
+        "tarefa_atual": "Lançar movimento",
+        "autuacao": "13/09/2026",
+        "desde": "18/09/2026",
+        "dias_tramitando": 5,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600044-97.2026.6.10.0057",
+        "gabinete": "Gab. JA 3",
+        "classe": "NIP",
+        "tarefa_atual": "Lançar movimento",
+        "autuacao": "15/09/2026",
+        "desde": "19/09/2026",
+        "dias_tramitando": 4,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -8978,9 +8950,9 @@
         "processo": "0600072-95.2026.6.10.0047",
         "gabinete": "Gab. JA 3",
         "classe": "NIP",
-        "tarefa_atual": "Lançar movimento",
+        "tarefa_atual": "Analisar determinação",
         "autuacao": "13/09/2026",
-        "desde": "18/09/2026",
+        "desde": "19/09/2026",
         "dias_tramitando": 5,
         "julgado": false,
         "data_julgamento": "",
@@ -9062,9 +9034,9 @@
         "processo": "0600052-75.2026.6.10.0089",
         "gabinete": "Gab. JA 3",
         "classe": "NIP",
-        "tarefa_atual": "Lançar movimento",
+        "tarefa_atual": "Analisar determinação",
         "autuacao": "16/09/2026",
-        "desde": "18/09/2026",
+        "desde": "19/09/2026",
         "dias_tramitando": 2,
         "julgado": false,
         "data_julgamento": "",
@@ -11649,9 +11621,9 @@
       "processo": "0600072-95.2026.6.10.0047",
       "gabinete": "Gab. JA 3",
       "classe": "NIP",
-      "tarefa_atual": "Lançar movimento",
+      "tarefa_atual": "Analisar determinação",
       "autuacao": "13/09/2026",
-      "desde": "18/09/2026",
+      "desde": "19/09/2026",
       "dias_tramitando": 5,
       "julgado": false,
       "data_julgamento": "",
@@ -11817,9 +11789,9 @@
       "processo": "0600052-75.2026.6.10.0089",
       "gabinete": "Gab. JA 3",
       "classe": "NIP",
-      "tarefa_atual": "Lançar movimento",
+      "tarefa_atual": "Analisar determinação",
       "autuacao": "16/09/2026",
-      "desde": "18/09/2026",
+      "desde": "19/09/2026",
       "dias_tramitando": 2,
       "julgado": false,
       "data_julgamento": "",
@@ -16761,9 +16733,9 @@
       "processo": "0600072-95.2026.6.10.0047",
       "gabinete": "Gab. JA 3",
       "classe": "NIP",
-      "tarefa_atual": "Lançar movimento",
+      "tarefa_atual": "Analisar determinação",
       "autuacao": "13/09/2026",
-      "desde": "18/09/2026",
+      "desde": "19/09/2026",
       "dias_tramitando": 5,
       "julgado": false,
       "data_julgamento": "",
@@ -16929,9 +16901,9 @@
       "processo": "0600052-75.2026.6.10.0089",
       "gabinete": "Gab. JA 3",
       "classe": "NIP",
-      "tarefa_atual": "Lançar movimento",
+      "tarefa_atual": "Analisar determinação",
       "autuacao": "16/09/2026",
-      "desde": "18/09/2026",
+      "desde": "19/09/2026",
       "dias_tramitando": 2,
       "julgado": false,
       "data_julgamento": "",
@@ -20761,8 +20733,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "19/09/2026 08:10",
+  "publicado_em": "19/09/2026 08:14",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "31c1080b29b63d813f378fdb64ccd8250a614a386eb30e3c6df6e26305fbef68"
+  "hash_publicacao": "bb9d76574bdf6075ccc7f39be24849c403584c65ae91e607c66dec35d92a8df8"
 }
