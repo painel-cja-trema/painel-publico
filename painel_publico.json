@@ -234,12 +234,12 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Elaborar Documento - SOF",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Elaborar Documento - SOF",
+      "tarefa_atual": "Lançar movimento",
       "quantidade": 1
     },
     {
@@ -977,8 +977,8 @@
           "TRIAGEM_URGENTE": 1,
           "TRIAGEM_ORDINARIA": 12,
           "MINUTAR_ATO": 12,
-          "ASSINAR_ATO": 1,
-          "LANCAR_MOVIMENTACAO": 0
+          "ASSINAR_ATO": 0,
+          "LANCAR_MOVIMENTACAO": 1
         }
       },
       {
@@ -998,8 +998,8 @@
       "TRIAGEM_URGENTE": 1,
       "TRIAGEM_ORDINARIA": 14,
       "MINUTAR_ATO": 24,
-      "ASSINAR_ATO": 1,
-      "LANCAR_MOVIMENTACAO": 0
+      "ASSINAR_ATO": 0,
+      "LANCAR_MOVIMENTACAO": 1
     },
     "total_acervo": 242
   },
@@ -1556,12 +1556,13 @@
         "responsavel_processo": ""
       }
     ],
-    "ASSINAR_ATO": [
+    "ASSINAR_ATO": [],
+    "LANCAR_MOVIMENTACAO": [
       {
         "processo": "0601764-76.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
+        "tarefa_atual": "Lançar movimento",
         "autuacao": "19/09/2026",
         "desde": "21/09/2026",
         "dias_tramitando": 1,
@@ -1571,8 +1572,7 @@
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
-    ],
-    "LANCAR_MOVIMENTACAO": []
+    ]
   },
   "entrada_comissao": {
     "codigo": "LIMINAR_CERTIFICACAO",
@@ -1900,16 +1900,6 @@
         "total": 1
       },
       {
-        "codigo": "assinar-ato",
-        "tarefa": "Assinar ato",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
         "codigo": "atualizar-dados-do-processo",
         "tarefa": "Atualizar dados do processo",
         "contagens": {
@@ -1922,6 +1912,16 @@
       {
         "codigo": "elaborar-documento-sof",
         "tarefa": "Elaborar Documento - SOF",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "lancar-movimento",
+        "tarefa": "Lançar movimento",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -5307,22 +5307,6 @@
         "responsavel_processo": ""
       }
     ],
-    "assinar-ato": [
-      {
-        "processo": "0601764-76.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "19/09/2026",
-        "desde": "21/09/2026",
-        "dias_tramitando": 1,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "atualizar-dados-do-processo": [
       {
         "processo": "0601144-64.2026.6.10.0000",
@@ -5351,6 +5335,22 @@
         "julgado": true,
         "data_julgamento": "16/07/2026",
         "teor": "Julgado procedente o pedido em 16/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "lancar-movimento": [
+      {
+        "processo": "0601764-76.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Lançar movimento",
+        "autuacao": "19/09/2026",
+        "desde": "21/09/2026",
+        "dias_tramitando": 1,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -7802,7 +7802,7 @@
         "processo": "0601764-76.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
+        "tarefa_atual": "Lançar movimento",
         "autuacao": "19/09/2026",
         "desde": "21/09/2026",
         "dias_tramitando": 1,
@@ -11721,7 +11721,7 @@
       "processo": "0601764-76.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "autuacao": "19/09/2026",
       "desde": "21/09/2026",
       "dias_tramitando": 1,
@@ -17087,7 +17087,7 @@
       "processo": "0601764-76.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "autuacao": "19/09/2026",
       "desde": "21/09/2026",
       "dias_tramitando": 1,
@@ -20939,8 +20939,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "21/09/2026 11:35",
+  "publicado_em": "21/09/2026 11:37",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "a2fffbcf2d652734e1d83c9b9c58a997be9bf2d63b6053566d7a8e1d56efdaab"
+  "hash_publicacao": "18d9c748b4dd330e71dbeb4fbf520ce300bd599c338d1709b04edeaa8bf58dd4"
 }
