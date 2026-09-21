@@ -46,7 +46,7 @@
       "quantidade": 56,
       "media_dias": 20.8,
       "maior_tempo": 103,
-      "urgentes": 2,
+      "urgentes": 1,
       "minutar": 4,
       "julgados": 29,
       "percentual_julgados": 40.8,
@@ -275,7 +275,7 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Analisar determinação",
-      "quantidade": 15
+      "quantidade": 14
     },
     {
       "gabinete": "Gab. JA 3",
@@ -291,6 +291,11 @@
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Analisar Processos",
       "quantidade": 6
+    },
+    {
+      "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Aguardando providências",
+      "quantidade": 3
     },
     {
       "gabinete": "Gab. JA 3",
@@ -314,17 +319,7 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Aguardando providências",
-      "quantidade": 2
-    },
-    {
-      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Analisar Petição Avulsa; Minutar ato",
-      "quantidade": 2
-    },
-    {
-      "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Analisar determinação - Urgentes",
       "quantidade": 2
     },
     {
@@ -360,6 +355,16 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Analisar Petição Avulsa; Analisar Petição Avulsa; Analisar determinação",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Petições não lidas",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Analisar determinação - Urgentes",
       "quantidade": 1
     },
     {
@@ -1607,9 +1612,9 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 15,
           "Gabinete Juiz Auxiliar 2": 8,
-          "Gabinete Juiz Auxiliar 3": 15
+          "Gabinete Juiz Auxiliar 3": 14
         },
-        "total": 38
+        "total": 37
       },
       {
         "codigo": "minutar-ato",
@@ -1722,6 +1727,16 @@
         "total": 3
       },
       {
+        "codigo": "aguardando-providencias",
+        "tarefa": "Aguardando providências",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 3
+        },
+        "total": 3
+      },
+      {
         "codigo": "analisar-resposta-do-expediente",
         "tarefa": "Analisar resposta do expediente",
         "contagens": {
@@ -1752,28 +1767,8 @@
         "total": 2
       },
       {
-        "codigo": "aguardando-providencias",
-        "tarefa": "Aguardando providências",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 2
-        },
-        "total": 2
-      },
-      {
         "codigo": "analisar-peticao-avulsa-minutar-ato",
         "tarefa": "Analisar Petição Avulsa; Minutar ato",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 2
-        },
-        "total": 2
-      },
-      {
-        "codigo": "analisar-determinacao-urgentes",
-        "tarefa": "Analisar determinação - Urgentes",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -1872,6 +1867,16 @@
         "total": 1
       },
       {
+        "codigo": "analisar-peticao-avulsa-analisar-determinacao-peticoes-nao-lidas",
+        "tarefa": "Analisar Petição Avulsa; Analisar determinação; Petições não lidas",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
         "codigo": "analisar-peticao-avulsa-elaborar-documentos-peticoes-nao-lidas",
         "tarefa": "Analisar Petição Avulsa; Elaborar Documentos; Petições não lidas",
         "contagens": {
@@ -1898,6 +1903,16 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "analisar-determinacao-urgentes",
+        "tarefa": "Analisar determinação - Urgentes",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 1
       },
@@ -3645,20 +3660,6 @@
         "responsavel_processo": ""
       },
       {
-        "processo": "0600078-89.2026.6.10.0019",
-        "gabinete": "Gab. JA 3",
-        "classe": "NIP",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "20/09/2026",
-        "desde": "20/09/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
         "processo": "0600081-44.2026.6.10.0019",
         "gabinete": "Gab. JA 2",
         "classe": "NIP",
@@ -4899,6 +4900,50 @@
         "responsavel_processo": ""
       }
     ],
+    "aguardando-providencias": [
+      {
+        "processo": "0600958-41.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "DR",
+        "tarefa_atual": "Aguardando providências",
+        "autuacao": "21/08/2026",
+        "desde": "21/09/2026",
+        "dias_tramitando": 30,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601061-48.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Aguardando providências",
+        "autuacao": "01/09/2026",
+        "desde": "21/09/2026",
+        "dias_tramitando": 19,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601152-41.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Aguardando providências",
+        "autuacao": "10/09/2026",
+        "desde": "21/09/2026",
+        "dias_tramitando": 10,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "analisar-resposta-do-expediente": [
       {
         "processo": "0600066-75.2026.6.10.0019",
@@ -5017,36 +5062,6 @@
         "responsavel_processo": ""
       }
     ],
-    "aguardando-providencias": [
-      {
-        "processo": "0600958-41.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "DR",
-        "tarefa_atual": "Aguardando providências",
-        "autuacao": "21/08/2026",
-        "desde": "21/09/2026",
-        "dias_tramitando": 30,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601061-48.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Aguardando providências",
-        "autuacao": "01/09/2026",
-        "desde": "21/09/2026",
-        "dias_tramitando": 19,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "analisar-peticao-avulsa-minutar-ato": [
       {
         "processo": "0601369-84.2026.6.10.0000",
@@ -5073,36 +5088,6 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "analisar-determinacao-urgentes": [
-      {
-        "processo": "0601152-41.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação - Urgentes",
-        "autuacao": "10/09/2026",
-        "desde": "19/09/2026",
-        "dias_tramitando": 10,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601753-47.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação - Urgentes",
-        "autuacao": "18/09/2026",
-        "desde": "21/09/2026",
-        "dias_tramitando": 2,
-        "julgado": true,
-        "data_julgamento": "19/09/2026",
-        "teor": "Extinto o processo por desistência em 19/09/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -5265,6 +5250,22 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-peticao-avulsa-analisar-determinacao-peticoes-nao-lidas": [
+      {
+        "processo": "0600078-89.2026.6.10.0019",
+        "gabinete": "Gab. JA 3",
+        "classe": "NIP",
+        "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Petições não lidas",
+        "autuacao": "20/09/2026",
+        "desde": "20/09/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "analisar-peticao-avulsa-elaborar-documentos-peticoes-nao-lidas": [
       {
         "processo": "0600052-30.2026.6.10.0007",
@@ -5309,6 +5310,22 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-determinacao-urgentes": [
+      {
+        "processo": "0601753-47.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação - Urgentes",
+        "autuacao": "18/09/2026",
+        "desde": "21/09/2026",
+        "dias_tramitando": 2,
+        "julgado": true,
+        "data_julgamento": "19/09/2026",
+        "teor": "Extinto o processo por desistência em 19/09/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -8538,9 +8555,9 @@
         "processo": "0601152-41.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Analisar determinação - Urgentes",
+        "tarefa_atual": "Aguardando providências",
         "autuacao": "10/09/2026",
-        "desde": "19/09/2026",
+        "desde": "21/09/2026",
         "dias_tramitando": 10,
         "julgado": false,
         "data_julgamento": "",
@@ -8832,7 +8849,7 @@
         "processo": "0600078-89.2026.6.10.0019",
         "gabinete": "Gab. JA 3",
         "classe": "NIP",
-        "tarefa_atual": "Analisar determinação",
+        "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Petições não lidas",
         "autuacao": "20/09/2026",
         "desde": "20/09/2026",
         "dias_tramitando": 0,
@@ -11069,9 +11086,9 @@
       "processo": "0601152-41.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação - Urgentes",
+      "tarefa_atual": "Aguardando providências",
       "autuacao": "10/09/2026",
-      "desde": "19/09/2026",
+      "desde": "21/09/2026",
       "dias_tramitando": 10,
       "julgado": false,
       "data_julgamento": "",
@@ -11769,7 +11786,7 @@
       "processo": "0600078-89.2026.6.10.0019",
       "gabinete": "Gab. JA 3",
       "classe": "NIP",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Petições não lidas",
       "autuacao": "20/09/2026",
       "desde": "20/09/2026",
       "dias_tramitando": 0,
@@ -16435,9 +16452,9 @@
       "processo": "0601152-41.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação - Urgentes",
+      "tarefa_atual": "Aguardando providências",
       "autuacao": "10/09/2026",
-      "desde": "19/09/2026",
+      "desde": "21/09/2026",
       "dias_tramitando": 10,
       "julgado": false,
       "data_julgamento": "",
@@ -17135,7 +17152,7 @@
       "processo": "0600078-89.2026.6.10.0019",
       "gabinete": "Gab. JA 3",
       "classe": "NIP",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Petições não lidas",
       "autuacao": "20/09/2026",
       "desde": "20/09/2026",
       "dias_tramitando": 0,
@@ -20945,8 +20962,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "21/09/2026 11:15",
+  "publicado_em": "21/09/2026 11:16",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "5a542a29a4f749add982c1d220c13d6d4024654d5a3328ba21bab2cb8178d59a"
+  "hash_publicacao": "c12418fe2aea8cbf1f04f219d047de07bbb342f030de8e1cf61e5472a90a3e8f"
 }
