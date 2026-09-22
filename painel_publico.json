@@ -189,6 +189,11 @@
     },
     {
       "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+      "quantidade": 2
+    },
+    {
+      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
       "quantidade": 2
     },
@@ -204,7 +209,7 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
+      "tarefa_atual": "Analisar Acórdão Assinado - SJD; Analisar Processos; Processo julgado",
       "quantidade": 1
     },
     {
@@ -215,11 +220,6 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Analisar Processos; Assinar acórdão ou resolução - Gabinete; Processo julgado",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado; Processo julgado",
       "quantidade": 1
     },
     {
@@ -240,11 +240,6 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Petições não lidas; Petições não lidas; Realizar triagem ordinários",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
       "quantidade": 1
     },
     {
@@ -963,7 +958,7 @@
           "TRIAGEM_ORDINARIA": 15,
           "MINUTAR_ATO": 13,
           "ASSINAR_ATO": 1,
-          "LANCAR_MOVIMENTACAO": 1
+          "LANCAR_MOVIMENTACAO": 0
         }
       },
       {
@@ -984,7 +979,7 @@
       "TRIAGEM_ORDINARIA": 16,
       "MINUTAR_ATO": 24,
       "ASSINAR_ATO": 1,
-      "LANCAR_MOVIMENTACAO": 1
+      "LANCAR_MOVIMENTACAO": 0
     },
     "total_acervo": 251
   },
@@ -1613,22 +1608,7 @@
         "responsavel_processo": ""
       }
     ],
-    "LANCAR_MOVIMENTACAO": [
-      {
-        "processo": "0600964-48.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado; Processo julgado",
-        "autuacao": "03/09/2026",
-        "desde": "03/09/2026",
-        "dias_tramitando": 19,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ]
+    "LANCAR_MOVIMENTACAO": []
   },
   "entrada_comissao": {
     "codigo": "LIMINAR_CERTIFICACAO",
@@ -1886,6 +1866,16 @@
         "total": 2
       },
       {
+        "codigo": "peticoes-nao-lidas-processo-com-prazo-em-curso",
+        "tarefa": "Petições não lidas; Processo com prazo em curso",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 2,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 2
+      },
+      {
         "codigo": "peticoes-nao-lidas-realizar-triagem-ordinarios",
         "tarefa": "Petições não lidas; Realizar triagem ordinários",
         "contagens": {
@@ -1916,18 +1906,8 @@
         "total": 1
       },
       {
-        "codigo": "analisar-peticao-avulsa-peticoes-nao-lidas-processo-com-prazo-em-curso",
-        "tarefa": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "analisar-processos-lancar-movimentos-de-julgamento-colegiado-processo-julgado",
-        "tarefa": "Analisar Processos; Lançar movimentos de julgamento colegiado; Processo julgado",
+        "codigo": "analisar-acordao-assinado-sjd-analisar-processos-processo-julgado",
+        "tarefa": "Analisar Acórdão Assinado - SJD; Analisar Processos; Processo julgado",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -1968,16 +1948,6 @@
       {
         "codigo": "peticoes-nao-lidas-peticoes-nao-lidas-realizar-triagem-ordinarios",
         "tarefa": "Petições não lidas; Petições não lidas; Realizar triagem ordinários",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "peticoes-nao-lidas-processo-com-prazo-em-curso",
-        "tarefa": "Petições não lidas; Processo com prazo em curso",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -5383,6 +5353,36 @@
         "responsavel_processo": ""
       }
     ],
+    "peticoes-nao-lidas-processo-com-prazo-em-curso": [
+      {
+        "processo": "0600080-26.2026.6.10.0030",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+        "autuacao": "16/09/2026",
+        "desde": "16/09/2026",
+        "dias_tramitando": 6,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601757-84.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+        "autuacao": "18/09/2026",
+        "desde": "18/09/2026",
+        "dias_tramitando": 3,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "peticoes-nao-lidas-realizar-triagem-ordinarios": [
       {
         "processo": "0600193-70.2026.6.10.0000",
@@ -5445,28 +5445,12 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-peticao-avulsa-peticoes-nao-lidas-processo-com-prazo-em-curso": [
-      {
-        "processo": "0600080-26.2026.6.10.0030",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
-        "autuacao": "16/09/2026",
-        "desde": "16/09/2026",
-        "dias_tramitando": 6,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "analisar-processos-lancar-movimentos-de-julgamento-colegiado-processo-julgado": [
+    "analisar-acordao-assinado-sjd-analisar-processos-processo-julgado": [
       {
         "processo": "0600964-48.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado; Processo julgado",
+        "tarefa_atual": "Analisar Acórdão Assinado - SJD; Analisar Processos; Processo julgado",
         "autuacao": "03/09/2026",
         "desde": "03/09/2026",
         "dias_tramitando": 19,
@@ -5534,22 +5518,6 @@
         "autuacao": "17/09/2026",
         "desde": "17/09/2026",
         "dias_tramitando": 4,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "peticoes-nao-lidas-processo-com-prazo-em-curso": [
-      {
-        "processo": "0601757-84.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
-        "autuacao": "18/09/2026",
-        "desde": "18/09/2026",
-        "dias_tramitando": 3,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -7294,7 +7262,7 @@
         "processo": "0600964-48.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado; Processo julgado",
+        "tarefa_atual": "Analisar Acórdão Assinado - SJD; Analisar Processos; Processo julgado",
         "autuacao": "03/09/2026",
         "desde": "03/09/2026",
         "dias_tramitando": 19,
@@ -7658,7 +7626,7 @@
         "processo": "0600080-26.2026.6.10.0030",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
+        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
         "autuacao": "16/09/2026",
         "desde": "16/09/2026",
         "dias_tramitando": 6,
@@ -11577,7 +11545,7 @@
       "processo": "0600080-26.2026.6.10.0030",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
+      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
       "autuacao": "16/09/2026",
       "desde": "16/09/2026",
       "dias_tramitando": 6,
@@ -17471,7 +17439,7 @@
       "processo": "0600080-26.2026.6.10.0030",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
+      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
       "autuacao": "16/09/2026",
       "desde": "16/09/2026",
       "dias_tramitando": 6,
@@ -19351,7 +19319,7 @@
       "processo": "0600964-48.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "REC no(a) Rp",
-      "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado; Processo julgado",
+      "tarefa_atual": "Analisar Acórdão Assinado - SJD; Analisar Processos; Processo julgado",
       "autuacao": "03/09/2026",
       "desde": "03/09/2026",
       "dias_tramitando": 19,
@@ -22070,5 +22038,5 @@
   "publicado_em": "22/09/2026 18:41",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "5cec170a3f825f073074df2c950d00c9615f3688111ea5b7da14dd87a3df3be3"
+  "hash_publicacao": "f8af01eb95f5c8cc21bd89b164842dbd6e3fbd722f8f7a988560d375d93111c2"
 }
