@@ -209,12 +209,12 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado; Processo julgado",
+      "tarefa_atual": "Analisar Processos; Assinar acórdão ou resolução - Gabinete; Processo julgado",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Analisar Processos; Processo julgado; Revisar acórdão ou resolução - Gabinete",
+      "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado; Processo julgado",
       "quantidade": 1
     },
     {
@@ -250,7 +250,7 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Processo com prazo em curso",
-      "quantidade": 22
+      "quantidade": 23
     },
     {
       "gabinete": "Gab. JA 3",
@@ -335,11 +335,6 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Analisar Processos; Processo julgado; Selecionar documentos para acórdão - Gabinete",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Preparar comunicação",
       "quantidade": 1
     },
     {
@@ -1656,9 +1651,9 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 8,
           "Gabinete Juiz Auxiliar 2": 19,
-          "Gabinete Juiz Auxiliar 3": 22
+          "Gabinete Juiz Auxiliar 3": 23
         },
-        "total": 49
+        "total": 50
       },
       {
         "codigo": "analisar-determinacao",
@@ -1931,8 +1926,8 @@
         "total": 1
       },
       {
-        "codigo": "analisar-processos-lancar-movimentos-de-julgamento-colegiado-processo-julgado",
-        "tarefa": "Analisar Processos; Lançar movimentos de julgamento colegiado; Processo julgado",
+        "codigo": "analisar-processos-assinar-acordao-ou-resolucao-gabinete-processo-julgado",
+        "tarefa": "Analisar Processos; Assinar acórdão ou resolução - Gabinete; Processo julgado",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -1941,8 +1936,8 @@
         "total": 1
       },
       {
-        "codigo": "analisar-processos-processo-julgado-revisar-acordao-ou-resolucao-gabinete",
-        "tarefa": "Analisar Processos; Processo julgado; Revisar acórdão ou resolução - Gabinete",
+        "codigo": "analisar-processos-lancar-movimentos-de-julgamento-colegiado-processo-julgado",
+        "tarefa": "Analisar Processos; Lançar movimentos de julgamento colegiado; Processo julgado",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -2007,16 +2002,6 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "preparar-comunicacao",
-        "tarefa": "Preparar comunicação",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 1
       },
@@ -2396,6 +2381,20 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601742-18.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Processo com prazo em curso",
+        "autuacao": "17/09/2026",
+        "desde": "22/09/2026",
+        "dias_tramitando": 5,
+        "julgado": true,
+        "data_julgamento": "22/09/2026",
+        "teor": "Julgado procedente em parte do pedido em 22/09/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -5478,6 +5477,22 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-processos-assinar-acordao-ou-resolucao-gabinete-processo-julgado": [
+      {
+        "processo": "0600175-49.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "ED no(a) REC no(a) Rp",
+        "tarefa_atual": "Analisar Processos; Assinar acórdão ou resolução - Gabinete; Processo julgado",
+        "autuacao": "19/08/2026",
+        "desde": "19/08/2026",
+        "dias_tramitando": 34,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "analisar-processos-lancar-movimentos-de-julgamento-colegiado-processo-julgado": [
       {
         "processo": "0600964-48.2026.6.10.0000",
@@ -5487,22 +5502,6 @@
         "autuacao": "03/09/2026",
         "desde": "03/09/2026",
         "dias_tramitando": 19,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "analisar-processos-processo-julgado-revisar-acordao-ou-resolucao-gabinete": [
-      {
-        "processo": "0600175-49.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "ED no(a) REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos; Processo julgado; Revisar acórdão ou resolução - Gabinete",
-        "autuacao": "19/08/2026",
-        "desde": "19/08/2026",
-        "dias_tramitando": 34,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -5602,22 +5601,6 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "preparar-comunicacao": [
-      {
-        "processo": "0601742-18.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Preparar comunicação",
-        "autuacao": "17/09/2026",
-        "desde": "22/09/2026",
-        "dias_tramitando": 5,
-        "julgado": true,
-        "data_julgamento": "22/09/2026",
-        "teor": "Julgado procedente em parte do pedido em 22/09/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -6949,7 +6932,7 @@
         "processo": "0600175-49.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "ED no(a) REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos; Processo julgado; Revisar acórdão ou resolução - Gabinete",
+        "tarefa_atual": "Analisar Processos; Assinar acórdão ou resolução - Gabinete; Processo julgado",
         "autuacao": "19/08/2026",
         "desde": "19/08/2026",
         "dias_tramitando": 34,
@@ -8855,7 +8838,7 @@
         "processo": "0601742-18.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Preparar comunicação",
+        "tarefa_atual": "Processo com prazo em curso",
         "autuacao": "17/09/2026",
         "desde": "22/09/2026",
         "dias_tramitando": 5,
@@ -11778,7 +11761,7 @@
       "processo": "0601742-18.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Preparar comunicação",
+      "tarefa_atual": "Processo com prazo em curso",
       "autuacao": "17/09/2026",
       "desde": "22/09/2026",
       "dias_tramitando": 5,
@@ -17596,7 +17579,7 @@
       "processo": "0601742-18.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Preparar comunicação",
+      "tarefa_atual": "Processo com prazo em curso",
       "autuacao": "17/09/2026",
       "desde": "22/09/2026",
       "dias_tramitando": 5,
@@ -19238,7 +19221,7 @@
       "processo": "0600175-49.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "ED no(a) REC no(a) Rp",
-      "tarefa_atual": "Analisar Processos; Processo julgado; Revisar acórdão ou resolução - Gabinete",
+      "tarefa_atual": "Analisar Processos; Assinar acórdão ou resolução - Gabinete; Processo julgado",
       "autuacao": "19/08/2026",
       "desde": "19/08/2026",
       "dias_tramitando": 34,
@@ -22040,7 +22023,7 @@
       "processo": "0601742-18.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Preparar comunicação",
+      "tarefa_atual": "Processo com prazo em curso",
       "autuacao": "17/09/2026",
       "desde": "22/09/2026",
       "dias_tramitando": 5,
@@ -22066,8 +22049,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "22/09/2026 18:21",
+  "publicado_em": "22/09/2026 18:22",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "834627c88249ade545408dea78d47b0458f2d9b76e96c4148c46cc192e2353f0"
+  "hash_publicacao": "142dceddf75e9d462fbf5bff43f40665fd959c2e2c9f78f29b3c09ba6af6630c"
 }
