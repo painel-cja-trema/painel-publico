@@ -29,7 +29,7 @@
       "quantidade": 84,
       "media_dias": 31.1,
       "maior_tempo": 166,
-      "urgentes": 4,
+      "urgentes": 5,
       "minutar": 14,
       "julgados": 38,
       "percentual_julgados": 35.2,
@@ -244,17 +244,17 @@
     },
     {
       "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Analisar determinação - Urgentes",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Analisar determinação; Petições não lidas",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Analisar resposta do expediente; Petições não lidas; Petições não lidas",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Lançar movimento",
       "quantidade": 1
     },
     {
@@ -977,7 +977,7 @@
           "TRIAGEM_ORDINARIA": 13,
           "MINUTAR_ATO": 14,
           "ASSINAR_ATO": 3,
-          "LANCAR_MOVIMENTACAO": 1
+          "LANCAR_MOVIMENTACAO": 0
         }
       },
       {
@@ -998,7 +998,7 @@
       "TRIAGEM_ORDINARIA": 13,
       "MINUTAR_ATO": 25,
       "ASSINAR_ATO": 8,
-      "LANCAR_MOVIMENTACAO": 1
+      "LANCAR_MOVIMENTACAO": 0
     },
     "total_acervo": 255
   },
@@ -1753,22 +1753,7 @@
         "responsavel_processo": ""
       }
     ],
-    "LANCAR_MOVIMENTACAO": [
-      {
-        "processo": "0601759-54.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "19/09/2026",
-        "desde": "23/09/2026",
-        "dias_tramitando": 4,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ]
+    "LANCAR_MOVIMENTACAO": []
   },
   "entrada_comissao": {
     "codigo": "LIMINAR_CERTIFICACAO",
@@ -1916,6 +1901,16 @@
         "total": 4
       },
       {
+        "codigo": "analisar-determinacao-urgentes",
+        "tarefa": "Analisar determinação - Urgentes",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 2
+        },
+        "total": 3
+      },
+      {
         "codigo": "analisar-resposta-do-expediente",
         "tarefa": "Analisar resposta do expediente",
         "contagens": {
@@ -1962,16 +1957,6 @@
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 2
-      },
-      {
-        "codigo": "analisar-determinacao-urgentes",
-        "tarefa": "Analisar determinação - Urgentes",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 2
         },
         "total": 2
       },
@@ -2098,16 +2083,6 @@
       {
         "codigo": "analisar-resposta-do-expediente-peticoes-nao-lidas-peticoes-nao-lidas",
         "tarefa": "Analisar resposta do expediente; Petições não lidas; Petições não lidas",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "lancar-movimento",
-        "tarefa": "Lançar movimento",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -5259,6 +5234,50 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-determinacao-urgentes": [
+      {
+        "processo": "0601152-41.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação - Urgentes",
+        "autuacao": "10/09/2026",
+        "desde": "23/09/2026",
+        "dias_tramitando": 13,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601753-47.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação - Urgentes",
+        "autuacao": "18/09/2026",
+        "desde": "21/09/2026",
+        "dias_tramitando": 5,
+        "julgado": true,
+        "data_julgamento": "19/09/2026",
+        "teor": "Extinto o processo por desistência em 19/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601759-54.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação - Urgentes",
+        "autuacao": "19/09/2026",
+        "desde": "23/09/2026",
+        "dias_tramitando": 4,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "analisar-resposta-do-expediente": [
       {
         "processo": "0600067-73.2026.6.10.0047",
@@ -5419,36 +5438,6 @@
         "julgado": true,
         "data_julgamento": "06/09/2026",
         "teor": "Julgado procedente em parte do pedido em 06/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "analisar-determinacao-urgentes": [
-      {
-        "processo": "0601152-41.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação - Urgentes",
-        "autuacao": "10/09/2026",
-        "desde": "23/09/2026",
-        "dias_tramitando": 13,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601753-47.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação - Urgentes",
-        "autuacao": "18/09/2026",
-        "desde": "21/09/2026",
-        "dias_tramitando": 5,
-        "julgado": true,
-        "data_julgamento": "19/09/2026",
-        "teor": "Extinto o processo por desistência em 19/09/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -5709,22 +5698,6 @@
         "tarefa_atual": "Analisar resposta do expediente; Petições não lidas; Petições não lidas",
         "autuacao": "18/09/2026",
         "desde": "18/09/2026",
-        "dias_tramitando": 4,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "lancar-movimento": [
-      {
-        "processo": "0601759-54.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "19/09/2026",
-        "desde": "23/09/2026",
         "dias_tramitando": 4,
         "julgado": false,
         "data_julgamento": "",
@@ -8062,7 +8035,7 @@
         "processo": "0601759-54.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Lançar movimento",
+        "tarefa_atual": "Analisar determinação - Urgentes",
         "autuacao": "19/09/2026",
         "desde": "23/09/2026",
         "dias_tramitando": 4,
@@ -12079,7 +12052,7 @@
       "processo": "0601759-54.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Lançar movimento",
+      "tarefa_atual": "Analisar determinação - Urgentes",
       "autuacao": "19/09/2026",
       "desde": "23/09/2026",
       "dias_tramitando": 4,
@@ -18191,7 +18164,7 @@
       "processo": "0601759-54.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Lançar movimento",
+      "tarefa_atual": "Analisar determinação - Urgentes",
       "autuacao": "19/09/2026",
       "desde": "23/09/2026",
       "dias_tramitando": 4,
@@ -22710,8 +22683,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "23/09/2026 18:17",
+  "publicado_em": "23/09/2026 18:20",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "64531853e2cce8cc99fcd2e655a0519b3429b38e42ce66a63238c715cab5ae71"
+  "hash_publicacao": "e04b9e76cf85aa24db48b67f6a3711fe9e9ddd50e53851bf569d282113e46152"
 }
