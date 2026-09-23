@@ -46,7 +46,7 @@
       "quantidade": 66,
       "media_dias": 19.3,
       "maior_tempo": 106,
-      "urgentes": 2,
+      "urgentes": 3,
       "minutar": 3,
       "julgados": 30,
       "percentual_julgados": 38.0,
@@ -289,22 +289,22 @@
     },
     {
       "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Analisar determinação - Urgentes",
+      "quantidade": 3
+    },
+    {
+      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Minutar ato",
       "quantidade": 3
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Visualizar expediente DJE",
-      "quantidade": 3
-    },
-    {
-      "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Analisar determinação - Urgentes",
+      "tarefa_atual": "Analisar resposta do expediente",
       "quantidade": 2
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Analisar resposta do expediente",
+      "tarefa_atual": "Visualizar expediente DJE",
       "quantidade": 2
     },
     {
@@ -1819,22 +1819,22 @@
         "total": 3
       },
       {
+        "codigo": "analisar-determinacao-urgentes",
+        "tarefa": "Analisar determinação - Urgentes",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 3
+        },
+        "total": 3
+      },
+      {
         "codigo": "analisar-resposta-do-expediente",
         "tarefa": "Analisar resposta do expediente",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 2
-        },
-        "total": 3
-      },
-      {
-        "codigo": "visualizar-expediente-dje",
-        "tarefa": "Visualizar expediente DJE",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 3
         },
         "total": 3
       },
@@ -1865,16 +1865,6 @@
           "Gabinete Juiz Auxiliar 1": 2,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 2
-      },
-      {
-        "codigo": "analisar-determinacao-urgentes",
-        "tarefa": "Analisar determinação - Urgentes",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 2
         },
         "total": 2
       },
@@ -1915,6 +1905,16 @@
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 2
+      },
+      {
+        "codigo": "visualizar-expediente-dje",
+        "tarefa": "Visualizar expediente DJE",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 2
         },
         "total": 2
       },
@@ -5096,6 +5096,50 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-determinacao-urgentes": [
+      {
+        "processo": "0601077-02.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "RepEsp",
+        "tarefa_atual": "Analisar determinação - Urgentes",
+        "autuacao": "02/09/2026",
+        "desde": "23/09/2026",
+        "dias_tramitando": 20,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601152-41.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação - Urgentes",
+        "autuacao": "10/09/2026",
+        "desde": "23/09/2026",
+        "dias_tramitando": 13,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601753-47.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação - Urgentes",
+        "autuacao": "18/09/2026",
+        "desde": "21/09/2026",
+        "dias_tramitando": 5,
+        "julgado": true,
+        "data_julgamento": "19/09/2026",
+        "teor": "Extinto o processo por desistência em 19/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "analisar-resposta-do-expediente": [
       {
         "processo": "0601099-60.2026.6.10.0000",
@@ -5136,50 +5180,6 @@
         "julgado": true,
         "data_julgamento": "22/09/2026",
         "teor": "Julgado procedente em parte do pedido em 22/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "visualizar-expediente-dje": [
-      {
-        "processo": "0601027-73.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "RepEsp",
-        "tarefa_atual": "Visualizar expediente DJE",
-        "autuacao": "28/08/2026",
-        "desde": "18/09/2026",
-        "dias_tramitando": 25,
-        "julgado": true,
-        "data_julgamento": "18/09/2026",
-        "teor": "Julgado procedente em parte do pedido em 18/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601077-02.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "RepEsp",
-        "tarefa_atual": "Visualizar expediente DJE",
-        "autuacao": "02/09/2026",
-        "desde": "11/09/2026",
-        "dias_tramitando": 20,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600982-69.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "REC no(a) RepEsp",
-        "tarefa_atual": "Visualizar expediente DJE",
-        "autuacao": "11/09/2026",
-        "desde": "19/09/2026",
-        "dias_tramitando": 12,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -5270,36 +5270,6 @@
         "julgado": true,
         "data_julgamento": "31/08/2026",
         "teor": "Julgado procedente o pedido em 31/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "analisar-determinacao-urgentes": [
-      {
-        "processo": "0601152-41.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação - Urgentes",
-        "autuacao": "10/09/2026",
-        "desde": "23/09/2026",
-        "dias_tramitando": 13,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601753-47.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação - Urgentes",
-        "autuacao": "18/09/2026",
-        "desde": "21/09/2026",
-        "dias_tramitando": 5,
-        "julgado": true,
-        "data_julgamento": "19/09/2026",
-        "teor": "Extinto o processo por desistência em 19/09/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -5417,6 +5387,36 @@
         "autuacao": "23/09/2026",
         "desde": "23/09/2026",
         "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "visualizar-expediente-dje": [
+      {
+        "processo": "0601027-73.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "RepEsp",
+        "tarefa_atual": "Visualizar expediente DJE",
+        "autuacao": "28/08/2026",
+        "desde": "18/09/2026",
+        "dias_tramitando": 25,
+        "julgado": true,
+        "data_julgamento": "18/09/2026",
+        "teor": "Julgado procedente em parte do pedido em 18/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600982-69.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "REC no(a) RepEsp",
+        "tarefa_atual": "Visualizar expediente DJE",
+        "autuacao": "11/09/2026",
+        "desde": "19/09/2026",
+        "dias_tramitando": 12,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -8439,9 +8439,9 @@
         "processo": "0601077-02.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "RepEsp",
-        "tarefa_atual": "Visualizar expediente DJE",
+        "tarefa_atual": "Analisar determinação - Urgentes",
         "autuacao": "02/09/2026",
-        "desde": "11/09/2026",
+        "desde": "23/09/2026",
         "dias_tramitando": 20,
         "julgado": false,
         "data_julgamento": "",
@@ -10928,9 +10928,9 @@
       "processo": "0601077-02.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "RepEsp",
-      "tarefa_atual": "Visualizar expediente DJE",
+      "tarefa_atual": "Analisar determinação - Urgentes",
       "autuacao": "02/09/2026",
-      "desde": "11/09/2026",
+      "desde": "23/09/2026",
       "dias_tramitando": 20,
       "julgado": false,
       "data_julgamento": "",
@@ -16970,9 +16970,9 @@
       "processo": "0601077-02.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "RepEsp",
-      "tarefa_atual": "Visualizar expediente DJE",
+      "tarefa_atual": "Analisar determinação - Urgentes",
       "autuacao": "02/09/2026",
-      "desde": "11/09/2026",
+      "desde": "23/09/2026",
       "dias_tramitando": 20,
       "julgado": false,
       "data_julgamento": "",
@@ -22287,8 +22287,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "23/09/2026 15:51",
+  "publicado_em": "23/09/2026 16:05",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "568f1b101fd9ec2b81ee3f38e5488df7b7ff83c0f160c2463eebe40eacd54e1e"
+  "hash_publicacao": "1543b42229ed2feb3758b9bf8604c0eee9c30f9fa1c12c47b20846d0d7828c89"
 }
