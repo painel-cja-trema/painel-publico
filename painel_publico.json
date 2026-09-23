@@ -119,7 +119,7 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Petições não lidas; Petições não lidas; Processo com prazo em curso",
+      "tarefa_atual": "Petições não lidas; Petições não lidas; Preparar comunicação",
       "quantidade": 1
     },
     {
@@ -254,6 +254,11 @@
     },
     {
       "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Elaborar Documentos",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Petições não lidas; Petições não lidas; Realizar triagem ordinários",
       "quantidade": 1
     },
@@ -265,11 +270,6 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Redistribuir processo",
       "quantidade": 1
     },
     {
@@ -2102,8 +2102,18 @@
         "total": 1
       },
       {
-        "codigo": "peticoes-nao-lidas-peticoes-nao-lidas-processo-com-prazo-em-curso",
-        "tarefa": "Petições não lidas; Petições não lidas; Processo com prazo em curso",
+        "codigo": "elaborar-documentos",
+        "tarefa": "Elaborar Documentos",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "peticoes-nao-lidas-peticoes-nao-lidas-preparar-comunicacao",
+        "tarefa": "Petições não lidas; Petições não lidas; Preparar comunicação",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -2124,16 +2134,6 @@
       {
         "codigo": "peticoes-nao-lidas-realizar-triagem-ordinarios",
         "tarefa": "Petições não lidas; Realizar triagem ordinários",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "redistribuir-processo",
-        "tarefa": "Redistribuir processo",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -3051,7 +3051,7 @@
         "tarefa_atual": "Processo com prazo em curso",
         "autuacao": "22/09/2026",
         "desde": "23/09/2026",
-        "dias_tramitando": 0,
+        "dias_tramitando": 1,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -5721,12 +5721,28 @@
         "responsavel_processo": ""
       }
     ],
-    "peticoes-nao-lidas-peticoes-nao-lidas-processo-com-prazo-em-curso": [
+    "elaborar-documentos": [
+      {
+        "processo": "0601794-14.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Elaborar Documentos",
+        "autuacao": "23/09/2026",
+        "desde": "23/09/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "peticoes-nao-lidas-peticoes-nao-lidas-preparar-comunicacao": [
       {
         "processo": "0600963-63.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Petições não lidas; Petições não lidas; Processo com prazo em curso",
+        "tarefa_atual": "Petições não lidas; Petições não lidas; Preparar comunicação",
         "autuacao": "21/08/2026",
         "desde": "21/08/2026",
         "dias_tramitando": 33,
@@ -5762,22 +5778,6 @@
         "autuacao": "14/09/2026",
         "desde": "14/09/2026",
         "dias_tramitando": 9,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "redistribuir-processo": [
-      {
-        "processo": "0601794-14.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Redistribuir processo",
-        "autuacao": "23/09/2026",
-        "desde": "23/09/2026",
-        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -6036,7 +6036,7 @@
         "processo": "0600963-63.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+        "tarefa_atual": "Petições não lidas; Preparar comunicação",
         "autuacao": "21/08/2026",
         "desde": "21/08/2026",
         "dias_tramitando": 33,
@@ -6739,7 +6739,7 @@
         "tarefa_atual": "Processo com prazo em curso",
         "autuacao": "22/09/2026",
         "desde": "23/09/2026",
-        "dias_tramitando": 0,
+        "dias_tramitando": 1,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -8236,7 +8236,7 @@
         "processo": "0601794-14.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Redistribuir processo",
+        "tarefa_atual": "Elaborar Documentos",
         "autuacao": "23/09/2026",
         "desde": "23/09/2026",
         "dias_tramitando": 0,
@@ -10433,7 +10433,7 @@
       "processo": "0600963-63.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+      "tarefa_atual": "Petições não lidas; Preparar comunicação",
       "autuacao": "21/08/2026",
       "desde": "21/08/2026",
       "dias_tramitando": 33,
@@ -12502,6 +12502,20 @@
       "responsavel_processo": ""
     },
     {
+      "processo": "0601791-59.2026.6.10.0000",
+      "gabinete": "Gab. JA 1",
+      "classe": "Rp",
+      "tarefa_atual": "Processo com prazo em curso",
+      "autuacao": "22/09/2026",
+      "desde": "23/09/2026",
+      "dias_tramitando": 1,
+      "julgado": false,
+      "data_julgamento": "",
+      "teor": "",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
+    },
+    {
       "processo": "0600073-24.2026.6.10.0001",
       "gabinete": "Gab. JA 2",
       "classe": "NIP",
@@ -12516,24 +12530,10 @@
       "responsavel_processo": ""
     },
     {
-      "processo": "0601791-59.2026.6.10.0000",
-      "gabinete": "Gab. JA 1",
-      "classe": "Rp",
-      "tarefa_atual": "Processo com prazo em curso",
-      "autuacao": "22/09/2026",
-      "desde": "23/09/2026",
-      "dias_tramitando": 0,
-      "julgado": false,
-      "data_julgamento": "",
-      "teor": "",
-      "segredo_justica": "NÃO",
-      "responsavel_processo": ""
-    },
-    {
       "processo": "0601794-14.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Redistribuir processo",
+      "tarefa_atual": "Elaborar Documentos",
       "autuacao": "23/09/2026",
       "desde": "23/09/2026",
       "dias_tramitando": 0,
@@ -16559,7 +16559,7 @@
       "processo": "0600963-63.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+      "tarefa_atual": "Petições não lidas; Preparar comunicação",
       "autuacao": "21/08/2026",
       "desde": "21/08/2026",
       "dias_tramitando": 33,
@@ -18628,6 +18628,20 @@
       "responsavel_processo": ""
     },
     {
+      "processo": "0601791-59.2026.6.10.0000",
+      "gabinete": "Gab. JA 1",
+      "classe": "Rp",
+      "tarefa_atual": "Processo com prazo em curso",
+      "autuacao": "22/09/2026",
+      "desde": "23/09/2026",
+      "dias_tramitando": 1,
+      "julgado": false,
+      "data_julgamento": "",
+      "teor": "",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
+    },
+    {
       "processo": "0600073-24.2026.6.10.0001",
       "gabinete": "Gab. JA 2",
       "classe": "NIP",
@@ -18642,24 +18656,10 @@
       "responsavel_processo": ""
     },
     {
-      "processo": "0601791-59.2026.6.10.0000",
-      "gabinete": "Gab. JA 1",
-      "classe": "Rp",
-      "tarefa_atual": "Processo com prazo em curso",
-      "autuacao": "22/09/2026",
-      "desde": "23/09/2026",
-      "dias_tramitando": 0,
-      "julgado": false,
-      "data_julgamento": "",
-      "teor": "",
-      "segredo_justica": "NÃO",
-      "responsavel_processo": ""
-    },
-    {
       "processo": "0601794-14.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Redistribuir processo",
+      "tarefa_atual": "Elaborar Documentos",
       "autuacao": "23/09/2026",
       "desde": "23/09/2026",
       "dias_tramitando": 0,
@@ -22772,8 +22772,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "23/09/2026 18:50",
+  "publicado_em": "23/09/2026 18:51",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "724f303ce5f29f9515ddff695a97a0af2cb70032ef12c0d1e5f0bde9f85bcf0d"
+  "hash_publicacao": "faa78381c53e4dc3bc87f7edea21f3c264b1bfbd46b1a39c5ba25a417a158e14"
 }
