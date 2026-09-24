@@ -234,6 +234,11 @@
     },
     {
       "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Analisar Petição Avulsa; Fechar expediente manualmente; Registrar recurso",
       "quantidade": 1
     },
@@ -255,11 +260,6 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Analisar Processos; Processo com pedido de vista; Revisar acórdão ou resolução - Gabinete",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Analisar resposta do expediente",
       "quantidade": 1
     },
     {
@@ -329,7 +329,7 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Aguardando julgamento do recurso interno; Analisar Petição Avulsa; Analisar Petição Avulsa; Petições não lidas; Petições não lidas",
+      "tarefa_atual": "Aguardando julgamento do recurso interno; Analisar Petição Avulsa; Analisar Petição Avulsa; Analisar Petição Avulsa; Petições não lidas; Petições não lidas; Petições não lidas",
       "quantidade": 1
     },
     {
@@ -2020,22 +2020,22 @@
         "total": 2
       },
       {
+        "codigo": "analisar-peticao-avulsa-analisar-resposta-do-expediente-peticoes-nao-lidas",
+        "tarefa": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 2
+      },
+      {
         "codigo": "analisar-determinacao-urgentes",
         "tarefa": "Analisar determinação - Urgentes",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 2
-        },
-        "total": 2
-      },
-      {
-        "codigo": "analisar-resposta-do-expediente",
-        "tarefa": "Analisar resposta do expediente",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 2
       },
@@ -2070,8 +2070,8 @@
         "total": 2
       },
       {
-        "codigo": "aguardando-julgamento-do-recurso-interno-analisar-peticao-avulsa-analisar-peticao-avulsa-peticoes-nao-lidas-peticoes-nao-lidas",
-        "tarefa": "Aguardando julgamento do recurso interno; Analisar Petição Avulsa; Analisar Petição Avulsa; Petições não lidas; Petições não lidas",
+        "codigo": "aguardando-julgamento-do-recurso-interno-analisar-peticao-avulsa-analisar-peticao-avulsa-analisar-peticao-avulsa-peticoes-nao-lidas-peticoes-nao-lidas-peticoes-nao-lidas",
+        "tarefa": "Aguardando julgamento do recurso interno; Analisar Petição Avulsa; Analisar Petição Avulsa; Analisar Petição Avulsa; Petições não lidas; Petições não lidas; Petições não lidas",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -2105,16 +2105,6 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "analisar-peticao-avulsa-analisar-resposta-do-expediente-peticoes-nao-lidas",
-        "tarefa": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -2156,6 +2146,16 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "analisar-resposta-do-expediente",
+        "tarefa": "Analisar resposta do expediente",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 1
       },
@@ -4115,6 +4115,20 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0601731-86.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação",
+        "autuacao": "15/09/2026",
+        "desde": "23/09/2026",
+        "dias_tramitando": 8,
+        "julgado": true,
+        "data_julgamento": "21/09/2026",
+        "teor": "Julgado procedente em parte do pedido em 21/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0600052-75.2026.6.10.0089",
         "gabinete": "Gab. JA 3",
         "classe": "NIP",
@@ -4125,20 +4139,6 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601731-86.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "15/09/2026",
-        "desde": "23/09/2026",
-        "dias_tramitando": 7,
-        "julgado": true,
-        "data_julgamento": "21/09/2026",
-        "teor": "Julgado procedente em parte do pedido em 21/09/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -5499,6 +5499,36 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-peticao-avulsa-analisar-resposta-do-expediente-peticoes-nao-lidas": [
+      {
+        "processo": "0601757-84.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas",
+        "autuacao": "18/09/2026",
+        "desde": "18/09/2026",
+        "dias_tramitando": 4,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601773-38.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas",
+        "autuacao": "21/09/2026",
+        "desde": "21/09/2026",
+        "dias_tramitando": 2,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "analisar-determinacao-urgentes": [
       {
         "processo": "0601152-41.2026.6.10.0000",
@@ -5525,36 +5555,6 @@
         "julgado": true,
         "data_julgamento": "19/09/2026",
         "teor": "Extinto o processo por desistência em 19/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "analisar-resposta-do-expediente": [
-      {
-        "processo": "0600067-73.2026.6.10.0047",
-        "gabinete": "Gab. JA 3",
-        "classe": "NIP",
-        "tarefa_atual": "Analisar resposta do expediente",
-        "autuacao": "13/09/2026",
-        "desde": "22/09/2026",
-        "dias_tramitando": 10,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601757-84.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar resposta do expediente",
-        "autuacao": "18/09/2026",
-        "desde": "22/09/2026",
-        "dias_tramitando": 4,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -5649,12 +5649,12 @@
         "responsavel_processo": ""
       }
     ],
-    "aguardando-julgamento-do-recurso-interno-analisar-peticao-avulsa-analisar-peticao-avulsa-peticoes-nao-lidas-peticoes-nao-lidas": [
+    "aguardando-julgamento-do-recurso-interno-analisar-peticao-avulsa-analisar-peticao-avulsa-analisar-peticao-avulsa-peticoes-nao-lidas-peticoes-nao-lidas-peticoes-nao-lidas": [
       {
         "processo": "0600986-09.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno; Analisar Petição Avulsa; Analisar Petição Avulsa; Petições não lidas; Petições não lidas",
+        "tarefa_atual": "Aguardando julgamento do recurso interno; Analisar Petição Avulsa; Analisar Petição Avulsa; Analisar Petição Avulsa; Petições não lidas; Petições não lidas; Petições não lidas",
         "autuacao": "24/08/2026",
         "desde": "24/08/2026",
         "dias_tramitando": 30,
@@ -5706,22 +5706,6 @@
         "autuacao": "19/09/2026",
         "desde": "19/09/2026",
         "dias_tramitando": 4,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "analisar-peticao-avulsa-analisar-resposta-do-expediente-peticoes-nao-lidas": [
-      {
-        "processo": "0601773-38.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas",
-        "autuacao": "21/09/2026",
-        "desde": "21/09/2026",
-        "dias_tramitando": 2,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -5786,6 +5770,22 @@
         "autuacao": "18/08/2026",
         "desde": "18/08/2026",
         "dias_tramitando": 36,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-resposta-do-expediente": [
+      {
+        "processo": "0600067-73.2026.6.10.0047",
+        "gabinete": "Gab. JA 3",
+        "classe": "NIP",
+        "tarefa_atual": "Analisar resposta do expediente",
+        "autuacao": "13/09/2026",
+        "desde": "22/09/2026",
+        "dias_tramitando": 10,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -8168,9 +8168,9 @@
         "processo": "0601757-84.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Analisar resposta do expediente",
+        "tarefa_atual": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas",
         "autuacao": "18/09/2026",
-        "desde": "22/09/2026",
+        "desde": "18/09/2026",
         "dias_tramitando": 4,
         "julgado": false,
         "data_julgamento": "",
@@ -9147,6 +9147,20 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0601731-86.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação",
+        "autuacao": "15/09/2026",
+        "desde": "23/09/2026",
+        "dias_tramitando": 8,
+        "julgado": true,
+        "data_julgamento": "21/09/2026",
+        "teor": "Julgado procedente em parte do pedido em 21/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0600052-75.2026.6.10.0089",
         "gabinete": "Gab. JA 3",
         "classe": "NIP",
@@ -9157,20 +9171,6 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601731-86.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "15/09/2026",
-        "desde": "23/09/2026",
-        "dias_tramitando": 7,
-        "julgado": true,
-        "data_julgamento": "21/09/2026",
-        "teor": "Julgado procedente em parte do pedido em 21/09/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -9583,7 +9583,7 @@
       "classe": "Rp",
       "teor": "Julgado procedente em parte do pedido em 21/09/2026",
       "data_julgamento": "21/09/2026",
-      "dias_tramitando": 7
+      "dias_tramitando": 8
     },
     {
       "processo": "0601289-23.2026.6.10.0000",
@@ -11944,6 +11944,20 @@
       "responsavel_processo": ""
     },
     {
+      "processo": "0601731-86.2026.6.10.0000",
+      "gabinete": "Gab. JA 3",
+      "classe": "Rp",
+      "tarefa_atual": "Analisar determinação",
+      "autuacao": "15/09/2026",
+      "desde": "23/09/2026",
+      "dias_tramitando": 8,
+      "julgado": true,
+      "data_julgamento": "21/09/2026",
+      "teor": "Julgado procedente em parte do pedido em 21/09/2026",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
+    },
+    {
       "processo": "0600052-75.2026.6.10.0089",
       "gabinete": "Gab. JA 3",
       "classe": "NIP",
@@ -11968,20 +11982,6 @@
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
-      "segredo_justica": "NÃO",
-      "responsavel_processo": ""
-    },
-    {
-      "processo": "0601731-86.2026.6.10.0000",
-      "gabinete": "Gab. JA 3",
-      "classe": "Rp",
-      "tarefa_atual": "Analisar determinação",
-      "autuacao": "15/09/2026",
-      "desde": "23/09/2026",
-      "dias_tramitando": 7,
-      "julgado": true,
-      "data_julgamento": "21/09/2026",
-      "teor": "Julgado procedente em parte do pedido em 21/09/2026",
       "segredo_justica": "NÃO",
       "responsavel_processo": ""
     },
@@ -12171,9 +12171,9 @@
       "processo": "0601757-84.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar resposta do expediente",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas",
       "autuacao": "18/09/2026",
-      "desde": "22/09/2026",
+      "desde": "18/09/2026",
       "dias_tramitando": 4,
       "julgado": false,
       "data_julgamento": "",
@@ -18084,6 +18084,20 @@
       "responsavel_processo": ""
     },
     {
+      "processo": "0601731-86.2026.6.10.0000",
+      "gabinete": "Gab. JA 3",
+      "classe": "Rp",
+      "tarefa_atual": "Analisar determinação",
+      "autuacao": "15/09/2026",
+      "desde": "23/09/2026",
+      "dias_tramitando": 8,
+      "julgado": true,
+      "data_julgamento": "21/09/2026",
+      "teor": "Julgado procedente em parte do pedido em 21/09/2026",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
+    },
+    {
       "processo": "0600052-75.2026.6.10.0089",
       "gabinete": "Gab. JA 3",
       "classe": "NIP",
@@ -18108,20 +18122,6 @@
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
-      "segredo_justica": "NÃO",
-      "responsavel_processo": ""
-    },
-    {
-      "processo": "0601731-86.2026.6.10.0000",
-      "gabinete": "Gab. JA 3",
-      "classe": "Rp",
-      "tarefa_atual": "Analisar determinação",
-      "autuacao": "15/09/2026",
-      "desde": "23/09/2026",
-      "dias_tramitando": 7,
-      "julgado": true,
-      "data_julgamento": "21/09/2026",
-      "teor": "Julgado procedente em parte do pedido em 21/09/2026",
       "segredo_justica": "NÃO",
       "responsavel_processo": ""
     },
@@ -18311,9 +18311,9 @@
       "processo": "0601757-84.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar resposta do expediente",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas",
       "autuacao": "18/09/2026",
-      "desde": "22/09/2026",
+      "desde": "18/09/2026",
       "dias_tramitando": 4,
       "julgado": false,
       "data_julgamento": "",
@@ -22202,7 +22202,7 @@
       "processo": "0600986-09.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Aguardando julgamento do recurso interno; Analisar Petição Avulsa; Analisar Petição Avulsa; Petições não lidas; Petições não lidas",
+      "tarefa_atual": "Aguardando julgamento do recurso interno; Analisar Petição Avulsa; Analisar Petição Avulsa; Analisar Petição Avulsa; Petições não lidas; Petições não lidas; Petições não lidas",
       "autuacao": "24/08/2026",
       "desde": "24/08/2026",
       "dias_tramitando": 30,
@@ -22835,7 +22835,7 @@
       "tarefa_atual": "Analisar determinação",
       "autuacao": "15/09/2026",
       "desde": "23/09/2026",
-      "dias_tramitando": 7,
+      "dias_tramitando": 8,
       "julgado": true,
       "data_julgamento": "21/09/2026",
       "teor": "Julgado procedente em parte do pedido em 21/09/2026",
@@ -22886,8 +22886,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "23/09/2026 21:13",
+  "publicado_em": "23/09/2026 21:14",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "f0b6a691befe9a8c1e03ab6ee65245f877ba6f99206c230620ca668bbd3a2859"
+  "hash_publicacao": "8fc350659438d677375929afb0418c2f44b4d091790b13849dc229aae84775a2"
 }
