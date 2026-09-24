@@ -124,7 +124,7 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar petição avulsa de autuação; Analisar resposta do expediente; Petições não lidas",
       "quantidade": 1
     },
     {
@@ -2149,16 +2149,6 @@
         "total": 2
       },
       {
-        "codigo": "analisar-peticao-avulsa-analisar-resposta-do-expediente-peticoes-nao-lidas",
-        "tarefa": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 2
-      },
-      {
         "codigo": "analisar-peticao-avulsa-peticoes-nao-lidas-processo-com-prazo-em-curso",
         "tarefa": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
         "contagens": {
@@ -2241,6 +2231,26 @@
       {
         "codigo": "analisar-peticao-avulsa-analisar-peticao-avulsa-analisar-peticao-avulsa-de-autuacao-peticoes-nao-lidas-processo-com-prazo-em-curso",
         "tarefa": "Analisar Petição Avulsa; Analisar Petição Avulsa; Analisar petição avulsa de autuação; Petições não lidas; Processo com prazo em curso",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "analisar-peticao-avulsa-analisar-peticao-avulsa-de-autuacao-analisar-resposta-do-expediente-peticoes-nao-lidas",
+        "tarefa": "Analisar Petição Avulsa; Analisar petição avulsa de autuação; Analisar resposta do expediente; Petições não lidas",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "analisar-peticao-avulsa-analisar-resposta-do-expediente-peticoes-nao-lidas",
+        "tarefa": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -5660,36 +5670,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-peticao-avulsa-analisar-resposta-do-expediente-peticoes-nao-lidas": [
-      {
-        "processo": "0601757-84.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas",
-        "autuacao": "18/09/2026",
-        "desde": "18/09/2026",
-        "dias_tramitando": 5,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601773-38.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas",
-        "autuacao": "21/09/2026",
-        "desde": "21/09/2026",
-        "dias_tramitando": 2,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "analisar-peticao-avulsa-peticoes-nao-lidas-processo-com-prazo-em-curso": [
       {
         "processo": "0601737-93.2026.6.10.0000",
@@ -5897,6 +5877,38 @@
         "autuacao": "19/09/2026",
         "desde": "19/09/2026",
         "dias_tramitando": 4,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-peticao-avulsa-analisar-peticao-avulsa-de-autuacao-analisar-resposta-do-expediente-peticoes-nao-lidas": [
+      {
+        "processo": "0601773-38.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar Petição Avulsa; Analisar petição avulsa de autuação; Analisar resposta do expediente; Petições não lidas",
+        "autuacao": "21/09/2026",
+        "desde": "21/09/2026",
+        "dias_tramitando": 2,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-peticao-avulsa-analisar-resposta-do-expediente-peticoes-nao-lidas": [
+      {
+        "processo": "0601757-84.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas",
+        "autuacao": "18/09/2026",
+        "desde": "18/09/2026",
+        "dias_tramitando": 5,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -6913,7 +6925,7 @@
         "processo": "0601773-38.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas",
+        "tarefa_atual": "Analisar Petição Avulsa; Analisar petição avulsa de autuação; Analisar resposta do expediente; Petições não lidas",
         "autuacao": "21/09/2026",
         "desde": "21/09/2026",
         "dias_tramitando": 2,
@@ -12584,7 +12596,7 @@
       "processo": "0601773-38.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar petição avulsa de autuação; Analisar resposta do expediente; Petições não lidas",
       "autuacao": "21/09/2026",
       "desde": "21/09/2026",
       "dias_tramitando": 2,
@@ -18766,7 +18778,7 @@
       "processo": "0601773-38.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar petição avulsa de autuação; Analisar resposta do expediente; Petições não lidas",
       "autuacao": "21/09/2026",
       "desde": "21/09/2026",
       "dias_tramitando": 2,
@@ -23187,8 +23199,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "23/09/2026 22:37",
+  "publicado_em": "23/09/2026 22:45",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "65b24ad382507ca2f198ffdc08ad526ef7240a30ab5de8d7a88f45c96cbba3f3"
+  "hash_publicacao": "703198272a13183eb9fa52f0d2fb4f3b69e0fff8eb09e6914afcce65e067f394"
 }
