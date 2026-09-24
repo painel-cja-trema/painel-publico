@@ -264,12 +264,12 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Analisar Petição Avulsa; Petições descartadas; Registrar ciência por telefone ou pessoalmente",
+      "tarefa_atual": "Analisar Petição Avulsa; Realizar triagem urgentes",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Analisar Petição Avulsa; Realizar triagem urgentes",
+      "tarefa_atual": "Analisar Petição Avulsa; Registrar ciência por telefone ou pessoalmente",
       "quantidade": 1
     },
     {
@@ -284,12 +284,12 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Definir procedimento",
+      "tarefa_atual": "Analisar determinação; Petições não lidas",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+      "tarefa_atual": "Definir procedimento",
       "quantidade": 1
     },
     {
@@ -2160,6 +2160,16 @@
         "total": 2
       },
       {
+        "codigo": "analisar-determinacao-peticoes-nao-lidas",
+        "tarefa": "Analisar determinação; Petições não lidas",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 2
+      },
+      {
         "codigo": "analisar-resposta-do-expediente",
         "tarefa": "Analisar resposta do expediente",
         "contagens": {
@@ -2270,16 +2280,6 @@
         "total": 1
       },
       {
-        "codigo": "analisar-peticao-avulsa-peticoes-descartadas-registrar-ciencia-por-telefone-ou-pessoalmente",
-        "tarefa": "Analisar Petição Avulsa; Petições descartadas; Registrar ciência por telefone ou pessoalmente",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
         "codigo": "analisar-peticao-avulsa-peticoes-nao-lidas-processo-com-prazo-em-curso",
         "tarefa": "Analisar Petição Avulsa; Petições não lidas; Processo com prazo em curso",
         "contagens": {
@@ -2300,8 +2300,8 @@
         "total": 1
       },
       {
-        "codigo": "analisar-processos-processo-com-pedido-de-vista-revisar-acordao-ou-resolucao-gabinete",
-        "tarefa": "Analisar Processos; Processo com pedido de vista; Revisar acórdão ou resolução - Gabinete",
+        "codigo": "analisar-peticao-avulsa-registrar-ciencia-por-telefone-ou-pessoalmente",
+        "tarefa": "Analisar Petição Avulsa; Registrar ciência por telefone ou pessoalmente",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -2310,11 +2310,11 @@
         "total": 1
       },
       {
-        "codigo": "analisar-determinacao-peticoes-nao-lidas",
-        "tarefa": "Analisar determinação; Petições não lidas",
+        "codigo": "analisar-processos-processo-com-pedido-de-vista-revisar-acordao-ou-resolucao-gabinete",
+        "tarefa": "Analisar Processos; Processo com pedido de vista; Revisar acórdão ou resolução - Gabinete",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -2342,16 +2342,6 @@
       {
         "codigo": "definir-procedimento",
         "tarefa": "Definir procedimento",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "peticoes-nao-lidas-processo-com-prazo-em-curso",
-        "tarefa": "Petições não lidas; Processo com prazo em curso",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -5689,6 +5679,36 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-determinacao-peticoes-nao-lidas": [
+      {
+        "processo": "0601100-45.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação; Petições não lidas",
+        "autuacao": "05/09/2026",
+        "desde": "05/09/2026",
+        "dias_tramitando": 18,
+        "julgado": true,
+        "data_julgamento": "22/09/2026",
+        "teor": "Julgado improcedente o pedido em 22/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601743-03.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação; Petições não lidas",
+        "autuacao": "17/09/2026",
+        "desde": "17/09/2026",
+        "dias_tramitando": 6,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "analisar-resposta-do-expediente": [
       {
         "processo": "0600175-49.2026.6.10.0000",
@@ -5935,22 +5955,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-peticao-avulsa-peticoes-descartadas-registrar-ciencia-por-telefone-ou-pessoalmente": [
-      {
-        "processo": "0601765-61.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Petições descartadas; Registrar ciência por telefone ou pessoalmente",
-        "autuacao": "19/09/2026",
-        "desde": "19/09/2026",
-        "dias_tramitando": 4,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "analisar-peticao-avulsa-peticoes-nao-lidas-processo-com-prazo-em-curso": [
       {
         "processo": "0601790-74.2026.6.10.0000",
@@ -5983,6 +5987,22 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-peticao-avulsa-registrar-ciencia-por-telefone-ou-pessoalmente": [
+      {
+        "processo": "0601765-61.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar Petição Avulsa; Registrar ciência por telefone ou pessoalmente",
+        "autuacao": "19/09/2026",
+        "desde": "19/09/2026",
+        "dias_tramitando": 4,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "analisar-processos-processo-com-pedido-de-vista-revisar-acordao-ou-resolucao-gabinete": [
       {
         "processo": "0600147-81.2026.6.10.0000",
@@ -5995,22 +6015,6 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "analisar-determinacao-peticoes-nao-lidas": [
-      {
-        "processo": "0601100-45.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação; Petições não lidas",
-        "autuacao": "05/09/2026",
-        "desde": "05/09/2026",
-        "dias_tramitando": 18,
-        "julgado": true,
-        "data_julgamento": "22/09/2026",
-        "teor": "Julgado improcedente o pedido em 22/09/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -6056,22 +6060,6 @@
         "autuacao": "23/09/2026",
         "desde": "24/09/2026",
         "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "peticoes-nao-lidas-processo-com-prazo-em-curso": [
-      {
-        "processo": "0601743-03.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
-        "autuacao": "17/09/2026",
-        "desde": "17/09/2026",
-        "dias_tramitando": 6,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -8378,7 +8366,7 @@
         "processo": "0601743-03.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+        "tarefa_atual": "Analisar determinação; Petições não lidas",
         "autuacao": "17/09/2026",
         "desde": "17/09/2026",
         "dias_tramitando": 6,
@@ -8462,7 +8450,7 @@
         "processo": "0601765-61.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Petições descartadas; Registrar ciência por telefone ou pessoalmente",
+        "tarefa_atual": "Analisar Petição Avulsa; Registrar ciência por telefone ou pessoalmente",
         "autuacao": "19/09/2026",
         "desde": "19/09/2026",
         "dias_tramitando": 4,
@@ -12395,7 +12383,7 @@
       "processo": "0601743-03.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+      "tarefa_atual": "Analisar determinação; Petições não lidas",
       "autuacao": "17/09/2026",
       "desde": "17/09/2026",
       "dias_tramitando": 6,
@@ -12549,7 +12537,7 @@
       "processo": "0601765-61.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar Petição Avulsa; Petições descartadas; Registrar ciência por telefone ou pessoalmente",
+      "tarefa_atual": "Analisar Petição Avulsa; Registrar ciência por telefone ou pessoalmente",
       "autuacao": "19/09/2026",
       "desde": "19/09/2026",
       "dias_tramitando": 4,
@@ -18591,7 +18579,7 @@
       "processo": "0601743-03.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+      "tarefa_atual": "Analisar determinação; Petições não lidas",
       "autuacao": "17/09/2026",
       "desde": "17/09/2026",
       "dias_tramitando": 6,
@@ -18745,7 +18733,7 @@
       "processo": "0601765-61.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar Petição Avulsa; Petições descartadas; Registrar ciência por telefone ou pessoalmente",
+      "tarefa_atual": "Analisar Petição Avulsa; Registrar ciência por telefone ou pessoalmente",
       "autuacao": "19/09/2026",
       "desde": "19/09/2026",
       "dias_tramitando": 4,
@@ -23292,8 +23280,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "24/09/2026 08:58",
+  "publicado_em": "24/09/2026 09:06",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "36a983a07f14137e173b66652305f36ba3d3671bcc073fa06d899adbea95988d"
+  "hash_publicacao": "3157376a3628030277af1487375041b406c2a9262b1e9761489c0b2c5cb1184d"
 }
