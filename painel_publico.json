@@ -289,17 +289,17 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Definir procedimento",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Redistribuir de ofício",
       "quantidade": 1
     },
     {
@@ -2162,16 +2162,6 @@
         "total": 2
       },
       {
-        "codigo": "definir-procedimento",
-        "tarefa": "Definir procedimento",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 2
-      },
-      {
         "codigo": "registrar-ciencia-intimacao-pessoal",
         "tarefa": "Registrar ciência intimação pessoal",
         "contagens": {
@@ -2312,6 +2302,16 @@
         "total": 1
       },
       {
+        "codigo": "definir-procedimento",
+        "tarefa": "Definir procedimento",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
         "codigo": "peticoes-nao-lidas-realizar-triagem-ordinarios",
         "tarefa": "Petições não lidas; Realizar triagem ordinários",
         "contagens": {
@@ -2324,6 +2324,16 @@
       {
         "codigo": "processo-com-prazo-em-curso-registrar-recurso",
         "tarefa": "Processo com prazo em curso; Registrar recurso",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "redistribuir-de-oficio",
+        "tarefa": "Redistribuir de ofício",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -5741,36 +5751,6 @@
         "responsavel_processo": ""
       }
     ],
-    "definir-procedimento": [
-      {
-        "processo": "0601808-95.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "RepEsp",
-        "tarefa_atual": "Definir procedimento",
-        "autuacao": "23/09/2026",
-        "desde": "24/09/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601809-80.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Definir procedimento",
-        "autuacao": "23/09/2026",
-        "desde": "24/09/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "registrar-ciencia-intimacao-pessoal": [
       {
         "processo": "0601739-63.2026.6.10.0000",
@@ -6023,6 +6003,22 @@
         "responsavel_processo": ""
       }
     ],
+    "definir-procedimento": [
+      {
+        "processo": "0601808-95.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "RepEsp",
+        "tarefa_atual": "Definir procedimento",
+        "autuacao": "23/09/2026",
+        "desde": "24/09/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "peticoes-nao-lidas-realizar-triagem-ordinarios": [
       {
         "processo": "0601709-28.2026.6.10.0000",
@@ -6051,6 +6047,22 @@
         "julgado": true,
         "data_julgamento": "22/09/2026",
         "teor": "Julgado procedente em parte do pedido em 22/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "redistribuir-de-oficio": [
+      {
+        "processo": "0601809-80.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Redistribuir de ofício",
+        "autuacao": "23/09/2026",
+        "desde": "24/09/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -8632,7 +8644,7 @@
         "processo": "0601809-80.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Definir procedimento",
+        "tarefa_atual": "Redistribuir de ofício",
         "autuacao": "23/09/2026",
         "desde": "24/09/2026",
         "dias_tramitando": 0,
@@ -13041,7 +13053,7 @@
       "processo": "0601809-80.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Definir procedimento",
+      "tarefa_atual": "Redistribuir de ofício",
       "autuacao": "23/09/2026",
       "desde": "24/09/2026",
       "dias_tramitando": 0,
@@ -19237,7 +19249,7 @@
       "processo": "0601809-80.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Definir procedimento",
+      "tarefa_atual": "Redistribuir de ofício",
       "autuacao": "23/09/2026",
       "desde": "24/09/2026",
       "dias_tramitando": 0,
@@ -23252,8 +23264,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "24/09/2026 09:11",
+  "publicado_em": "24/09/2026 09:12",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "b3dd0db7b6b2f15c09a69efc35ff618354212a9b7d1cb9fb7015c1e2355a3a4c"
+  "hash_publicacao": "6a0faec8f72b69b73be8aee86d711d89ade0048500e67939abb2c876ac3c5f88"
 }
