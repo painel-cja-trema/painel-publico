@@ -29,7 +29,7 @@
       "quantidade": 90,
       "media_dias": 29.4,
       "maior_tempo": 169,
-      "urgentes": 0,
+      "urgentes": 1,
       "minutar": 18,
       "julgados": 41,
       "percentual_julgados": 36.0,
@@ -264,6 +264,11 @@
     },
     {
       "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Analisar determinação - Urgentes",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Analisar petição avulsa de autuação; Realizar triagem ordinários",
       "quantidade": 1
     },
@@ -275,11 +280,6 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Conferir Relatório, Voto e Ementa",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Lançar movimento",
       "quantidade": 1
     },
     {
@@ -1115,7 +1115,7 @@
           "TRIAGEM_ORDINARIA": 11,
           "MINUTAR_ATO": 18,
           "ASSINAR_ATO": 3,
-          "LANCAR_MOVIMENTACAO": 1
+          "LANCAR_MOVIMENTACAO": 0
         }
       },
       {
@@ -1136,7 +1136,7 @@
       "TRIAGEM_ORDINARIA": 16,
       "MINUTAR_ATO": 32,
       "ASSINAR_ATO": 6,
-      "LANCAR_MOVIMENTACAO": 7
+      "LANCAR_MOVIMENTACAO": 6
     },
     "total_acervo": 263
   },
@@ -2003,20 +2003,6 @@
         "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
-      },
-      {
-        "processo": "0601813-20.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "24/09/2026",
-        "desde": "26/09/2026",
-        "dias_tramitando": 1,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
       }
     ]
   },
@@ -2186,6 +2172,16 @@
         "total": 3
       },
       {
+        "codigo": "analisar-determinacao-urgentes",
+        "tarefa": "Analisar determinação - Urgentes",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 2
+        },
+        "total": 3
+      },
+      {
         "codigo": "lancar-movimentos-de-julgamento-colegiado-processo-com-prazo-em-curso-processo-julgado",
         "tarefa": "Lançar movimentos de julgamento colegiado; Processo com prazo em curso; Processo julgado",
         "contagens": {
@@ -2248,16 +2244,6 @@
       {
         "codigo": "analisar-processos-lancar-movimentos-de-julgamento-colegiado",
         "tarefa": "Analisar Processos; Lançar movimentos de julgamento colegiado",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 2
-        },
-        "total": 2
-      },
-      {
-        "codigo": "analisar-determinacao-urgentes",
-        "tarefa": "Analisar determinação - Urgentes",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -2462,16 +2448,6 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
-        "codigo": "lancar-movimento",
-        "tarefa": "Lançar movimento",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
       },
@@ -5577,6 +5553,50 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-determinacao-urgentes": [
+      {
+        "processo": "0601152-41.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação - Urgentes",
+        "autuacao": "10/09/2026",
+        "desde": "26/09/2026",
+        "dias_tramitando": 16,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601813-20.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação - Urgentes",
+        "autuacao": "24/09/2026",
+        "desde": "26/09/2026",
+        "dias_tramitando": 1,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601820-12.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação - Urgentes",
+        "autuacao": "25/09/2026",
+        "desde": "26/09/2026",
+        "dias_tramitando": 1,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "lancar-movimentos-de-julgamento-colegiado-processo-com-prazo-em-curso-processo-julgado": [
       {
         "processo": "0600159-95.2026.6.10.0000",
@@ -5808,36 +5828,6 @@
         "autuacao": "19/09/2026",
         "desde": "19/09/2026",
         "dias_tramitando": 7,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "analisar-determinacao-urgentes": [
-      {
-        "processo": "0601152-41.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação - Urgentes",
-        "autuacao": "10/09/2026",
-        "desde": "26/09/2026",
-        "dias_tramitando": 16,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601820-12.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação - Urgentes",
-        "autuacao": "25/09/2026",
-        "desde": "26/09/2026",
-        "dias_tramitando": 1,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -6200,22 +6190,6 @@
         "autuacao": "25/09/2026",
         "desde": "25/09/2026",
         "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "lancar-movimento": [
-      {
-        "processo": "0601813-20.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "24/09/2026",
-        "desde": "26/09/2026",
-        "dias_tramitando": 1,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -8876,7 +8850,7 @@
         "processo": "0601813-20.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Lançar movimento",
+        "tarefa_atual": "Analisar determinação - Urgentes",
         "autuacao": "24/09/2026",
         "desde": "26/09/2026",
         "dias_tramitando": 1,
@@ -13117,7 +13091,7 @@
       "processo": "0601813-20.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Lançar movimento",
+      "tarefa_atual": "Analisar determinação - Urgentes",
       "autuacao": "24/09/2026",
       "desde": "26/09/2026",
       "dias_tramitando": 1,
@@ -19705,7 +19679,7 @@
       "processo": "0601813-20.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Lançar movimento",
+      "tarefa_atual": "Analisar determinação - Urgentes",
       "autuacao": "24/09/2026",
       "desde": "26/09/2026",
       "dias_tramitando": 1,
@@ -24212,8 +24186,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "26/09/2026 17:54",
+  "publicado_em": "26/09/2026 17:55",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "46f6693484b871d580e057912ed536d638cd84a6ff15160d7aba322aae60fdc9"
+  "hash_publicacao": "9d8e89f57f6b242a42f5414a24d73c174bceff657e9c3e25f2f533055ecab4d5"
 }
