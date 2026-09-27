@@ -12,7 +12,7 @@
       "quantidade": 64,
       "media_dias": 28.8,
       "maior_tempo": 172,
-      "urgentes": 0,
+      "urgentes": 1,
       "minutar": 10,
       "julgados": 34,
       "percentual_julgados": 43.6,
@@ -139,11 +139,6 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Visualizar expediente DJE",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Atualizar dados do processo",
       "quantidade": 1
     },
@@ -154,17 +149,22 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Definir procedimento",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Elaborar documentos - Magistrado Assinar; Processo com prazo em curso",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Petições não lidas; Visualizar expediente DJE",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Processo com prazo em curso; Processo com prazo em curso",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Realizar triagem urgentes",
       "quantidade": 1
     },
     {
@@ -1267,7 +1267,7 @@
         "nome": "Gabinete Juiz Auxiliar 1",
         "total_acervo": 78,
         "contagens": {
-          "TRIAGEM_URGENTE": 0,
+          "TRIAGEM_URGENTE": 1,
           "TRIAGEM_ORDINARIA": 0,
           "MINUTAR_ATO": 10,
           "ASSINAR_ATO": 2,
@@ -1300,7 +1300,7 @@
       }
     ],
     "totais": {
-      "TRIAGEM_URGENTE": 0,
+      "TRIAGEM_URGENTE": 1,
       "TRIAGEM_ORDINARIA": 11,
       "MINUTAR_ATO": 39,
       "ASSINAR_ATO": 7,
@@ -1309,7 +1309,22 @@
     "total_acervo": 265
   },
   "tarefas_criticas_processos": {
-    "TRIAGEM_URGENTE": [],
+    "TRIAGEM_URGENTE": [
+      {
+        "processo": "0601830-56.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem urgentes",
+        "autuacao": "26/09/2026",
+        "desde": "27/09/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "TRIAGEM_ORDINARIA": [
       {
         "processo": "0600089-78.2026.6.10.0000",
@@ -2611,16 +2626,6 @@
         "total": 1
       },
       {
-        "codigo": "analisar-peticao-avulsa-peticoes-nao-lidas-visualizar-expediente-dje",
-        "tarefa": "Analisar Petição Avulsa; Petições não lidas; Visualizar expediente DJE",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
         "codigo": "analisar-processos-urgentes",
         "tarefa": "Analisar Processos - Urgentes",
         "contagens": {
@@ -2651,16 +2656,6 @@
         "total": 1
       },
       {
-        "codigo": "definir-procedimento",
-        "tarefa": "Definir procedimento",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
         "codigo": "elaborar-documentos-magistrado-assinar-processo-com-prazo-em-curso",
         "tarefa": "Elaborar documentos - Magistrado Assinar; Processo com prazo em curso",
         "contagens": {
@@ -2681,6 +2676,16 @@
         "total": 1
       },
       {
+        "codigo": "peticoes-nao-lidas-visualizar-expediente-dje",
+        "tarefa": "Petições não lidas; Visualizar expediente DJE",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
         "codigo": "processo-com-pedido-de-vista-visualizar-expediente-dje",
         "tarefa": "Processo com pedido de vista; Visualizar expediente DJE",
         "contagens": {
@@ -2693,6 +2698,16 @@
       {
         "codigo": "processo-com-prazo-em-curso-processo-com-prazo-em-curso",
         "tarefa": "Processo com prazo em curso; Processo com prazo em curso",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "realizar-triagem-urgentes",
+        "tarefa": "Realizar triagem urgentes",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -6368,22 +6383,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-peticao-avulsa-peticoes-nao-lidas-visualizar-expediente-dje": [
-      {
-        "processo": "0601026-88.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "RepEsp",
-        "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Visualizar expediente DJE",
-        "autuacao": "28/08/2026",
-        "desde": "28/08/2026",
-        "dias_tramitando": 29,
-        "julgado": true,
-        "data_julgamento": "25/09/2026",
-        "teor": "Julgado improcedente o pedido em 25/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "analisar-processos-urgentes": [
       {
         "processo": "0601222-58.2026.6.10.0000",
@@ -6432,22 +6431,6 @@
         "responsavel_processo": ""
       }
     ],
-    "definir-procedimento": [
-      {
-        "processo": "0601830-56.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Definir procedimento",
-        "autuacao": "26/09/2026",
-        "desde": "27/09/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "elaborar-documentos-magistrado-assinar-processo-com-prazo-em-curso": [
       {
         "processo": "0601825-34.2026.6.10.0000",
@@ -6480,6 +6463,22 @@
         "responsavel_processo": ""
       }
     ],
+    "peticoes-nao-lidas-visualizar-expediente-dje": [
+      {
+        "processo": "0601026-88.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "RepEsp",
+        "tarefa_atual": "Petições não lidas; Visualizar expediente DJE",
+        "autuacao": "28/08/2026",
+        "desde": "28/08/2026",
+        "dias_tramitando": 29,
+        "julgado": true,
+        "data_julgamento": "25/09/2026",
+        "teor": "Julgado improcedente o pedido em 25/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "processo-com-pedido-de-vista-visualizar-expediente-dje": [
       {
         "processo": "0600147-81.2026.6.10.0000",
@@ -6508,6 +6507,22 @@
         "julgado": true,
         "data_julgamento": "04/09/2026",
         "teor": "Julgado procedente o pedido em 04/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "realizar-triagem-urgentes": [
+      {
+        "processo": "0601830-56.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem urgentes",
+        "autuacao": "26/09/2026",
+        "desde": "27/09/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -6859,7 +6874,7 @@
         "processo": "0601026-88.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "RepEsp",
-        "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Visualizar expediente DJE",
+        "tarefa_atual": "Petições não lidas; Visualizar expediente DJE",
         "autuacao": "28/08/2026",
         "desde": "28/08/2026",
         "dias_tramitando": 29,
@@ -7615,7 +7630,7 @@
         "processo": "0601830-56.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Definir procedimento",
+        "tarefa_atual": "Realizar triagem urgentes",
         "autuacao": "26/09/2026",
         "desde": "27/09/2026",
         "dias_tramitando": 0,
@@ -11704,7 +11719,7 @@
       "processo": "0601026-88.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "RepEsp",
-      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Visualizar expediente DJE",
+      "tarefa_atual": "Petições não lidas; Visualizar expediente DJE",
       "autuacao": "28/08/2026",
       "desde": "28/08/2026",
       "dias_tramitando": 29,
@@ -13538,7 +13553,7 @@
       "processo": "0601830-56.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Definir procedimento",
+      "tarefa_atual": "Realizar triagem urgentes",
       "autuacao": "26/09/2026",
       "desde": "27/09/2026",
       "dias_tramitando": 0,
@@ -18320,7 +18335,7 @@
       "processo": "0601026-88.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "RepEsp",
-      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Visualizar expediente DJE",
+      "tarefa_atual": "Petições não lidas; Visualizar expediente DJE",
       "autuacao": "28/08/2026",
       "desde": "28/08/2026",
       "dias_tramitando": 29,
@@ -20154,7 +20169,7 @@
       "processo": "0601830-56.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Definir procedimento",
+      "tarefa_atual": "Realizar triagem urgentes",
       "autuacao": "26/09/2026",
       "desde": "27/09/2026",
       "dias_tramitando": 0,
@@ -23963,7 +23978,7 @@
       "processo": "0601026-88.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "RepEsp",
-      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Visualizar expediente DJE",
+      "tarefa_atual": "Petições não lidas; Visualizar expediente DJE",
       "autuacao": "28/08/2026",
       "desde": "28/08/2026",
       "dias_tramitando": 29,
@@ -24521,8 +24536,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "27/09/2026 08:41",
+  "publicado_em": "27/09/2026 08:42",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "e7bc476332dfea08e00df6915bb7b5220a1a11e253afda3fcc4cf5ff5de032a3"
+  "hash_publicacao": "795db1c5deaf1d589f7912c98962ea47743f5e47676d1f50ac91f5381d70d1fd"
 }
