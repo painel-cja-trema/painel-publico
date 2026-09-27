@@ -12,7 +12,7 @@
       "quantidade": 66,
       "media_dias": 28.7,
       "maior_tempo": 172,
-      "urgentes": 0,
+      "urgentes": 1,
       "minutar": 2,
       "julgados": 34,
       "percentual_julgados": 43.0,
@@ -154,12 +154,12 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Registrar ciência intimação pessoal",
+      "tarefa_atual": "Realizar triagem urgentes",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Verificar e certificar dados do processo com liminar",
+      "tarefa_atual": "Registrar ciência intimação pessoal",
       "quantidade": 1
     },
     {
@@ -838,7 +838,7 @@
         "nome": "Gabinete Juiz Auxiliar 1",
         "total_acervo": 79,
         "contagens": {
-          "TRIAGEM_URGENTE": 0,
+          "TRIAGEM_URGENTE": 1,
           "TRIAGEM_ORDINARIA": 0,
           "MINUTAR_ATO": 2,
           "ASSINAR_ATO": 16,
@@ -871,7 +871,7 @@
       }
     ],
     "totais": {
-      "TRIAGEM_URGENTE": 1,
+      "TRIAGEM_URGENTE": 2,
       "TRIAGEM_ORDINARIA": 9,
       "MINUTAR_ATO": 18,
       "ASSINAR_ATO": 26,
@@ -889,6 +889,20 @@
         "autuacao": "24/09/2026",
         "desde": "24/09/2026",
         "dias_tramitando": 2,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601834-93.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem urgentes",
+        "autuacao": "27/09/2026",
+        "desde": "27/09/2026",
+        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -1708,40 +1722,10 @@
     "rotulo": "Verificar e certificar dados do processo com liminar",
     "curto": "Liminares",
     "descricao": "Porta de entrada da Comissão: processos com liminar aguardando conferência/certificação inicial antes da distribuição aos gabinetes.",
-    "total": 1,
-    "processos": [
-      {
-        "processo": "0601834-93.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Verificar e certificar dados do processo com liminar",
-        "autuacao": "27/09/2026",
-        "desde": "27/09/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ]
+    "total": 0,
+    "processos": []
   },
-  "entrada_comissao_processos": [
-    {
-      "processo": "0601834-93.2026.6.10.0000",
-      "gabinete": "Gab. JA 1",
-      "classe": "Rp",
-      "tarefa_atual": "Verificar e certificar dados do processo com liminar",
-      "autuacao": "27/09/2026",
-      "desde": "27/09/2026",
-      "dias_tramitando": 0,
-      "julgado": false,
-      "data_julgamento": "",
-      "teor": "",
-      "segredo_justica": "NÃO",
-      "responsavel_processo": ""
-    }
-  ],
+  "entrada_comissao_processos": [],
   "todas_tarefas": {
     "colunas": [
       {
@@ -2149,6 +2133,16 @@
         "total": 1
       },
       {
+        "codigo": "realizar-triagem-urgentes",
+        "tarefa": "Realizar triagem urgentes",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
         "codigo": "registrar-ciencia-intimacao-pessoal",
         "tarefa": "Registrar ciência intimação pessoal",
         "contagens": {
@@ -2165,16 +2159,6 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
-        "codigo": "verificar-e-certificar-dados-do-processo-com-liminar",
-        "tarefa": "Verificar e certificar dados do processo com liminar",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
       }
@@ -5998,6 +5982,22 @@
         "responsavel_processo": ""
       }
     ],
+    "realizar-triagem-urgentes": [
+      {
+        "processo": "0601834-93.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem urgentes",
+        "autuacao": "27/09/2026",
+        "desde": "27/09/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "registrar-ciencia-intimacao-pessoal": [
       {
         "processo": "0601766-46.2026.6.10.0000",
@@ -6023,22 +6023,6 @@
         "autuacao": "24/09/2026",
         "desde": "24/09/2026",
         "dias_tramitando": 2,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "verificar-e-certificar-dados-do-processo-com-liminar": [
-      {
-        "processo": "0601834-93.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Verificar e certificar dados do processo com liminar",
-        "autuacao": "27/09/2026",
-        "desde": "27/09/2026",
-        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -7145,7 +7129,7 @@
         "processo": "0601834-93.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Verificar e certificar dados do processo com liminar",
+        "tarefa_atual": "Realizar triagem urgentes",
         "autuacao": "27/09/2026",
         "desde": "27/09/2026",
         "dias_tramitando": 0,
@@ -13208,7 +13192,7 @@
       "processo": "0601834-93.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Verificar e certificar dados do processo com liminar",
+      "tarefa_atual": "Realizar triagem urgentes",
       "autuacao": "27/09/2026",
       "desde": "27/09/2026",
       "dias_tramitando": 0,
@@ -20088,7 +20072,7 @@
       "processo": "0601834-93.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Verificar e certificar dados do processo com liminar",
+      "tarefa_atual": "Realizar triagem urgentes",
       "autuacao": "27/09/2026",
       "desde": "27/09/2026",
       "dias_tramitando": 0,
@@ -24747,8 +24731,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "27/09/2026 16:36",
+  "publicado_em": "27/09/2026 16:42",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "d06824509672721f92a5cb81670386da0edc8707d3060717685ec8b4a63da808"
+  "hash_publicacao": "379c57ef99adaaad7234712b1b14a2ed6236b316be1c08a39c8af5f519444fd0"
 }
