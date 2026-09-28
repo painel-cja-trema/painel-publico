@@ -295,7 +295,7 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Processo com prazo em curso",
-      "quantidade": 10
+      "quantidade": 9
     },
     {
       "gabinete": "Gab. JA 3",
@@ -359,6 +359,11 @@
     },
     {
       "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Analisar determinação - Urgentes; Verificar Decisão - Petição Avulsa",
       "quantidade": 1
     },
@@ -379,17 +384,17 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Assinar ato",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Elaborar Documentos",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Elaborar documentos - Magistrado Assinar; Registrar ciência por telefone ou pessoalmente; Visualizar expediente DJE",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Lançar movimento",
       "quantidade": 1
     },
     {
@@ -522,7 +527,7 @@
       "processo": "0600174-64.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "CumSen",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "dias_tramitando": 111,
       "segredo_justica": "NÃO"
     },
@@ -848,8 +853,8 @@
           "TRIAGEM_URGENTE": 0,
           "TRIAGEM_ORDINARIA": 0,
           "MINUTAR_ATO": 0,
-          "ASSINAR_ATO": 1,
-          "LANCAR_MOVIMENTACAO": 0
+          "ASSINAR_ATO": 0,
+          "LANCAR_MOVIMENTACAO": 1
         }
       }
     ],
@@ -857,8 +862,8 @@
       "TRIAGEM_URGENTE": 3,
       "TRIAGEM_ORDINARIA": 11,
       "MINUTAR_ATO": 14,
-      "ASSINAR_ATO": 3,
-      "LANCAR_MOVIMENTACAO": 2
+      "ASSINAR_ATO": 2,
+      "LANCAR_MOVIMENTACAO": 3
     },
     "total_acervo": 276
   },
@@ -1263,20 +1268,6 @@
     ],
     "ASSINAR_ATO": [
       {
-        "processo": "0600174-64.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "CumSen",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "09/06/2026",
-        "desde": "28/09/2026",
-        "dias_tramitando": 111,
-        "julgado": true,
-        "data_julgamento": "07/07/2026",
-        "teor": "Julgado improcedente o pedido em 07/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
         "processo": "0600944-57.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
@@ -1306,6 +1297,20 @@
       }
     ],
     "LANCAR_MOVIMENTACAO": [
+      {
+        "processo": "0600174-64.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "CumSen",
+        "tarefa_atual": "Lançar movimento",
+        "autuacao": "09/06/2026",
+        "desde": "28/09/2026",
+        "dias_tramitando": 111,
+        "julgado": true,
+        "data_julgamento": "07/07/2026",
+        "teor": "Julgado improcedente o pedido em 07/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
       {
         "processo": "0601015-59.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
@@ -1367,9 +1372,9 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 23,
           "Gabinete Juiz Auxiliar 2": 24,
-          "Gabinete Juiz Auxiliar 3": 10
+          "Gabinete Juiz Auxiliar 3": 9
         },
-        "total": 57
+        "total": 56
       },
       {
         "codigo": "aguardando-julgamento-do-recurso-interno",
@@ -1522,11 +1527,11 @@
         "total": 3
       },
       {
-        "codigo": "assinar-ato",
-        "tarefa": "Assinar ato",
+        "codigo": "lancar-movimento",
+        "tarefa": "Lançar movimento",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 2,
           "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 3
@@ -1572,11 +1577,11 @@
         "total": 2
       },
       {
-        "codigo": "lancar-movimento",
-        "tarefa": "Lançar movimento",
+        "codigo": "assinar-ato",
+        "tarefa": "Assinar ato",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 2,
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 2
@@ -1644,6 +1649,16 @@
       {
         "codigo": "aguardando-julgamento-do-recurso-interno-verificar-decisao-peticao-avulsa",
         "tarefa": "Aguardando julgamento do recurso interno; Verificar Decisão - Petição Avulsa",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
+        "codigo": "analisar-peticao-avulsa-analisar-resposta-do-expediente-peticoes-nao-lidas",
+        "tarefa": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -2527,20 +2542,6 @@
         "tarefa_atual": "Processo com prazo em curso",
         "autuacao": "26/09/2026",
         "desde": "28/09/2026",
-        "dias_tramitando": 1,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601832-26.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Processo com prazo em curso",
-        "autuacao": "27/09/2026",
-        "desde": "27/09/2026",
         "dias_tramitando": 1,
         "julgado": false,
         "data_julgamento": "",
@@ -5183,12 +5184,12 @@
         "responsavel_processo": ""
       }
     ],
-    "assinar-ato": [
+    "lancar-movimento": [
       {
         "processo": "0600174-64.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "CumSen",
-        "tarefa_atual": "Assinar ato",
+        "tarefa_atual": "Lançar movimento",
         "autuacao": "09/06/2026",
         "desde": "28/09/2026",
         "dias_tramitando": 111,
@@ -5199,13 +5200,13 @@
         "responsavel_processo": ""
       },
       {
-        "processo": "0600944-57.2026.6.10.0000",
+        "processo": "0601015-59.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "16/08/2026",
-        "desde": "26/09/2026",
-        "dias_tramitando": 42,
+        "classe": "RepEsp",
+        "tarefa_atual": "Lançar movimento",
+        "autuacao": "27/08/2026",
+        "desde": "28/09/2026",
+        "dias_tramitando": 31,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -5213,13 +5214,13 @@
         "responsavel_processo": ""
       },
       {
-        "processo": "0601008-67.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "RepEsp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "27/08/2026",
-        "desde": "24/09/2026",
-        "dias_tramitando": 32,
+        "processo": "0601813-20.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Lançar movimento",
+        "autuacao": "24/09/2026",
+        "desde": "28/09/2026",
+        "dias_tramitando": 3,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -5361,15 +5362,15 @@
         "responsavel_processo": ""
       }
     ],
-    "lancar-movimento": [
+    "assinar-ato": [
       {
-        "processo": "0601015-59.2026.6.10.0000",
+        "processo": "0600944-57.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
-        "classe": "RepEsp",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "27/08/2026",
-        "desde": "28/09/2026",
-        "dias_tramitando": 31,
+        "classe": "Rp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "16/08/2026",
+        "desde": "26/09/2026",
+        "dias_tramitando": 42,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -5377,13 +5378,13 @@
         "responsavel_processo": ""
       },
       {
-        "processo": "0601813-20.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "24/09/2026",
-        "desde": "28/09/2026",
-        "dias_tramitando": 3,
+        "processo": "0601008-67.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "RepEsp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "27/08/2026",
+        "desde": "24/09/2026",
+        "dias_tramitando": 32,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -5513,6 +5514,22 @@
         "julgado": true,
         "data_julgamento": "19/09/2026",
         "teor": "Julgado procedente em parte do pedido em 19/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-peticao-avulsa-analisar-resposta-do-expediente-peticoes-nao-lidas": [
+      {
+        "processo": "0601832-26.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas",
+        "autuacao": "27/09/2026",
+        "desde": "27/09/2026",
+        "dias_tramitando": 1,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -8610,7 +8627,7 @@
         "processo": "0600174-64.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "CumSen",
-        "tarefa_atual": "Assinar ato",
+        "tarefa_atual": "Lançar movimento",
         "autuacao": "09/06/2026",
         "desde": "28/09/2026",
         "dias_tramitando": 111,
@@ -9604,7 +9621,7 @@
         "processo": "0601832-26.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Processo com prazo em curso",
+        "tarefa_atual": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas",
         "autuacao": "27/09/2026",
         "desde": "27/09/2026",
         "dias_tramitando": 1,
@@ -10119,7 +10136,7 @@
       "processo": "0600174-64.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "CumSen",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "autuacao": "09/06/2026",
       "desde": "28/09/2026",
       "dias_tramitando": 111,
@@ -12933,7 +12950,7 @@
       "processo": "0601832-26.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Processo com prazo em curso",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas",
       "autuacao": "27/09/2026",
       "desde": "27/09/2026",
       "dias_tramitando": 1,
@@ -17013,7 +17030,7 @@
       "processo": "0600174-64.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "CumSen",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "autuacao": "09/06/2026",
       "desde": "28/09/2026",
       "dias_tramitando": 111,
@@ -19827,7 +19844,7 @@
       "processo": "0601832-26.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Processo com prazo em curso",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas",
       "autuacao": "27/09/2026",
       "desde": "27/09/2026",
       "dias_tramitando": 1,
@@ -23242,7 +23259,7 @@
       "processo": "0600174-64.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "CumSen",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "autuacao": "09/06/2026",
       "desde": "28/09/2026",
       "dias_tramitando": 111,
@@ -24696,8 +24713,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "28/09/2026 13:48",
+  "publicado_em": "28/09/2026 13:56",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "43771f39eac1b0cf967ac5fc3719ddf0244f068ee8b38a906f6a5f7453842e1e"
+  "hash_publicacao": "b26a2815f789409fcbd4a2564822cf99699c4cde0f2688fa1d28543a93ced7d1"
 }
