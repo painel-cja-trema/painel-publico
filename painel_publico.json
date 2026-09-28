@@ -13,7 +13,7 @@
       "media_dias": 28.9,
       "maior_tempo": 173,
       "urgentes": 5,
-      "minutar": 1,
+      "minutar": 0,
       "julgados": 38,
       "percentual_julgados": 47.5,
       "arquivados": 45,
@@ -79,7 +79,7 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Minutar ato",
+      "tarefa_atual": "Revisar ato",
       "quantidade": 4
     },
     {
@@ -94,7 +94,7 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Revisar ato",
+      "tarefa_atual": "Minutar ato",
       "quantidade": 3
     },
     {
@@ -234,6 +234,11 @@
     },
     {
       "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Aguarda Sessão de Julgamento Virtual; Elaborar extrato da ata; Liberados para julgamento pelo gabinete virtual; Selecionar documentos para acórdão - Gabinete",
+      "quantidade": 2
+    },
+    {
+      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Aguardando julgamento do recurso interno; Petições não lidas",
       "quantidade": 2
     },
@@ -245,11 +250,6 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Analisar determinação; Petições não lidas",
-      "quantidade": 2
-    },
-    {
-      "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Revisar Relatório, Voto e Ementa",
       "quantidade": 2
     },
     {
@@ -289,17 +289,17 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Conferir Relatório, Voto e Ementa",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Lançar movimento",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Processo com pedido de vista; Visualizar expediente DJE",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Revisar Relatório, Voto e Ementa",
       "quantidade": 1
     },
     {
@@ -613,13 +613,7 @@
       "segredo_justica": "NÃO"
     }
   ],
-  "minutar_cja1": [
-    {
-      "processo": "0601802-88.2026.6.10.0000",
-      "classe": "Rp",
-      "dias_tramitando": 4
-    }
-  ],
+  "minutar_cja1": [],
   "minutar_processos": [
     {
       "processo": "0600998-23.2026.6.10.0000",
@@ -804,20 +798,6 @@
       "responsavel_processo": ""
     },
     {
-      "processo": "0601802-88.2026.6.10.0000",
-      "gabinete": "Gab. JA 1",
-      "classe": "Rp",
-      "tarefa_atual": "Minutar ato",
-      "autuacao": "23/09/2026",
-      "desde": "27/09/2026",
-      "dias_tramitando": 4,
-      "julgado": false,
-      "data_julgamento": "",
-      "teor": "",
-      "segredo_justica": "NÃO",
-      "responsavel_processo": ""
-    },
-    {
       "processo": "0601833-11.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "NIP",
@@ -873,7 +853,7 @@
         "contagens": {
           "TRIAGEM_URGENTE": 1,
           "TRIAGEM_ORDINARIA": 0,
-          "MINUTAR_ATO": 1,
+          "MINUTAR_ATO": 0,
           "ASSINAR_ATO": 1,
           "LANCAR_MOVIMENTACAO": 0
         }
@@ -906,7 +886,7 @@
     "totais": {
       "TRIAGEM_URGENTE": 1,
       "TRIAGEM_ORDINARIA": 9,
-      "MINUTAR_ATO": 15,
+      "MINUTAR_ATO": 14,
       "ASSINAR_ATO": 5,
       "LANCAR_MOVIMENTACAO": 3
     },
@@ -1241,20 +1221,6 @@
         "responsavel_processo": ""
       },
       {
-        "processo": "0601802-88.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Minutar ato",
-        "autuacao": "23/09/2026",
-        "desde": "27/09/2026",
-        "dias_tramitando": 4,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
         "processo": "0601833-11.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "NIP",
@@ -1503,11 +1469,11 @@
         "codigo": "minutar-ato",
         "tarefa": "Minutar ato",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 4,
+          "Gabinete Juiz Auxiliar 1": 3,
           "Gabinete Juiz Auxiliar 2": 17,
           "Gabinete Juiz Auxiliar 3": 4
         },
-        "total": 25
+        "total": 24
       },
       {
         "codigo": "analisar-processos",
@@ -1610,6 +1576,16 @@
         "total": 4
       },
       {
+        "codigo": "revisar-ato",
+        "tarefa": "Revisar ato",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 4,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 4
+      },
+      {
         "codigo": "visualizar-expediente-dje",
         "tarefa": "Visualizar expediente DJE",
         "contagens": {
@@ -1640,22 +1616,22 @@
         "total": 3
       },
       {
-        "codigo": "revisar-ato",
-        "tarefa": "Revisar ato",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 3,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 3
-      },
-      {
         "codigo": "aguarda-julgamento-incluido-em-pauta-virtual-elaborar-extrato-da-ata-processo-incluido-em-pauta-virtual-selecionar-documentos-para-acordao-gabinete-verificar-inclusao-de-notas-orais",
         "tarefa": "Aguarda Julgamento - incluído em pauta virtual; Elaborar extrato da ata; Processo incluído em pauta virtual; Selecionar documentos para acórdão - Gabinete; Verificar inclusão de notas orais",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 2
+        },
+        "total": 2
+      },
+      {
+        "codigo": "aguarda-sessao-de-julgamento-virtual-elaborar-extrato-da-ata-liberados-para-julgamento-pelo-gabinete-virtual-selecionar-documentos-para-acordao-gabinete",
+        "tarefa": "Aguarda Sessão de Julgamento Virtual; Elaborar extrato da ata; Liberados para julgamento pelo gabinete virtual; Selecionar documentos para acórdão - Gabinete",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 2,
+          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 2
       },
@@ -1695,26 +1671,6 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 2,
           "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 2
-      },
-      {
-        "codigo": "conferir-relatorio-voto-e-ementa",
-        "tarefa": "Conferir Relatório, Voto e Ementa",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 2
-      },
-      {
-        "codigo": "revisar-relatorio-voto-e-ementa",
-        "tarefa": "Revisar Relatório, Voto e Ementa",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 2,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 2
@@ -1880,6 +1836,16 @@
         "total": 1
       },
       {
+        "codigo": "conferir-relatorio-voto-e-ementa",
+        "tarefa": "Conferir Relatório, Voto e Ementa",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
         "codigo": "elaborar-documentos",
         "tarefa": "Elaborar Documentos",
         "contagens": {
@@ -1966,6 +1932,16 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
+        "codigo": "revisar-relatorio-voto-e-ementa",
+        "tarefa": "Revisar Relatório, Voto e Ementa",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
       }
@@ -4053,20 +4029,6 @@
         "responsavel_processo": ""
       },
       {
-        "processo": "0601802-88.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Minutar ato",
-        "autuacao": "23/09/2026",
-        "desde": "27/09/2026",
-        "dias_tramitando": 4,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
         "processo": "0601833-11.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "NIP",
@@ -5067,6 +5029,64 @@
         "responsavel_processo": ""
       }
     ],
+    "revisar-ato": [
+      {
+        "processo": "0600185-93.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Revisar ato",
+        "autuacao": "18/06/2026",
+        "desde": "26/09/2026",
+        "dias_tramitando": 101,
+        "julgado": true,
+        "data_julgamento": "09/07/2026",
+        "teor": "Não conhecido o recurso de PARTIDO SOCIALISTA BRASILEIRO DIRETORIO ESTADUAL em 09/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600187-63.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Revisar ato",
+        "autuacao": "23/06/2026",
+        "desde": "25/09/2026",
+        "dias_tramitando": 96,
+        "julgado": true,
+        "data_julgamento": "08/07/2026",
+        "teor": "Julgado procedente em parte do pedido em 08/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601790-74.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Revisar ato",
+        "autuacao": "22/09/2026",
+        "desde": "27/09/2026",
+        "dias_tramitando": 5,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601802-88.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Revisar ato",
+        "autuacao": "23/09/2026",
+        "desde": "28/09/2026",
+        "dias_tramitando": 4,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "visualizar-expediente-dje": [
       {
         "processo": "0601003-45.2026.6.10.0000",
@@ -5213,50 +5233,6 @@
         "responsavel_processo": ""
       }
     ],
-    "revisar-ato": [
-      {
-        "processo": "0600185-93.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Revisar ato",
-        "autuacao": "18/06/2026",
-        "desde": "26/09/2026",
-        "dias_tramitando": 101,
-        "julgado": true,
-        "data_julgamento": "09/07/2026",
-        "teor": "Não conhecido o recurso de PARTIDO SOCIALISTA BRASILEIRO DIRETORIO ESTADUAL em 09/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600187-63.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Revisar ato",
-        "autuacao": "23/06/2026",
-        "desde": "25/09/2026",
-        "dias_tramitando": 96,
-        "julgado": true,
-        "data_julgamento": "08/07/2026",
-        "teor": "Julgado procedente em parte do pedido em 08/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601790-74.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Revisar ato",
-        "autuacao": "22/09/2026",
-        "desde": "27/09/2026",
-        "dias_tramitando": 5,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "aguarda-julgamento-incluido-em-pauta-virtual-elaborar-extrato-da-ata-processo-incluido-em-pauta-virtual-selecionar-documentos-para-acordao-gabinete-verificar-inclusao-de-notas-orais": [
       {
         "processo": "0600965-33.2026.6.10.0000",
@@ -5280,6 +5256,36 @@
         "autuacao": "23/09/2026",
         "desde": "23/09/2026",
         "dias_tramitando": 5,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "aguarda-sessao-de-julgamento-virtual-elaborar-extrato-da-ata-liberados-para-julgamento-pelo-gabinete-virtual-selecionar-documentos-para-acordao-gabinete": [
+      {
+        "processo": "0600987-91.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Aguarda Sessão de Julgamento Virtual; Elaborar extrato da ata; Liberados para julgamento pelo gabinete virtual; Selecionar documentos para acórdão - Gabinete",
+        "autuacao": "06/09/2026",
+        "desde": "06/09/2026",
+        "dias_tramitando": 21,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601024-21.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Aguarda Sessão de Julgamento Virtual; Elaborar extrato da ata; Liberados para julgamento pelo gabinete virtual; Selecionar documentos para acórdão - Gabinete",
+        "autuacao": "09/09/2026",
+        "desde": "09/09/2026",
+        "dias_tramitando": 18,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -5403,66 +5409,6 @@
         "julgado": true,
         "data_julgamento": "26/09/2026",
         "teor": "Julgado procedente em parte do pedido em 26/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "conferir-relatorio-voto-e-ementa": [
-      {
-        "processo": "0601024-21.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Conferir Relatório, Voto e Ementa",
-        "autuacao": "09/09/2026",
-        "desde": "28/09/2026",
-        "dias_tramitando": 18,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601106-52.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Conferir Relatório, Voto e Ementa",
-        "autuacao": "15/09/2026",
-        "desde": "24/09/2026",
-        "dias_tramitando": 12,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "revisar-relatorio-voto-e-ementa": [
-      {
-        "processo": "0600181-56.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Revisar Relatório, Voto e Ementa",
-        "autuacao": "06/09/2026",
-        "desde": "27/09/2026",
-        "dias_tramitando": 21,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600987-91.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Revisar Relatório, Voto e Ementa",
-        "autuacao": "06/09/2026",
-        "desde": "27/09/2026",
-        "dias_tramitando": 21,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -5737,6 +5683,22 @@
         "responsavel_processo": ""
       }
     ],
+    "conferir-relatorio-voto-e-ementa": [
+      {
+        "processo": "0601106-52.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Conferir Relatório, Voto e Ementa",
+        "autuacao": "15/09/2026",
+        "desde": "24/09/2026",
+        "dias_tramitando": 12,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "elaborar-documentos": [
       {
         "processo": "0600018-62.2026.6.10.0037",
@@ -5874,6 +5836,22 @@
         "autuacao": "24/09/2026",
         "desde": "24/09/2026",
         "dias_tramitando": 3,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "revisar-relatorio-voto-e-ementa": [
+      {
+        "processo": "0600181-56.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Revisar Relatório, Voto e Ementa",
+        "autuacao": "06/09/2026",
+        "desde": "27/09/2026",
+        "dias_tramitando": 21,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -6742,9 +6720,9 @@
         "processo": "0601802-88.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Minutar ato",
+        "tarefa_atual": "Revisar ato",
         "autuacao": "23/09/2026",
-        "desde": "27/09/2026",
+        "desde": "28/09/2026",
         "dias_tramitando": 4,
         "julgado": false,
         "data_julgamento": "",
@@ -7808,9 +7786,9 @@
         "processo": "0600987-91.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Revisar Relatório, Voto e Ementa",
+        "tarefa_atual": "Aguarda Sessão de Julgamento Virtual; Elaborar extrato da ata; Liberados para julgamento pelo gabinete virtual; Selecionar documentos para acórdão - Gabinete",
         "autuacao": "06/09/2026",
-        "desde": "27/09/2026",
+        "desde": "06/09/2026",
         "dias_tramitando": 21,
         "julgado": false,
         "data_julgamento": "",
@@ -7822,9 +7800,9 @@
         "processo": "0601024-21.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Conferir Relatório, Voto e Ementa",
+        "tarefa_atual": "Aguarda Sessão de Julgamento Virtual; Elaborar extrato da ata; Liberados para julgamento pelo gabinete virtual; Selecionar documentos para acórdão - Gabinete",
         "autuacao": "09/09/2026",
-        "desde": "28/09/2026",
+        "desde": "09/09/2026",
         "dias_tramitando": 18,
         "julgado": false,
         "data_julgamento": "",
@@ -12637,9 +12615,9 @@
       "processo": "0601802-88.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Minutar ato",
+      "tarefa_atual": "Revisar ato",
       "autuacao": "23/09/2026",
-      "desde": "27/09/2026",
+      "desde": "28/09/2026",
       "dias_tramitando": 4,
       "julgado": false,
       "data_julgamento": "",
@@ -19545,9 +19523,9 @@
       "processo": "0601802-88.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Minutar ato",
+      "tarefa_atual": "Revisar ato",
       "autuacao": "23/09/2026",
-      "desde": "27/09/2026",
+      "desde": "28/09/2026",
       "dias_tramitando": 4,
       "julgado": false,
       "data_julgamento": "",
@@ -21457,9 +21435,9 @@
       "processo": "0600987-91.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "REC no(a) Rp",
-      "tarefa_atual": "Revisar Relatório, Voto e Ementa",
+      "tarefa_atual": "Aguarda Sessão de Julgamento Virtual; Elaborar extrato da ata; Liberados para julgamento pelo gabinete virtual; Selecionar documentos para acórdão - Gabinete",
       "autuacao": "06/09/2026",
-      "desde": "27/09/2026",
+      "desde": "06/09/2026",
       "dias_tramitando": 21,
       "julgado": false,
       "data_julgamento": "",
@@ -21471,9 +21449,9 @@
       "processo": "0601024-21.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "REC no(a) Rp",
-      "tarefa_atual": "Conferir Relatório, Voto e Ementa",
+      "tarefa_atual": "Aguarda Sessão de Julgamento Virtual; Elaborar extrato da ata; Liberados para julgamento pelo gabinete virtual; Selecionar documentos para acórdão - Gabinete",
       "autuacao": "09/09/2026",
-      "desde": "28/09/2026",
+      "desde": "09/09/2026",
       "dias_tramitando": 18,
       "julgado": false,
       "data_julgamento": "",
@@ -24736,8 +24714,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "28/09/2026 08:56",
+  "publicado_em": "28/09/2026 08:57",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "60182ae225fcdd53638cd367025979c5d9df3549af38f1e5c0732e71a7715412"
+  "hash_publicacao": "1206115578a602bd88227e2a5035eb688f29b92b3fcc3e4dd2128fcdd02671f9"
 }
