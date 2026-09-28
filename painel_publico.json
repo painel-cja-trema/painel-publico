@@ -379,6 +379,11 @@
     },
     {
       "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Analisar Petição Avulsa; Elaborar Documentos; Petições não lidas",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Analisar Petição Avulsa; Elaborar documentos - Magistrado Assinar; Registrar ciência por telefone ou pessoalmente; Visualizar expediente DJE",
       "quantidade": 1
     },
@@ -400,11 +405,6 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Analisar resposta do expediente; Verificar Decisão - Petição Avulsa",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Elaborar Documentos",
       "quantidade": 1
     },
     {
@@ -1549,16 +1549,6 @@
         "total": 4
       },
       {
-        "codigo": "elaborar-documentos",
-        "tarefa": "Elaborar Documentos",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 3,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 4
-      },
-      {
         "codigo": "visualizar-expediente-dje",
         "tarefa": "Visualizar expediente DJE",
         "contagens": {
@@ -1595,6 +1585,16 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 2,
           "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 3
+      },
+      {
+        "codigo": "elaborar-documentos",
+        "tarefa": "Elaborar Documentos",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 3,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 3
       },
@@ -1711,6 +1711,16 @@
       {
         "codigo": "aguardando-julgamento-do-recurso-interno-verificar-decisao-peticao-avulsa",
         "tarefa": "Aguardando julgamento do recurso interno; Verificar Decisão - Petição Avulsa",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
+        "codigo": "analisar-peticao-avulsa-elaborar-documentos-peticoes-nao-lidas",
+        "tarefa": "Analisar Petição Avulsa; Elaborar Documentos; Petições não lidas",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -3120,7 +3130,7 @@
         "tarefa_atual": "Aguardando julgamento do recurso interno",
         "autuacao": "09/09/2026",
         "desde": "23/09/2026",
-        "dias_tramitando": 18,
+        "dias_tramitando": 19,
         "julgado": true,
         "data_julgamento": "18/09/2026",
         "teor": "Julgado procedente em parte do pedido em 18/09/2026",
@@ -5026,64 +5036,6 @@
         "responsavel_processo": ""
       }
     ],
-    "elaborar-documentos": [
-      {
-        "processo": "0600018-62.2026.6.10.0037",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Elaborar Documentos",
-        "autuacao": "06/07/2026",
-        "desde": "27/09/2026",
-        "dias_tramitando": 83,
-        "julgado": true,
-        "data_julgamento": "25/08/2026",
-        "teor": "Julgado improcedente o pedido em 25/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600963-63.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Elaborar Documentos",
-        "autuacao": "21/08/2026",
-        "desde": "28/09/2026",
-        "dias_tramitando": 37,
-        "julgado": true,
-        "data_julgamento": "25/09/2026",
-        "teor": "Julgado improcedente o pedido em 25/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601146-34.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "CumSen",
-        "tarefa_atual": "Elaborar Documentos",
-        "autuacao": "10/09/2026",
-        "desde": "28/09/2026",
-        "dias_tramitando": 18,
-        "julgado": true,
-        "data_julgamento": "14/09/2026",
-        "teor": "Julgado procedente o pedido em 14/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601826-19.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Elaborar Documentos",
-        "autuacao": "25/09/2026",
-        "desde": "28/09/2026",
-        "dias_tramitando": 2,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "visualizar-expediente-dje": [
       {
         "processo": "0601026-88.2026.6.10.0000",
@@ -5270,6 +5222,50 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "elaborar-documentos": [
+      {
+        "processo": "0600018-62.2026.6.10.0037",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Elaborar Documentos",
+        "autuacao": "06/07/2026",
+        "desde": "27/09/2026",
+        "dias_tramitando": 83,
+        "julgado": true,
+        "data_julgamento": "25/08/2026",
+        "teor": "Julgado improcedente o pedido em 25/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600963-63.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Elaborar Documentos",
+        "autuacao": "21/08/2026",
+        "desde": "28/09/2026",
+        "dias_tramitando": 37,
+        "julgado": true,
+        "data_julgamento": "25/09/2026",
+        "teor": "Julgado improcedente o pedido em 25/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601146-34.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "CumSen",
+        "tarefa_atual": "Elaborar Documentos",
+        "autuacao": "10/09/2026",
+        "desde": "28/09/2026",
+        "dias_tramitando": 18,
+        "julgado": true,
+        "data_julgamento": "14/09/2026",
+        "teor": "Julgado procedente o pedido em 14/09/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -5574,6 +5570,22 @@
         "julgado": true,
         "data_julgamento": "19/09/2026",
         "teor": "Julgado procedente em parte do pedido em 19/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-peticao-avulsa-elaborar-documentos-peticoes-nao-lidas": [
+      {
+        "processo": "0601826-19.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar Petição Avulsa; Elaborar Documentos; Petições não lidas",
+        "autuacao": "25/09/2026",
+        "desde": "25/09/2026",
+        "dias_tramitando": 2,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -9126,7 +9138,7 @@
         "tarefa_atual": "Aguardando julgamento do recurso interno",
         "autuacao": "09/09/2026",
         "desde": "23/09/2026",
-        "dias_tramitando": 18,
+        "dias_tramitando": 19,
         "julgado": true,
         "data_julgamento": "18/09/2026",
         "teor": "Julgado procedente em parte do pedido em 18/09/2026",
@@ -9683,9 +9695,9 @@
         "processo": "0601826-19.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Elaborar Documentos",
+        "tarefa_atual": "Analisar Petição Avulsa; Elaborar Documentos; Petições não lidas",
         "autuacao": "25/09/2026",
-        "desde": "28/09/2026",
+        "desde": "25/09/2026",
         "dias_tramitando": 2,
         "julgado": false,
         "data_julgamento": "",
@@ -11643,7 +11655,7 @@
       "tarefa_atual": "Aguardando julgamento do recurso interno",
       "autuacao": "09/09/2026",
       "desde": "23/09/2026",
-      "dias_tramitando": 18,
+      "dias_tramitando": 19,
       "julgado": true,
       "data_julgamento": "18/09/2026",
       "teor": "Julgado procedente em parte do pedido em 18/09/2026",
@@ -12928,9 +12940,9 @@
       "processo": "0601826-19.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Elaborar Documentos",
+      "tarefa_atual": "Analisar Petição Avulsa; Elaborar Documentos; Petições não lidas",
       "autuacao": "25/09/2026",
-      "desde": "28/09/2026",
+      "desde": "25/09/2026",
       "dias_tramitando": 2,
       "julgado": false,
       "data_julgamento": "",
@@ -18537,7 +18549,7 @@
       "tarefa_atual": "Aguardando julgamento do recurso interno",
       "autuacao": "09/09/2026",
       "desde": "23/09/2026",
-      "dias_tramitando": 18,
+      "dias_tramitando": 19,
       "julgado": true,
       "data_julgamento": "18/09/2026",
       "teor": "Julgado procedente em parte do pedido em 18/09/2026",
@@ -19822,9 +19834,9 @@
       "processo": "0601826-19.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Elaborar Documentos",
+      "tarefa_atual": "Analisar Petição Avulsa; Elaborar Documentos; Petições não lidas",
       "autuacao": "25/09/2026",
-      "desde": "28/09/2026",
+      "desde": "25/09/2026",
       "dias_tramitando": 2,
       "julgado": false,
       "data_julgamento": "",
@@ -24332,7 +24344,7 @@
       "tarefa_atual": "Aguardando julgamento do recurso interno",
       "autuacao": "09/09/2026",
       "desde": "23/09/2026",
-      "dias_tramitando": 18,
+      "dias_tramitando": 19,
       "julgado": true,
       "data_julgamento": "18/09/2026",
       "teor": "Julgado procedente em parte do pedido em 18/09/2026",
@@ -24775,8 +24787,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "28/09/2026 13:01",
+  "publicado_em": "28/09/2026 13:02",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "cb1b5f3e357bde742fc9858d226d1612e93065e466daacbbb3dfe225c355ccc1"
+  "hash_publicacao": "58fd6086c7dc9e714c2c53f919a2fad2f8997387de730f0b9e7e9713bc182191"
 }
