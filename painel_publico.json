@@ -46,7 +46,7 @@
       "quantidade": 62,
       "media_dias": 18.3,
       "maior_tempo": 112,
-      "urgentes": 6,
+      "urgentes": 7,
       "minutar": 0,
       "julgados": 36,
       "percentual_julgados": 41.4,
@@ -379,11 +379,6 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Definir procedimento",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Elaborar Documentos",
       "quantidade": 1
     },
@@ -400,6 +395,11 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Realizar triagem do processo - SOF",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Realizar triagem urgentes",
       "quantidade": 1
     },
     {
@@ -1035,7 +1035,7 @@
         "nome": "Gabinete Juiz Auxiliar 3",
         "total_acervo": 87,
         "contagens": {
-          "TRIAGEM_URGENTE": 0,
+          "TRIAGEM_URGENTE": 1,
           "TRIAGEM_ORDINARIA": 0,
           "MINUTAR_ATO": 0,
           "ASSINAR_ATO": 2,
@@ -1044,7 +1044,7 @@
       }
     ],
     "totais": {
-      "TRIAGEM_URGENTE": 1,
+      "TRIAGEM_URGENTE": 2,
       "TRIAGEM_ORDINARIA": 12,
       "MINUTAR_ATO": 25,
       "ASSINAR_ATO": 10,
@@ -1060,6 +1060,20 @@
         "classe": "Rp",
         "tarefa_atual": "Realizar triagem urgentes",
         "autuacao": "28/09/2026",
+        "desde": "29/09/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601849-62.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem urgentes",
+        "autuacao": "29/09/2026",
         "desde": "29/09/2026",
         "dias_tramitando": 0,
         "julgado": false,
@@ -1981,6 +1995,16 @@
         "total": 2
       },
       {
+        "codigo": "realizar-triagem-urgentes",
+        "tarefa": "Realizar triagem urgentes",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 2
+      },
+      {
         "codigo": "revisar-relatorio-voto-e-ementa",
         "tarefa": "Revisar Relatório, Voto e Ementa",
         "contagens": {
@@ -2161,16 +2185,6 @@
         "total": 1
       },
       {
-        "codigo": "definir-procedimento",
-        "tarefa": "Definir procedimento",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
         "codigo": "peticoes-nao-lidas-realizar-triagem-ordinarios",
         "tarefa": "Petições não lidas; Realizar triagem ordinários",
         "contagens": {
@@ -2207,16 +2221,6 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
-        "codigo": "realizar-triagem-urgentes",
-        "tarefa": "Realizar triagem urgentes",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
       },
@@ -6030,6 +6034,36 @@
         "responsavel_processo": ""
       }
     ],
+    "realizar-triagem-urgentes": [
+      {
+        "processo": "0601846-10.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem urgentes",
+        "autuacao": "28/09/2026",
+        "desde": "29/09/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601849-62.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem urgentes",
+        "autuacao": "29/09/2026",
+        "desde": "29/09/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "revisar-relatorio-voto-e-ementa": [
       {
         "processo": "0600181-56.2026.6.10.0000",
@@ -6332,22 +6366,6 @@
         "responsavel_processo": ""
       }
     ],
-    "definir-procedimento": [
-      {
-        "processo": "0601849-62.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Definir procedimento",
-        "autuacao": "29/09/2026",
-        "desde": "29/09/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "peticoes-nao-lidas-realizar-triagem-ordinarios": [
       {
         "processo": "0601819-27.2026.6.10.0000",
@@ -6408,22 +6426,6 @@
         "julgado": true,
         "data_julgamento": "07/07/2026",
         "teor": "Julgado improcedente o pedido em 07/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "realizar-triagem-urgentes": [
-      {
-        "processo": "0601846-10.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Realizar triagem urgentes",
-        "autuacao": "28/09/2026",
-        "desde": "29/09/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -10603,7 +10605,7 @@
         "processo": "0601849-62.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Definir procedimento",
+        "tarefa_atual": "Realizar triagem urgentes",
         "autuacao": "29/09/2026",
         "desde": "29/09/2026",
         "dias_tramitando": 0,
@@ -14114,7 +14116,7 @@
       "processo": "0601849-62.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Definir procedimento",
+      "tarefa_atual": "Realizar triagem urgentes",
       "autuacao": "29/09/2026",
       "desde": "29/09/2026",
       "dias_tramitando": 0,
@@ -21164,7 +21166,7 @@
       "processo": "0601849-62.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Definir procedimento",
+      "tarefa_atual": "Realizar triagem urgentes",
       "autuacao": "29/09/2026",
       "desde": "29/09/2026",
       "dias_tramitando": 0,
@@ -26147,8 +26149,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "29/09/2026 12:49",
+  "publicado_em": "29/09/2026 12:55",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "f9017ae4e1aaae1070bfc2953565e74c7e7e1ec4cb0a9a1e050f8d822a470384"
+  "hash_publicacao": "5b619f344b840680fb379c58553841169df92b748b11a84dfcffab3a05a7050f"
 }
