@@ -46,7 +46,7 @@
       "quantidade": 63,
       "media_dias": 18.2,
       "maior_tempo": 112,
-      "urgentes": 3,
+      "urgentes": 4,
       "minutar": 4,
       "julgados": 35,
       "percentual_julgados": 40.2,
@@ -250,7 +250,7 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Processo com prazo em curso",
-      "quantidade": 20
+      "quantidade": 21
     },
     {
       "gabinete": "Gab. JA 3",
@@ -354,11 +354,6 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Elaborar Documentos; Petições não lidas; Verificar Decisão - Petição Avulsa",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Elaborar documentos - Magistrado Assinar; Registrar ciência por telefone ou pessoalmente; Visualizar expediente DJE",
       "quantidade": 1
     },
@@ -369,7 +364,7 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Preparar comunicação",
+      "tarefa_atual": "Petições não lidas; Realizar triagem urgentes; Verificar Decisão - Petição Avulsa",
       "quantidade": 1
     },
     {
@@ -1040,7 +1035,7 @@
         "nome": "Gabinete Juiz Auxiliar 3",
         "total_acervo": 87,
         "contagens": {
-          "TRIAGEM_URGENTE": 0,
+          "TRIAGEM_URGENTE": 1,
           "TRIAGEM_ORDINARIA": 1,
           "MINUTAR_ATO": 4,
           "ASSINAR_ATO": 2,
@@ -1049,7 +1044,7 @@
       }
     ],
     "totais": {
-      "TRIAGEM_URGENTE": 1,
+      "TRIAGEM_URGENTE": 2,
       "TRIAGEM_ORDINARIA": 7,
       "MINUTAR_ATO": 29,
       "ASSINAR_ATO": 7,
@@ -1059,6 +1054,20 @@
   },
   "tarefas_criticas_processos": {
     "TRIAGEM_URGENTE": [
+      {
+        "processo": "0601832-26.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Petições não lidas; Realizar triagem urgentes; Verificar Decisão - Petição Avulsa",
+        "autuacao": "27/09/2026",
+        "desde": "27/09/2026",
+        "dias_tramitando": 2,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
       {
         "processo": "0601853-02.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
@@ -1745,9 +1754,9 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 24,
           "Gabinete Juiz Auxiliar 2": 20,
-          "Gabinete Juiz Auxiliar 3": 20
+          "Gabinete Juiz Auxiliar 3": 21
         },
-        "total": 64
+        "total": 65
       },
       {
         "codigo": "aguardando-julgamento-do-recurso-interno",
@@ -1930,16 +1939,6 @@
         "total": 2
       },
       {
-        "codigo": "preparar-comunicacao",
-        "tarefa": "Preparar comunicação",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 2
-      },
-      {
         "codigo": "processo-com-prazo-em-curso-registrar-recurso",
         "tarefa": "Processo com prazo em curso; Registrar recurso",
         "contagens": {
@@ -2080,8 +2079,8 @@
         "total": 1
       },
       {
-        "codigo": "elaborar-documentos-peticoes-nao-lidas-verificar-decisao-peticao-avulsa",
-        "tarefa": "Elaborar Documentos; Petições não lidas; Verificar Decisão - Petição Avulsa",
+        "codigo": "elaborar-documentos-magistrado-assinar-registrar-ciencia-por-telefone-ou-pessoalmente-visualizar-expediente-dje",
+        "tarefa": "Elaborar documentos - Magistrado Assinar; Registrar ciência por telefone ou pessoalmente; Visualizar expediente DJE",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -2090,12 +2089,22 @@
         "total": 1
       },
       {
-        "codigo": "elaborar-documentos-magistrado-assinar-registrar-ciencia-por-telefone-ou-pessoalmente-visualizar-expediente-dje",
-        "tarefa": "Elaborar documentos - Magistrado Assinar; Registrar ciência por telefone ou pessoalmente; Visualizar expediente DJE",
+        "codigo": "peticoes-nao-lidas-realizar-triagem-urgentes-verificar-decisao-peticao-avulsa",
+        "tarefa": "Petições não lidas; Realizar triagem urgentes; Verificar Decisão - Petição Avulsa",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
+        "codigo": "preparar-comunicacao",
+        "tarefa": "Preparar comunicação",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
       },
@@ -2749,6 +2758,20 @@
         "tarefa_atual": "Processo com prazo em curso",
         "autuacao": "25/09/2026",
         "desde": "27/09/2026",
+        "dias_tramitando": 3,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601826-19.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Processo com prazo em curso",
+        "autuacao": "25/09/2026",
+        "desde": "29/09/2026",
         "dias_tramitando": 3,
         "julgado": false,
         "data_julgamento": "",
@@ -5943,36 +5966,6 @@
         "responsavel_processo": ""
       }
     ],
-    "preparar-comunicacao": [
-      {
-        "processo": "0601826-19.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Preparar comunicação",
-        "autuacao": "25/09/2026",
-        "desde": "29/09/2026",
-        "dias_tramitando": 3,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601843-55.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "DR",
-        "tarefa_atual": "Preparar comunicação",
-        "autuacao": "28/09/2026",
-        "desde": "29/09/2026",
-        "dias_tramitando": 1,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "processo-com-prazo-em-curso-registrar-recurso": [
       {
         "processo": "0600102-77.2026.6.10.0000",
@@ -6211,12 +6204,28 @@
         "responsavel_processo": ""
       }
     ],
-    "elaborar-documentos-peticoes-nao-lidas-verificar-decisao-peticao-avulsa": [
+    "elaborar-documentos-magistrado-assinar-registrar-ciencia-por-telefone-ou-pessoalmente-visualizar-expediente-dje": [
+      {
+        "processo": "0601823-64.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "RepEsp",
+        "tarefa_atual": "Elaborar documentos - Magistrado Assinar; Registrar ciência por telefone ou pessoalmente; Visualizar expediente DJE",
+        "autuacao": "25/09/2026",
+        "desde": "25/09/2026",
+        "dias_tramitando": 3,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "peticoes-nao-lidas-realizar-triagem-urgentes-verificar-decisao-peticao-avulsa": [
       {
         "processo": "0601832-26.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Elaborar Documentos; Petições não lidas; Verificar Decisão - Petição Avulsa",
+        "tarefa_atual": "Petições não lidas; Realizar triagem urgentes; Verificar Decisão - Petição Avulsa",
         "autuacao": "27/09/2026",
         "desde": "27/09/2026",
         "dias_tramitando": 2,
@@ -6227,15 +6236,15 @@
         "responsavel_processo": ""
       }
     ],
-    "elaborar-documentos-magistrado-assinar-registrar-ciencia-por-telefone-ou-pessoalmente-visualizar-expediente-dje": [
+    "preparar-comunicacao": [
       {
-        "processo": "0601823-64.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "RepEsp",
-        "tarefa_atual": "Elaborar documentos - Magistrado Assinar; Registrar ciência por telefone ou pessoalmente; Visualizar expediente DJE",
-        "autuacao": "25/09/2026",
-        "desde": "25/09/2026",
-        "dias_tramitando": 3,
+        "processo": "0601843-55.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "DR",
+        "tarefa_atual": "Preparar comunicação",
+        "autuacao": "28/09/2026",
+        "desde": "29/09/2026",
+        "dias_tramitando": 1,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -10170,7 +10179,7 @@
         "processo": "0601826-19.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Preparar comunicação",
+        "tarefa_atual": "Processo com prazo em curso",
         "autuacao": "25/09/2026",
         "desde": "29/09/2026",
         "dias_tramitando": 3,
@@ -10184,7 +10193,7 @@
         "processo": "0601832-26.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Elaborar Documentos; Petições não lidas; Verificar Decisão - Petição Avulsa",
+        "tarefa_atual": "Petições não lidas; Realizar triagem urgentes; Verificar Decisão - Petição Avulsa",
         "autuacao": "27/09/2026",
         "desde": "27/09/2026",
         "dias_tramitando": 2,
@@ -13541,7 +13550,7 @@
       "processo": "0601826-19.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Preparar comunicação",
+      "tarefa_atual": "Processo com prazo em curso",
       "autuacao": "25/09/2026",
       "desde": "29/09/2026",
       "dias_tramitando": 3,
@@ -13639,7 +13648,7 @@
       "processo": "0601832-26.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Elaborar Documentos; Petições não lidas; Verificar Decisão - Petição Avulsa",
+      "tarefa_atual": "Petições não lidas; Realizar triagem urgentes; Verificar Decisão - Petição Avulsa",
       "autuacao": "27/09/2026",
       "desde": "27/09/2026",
       "dias_tramitando": 2,
@@ -20709,7 +20718,7 @@
       "processo": "0601826-19.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Preparar comunicação",
+      "tarefa_atual": "Processo com prazo em curso",
       "autuacao": "25/09/2026",
       "desde": "29/09/2026",
       "dias_tramitando": 3,
@@ -20807,7 +20816,7 @@
       "processo": "0601832-26.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Elaborar Documentos; Petições não lidas; Verificar Decisão - Petição Avulsa",
+      "tarefa_atual": "Petições não lidas; Realizar triagem urgentes; Verificar Decisão - Petição Avulsa",
       "autuacao": "27/09/2026",
       "desde": "27/09/2026",
       "dias_tramitando": 2,
@@ -26060,8 +26069,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "29/09/2026 18:23",
+  "publicado_em": "29/09/2026 18:24",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "5a38bf42cdabc7d49778594549d4bcac7c502c868e9b006e1eee6f544a7b1182"
+  "hash_publicacao": "6e7c668a044d6302371e63fd6596acc4ffa8746e8ff16020d636cae442a186c1"
 }
