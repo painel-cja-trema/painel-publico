@@ -169,11 +169,6 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Analisar resposta do expediente",
-      "quantidade": 3
-    },
-    {
-      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Registrar ciência por telefone ou pessoalmente",
       "quantidade": 3
     },
@@ -185,6 +180,11 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Aguarda Sessão de Julgamento; Elaborar extrato da ata; Elaborar extrato da ata; Liberados para julgamento pelo gabinete; Selecionar documentos para acórdão - Gabinete",
+      "quantidade": 2
+    },
+    {
+      "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Analisar resposta do expediente",
       "quantidade": 2
     },
     {
@@ -215,6 +215,11 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Processo com pedido de vista; Processo com prazo em curso",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
       "quantidade": 1
     },
     {
@@ -309,17 +314,17 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Assinar ato",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Elaborar Documento - SOF",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Elaborar documentos - Magistrado Assinar; Registrar ciência por telefone ou pessoalmente; Visualizar expediente DJE",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Lançar movimento",
       "quantidade": 1
     },
     {
@@ -377,7 +382,7 @@
       "processo": "0600102-77.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar resposta do expediente",
+      "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
       "dias_tramitando": 164,
       "segredo_justica": "NÃO"
     },
@@ -1066,8 +1071,8 @@
           "TRIAGEM_URGENTE": 0,
           "TRIAGEM_ORDINARIA": 0,
           "MINUTAR_ATO": 2,
-          "ASSINAR_ATO": 1,
-          "LANCAR_MOVIMENTACAO": 0
+          "ASSINAR_ATO": 0,
+          "LANCAR_MOVIMENTACAO": 1
         }
       }
     ],
@@ -1075,8 +1080,8 @@
       "TRIAGEM_URGENTE": 1,
       "TRIAGEM_ORDINARIA": 7,
       "MINUTAR_ATO": 32,
-      "ASSINAR_ATO": 10,
-      "LANCAR_MOVIMENTACAO": 0
+      "ASSINAR_ATO": 9,
+      "LANCAR_MOVIMENTACAO": 1
     },
     "total_acervo": 291
   },
@@ -1773,12 +1778,14 @@
         "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
-      },
+      }
+    ],
+    "LANCAR_MOVIMENTACAO": [
       {
         "processo": "0601849-62.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
+        "tarefa_atual": "Lançar movimento",
         "autuacao": "29/09/2026",
         "desde": "29/09/2026",
         "dias_tramitando": 0,
@@ -1788,8 +1795,7 @@
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
-    ],
-    "LANCAR_MOVIMENTACAO": []
+    ]
   },
   "entrada_comissao": {
     "codigo": "LIMINAR_CERTIFICACAO",
@@ -1872,9 +1878,9 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 4,
           "Gabinete Juiz Auxiliar 2": 5,
-          "Gabinete Juiz Auxiliar 3": 1
+          "Gabinete Juiz Auxiliar 3": 0
         },
-        "total": 10
+        "total": 9
       },
       {
         "codigo": "registrar-ciencia-por-telefone-ou-pessoalmente",
@@ -1947,16 +1953,6 @@
         "total": 3
       },
       {
-        "codigo": "analisar-resposta-do-expediente",
-        "tarefa": "Analisar resposta do expediente",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 3,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 3
-      },
-      {
         "codigo": "revisar-relatorio-voto-e-ementa",
         "tarefa": "Revisar Relatório, Voto e Ementa",
         "contagens": {
@@ -2003,6 +1999,16 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 2
+        },
+        "total": 2
+      },
+      {
+        "codigo": "analisar-resposta-do-expediente",
+        "tarefa": "Analisar resposta do expediente",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 2,
+          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 2
       },
@@ -2117,8 +2123,28 @@
         "total": 1
       },
       {
+        "codigo": "lancar-movimento",
+        "tarefa": "Lançar movimento",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
         "codigo": "processo-com-pedido-de-vista-processo-com-prazo-em-curso",
         "tarefa": "Processo com pedido de vista; Processo com prazo em curso",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "processo-com-prazo-em-curso-registrar-recurso",
+        "tarefa": "Processo com prazo em curso; Registrar recurso",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -5194,20 +5220,6 @@
         "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
-      },
-      {
-        "processo": "0601849-62.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "29/09/2026",
-        "desde": "29/09/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
       }
     ],
     "registrar-ciencia-por-telefone-ou-pessoalmente": [
@@ -5826,50 +5838,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-resposta-do-expediente": [
-      {
-        "processo": "0600102-77.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar resposta do expediente",
-        "autuacao": "17/04/2026",
-        "desde": "29/09/2026",
-        "dias_tramitando": 164,
-        "julgado": true,
-        "data_julgamento": "28/09/2026",
-        "teor": "Julgado procedente o pedido em 28/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601709-28.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar resposta do expediente",
-        "autuacao": "14/09/2026",
-        "desde": "29/09/2026",
-        "dias_tramitando": 15,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601835-78.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar resposta do expediente",
-        "autuacao": "27/09/2026",
-        "desde": "29/09/2026",
-        "dias_tramitando": 1,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "revisar-relatorio-voto-e-ementa": [
       {
         "processo": "0600181-56.2026.6.10.0000",
@@ -6027,6 +5995,36 @@
         "autuacao": "01/09/2026",
         "desde": "21/09/2026",
         "dias_tramitando": 27,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-resposta-do-expediente": [
+      {
+        "processo": "0601709-28.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar resposta do expediente",
+        "autuacao": "14/09/2026",
+        "desde": "29/09/2026",
+        "dias_tramitando": 15,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601835-78.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar resposta do expediente",
+        "autuacao": "27/09/2026",
+        "desde": "29/09/2026",
+        "dias_tramitando": 1,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -6238,6 +6236,22 @@
         "responsavel_processo": ""
       }
     ],
+    "lancar-movimento": [
+      {
+        "processo": "0601849-62.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Lançar movimento",
+        "autuacao": "29/09/2026",
+        "desde": "29/09/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "processo-com-pedido-de-vista-processo-com-prazo-em-curso": [
       {
         "processo": "0600147-81.2026.6.10.0000",
@@ -6250,6 +6264,22 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "processo-com-prazo-em-curso-registrar-recurso": [
+      {
+        "processo": "0600102-77.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
+        "autuacao": "17/04/2026",
+        "desde": "17/04/2026",
+        "dias_tramitando": 164,
+        "julgado": true,
+        "data_julgamento": "28/09/2026",
+        "teor": "Julgado procedente o pedido em 28/09/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -7501,9 +7531,9 @@
         "processo": "0600102-77.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Analisar resposta do expediente",
+        "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
         "autuacao": "17/04/2026",
-        "desde": "29/09/2026",
+        "desde": "17/04/2026",
         "dias_tramitando": 164,
         "julgado": true,
         "data_julgamento": "28/09/2026",
@@ -10373,7 +10403,7 @@
         "processo": "0601849-62.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
+        "tarefa_atual": "Lançar movimento",
         "autuacao": "29/09/2026",
         "desde": "29/09/2026",
         "dias_tramitando": 0,
@@ -10734,9 +10764,9 @@
       "processo": "0600102-77.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar resposta do expediente",
+      "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
       "autuacao": "17/04/2026",
-      "desde": "29/09/2026",
+      "desde": "17/04/2026",
       "dias_tramitando": 164,
       "julgado": true,
       "data_julgamento": "28/09/2026",
@@ -13842,7 +13872,7 @@
       "processo": "0601849-62.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "autuacao": "29/09/2026",
       "desde": "29/09/2026",
       "dias_tramitando": 0,
@@ -17756,9 +17786,9 @@
       "processo": "0600102-77.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar resposta do expediente",
+      "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
       "autuacao": "17/04/2026",
-      "desde": "29/09/2026",
+      "desde": "17/04/2026",
       "dias_tramitando": 164,
       "julgado": true,
       "data_julgamento": "28/09/2026",
@@ -20864,7 +20894,7 @@
       "processo": "0601849-62.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "autuacao": "29/09/2026",
       "desde": "29/09/2026",
       "dias_tramitando": 0,
@@ -24253,9 +24283,9 @@
       "processo": "0600102-77.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar resposta do expediente",
+      "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
       "autuacao": "17/04/2026",
-      "desde": "29/09/2026",
+      "desde": "17/04/2026",
       "dias_tramitando": 164,
       "julgado": true,
       "data_julgamento": "28/09/2026",
@@ -25791,8 +25821,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "29/09/2026 15:39",
+  "publicado_em": "29/09/2026 15:41",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "cc6b05af037218424bf9df8dd15c643d018c43f369bd59fd849bcc378033f698"
+  "hash_publicacao": "920ab9dd2f3f9dce7eba80a8e18b2d004b81d83cd2d10e286009130469996075"
 }
