@@ -259,6 +259,11 @@
     },
     {
       "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar petição avulsa de autuação; Analisar resposta do expediente; Petições não lidas",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Analisar Petição Avulsa; Minutar ato; Petições não lidas",
       "quantidade": 1
     },
@@ -280,11 +285,6 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Analisar determinação; Petições não lidas",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Analisar petição avulsa de autuação; Processo com prazo em curso",
       "quantidade": 1
     },
     {
@@ -436,11 +436,11 @@
   "por_faixa": [
     {
       "faixa": "Até 30 dias",
-      "quantidade": 212
+      "quantidade": 211
     },
     {
       "faixa": "31 a 60 dias",
-      "quantidade": 52
+      "quantidade": 53
     },
     {
       "faixa": "61 a 90 dias",
@@ -2011,6 +2011,16 @@
         "total": 1
       },
       {
+        "codigo": "analisar-peticao-avulsa-analisar-peticao-avulsa-de-autuacao-analisar-resposta-do-expediente-peticoes-nao-lidas",
+        "tarefa": "Analisar Petição Avulsa; Analisar petição avulsa de autuação; Analisar resposta do expediente; Petições não lidas",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
         "codigo": "analisar-peticao-avulsa-analisar-peticao-avulsa-de-autuacao-elaborar-documentos-magistrado-assinar-registrar-ciencia-por-telefone-ou-pessoalmente-visualizar-expediente-dje",
         "tarefa": "Analisar Petição Avulsa; Analisar petição avulsa de autuação; Elaborar documentos - Magistrado Assinar; Registrar ciência por telefone ou pessoalmente; Visualizar expediente DJE",
         "contagens": {
@@ -2073,16 +2083,6 @@
       {
         "codigo": "analisar-determinacao-peticoes-nao-lidas",
         "tarefa": "Analisar determinação; Petições não lidas",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "analisar-peticao-avulsa-de-autuacao-processo-com-prazo-em-curso",
-        "tarefa": "Analisar petição avulsa de autuação; Processo com prazo em curso",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -3982,7 +3982,7 @@
         "tarefa_atual": "Analisar determinação",
         "autuacao": "29/08/2026",
         "desde": "28/09/2026",
-        "dias_tramitando": 30,
+        "dias_tramitando": 31,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -6124,6 +6124,22 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-peticao-avulsa-analisar-peticao-avulsa-de-autuacao-analisar-resposta-do-expediente-peticoes-nao-lidas": [
+      {
+        "processo": "0601709-28.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar Petição Avulsa; Analisar petição avulsa de autuação; Analisar resposta do expediente; Petições não lidas",
+        "autuacao": "14/09/2026",
+        "desde": "14/09/2026",
+        "dias_tramitando": 15,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "analisar-peticao-avulsa-analisar-peticao-avulsa-de-autuacao-elaborar-documentos-magistrado-assinar-registrar-ciencia-por-telefone-ou-pessoalmente-visualizar-expediente-dje": [
       {
         "processo": "0601823-64.2026.6.10.0000",
@@ -6232,22 +6248,6 @@
         "julgado": true,
         "data_julgamento": "24/09/2026",
         "teor": "Julgado procedente o pedido em 24/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "analisar-peticao-avulsa-de-autuacao-processo-com-prazo-em-curso": [
-      {
-        "processo": "0601709-28.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar petição avulsa de autuação; Processo com prazo em curso",
-        "autuacao": "14/09/2026",
-        "desde": "14/09/2026",
-        "dias_tramitando": 15,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -6654,7 +6654,7 @@
         "tarefa_atual": "Analisar determinação",
         "autuacao": "29/08/2026",
         "desde": "28/09/2026",
-        "dias_tramitando": 30,
+        "dias_tramitando": 31,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -8529,7 +8529,7 @@
         "processo": "0601709-28.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Analisar petição avulsa de autuação; Processo com prazo em curso",
+        "tarefa_atual": "Analisar Petição Avulsa; Analisar petição avulsa de autuação; Analisar resposta do expediente; Petições não lidas",
         "autuacao": "14/09/2026",
         "desde": "14/09/2026",
         "dias_tramitando": 15,
@@ -11891,7 +11891,7 @@
       "tarefa_atual": "Analisar determinação",
       "autuacao": "29/08/2026",
       "desde": "28/09/2026",
-      "dias_tramitando": 30,
+      "dias_tramitando": 31,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -12616,7 +12616,7 @@
       "processo": "0601709-28.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar petição avulsa de autuação; Processo com prazo em curso",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar petição avulsa de autuação; Analisar resposta do expediente; Petições não lidas",
       "autuacao": "14/09/2026",
       "desde": "14/09/2026",
       "dias_tramitando": 15,
@@ -18913,7 +18913,7 @@
       "tarefa_atual": "Analisar determinação",
       "autuacao": "29/08/2026",
       "desde": "28/09/2026",
-      "dias_tramitando": 30,
+      "dias_tramitando": 31,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -19638,7 +19638,7 @@
       "processo": "0601709-28.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar petição avulsa de autuação; Processo com prazo em curso",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar petição avulsa de autuação; Analisar resposta do expediente; Petições não lidas",
       "autuacao": "14/09/2026",
       "desde": "14/09/2026",
       "dias_tramitando": 15,
@@ -25951,8 +25951,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "29/09/2026 11:15",
+  "publicado_em": "29/09/2026 11:17",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "a94b7bf8c296f648447ac9788f9e852a0ecff35fb918287cb87917538040f87e"
+  "hash_publicacao": "7efdf78969e6ae7ab6a9e46440ed92686a199b161affe412fba41a63e1a5e3dc"
 }
