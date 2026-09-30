@@ -124,17 +124,17 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Registrar ciência intimação pessoal",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Analisar determinação; Petições não lidas",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Petições não lidas; Registrar ciência intimação pessoal",
       "quantidade": 1
     },
     {
@@ -1953,16 +1953,6 @@
         "total": 1
       },
       {
-        "codigo": "analisar-peticao-avulsa-peticoes-nao-lidas-registrar-ciencia-intimacao-pessoal",
-        "tarefa": "Analisar Petição Avulsa; Petições não lidas; Registrar ciência intimação pessoal",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
         "codigo": "analisar-peticao-avulsa-processo-com-prazo-em-curso",
         "tarefa": "Analisar Petição Avulsa; Processo com prazo em curso",
         "contagens": {
@@ -2035,6 +2025,16 @@
       {
         "codigo": "peticoes-nao-lidas-processo-com-prazo-em-curso",
         "tarefa": "Petições não lidas; Processo com prazo em curso",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "peticoes-nao-lidas-registrar-ciencia-intimacao-pessoal",
+        "tarefa": "Petições não lidas; Registrar ciência intimação pessoal",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -3832,6 +3832,20 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0601773-38.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Processo com prazo em curso",
+        "autuacao": "28/09/2026",
+        "desde": "29/09/2026",
+        "dias_tramitando": 2,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0601785-52.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "REC no(a) Rp",
@@ -3893,20 +3907,6 @@
         "classe": "ED no(a) REC no(a) Rp",
         "tarefa_atual": "Processo com prazo em curso",
         "autuacao": "29/09/2026",
-        "desde": "29/09/2026",
-        "dias_tramitando": 1,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601773-38.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Processo com prazo em curso",
-        "autuacao": "28/09/2026",
         "desde": "29/09/2026",
         "dias_tramitando": 1,
         "julgado": false,
@@ -6090,22 +6090,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-peticao-avulsa-peticoes-nao-lidas-registrar-ciencia-intimacao-pessoal": [
-      {
-        "processo": "0601766-46.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "RepEsp",
-        "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Registrar ciência intimação pessoal",
-        "autuacao": "19/09/2026",
-        "desde": "19/09/2026",
-        "dias_tramitando": 10,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "analisar-peticao-avulsa-processo-com-prazo-em-curso": [
       {
         "processo": "0601709-28.2026.6.10.0000",
@@ -6230,6 +6214,22 @@
         "julgado": true,
         "data_julgamento": "25/09/2026",
         "teor": "Julgado improcedente o pedido em 25/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "peticoes-nao-lidas-registrar-ciencia-intimacao-pessoal": [
+      {
+        "processo": "0601766-46.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "RepEsp",
+        "tarefa_atual": "Petições não lidas; Registrar ciência intimação pessoal",
+        "autuacao": "19/09/2026",
+        "desde": "19/09/2026",
+        "dias_tramitando": 10,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -6877,7 +6877,7 @@
         "processo": "0601766-46.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "RepEsp",
-        "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Registrar ciência intimação pessoal",
+        "tarefa_atual": "Petições não lidas; Registrar ciência intimação pessoal",
         "autuacao": "19/09/2026",
         "desde": "19/09/2026",
         "dias_tramitando": 10,
@@ -7252,6 +7252,20 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0601773-38.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Processo com prazo em curso",
+        "autuacao": "28/09/2026",
+        "desde": "29/09/2026",
+        "dias_tramitando": 2,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0601785-52.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "REC no(a) Rp",
@@ -7299,20 +7313,6 @@
         "classe": "ED no(a) REC no(a) Rp",
         "tarefa_atual": "Processo com prazo em curso",
         "autuacao": "29/09/2026",
-        "desde": "29/09/2026",
-        "dias_tramitando": 1,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601773-38.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Processo com prazo em curso",
-        "autuacao": "28/09/2026",
         "desde": "29/09/2026",
         "dias_tramitando": 1,
         "julgado": false,
@@ -12814,7 +12814,7 @@
       "processo": "0601766-46.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "RepEsp",
-      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Registrar ciência intimação pessoal",
+      "tarefa_atual": "Petições não lidas; Registrar ciência intimação pessoal",
       "autuacao": "19/09/2026",
       "desde": "19/09/2026",
       "dias_tramitando": 10,
@@ -19996,7 +19996,7 @@
       "processo": "0601766-46.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "RepEsp",
-      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Registrar ciência intimação pessoal",
+      "tarefa_atual": "Petições não lidas; Registrar ciência intimação pessoal",
       "autuacao": "19/09/2026",
       "desde": "19/09/2026",
       "dias_tramitando": 10,
@@ -23185,6 +23185,20 @@
       "responsavel_processo": ""
     },
     {
+      "processo": "0601773-38.2026.6.10.0000",
+      "gabinete": "Gab. JA 1",
+      "classe": "REC no(a) Rp",
+      "tarefa_atual": "Processo com prazo em curso",
+      "autuacao": "28/09/2026",
+      "desde": "29/09/2026",
+      "dias_tramitando": 2,
+      "julgado": false,
+      "data_julgamento": "",
+      "teor": "",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
+    },
+    {
       "processo": "0601775-08.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "REC no(a) Rp",
@@ -23261,20 +23275,6 @@
       "tarefa_atual": "Analisar Processos",
       "autuacao": "28/09/2026",
       "desde": "30/09/2026",
-      "dias_tramitando": 1,
-      "julgado": false,
-      "data_julgamento": "",
-      "teor": "",
-      "segredo_justica": "NÃO",
-      "responsavel_processo": ""
-    },
-    {
-      "processo": "0601773-38.2026.6.10.0000",
-      "gabinete": "Gab. JA 1",
-      "classe": "REC no(a) Rp",
-      "tarefa_atual": "Processo com prazo em curso",
-      "autuacao": "28/09/2026",
-      "desde": "29/09/2026",
       "dias_tramitando": 1,
       "julgado": false,
       "data_julgamento": "",
@@ -26207,8 +26207,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "30/09/2026 09:37",
+  "publicado_em": "30/09/2026 09:38",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "cb0b14a7e8da06afce0caca17126dcd8ace31c594f72a89158cbdd19911fd679"
+  "hash_publicacao": "e67fd9336a8355d72ce6401fc435e528e6f2d485d7667041a16b81f7e241ea0b"
 }
