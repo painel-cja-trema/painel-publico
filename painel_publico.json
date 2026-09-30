@@ -13,7 +13,7 @@
       "media_dias": 23.9,
       "maior_tempo": 175,
       "urgentes": 0,
-      "minutar": 0,
+      "minutar": 1,
       "julgados": 34,
       "percentual_julgados": 40.0,
       "arquivados": 47,
@@ -154,7 +154,7 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
+      "tarefa_atual": "Minutar ato; Petições não lidas",
       "quantidade": 1
     },
     {
@@ -608,7 +608,13 @@
       "segredo_justica": "NÃO"
     }
   ],
-  "minutar_cja1": [],
+  "minutar_cja1": [
+    {
+      "processo": "0600364-27.2026.6.10.0000",
+      "classe": "Rp",
+      "dias_tramitando": 57
+    }
+  ],
   "minutar_processos": [
     {
       "processo": "0600089-78.2026.6.10.0000",
@@ -621,6 +627,20 @@
       "julgado": true,
       "data_julgamento": "16/07/2026",
       "teor": "Julgado procedente o pedido em 16/07/2026",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
+    },
+    {
+      "processo": "0600364-27.2026.6.10.0000",
+      "gabinete": "Gab. JA 1",
+      "classe": "Rp",
+      "tarefa_atual": "Minutar ato; Petições não lidas",
+      "autuacao": "04/08/2026",
+      "desde": "04/08/2026",
+      "dias_tramitando": 57,
+      "julgado": false,
+      "data_julgamento": "",
+      "teor": "",
       "segredo_justica": "NÃO",
       "responsavel_processo": ""
     },
@@ -1043,8 +1063,8 @@
         "total_acervo": 85,
         "contagens": {
           "TRIAGEM_URGENTE": 0,
-          "TRIAGEM_ORDINARIA": 1,
-          "MINUTAR_ATO": 0,
+          "TRIAGEM_ORDINARIA": 0,
+          "MINUTAR_ATO": 1,
           "ASSINAR_ATO": 1,
           "LANCAR_MOVIMENTACAO": 0
         }
@@ -1076,8 +1096,8 @@
     ],
     "totais": {
       "TRIAGEM_URGENTE": 0,
-      "TRIAGEM_ORDINARIA": 12,
-      "MINUTAR_ATO": 28,
+      "TRIAGEM_ORDINARIA": 11,
+      "MINUTAR_ATO": 29,
       "ASSINAR_ATO": 3,
       "LANCAR_MOVIMENTACAO": 0
     },
@@ -1086,20 +1106,6 @@
   "tarefas_criticas_processos": {
     "TRIAGEM_URGENTE": [],
     "TRIAGEM_ORDINARIA": [
-      {
-        "processo": "0600364-27.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
-        "autuacao": "04/08/2026",
-        "desde": "04/08/2026",
-        "dias_tramitando": 57,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
       {
         "processo": "0600964-48.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
@@ -1267,6 +1273,20 @@
         "julgado": true,
         "data_julgamento": "16/07/2026",
         "teor": "Julgado procedente o pedido em 16/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600364-27.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Minutar ato; Petições não lidas",
+        "autuacao": "04/08/2026",
+        "desde": "04/08/2026",
+        "dias_tramitando": 57,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -1961,16 +1981,6 @@
         "total": 2
       },
       {
-        "codigo": "peticoes-nao-lidas-realizar-triagem-ordinarios",
-        "tarefa": "Petições não lidas; Realizar triagem ordinários",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 2
-      },
-      {
         "codigo": "verificar-e-certificar-dados-do-processo",
         "tarefa": "Verificar e Certificar dados do processo",
         "contagens": {
@@ -2157,6 +2167,26 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
+        "codigo": "minutar-ato-peticoes-nao-lidas",
+        "tarefa": "Minutar ato; Petições não lidas",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "peticoes-nao-lidas-realizar-triagem-ordinarios",
+        "tarefa": "Petições não lidas; Realizar triagem ordinários",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
       },
@@ -6004,36 +6034,6 @@
         "responsavel_processo": ""
       }
     ],
-    "peticoes-nao-lidas-realizar-triagem-ordinarios": [
-      {
-        "processo": "0600364-27.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
-        "autuacao": "04/08/2026",
-        "desde": "04/08/2026",
-        "dias_tramitando": 57,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601833-11.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "NIP",
-        "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
-        "autuacao": "27/09/2026",
-        "desde": "27/09/2026",
-        "dias_tramitando": 2,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "verificar-e-certificar-dados-do-processo": [
       {
         "processo": "0601865-16.2026.6.10.0000",
@@ -6352,6 +6352,38 @@
         "responsavel_processo": ""
       }
     ],
+    "minutar-ato-peticoes-nao-lidas": [
+      {
+        "processo": "0600364-27.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Minutar ato; Petições não lidas",
+        "autuacao": "04/08/2026",
+        "desde": "04/08/2026",
+        "dias_tramitando": 57,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "peticoes-nao-lidas-realizar-triagem-ordinarios": [
+      {
+        "processo": "0601833-11.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "NIP",
+        "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
+        "autuacao": "27/09/2026",
+        "desde": "27/09/2026",
+        "dias_tramitando": 2,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "peticoes-nao-lidas-registrar-ciencia-intimacao-pessoal": [
       {
         "processo": "0601766-46.2026.6.10.0000",
@@ -6567,7 +6599,7 @@
         "processo": "0600364-27.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
+        "tarefa_atual": "Minutar ato; Petições não lidas",
         "autuacao": "04/08/2026",
         "desde": "04/08/2026",
         "dias_tramitando": 57,
@@ -11314,7 +11346,7 @@
       "processo": "0600364-27.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
+      "tarefa_atual": "Minutar ato; Petições não lidas",
       "autuacao": "04/08/2026",
       "desde": "04/08/2026",
       "dias_tramitando": 57,
@@ -18524,7 +18556,7 @@
       "processo": "0600364-27.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
+      "tarefa_atual": "Minutar ato; Petições não lidas",
       "autuacao": "04/08/2026",
       "desde": "04/08/2026",
       "dias_tramitando": 57,
@@ -26401,8 +26433,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "30/09/2026 13:27",
+  "publicado_em": "30/09/2026 13:28",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "b20829043bd099b54b27797b2734923d42efd8f86068bd6e82c18fd8ae5fe163"
+  "hash_publicacao": "0d5ca47578f7ddbfd3efff9ab3bc400e0dd4400b2fea76c5fe82eca99955beca"
 }
