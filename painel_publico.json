@@ -60,7 +60,7 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Analisar determinação",
-      "quantidade": 21
+      "quantidade": 20
     },
     {
       "gabinete": "Gab. JA 1",
@@ -130,6 +130,11 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Atualizar dados do processo; Petições não lidas",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Informar data de trânsito em julgado",
       "quantidade": 1
     },
     {
@@ -269,7 +274,7 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Fechar expediente manualmente; Petições não lidas",
+      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
       "quantidade": 1
     },
     {
@@ -1679,11 +1684,11 @@
         "codigo": "analisar-determinacao",
         "tarefa": "Analisar determinação",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 21,
+          "Gabinete Juiz Auxiliar 1": 20,
           "Gabinete Juiz Auxiliar 2": 14,
           "Gabinete Juiz Auxiliar 3": 11
         },
-        "total": 46
+        "total": 45
       },
       {
         "codigo": "minutar-ato",
@@ -1876,6 +1881,16 @@
         "total": 2
       },
       {
+        "codigo": "peticoes-nao-lidas-processo-com-prazo-em-curso",
+        "tarefa": "Petições não lidas; Processo com prazo em curso",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 2
+      },
+      {
         "codigo": "aguarda-julgamento-incluido-em-pauta-aguarda-julgamento-incluido-em-pauta-vista-liberados-para-julgamento-pelo-gabinete-processo-com-pedido-de-vista-selecionar-documentos-para-acordao-gabinete",
         "tarefa": "Aguarda Julgamento - incluído em pauta; Aguarda Julgamento - incluído em pauta - vista; Liberados para julgamento pelo gabinete; Processo com pedido de vista; Selecionar documentos para acórdão - Gabinete",
         "contagens": {
@@ -2026,18 +2041,8 @@
         "total": 1
       },
       {
-        "codigo": "fechar-expediente-manualmente-peticoes-nao-lidas",
-        "tarefa": "Fechar expediente manualmente; Petições não lidas",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "peticoes-nao-lidas-processo-com-prazo-em-curso",
-        "tarefa": "Petições não lidas; Processo com prazo em curso",
+        "codigo": "informar-data-de-transito-em-julgado",
+        "tarefa": "Informar data de trânsito em julgado",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -3805,20 +3810,6 @@
         "julgado": true,
         "data_julgamento": "15/09/2026",
         "teor": "Julgado procedente em parte do pedido em 15/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601144-64.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "09/09/2026",
-        "desde": "30/09/2026",
-        "dias_tramitando": 20,
-        "julgado": true,
-        "data_julgamento": "27/09/2026",
-        "teor": "Julgado improcedente o pedido em 27/09/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -5961,6 +5952,36 @@
         "responsavel_processo": ""
       }
     ],
+    "peticoes-nao-lidas-processo-com-prazo-em-curso": [
+      {
+        "processo": "0601026-88.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "RepEsp",
+        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+        "autuacao": "28/08/2026",
+        "desde": "28/08/2026",
+        "dias_tramitando": 32,
+        "julgado": true,
+        "data_julgamento": "25/09/2026",
+        "teor": "Julgado improcedente o pedido em 25/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601235-57.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+        "autuacao": "11/09/2026",
+        "desde": "11/09/2026",
+        "dias_tramitando": 18,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "aguarda-julgamento-incluido-em-pauta-aguarda-julgamento-incluido-em-pauta-vista-liberados-para-julgamento-pelo-gabinete-processo-com-pedido-de-vista-selecionar-documentos-para-acordao-gabinete": [
       {
         "processo": "0600905-60.2026.6.10.0000",
@@ -6201,34 +6222,18 @@
         "responsavel_processo": ""
       }
     ],
-    "fechar-expediente-manualmente-peticoes-nao-lidas": [
+    "informar-data-de-transito-em-julgado": [
       {
-        "processo": "0601235-57.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Fechar expediente manualmente; Petições não lidas",
-        "autuacao": "11/09/2026",
-        "desde": "11/09/2026",
-        "dias_tramitando": 18,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "peticoes-nao-lidas-processo-com-prazo-em-curso": [
-      {
-        "processo": "0601026-88.2026.6.10.0000",
+        "processo": "0601144-64.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
-        "classe": "RepEsp",
-        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
-        "autuacao": "28/08/2026",
-        "desde": "28/08/2026",
-        "dias_tramitando": 32,
+        "classe": "Rp",
+        "tarefa_atual": "Informar data de trânsito em julgado",
+        "autuacao": "09/09/2026",
+        "desde": "30/09/2026",
+        "dias_tramitando": 20,
         "julgado": true,
-        "data_julgamento": "25/09/2026",
-        "teor": "Julgado improcedente o pedido em 25/09/2026",
+        "data_julgamento": "27/09/2026",
+        "teor": "Julgado improcedente o pedido em 27/09/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -6742,7 +6747,7 @@
         "processo": "0601144-64.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
+        "tarefa_atual": "Informar data de trânsito em julgado",
         "autuacao": "09/09/2026",
         "desde": "30/09/2026",
         "dias_tramitando": 20,
@@ -8410,7 +8415,7 @@
         "processo": "0601235-57.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Fechar expediente manualmente; Petições não lidas",
+        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
         "autuacao": "11/09/2026",
         "desde": "11/09/2026",
         "dias_tramitando": 18,
@@ -12357,7 +12362,7 @@
       "processo": "0601144-64.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Informar data de trânsito em julgado",
       "autuacao": "09/09/2026",
       "desde": "30/09/2026",
       "dias_tramitando": 20,
@@ -12455,7 +12460,7 @@
       "processo": "0601235-57.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Fechar expediente manualmente; Petições não lidas",
+      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
       "autuacao": "11/09/2026",
       "desde": "11/09/2026",
       "dias_tramitando": 18,
@@ -19539,7 +19544,7 @@
       "processo": "0601144-64.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Informar data de trânsito em julgado",
       "autuacao": "09/09/2026",
       "desde": "30/09/2026",
       "dias_tramitando": 20,
@@ -19637,7 +19642,7 @@
       "processo": "0601235-57.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Fechar expediente manualmente; Petições não lidas",
+      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
       "autuacao": "11/09/2026",
       "desde": "11/09/2026",
       "dias_tramitando": 18,
@@ -25794,7 +25799,7 @@
       "processo": "0601144-64.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Informar data de trânsito em julgado",
       "autuacao": "09/09/2026",
       "desde": "30/09/2026",
       "dias_tramitando": 20,
@@ -26282,8 +26287,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "30/09/2026 10:16",
+  "publicado_em": "30/09/2026 10:18",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "57f5d658cadfcc066c975cd75749d6ae73295c10a55085c0e98be27a42d59cbd"
+  "hash_publicacao": "74bb43e7131e99dea79de7f5a517689a728ef0fa9036f655315836dbb0e70b65"
 }
