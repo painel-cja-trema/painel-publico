@@ -46,7 +46,7 @@
       "quantidade": 64,
       "media_dias": 18.8,
       "maior_tempo": 113,
-      "urgentes": 4,
+      "urgentes": 3,
       "minutar": 2,
       "julgados": 36,
       "percentual_julgados": 40.9,
@@ -159,7 +159,7 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Redistribuir processo",
+      "tarefa_atual": "Verificar Pendências",
       "quantidade": 1
     },
     {
@@ -255,7 +255,7 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Processo com prazo em curso",
-      "quantidade": 20
+      "quantidade": 21
     },
     {
       "gabinete": "Gab. JA 3",
@@ -284,12 +284,12 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Analisar determinação - Urgentes",
-      "quantidade": 3
+      "tarefa_atual": "Aguardando providências",
+      "quantidade": 2
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Aguardando providências",
+      "tarefa_atual": "Analisar determinação - Urgentes",
       "quantidade": 2
     },
     {
@@ -1766,9 +1766,9 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 20,
           "Gabinete Juiz Auxiliar 2": 19,
-          "Gabinete Juiz Auxiliar 3": 20
+          "Gabinete Juiz Auxiliar 3": 21
         },
-        "total": 59
+        "total": 60
       },
       {
         "codigo": "aguardando-julgamento-do-recurso-interno",
@@ -1911,16 +1911,6 @@
         "total": 4
       },
       {
-        "codigo": "analisar-determinacao-urgentes",
-        "tarefa": "Analisar determinação - Urgentes",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 3
-        },
-        "total": 3
-      },
-      {
         "codigo": "aguarda-julgamento-incluido-em-pauta-elaborar-extrato-da-ata-elaborar-extrato-da-ata-processo-incluido-em-pauta-selecionar-documentos-para-acordao-gabinete",
         "tarefa": "Aguarda Julgamento - incluído em pauta; Elaborar extrato da ata; Elaborar extrato da ata; Processo incluído em pauta; Selecionar documentos para acórdão - Gabinete",
         "contagens": {
@@ -1943,6 +1933,16 @@
       {
         "codigo": "aguardando-providencias",
         "tarefa": "Aguardando providências",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 2
+        },
+        "total": 2
+      },
+      {
+        "codigo": "analisar-determinacao-urgentes",
+        "tarefa": "Analisar determinação - Urgentes",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -2151,8 +2151,8 @@
         "total": 1
       },
       {
-        "codigo": "redistribuir-processo",
-        "tarefa": "Redistribuir processo",
+        "codigo": "verificar-pendencias",
+        "tarefa": "Verificar Pendências",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -2355,6 +2355,20 @@
         "autuacao": "01/09/2026",
         "desde": "29/09/2026",
         "dias_tramitando": 29,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601152-41.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Processo com prazo em curso",
+        "autuacao": "10/09/2026",
+        "desde": "30/09/2026",
+        "dias_tramitando": 20,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -4558,7 +4572,7 @@
         "tarefa_atual": "Analisar determinação",
         "autuacao": "07/09/2026",
         "desde": "28/09/2026",
-        "dias_tramitando": 22,
+        "dias_tramitando": 23,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -5862,50 +5876,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-determinacao-urgentes": [
-      {
-        "processo": "0601077-02.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "RepEsp",
-        "tarefa_atual": "Analisar determinação - Urgentes",
-        "autuacao": "02/09/2026",
-        "desde": "28/09/2026",
-        "dias_tramitando": 27,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601152-41.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação - Urgentes",
-        "autuacao": "10/09/2026",
-        "desde": "30/09/2026",
-        "dias_tramitando": 20,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601820-12.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação - Urgentes",
-        "autuacao": "25/09/2026",
-        "desde": "26/09/2026",
-        "dias_tramitando": 5,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "aguarda-julgamento-incluido-em-pauta-elaborar-extrato-da-ata-elaborar-extrato-da-ata-processo-incluido-em-pauta-selecionar-documentos-para-acordao-gabinete": [
       {
         "processo": "0600987-91.2026.6.10.0000",
@@ -5989,6 +5959,36 @@
         "autuacao": "01/09/2026",
         "desde": "21/09/2026",
         "dias_tramitando": 28,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-determinacao-urgentes": [
+      {
+        "processo": "0601077-02.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "RepEsp",
+        "tarefa_atual": "Analisar determinação - Urgentes",
+        "autuacao": "02/09/2026",
+        "desde": "28/09/2026",
+        "dias_tramitando": 27,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601820-12.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação - Urgentes",
+        "autuacao": "25/09/2026",
+        "desde": "26/09/2026",
+        "dias_tramitando": 5,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -6358,12 +6358,12 @@
         "responsavel_processo": ""
       }
     ],
-    "redistribuir-processo": [
+    "verificar-pendencias": [
       {
         "processo": "0601863-46.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Redistribuir processo",
+        "tarefa_atual": "Verificar Pendências",
         "autuacao": "30/09/2026",
         "desde": "30/09/2026",
         "dias_tramitando": 0,
@@ -7557,7 +7557,7 @@
         "processo": "0601863-46.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Redistribuir processo",
+        "tarefa_atual": "Verificar Pendências",
         "autuacao": "30/09/2026",
         "desde": "30/09/2026",
         "dias_tramitando": 0,
@@ -9692,7 +9692,7 @@
         "tarefa_atual": "Analisar determinação",
         "autuacao": "07/09/2026",
         "desde": "28/09/2026",
-        "dias_tramitando": 22,
+        "dias_tramitando": 23,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -9717,7 +9717,7 @@
         "processo": "0601152-41.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Analisar determinação - Urgentes",
+        "tarefa_atual": "Processo com prazo em curso",
         "autuacao": "10/09/2026",
         "desde": "30/09/2026",
         "dias_tramitando": 20,
@@ -12321,7 +12321,7 @@
       "tarefa_atual": "Analisar determinação",
       "autuacao": "07/09/2026",
       "desde": "28/09/2026",
-      "dias_tramitando": 22,
+      "dias_tramitando": 23,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -12416,7 +12416,7 @@
       "processo": "0601152-41.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação - Urgentes",
+      "tarefa_atual": "Processo com prazo em curso",
       "autuacao": "10/09/2026",
       "desde": "30/09/2026",
       "dias_tramitando": 20,
@@ -14054,7 +14054,7 @@
       "processo": "0601863-46.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Redistribuir processo",
+      "tarefa_atual": "Verificar Pendências",
       "autuacao": "30/09/2026",
       "desde": "30/09/2026",
       "dias_tramitando": 0,
@@ -19531,7 +19531,7 @@
       "tarefa_atual": "Analisar determinação",
       "autuacao": "07/09/2026",
       "desde": "28/09/2026",
-      "dias_tramitando": 22,
+      "dias_tramitando": 23,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -19626,7 +19626,7 @@
       "processo": "0601152-41.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação - Urgentes",
+      "tarefa_atual": "Processo com prazo em curso",
       "autuacao": "10/09/2026",
       "desde": "30/09/2026",
       "dias_tramitando": 20,
@@ -21264,7 +21264,7 @@
       "processo": "0601863-46.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Redistribuir processo",
+      "tarefa_atual": "Verificar Pendências",
       "autuacao": "30/09/2026",
       "desde": "30/09/2026",
       "dias_tramitando": 0,
@@ -26327,8 +26327,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "30/09/2026 15:16",
+  "publicado_em": "30/09/2026 15:17",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "4dd6a5582948950b394b47edbb9bdc9c02a88d32342626bc11f9da61e5f931b9"
+  "hash_publicacao": "fcecf122a19618e55b25b5d1f4ee56e28ff75f6a2c438e05b80ebc76c5424d25"
 }
