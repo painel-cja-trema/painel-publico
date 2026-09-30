@@ -269,7 +269,7 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+      "tarefa_atual": "Fechar expediente manualmente; Petições não lidas",
       "quantidade": 1
     },
     {
@@ -1876,16 +1876,6 @@
         "total": 2
       },
       {
-        "codigo": "peticoes-nao-lidas-processo-com-prazo-em-curso",
-        "tarefa": "Petições não lidas; Processo com prazo em curso",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 2
-      },
-      {
         "codigo": "aguarda-julgamento-incluido-em-pauta-aguarda-julgamento-incluido-em-pauta-vista-liberados-para-julgamento-pelo-gabinete-processo-com-pedido-de-vista-selecionar-documentos-para-acordao-gabinete",
         "tarefa": "Aguarda Julgamento - incluído em pauta; Aguarda Julgamento - incluído em pauta - vista; Liberados para julgamento pelo gabinete; Processo com pedido de vista; Selecionar documentos para acórdão - Gabinete",
         "contagens": {
@@ -2032,6 +2022,26 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
+        "codigo": "fechar-expediente-manualmente-peticoes-nao-lidas",
+        "tarefa": "Fechar expediente manualmente; Petições não lidas",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "peticoes-nao-lidas-processo-com-prazo-em-curso",
+        "tarefa": "Petições não lidas; Processo com prazo em curso",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
       },
@@ -2247,7 +2257,7 @@
         "tarefa_atual": "Aguardando julgamento do recurso interno",
         "autuacao": "24/08/2026",
         "desde": "26/09/2026",
-        "dias_tramitando": 36,
+        "dias_tramitando": 37,
         "julgado": true,
         "data_julgamento": "31/08/2026",
         "teor": "Julgado improcedente o pedido em 31/08/2026",
@@ -5951,36 +5961,6 @@
         "responsavel_processo": ""
       }
     ],
-    "peticoes-nao-lidas-processo-com-prazo-em-curso": [
-      {
-        "processo": "0601026-88.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "RepEsp",
-        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
-        "autuacao": "28/08/2026",
-        "desde": "28/08/2026",
-        "dias_tramitando": 32,
-        "julgado": true,
-        "data_julgamento": "25/09/2026",
-        "teor": "Julgado improcedente o pedido em 25/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601235-57.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
-        "autuacao": "11/09/2026",
-        "desde": "11/09/2026",
-        "dias_tramitando": 18,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "aguarda-julgamento-incluido-em-pauta-aguarda-julgamento-incluido-em-pauta-vista-liberados-para-julgamento-pelo-gabinete-processo-com-pedido-de-vista-selecionar-documentos-para-acordao-gabinete": [
       {
         "processo": "0600905-60.2026.6.10.0000",
@@ -6217,6 +6197,38 @@
         "julgado": true,
         "data_julgamento": "07/07/2026",
         "teor": "Julgado improcedente o pedido em 07/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "fechar-expediente-manualmente-peticoes-nao-lidas": [
+      {
+        "processo": "0601235-57.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Fechar expediente manualmente; Petições não lidas",
+        "autuacao": "11/09/2026",
+        "desde": "11/09/2026",
+        "dias_tramitando": 18,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "peticoes-nao-lidas-processo-com-prazo-em-curso": [
+      {
+        "processo": "0601026-88.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "RepEsp",
+        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+        "autuacao": "28/08/2026",
+        "desde": "28/08/2026",
+        "dias_tramitando": 32,
+        "julgado": true,
+        "data_julgamento": "25/09/2026",
+        "teor": "Julgado improcedente o pedido em 25/09/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -7925,7 +7937,7 @@
         "tarefa_atual": "Aguardando julgamento do recurso interno",
         "autuacao": "24/08/2026",
         "desde": "26/09/2026",
-        "dias_tramitando": 36,
+        "dias_tramitando": 37,
         "julgado": true,
         "data_julgamento": "31/08/2026",
         "teor": "Julgado improcedente o pedido em 31/08/2026",
@@ -8398,7 +8410,7 @@
         "processo": "0601235-57.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+        "tarefa_atual": "Fechar expediente manualmente; Petições não lidas",
         "autuacao": "11/09/2026",
         "desde": "11/09/2026",
         "dias_tramitando": 18,
@@ -11466,7 +11478,7 @@
       "tarefa_atual": "Aguardando julgamento do recurso interno",
       "autuacao": "24/08/2026",
       "desde": "26/09/2026",
-      "dias_tramitando": 36,
+      "dias_tramitando": 37,
       "julgado": true,
       "data_julgamento": "31/08/2026",
       "teor": "Julgado improcedente o pedido em 31/08/2026",
@@ -12443,7 +12455,7 @@
       "processo": "0601235-57.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+      "tarefa_atual": "Fechar expediente manualmente; Petições não lidas",
       "autuacao": "11/09/2026",
       "desde": "11/09/2026",
       "dias_tramitando": 18,
@@ -18648,7 +18660,7 @@
       "tarefa_atual": "Aguardando julgamento do recurso interno",
       "autuacao": "24/08/2026",
       "desde": "26/09/2026",
-      "dias_tramitando": 36,
+      "dias_tramitando": 37,
       "julgado": true,
       "data_julgamento": "31/08/2026",
       "teor": "Julgado improcedente o pedido em 31/08/2026",
@@ -19625,7 +19637,7 @@
       "processo": "0601235-57.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+      "tarefa_atual": "Fechar expediente manualmente; Petições não lidas",
       "autuacao": "11/09/2026",
       "desde": "11/09/2026",
       "dias_tramitando": 18,
@@ -25197,7 +25209,7 @@
       "tarefa_atual": "Aguardando julgamento do recurso interno",
       "autuacao": "24/08/2026",
       "desde": "26/09/2026",
-      "dias_tramitando": 36,
+      "dias_tramitando": 37,
       "julgado": true,
       "data_julgamento": "31/08/2026",
       "teor": "Julgado improcedente o pedido em 31/08/2026",
@@ -26270,8 +26282,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "30/09/2026 10:14",
+  "publicado_em": "30/09/2026 10:16",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "201ed8d0945ca232ead391a8623cc2333348ae1ea9472bff93f5795c78ae6088"
+  "hash_publicacao": "57f5d658cadfcc066c975cd75749d6ae73295c10a55085c0e98be27a42d59cbd"
 }
