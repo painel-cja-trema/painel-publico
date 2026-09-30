@@ -149,7 +149,7 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Assinar ato; Petições não lidas",
+      "tarefa_atual": "Lançar movimento; Petições não lidas",
       "quantidade": 1
     },
     {
@@ -244,7 +244,7 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Analisar Processos; Elaborar extrato da ata; Processo julgado; Revisar acórdão ou resolução - Gabinete; Verificar inclusão de notas orais",
+      "tarefa_atual": "Analisar Processos; Processo julgado; Revisar acórdão ou resolução - Gabinete; Verificar inclusão de notas orais",
       "quantidade": 1
     },
     {
@@ -1039,8 +1039,8 @@
           "TRIAGEM_URGENTE": 1,
           "TRIAGEM_ORDINARIA": 0,
           "MINUTAR_ATO": 2,
-          "ASSINAR_ATO": 1,
-          "LANCAR_MOVIMENTACAO": 0
+          "ASSINAR_ATO": 0,
+          "LANCAR_MOVIMENTACAO": 1
         }
       },
       {
@@ -1072,8 +1072,8 @@
       "TRIAGEM_URGENTE": 1,
       "TRIAGEM_ORDINARIA": 12,
       "MINUTAR_ATO": 30,
-      "ASSINAR_ATO": 4,
-      "LANCAR_MOVIMENTACAO": 0
+      "ASSINAR_ATO": 3,
+      "LANCAR_MOVIMENTACAO": 1
     },
     "total_acervo": 295
   },
@@ -1728,12 +1728,14 @@
         "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
-      },
+      }
+    ],
+    "LANCAR_MOVIMENTACAO": [
       {
         "processo": "0601848-77.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Assinar ato; Petições não lidas",
+        "tarefa_atual": "Lançar movimento; Petições não lidas",
         "autuacao": "29/09/2026",
         "desde": "29/09/2026",
         "dias_tramitando": 1,
@@ -1743,8 +1745,7 @@
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
-    ],
-    "LANCAR_MOVIMENTACAO": []
+    ]
   },
   "entrada_comissao": {
     "codigo": "LIMINAR_CERTIFICACAO",
@@ -2052,22 +2053,22 @@
         "total": 1
       },
       {
-        "codigo": "analisar-processos-elaborar-extrato-da-ata-processo-julgado-revisar-acordao-ou-resolucao-gabinete-verificar-inclusao-de-notas-orais",
-        "tarefa": "Analisar Processos; Elaborar extrato da ata; Processo julgado; Revisar acórdão ou resolução - Gabinete; Verificar inclusão de notas orais",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
         "codigo": "analisar-processos-processo-julgado",
         "tarefa": "Analisar Processos; Processo julgado",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
+        "codigo": "analisar-processos-processo-julgado-revisar-acordao-ou-resolucao-gabinete-verificar-inclusao-de-notas-orais",
+        "tarefa": "Analisar Processos; Processo julgado; Revisar acórdão ou resolução - Gabinete; Verificar inclusão de notas orais",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
       },
@@ -2102,8 +2103,8 @@
         "total": 1
       },
       {
-        "codigo": "assinar-ato-peticoes-nao-lidas",
-        "tarefa": "Assinar ato; Petições não lidas",
+        "codigo": "lancar-movimento-peticoes-nao-lidas",
+        "tarefa": "Lançar movimento; Petições não lidas",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -6189,22 +6190,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-processos-elaborar-extrato-da-ata-processo-julgado-revisar-acordao-ou-resolucao-gabinete-verificar-inclusao-de-notas-orais": [
-      {
-        "processo": "0600987-91.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos; Elaborar extrato da ata; Processo julgado; Revisar acórdão ou resolução - Gabinete; Verificar inclusão de notas orais",
-        "autuacao": "06/09/2026",
-        "desde": "06/09/2026",
-        "dias_tramitando": 24,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "analisar-processos-processo-julgado": [
       {
         "processo": "0600965-33.2026.6.10.0000",
@@ -6214,6 +6199,22 @@
         "autuacao": "22/09/2026",
         "desde": "22/09/2026",
         "dias_tramitando": 8,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-processos-processo-julgado-revisar-acordao-ou-resolucao-gabinete-verificar-inclusao-de-notas-orais": [
+      {
+        "processo": "0600987-91.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Analisar Processos; Processo julgado; Revisar acórdão ou resolução - Gabinete; Verificar inclusão de notas orais",
+        "autuacao": "06/09/2026",
+        "desde": "06/09/2026",
+        "dias_tramitando": 24,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -6269,12 +6270,12 @@
         "responsavel_processo": ""
       }
     ],
-    "assinar-ato-peticoes-nao-lidas": [
+    "lancar-movimento-peticoes-nao-lidas": [
       {
         "processo": "0601848-77.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Assinar ato; Petições não lidas",
+        "tarefa_atual": "Lançar movimento; Petições não lidas",
         "autuacao": "29/09/2026",
         "desde": "29/09/2026",
         "dias_tramitando": 1,
@@ -7496,7 +7497,7 @@
         "processo": "0601848-77.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Assinar ato; Petições não lidas",
+        "tarefa_atual": "Lançar movimento; Petições não lidas",
         "autuacao": "29/09/2026",
         "desde": "29/09/2026",
         "dias_tramitando": 1,
@@ -8352,7 +8353,7 @@
         "processo": "0600987-91.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos; Elaborar extrato da ata; Processo julgado; Revisar acórdão ou resolução - Gabinete; Verificar inclusão de notas orais",
+        "tarefa_atual": "Analisar Processos; Processo julgado; Revisar acórdão ou resolução - Gabinete; Verificar inclusão de notas orais",
         "autuacao": "06/09/2026",
         "desde": "06/09/2026",
         "dias_tramitando": 24,
@@ -13923,7 +13924,7 @@
       "processo": "0601848-77.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Assinar ato; Petições não lidas",
+      "tarefa_atual": "Lançar movimento; Petições não lidas",
       "autuacao": "29/09/2026",
       "desde": "29/09/2026",
       "dias_tramitando": 1,
@@ -21147,7 +21148,7 @@
       "processo": "0601848-77.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Assinar ato; Petições não lidas",
+      "tarefa_atual": "Lançar movimento; Petições não lidas",
       "autuacao": "29/09/2026",
       "desde": "29/09/2026",
       "dias_tramitando": 1,
@@ -22855,7 +22856,7 @@
       "processo": "0600987-91.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "REC no(a) Rp",
-      "tarefa_atual": "Analisar Processos; Elaborar extrato da ata; Processo julgado; Revisar acórdão ou resolução - Gabinete; Verificar inclusão de notas orais",
+      "tarefa_atual": "Analisar Processos; Processo julgado; Revisar acórdão ou resolução - Gabinete; Verificar inclusão de notas orais",
       "autuacao": "06/09/2026",
       "desde": "06/09/2026",
       "dias_tramitando": 24,
@@ -26378,8 +26379,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "30/09/2026 16:50",
+  "publicado_em": "30/09/2026 16:51",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "8eee5246f08d1d1706b2c8906b2d8700fe6ba97108f36a7e76f97ed0bb5372b6"
+  "hash_publicacao": "5243b751e54b1af1009fb0b594687c9afb83a8a14f0432948a504d07487e4d99"
 }
