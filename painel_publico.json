@@ -379,11 +379,6 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Atualizar dados do processo",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Conferir Relatório, Voto e Ementa",
       "quantidade": 1
     },
@@ -400,6 +395,11 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Realizar triagem ordinários",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Redistribuir processo",
       "quantidade": 1
     }
   ],
@@ -2060,16 +2060,6 @@
         "total": 1
       },
       {
-        "codigo": "atualizar-dados-do-processo",
-        "tarefa": "Atualizar dados do processo",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
         "codigo": "conferir-relatorio-voto-e-ementa",
         "tarefa": "Conferir Relatório, Voto e Ementa",
         "contagens": {
@@ -2162,6 +2152,16 @@
       {
         "codigo": "processo-com-prazo-em-curso-verificar-decisao-peticao-avulsa",
         "tarefa": "Processo com prazo em curso; Verificar Decisão - Petição Avulsa",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
+        "codigo": "redistribuir-processo",
+        "tarefa": "Redistribuir processo",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -3233,7 +3233,7 @@
         "tarefa_atual": "Aguardando julgamento do recurso interno",
         "autuacao": "28/08/2026",
         "desde": "09/09/2026",
-        "dias_tramitando": 32,
+        "dias_tramitando": 33,
         "julgado": true,
         "data_julgamento": "07/09/2026",
         "teor": "Julgado procedente o pedido em 07/09/2026",
@@ -6215,22 +6215,6 @@
         "responsavel_processo": ""
       }
     ],
-    "atualizar-dados-do-processo": [
-      {
-        "processo": "0601863-46.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Atualizar dados do processo",
-        "autuacao": "30/09/2026",
-        "desde": "30/09/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "conferir-relatorio-voto-e-ementa": [
       {
         "processo": "0601767-31.2026.6.10.0000",
@@ -6384,6 +6368,22 @@
         "autuacao": "22/09/2026",
         "desde": "22/09/2026",
         "dias_tramitando": 8,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "redistribuir-processo": [
+      {
+        "processo": "0601863-46.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Redistribuir processo",
+        "autuacao": "30/09/2026",
+        "desde": "30/09/2026",
+        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -8139,7 +8139,7 @@
         "tarefa_atual": "Aguardando julgamento do recurso interno",
         "autuacao": "28/08/2026",
         "desde": "09/09/2026",
-        "dias_tramitando": 32,
+        "dias_tramitando": 33,
         "julgado": true,
         "data_julgamento": "07/09/2026",
         "teor": "Julgado procedente o pedido em 07/09/2026",
@@ -10518,7 +10518,7 @@
         "processo": "0601863-46.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Atualizar dados do processo",
+        "tarefa_atual": "Redistribuir processo",
         "autuacao": "30/09/2026",
         "desde": "30/09/2026",
         "dias_tramitando": 0,
@@ -11876,7 +11876,7 @@
       "tarefa_atual": "Aguardando julgamento do recurso interno",
       "autuacao": "28/08/2026",
       "desde": "09/09/2026",
-      "dias_tramitando": 32,
+      "dias_tramitando": 33,
       "julgado": true,
       "data_julgamento": "07/09/2026",
       "teor": "Julgado procedente o pedido em 07/09/2026",
@@ -14071,7 +14071,7 @@
       "processo": "0601863-46.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Atualizar dados do processo",
+      "tarefa_atual": "Redistribuir processo",
       "autuacao": "30/09/2026",
       "desde": "30/09/2026",
       "dias_tramitando": 0,
@@ -19086,7 +19086,7 @@
       "tarefa_atual": "Aguardando julgamento do recurso interno",
       "autuacao": "28/08/2026",
       "desde": "09/09/2026",
-      "dias_tramitando": 32,
+      "dias_tramitando": 33,
       "julgado": true,
       "data_julgamento": "07/09/2026",
       "teor": "Julgado procedente o pedido em 07/09/2026",
@@ -21281,7 +21281,7 @@
       "processo": "0601863-46.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Atualizar dados do processo",
+      "tarefa_atual": "Redistribuir processo",
       "autuacao": "30/09/2026",
       "desde": "30/09/2026",
       "dias_tramitando": 0,
@@ -25537,7 +25537,7 @@
       "tarefa_atual": "Aguardando julgamento do recurso interno",
       "autuacao": "28/08/2026",
       "desde": "09/09/2026",
-      "dias_tramitando": 32,
+      "dias_tramitando": 33,
       "julgado": true,
       "data_julgamento": "07/09/2026",
       "teor": "Julgado procedente o pedido em 07/09/2026",
@@ -26344,8 +26344,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "30/09/2026 14:41",
+  "publicado_em": "30/09/2026 14:45",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "a348b5b782567f2004b1757cab0f87912a99c8f0e6ced874f8a58a09b6cddb46"
+  "hash_publicacao": "b6292f653cb503dcf5ca36a1f31cf9afb56d1b43780c4090eebb789f6a070c04"
 }
