@@ -344,6 +344,11 @@
     },
     {
       "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação - Urgentes; Petições não lidas; Verificar Decisão - Petição Avulsa",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Petições não lidas",
       "quantidade": 1
     },
@@ -355,11 +360,6 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Analisar Processos; Processo julgado",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Analisar determinação - Urgentes; Verificar Decisão - Petição Avulsa",
       "quantidade": 1
     },
     {
@@ -515,7 +515,7 @@
     {
       "processo": "0600167-72.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
-      "classe": "Rp",
+      "classe": "CumSen",
       "tarefa_atual": "Analisar determinação",
       "dias_tramitando": 121,
       "segredo_justica": "NÃO"
@@ -2030,6 +2030,16 @@
         "total": 1
       },
       {
+        "codigo": "analisar-peticao-avulsa-analisar-determinacao-urgentes-peticoes-nao-lidas-verificar-decisao-peticao-avulsa",
+        "tarefa": "Analisar Petição Avulsa; Analisar determinação - Urgentes; Petições não lidas; Verificar Decisão - Petição Avulsa",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
         "codigo": "analisar-peticao-avulsa-analisar-determinacao-peticoes-nao-lidas",
         "tarefa": "Analisar Petição Avulsa; Analisar determinação; Petições não lidas",
         "contagens": {
@@ -2072,16 +2082,6 @@
       {
         "codigo": "analisar-processos-processo-julgado",
         "tarefa": "Analisar Processos; Processo julgado",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
-        "codigo": "analisar-determinacao-urgentes-verificar-decisao-peticao-avulsa",
-        "tarefa": "Analisar determinação - Urgentes; Verificar Decisão - Petição Avulsa",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -4259,7 +4259,7 @@
       {
         "processo": "0600167-72.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
-        "classe": "Rp",
+        "classe": "CumSen",
         "tarefa_atual": "Analisar determinação",
         "autuacao": "31/05/2026",
         "desde": "30/09/2026",
@@ -6151,6 +6151,22 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-peticao-avulsa-analisar-determinacao-urgentes-peticoes-nao-lidas-verificar-decisao-peticao-avulsa": [
+      {
+        "processo": "0601811-50.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação - Urgentes; Petições não lidas; Verificar Decisão - Petição Avulsa",
+        "autuacao": "24/09/2026",
+        "desde": "24/09/2026",
+        "dias_tramitando": 6,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "analisar-peticao-avulsa-analisar-determinacao-peticoes-nao-lidas": [
       {
         "processo": "0600075-37.2026.6.10.0019",
@@ -6224,22 +6240,6 @@
         "autuacao": "22/09/2026",
         "desde": "22/09/2026",
         "dias_tramitando": 8,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "analisar-determinacao-urgentes-verificar-decisao-peticao-avulsa": [
-      {
-        "processo": "0601811-50.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação - Urgentes; Verificar Decisão - Petição Avulsa",
-        "autuacao": "24/09/2026",
-        "desde": "24/09/2026",
-        "dias_tramitando": 6,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -7753,7 +7753,7 @@
       {
         "processo": "0600167-72.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
-        "classe": "Rp",
+        "classe": "CumSen",
         "tarefa_atual": "Analisar determinação",
         "autuacao": "31/05/2026",
         "desde": "30/09/2026",
@@ -10248,7 +10248,7 @@
         "processo": "0601811-50.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Analisar determinação - Urgentes; Verificar Decisão - Petição Avulsa",
+        "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação - Urgentes; Petições não lidas; Verificar Decisão - Petição Avulsa",
         "autuacao": "24/09/2026",
         "desde": "24/09/2026",
         "dias_tramitando": 6,
@@ -11084,7 +11084,7 @@
     {
       "processo": "0600167-72.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
-      "classe": "Rp",
+      "classe": "CumSen",
       "tarefa_atual": "Analisar determinação",
       "autuacao": "31/05/2026",
       "desde": "30/09/2026",
@@ -13549,7 +13549,7 @@
       "processo": "0601811-50.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação - Urgentes; Verificar Decisão - Petição Avulsa",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação - Urgentes; Petições não lidas; Verificar Decisão - Petição Avulsa",
       "autuacao": "24/09/2026",
       "desde": "24/09/2026",
       "dias_tramitando": 6,
@@ -18308,7 +18308,7 @@
     {
       "processo": "0600167-72.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
-      "classe": "Rp",
+      "classe": "CumSen",
       "tarefa_atual": "Analisar determinação",
       "autuacao": "31/05/2026",
       "desde": "30/09/2026",
@@ -20773,7 +20773,7 @@
       "processo": "0601811-50.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação - Urgentes; Verificar Decisão - Petição Avulsa",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação - Urgentes; Petições não lidas; Verificar Decisão - Petição Avulsa",
       "autuacao": "24/09/2026",
       "desde": "24/09/2026",
       "dias_tramitando": 6,
@@ -25011,7 +25011,7 @@
     {
       "processo": "0600167-72.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
-      "classe": "Rp",
+      "classe": "CumSen",
       "tarefa_atual": "Analisar determinação",
       "autuacao": "31/05/2026",
       "desde": "30/09/2026",
@@ -26480,8 +26480,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "30/09/2026 16:05",
+  "publicado_em": "30/09/2026 16:06",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "b71ce579a66828842cb470d89be84340c0817d69ec2a21fde6bd63b6f2db441d"
+  "hash_publicacao": "ab3cce288b56b9ab32ff5219fd84ac82a0429a68d93999d0c17ecdc26f6c28ba"
 }
