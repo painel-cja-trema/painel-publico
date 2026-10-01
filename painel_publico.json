@@ -65,7 +65,7 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Analisar determinação",
-      "quantidade": 16
+      "quantidade": 15
     },
     {
       "gabinete": "Gab. JA 1",
@@ -100,6 +100,11 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Analisar Processos",
+      "quantidade": 2
+    },
+    {
+      "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Atualizar dados do processo",
       "quantidade": 2
     },
     {
@@ -140,11 +145,6 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Analisar determinação; Registrar recurso",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Atualizar dados do processo",
       "quantidade": 1
     },
     {
@@ -1699,11 +1699,11 @@
         "codigo": "analisar-determinacao",
         "tarefa": "Analisar determinação",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 16,
+          "Gabinete Juiz Auxiliar 1": 15,
           "Gabinete Juiz Auxiliar 2": 13,
           "Gabinete Juiz Auxiliar 3": 12
         },
-        "total": 41
+        "total": 40
       },
       {
         "codigo": "minutar-ato",
@@ -1906,6 +1906,16 @@
         "total": 2
       },
       {
+        "codigo": "atualizar-dados-do-processo",
+        "tarefa": "Atualizar dados do processo",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 2,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 2
+      },
+      {
         "codigo": "atualizar-dados-do-processo-peticoes-nao-lidas",
         "tarefa": "Atualizar dados do processo; Petições não lidas",
         "contagens": {
@@ -2032,16 +2042,6 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
-        "codigo": "atualizar-dados-do-processo",
-        "tarefa": "Atualizar dados do processo",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
       },
@@ -3623,20 +3623,6 @@
         "julgado": true,
         "data_julgamento": "25/08/2026",
         "teor": "Julgado procedente em parte do pedido em 25/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600364-27.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "04/08/2026",
-        "desde": "01/10/2026",
-        "dias_tramitando": 57,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -6075,6 +6061,36 @@
         "responsavel_processo": ""
       }
     ],
+    "atualizar-dados-do-processo": [
+      {
+        "processo": "0600364-27.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Atualizar dados do processo",
+        "autuacao": "04/08/2026",
+        "desde": "01/10/2026",
+        "dias_tramitando": 57,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601758-69.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Atualizar dados do processo",
+        "autuacao": "18/09/2026",
+        "desde": "30/09/2026",
+        "dias_tramitando": 12,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "atualizar-dados-do-processo-peticoes-nao-lidas": [
       {
         "processo": "0601830-56.2026.6.10.0000",
@@ -6311,22 +6327,6 @@
         "responsavel_processo": ""
       }
     ],
-    "atualizar-dados-do-processo": [
-      {
-        "processo": "0601758-69.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Atualizar dados do processo",
-        "autuacao": "18/09/2026",
-        "desde": "30/09/2026",
-        "dias_tramitando": 12,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "definir-procedimento": [
       {
         "processo": "0601875-60.2026.6.10.0000",
@@ -6542,7 +6542,7 @@
         "processo": "0600364-27.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
+        "tarefa_atual": "Atualizar dados do processo",
         "autuacao": "04/08/2026",
         "desde": "01/10/2026",
         "dias_tramitando": 57,
@@ -11387,7 +11387,7 @@
       "processo": "0600364-27.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Atualizar dados do processo",
       "autuacao": "04/08/2026",
       "desde": "01/10/2026",
       "dias_tramitando": 57,
@@ -18799,7 +18799,7 @@
       "processo": "0600364-27.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Atualizar dados do processo",
       "autuacao": "04/08/2026",
       "desde": "01/10/2026",
       "dias_tramitando": 57,
@@ -26862,8 +26862,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "01/10/2026 09:58",
+  "publicado_em": "01/10/2026 09:59",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "a1b23d625911276d09f005c82e1dd4a42ac7ba9cf2fe83e9d865c06af54eb540"
+  "hash_publicacao": "a3ebc7b8715669d69d8ac739f31d9d1d7ab725f74c51afc3e52427b59dcc6c47"
 }
