@@ -140,7 +140,7 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Processo com prazo em curso",
-      "quantidade": 23
+      "quantidade": 24
     },
     {
       "gabinete": "Gab. JA 2",
@@ -150,7 +150,7 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Analisar determinação",
-      "quantidade": 11
+      "quantidade": 10
     },
     {
       "gabinete": "Gab. JA 2",
@@ -234,12 +234,12 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
+      "tarefa_atual": "Preparar comunicação",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Registrar ciência intimação pessoal",
+      "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
       "quantidade": 1
     },
     {
@@ -354,7 +354,7 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "quantidade": 1
     },
     {
@@ -1295,8 +1295,8 @@
           "TRIAGEM_URGENTE": 0,
           "TRIAGEM_ORDINARIA": 0,
           "MINUTAR_ATO": 7,
-          "ASSINAR_ATO": 1,
-          "LANCAR_MOVIMENTACAO": 0
+          "ASSINAR_ATO": 0,
+          "LANCAR_MOVIMENTACAO": 1
         }
       }
     ],
@@ -1304,8 +1304,8 @@
       "TRIAGEM_URGENTE": 7,
       "TRIAGEM_ORDINARIA": 9,
       "MINUTAR_ATO": 43,
-      "ASSINAR_ATO": 5,
-      "LANCAR_MOVIMENTACAO": 0
+      "ASSINAR_ATO": 4,
+      "LANCAR_MOVIMENTACAO": 1
     },
     "total_acervo": 322
   },
@@ -2198,12 +2198,14 @@
         "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
-      },
+      }
+    ],
+    "LANCAR_MOVIMENTACAO": [
       {
         "processo": "0601893-81.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
+        "tarefa_atual": "Lançar movimento",
         "autuacao": "01/10/2026",
         "desde": "01/10/2026",
         "dias_tramitando": 0,
@@ -2213,8 +2215,7 @@
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
-    ],
-    "LANCAR_MOVIMENTACAO": []
+    ]
   },
   "entrada_comissao": {
     "codigo": "LIMINAR_CERTIFICACAO",
@@ -2246,10 +2247,10 @@
         "tarefa": "Processo com prazo em curso",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 17,
-          "Gabinete Juiz Auxiliar 2": 23,
+          "Gabinete Juiz Auxiliar 2": 24,
           "Gabinete Juiz Auxiliar 3": 18
         },
-        "total": 58
+        "total": 59
       },
       {
         "codigo": "minutar-ato",
@@ -2276,10 +2277,10 @@
         "tarefa": "Analisar determinação",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 24,
-          "Gabinete Juiz Auxiliar 2": 11,
+          "Gabinete Juiz Auxiliar 2": 10,
           "Gabinete Juiz Auxiliar 3": 11
         },
-        "total": 46
+        "total": 45
       },
       {
         "codigo": "minutar-relatorio-voto-e-ementa",
@@ -2362,16 +2363,6 @@
         "total": 6
       },
       {
-        "codigo": "assinar-ato",
-        "tarefa": "Assinar ato",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 3,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 5
-      },
-      {
         "codigo": "revisar-relatorio-voto-e-ementa",
         "tarefa": "Revisar Relatório, Voto e Ementa",
         "contagens": {
@@ -2380,6 +2371,16 @@
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 5
+      },
+      {
+        "codigo": "assinar-ato",
+        "tarefa": "Assinar ato",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 3,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 4
       },
       {
         "codigo": "aguarda-sessao-de-julgamento-virtual-elaborar-extrato-da-ata-liberados-para-julgamento-pelo-gabinete-virtual-selecionar-documentos-para-acordao-gabinete",
@@ -2458,16 +2459,6 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 2
-        },
-        "total": 2
-      },
-      {
-        "codigo": "registrar-ciencia-intimacao-pessoal",
-        "tarefa": "Registrar ciência intimação pessoal",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 2
       },
@@ -2592,8 +2583,28 @@
         "total": 1
       },
       {
+        "codigo": "lancar-movimento",
+        "tarefa": "Lançar movimento",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
         "codigo": "peticoes-nao-lidas-realizar-triagem-urgentes",
         "tarefa": "Petições não lidas; Realizar triagem urgentes",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "preparar-comunicacao",
+        "tarefa": "Preparar comunicação",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -2607,6 +2618,16 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "registrar-ciencia-intimacao-pessoal",
+        "tarefa": "Registrar ciência intimação pessoal",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -3437,6 +3458,20 @@
       {
         "processo": "0601870-38.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Processo com prazo em curso",
+        "autuacao": "30/09/2026",
+        "desde": "01/10/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601872-08.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
         "classe": "Rp",
         "tarefa_atual": "Processo com prazo em curso",
         "autuacao": "30/09/2026",
@@ -5525,20 +5560,6 @@
         "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
-      },
-      {
-        "processo": "0601865-16.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "30/09/2026",
-        "desde": "01/10/2026",
-        "dias_tramitando": 1,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
       }
     ],
     "minutar-relatorio-voto-e-ementa": [
@@ -6509,78 +6530,6 @@
         "responsavel_processo": ""
       }
     ],
-    "assinar-ato": [
-      {
-        "processo": "0601739-63.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "17/09/2026",
-        "desde": "30/09/2026",
-        "dias_tramitando": 14,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601749-10.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "17/09/2026",
-        "desde": "28/09/2026",
-        "dias_tramitando": 13,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601810-65.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "23/09/2026",
-        "desde": "29/09/2026",
-        "dias_tramitando": 7,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601880-82.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "01/10/2026",
-        "desde": "01/10/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601893-81.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "01/10/2026",
-        "desde": "01/10/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "revisar-relatorio-voto-e-ementa": [
       {
         "processo": "0600181-56.2026.6.10.0000",
@@ -6646,6 +6595,64 @@
         "autuacao": "26/09/2026",
         "desde": "01/10/2026",
         "dias_tramitando": 5,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "assinar-ato": [
+      {
+        "processo": "0601739-63.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "17/09/2026",
+        "desde": "30/09/2026",
+        "dias_tramitando": 14,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601749-10.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "17/09/2026",
+        "desde": "28/09/2026",
+        "dias_tramitando": 13,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601810-65.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "23/09/2026",
+        "desde": "29/09/2026",
+        "dias_tramitando": 7,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601880-82.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "01/10/2026",
+        "desde": "01/10/2026",
+        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -6921,36 +6928,6 @@
         "responsavel_processo": ""
       }
     ],
-    "registrar-ciencia-intimacao-pessoal": [
-      {
-        "processo": "0601766-46.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "RepEsp",
-        "tarefa_atual": "Registrar ciência intimação pessoal",
-        "autuacao": "19/09/2026",
-        "desde": "27/09/2026",
-        "dias_tramitando": 11,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601872-08.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Registrar ciência intimação pessoal",
-        "autuacao": "30/09/2026",
-        "desde": "01/10/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "registrar-ciencia-por-telefone-ou-pessoalmente-visualizar-expediente-dje": [
       {
         "processo": "0601815-87.2026.6.10.0000",
@@ -7157,6 +7134,22 @@
         "responsavel_processo": ""
       }
     ],
+    "lancar-movimento": [
+      {
+        "processo": "0601893-81.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Lançar movimento",
+        "autuacao": "01/10/2026",
+        "desde": "01/10/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "peticoes-nao-lidas-realizar-triagem-urgentes": [
       {
         "processo": "0601879-97.2026.6.10.0000",
@@ -7166,6 +7159,22 @@
         "autuacao": "01/10/2026",
         "desde": "01/10/2026",
         "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "preparar-comunicacao": [
+      {
+        "processo": "0601865-16.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Preparar comunicação",
+        "autuacao": "30/09/2026",
+        "desde": "01/10/2026",
+        "dias_tramitando": 1,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -7185,6 +7194,22 @@
         "julgado": true,
         "data_julgamento": "30/09/2026",
         "teor": "Julgado procedente em parte do pedido em 30/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "registrar-ciencia-intimacao-pessoal": [
+      {
+        "processo": "0601766-46.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "RepEsp",
+        "tarefa_atual": "Registrar ciência intimação pessoal",
+        "autuacao": "19/09/2026",
+        "desde": "27/09/2026",
+        "dias_tramitando": 11,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -10226,7 +10251,7 @@
         "processo": "0601865-16.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
+        "tarefa_atual": "Preparar comunicação",
         "autuacao": "30/09/2026",
         "desde": "01/10/2026",
         "dias_tramitando": 1,
@@ -10240,7 +10265,7 @@
         "processo": "0601872-08.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Registrar ciência intimação pessoal",
+        "tarefa_atual": "Processo com prazo em curso",
         "autuacao": "30/09/2026",
         "desde": "01/10/2026",
         "dias_tramitando": 0,
@@ -11684,7 +11709,7 @@
         "processo": "0601893-81.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
+        "tarefa_atual": "Lançar movimento",
         "autuacao": "01/10/2026",
         "desde": "01/10/2026",
         "dias_tramitando": 0,
@@ -15307,7 +15332,7 @@
       "processo": "0601865-16.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Preparar comunicação",
       "autuacao": "30/09/2026",
       "desde": "01/10/2026",
       "dias_tramitando": 1,
@@ -15419,7 +15444,7 @@
       "processo": "0601872-08.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Registrar ciência intimação pessoal",
+      "tarefa_atual": "Processo com prazo em curso",
       "autuacao": "30/09/2026",
       "desde": "01/10/2026",
       "dias_tramitando": 0,
@@ -15643,7 +15668,7 @@
       "processo": "0601893-81.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "autuacao": "01/10/2026",
       "desde": "01/10/2026",
       "dias_tramitando": 0,
@@ -22999,7 +23024,7 @@
       "processo": "0601865-16.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Preparar comunicação",
       "autuacao": "30/09/2026",
       "desde": "01/10/2026",
       "dias_tramitando": 1,
@@ -23111,7 +23136,7 @@
       "processo": "0601872-08.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Registrar ciência intimação pessoal",
+      "tarefa_atual": "Processo com prazo em curso",
       "autuacao": "30/09/2026",
       "desde": "01/10/2026",
       "dias_tramitando": 0,
@@ -23335,7 +23360,7 @@
       "processo": "0601893-81.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "autuacao": "01/10/2026",
       "desde": "01/10/2026",
       "dias_tramitando": 0,
@@ -28500,8 +28525,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "01/10/2026 18:42",
+  "publicado_em": "01/10/2026 18:43",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "26ca34f4d0a0170bf57c22c7d583bdd38c419c296f84f315d3cc51bdfe958166"
+  "hash_publicacao": "f04eb574f1cc64dd75de5eb561c2d03d78b586d6d8e8484e74507c88cde5a15f"
 }
