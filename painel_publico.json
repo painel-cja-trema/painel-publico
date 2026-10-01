@@ -29,7 +29,7 @@
       "quantidade": 104,
       "media_dias": 29.5,
       "maior_tempo": 174,
-      "urgentes": 7,
+      "urgentes": 8,
       "minutar": 23,
       "julgados": 44,
       "percentual_julgados": 34.4,
@@ -46,7 +46,7 @@
       "quantidade": 76,
       "media_dias": 17.6,
       "maior_tempo": 114,
-      "urgentes": 8,
+      "urgentes": 9,
       "minutar": 5,
       "julgados": 37,
       "percentual_julgados": 37.0,
@@ -209,6 +209,11 @@
     },
     {
       "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Analisar determinação - Urgentes",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Conferir Relatório, Voto e Ementa",
       "quantidade": 1
     },
@@ -230,11 +235,6 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Registrar ciência intimação pessoal",
       "quantidade": 1
     },
     {
@@ -304,6 +304,11 @@
     },
     {
       "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Realizar triagem urgentes",
+      "quantidade": 2
+    },
+    {
+      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Registrar ciência por telefone ou pessoalmente; Visualizar expediente DJE",
       "quantidade": 2
     },
@@ -350,16 +355,6 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Assinar ato",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Definir procedimento",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Realizar triagem urgentes",
       "quantidade": 1
     },
     {
@@ -1269,7 +1264,7 @@
         "nome": "Gabinete Juiz Auxiliar 3",
         "total_acervo": 100,
         "contagens": {
-          "TRIAGEM_URGENTE": 1,
+          "TRIAGEM_URGENTE": 2,
           "TRIAGEM_ORDINARIA": 0,
           "MINUTAR_ATO": 5,
           "ASSINAR_ATO": 1,
@@ -1278,7 +1273,7 @@
       }
     ],
     "totais": {
-      "TRIAGEM_URGENTE": 8,
+      "TRIAGEM_URGENTE": 9,
       "TRIAGEM_ORDINARIA": 9,
       "MINUTAR_ATO": 41,
       "ASSINAR_ATO": 5,
@@ -1389,6 +1384,20 @@
       {
         "processo": "0601897-21.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem urgentes",
+        "autuacao": "01/10/2026",
+        "desde": "01/10/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601898-06.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
         "classe": "Rp",
         "tarefa_atual": "Realizar triagem urgentes",
         "autuacao": "01/10/2026",
@@ -2285,6 +2294,16 @@
         "total": 8
       },
       {
+        "codigo": "realizar-triagem-urgentes",
+        "tarefa": "Realizar triagem urgentes",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 6,
+          "Gabinete Juiz Auxiliar 3": 2
+        },
+        "total": 8
+      },
+      {
         "codigo": "aguarda-sessao-de-julgamento-virtual-elaborar-extrato-da-ata-pauta-provisoria-virtual-selecionar-documentos-para-acordao-gabinete",
         "tarefa": "Aguarda Sessão de Julgamento Virtual; Elaborar extrato da ata; Pauta provisória virtual; Selecionar documentos para acórdão - Gabinete",
         "contagens": {
@@ -2295,12 +2314,12 @@
         "total": 7
       },
       {
-        "codigo": "realizar-triagem-urgentes",
-        "tarefa": "Realizar triagem urgentes",
+        "codigo": "analisar-determinacao-urgentes",
+        "tarefa": "Analisar determinação - Urgentes",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 6,
-          "Gabinete Juiz Auxiliar 3": 1
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 6
         },
         "total": 7
       },
@@ -2313,16 +2332,6 @@
           "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 7
-      },
-      {
-        "codigo": "analisar-determinacao-urgentes",
-        "tarefa": "Analisar determinação - Urgentes",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 6
-        },
-        "total": 6
       },
       {
         "codigo": "assinar-ato",
@@ -2425,16 +2434,6 @@
         "total": 2
       },
       {
-        "codigo": "registrar-ciencia-intimacao-pessoal",
-        "tarefa": "Registrar ciência intimação pessoal",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 2
-      },
-      {
         "codigo": "registrar-ciencia-por-telefone-ou-pessoalmente-visualizar-expediente-dje",
         "tarefa": "Registrar ciência por telefone ou pessoalmente; Visualizar expediente DJE",
         "contagens": {
@@ -2525,16 +2524,6 @@
         "total": 1
       },
       {
-        "codigo": "definir-procedimento",
-        "tarefa": "Definir procedimento",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
         "codigo": "elaborar-certidao-de-transito-em-julgado",
         "tarefa": "Elaborar certidão de trânsito em julgado",
         "contagens": {
@@ -2570,6 +2559,16 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "registrar-ciencia-intimacao-pessoal",
+        "tarefa": "Registrar ciência intimação pessoal",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -3076,6 +3075,20 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0601842-70.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Processo com prazo em curso",
+        "autuacao": "28/09/2026",
+        "desde": "01/10/2026",
+        "dias_tramitando": 3,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0601843-55.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "DR",
@@ -3386,20 +3399,6 @@
       {
         "processo": "0601870-38.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Processo com prazo em curso",
-        "autuacao": "30/09/2026",
-        "desde": "01/10/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601872-08.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
         "classe": "Rp",
         "tarefa_atual": "Processo com prazo em curso",
         "autuacao": "30/09/2026",
@@ -6086,6 +6085,120 @@
         "responsavel_processo": ""
       }
     ],
+    "realizar-triagem-urgentes": [
+      {
+        "processo": "0601803-73.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem urgentes",
+        "autuacao": "23/09/2026",
+        "desde": "30/09/2026",
+        "dias_tramitando": 8,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601876-45.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem urgentes",
+        "autuacao": "01/10/2026",
+        "desde": "01/10/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601882-52.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem urgentes",
+        "autuacao": "01/10/2026",
+        "desde": "01/10/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601883-37.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem urgentes",
+        "autuacao": "01/10/2026",
+        "desde": "01/10/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601894-66.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem urgentes",
+        "autuacao": "01/10/2026",
+        "desde": "01/10/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601896-36.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem urgentes",
+        "autuacao": "01/10/2026",
+        "desde": "01/10/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601897-21.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem urgentes",
+        "autuacao": "01/10/2026",
+        "desde": "01/10/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601898-06.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem urgentes",
+        "autuacao": "01/10/2026",
+        "desde": "01/10/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "aguarda-sessao-de-julgamento-virtual-elaborar-extrato-da-ata-pauta-provisoria-virtual-selecionar-documentos-para-acordao-gabinete": [
       {
         "processo": "0601106-52.2026.6.10.0000",
@@ -6186,15 +6299,15 @@
         "responsavel_processo": ""
       }
     ],
-    "realizar-triagem-urgentes": [
+    "analisar-determinacao-urgentes": [
       {
-        "processo": "0601803-73.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Realizar triagem urgentes",
-        "autuacao": "23/09/2026",
-        "desde": "30/09/2026",
-        "dias_tramitando": 8,
+        "processo": "0601077-02.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "RepEsp",
+        "tarefa_atual": "Analisar determinação - Urgentes",
+        "autuacao": "02/09/2026",
+        "desde": "28/09/2026",
+        "dias_tramitando": 28,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -6202,66 +6315,52 @@
         "responsavel_processo": ""
       },
       {
-        "processo": "0601876-45.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Realizar triagem urgentes",
-        "autuacao": "01/10/2026",
-        "desde": "01/10/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601882-52.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Realizar triagem urgentes",
-        "autuacao": "01/10/2026",
-        "desde": "01/10/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601883-37.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Realizar triagem urgentes",
-        "autuacao": "01/10/2026",
-        "desde": "01/10/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601894-66.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Realizar triagem urgentes",
-        "autuacao": "01/10/2026",
-        "desde": "01/10/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601896-36.2026.6.10.0000",
+        "processo": "0601820-12.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Realizar triagem urgentes",
+        "tarefa_atual": "Analisar determinação - Urgentes",
+        "autuacao": "25/09/2026",
+        "desde": "26/09/2026",
+        "dias_tramitando": 6,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600031-40.2026.6.10.0044",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação - Urgentes",
+        "autuacao": "30/09/2026",
+        "desde": "01/10/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601872-08.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação - Urgentes",
+        "autuacao": "30/09/2026",
+        "desde": "01/10/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601874-75.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação - Urgentes",
         "autuacao": "01/10/2026",
         "desde": "01/10/2026",
         "dias_tramitando": 0,
@@ -6272,10 +6371,24 @@
         "responsavel_processo": ""
       },
       {
-        "processo": "0601897-21.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
+        "processo": "0601881-67.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Realizar triagem urgentes",
+        "tarefa_atual": "Analisar determinação - Urgentes",
+        "autuacao": "01/10/2026",
+        "desde": "01/10/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601889-44.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação - Urgentes",
         "autuacao": "01/10/2026",
         "desde": "01/10/2026",
         "dias_tramitando": 0,
@@ -6377,92 +6490,6 @@
         "classe": "Rp",
         "tarefa_atual": "Registrar ciência por telefone ou pessoalmente",
         "autuacao": "30/09/2026",
-        "desde": "01/10/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "analisar-determinacao-urgentes": [
-      {
-        "processo": "0601077-02.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "RepEsp",
-        "tarefa_atual": "Analisar determinação - Urgentes",
-        "autuacao": "02/09/2026",
-        "desde": "28/09/2026",
-        "dias_tramitando": 28,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601820-12.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação - Urgentes",
-        "autuacao": "25/09/2026",
-        "desde": "26/09/2026",
-        "dias_tramitando": 6,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600031-40.2026.6.10.0044",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação - Urgentes",
-        "autuacao": "30/09/2026",
-        "desde": "01/10/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601874-75.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação - Urgentes",
-        "autuacao": "01/10/2026",
-        "desde": "01/10/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601881-67.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação - Urgentes",
-        "autuacao": "01/10/2026",
-        "desde": "01/10/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601889-44.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação - Urgentes",
-        "autuacao": "01/10/2026",
         "desde": "01/10/2026",
         "dias_tramitando": 0,
         "julgado": false,
@@ -6712,7 +6739,7 @@
         "tarefa_atual": "Aguardando Manifestação do MPE",
         "autuacao": "27/08/2026",
         "desde": "08/09/2026",
-        "dias_tramitando": 34,
+        "dias_tramitando": 35,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -6884,36 +6911,6 @@
         "responsavel_processo": ""
       }
     ],
-    "registrar-ciencia-intimacao-pessoal": [
-      {
-        "processo": "0601766-46.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "RepEsp",
-        "tarefa_atual": "Registrar ciência intimação pessoal",
-        "autuacao": "19/09/2026",
-        "desde": "27/09/2026",
-        "dias_tramitando": 11,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601842-70.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Registrar ciência intimação pessoal",
-        "autuacao": "28/09/2026",
-        "desde": "01/10/2026",
-        "dias_tramitando": 3,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "registrar-ciencia-por-telefone-ou-pessoalmente-visualizar-expediente-dje": [
       {
         "processo": "0601815-87.2026.6.10.0000",
@@ -7072,22 +7069,6 @@
         "responsavel_processo": ""
       }
     ],
-    "definir-procedimento": [
-      {
-        "processo": "0601898-06.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Definir procedimento",
-        "autuacao": "01/10/2026",
-        "desde": "01/10/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "elaborar-certidao-de-transito-em-julgado": [
       {
         "processo": "0600080-26.2026.6.10.0030",
@@ -7148,6 +7129,22 @@
         "julgado": true,
         "data_julgamento": "30/09/2026",
         "teor": "Julgado procedente em parte do pedido em 30/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "registrar-ciencia-intimacao-pessoal": [
+      {
+        "processo": "0601766-46.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "RepEsp",
+        "tarefa_atual": "Registrar ciência intimação pessoal",
+        "autuacao": "19/09/2026",
+        "desde": "27/09/2026",
+        "dias_tramitando": 11,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -10077,7 +10074,7 @@
         "processo": "0601842-70.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Registrar ciência intimação pessoal",
+        "tarefa_atual": "Processo com prazo em curso",
         "autuacao": "28/09/2026",
         "desde": "01/10/2026",
         "dias_tramitando": 3,
@@ -10203,7 +10200,7 @@
         "processo": "0601872-08.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Processo com prazo em curso",
+        "tarefa_atual": "Analisar determinação - Urgentes",
         "autuacao": "30/09/2026",
         "desde": "01/10/2026",
         "dias_tramitando": 0,
@@ -10530,7 +10527,7 @@
         "tarefa_atual": "Aguardando Manifestação do MPE",
         "autuacao": "27/08/2026",
         "desde": "08/09/2026",
-        "dias_tramitando": 34,
+        "dias_tramitando": 35,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -11689,7 +11686,7 @@
         "processo": "0601898-06.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Definir procedimento",
+        "tarefa_atual": "Realizar triagem urgentes",
         "autuacao": "01/10/2026",
         "desde": "01/10/2026",
         "dias_tramitando": 0,
@@ -12991,7 +12988,7 @@
       "tarefa_atual": "Aguardando Manifestação do MPE",
       "autuacao": "27/08/2026",
       "desde": "08/09/2026",
-      "dias_tramitando": 34,
+      "dias_tramitando": 35,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -15018,7 +15015,7 @@
       "processo": "0601842-70.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Registrar ciência intimação pessoal",
+      "tarefa_atual": "Processo com prazo em curso",
       "autuacao": "28/09/2026",
       "desde": "01/10/2026",
       "dias_tramitando": 3,
@@ -15382,7 +15379,7 @@
       "processo": "0601872-08.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Processo com prazo em curso",
+      "tarefa_atual": "Analisar determinação - Urgentes",
       "autuacao": "30/09/2026",
       "desde": "01/10/2026",
       "dias_tramitando": 0,
@@ -15676,7 +15673,7 @@
       "processo": "0601898-06.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Definir procedimento",
+      "tarefa_atual": "Realizar triagem urgentes",
       "autuacao": "01/10/2026",
       "desde": "01/10/2026",
       "dias_tramitando": 0,
@@ -20683,7 +20680,7 @@
       "tarefa_atual": "Aguardando Manifestação do MPE",
       "autuacao": "27/08/2026",
       "desde": "08/09/2026",
-      "dias_tramitando": 34,
+      "dias_tramitando": 35,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -22710,7 +22707,7 @@
       "processo": "0601842-70.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Registrar ciência intimação pessoal",
+      "tarefa_atual": "Processo com prazo em curso",
       "autuacao": "28/09/2026",
       "desde": "01/10/2026",
       "dias_tramitando": 3,
@@ -23074,7 +23071,7 @@
       "processo": "0601872-08.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Processo com prazo em curso",
+      "tarefa_atual": "Analisar determinação - Urgentes",
       "autuacao": "30/09/2026",
       "desde": "01/10/2026",
       "dias_tramitando": 0,
@@ -23368,7 +23365,7 @@
       "processo": "0601898-06.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Definir procedimento",
+      "tarefa_atual": "Realizar triagem urgentes",
       "autuacao": "01/10/2026",
       "desde": "01/10/2026",
       "dias_tramitando": 0,
@@ -28463,8 +28460,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "01/10/2026 18:40",
+  "publicado_em": "01/10/2026 18:41",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "6cc95c13ce1979c22dd8992b18c50231c575d5c7cd9a5abfcd490d80e69bb35d"
+  "hash_publicacao": "a58c08bdec516a5bb7b1f17eff88b7c2ebe1e6397234927a9aadf058dbf1785f"
 }
