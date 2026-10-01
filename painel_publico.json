@@ -60,7 +60,7 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Processo com prazo em curso",
-      "quantidade": 20
+      "quantidade": 18
     },
     {
       "gabinete": "Gab. JA 1",
@@ -70,7 +70,7 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Aguardando julgamento do recurso interno",
-      "quantidade": 11
+      "quantidade": 10
     },
     {
       "gabinete": "Gab. JA 1",
@@ -119,7 +119,17 @@
     },
     {
       "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Aguardando julgamento do recurso interno; Petições não lidas",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Petições não lidas",
       "quantidade": 1
     },
     {
@@ -130,6 +140,11 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Definir procedimento",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Realizar triagem ordinários",
       "quantidade": 1
     },
     {
@@ -1019,7 +1034,7 @@
         "total_acervo": 88,
         "contagens": {
           "TRIAGEM_URGENTE": 0,
-          "TRIAGEM_ORDINARIA": 0,
+          "TRIAGEM_ORDINARIA": 1,
           "MINUTAR_ATO": 7,
           "ASSINAR_ATO": 4,
           "LANCAR_MOVIMENTACAO": 0
@@ -1052,7 +1067,7 @@
     ],
     "totais": {
       "TRIAGEM_URGENTE": 5,
-      "TRIAGEM_ORDINARIA": 6,
+      "TRIAGEM_ORDINARIA": 7,
       "MINUTAR_ATO": 28,
       "ASSINAR_ATO": 9,
       "LANCAR_MOVIMENTACAO": 1
@@ -1183,6 +1198,20 @@
         "autuacao": "26/09/2026",
         "desde": "29/09/2026",
         "dias_tramitando": 5,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601252-93.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Realizar triagem ordinários",
+        "autuacao": "26/09/2026",
+        "desde": "01/10/2026",
+        "dias_tramitando": 4,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -1786,21 +1815,21 @@
         "codigo": "processo-com-prazo-em-curso",
         "tarefa": "Processo com prazo em curso",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 20,
+          "Gabinete Juiz Auxiliar 1": 18,
           "Gabinete Juiz Auxiliar 2": 25,
           "Gabinete Juiz Auxiliar 3": 10
         },
-        "total": 55
+        "total": 53
       },
       {
         "codigo": "aguardando-julgamento-do-recurso-interno",
         "tarefa": "Aguardando julgamento do recurso interno",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 11,
+          "Gabinete Juiz Auxiliar 1": 10,
           "Gabinete Juiz Auxiliar 2": 21,
           "Gabinete Juiz Auxiliar 3": 19
         },
-        "total": 51
+        "total": 50
       },
       {
         "codigo": "minutar-ato",
@@ -1886,11 +1915,11 @@
         "codigo": "realizar-triagem-ordinarios",
         "tarefa": "Realizar triagem ordinários",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 6,
           "Gabinete Juiz Auxiliar 3": 0
         },
-        "total": 6
+        "total": 7
       },
       {
         "codigo": "analisar-resposta-do-expediente",
@@ -1973,6 +2002,16 @@
         "total": 2
       },
       {
+        "codigo": "aguardando-julgamento-do-recurso-interno-peticoes-nao-lidas",
+        "tarefa": "Aguardando julgamento do recurso interno; Petições não lidas",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 2
+      },
+      {
         "codigo": "aguardando-providencias",
         "tarefa": "Aguardando providências",
         "contagens": {
@@ -2033,16 +2072,6 @@
         "total": 1
       },
       {
-        "codigo": "aguardando-julgamento-do-recurso-interno-peticoes-nao-lidas",
-        "tarefa": "Aguardando julgamento do recurso interno; Petições não lidas",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
         "codigo": "aguardando-julgamento-do-recurso-interno-verificar-decisao-peticao-avulsa",
         "tarefa": "Aguardando julgamento do recurso interno; Verificar Decisão - Petição Avulsa",
         "contagens": {
@@ -2059,6 +2088,16 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
+        "codigo": "analisar-peticao-avulsa-analisar-determinacao-peticoes-nao-lidas",
+        "tarefa": "Analisar Petição Avulsa; Analisar determinação; Petições não lidas",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
       },
@@ -2598,20 +2637,6 @@
         "responsavel_processo": ""
       },
       {
-        "processo": "0601252-93.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Processo com prazo em curso",
-        "autuacao": "26/09/2026",
-        "desde": "30/09/2026",
-        "dias_tramitando": 4,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
         "processo": "0600086-33.2026.6.10.0030",
         "gabinete": "Gab. JA 2",
         "classe": "NIP",
@@ -2659,20 +2684,6 @@
         "classe": "NIP",
         "tarefa_atual": "Processo com prazo em curso",
         "autuacao": "27/09/2026",
-        "desde": "30/09/2026",
-        "dias_tramitando": 3,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601836-63.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Processo com prazo em curso",
-        "autuacao": "28/09/2026",
         "desde": "30/09/2026",
         "dias_tramitando": 3,
         "julgado": false,
@@ -3394,20 +3405,6 @@
         "julgado": true,
         "data_julgamento": "23/09/2026",
         "teor": "Julgado procedente em parte do pedido em 23/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601252-93.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno",
-        "autuacao": "11/09/2026",
-        "desde": "28/09/2026",
-        "dias_tramitando": 19,
-        "julgado": true,
-        "data_julgamento": "25/09/2026",
-        "teor": "Julgado improcedente o pedido em 25/09/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -5642,6 +5639,20 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0601252-93.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Realizar triagem ordinários",
+        "autuacao": "26/09/2026",
+        "desde": "01/10/2026",
+        "dias_tramitando": 4,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0600477-78.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "ED no(a) REC no(a) Rp",
@@ -6120,6 +6131,36 @@
         "responsavel_processo": ""
       }
     ],
+    "aguardando-julgamento-do-recurso-interno-peticoes-nao-lidas": [
+      {
+        "processo": "0601209-59.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno; Petições não lidas",
+        "autuacao": "11/09/2026",
+        "desde": "11/09/2026",
+        "dias_tramitando": 19,
+        "julgado": true,
+        "data_julgamento": "26/09/2026",
+        "teor": "Julgado improcedente o pedido em 26/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601252-93.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno; Petições não lidas",
+        "autuacao": "11/09/2026",
+        "desde": "11/09/2026",
+        "dias_tramitando": 19,
+        "julgado": true,
+        "data_julgamento": "25/09/2026",
+        "teor": "Julgado improcedente o pedido em 25/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "aguardando-providencias": [
       {
         "processo": "0600958-41.2026.6.10.0000",
@@ -6286,22 +6327,6 @@
         "responsavel_processo": ""
       }
     ],
-    "aguardando-julgamento-do-recurso-interno-peticoes-nao-lidas": [
-      {
-        "processo": "0601209-59.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno; Petições não lidas",
-        "autuacao": "11/09/2026",
-        "desde": "11/09/2026",
-        "dias_tramitando": 19,
-        "julgado": true,
-        "data_julgamento": "26/09/2026",
-        "teor": "Julgado improcedente o pedido em 26/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "aguardando-julgamento-do-recurso-interno-verificar-decisao-peticao-avulsa": [
       {
         "processo": "0601034-65.2026.6.10.0000",
@@ -6327,6 +6352,22 @@
         "autuacao": "28/09/2026",
         "desde": "28/09/2026",
         "dias_tramitando": 2,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-peticao-avulsa-analisar-determinacao-peticoes-nao-lidas": [
+      {
+        "processo": "0601836-63.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Petições não lidas",
+        "autuacao": "28/09/2026",
+        "desde": "28/09/2026",
+        "dias_tramitando": 3,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -6965,9 +7006,9 @@
         "processo": "0601252-93.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno",
+        "tarefa_atual": "Aguardando julgamento do recurso interno; Petições não lidas",
         "autuacao": "11/09/2026",
-        "desde": "28/09/2026",
+        "desde": "11/09/2026",
         "dias_tramitando": 19,
         "julgado": true,
         "data_julgamento": "25/09/2026",
@@ -7427,9 +7468,9 @@
         "processo": "0601252-93.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Processo com prazo em curso",
+        "tarefa_atual": "Realizar triagem ordinários",
         "autuacao": "26/09/2026",
-        "desde": "30/09/2026",
+        "desde": "01/10/2026",
         "dias_tramitando": 4,
         "julgado": false,
         "data_julgamento": "",
@@ -7511,9 +7552,9 @@
         "processo": "0601836-63.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Processo com prazo em curso",
+        "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Petições não lidas",
         "autuacao": "28/09/2026",
-        "desde": "30/09/2026",
+        "desde": "28/09/2026",
         "dias_tramitando": 3,
         "julgado": false,
         "data_julgamento": "",
@@ -12762,9 +12803,9 @@
       "processo": "0601252-93.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Aguardando julgamento do recurso interno",
+      "tarefa_atual": "Aguardando julgamento do recurso interno; Petições não lidas",
       "autuacao": "11/09/2026",
-      "desde": "28/09/2026",
+      "desde": "11/09/2026",
       "dias_tramitando": 19,
       "julgado": true,
       "data_julgamento": "25/09/2026",
@@ -14008,9 +14049,9 @@
       "processo": "0601836-63.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Processo com prazo em curso",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Petições não lidas",
       "autuacao": "28/09/2026",
-      "desde": "30/09/2026",
+      "desde": "28/09/2026",
       "dias_tramitando": 3,
       "julgado": false,
       "data_julgamento": "",
@@ -20202,9 +20243,9 @@
       "processo": "0601252-93.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Aguardando julgamento do recurso interno",
+      "tarefa_atual": "Aguardando julgamento do recurso interno; Petições não lidas",
       "autuacao": "11/09/2026",
-      "desde": "28/09/2026",
+      "desde": "11/09/2026",
       "dias_tramitando": 19,
       "julgado": true,
       "data_julgamento": "25/09/2026",
@@ -21448,9 +21489,9 @@
       "processo": "0601836-63.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Processo com prazo em curso",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Petições não lidas",
       "autuacao": "28/09/2026",
-      "desde": "30/09/2026",
+      "desde": "28/09/2026",
       "dias_tramitando": 3,
       "julgado": false,
       "data_julgamento": "",
@@ -23956,9 +23997,9 @@
       "processo": "0601252-93.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "REC no(a) Rp",
-      "tarefa_atual": "Processo com prazo em curso",
+      "tarefa_atual": "Realizar triagem ordinários",
       "autuacao": "26/09/2026",
-      "desde": "30/09/2026",
+      "desde": "01/10/2026",
       "dias_tramitando": 4,
       "julgado": false,
       "data_julgamento": "",
@@ -26629,9 +26670,9 @@
       "processo": "0601252-93.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Aguardando julgamento do recurso interno",
+      "tarefa_atual": "Aguardando julgamento do recurso interno; Petições não lidas",
       "autuacao": "11/09/2026",
-      "desde": "28/09/2026",
+      "desde": "11/09/2026",
       "dias_tramitando": 19,
       "julgado": true,
       "data_julgamento": "25/09/2026",
@@ -27033,8 +27074,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "01/10/2026 11:23",
+  "publicado_em": "01/10/2026 11:24",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "4ad287fc38ac734db72c921385573c12ab54f9146b5bdbc5df81bdb62595a51a"
+  "hash_publicacao": "063a9f2a377ff8638fc0e26426a1172542a79e6b8e680197b820a5d640aa7c87"
 }
