@@ -12,7 +12,7 @@
       "quantidade": 79,
       "media_dias": 23.3,
       "maior_tempo": 176,
-      "urgentes": 0,
+      "urgentes": 1,
       "minutar": 9,
       "julgados": 34,
       "percentual_julgados": 37.4,
@@ -139,12 +139,12 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Definir procedimento",
+      "tarefa_atual": "Minutar ato; Petições não lidas",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Minutar ato; Petições não lidas",
+      "tarefa_atual": "Realizar triagem urgentes",
       "quantidade": 1
     },
     {
@@ -359,6 +359,11 @@
     },
     {
       "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Petições não lidas; Petições não lidas; Registrar ciência por telefone ou pessoalmente",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Analisar Processos; Selecionar documentos para acórdão - Gabinete",
       "quantidade": 1
     },
@@ -385,11 +390,6 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Minutar Relatório, Voto e Ementa",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Petições não lidas; Petições não lidas; Registrar ciência por telefone ou pessoalmente",
       "quantidade": 1
     },
     {
@@ -1110,7 +1110,7 @@
         "nome": "Gabinete Juiz Auxiliar 1",
         "total_acervo": 91,
         "contagens": {
-          "TRIAGEM_URGENTE": 0,
+          "TRIAGEM_URGENTE": 1,
           "TRIAGEM_ORDINARIA": 0,
           "MINUTAR_ATO": 9,
           "ASSINAR_ATO": 0,
@@ -1143,7 +1143,7 @@
       }
     ],
     "totais": {
-      "TRIAGEM_URGENTE": 4,
+      "TRIAGEM_URGENTE": 5,
       "TRIAGEM_ORDINARIA": 9,
       "MINUTAR_ATO": 31,
       "ASSINAR_ATO": 5,
@@ -1198,6 +1198,20 @@
       {
         "processo": "0601879-97.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem urgentes",
+        "autuacao": "01/10/2026",
+        "desde": "01/10/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601880-82.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
         "classe": "Rp",
         "tarefa_atual": "Realizar triagem urgentes",
         "autuacao": "01/10/2026",
@@ -2255,6 +2269,16 @@
         "total": 5
       },
       {
+        "codigo": "realizar-triagem-urgentes",
+        "tarefa": "Realizar triagem urgentes",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 4,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 5
+      },
+      {
         "codigo": "revisar-relatorio-voto-e-ementa",
         "tarefa": "Revisar Relatório, Voto e Ementa",
         "contagens": {
@@ -2281,16 +2305,6 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 4
-        },
-        "total": 4
-      },
-      {
-        "codigo": "realizar-triagem-urgentes",
-        "tarefa": "Realizar triagem urgentes",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 4,
-          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 4
       },
@@ -2425,6 +2439,16 @@
         "total": 1
       },
       {
+        "codigo": "analisar-peticao-avulsa-peticoes-nao-lidas-peticoes-nao-lidas-peticoes-nao-lidas-registrar-ciencia-por-telefone-ou-pessoalmente",
+        "tarefa": "Analisar Petição Avulsa; Petições não lidas; Petições não lidas; Petições não lidas; Registrar ciência por telefone ou pessoalmente",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
         "codigo": "analisar-processos-selecionar-documentos-para-acordao-gabinete",
         "tarefa": "Analisar Processos; Selecionar documentos para acórdão - Gabinete",
         "contagens": {
@@ -2455,16 +2479,6 @@
         "total": 1
       },
       {
-        "codigo": "definir-procedimento",
-        "tarefa": "Definir procedimento",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
         "codigo": "elaborar-documentos-verificar-decisao-peticao-avulsa",
         "tarefa": "Elaborar Documentos; Verificar Decisão - Petição Avulsa",
         "contagens": {
@@ -2491,16 +2505,6 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "peticoes-nao-lidas-peticoes-nao-lidas-registrar-ciencia-por-telefone-ou-pessoalmente",
-        "tarefa": "Petições não lidas; Petições não lidas; Registrar ciência por telefone ou pessoalmente",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 1
       },
@@ -5304,7 +5308,7 @@
         "tarefa_atual": "Minutar Relatório, Voto e Ementa",
         "autuacao": "26/09/2026",
         "desde": "01/10/2026",
-        "dias_tramitando": 4,
+        "dias_tramitando": 5,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -6198,6 +6202,78 @@
         "responsavel_processo": ""
       }
     ],
+    "realizar-triagem-urgentes": [
+      {
+        "processo": "0601803-73.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem urgentes",
+        "autuacao": "23/09/2026",
+        "desde": "30/09/2026",
+        "dias_tramitando": 7,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601875-60.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem urgentes",
+        "autuacao": "01/10/2026",
+        "desde": "01/10/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601876-45.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem urgentes",
+        "autuacao": "01/10/2026",
+        "desde": "01/10/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601879-97.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem urgentes",
+        "autuacao": "01/10/2026",
+        "desde": "01/10/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601880-82.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem urgentes",
+        "autuacao": "01/10/2026",
+        "desde": "01/10/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "revisar-relatorio-voto-e-ementa": [
       {
         "processo": "0600181-56.2026.6.10.0000",
@@ -6379,64 +6455,6 @@
         "autuacao": "29/09/2026",
         "desde": "01/10/2026",
         "dias_tramitando": 2,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "realizar-triagem-urgentes": [
-      {
-        "processo": "0601803-73.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Realizar triagem urgentes",
-        "autuacao": "23/09/2026",
-        "desde": "30/09/2026",
-        "dias_tramitando": 7,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601875-60.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Realizar triagem urgentes",
-        "autuacao": "01/10/2026",
-        "desde": "01/10/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601876-45.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Realizar triagem urgentes",
-        "autuacao": "01/10/2026",
-        "desde": "01/10/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601879-97.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Realizar triagem urgentes",
-        "autuacao": "01/10/2026",
-        "desde": "01/10/2026",
-        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -6820,6 +6838,22 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-peticao-avulsa-peticoes-nao-lidas-peticoes-nao-lidas-peticoes-nao-lidas-registrar-ciencia-por-telefone-ou-pessoalmente": [
+      {
+        "processo": "0601871-23.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Petições não lidas; Petições não lidas; Registrar ciência por telefone ou pessoalmente",
+        "autuacao": "30/09/2026",
+        "desde": "30/09/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "analisar-processos-selecionar-documentos-para-acordao-gabinete": [
       {
         "processo": "0601034-65.2026.6.10.0000",
@@ -6868,22 +6902,6 @@
         "responsavel_processo": ""
       }
     ],
-    "definir-procedimento": [
-      {
-        "processo": "0601880-82.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Definir procedimento",
-        "autuacao": "01/10/2026",
-        "desde": "01/10/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "elaborar-documentos-verificar-decisao-peticao-avulsa": [
       {
         "processo": "0601811-50.2026.6.10.0000",
@@ -6925,22 +6943,6 @@
         "autuacao": "19/09/2026",
         "desde": "19/09/2026",
         "dias_tramitando": 12,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "peticoes-nao-lidas-peticoes-nao-lidas-registrar-ciencia-por-telefone-ou-pessoalmente": [
-      {
-        "processo": "0601871-23.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Petições não lidas; Petições não lidas; Registrar ciência por telefone ou pessoalmente",
-        "autuacao": "30/09/2026",
-        "desde": "30/09/2026",
-        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -7914,6 +7916,20 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0601252-93.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Minutar Relatório, Voto e Ementa",
+        "autuacao": "26/09/2026",
+        "desde": "01/10/2026",
+        "dias_tramitando": 5,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0601762-09.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "REC no(a) Rp",
@@ -7935,20 +7951,6 @@
         "autuacao": "25/09/2026",
         "desde": "01/10/2026",
         "dias_tramitando": 5,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601252-93.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Minutar Relatório, Voto e Ementa",
-        "autuacao": "26/09/2026",
-        "desde": "01/10/2026",
-        "dias_tramitando": 4,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -8281,7 +8283,7 @@
         "processo": "0601880-82.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Definir procedimento",
+        "tarefa_atual": "Realizar triagem urgentes",
         "autuacao": "01/10/2026",
         "desde": "01/10/2026",
         "dias_tramitando": 0,
@@ -11337,7 +11339,7 @@
         "processo": "0601871-23.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Petições não lidas; Registrar ciência por telefone ou pessoalmente",
+        "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Registrar ciência por telefone ou pessoalmente",
         "autuacao": "30/09/2026",
         "desde": "30/09/2026",
         "dias_tramitando": 0,
@@ -15072,7 +15074,7 @@
       "processo": "0601871-23.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Petições não lidas; Registrar ciência por telefone ou pessoalmente",
+      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Registrar ciência por telefone ou pessoalmente",
       "autuacao": "30/09/2026",
       "desde": "30/09/2026",
       "dias_tramitando": 0,
@@ -15184,7 +15186,7 @@
       "processo": "0601880-82.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Definir procedimento",
+      "tarefa_atual": "Realizar triagem urgentes",
       "autuacao": "01/10/2026",
       "desde": "01/10/2026",
       "dias_tramitando": 0,
@@ -22638,7 +22640,7 @@
       "processo": "0601871-23.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Petições não lidas; Registrar ciência por telefone ou pessoalmente",
+      "tarefa_atual": "Analisar Petição Avulsa; Petições não lidas; Registrar ciência por telefone ou pessoalmente",
       "autuacao": "30/09/2026",
       "desde": "30/09/2026",
       "dias_tramitando": 0,
@@ -22750,7 +22752,7 @@
       "processo": "0601880-82.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Definir procedimento",
+      "tarefa_atual": "Realizar triagem urgentes",
       "autuacao": "01/10/2026",
       "desde": "01/10/2026",
       "dias_tramitando": 0,
@@ -24821,6 +24823,20 @@
       "responsavel_processo": ""
     },
     {
+      "processo": "0601252-93.2026.6.10.0000",
+      "gabinete": "Gab. JA 1",
+      "classe": "REC no(a) Rp",
+      "tarefa_atual": "Minutar Relatório, Voto e Ementa",
+      "autuacao": "26/09/2026",
+      "desde": "01/10/2026",
+      "dias_tramitando": 5,
+      "julgado": false,
+      "data_julgamento": "",
+      "teor": "",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
+    },
+    {
       "processo": "0601762-09.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "REC no(a) Rp",
@@ -24842,20 +24858,6 @@
       "autuacao": "26/09/2026",
       "desde": "26/09/2026",
       "dias_tramitando": 5,
-      "julgado": false,
-      "data_julgamento": "",
-      "teor": "",
-      "segredo_justica": "NÃO",
-      "responsavel_processo": ""
-    },
-    {
-      "processo": "0601252-93.2026.6.10.0000",
-      "gabinete": "Gab. JA 1",
-      "classe": "REC no(a) Rp",
-      "tarefa_atual": "Minutar Relatório, Voto e Ementa",
-      "autuacao": "26/09/2026",
-      "desde": "01/10/2026",
-      "dias_tramitando": 4,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -27929,8 +27931,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "01/10/2026 15:17",
+  "publicado_em": "01/10/2026 15:18",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "dd76739a4a04866a3cd0e4abfd89d086cd075ca599d0a14c7b167dc5fd4dd1c5"
+  "hash_publicacao": "bea1638746b4919b7e68f5521a043b62ae1e565bb13731dd67967f4da602f030"
 }
