@@ -254,17 +254,17 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Elaborar Documentos; Petições não lidas",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Petições não lidas; Petições não lidas; Realizar triagem ordinários",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
       "quantidade": 1
     },
     {
@@ -384,7 +384,7 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Petições não lidas; Redistribuir processo",
+      "tarefa_atual": "Redistribuir processo",
       "quantidade": 1
     },
     {
@@ -1071,7 +1071,7 @@
         "total_acervo": 127,
         "contagens": {
           "TRIAGEM_URGENTE": 6,
-          "TRIAGEM_ORDINARIA": 8,
+          "TRIAGEM_ORDINARIA": 9,
           "MINUTAR_ATO": 20,
           "ASSINAR_ATO": 3,
           "LANCAR_MOVIMENTACAO": 2
@@ -1092,7 +1092,7 @@
     ],
     "totais": {
       "TRIAGEM_URGENTE": 7,
-      "TRIAGEM_ORDINARIA": 8,
+      "TRIAGEM_ORDINARIA": 9,
       "MINUTAR_ATO": 28,
       "ASSINAR_ATO": 3,
       "LANCAR_MOVIMENTACAO": 6
@@ -1212,6 +1212,20 @@
         "julgado": true,
         "data_julgamento": "15/09/2026",
         "teor": "Julgado procedente em parte do pedido em 15/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601709-28.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
+        "autuacao": "14/09/2026",
+        "desde": "14/09/2026",
+        "dias_tramitando": 17,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -2347,16 +2361,6 @@
         "total": 1
       },
       {
-        "codigo": "elaborar-documentos-peticoes-nao-lidas",
-        "tarefa": "Elaborar Documentos; Petições não lidas",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
         "codigo": "elaborar-documentos-verificar-decisao-peticao-avulsa",
         "tarefa": "Elaborar Documentos; Verificar Decisão - Petição Avulsa",
         "contagens": {
@@ -2397,12 +2401,12 @@
         "total": 1
       },
       {
-        "codigo": "peticoes-nao-lidas-redistribuir-processo",
-        "tarefa": "Petições não lidas; Redistribuir processo",
+        "codigo": "peticoes-nao-lidas-realizar-triagem-ordinarios",
+        "tarefa": "Petições não lidas; Realizar triagem ordinários",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
       },
@@ -2413,6 +2417,16 @@
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "redistribuir-processo",
+        "tarefa": "Redistribuir processo",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 1
       },
@@ -6736,22 +6750,6 @@
         "responsavel_processo": ""
       }
     ],
-    "elaborar-documentos-peticoes-nao-lidas": [
-      {
-        "processo": "0601709-28.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Elaborar Documentos; Petições não lidas",
-        "autuacao": "14/09/2026",
-        "desde": "14/09/2026",
-        "dias_tramitando": 17,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "elaborar-documentos-verificar-decisao-peticao-avulsa": [
       {
         "processo": "0601811-50.2026.6.10.0000",
@@ -6816,15 +6814,15 @@
         "responsavel_processo": ""
       }
     ],
-    "peticoes-nao-lidas-redistribuir-processo": [
+    "peticoes-nao-lidas-realizar-triagem-ordinarios": [
       {
-        "processo": "0601873-90.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "RepEsp",
-        "tarefa_atual": "Petições não lidas; Redistribuir processo",
-        "autuacao": "30/09/2026",
-        "desde": "30/09/2026",
-        "dias_tramitando": 0,
+        "processo": "0601709-28.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
+        "autuacao": "14/09/2026",
+        "desde": "14/09/2026",
+        "dias_tramitando": 17,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -6841,6 +6839,22 @@
         "autuacao": "24/09/2026",
         "desde": "01/10/2026",
         "dias_tramitando": 6,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "redistribuir-processo": [
+      {
+        "processo": "0601873-90.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "RepEsp",
+        "tarefa_atual": "Redistribuir processo",
+        "autuacao": "30/09/2026",
+        "desde": "01/10/2026",
+        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -9059,7 +9073,7 @@
         "processo": "0601709-28.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Elaborar Documentos; Petições não lidas",
+        "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
         "autuacao": "14/09/2026",
         "desde": "14/09/2026",
         "dias_tramitando": 17,
@@ -11203,9 +11217,9 @@
         "processo": "0601873-90.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "RepEsp",
-        "tarefa_atual": "Petições não lidas; Redistribuir processo",
+        "tarefa_atual": "Redistribuir processo",
         "autuacao": "30/09/2026",
-        "desde": "30/09/2026",
+        "desde": "01/10/2026",
         "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
@@ -13314,7 +13328,7 @@
       "processo": "0601709-28.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Elaborar Documentos; Petições não lidas",
+      "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
       "autuacao": "14/09/2026",
       "desde": "14/09/2026",
       "dias_tramitando": 17,
@@ -14924,9 +14938,9 @@
       "processo": "0601873-90.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "RepEsp",
-      "tarefa_atual": "Petições não lidas; Redistribuir processo",
+      "tarefa_atual": "Redistribuir processo",
       "autuacao": "30/09/2026",
-      "desde": "30/09/2026",
+      "desde": "01/10/2026",
       "dias_tramitando": 0,
       "julgado": false,
       "data_julgamento": "",
@@ -20852,7 +20866,7 @@
       "processo": "0601709-28.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Elaborar Documentos; Petições não lidas",
+      "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
       "autuacao": "14/09/2026",
       "desde": "14/09/2026",
       "dias_tramitando": 17,
@@ -22462,9 +22476,9 @@
       "processo": "0601873-90.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "RepEsp",
-      "tarefa_atual": "Petições não lidas; Redistribuir processo",
+      "tarefa_atual": "Redistribuir processo",
       "autuacao": "30/09/2026",
-      "desde": "30/09/2026",
+      "desde": "01/10/2026",
       "dias_tramitando": 0,
       "julgado": false,
       "data_julgamento": "",
@@ -27697,8 +27711,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "01/10/2026 14:21",
+  "publicado_em": "01/10/2026 14:23",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "0b65f1eb4a2754576946238f2f1ab2cd3dec4db06ca804d04d291ebd2b3a5b68"
+  "hash_publicacao": "34c57ca36d305b386780ed8521c84225f54712faecd226996e8c686ada88dc1a"
 }
