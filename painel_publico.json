@@ -305,7 +305,7 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Elaborar Documentos",
-      "quantidade": 4
+      "quantidade": 3
     },
     {
       "gabinete": "Gab. JA 3",
@@ -374,17 +374,22 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Assinar ato",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Atualizar dados do processo",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Elaborar Documentos; Verificar Decisão - Petição Avulsa",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Lançar movimento",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Realizar triagem ordinários",
       "quantidade": 1
     },
     {
@@ -1182,19 +1187,19 @@
         "total_acervo": 96,
         "contagens": {
           "TRIAGEM_URGENTE": 1,
-          "TRIAGEM_ORDINARIA": 0,
+          "TRIAGEM_ORDINARIA": 1,
           "MINUTAR_ATO": 1,
-          "ASSINAR_ATO": 1,
-          "LANCAR_MOVIMENTACAO": 0
+          "ASSINAR_ATO": 0,
+          "LANCAR_MOVIMENTACAO": 1
         }
       }
     ],
     "totais": {
       "TRIAGEM_URGENTE": 8,
-      "TRIAGEM_ORDINARIA": 9,
+      "TRIAGEM_ORDINARIA": 10,
       "MINUTAR_ATO": 34,
-      "ASSINAR_ATO": 7,
-      "LANCAR_MOVIMENTACAO": 0
+      "ASSINAR_ATO": 6,
+      "LANCAR_MOVIMENTACAO": 1
     },
     "total_acervo": 317
   },
@@ -1416,6 +1421,20 @@
         "processo": "0600161-35.2026.6.10.0010",
         "gabinete": "Gab. JA 2",
         "classe": "NIP",
+        "tarefa_atual": "Realizar triagem ordinários",
+        "autuacao": "28/09/2026",
+        "desde": "01/10/2026",
+        "dias_tramitando": 3,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601775-08.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "REC no(a) Rp",
         "tarefa_atual": "Realizar triagem ordinários",
         "autuacao": "28/09/2026",
         "desde": "01/10/2026",
@@ -2003,12 +2022,14 @@
         "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
-      },
+      }
+    ],
+    "LANCAR_MOVIMENTACAO": [
       {
         "processo": "0601881-67.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
+        "tarefa_atual": "Lançar movimento",
         "autuacao": "01/10/2026",
         "desde": "01/10/2026",
         "dias_tramitando": 0,
@@ -2018,8 +2039,7 @@
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
-    ],
-    "LANCAR_MOVIMENTACAO": []
+    ]
   },
   "entrada_comissao": {
     "codigo": "LIMINAR_CERTIFICACAO",
@@ -2211,22 +2231,22 @@
         "total": 15
       },
       {
-        "codigo": "elaborar-documentos",
-        "tarefa": "Elaborar Documentos",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 6,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 4
-        },
-        "total": 10
-      },
-      {
         "codigo": "realizar-triagem-ordinarios",
         "tarefa": "Realizar triagem ordinários",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 9,
-          "Gabinete Juiz Auxiliar 3": 0
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 10
+      },
+      {
+        "codigo": "elaborar-documentos",
+        "tarefa": "Elaborar Documentos",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 6,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 3
         },
         "total": 9
       },
@@ -2276,9 +2296,9 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 6,
-          "Gabinete Juiz Auxiliar 3": 1
+          "Gabinete Juiz Auxiliar 3": 0
         },
-        "total": 7
+        "total": 6
       },
       {
         "codigo": "analisar-determinacao-urgentes",
@@ -2517,6 +2537,16 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "lancar-movimento",
+        "tarefa": "Lançar movimento",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 1
       },
@@ -5478,148 +5508,6 @@
         "responsavel_processo": ""
       }
     ],
-    "elaborar-documentos": [
-      {
-        "processo": "0600159-95.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Elaborar Documentos",
-        "autuacao": "26/05/2026",
-        "desde": "29/09/2026",
-        "dias_tramitando": 127,
-        "julgado": true,
-        "data_julgamento": "15/09/2026",
-        "teor": "Não conhecidos os embargos de declaração em 15/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601144-64.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Elaborar Documentos",
-        "autuacao": "09/09/2026",
-        "desde": "30/09/2026",
-        "dias_tramitando": 21,
-        "julgado": true,
-        "data_julgamento": "27/09/2026",
-        "teor": "Julgado improcedente o pedido em 27/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601161-03.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Elaborar Documentos",
-        "autuacao": "10/09/2026",
-        "desde": "29/09/2026",
-        "dias_tramitando": 21,
-        "julgado": true,
-        "data_julgamento": "14/09/2026",
-        "teor": "Julgado improcedente o pedido em 14/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601287-53.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Elaborar Documentos",
-        "autuacao": "11/09/2026",
-        "desde": "29/09/2026",
-        "dias_tramitando": 19,
-        "julgado": true,
-        "data_julgamento": "16/09/2026",
-        "teor": "Julgado improcedente o pedido em 16/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601760-39.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "RepEsp",
-        "tarefa_atual": "Elaborar Documentos",
-        "autuacao": "19/09/2026",
-        "desde": "30/09/2026",
-        "dias_tramitando": 12,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600021-61.2026.6.10.0087",
-        "gabinete": "Gab. JA 1",
-        "classe": "NIP",
-        "tarefa_atual": "Elaborar Documentos",
-        "autuacao": "23/09/2026",
-        "desde": "30/09/2026",
-        "dias_tramitando": 7,
-        "julgado": true,
-        "data_julgamento": "27/09/2026",
-        "teor": "Embargos de Declaração Não-acolhidos em 27/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600073-71.2026.6.10.0050",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Elaborar Documentos",
-        "autuacao": "25/09/2026",
-        "desde": "30/09/2026",
-        "dias_tramitando": 6,
-        "julgado": true,
-        "data_julgamento": "27/09/2026",
-        "teor": "Extinto o processo por ausência das condições da ação em 27/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601775-08.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Elaborar Documentos",
-        "autuacao": "28/09/2026",
-        "desde": "01/10/2026",
-        "dias_tramitando": 3,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600031-40.2026.6.10.0044",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Elaborar Documentos",
-        "autuacao": "30/09/2026",
-        "desde": "01/10/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601874-75.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Elaborar Documentos",
-        "autuacao": "01/10/2026",
-        "desde": "01/10/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "realizar-triagem-ordinarios": [
       {
         "processo": "0601124-73.2026.6.10.0000",
@@ -5734,6 +5622,20 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0601775-08.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Realizar triagem ordinários",
+        "autuacao": "28/09/2026",
+        "desde": "01/10/2026",
+        "dias_tramitando": 3,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0600477-78.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "ED no(a) REC no(a) Rp",
@@ -5741,6 +5643,134 @@
         "autuacao": "29/09/2026",
         "desde": "01/10/2026",
         "dias_tramitando": 2,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "elaborar-documentos": [
+      {
+        "processo": "0600159-95.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Elaborar Documentos",
+        "autuacao": "26/05/2026",
+        "desde": "29/09/2026",
+        "dias_tramitando": 127,
+        "julgado": true,
+        "data_julgamento": "15/09/2026",
+        "teor": "Não conhecidos os embargos de declaração em 15/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601144-64.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Elaborar Documentos",
+        "autuacao": "09/09/2026",
+        "desde": "30/09/2026",
+        "dias_tramitando": 21,
+        "julgado": true,
+        "data_julgamento": "27/09/2026",
+        "teor": "Julgado improcedente o pedido em 27/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601161-03.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Elaborar Documentos",
+        "autuacao": "10/09/2026",
+        "desde": "29/09/2026",
+        "dias_tramitando": 21,
+        "julgado": true,
+        "data_julgamento": "14/09/2026",
+        "teor": "Julgado improcedente o pedido em 14/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601287-53.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Elaborar Documentos",
+        "autuacao": "11/09/2026",
+        "desde": "29/09/2026",
+        "dias_tramitando": 19,
+        "julgado": true,
+        "data_julgamento": "16/09/2026",
+        "teor": "Julgado improcedente o pedido em 16/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601760-39.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "RepEsp",
+        "tarefa_atual": "Elaborar Documentos",
+        "autuacao": "19/09/2026",
+        "desde": "30/09/2026",
+        "dias_tramitando": 12,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600021-61.2026.6.10.0087",
+        "gabinete": "Gab. JA 1",
+        "classe": "NIP",
+        "tarefa_atual": "Elaborar Documentos",
+        "autuacao": "23/09/2026",
+        "desde": "30/09/2026",
+        "dias_tramitando": 7,
+        "julgado": true,
+        "data_julgamento": "27/09/2026",
+        "teor": "Embargos de Declaração Não-acolhidos em 27/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600073-71.2026.6.10.0050",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Elaborar Documentos",
+        "autuacao": "25/09/2026",
+        "desde": "30/09/2026",
+        "dias_tramitando": 6,
+        "julgado": true,
+        "data_julgamento": "27/09/2026",
+        "teor": "Extinto o processo por ausência das condições da ação em 27/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600031-40.2026.6.10.0044",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Elaborar Documentos",
+        "autuacao": "30/09/2026",
+        "desde": "01/10/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601874-75.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Elaborar Documentos",
+        "autuacao": "01/10/2026",
+        "desde": "01/10/2026",
+        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -6250,20 +6280,6 @@
       {
         "processo": "0601875-60.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "01/10/2026",
-        "desde": "01/10/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601881-67.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
         "classe": "Rp",
         "tarefa_atual": "Assinar ato",
         "autuacao": "01/10/2026",
@@ -7006,6 +7022,22 @@
         "julgado": true,
         "data_julgamento": "29/09/2026",
         "teor": "Julgado procedente o pedido em 29/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "lancar-movimento": [
+      {
+        "processo": "0601881-67.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Lançar movimento",
+        "autuacao": "01/10/2026",
+        "desde": "01/10/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -11219,7 +11251,7 @@
         "processo": "0601775-08.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Elaborar Documentos",
+        "tarefa_atual": "Realizar triagem ordinários",
         "autuacao": "28/09/2026",
         "desde": "01/10/2026",
         "dias_tramitando": 3,
@@ -11499,7 +11531,7 @@
         "processo": "0601881-67.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
+        "tarefa_atual": "Lançar movimento",
         "autuacao": "01/10/2026",
         "desde": "01/10/2026",
         "dias_tramitando": 0,
@@ -15346,7 +15378,7 @@
       "processo": "0601881-67.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "autuacao": "01/10/2026",
       "desde": "01/10/2026",
       "dias_tramitando": 0,
@@ -22968,7 +23000,7 @@
       "processo": "0601881-67.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "autuacao": "01/10/2026",
       "desde": "01/10/2026",
       "dias_tramitando": 0,
@@ -25154,7 +25186,7 @@
       "processo": "0601775-08.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "REC no(a) Rp",
-      "tarefa_atual": "Elaborar Documentos",
+      "tarefa_atual": "Realizar triagem ordinários",
       "autuacao": "28/09/2026",
       "desde": "01/10/2026",
       "dias_tramitando": 3,
@@ -28175,8 +28207,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "01/10/2026 16:56",
+  "publicado_em": "01/10/2026 16:57",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "d4a1fcc44f90d3ac4d2349b61ecabcd7efadf910fcdfc521b17fbec27a21a7d3"
+  "hash_publicacao": "aa31daf90c86da2e8df886b6149905310b243d657fd2e804f2f18338aa62ba1b"
 }
