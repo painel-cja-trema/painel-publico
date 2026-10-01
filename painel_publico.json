@@ -75,7 +75,7 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Assinar ato",
-      "quantidade": 9
+      "quantidade": 8
     },
     {
       "gabinete": "Gab. JA 1",
@@ -100,6 +100,11 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Analisar Petição Avulsa; Analisar petição avulsa de autuação; Petições não lidas; Processo com prazo em curso",
+      "quantidade": 2
+    },
+    {
+      "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Lançar movimento",
       "quantidade": 2
     },
     {
@@ -135,11 +140,6 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Atualizar dados do processo",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Lançar movimento",
       "quantidade": 1
     },
     {
@@ -898,8 +898,8 @@
           "TRIAGEM_URGENTE": 0,
           "TRIAGEM_ORDINARIA": 1,
           "MINUTAR_ATO": 0,
-          "ASSINAR_ATO": 9,
-          "LANCAR_MOVIMENTACAO": 1
+          "ASSINAR_ATO": 8,
+          "LANCAR_MOVIMENTACAO": 2
         }
       },
       {
@@ -931,8 +931,8 @@
       "TRIAGEM_URGENTE": 2,
       "TRIAGEM_ORDINARIA": 6,
       "MINUTAR_ATO": 20,
-      "ASSINAR_ATO": 13,
-      "LANCAR_MOVIMENTACAO": 6
+      "ASSINAR_ATO": 12,
+      "LANCAR_MOVIMENTACAO": 7
     },
     "total_acervo": 298
   },
@@ -1407,20 +1407,6 @@
         "responsavel_processo": ""
       },
       {
-        "processo": "0600364-27.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "04/08/2026",
-        "desde": "30/09/2026",
-        "dias_tramitando": 57,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
         "processo": "0601739-63.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
@@ -1531,6 +1517,20 @@
         "julgado": true,
         "data_julgamento": "16/07/2026",
         "teor": "Julgado procedente o pedido em 16/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600364-27.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Lançar movimento",
+        "autuacao": "04/08/2026",
+        "desde": "30/09/2026",
+        "dias_tramitando": 57,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -1730,16 +1730,6 @@
         "total": 31
       },
       {
-        "codigo": "assinar-ato",
-        "tarefa": "Assinar ato",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 9,
-          "Gabinete Juiz Auxiliar 2": 4,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 13
-      },
-      {
         "codigo": "minutar-relatorio-voto-e-ementa",
         "tarefa": "Minutar Relatório, Voto e Ementa",
         "contagens": {
@@ -1748,6 +1738,16 @@
           "Gabinete Juiz Auxiliar 3": 2
         },
         "total": 13
+      },
+      {
+        "codigo": "assinar-ato",
+        "tarefa": "Assinar ato",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 8,
+          "Gabinete Juiz Auxiliar 2": 4,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 12
       },
       {
         "codigo": "registrar-ciencia-por-telefone-ou-pessoalmente",
@@ -1810,6 +1810,16 @@
         "total": 6
       },
       {
+        "codigo": "lancar-movimento",
+        "tarefa": "Lançar movimento",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 2,
+          "Gabinete Juiz Auxiliar 2": 4,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 6
+      },
+      {
         "codigo": "realizar-triagem-ordinarios",
         "tarefa": "Realizar triagem ordinários",
         "contagens": {
@@ -1828,16 +1838,6 @@
           "Gabinete Juiz Auxiliar 3": 2
         },
         "total": 6
-      },
-      {
-        "codigo": "lancar-movimento",
-        "tarefa": "Lançar movimento",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 4,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 5
       },
       {
         "codigo": "conferir-relatorio-voto-e-ementa",
@@ -4459,190 +4459,6 @@
         "responsavel_processo": ""
       }
     ],
-    "assinar-ato": [
-      {
-        "processo": "0600080-19.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "07/04/2026",
-        "desde": "30/09/2026",
-        "dias_tramitando": 176,
-        "julgado": true,
-        "data_julgamento": "14/08/2026",
-        "teor": "Julgado procedente o pedido em 14/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600185-93.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "18/06/2026",
-        "desde": "30/09/2026",
-        "dias_tramitando": 104,
-        "julgado": true,
-        "data_julgamento": "09/07/2026",
-        "teor": "Não conhecido o recurso de PARTIDO SOCIALISTA BRASILEIRO DIRETORIO ESTADUAL em 09/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600187-63.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "23/06/2026",
-        "desde": "30/09/2026",
-        "dias_tramitando": 99,
-        "julgado": true,
-        "data_julgamento": "08/07/2026",
-        "teor": "Julgado procedente em parte do pedido em 08/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600191-03.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "25/06/2026",
-        "desde": "30/09/2026",
-        "dias_tramitando": 97,
-        "julgado": true,
-        "data_julgamento": "28/07/2026",
-        "teor": "Julgado procedente o pedido em 28/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600193-70.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "26/06/2026",
-        "desde": "30/09/2026",
-        "dias_tramitando": 96,
-        "julgado": true,
-        "data_julgamento": "16/07/2026",
-        "teor": "Julgado procedente o pedido em 16/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600364-27.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "04/08/2026",
-        "desde": "30/09/2026",
-        "dias_tramitando": 57,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601739-63.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "17/09/2026",
-        "desde": "30/09/2026",
-        "dias_tramitando": 13,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601749-10.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "17/09/2026",
-        "desde": "28/09/2026",
-        "dias_tramitando": 13,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601810-65.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "23/09/2026",
-        "desde": "29/09/2026",
-        "dias_tramitando": 6,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601857-39.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "29/09/2026",
-        "desde": "30/09/2026",
-        "dias_tramitando": 1,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601863-46.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "30/09/2026",
-        "desde": "30/09/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601866-98.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "30/09/2026",
-        "desde": "30/09/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601868-68.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "30/09/2026",
-        "desde": "30/09/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "minutar-relatorio-voto-e-ementa": [
       {
         "processo": "0600075-37.2026.6.10.0019",
@@ -4820,6 +4636,176 @@
         "autuacao": "28/09/2026",
         "desde": "29/09/2026",
         "dias_tramitando": 2,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "assinar-ato": [
+      {
+        "processo": "0600080-19.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "07/04/2026",
+        "desde": "30/09/2026",
+        "dias_tramitando": 176,
+        "julgado": true,
+        "data_julgamento": "14/08/2026",
+        "teor": "Julgado procedente o pedido em 14/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600185-93.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "18/06/2026",
+        "desde": "30/09/2026",
+        "dias_tramitando": 104,
+        "julgado": true,
+        "data_julgamento": "09/07/2026",
+        "teor": "Não conhecido o recurso de PARTIDO SOCIALISTA BRASILEIRO DIRETORIO ESTADUAL em 09/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600187-63.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "23/06/2026",
+        "desde": "30/09/2026",
+        "dias_tramitando": 99,
+        "julgado": true,
+        "data_julgamento": "08/07/2026",
+        "teor": "Julgado procedente em parte do pedido em 08/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600191-03.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "25/06/2026",
+        "desde": "30/09/2026",
+        "dias_tramitando": 97,
+        "julgado": true,
+        "data_julgamento": "28/07/2026",
+        "teor": "Julgado procedente o pedido em 28/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600193-70.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "26/06/2026",
+        "desde": "30/09/2026",
+        "dias_tramitando": 96,
+        "julgado": true,
+        "data_julgamento": "16/07/2026",
+        "teor": "Julgado procedente o pedido em 16/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601739-63.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "17/09/2026",
+        "desde": "30/09/2026",
+        "dias_tramitando": 13,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601749-10.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "17/09/2026",
+        "desde": "28/09/2026",
+        "dias_tramitando": 13,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601810-65.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "23/09/2026",
+        "desde": "29/09/2026",
+        "dias_tramitando": 6,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601857-39.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "29/09/2026",
+        "desde": "30/09/2026",
+        "dias_tramitando": 1,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601863-46.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "30/09/2026",
+        "desde": "30/09/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601866-98.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "30/09/2026",
+        "desde": "30/09/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601868-68.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "30/09/2026",
+        "desde": "30/09/2026",
+        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -5441,6 +5427,92 @@
         "responsavel_processo": ""
       }
     ],
+    "lancar-movimento": [
+      {
+        "processo": "0600089-78.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "CumSen",
+        "tarefa_atual": "Lançar movimento",
+        "autuacao": "10/04/2026",
+        "desde": "30/09/2026",
+        "dias_tramitando": 173,
+        "julgado": true,
+        "data_julgamento": "16/07/2026",
+        "teor": "Julgado procedente o pedido em 16/07/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600364-27.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Lançar movimento",
+        "autuacao": "04/08/2026",
+        "desde": "30/09/2026",
+        "dias_tramitando": 57,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600953-19.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "CumSen",
+        "tarefa_atual": "Lançar movimento",
+        "autuacao": "19/08/2026",
+        "desde": "30/09/2026",
+        "dias_tramitando": 42,
+        "julgado": true,
+        "data_julgamento": "29/08/2026",
+        "teor": "Julgado procedente o pedido em 29/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601371-54.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Lançar movimento",
+        "autuacao": "12/09/2026",
+        "desde": "30/09/2026",
+        "dias_tramitando": 18,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601066-70.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Lançar movimento",
+        "autuacao": "26/09/2026",
+        "desde": "30/09/2026",
+        "dias_tramitando": 4,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601864-31.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Lançar movimento",
+        "autuacao": "30/09/2026",
+        "desde": "30/09/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "realizar-triagem-ordinarios": [
       {
         "processo": "0601124-73.2026.6.10.0000",
@@ -5606,78 +5678,6 @@
         "autuacao": "23/09/2026",
         "desde": "29/09/2026",
         "dias_tramitando": 7,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "lancar-movimento": [
-      {
-        "processo": "0600089-78.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "CumSen",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "10/04/2026",
-        "desde": "30/09/2026",
-        "dias_tramitando": 173,
-        "julgado": true,
-        "data_julgamento": "16/07/2026",
-        "teor": "Julgado procedente o pedido em 16/07/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600953-19.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "CumSen",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "19/08/2026",
-        "desde": "30/09/2026",
-        "dias_tramitando": 42,
-        "julgado": true,
-        "data_julgamento": "29/08/2026",
-        "teor": "Julgado procedente o pedido em 29/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601371-54.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "12/09/2026",
-        "desde": "30/09/2026",
-        "dias_tramitando": 18,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601066-70.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "26/09/2026",
-        "desde": "30/09/2026",
-        "dias_tramitando": 4,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601864-31.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "30/09/2026",
-        "desde": "30/09/2026",
-        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -6488,7 +6488,7 @@
         "processo": "0600364-27.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
+        "tarefa_atual": "Lançar movimento",
         "autuacao": "04/08/2026",
         "desde": "30/09/2026",
         "dias_tramitando": 57,
@@ -11277,7 +11277,7 @@
       "processo": "0600364-27.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "autuacao": "04/08/2026",
       "desde": "30/09/2026",
       "dias_tramitando": 57,
@@ -18633,7 +18633,7 @@
       "processo": "0600364-27.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "autuacao": "04/08/2026",
       "desde": "30/09/2026",
       "dias_tramitando": 57,
@@ -26640,8 +26640,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "30/09/2026 22:48",
+  "publicado_em": "30/09/2026 22:51",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "7d742268decad2f5d79936e7e62977076dc56ba5b84d4f5af786db08fbb5d9d0"
+  "hash_publicacao": "b5f3bc0d78872266923185889bfeb55c7a66dd6ea158c9428a2a86620bcc60aa"
 }
