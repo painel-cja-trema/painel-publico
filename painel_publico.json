@@ -219,6 +219,11 @@
     },
     {
       "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Elaborar Documentos",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
       "quantidade": 1
     },
@@ -230,11 +235,6 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Realizar triagem urgentes",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Verificar Pendências",
       "quantidade": 1
     },
     {
@@ -2135,6 +2135,16 @@
         "total": 2
       },
       {
+        "codigo": "elaborar-documentos",
+        "tarefa": "Elaborar Documentos",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 2
+      },
+      {
         "codigo": "realizar-triagem-urgentes",
         "tarefa": "Realizar triagem urgentes",
         "contagens": {
@@ -2235,16 +2245,6 @@
         "total": 1
       },
       {
-        "codigo": "elaborar-documentos",
-        "tarefa": "Elaborar Documentos",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
         "codigo": "lancar-movimento",
         "tarefa": "Lançar movimento",
         "contagens": {
@@ -2280,16 +2280,6 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "verificar-pendencias",
-        "tarefa": "Verificar Pendências",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -6590,6 +6580,36 @@
         "responsavel_processo": ""
       }
     ],
+    "elaborar-documentos": [
+      {
+        "processo": "0601760-39.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "RepEsp",
+        "tarefa_atual": "Elaborar Documentos",
+        "autuacao": "19/09/2026",
+        "desde": "30/09/2026",
+        "dias_tramitando": 13,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600086-33.2026.6.10.0030",
+        "gabinete": "Gab. JA 2",
+        "classe": "NIP",
+        "tarefa_atual": "Elaborar Documentos",
+        "autuacao": "27/09/2026",
+        "desde": "02/10/2026",
+        "dias_tramitando": 4,
+        "julgado": true,
+        "data_julgamento": "29/09/2026",
+        "teor": "Extinto o processo por Perempção, litispendência ou coisa julgada em 29/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "realizar-triagem-urgentes": [
       {
         "processo": "0601803-73.2026.6.10.0000",
@@ -6792,22 +6812,6 @@
         "responsavel_processo": ""
       }
     ],
-    "elaborar-documentos": [
-      {
-        "processo": "0601760-39.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "RepEsp",
-        "tarefa_atual": "Elaborar Documentos",
-        "autuacao": "19/09/2026",
-        "desde": "30/09/2026",
-        "dias_tramitando": 13,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "lancar-movimento": [
       {
         "processo": "0601033-80.2026.6.10.0000",
@@ -6868,22 +6872,6 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "verificar-pendencias": [
-      {
-        "processo": "0600086-33.2026.6.10.0030",
-        "gabinete": "Gab. JA 2",
-        "classe": "NIP",
-        "tarefa_atual": "Verificar Pendências",
-        "autuacao": "27/09/2026",
-        "desde": "02/10/2026",
-        "dias_tramitando": 4,
-        "julgado": true,
-        "data_julgamento": "29/09/2026",
-        "teor": "Extinto o processo por Perempção, litispendência ou coisa julgada em 29/09/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -9655,7 +9643,7 @@
         "processo": "0600086-33.2026.6.10.0030",
         "gabinete": "Gab. JA 2",
         "classe": "NIP",
-        "tarefa_atual": "Verificar Pendências",
+        "tarefa_atual": "Elaborar Documentos",
         "autuacao": "27/09/2026",
         "desde": "02/10/2026",
         "dias_tramitando": 4,
@@ -14504,7 +14492,7 @@
       "processo": "0600086-33.2026.6.10.0030",
       "gabinete": "Gab. JA 2",
       "classe": "NIP",
-      "tarefa_atual": "Verificar Pendências",
+      "tarefa_atual": "Elaborar Documentos",
       "autuacao": "27/09/2026",
       "desde": "02/10/2026",
       "dias_tramitando": 4,
@@ -22362,7 +22350,7 @@
       "processo": "0600086-33.2026.6.10.0030",
       "gabinete": "Gab. JA 2",
       "classe": "NIP",
-      "tarefa_atual": "Verificar Pendências",
+      "tarefa_atual": "Elaborar Documentos",
       "autuacao": "27/09/2026",
       "desde": "02/10/2026",
       "dias_tramitando": 4,
@@ -28315,7 +28303,7 @@
       "processo": "0600086-33.2026.6.10.0030",
       "gabinete": "Gab. JA 2",
       "classe": "NIP",
-      "tarefa_atual": "Verificar Pendências",
+      "tarefa_atual": "Elaborar Documentos",
       "autuacao": "27/09/2026",
       "desde": "02/10/2026",
       "dias_tramitando": 4,
@@ -28327,8 +28315,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "02/10/2026 12:42",
+  "publicado_em": "02/10/2026 12:44",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "2b40c94187f607e1ad25244b1cc4f0e7cb0de2746e6e580263794aaa864134b4"
+  "hash_publicacao": "29fa93c871525783fe1346b4e9084ca3c01e1892570988e4f76be54feaaaa42e"
 }
