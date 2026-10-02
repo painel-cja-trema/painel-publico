@@ -114,7 +114,7 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "quantidade": 2
     },
     {
@@ -144,7 +144,7 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Lançar movimento",
+      "tarefa_atual": "Assinar ato",
       "quantidade": 1
     },
     {
@@ -1137,8 +1137,8 @@
           "TRIAGEM_URGENTE": 1,
           "TRIAGEM_ORDINARIA": 1,
           "MINUTAR_ATO": 5,
-          "ASSINAR_ATO": 2,
-          "LANCAR_MOVIMENTACAO": 1
+          "ASSINAR_ATO": 1,
+          "LANCAR_MOVIMENTACAO": 2
         }
       },
       {
@@ -1170,8 +1170,8 @@
       "TRIAGEM_URGENTE": 2,
       "TRIAGEM_ORDINARIA": 14,
       "MINUTAR_ATO": 32,
-      "ASSINAR_ATO": 6,
-      "LANCAR_MOVIMENTACAO": 1
+      "ASSINAR_ATO": 5,
+      "LANCAR_MOVIMENTACAO": 2
     },
     "total_acervo": 331
   },
@@ -1912,20 +1912,6 @@
         "responsavel_processo": ""
       },
       {
-        "processo": "0601898-06.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "01/10/2026",
-        "desde": "02/10/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
         "processo": "0601899-88.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
@@ -1949,6 +1935,20 @@
         "autuacao": "01/10/2026",
         "desde": "02/10/2026",
         "dias_tramitando": 1,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601898-06.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Lançar movimento",
+        "autuacao": "01/10/2026",
+        "desde": "02/10/2026",
+        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -2096,11 +2096,11 @@
         "codigo": "assinar-ato",
         "tarefa": "Assinar ato",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 2,
+          "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 4,
           "Gabinete Juiz Auxiliar 3": 0
         },
-        "total": 6
+        "total": 5
       },
       {
         "codigo": "analisar-peticao-avulsa-processo-com-prazo-em-curso",
@@ -2229,6 +2229,16 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 2
+      },
+      {
+        "codigo": "lancar-movimento",
+        "tarefa": "Lançar movimento",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 2,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 2
       },
@@ -2419,16 +2429,6 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
-        "codigo": "lancar-movimento",
-        "tarefa": "Lançar movimento",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
       },
@@ -3456,7 +3456,7 @@
         "tarefa_atual": "Aguardando julgamento do recurso interno",
         "autuacao": "26/08/2026",
         "desde": "13/09/2026",
-        "dias_tramitando": 36,
+        "dias_tramitando": 37,
         "julgado": true,
         "data_julgamento": "08/09/2026",
         "teor": "Julgado improcedente o pedido em 08/09/2026",
@@ -6256,20 +6256,6 @@
         "responsavel_processo": ""
       },
       {
-        "processo": "0601898-06.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "01/10/2026",
-        "desde": "02/10/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
         "processo": "0601899-88.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
@@ -6772,6 +6758,36 @@
         "responsavel_processo": ""
       }
     ],
+    "lancar-movimento": [
+      {
+        "processo": "0601891-14.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Lançar movimento",
+        "autuacao": "01/10/2026",
+        "desde": "02/10/2026",
+        "dias_tramitando": 1,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601898-06.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Lançar movimento",
+        "autuacao": "01/10/2026",
+        "desde": "02/10/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "processo-com-prazo-em-curso-registrar-recurso": [
       {
         "processo": "0600193-70.2026.6.10.0000",
@@ -7125,22 +7141,6 @@
         "autuacao": "19/09/2026",
         "desde": "30/09/2026",
         "dias_tramitando": 13,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "lancar-movimento": [
-      {
-        "processo": "0601891-14.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "01/10/2026",
-        "desde": "02/10/2026",
-        "dias_tramitando": 1,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -8477,7 +8477,7 @@
         "processo": "0601898-06.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
+        "tarefa_atual": "Lançar movimento",
         "autuacao": "01/10/2026",
         "desde": "02/10/2026",
         "dias_tramitando": 0,
@@ -9042,7 +9042,7 @@
         "tarefa_atual": "Aguardando julgamento do recurso interno",
         "autuacao": "26/08/2026",
         "desde": "13/09/2026",
-        "dias_tramitando": 36,
+        "dias_tramitando": 37,
         "julgado": true,
         "data_julgamento": "08/09/2026",
         "teor": "Julgado improcedente o pedido em 08/09/2026",
@@ -13023,7 +13023,7 @@
       "tarefa_atual": "Aguardando julgamento do recurso interno",
       "autuacao": "26/08/2026",
       "desde": "13/09/2026",
-      "dias_tramitando": 36,
+      "dias_tramitando": 37,
       "julgado": true,
       "data_julgamento": "08/09/2026",
       "teor": "Julgado improcedente o pedido em 08/09/2026",
@@ -15764,7 +15764,7 @@
       "processo": "0601898-06.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "autuacao": "01/10/2026",
       "desde": "02/10/2026",
       "dias_tramitando": 0,
@@ -20993,7 +20993,7 @@
       "tarefa_atual": "Aguardando julgamento do recurso interno",
       "autuacao": "26/08/2026",
       "desde": "13/09/2026",
-      "dias_tramitando": 36,
+      "dias_tramitando": 37,
       "julgado": true,
       "data_julgamento": "08/09/2026",
       "teor": "Julgado improcedente o pedido em 08/09/2026",
@@ -23734,7 +23734,7 @@
       "processo": "0601898-06.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "autuacao": "01/10/2026",
       "desde": "02/10/2026",
       "dias_tramitando": 0,
@@ -28136,7 +28136,7 @@
       "tarefa_atual": "Aguardando julgamento do recurso interno",
       "autuacao": "26/08/2026",
       "desde": "13/09/2026",
-      "dias_tramitando": 36,
+      "dias_tramitando": 37,
       "julgado": true,
       "data_julgamento": "08/09/2026",
       "teor": "Julgado improcedente o pedido em 08/09/2026",
@@ -28971,8 +28971,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "02/10/2026 17:24",
+  "publicado_em": "02/10/2026 17:26",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "3e0994127a8c2c7848c701dc52111960a900267d779c06822a17b5fb7f8ee746"
+  "hash_publicacao": "fbfed7c7a2ef849852227627f02a9e3b0a38d7342dcc34c8d79e5adb5748449b"
 }
