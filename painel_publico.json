@@ -369,12 +369,12 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Elaborar Documentos",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Elaborar Documentos",
+      "tarefa_atual": "Lançar movimento",
       "quantidade": 1
     },
     {
@@ -748,7 +748,7 @@
       "tarefa_atual": "Minutar ato",
       "autuacao": "16/09/2026",
       "desde": "02/10/2026",
-      "dias_tramitando": 15,
+      "dias_tramitando": 16,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -1116,8 +1116,8 @@
           "TRIAGEM_URGENTE": 0,
           "TRIAGEM_ORDINARIA": 0,
           "MINUTAR_ATO": 2,
-          "ASSINAR_ATO": 1,
-          "LANCAR_MOVIMENTACAO": 0
+          "ASSINAR_ATO": 0,
+          "LANCAR_MOVIMENTACAO": 1
         }
       }
     ],
@@ -1125,8 +1125,8 @@
       "TRIAGEM_URGENTE": 1,
       "TRIAGEM_ORDINARIA": 14,
       "MINUTAR_ATO": 32,
-      "ASSINAR_ATO": 7,
-      "LANCAR_MOVIMENTACAO": 0
+      "ASSINAR_ATO": 6,
+      "LANCAR_MOVIMENTACAO": 1
     },
     "total_acervo": 327
   },
@@ -1493,7 +1493,7 @@
         "tarefa_atual": "Minutar ato",
         "autuacao": "16/09/2026",
         "desde": "02/10/2026",
-        "dias_tramitando": 15,
+        "dias_tramitando": 16,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -1879,12 +1879,14 @@
         "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
-      },
+      }
+    ],
+    "LANCAR_MOVIMENTACAO": [
       {
         "processo": "0601904-13.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
+        "tarefa_atual": "Lançar movimento",
         "autuacao": "02/10/2026",
         "desde": "02/10/2026",
         "dias_tramitando": 0,
@@ -1894,8 +1896,7 @@
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
-    ],
-    "LANCAR_MOVIMENTACAO": []
+    ]
   },
   "entrada_comissao": {
     "codigo": "LIMINAR_CERTIFICACAO",
@@ -2086,9 +2087,9 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 5,
-          "Gabinete Juiz Auxiliar 3": 1
+          "Gabinete Juiz Auxiliar 3": 0
         },
-        "total": 7
+        "total": 6
       },
       {
         "codigo": "analisar-determinacao-urgentes",
@@ -2363,6 +2364,16 @@
       {
         "codigo": "elaborar-documentos",
         "tarefa": "Elaborar Documentos",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
+        "codigo": "lancar-movimento",
+        "tarefa": "Lançar movimento",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -4914,7 +4925,7 @@
         "tarefa_atual": "Minutar ato",
         "autuacao": "16/09/2026",
         "desde": "02/10/2026",
-        "dias_tramitando": 15,
+        "dias_tramitando": 16,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -5316,6 +5327,20 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0600939-35.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "ED no(a) Rp",
+        "tarefa_atual": "Minutar Relatório, Voto e Ementa",
+        "autuacao": "24/09/2026",
+        "desde": "29/09/2026",
+        "dias_tramitando": 8,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0601076-17.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "REC no(a) Rp",
@@ -5337,20 +5362,6 @@
         "autuacao": "24/09/2026",
         "desde": "29/09/2026",
         "dias_tramitando": 8,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600939-35.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "ED no(a) Rp",
-        "tarefa_atual": "Minutar Relatório, Voto e Ementa",
-        "autuacao": "24/09/2026",
-        "desde": "29/09/2026",
-        "dias_tramitando": 7,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -6264,20 +6275,6 @@
         "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
-      },
-      {
-        "processo": "0601904-13.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "02/10/2026",
-        "desde": "02/10/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
       }
     ],
     "analisar-determinacao-urgentes": [
@@ -7015,6 +7012,22 @@
         "autuacao": "19/09/2026",
         "desde": "30/09/2026",
         "dias_tramitando": 13,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "lancar-movimento": [
+      {
+        "processo": "0601904-13.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Lançar movimento",
+        "autuacao": "02/10/2026",
+        "desde": "02/10/2026",
+        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -9328,13 +9341,13 @@
         "responsavel_processo": ""
       },
       {
-        "processo": "0600176-34.2026.6.10.0000",
+        "processo": "0601734-41.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Aguarda Sessão de Julgamento; Elaborar extrato da ata; Pauta provisória; Selecionar documentos para acórdão - Gabinete",
-        "autuacao": "17/09/2026",
-        "desde": "17/09/2026",
-        "dias_tramitando": 15,
+        "classe": "DR",
+        "tarefa_atual": "Minutar ato",
+        "autuacao": "16/09/2026",
+        "desde": "02/10/2026",
+        "dias_tramitando": 16,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -9342,12 +9355,12 @@
         "responsavel_processo": ""
       },
       {
-        "processo": "0601734-41.2026.6.10.0000",
+        "processo": "0600176-34.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
-        "classe": "DR",
-        "tarefa_atual": "Minutar ato",
-        "autuacao": "16/09/2026",
-        "desde": "02/10/2026",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Aguarda Sessão de Julgamento; Elaborar extrato da ata; Pauta provisória; Selecionar documentos para acórdão - Gabinete",
+        "autuacao": "17/09/2026",
+        "desde": "17/09/2026",
         "dias_tramitando": 15,
         "julgado": false,
         "data_julgamento": "",
@@ -9622,6 +9635,20 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0600939-35.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "ED no(a) Rp",
+        "tarefa_atual": "Minutar Relatório, Voto e Ementa",
+        "autuacao": "24/09/2026",
+        "desde": "29/09/2026",
+        "dias_tramitando": 8,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0601076-17.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "REC no(a) Rp",
@@ -9699,20 +9726,6 @@
         "autuacao": "23/09/2026",
         "desde": "29/09/2026",
         "dias_tramitando": 8,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600939-35.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "ED no(a) Rp",
-        "tarefa_atual": "Minutar Relatório, Voto e Ementa",
-        "autuacao": "24/09/2026",
-        "desde": "29/09/2026",
-        "dias_tramitando": 7,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -11615,7 +11628,7 @@
         "processo": "0601904-13.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
+        "tarefa_atual": "Lançar movimento",
         "autuacao": "02/10/2026",
         "desde": "02/10/2026",
         "dias_tramitando": 0,
@@ -13743,13 +13756,13 @@
       "responsavel_processo": ""
     },
     {
-      "processo": "0600058-24.2026.6.10.0076",
-      "gabinete": "Gab. JA 1",
-      "classe": "NIP",
-      "tarefa_atual": "Aguardando Manifestação do MPE",
-      "autuacao": "17/09/2026",
-      "desde": "22/09/2026",
-      "dias_tramitando": 15,
+      "processo": "0601734-41.2026.6.10.0000",
+      "gabinete": "Gab. JA 2",
+      "classe": "DR",
+      "tarefa_atual": "Minutar ato",
+      "autuacao": "16/09/2026",
+      "desde": "02/10/2026",
+      "dias_tramitando": 16,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -13757,12 +13770,12 @@
       "responsavel_processo": ""
     },
     {
-      "processo": "0601734-41.2026.6.10.0000",
-      "gabinete": "Gab. JA 2",
-      "classe": "DR",
-      "tarefa_atual": "Minutar ato",
-      "autuacao": "16/09/2026",
-      "desde": "02/10/2026",
+      "processo": "0600058-24.2026.6.10.0076",
+      "gabinete": "Gab. JA 1",
+      "classe": "NIP",
+      "tarefa_atual": "Aguardando Manifestação do MPE",
+      "autuacao": "17/09/2026",
+      "desde": "22/09/2026",
       "dias_tramitando": 15,
       "julgado": false,
       "data_julgamento": "",
@@ -15622,7 +15635,7 @@
       "processo": "0601904-13.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "autuacao": "02/10/2026",
       "desde": "02/10/2026",
       "dias_tramitando": 0,
@@ -21657,13 +21670,13 @@
       "responsavel_processo": ""
     },
     {
-      "processo": "0600058-24.2026.6.10.0076",
-      "gabinete": "Gab. JA 1",
-      "classe": "NIP",
-      "tarefa_atual": "Aguardando Manifestação do MPE",
-      "autuacao": "17/09/2026",
-      "desde": "22/09/2026",
-      "dias_tramitando": 15,
+      "processo": "0601734-41.2026.6.10.0000",
+      "gabinete": "Gab. JA 2",
+      "classe": "DR",
+      "tarefa_atual": "Minutar ato",
+      "autuacao": "16/09/2026",
+      "desde": "02/10/2026",
+      "dias_tramitando": 16,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -21671,12 +21684,12 @@
       "responsavel_processo": ""
     },
     {
-      "processo": "0601734-41.2026.6.10.0000",
-      "gabinete": "Gab. JA 2",
-      "classe": "DR",
-      "tarefa_atual": "Minutar ato",
-      "autuacao": "16/09/2026",
-      "desde": "02/10/2026",
+      "processo": "0600058-24.2026.6.10.0076",
+      "gabinete": "Gab. JA 1",
+      "classe": "NIP",
+      "tarefa_atual": "Aguardando Manifestação do MPE",
+      "autuacao": "17/09/2026",
+      "desde": "22/09/2026",
       "dias_tramitando": 15,
       "julgado": false,
       "data_julgamento": "",
@@ -23536,7 +23549,7 @@
       "processo": "0601904-13.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "autuacao": "02/10/2026",
       "desde": "02/10/2026",
       "dias_tramitando": 0,
@@ -25398,6 +25411,20 @@
       "responsavel_processo": ""
     },
     {
+      "processo": "0600939-35.2026.6.10.0000",
+      "gabinete": "Gab. JA 2",
+      "classe": "ED no(a) Rp",
+      "tarefa_atual": "Minutar Relatório, Voto e Ementa",
+      "autuacao": "24/09/2026",
+      "desde": "29/09/2026",
+      "dias_tramitando": 8,
+      "julgado": false,
+      "data_julgamento": "",
+      "teor": "",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
+    },
+    {
       "processo": "0601076-17.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "REC no(a) Rp",
@@ -25447,20 +25474,6 @@
       "autuacao": "24/09/2026",
       "desde": "24/09/2026",
       "dias_tramitando": 8,
-      "julgado": false,
-      "data_julgamento": "",
-      "teor": "",
-      "segredo_justica": "NÃO",
-      "responsavel_processo": ""
-    },
-    {
-      "processo": "0600939-35.2026.6.10.0000",
-      "gabinete": "Gab. JA 2",
-      "classe": "ED no(a) Rp",
-      "tarefa_atual": "Minutar Relatório, Voto e Ementa",
-      "autuacao": "24/09/2026",
-      "desde": "29/09/2026",
-      "dias_tramitando": 7,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -28661,8 +28674,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "02/10/2026 16:04",
+  "publicado_em": "02/10/2026 16:07",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "38ab39ad44a24877d11201839525f8ef4fe7dff33e56362a54bb98c11114145b"
+  "hash_publicacao": "c6c2b6acddd940522c7d54fc6d38cfdefd69369fb302d085fc5c155d7fbdc2f6"
 }
