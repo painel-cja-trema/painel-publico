@@ -12,7 +12,7 @@
       "quantidade": 78,
       "media_dias": 23.3,
       "maior_tempo": 177,
-      "urgentes": 0,
+      "urgentes": 1,
       "minutar": 6,
       "julgados": 29,
       "percentual_julgados": 31.9,
@@ -119,17 +119,17 @@
     },
     {
       "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Analisar determinação - Urgentes",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Analisar determinação; Elaborar documentos - Magistrado Assinar",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Assinar ato",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Elaborar Documentos",
       "quantidade": 1
     },
     {
@@ -1979,11 +1979,11 @@
         "codigo": "analisar-determinacao-urgentes",
         "tarefa": "Analisar determinação - Urgentes",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 2,
           "Gabinete Juiz Auxiliar 3": 6
         },
-        "total": 8
+        "total": 9
       },
       {
         "codigo": "realizar-triagem-ordinarios",
@@ -2066,16 +2066,6 @@
         "total": 3
       },
       {
-        "codigo": "elaborar-documentos",
-        "tarefa": "Elaborar Documentos",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 3
-      },
-      {
         "codigo": "realizar-triagem-urgentes",
         "tarefa": "Realizar triagem urgentes",
         "contagens": {
@@ -2112,6 +2102,16 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 2
+        },
+        "total": 2
+      },
+      {
+        "codigo": "elaborar-documentos",
+        "tarefa": "Elaborar Documentos",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 2
       },
@@ -5691,6 +5691,20 @@
         "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
+      },
+      {
+        "processo": "0601898-06.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação - Urgentes",
+        "autuacao": "01/10/2026",
+        "desde": "02/10/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
       }
     ],
     "realizar-triagem-ordinarios": [
@@ -6325,50 +6339,6 @@
         "responsavel_processo": ""
       }
     ],
-    "elaborar-documentos": [
-      {
-        "processo": "0601760-39.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "RepEsp",
-        "tarefa_atual": "Elaborar Documentos",
-        "autuacao": "19/09/2026",
-        "desde": "30/09/2026",
-        "dias_tramitando": 13,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601851-32.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Elaborar Documentos",
-        "autuacao": "29/09/2026",
-        "desde": "02/10/2026",
-        "dias_tramitando": 2,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601898-06.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Elaborar Documentos",
-        "autuacao": "01/10/2026",
-        "desde": "02/10/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "realizar-triagem-urgentes": [
       {
         "processo": "0601803-73.2026.6.10.0000",
@@ -6496,6 +6466,36 @@
         "autuacao": "28/09/2026",
         "desde": "01/10/2026",
         "dias_tramitando": 3,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "elaborar-documentos": [
+      {
+        "processo": "0601760-39.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "RepEsp",
+        "tarefa_atual": "Elaborar Documentos",
+        "autuacao": "19/09/2026",
+        "desde": "30/09/2026",
+        "dias_tramitando": 13,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601851-32.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Elaborar Documentos",
+        "autuacao": "29/09/2026",
+        "desde": "02/10/2026",
+        "dias_tramitando": 2,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -8174,7 +8174,7 @@
         "processo": "0601898-06.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Elaborar Documentos",
+        "tarefa_atual": "Analisar determinação - Urgentes",
         "autuacao": "01/10/2026",
         "desde": "02/10/2026",
         "dias_tramitando": 0,
@@ -15349,7 +15349,7 @@
       "processo": "0601898-06.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Elaborar Documentos",
+      "tarefa_atual": "Analisar determinação - Urgentes",
       "autuacao": "01/10/2026",
       "desde": "02/10/2026",
       "dias_tramitando": 0,
@@ -23177,7 +23177,7 @@
       "processo": "0601898-06.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Elaborar Documentos",
+      "tarefa_atual": "Analisar determinação - Urgentes",
       "autuacao": "01/10/2026",
       "desde": "02/10/2026",
       "dias_tramitando": 0,
@@ -28258,8 +28258,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "02/10/2026 10:47",
+  "publicado_em": "02/10/2026 10:48",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "1428e948decd8ff436242307526972fe90efad91f41ec3983a597376d8ff4fec"
+  "hash_publicacao": "c03e1614c5ad45034a8be5cb1ac125bb13e7d5dc2c53767b38ba7df7ddf319d3"
 }
