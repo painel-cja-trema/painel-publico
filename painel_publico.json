@@ -44,7 +44,7 @@
       "juiz": "Dr. Rubem Filho",
       "distribuidor": "Danielle Cerqueira Castro",
       "quantidade": 100,
-      "media_dias": 17.3,
+      "media_dias": 17.4,
       "maior_tempo": 118,
       "urgentes": 11,
       "minutar": 0,
@@ -519,6 +519,11 @@
     },
     {
       "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas; Verificar Decisão - Petição Avulsa",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Analisar Processos; Selecionar documentos para acórdão - Gabinete",
       "quantidade": 1
     },
@@ -540,11 +545,6 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Minutar Relatório, Voto e Ementa",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Processo com prazo em curso; Verificar Decisão - Petição Avulsa",
       "quantidade": 1
     },
     {
@@ -1450,7 +1450,7 @@
         "tarefa_atual": "Realizar triagem ordinários",
         "autuacao": "19/09/2026",
         "desde": "01/10/2026",
-        "dias_tramitando": 15,
+        "dias_tramitando": 16,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -3099,6 +3099,16 @@
         "total": 1
       },
       {
+        "codigo": "analisar-peticao-avulsa-analisar-resposta-do-expediente-peticoes-nao-lidas-verificar-decisao-peticao-avulsa",
+        "tarefa": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas; Verificar Decisão - Petição Avulsa",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
         "codigo": "analisar-peticao-avulsa-minutar-ato-peticoes-nao-lidas",
         "tarefa": "Analisar Petição Avulsa; Minutar ato; Petições não lidas",
         "contagens": {
@@ -3255,16 +3265,6 @@
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "processo-com-prazo-em-curso-verificar-decisao-peticao-avulsa",
-        "tarefa": "Processo com prazo em curso; Verificar Decisão - Petição Avulsa",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 1
       },
@@ -5912,7 +5912,7 @@
         "tarefa_atual": "Realizar triagem ordinários",
         "autuacao": "19/09/2026",
         "desde": "01/10/2026",
-        "dias_tramitando": 15,
+        "dias_tramitando": 16,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -7226,7 +7226,7 @@
         "tarefa_atual": "Verificar e Certificar dados do processo",
         "autuacao": "04/10/2026",
         "desde": "04/10/2026",
-        "dias_tramitando": 0,
+        "dias_tramitando": 1,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -8634,6 +8634,22 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-peticao-avulsa-analisar-resposta-do-expediente-peticoes-nao-lidas-verificar-decisao-peticao-avulsa": [
+      {
+        "processo": "0601904-13.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas; Verificar Decisão - Petição Avulsa",
+        "autuacao": "02/10/2026",
+        "desde": "02/10/2026",
+        "dias_tramitando": 3,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "analisar-peticao-avulsa-minutar-ato-peticoes-nao-lidas": [
       {
         "processo": "0601926-71.2026.6.10.0000",
@@ -8880,22 +8896,6 @@
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
         "tarefa_atual": "Petições não lidas; Registrar ciência por telefone ou pessoalmente",
-        "autuacao": "02/10/2026",
-        "desde": "02/10/2026",
-        "dias_tramitando": 3,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "processo-com-prazo-em-curso-verificar-decisao-peticao-avulsa": [
-      {
-        "processo": "0601904-13.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Processo com prazo em curso; Verificar Decisão - Petição Avulsa",
         "autuacao": "02/10/2026",
         "desde": "02/10/2026",
         "dias_tramitando": 3,
@@ -11582,7 +11582,7 @@
         "tarefa_atual": "Realizar triagem ordinários",
         "autuacao": "19/09/2026",
         "desde": "01/10/2026",
-        "dias_tramitando": 15,
+        "dias_tramitando": 16,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -14073,7 +14073,7 @@
         "processo": "0601904-13.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Processo com prazo em curso; Verificar Decisão - Petição Avulsa",
+        "tarefa_atual": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas; Verificar Decisão - Petição Avulsa",
         "autuacao": "02/10/2026",
         "desde": "02/10/2026",
         "dias_tramitando": 3,
@@ -14378,6 +14378,20 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0601990-81.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Verificar e Certificar dados do processo",
+        "autuacao": "04/10/2026",
+        "desde": "04/10/2026",
+        "dias_tramitando": 1,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0600046-67.2026.6.10.0057",
         "gabinete": "Gab. JA 3",
         "classe": "NIP",
@@ -14398,20 +14412,6 @@
         "tarefa_atual": "Analisar Processos",
         "autuacao": "05/10/2026",
         "desde": "05/10/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601990-81.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Verificar e Certificar dados do processo",
-        "autuacao": "04/10/2026",
-        "desde": "04/10/2026",
         "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
@@ -16767,7 +16767,7 @@
       "tarefa_atual": "Realizar triagem ordinários",
       "autuacao": "19/09/2026",
       "desde": "01/10/2026",
-      "dias_tramitando": 15,
+      "dias_tramitando": 16,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -18402,7 +18402,7 @@
       "processo": "0601904-13.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Processo com prazo em curso; Verificar Decisão - Petição Avulsa",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas; Verificar Decisão - Petição Avulsa",
       "autuacao": "02/10/2026",
       "desde": "02/10/2026",
       "dias_tramitando": 3,
@@ -19267,13 +19267,13 @@
       "responsavel_processo": ""
     },
     {
-      "processo": "0600046-67.2026.6.10.0057",
+      "processo": "0601990-81.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
-      "classe": "NIP",
-      "tarefa_atual": "Realizar triagem ordinários",
-      "autuacao": "05/10/2026",
-      "desde": "05/10/2026",
-      "dias_tramitando": 0,
+      "classe": "Rp",
+      "tarefa_atual": "Verificar e Certificar dados do processo",
+      "autuacao": "04/10/2026",
+      "desde": "04/10/2026",
+      "dias_tramitando": 1,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -19281,12 +19281,12 @@
       "responsavel_processo": ""
     },
     {
-      "processo": "0601990-81.2026.6.10.0000",
+      "processo": "0600046-67.2026.6.10.0057",
       "gabinete": "Gab. JA 3",
-      "classe": "Rp",
-      "tarefa_atual": "Verificar e Certificar dados do processo",
-      "autuacao": "04/10/2026",
-      "desde": "04/10/2026",
+      "classe": "NIP",
+      "tarefa_atual": "Realizar triagem ordinários",
+      "autuacao": "05/10/2026",
+      "desde": "05/10/2026",
       "dias_tramitando": 0,
       "julgado": false,
       "data_julgamento": "",
@@ -25623,7 +25623,7 @@
       "tarefa_atual": "Realizar triagem ordinários",
       "autuacao": "19/09/2026",
       "desde": "01/10/2026",
-      "dias_tramitando": 15,
+      "dias_tramitando": 16,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -27258,7 +27258,7 @@
       "processo": "0601904-13.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Processo com prazo em curso; Verificar Decisão - Petição Avulsa",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas; Verificar Decisão - Petição Avulsa",
       "autuacao": "02/10/2026",
       "desde": "02/10/2026",
       "dias_tramitando": 3,
@@ -28123,13 +28123,13 @@
       "responsavel_processo": ""
     },
     {
-      "processo": "0600046-67.2026.6.10.0057",
+      "processo": "0601990-81.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
-      "classe": "NIP",
-      "tarefa_atual": "Realizar triagem ordinários",
-      "autuacao": "05/10/2026",
-      "desde": "05/10/2026",
-      "dias_tramitando": 0,
+      "classe": "Rp",
+      "tarefa_atual": "Verificar e Certificar dados do processo",
+      "autuacao": "04/10/2026",
+      "desde": "04/10/2026",
+      "dias_tramitando": 1,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -28137,12 +28137,12 @@
       "responsavel_processo": ""
     },
     {
-      "processo": "0601990-81.2026.6.10.0000",
+      "processo": "0600046-67.2026.6.10.0057",
       "gabinete": "Gab. JA 3",
-      "classe": "Rp",
-      "tarefa_atual": "Verificar e Certificar dados do processo",
-      "autuacao": "04/10/2026",
-      "desde": "04/10/2026",
+      "classe": "NIP",
+      "tarefa_atual": "Realizar triagem ordinários",
+      "autuacao": "05/10/2026",
+      "desde": "05/10/2026",
       "dias_tramitando": 0,
       "julgado": false,
       "data_julgamento": "",
@@ -33519,8 +33519,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "05/10/2026 21:48",
+  "publicado_em": "05/10/2026 21:49",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "9add4fc77b2fc75ef0e78b5e0faab13067775adbd7c7f3e61b0b66aabce172c8"
+  "hash_publicacao": "f7a41ddb814ec9cab160afc2c69a2b0691ac9cac6fd22809db20494c5dfcac5b"
 }
