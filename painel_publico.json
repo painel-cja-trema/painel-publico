@@ -46,7 +46,7 @@
       "quantidade": 108,
       "media_dias": 21.8,
       "maior_tempo": 124,
-      "urgentes": 5,
+      "urgentes": 4,
       "minutar": 0,
       "julgados": 38,
       "percentual_julgados": 28.8,
@@ -215,7 +215,7 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Analisar determinação",
-      "quantidade": 11
+      "quantidade": 10
     },
     {
       "gabinete": "Gab. JA 2",
@@ -255,6 +255,11 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Analisar Processos",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Elaborar Documentos",
       "quantidade": 1
     },
     {
@@ -304,6 +309,11 @@
     },
     {
       "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Analisar determinação; Verificar Decisão - Petição Avulsa",
+      "quantidade": 3
+    },
+    {
+      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Registrar ciência por telefone ou pessoalmente",
       "quantidade": 3
     },
@@ -325,11 +335,6 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Analisar determinação; Selecionar competência",
-      "quantidade": 2
-    },
-    {
-      "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Analisar determinação; Verificar Decisão - Petição Avulsa",
       "quantidade": 2
     },
     {
@@ -360,11 +365,6 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Aguardando julgamento do recurso interno; Verificar Decisão - Petição Avulsa",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Analisar determinação - Urgentes; Verificar Decisão - Petição Avulsa",
       "quantidade": 1
     },
     {
@@ -3561,10 +3561,10 @@
         "tarefa": "Analisar determinação",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 15,
-          "Gabinete Juiz Auxiliar 2": 11,
+          "Gabinete Juiz Auxiliar 2": 10,
           "Gabinete Juiz Auxiliar 3": 47
         },
-        "total": 73
+        "total": 72
       },
       {
         "codigo": "minutar-ato",
@@ -3697,6 +3697,26 @@
         "total": 4
       },
       {
+        "codigo": "analisar-determinacao-verificar-decisao-peticao-avulsa",
+        "tarefa": "Analisar determinação; Verificar Decisão - Petição Avulsa",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 3
+        },
+        "total": 3
+      },
+      {
+        "codigo": "elaborar-documentos",
+        "tarefa": "Elaborar Documentos",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 3
+      },
+      {
         "codigo": "aguardando-julgamento-do-recurso-interno-peticoes-nao-lidas-peticoes-nao-lidas",
         "tarefa": "Aguardando julgamento do recurso interno; Petições não lidas; Petições não lidas",
         "contagens": {
@@ -3747,32 +3767,12 @@
         "total": 2
       },
       {
-        "codigo": "analisar-determinacao-verificar-decisao-peticao-avulsa",
-        "tarefa": "Analisar determinação; Verificar Decisão - Petição Avulsa",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 2
-        },
-        "total": 2
-      },
-      {
         "codigo": "conferir-relatorio-voto-e-ementa",
         "tarefa": "Conferir Relatório, Voto e Ementa",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 2,
           "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 2
-      },
-      {
-        "codigo": "elaborar-documentos",
-        "tarefa": "Elaborar Documentos",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 2
       },
@@ -3893,16 +3893,6 @@
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "analisar-determinacao-urgentes-verificar-decisao-peticao-avulsa",
-        "tarefa": "Analisar determinação - Urgentes; Verificar Decisão - Petição Avulsa",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 1
       },
@@ -4408,20 +4398,6 @@
         "julgado": true,
         "data_julgamento": "18/09/2026",
         "teor": "Julgado procedente em parte do pedido em 18/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601158-48.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "CumSen",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "10/09/2026",
-        "desde": "09/10/2026",
-        "dias_tramitando": 31,
-        "julgado": true,
-        "data_julgamento": "24/09/2026",
-        "teor": "Julgado procedente o pedido em 24/09/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -9184,6 +9160,94 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-determinacao-verificar-decisao-peticao-avulsa": [
+      {
+        "processo": "0601786-37.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação; Verificar Decisão - Petição Avulsa",
+        "autuacao": "22/09/2026",
+        "desde": "22/09/2026",
+        "dias_tramitando": 19,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601904-13.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação; Verificar Decisão - Petição Avulsa",
+        "autuacao": "02/10/2026",
+        "desde": "02/10/2026",
+        "dias_tramitando": 9,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600052-71.2026.6.10.0058",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação; Verificar Decisão - Petição Avulsa",
+        "autuacao": "03/10/2026",
+        "desde": "03/10/2026",
+        "dias_tramitando": 7,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "elaborar-documentos": [
+      {
+        "processo": "0601158-48.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "CumSen",
+        "tarefa_atual": "Elaborar Documentos",
+        "autuacao": "10/09/2026",
+        "desde": "11/10/2026",
+        "dias_tramitando": 31,
+        "julgado": true,
+        "data_julgamento": "24/09/2026",
+        "teor": "Julgado procedente o pedido em 24/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601866-98.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Elaborar Documentos",
+        "autuacao": "30/09/2026",
+        "desde": "11/10/2026",
+        "dias_tramitando": 11,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601889-44.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Elaborar Documentos",
+        "autuacao": "01/10/2026",
+        "desde": "08/10/2026",
+        "dias_tramitando": 9,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "aguardando-julgamento-do-recurso-interno-peticoes-nao-lidas-peticoes-nao-lidas": [
       {
         "processo": "0601790-74.2026.6.10.0000",
@@ -9334,36 +9398,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-determinacao-verificar-decisao-peticao-avulsa": [
-      {
-        "processo": "0601904-13.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação; Verificar Decisão - Petição Avulsa",
-        "autuacao": "02/10/2026",
-        "desde": "02/10/2026",
-        "dias_tramitando": 9,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600052-71.2026.6.10.0058",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação; Verificar Decisão - Petição Avulsa",
-        "autuacao": "03/10/2026",
-        "desde": "03/10/2026",
-        "dias_tramitando": 7,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "conferir-relatorio-voto-e-ementa": [
       {
         "processo": "0601096-08.2026.6.10.0000",
@@ -9387,36 +9421,6 @@
         "autuacao": "26/09/2026",
         "desde": "30/09/2026",
         "dias_tramitando": 15,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "elaborar-documentos": [
-      {
-        "processo": "0601866-98.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Elaborar Documentos",
-        "autuacao": "30/09/2026",
-        "desde": "11/10/2026",
-        "dias_tramitando": 11,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601889-44.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Elaborar Documentos",
-        "autuacao": "01/10/2026",
-        "desde": "08/10/2026",
-        "dias_tramitando": 9,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -9654,22 +9658,6 @@
         "julgado": true,
         "data_julgamento": "15/09/2026",
         "teor": "Não conhecidos os embargos de declaração em 15/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "analisar-determinacao-urgentes-verificar-decisao-peticao-avulsa": [
-      {
-        "processo": "0601786-37.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação - Urgentes; Verificar Decisão - Petição Avulsa",
-        "autuacao": "22/09/2026",
-        "desde": "22/09/2026",
-        "dias_tramitando": 19,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -12401,9 +12389,9 @@
         "processo": "0601158-48.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "CumSen",
-        "tarefa_atual": "Analisar determinação",
+        "tarefa_atual": "Elaborar Documentos",
         "autuacao": "10/09/2026",
-        "desde": "09/10/2026",
+        "desde": "11/10/2026",
         "dias_tramitando": 31,
         "julgado": true,
         "data_julgamento": "24/09/2026",
@@ -14559,7 +14547,7 @@
         "processo": "0601786-37.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Analisar determinação - Urgentes; Verificar Decisão - Petição Avulsa",
+        "tarefa_atual": "Analisar determinação; Verificar Decisão - Petição Avulsa",
         "autuacao": "22/09/2026",
         "desde": "22/09/2026",
         "dias_tramitando": 19,
@@ -17544,9 +17532,9 @@
       "processo": "0601158-48.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "CumSen",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Elaborar Documentos",
       "autuacao": "10/09/2026",
-      "desde": "09/10/2026",
+      "desde": "11/10/2026",
       "dias_tramitando": 31,
       "julgado": true,
       "data_julgamento": "24/09/2026",
@@ -18188,7 +18176,7 @@
       "processo": "0601786-37.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação - Urgentes; Verificar Decisão - Petição Avulsa",
+      "tarefa_atual": "Analisar determinação; Verificar Decisão - Petição Avulsa",
       "autuacao": "22/09/2026",
       "desde": "22/09/2026",
       "dias_tramitando": 19,
@@ -26876,9 +26864,9 @@
       "processo": "0601158-48.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "CumSen",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Elaborar Documentos",
       "autuacao": "10/09/2026",
-      "desde": "09/10/2026",
+      "desde": "11/10/2026",
       "dias_tramitando": 31,
       "julgado": true,
       "data_julgamento": "24/09/2026",
@@ -27520,7 +27508,7 @@
       "processo": "0601786-37.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação - Urgentes; Verificar Decisão - Petição Avulsa",
+      "tarefa_atual": "Analisar determinação; Verificar Decisão - Petição Avulsa",
       "autuacao": "22/09/2026",
       "desde": "22/09/2026",
       "dias_tramitando": 19,
@@ -35051,9 +35039,9 @@
       "processo": "0601158-48.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "CumSen",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Elaborar Documentos",
       "autuacao": "10/09/2026",
-      "desde": "09/10/2026",
+      "desde": "11/10/2026",
       "dias_tramitando": 31,
       "julgado": true,
       "data_julgamento": "24/09/2026",
@@ -35609,8 +35597,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "11/10/2026 14:52",
+  "publicado_em": "11/10/2026 14:54",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "5433a90f330a8e9179a31d982d0cd8ce316e513068028d368c3909747d8f0ee5"
+  "hash_publicacao": "954b713b3173f6e3889c8ba20c7a5989fd7154718c06e46d7c88deca9b04c0df"
 }
