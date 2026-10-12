@@ -319,11 +319,6 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Lançar movimento",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Minutar Relatório, Voto e Ementa",
       "quantidade": 1
     },
@@ -340,6 +335,11 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Realizar triagem do processo - STI",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Remeter Processos - Gabinete",
       "quantidade": 1
     },
     {
@@ -1498,7 +1498,7 @@
           "TRIAGEM_ORDINARIA": 0,
           "MINUTAR_ATO": 6,
           "ASSINAR_ATO": 2,
-          "LANCAR_MOVIMENTACAO": 1
+          "LANCAR_MOVIMENTACAO": 0
         }
       }
     ],
@@ -1507,7 +1507,7 @@
       "TRIAGEM_ORDINARIA": 45,
       "MINUTAR_ATO": 61,
       "ASSINAR_ATO": 33,
-      "LANCAR_MOVIMENTACAO": 1
+      "LANCAR_MOVIMENTACAO": 0
     },
     "total_acervo": 406
   },
@@ -3465,22 +3465,7 @@
         "responsavel_processo": ""
       }
     ],
-    "LANCAR_MOVIMENTACAO": [
-      {
-        "processo": "0601941-40.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "03/10/2026",
-        "desde": "12/10/2026",
-        "dias_tramitando": 8,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ]
+    "LANCAR_MOVIMENTACAO": []
   },
   "entrada_comissao": {
     "codigo": "LIMINAR_CERTIFICACAO",
@@ -3838,16 +3823,6 @@
         "total": 1
       },
       {
-        "codigo": "lancar-movimento",
-        "tarefa": "Lançar movimento",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
         "codigo": "preparar-comunicacao",
         "tarefa": "Preparar comunicação",
         "contagens": {
@@ -3870,6 +3845,16 @@
       {
         "codigo": "realizar-triagem-do-processo-sti",
         "tarefa": "Realizar triagem do processo - STI",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
+        "codigo": "remeter-processos-gabinete",
+        "tarefa": "Remeter Processos - Gabinete",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -4589,7 +4574,7 @@
         "tarefa_atual": "Analisar determinação",
         "autuacao": "01/10/2026",
         "desde": "12/10/2026",
-        "dias_tramitando": 10,
+        "dias_tramitando": 11,
         "julgado": true,
         "data_julgamento": "12/10/2026",
         "teor": "Julgado procedente em parte do pedido em 12/10/2026",
@@ -9575,22 +9560,6 @@
         "responsavel_processo": ""
       }
     ],
-    "lancar-movimento": [
-      {
-        "processo": "0601941-40.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "03/10/2026",
-        "desde": "12/10/2026",
-        "dias_tramitando": 8,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "preparar-comunicacao": [
       {
         "processo": "0600986-09.2026.6.10.0000",
@@ -9632,6 +9601,22 @@
         "autuacao": "29/09/2026",
         "desde": "08/10/2026",
         "dias_tramitando": 12,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "remeter-processos-gabinete": [
+      {
+        "processo": "0601941-40.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Remeter Processos - Gabinete",
+        "autuacao": "03/10/2026",
+        "desde": "12/10/2026",
+        "dias_tramitando": 8,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -10735,6 +10720,20 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0601890-29.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar determinação",
+        "autuacao": "01/10/2026",
+        "desde": "12/10/2026",
+        "dias_tramitando": 11,
+        "julgado": true,
+        "data_julgamento": "12/10/2026",
+        "teor": "Julgado procedente em parte do pedido em 12/10/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0601802-88.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "REC no(a) Rp",
@@ -10745,20 +10744,6 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601890-29.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "01/10/2026",
-        "desde": "12/10/2026",
-        "dias_tramitando": 10,
-        "julgado": true,
-        "data_julgamento": "12/10/2026",
-        "teor": "Julgado procedente em parte do pedido em 12/10/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -15026,7 +15011,7 @@
         "processo": "0601941-40.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Lançar movimento",
+        "tarefa_atual": "Remeter Processos - Gabinete",
         "autuacao": "03/10/2026",
         "desde": "12/10/2026",
         "dias_tramitando": 8,
@@ -15371,7 +15356,7 @@
       "classe": "Rp",
       "teor": "Julgado procedente em parte do pedido em 12/10/2026",
       "data_julgamento": "12/10/2026",
-      "dias_tramitando": 10
+      "dias_tramitando": 11
     },
     {
       "processo": "0601891-14.2026.6.10.0000",
@@ -18876,6 +18861,20 @@
       "responsavel_processo": ""
     },
     {
+      "processo": "0601890-29.2026.6.10.0000",
+      "gabinete": "Gab. JA 1",
+      "classe": "Rp",
+      "tarefa_atual": "Analisar determinação",
+      "autuacao": "01/10/2026",
+      "desde": "12/10/2026",
+      "dias_tramitando": 11,
+      "julgado": true,
+      "data_julgamento": "12/10/2026",
+      "teor": "Julgado procedente em parte do pedido em 12/10/2026",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
+    },
+    {
       "processo": "0600023-71.2026.6.10.0009",
       "gabinete": "Gab. JA 2",
       "classe": "NIP",
@@ -18900,20 +18899,6 @@
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
-      "segredo_justica": "NÃO",
-      "responsavel_processo": ""
-    },
-    {
-      "processo": "0601890-29.2026.6.10.0000",
-      "gabinete": "Gab. JA 1",
-      "classe": "Rp",
-      "tarefa_atual": "Analisar determinação",
-      "autuacao": "01/10/2026",
-      "desde": "12/10/2026",
-      "dias_tramitando": 10,
-      "julgado": true,
-      "data_julgamento": "12/10/2026",
-      "teor": "Julgado procedente em parte do pedido em 12/10/2026",
       "segredo_justica": "NÃO",
       "responsavel_processo": ""
     },
@@ -19579,7 +19564,7 @@
       "processo": "0601941-40.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Lançar movimento",
+      "tarefa_atual": "Remeter Processos - Gabinete",
       "autuacao": "03/10/2026",
       "desde": "12/10/2026",
       "dias_tramitando": 8,
@@ -28332,6 +28317,20 @@
       "responsavel_processo": ""
     },
     {
+      "processo": "0601890-29.2026.6.10.0000",
+      "gabinete": "Gab. JA 1",
+      "classe": "Rp",
+      "tarefa_atual": "Analisar determinação",
+      "autuacao": "01/10/2026",
+      "desde": "12/10/2026",
+      "dias_tramitando": 11,
+      "julgado": true,
+      "data_julgamento": "12/10/2026",
+      "teor": "Julgado procedente em parte do pedido em 12/10/2026",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
+    },
+    {
       "processo": "0600023-71.2026.6.10.0009",
       "gabinete": "Gab. JA 2",
       "classe": "NIP",
@@ -28356,20 +28355,6 @@
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
-      "segredo_justica": "NÃO",
-      "responsavel_processo": ""
-    },
-    {
-      "processo": "0601890-29.2026.6.10.0000",
-      "gabinete": "Gab. JA 1",
-      "classe": "Rp",
-      "tarefa_atual": "Analisar determinação",
-      "autuacao": "01/10/2026",
-      "desde": "12/10/2026",
-      "dias_tramitando": 10,
-      "julgado": true,
-      "data_julgamento": "12/10/2026",
-      "teor": "Julgado procedente em parte do pedido em 12/10/2026",
       "segredo_justica": "NÃO",
       "responsavel_processo": ""
     },
@@ -29035,7 +29020,7 @@
       "processo": "0601941-40.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Lançar movimento",
+      "tarefa_atual": "Remeter Processos - Gabinete",
       "autuacao": "03/10/2026",
       "desde": "12/10/2026",
       "dias_tramitando": 8,
@@ -35297,7 +35282,7 @@
       "tarefa_atual": "Analisar determinação",
       "autuacao": "01/10/2026",
       "desde": "12/10/2026",
-      "dias_tramitando": 10,
+      "dias_tramitando": 11,
       "julgado": true,
       "data_julgamento": "12/10/2026",
       "teor": "Julgado procedente em parte do pedido em 12/10/2026",
@@ -35376,8 +35361,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "12/10/2026 16:42",
+  "publicado_em": "12/10/2026 16:43",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "97da2db0b83549005a364e6128d3b6cb417e0c1a5199ed7bb99515f5504a603b"
+  "hash_publicacao": "8c0485160cf2379db003eebd75b063e856caae685c3f614444fddee9eb8d1e68"
 }
