@@ -339,12 +339,12 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Analisar Processos; Assinar acórdão ou resolução - Gabinete; Processo julgado",
+      "tarefa_atual": "Analisar Processos; Elaborar extrato da ata; Pauta provisória; Selecionar documentos para acórdão - Gabinete",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Analisar Processos; Elaborar extrato da ata; Pauta provisória; Selecionar documentos para acórdão - Gabinete",
+      "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado; Processo julgado",
       "quantidade": 1
     },
     {
@@ -369,12 +369,12 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Elaborar extrato da ata; Processos retirados de julgamento; Realizar triagem ordinários; Selecionar documentos para acórdão - Gabinete",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Elaborar extrato da ata; Processos retirados de julgamento; Realizar triagem ordinários; Selecionar documentos para acórdão - Gabinete",
+      "tarefa_atual": "Lançar movimento",
       "quantidade": 1
     },
     {
@@ -1890,8 +1890,8 @@
           "TRIAGEM_URGENTE": 1,
           "TRIAGEM_ORDINARIA": 1,
           "MINUTAR_ATO": 4,
-          "ASSINAR_ATO": 1,
-          "LANCAR_MOVIMENTACAO": 0
+          "ASSINAR_ATO": 0,
+          "LANCAR_MOVIMENTACAO": 2
         }
       }
     ],
@@ -1899,8 +1899,8 @@
       "TRIAGEM_URGENTE": 1,
       "TRIAGEM_ORDINARIA": 25,
       "MINUTAR_ATO": 78,
-      "ASSINAR_ATO": 7,
-      "LANCAR_MOVIMENTACAO": 0
+      "ASSINAR_ATO": 6,
+      "LANCAR_MOVIMENTACAO": 2
     },
     "total_acervo": 400
   },
@@ -3451,12 +3451,28 @@
         "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
+      }
+    ],
+    "LANCAR_MOVIMENTACAO": [
+      {
+        "processo": "0601369-84.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "REC no(a) NIP",
+        "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado; Processo julgado",
+        "autuacao": "02/10/2026",
+        "desde": "02/10/2026",
+        "dias_tramitando": 12,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
       },
       {
         "processo": "0600129-84.2026.6.10.0089",
         "gabinete": "Gab. JA 3",
         "classe": "NIP",
-        "tarefa_atual": "Assinar ato",
+        "tarefa_atual": "Lançar movimento",
         "autuacao": "14/10/2026",
         "desde": "14/10/2026",
         "dias_tramitando": 0,
@@ -3466,8 +3482,7 @@
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
-    ],
-    "LANCAR_MOVIMENTACAO": []
+    ]
   },
   "entrada_comissao": {
     "codigo": "LIMINAR_CERTIFICACAO",
@@ -3595,16 +3610,6 @@
         "total": 7
       },
       {
-        "codigo": "assinar-ato",
-        "tarefa": "Assinar ato",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 6,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 7
-      },
-      {
         "codigo": "preparar-comunicacao",
         "tarefa": "Preparar comunicação",
         "contagens": {
@@ -3621,6 +3626,16 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 6
+        },
+        "total": 6
+      },
+      {
+        "codigo": "assinar-ato",
+        "tarefa": "Assinar ato",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 6,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 6
       },
@@ -3805,8 +3820,8 @@
         "total": 1
       },
       {
-        "codigo": "analisar-processos-assinar-acordao-ou-resolucao-gabinete-processo-julgado",
-        "tarefa": "Analisar Processos; Assinar acórdão ou resolução - Gabinete; Processo julgado",
+        "codigo": "analisar-processos-elaborar-extrato-da-ata-pauta-provisoria-selecionar-documentos-para-acordao-gabinete",
+        "tarefa": "Analisar Processos; Elaborar extrato da ata; Pauta provisória; Selecionar documentos para acórdão - Gabinete",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -3815,8 +3830,8 @@
         "total": 1
       },
       {
-        "codigo": "analisar-processos-elaborar-extrato-da-ata-pauta-provisoria-selecionar-documentos-para-acordao-gabinete",
-        "tarefa": "Analisar Processos; Elaborar extrato da ata; Pauta provisória; Selecionar documentos para acórdão - Gabinete",
+        "codigo": "analisar-processos-lancar-movimentos-de-julgamento-colegiado-processo-julgado",
+        "tarefa": "Analisar Processos; Lançar movimentos de julgamento colegiado; Processo julgado",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -3897,6 +3912,16 @@
       {
         "codigo": "elaborar-extrato-da-ata-processos-retirados-de-julgamento-realizar-triagem-ordinarios-selecionar-documentos-para-acordao-gabinete",
         "tarefa": "Elaborar extrato da ata; Processos retirados de julgamento; Realizar triagem ordinários; Selecionar documentos para acórdão - Gabinete",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
+        "codigo": "lancar-movimento",
+        "tarefa": "Lançar movimento",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -8410,106 +8435,6 @@
         "responsavel_processo": ""
       }
     ],
-    "assinar-ato": [
-      {
-        "processo": "0601844-40.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "NIP",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "28/09/2026",
-        "desde": "14/10/2026",
-        "dias_tramitando": 16,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600015-79.2026.6.10.0014",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "01/10/2026",
-        "desde": "12/10/2026",
-        "dias_tramitando": 13,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601969-08.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "NIP",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "04/10/2026",
-        "desde": "14/10/2026",
-        "dias_tramitando": 10,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601979-52.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "NIP",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "04/10/2026",
-        "desde": "14/10/2026",
-        "dias_tramitando": 10,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600084-55.2026.6.10.0065",
-        "gabinete": "Gab. JA 1",
-        "classe": "NIP",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "11/10/2026",
-        "desde": "14/10/2026",
-        "dias_tramitando": 3,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600060-84.2026.6.10.0046",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "14/10/2026",
-        "desde": "14/10/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600129-84.2026.6.10.0089",
-        "gabinete": "Gab. JA 3",
-        "classe": "NIP",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "14/10/2026",
-        "desde": "14/10/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "preparar-comunicacao": [
       {
         "processo": "0601968-23.2026.6.10.0000",
@@ -8689,6 +8614,92 @@
         "autuacao": "04/10/2026",
         "desde": "13/10/2026",
         "dias_tramitando": 10,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "assinar-ato": [
+      {
+        "processo": "0601844-40.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "NIP",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "28/09/2026",
+        "desde": "14/10/2026",
+        "dias_tramitando": 16,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600015-79.2026.6.10.0014",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "01/10/2026",
+        "desde": "12/10/2026",
+        "dias_tramitando": 13,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601969-08.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "NIP",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "04/10/2026",
+        "desde": "14/10/2026",
+        "dias_tramitando": 10,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601979-52.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "NIP",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "04/10/2026",
+        "desde": "14/10/2026",
+        "dias_tramitando": 10,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600084-55.2026.6.10.0065",
+        "gabinete": "Gab. JA 1",
+        "classe": "NIP",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "11/10/2026",
+        "desde": "14/10/2026",
+        "dias_tramitando": 3,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600060-84.2026.6.10.0046",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "14/10/2026",
+        "desde": "14/10/2026",
+        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -9418,22 +9429,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-processos-assinar-acordao-ou-resolucao-gabinete-processo-julgado": [
-      {
-        "processo": "0601369-84.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "REC no(a) NIP",
-        "tarefa_atual": "Analisar Processos; Assinar acórdão ou resolução - Gabinete; Processo julgado",
-        "autuacao": "02/10/2026",
-        "desde": "02/10/2026",
-        "dias_tramitando": 12,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "analisar-processos-elaborar-extrato-da-ata-pauta-provisoria-selecionar-documentos-para-acordao-gabinete": [
       {
         "processo": "0601027-73.2026.6.10.0000",
@@ -9443,6 +9438,22 @@
         "autuacao": "25/09/2026",
         "desde": "25/09/2026",
         "dias_tramitando": 19,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-processos-lancar-movimentos-de-julgamento-colegiado-processo-julgado": [
+      {
+        "processo": "0601369-84.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "REC no(a) NIP",
+        "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado; Processo julgado",
+        "autuacao": "02/10/2026",
+        "desde": "02/10/2026",
+        "dias_tramitando": 12,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -9571,6 +9582,22 @@
         "autuacao": "11/09/2026",
         "desde": "11/09/2026",
         "dias_tramitando": 33,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "lancar-movimento": [
+      {
+        "processo": "0600129-84.2026.6.10.0089",
+        "gabinete": "Gab. JA 3",
+        "classe": "NIP",
+        "tarefa_atual": "Lançar movimento",
+        "autuacao": "14/10/2026",
+        "desde": "14/10/2026",
+        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -14565,7 +14592,7 @@
         "processo": "0601369-84.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "REC no(a) NIP",
-        "tarefa_atual": "Analisar Processos; Assinar acórdão ou resolução - Gabinete; Processo julgado",
+        "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado; Processo julgado",
         "autuacao": "02/10/2026",
         "desde": "02/10/2026",
         "dias_tramitando": 12,
@@ -15153,7 +15180,7 @@
         "processo": "0600129-84.2026.6.10.0089",
         "gabinete": "Gab. JA 3",
         "classe": "NIP",
-        "tarefa_atual": "Assinar ato",
+        "tarefa_atual": "Lançar movimento",
         "autuacao": "14/10/2026",
         "desde": "14/10/2026",
         "dias_tramitando": 0,
@@ -20294,7 +20321,7 @@
       "processo": "0600129-84.2026.6.10.0089",
       "gabinete": "Gab. JA 3",
       "classe": "NIP",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "autuacao": "14/10/2026",
       "desde": "14/10/2026",
       "dias_tramitando": 0,
@@ -30060,7 +30087,7 @@
       "processo": "0600129-84.2026.6.10.0089",
       "gabinete": "Gab. JA 3",
       "classe": "NIP",
-      "tarefa_atual": "Assinar ato",
+      "tarefa_atual": "Lançar movimento",
       "autuacao": "14/10/2026",
       "desde": "14/10/2026",
       "dias_tramitando": 0,
@@ -32341,7 +32368,7 @@
       "processo": "0601369-84.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "REC no(a) NIP",
-      "tarefa_atual": "Analisar Processos; Assinar acórdão ou resolução - Gabinete; Processo julgado",
+      "tarefa_atual": "Analisar Processos; Lançar movimentos de julgamento colegiado; Processo julgado",
       "autuacao": "02/10/2026",
       "desde": "02/10/2026",
       "dias_tramitando": 12,
@@ -35554,8 +35581,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "14/10/2026 19:09",
+  "publicado_em": "14/10/2026 19:10",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "c8c040fc0b50fe2aabe0bc12abccf58e8df6ab67a8f02402bcc4ad89ca177f9c"
+  "hash_publicacao": "0db9dba56970679fcdcc238d38fb6fd6ed257577a2a0408ad446a5312f880f57"
 }
