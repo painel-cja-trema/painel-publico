@@ -229,17 +229,17 @@
     },
     {
       "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar petição avulsa de autuação; Analisar resposta do expediente; Petições não lidas",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Analisar Petição Avulsa; Analisar resposta do expediente; Petições não lidas",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Analisar Processos; Assinar acórdão ou resolução - Gabinete; Processo julgado",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Analisar petição avulsa de autuação; Processo com prazo em curso",
       "quantidade": 1
     },
     {
@@ -3321,6 +3321,16 @@
         "total": 1
       },
       {
+        "codigo": "analisar-peticao-avulsa-analisar-peticao-avulsa-de-autuacao-analisar-resposta-do-expediente-peticoes-nao-lidas",
+        "tarefa": "Analisar Petição Avulsa; Analisar petição avulsa de autuação; Analisar resposta do expediente; Petições não lidas",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
         "codigo": "analisar-peticao-avulsa-analisar-resposta-do-expediente",
         "tarefa": "Analisar Petição Avulsa; Analisar resposta do expediente",
         "contagens": {
@@ -3417,16 +3427,6 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
-        "codigo": "analisar-peticao-avulsa-de-autuacao-processo-com-prazo-em-curso",
-        "tarefa": "Analisar petição avulsa de autuação; Processo com prazo em curso",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
       },
@@ -6414,7 +6414,7 @@
         "tarefa_atual": "Aguardando julgamento do recurso interno",
         "autuacao": "12/09/2026",
         "desde": "02/10/2026",
-        "dias_tramitando": 33,
+        "dias_tramitando": 34,
         "julgado": true,
         "data_julgamento": "30/09/2026",
         "teor": "Julgado procedente o pedido em 30/09/2026",
@@ -8642,6 +8642,22 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-peticao-avulsa-analisar-peticao-avulsa-de-autuacao-analisar-resposta-do-expediente-peticoes-nao-lidas": [
+      {
+        "processo": "0601995-06.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar Petição Avulsa; Analisar petição avulsa de autuação; Analisar resposta do expediente; Petições não lidas",
+        "autuacao": "05/10/2026",
+        "desde": "05/10/2026",
+        "dias_tramitando": 11,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "analisar-peticao-avulsa-analisar-resposta-do-expediente": [
       {
         "processo": "0601993-36.2026.6.10.0000",
@@ -8795,22 +8811,6 @@
         "autuacao": "02/10/2026",
         "desde": "02/10/2026",
         "dias_tramitando": 14,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "analisar-peticao-avulsa-de-autuacao-processo-com-prazo-em-curso": [
-      {
-        "processo": "0601995-06.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar petição avulsa de autuação; Processo com prazo em curso",
-        "autuacao": "05/10/2026",
-        "desde": "05/10/2026",
-        "dias_tramitando": 11,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -12573,7 +12573,7 @@
         "processo": "0601995-06.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Analisar petição avulsa de autuação; Processo com prazo em curso",
+        "tarefa_atual": "Analisar Petição Avulsa; Analisar petição avulsa de autuação; Analisar resposta do expediente; Petições não lidas",
         "autuacao": "05/10/2026",
         "desde": "05/10/2026",
         "dias_tramitando": 11,
@@ -13166,7 +13166,7 @@
         "tarefa_atual": "Aguardando julgamento do recurso interno",
         "autuacao": "12/09/2026",
         "desde": "02/10/2026",
-        "dias_tramitando": 33,
+        "dias_tramitando": 34,
         "julgado": true,
         "data_julgamento": "30/09/2026",
         "teor": "Julgado procedente o pedido em 30/09/2026",
@@ -14558,7 +14558,7 @@
       "classe": "NIP",
       "teor": "Julgado procedente o pedido em 30/09/2026",
       "data_julgamento": "30/09/2026",
-      "dias_tramitando": 33
+      "dias_tramitando": 34
     },
     {
       "processo": "0600080-26.2026.6.10.0030",
@@ -16123,7 +16123,7 @@
       "tarefa_atual": "Aguardando julgamento do recurso interno",
       "autuacao": "12/09/2026",
       "desde": "02/10/2026",
-      "dias_tramitando": 33,
+      "dias_tramitando": 34,
       "julgado": true,
       "data_julgamento": "30/09/2026",
       "teor": "Julgado procedente o pedido em 30/09/2026",
@@ -18878,7 +18878,7 @@
       "processo": "0601995-06.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar petição avulsa de autuação; Processo com prazo em curso",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar petição avulsa de autuação; Analisar resposta do expediente; Petições não lidas",
       "autuacao": "05/10/2026",
       "desde": "05/10/2026",
       "dias_tramitando": 11,
@@ -25609,7 +25609,7 @@
       "tarefa_atual": "Aguardando julgamento do recurso interno",
       "autuacao": "12/09/2026",
       "desde": "02/10/2026",
-      "dias_tramitando": 33,
+      "dias_tramitando": 34,
       "julgado": true,
       "data_julgamento": "30/09/2026",
       "teor": "Julgado procedente o pedido em 30/09/2026",
@@ -28364,7 +28364,7 @@
       "processo": "0601995-06.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar petição avulsa de autuação; Processo com prazo em curso",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar petição avulsa de autuação; Analisar resposta do expediente; Petições não lidas",
       "autuacao": "05/10/2026",
       "desde": "05/10/2026",
       "dias_tramitando": 11,
@@ -33513,7 +33513,7 @@
       "tarefa_atual": "Aguardando julgamento do recurso interno",
       "autuacao": "12/09/2026",
       "desde": "02/10/2026",
-      "dias_tramitando": 33,
+      "dias_tramitando": 34,
       "julgado": true,
       "data_julgamento": "30/09/2026",
       "teor": "Julgado procedente o pedido em 30/09/2026",
@@ -34040,8 +34040,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "16/10/2026 17:52",
+  "publicado_em": "16/10/2026 17:54",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "959da261feb5bb8626b4f218f054f0795dd2fb1df0844c8e43413f0e3c05789e"
+  "hash_publicacao": "5f5383f5caf27e24b1b469bf4804ad0997c5c14d81c2812c447b3a4ced2ba7f0"
 }
