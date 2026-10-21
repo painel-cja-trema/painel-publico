@@ -254,11 +254,6 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Analisar Processos; Processo julgado",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Analisar resposta do expediente",
       "quantidade": 1
     },
@@ -285,6 +280,11 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Petições não lidas; Registrar ciência por telefone ou pessoalmente",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Processo julgado; Verificar Pendências",
       "quantidade": 1
     },
     {
@@ -3021,16 +3021,6 @@
         "total": 1
       },
       {
-        "codigo": "analisar-processos-processo-julgado",
-        "tarefa": "Analisar Processos; Processo julgado",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
         "codigo": "analisar-determinacao-urgentes-elaborar-documentos-magistrado-assinar-elaborar-documentos-magistrado-assinar",
         "tarefa": "Analisar determinação - Urgentes; Elaborar documentos - Magistrado Assinar; Elaborar documentos - Magistrado Assinar",
         "contagens": {
@@ -3133,6 +3123,16 @@
       {
         "codigo": "peticoes-nao-lidas-registrar-ciencia-por-telefone-ou-pessoalmente",
         "tarefa": "Petições não lidas; Registrar ciência por telefone ou pessoalmente",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "processo-julgado-verificar-pendencias",
+        "tarefa": "Processo julgado; Verificar Pendências",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -7818,22 +7818,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-processos-processo-julgado": [
-      {
-        "processo": "0601096-08.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos; Processo julgado",
-        "autuacao": "16/09/2026",
-        "desde": "16/09/2026",
-        "dias_tramitando": 34,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "analisar-determinacao-urgentes-elaborar-documentos-magistrado-assinar-elaborar-documentos-magistrado-assinar": [
       {
         "processo": "0601772-53.2026.6.10.0000",
@@ -8003,6 +7987,22 @@
         "autuacao": "03/10/2026",
         "desde": "03/10/2026",
         "dias_tramitando": 17,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "processo-julgado-verificar-pendencias": [
+      {
+        "processo": "0601096-08.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Processo julgado; Verificar Pendências",
+        "autuacao": "16/09/2026",
+        "desde": "16/09/2026",
+        "dias_tramitando": 34,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -10191,7 +10191,7 @@
         "processo": "0601096-08.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos; Processo julgado",
+        "tarefa_atual": "Processo julgado; Verificar Pendências",
         "autuacao": "16/09/2026",
         "desde": "16/09/2026",
         "dias_tramitando": 34,
@@ -29089,7 +29089,7 @@
       "processo": "0601096-08.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "REC no(a) Rp",
-      "tarefa_atual": "Analisar Processos; Processo julgado",
+      "tarefa_atual": "Processo julgado; Verificar Pendências",
       "autuacao": "16/09/2026",
       "desde": "16/09/2026",
       "dias_tramitando": 34,
@@ -32746,8 +32746,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "21/10/2026 09:07",
+  "publicado_em": "21/10/2026 09:09",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "9d009a41f460bbb07e2b8adaa8cd455c5adce77b5e3dff32063d098f4ec6caf3"
+  "hash_publicacao": "4358a92dd3ec6a903cbb7f7b00dd1db110329a7f1a3a932e9ed31975e0b15d54"
 }
