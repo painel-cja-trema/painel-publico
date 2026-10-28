@@ -109,6 +109,11 @@
     },
     {
       "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+      "quantidade": 2
+    },
+    {
+      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Registrar ciência por telefone ou pessoalmente",
       "quantidade": 2
     },
@@ -125,11 +130,6 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Analisar determinação; Petições não lidas; Petições não lidas; Petições não lidas",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Analisar resposta do expediente; Petições não lidas",
       "quantidade": 1
     },
     {
@@ -155,11 +155,6 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Petições não lidas; Petições não lidas; Registrar ciência por telefone ou pessoalmente",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
       "quantidade": 1
     },
     {
@@ -300,7 +295,7 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Aguardando julgamento do recurso interno",
-      "quantidade": 13
+      "quantidade": 12
     },
     {
       "gabinete": "Gab. JA 3",
@@ -360,6 +355,11 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Aguardando Manifestação do MPE",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
       "quantidade": 1
     },
     {
@@ -1870,9 +1870,9 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 12,
           "Gabinete Juiz Auxiliar 2": 13,
-          "Gabinete Juiz Auxiliar 3": 13
+          "Gabinete Juiz Auxiliar 3": 12
         },
-        "total": 38
+        "total": 37
       },
       {
         "codigo": "minutar-ato",
@@ -2075,12 +2075,32 @@
         "total": 2
       },
       {
+        "codigo": "aguardando-julgamento-do-recurso-interno-registrar-recurso",
+        "tarefa": "Aguardando julgamento do recurso interno; Registrar recurso",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 2
+      },
+      {
         "codigo": "elaborar-documento-sof",
         "tarefa": "Elaborar Documento - SOF",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 2
+      },
+      {
+        "codigo": "peticoes-nao-lidas-processo-com-prazo-em-curso",
+        "tarefa": "Petições não lidas; Processo com prazo em curso",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 2,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 2
       },
@@ -2127,16 +2147,6 @@
       {
         "codigo": "aguardando-julgamento-do-recurso-interno-peticoes-nao-lidas-peticoes-nao-lidas-peticoes-nao-lidas",
         "tarefa": "Aguardando julgamento do recurso interno; Petições não lidas; Petições não lidas; Petições não lidas",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "aguardando-julgamento-do-recurso-interno-registrar-recurso",
-        "tarefa": "Aguardando julgamento do recurso interno; Registrar recurso",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -2195,16 +2205,6 @@
         "total": 1
       },
       {
-        "codigo": "analisar-resposta-do-expediente-peticoes-nao-lidas",
-        "tarefa": "Analisar resposta do expediente; Petições não lidas",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
         "codigo": "atualizar-dados-do-processo",
         "tarefa": "Atualizar dados do processo",
         "contagens": {
@@ -2257,16 +2257,6 @@
       {
         "codigo": "peticoes-nao-lidas-peticoes-nao-lidas-registrar-ciencia-por-telefone-ou-pessoalmente",
         "tarefa": "Petições não lidas; Petições não lidas; Registrar ciência por telefone ou pessoalmente",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "peticoes-nao-lidas-processo-com-prazo-em-curso",
-        "tarefa": "Petições não lidas; Processo com prazo em curso",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -3750,20 +3740,6 @@
         "responsavel_processo": ""
       },
       {
-        "processo": "0601896-36.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno",
-        "autuacao": "01/10/2026",
-        "desde": "15/10/2026",
-        "dias_tramitando": 26,
-        "julgado": true,
-        "data_julgamento": "27/10/2026",
-        "teor": "Não conhecido o recurso de IRACEMA CRISTINA VALE LIMA em 27/10/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
         "processo": "0601938-85.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
@@ -4854,7 +4830,7 @@
         "tarefa_atual": "Revisar ato",
         "autuacao": "04/10/2026",
         "desde": "24/10/2026",
-        "dias_tramitando": 23,
+        "dias_tramitando": 24,
         "julgado": true,
         "data_julgamento": "11/10/2026",
         "teor": "Julgado procedente o pedido em 11/10/2026",
@@ -6282,6 +6258,36 @@
         "responsavel_processo": ""
       }
     ],
+    "aguardando-julgamento-do-recurso-interno-registrar-recurso": [
+      {
+        "processo": "0600939-35.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
+        "autuacao": "15/08/2026",
+        "desde": "15/08/2026",
+        "dias_tramitando": 73,
+        "julgado": true,
+        "data_julgamento": "22/08/2026",
+        "teor": "Julgado procedente em parte do pedido em 22/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601896-36.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
+        "autuacao": "01/10/2026",
+        "desde": "01/10/2026",
+        "dias_tramitando": 26,
+        "julgado": true,
+        "data_julgamento": "27/10/2026",
+        "teor": "Não conhecido o recurso de IRACEMA CRISTINA VALE LIMA em 27/10/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "elaborar-documento-sof": [
       {
         "processo": "0601003-45.2026.6.10.0000",
@@ -6308,6 +6314,36 @@
         "julgado": true,
         "data_julgamento": "22/09/2026",
         "teor": "Julgado procedente o pedido em 22/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "peticoes-nao-lidas-processo-com-prazo-em-curso": [
+      {
+        "processo": "0601053-71.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+        "autuacao": "31/08/2026",
+        "desde": "31/08/2026",
+        "dias_tramitando": 57,
+        "julgado": true,
+        "data_julgamento": "27/10/2026",
+        "teor": "Julgado procedente o pedido em 27/10/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600126-32.2026.6.10.0089",
+        "gabinete": "Gab. JA 1",
+        "classe": "NIP",
+        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+        "autuacao": "14/10/2026",
+        "desde": "14/10/2026",
+        "dias_tramitando": 14,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -6406,22 +6442,6 @@
         "responsavel_processo": ""
       }
     ],
-    "aguardando-julgamento-do-recurso-interno-registrar-recurso": [
-      {
-        "processo": "0600939-35.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
-        "autuacao": "15/08/2026",
-        "desde": "15/08/2026",
-        "dias_tramitando": 73,
-        "julgado": true,
-        "data_julgamento": "22/08/2026",
-        "teor": "Julgado procedente em parte do pedido em 22/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "analisar-acordao-assinado-sjd-analisar-processos-urgentes-processo-julgado": [
       {
         "processo": "0601896-36.2026.6.10.0000",
@@ -6495,22 +6515,6 @@
         "autuacao": "23/09/2026",
         "desde": "23/09/2026",
         "dias_tramitando": 35,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "analisar-resposta-do-expediente-peticoes-nao-lidas": [
-      {
-        "processo": "0600126-32.2026.6.10.0089",
-        "gabinete": "Gab. JA 1",
-        "classe": "NIP",
-        "tarefa_atual": "Analisar resposta do expediente; Petições não lidas",
-        "autuacao": "14/10/2026",
-        "desde": "14/10/2026",
-        "dias_tramitando": 14,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -6624,22 +6628,6 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "peticoes-nao-lidas-processo-com-prazo-em-curso": [
-      {
-        "processo": "0601053-71.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
-        "autuacao": "31/08/2026",
-        "desde": "31/08/2026",
-        "dias_tramitando": 57,
-        "julgado": true,
-        "data_julgamento": "27/10/2026",
-        "teor": "Julgado procedente o pedido em 27/10/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -7748,6 +7736,20 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0601973-45.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "CumSen",
+        "tarefa_atual": "Revisar ato",
+        "autuacao": "04/10/2026",
+        "desde": "24/10/2026",
+        "dias_tramitando": 24,
+        "julgado": true,
+        "data_julgamento": "11/10/2026",
+        "teor": "Julgado procedente o pedido em 11/10/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0601843-55.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "REC no(a) DR",
@@ -7758,20 +7760,6 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601973-45.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "CumSen",
-        "tarefa_atual": "Revisar ato",
-        "autuacao": "04/10/2026",
-        "desde": "24/10/2026",
-        "dias_tramitando": 23,
-        "julgado": true,
-        "data_julgamento": "11/10/2026",
-        "teor": "Julgado procedente o pedido em 11/10/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -7877,7 +7865,7 @@
         "processo": "0600126-32.2026.6.10.0089",
         "gabinete": "Gab. JA 1",
         "classe": "NIP",
-        "tarefa_atual": "Analisar resposta do expediente; Petições não lidas",
+        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
         "autuacao": "14/10/2026",
         "desde": "14/10/2026",
         "dias_tramitando": 14,
@@ -10401,9 +10389,9 @@
         "processo": "0601896-36.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno",
+        "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
         "autuacao": "01/10/2026",
-        "desde": "15/10/2026",
+        "desde": "01/10/2026",
         "dias_tramitando": 26,
         "julgado": true,
         "data_julgamento": "27/10/2026",
@@ -13960,9 +13948,9 @@
       "processo": "0601896-36.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Aguardando julgamento do recurso interno",
+      "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
       "autuacao": "01/10/2026",
-      "desde": "15/10/2026",
+      "desde": "01/10/2026",
       "dias_tramitando": 26,
       "julgado": true,
       "data_julgamento": "27/10/2026",
@@ -14629,6 +14617,20 @@
       "responsavel_processo": ""
     },
     {
+      "processo": "0601973-45.2026.6.10.0000",
+      "gabinete": "Gab. JA 1",
+      "classe": "CumSen",
+      "tarefa_atual": "Revisar ato",
+      "autuacao": "04/10/2026",
+      "desde": "24/10/2026",
+      "dias_tramitando": 24,
+      "julgado": true,
+      "data_julgamento": "11/10/2026",
+      "teor": "Julgado procedente o pedido em 11/10/2026",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
+    },
+    {
       "processo": "0600046-67.2026.6.10.0057",
       "gabinete": "Gab. JA 3",
       "classe": "NIP",
@@ -14639,20 +14641,6 @@
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
-      "segredo_justica": "NÃO",
-      "responsavel_processo": ""
-    },
-    {
-      "processo": "0601973-45.2026.6.10.0000",
-      "gabinete": "Gab. JA 1",
-      "classe": "CumSen",
-      "tarefa_atual": "Revisar ato",
-      "autuacao": "04/10/2026",
-      "desde": "24/10/2026",
-      "dias_tramitando": 23,
-      "julgado": true,
-      "data_julgamento": "11/10/2026",
-      "teor": "Julgado procedente o pedido em 11/10/2026",
       "segredo_justica": "NÃO",
       "responsavel_processo": ""
     },
@@ -14814,7 +14802,7 @@
       "processo": "0600126-32.2026.6.10.0089",
       "gabinete": "Gab. JA 1",
       "classe": "NIP",
-      "tarefa_atual": "Analisar resposta do expediente; Petições não lidas",
+      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
       "autuacao": "14/10/2026",
       "desde": "14/10/2026",
       "dias_tramitando": 14,
@@ -24540,9 +24528,9 @@
       "processo": "0601896-36.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Aguardando julgamento do recurso interno",
+      "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
       "autuacao": "01/10/2026",
-      "desde": "15/10/2026",
+      "desde": "01/10/2026",
       "dias_tramitando": 26,
       "julgado": true,
       "data_julgamento": "27/10/2026",
@@ -25209,6 +25197,20 @@
       "responsavel_processo": ""
     },
     {
+      "processo": "0601973-45.2026.6.10.0000",
+      "gabinete": "Gab. JA 1",
+      "classe": "CumSen",
+      "tarefa_atual": "Revisar ato",
+      "autuacao": "04/10/2026",
+      "desde": "24/10/2026",
+      "dias_tramitando": 24,
+      "julgado": true,
+      "data_julgamento": "11/10/2026",
+      "teor": "Julgado procedente o pedido em 11/10/2026",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
+    },
+    {
       "processo": "0600046-67.2026.6.10.0057",
       "gabinete": "Gab. JA 3",
       "classe": "NIP",
@@ -25219,20 +25221,6 @@
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
-      "segredo_justica": "NÃO",
-      "responsavel_processo": ""
-    },
-    {
-      "processo": "0601973-45.2026.6.10.0000",
-      "gabinete": "Gab. JA 1",
-      "classe": "CumSen",
-      "tarefa_atual": "Revisar ato",
-      "autuacao": "04/10/2026",
-      "desde": "24/10/2026",
-      "dias_tramitando": 23,
-      "julgado": true,
-      "data_julgamento": "11/10/2026",
-      "teor": "Julgado procedente o pedido em 11/10/2026",
       "segredo_justica": "NÃO",
       "responsavel_processo": ""
     },
@@ -25394,7 +25382,7 @@
       "processo": "0600126-32.2026.6.10.0089",
       "gabinete": "Gab. JA 1",
       "classe": "NIP",
-      "tarefa_atual": "Analisar resposta do expediente; Petições não lidas",
+      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
       "autuacao": "14/10/2026",
       "desde": "14/10/2026",
       "dias_tramitando": 14,
@@ -31174,9 +31162,9 @@
       "processo": "0601896-36.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Aguardando julgamento do recurso interno",
+      "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
       "autuacao": "01/10/2026",
-      "desde": "15/10/2026",
+      "desde": "01/10/2026",
       "dias_tramitando": 26,
       "julgado": true,
       "data_julgamento": "27/10/2026",
@@ -31345,7 +31333,7 @@
       "tarefa_atual": "Revisar ato",
       "autuacao": "04/10/2026",
       "desde": "24/10/2026",
-      "dias_tramitando": 23,
+      "dias_tramitando": 24,
       "julgado": true,
       "data_julgamento": "11/10/2026",
       "teor": "Julgado procedente o pedido em 11/10/2026",
@@ -31438,8 +31426,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "28/10/2026 16:03",
+  "publicado_em": "28/10/2026 16:04",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "fe7fcc3d68654f89358d75413185f1f935080fd782a46a6d5ad797785c94616a"
+  "hash_publicacao": "3813ffdf2d7a338a4a2afba4fdbc4b772acf6a111ddb96f75927733455b586ef"
 }
