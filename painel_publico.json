@@ -99,7 +99,7 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Analisar determinação; Petições não lidas",
+      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
       "quantidade": 3
     },
     {
@@ -109,12 +109,12 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Minutar ato; Petições não lidas; Petições não lidas",
+      "tarefa_atual": "Analisar determinação; Petições não lidas",
       "quantidade": 2
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+      "tarefa_atual": "Minutar ato; Petições não lidas; Petições não lidas",
       "quantidade": 2
     },
     {
@@ -2183,11 +2183,21 @@
         "codigo": "analisar-determinacao-peticoes-nao-lidas",
         "tarefa": "Analisar determinação; Petições não lidas",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 3,
+          "Gabinete Juiz Auxiliar 1": 2,
           "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
         },
-        "total": 4
+        "total": 3
+      },
+      {
+        "codigo": "peticoes-nao-lidas-processo-com-prazo-em-curso",
+        "tarefa": "Petições não lidas; Processo com prazo em curso",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 3,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 3
       },
       {
         "codigo": "processo-com-prazo-em-curso-processo-julgado",
@@ -2236,16 +2246,6 @@
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 2
-      },
-      {
-        "codigo": "peticoes-nao-lidas-processo-com-prazo-em-curso",
-        "tarefa": "Petições não lidas; Processo com prazo em curso",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 2,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 2
       },
@@ -6271,20 +6271,6 @@
         "responsavel_processo": ""
       },
       {
-        "processo": "0601766-46.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "RepEsp",
-        "tarefa_atual": "Analisar determinação; Petições não lidas",
-        "autuacao": "19/09/2026",
-        "desde": "19/09/2026",
-        "dias_tramitando": 39,
-        "julgado": true,
-        "data_julgamento": "25/10/2026",
-        "teor": "Julgado improcedente o pedido em 25/10/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
         "processo": "0601797-66.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
@@ -6309,6 +6295,50 @@
         "julgado": true,
         "data_julgamento": "22/10/2026",
         "teor": "Julgado procedente em parte do pedido em 22/10/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "peticoes-nao-lidas-processo-com-prazo-em-curso": [
+      {
+        "processo": "0601053-71.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+        "autuacao": "31/08/2026",
+        "desde": "31/08/2026",
+        "dias_tramitando": 58,
+        "julgado": true,
+        "data_julgamento": "27/10/2026",
+        "teor": "Julgado procedente o pedido em 27/10/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601766-46.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "RepEsp",
+        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+        "autuacao": "19/09/2026",
+        "desde": "19/09/2026",
+        "dias_tramitando": 39,
+        "julgado": true,
+        "data_julgamento": "25/10/2026",
+        "teor": "Julgado improcedente o pedido em 25/10/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600126-32.2026.6.10.0089",
+        "gabinete": "Gab. JA 1",
+        "classe": "NIP",
+        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+        "autuacao": "14/10/2026",
+        "desde": "14/10/2026",
+        "dias_tramitando": 14,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -6473,36 +6503,6 @@
         "julgado": true,
         "data_julgamento": "22/09/2026",
         "teor": "Julgado procedente o pedido em 22/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "peticoes-nao-lidas-processo-com-prazo-em-curso": [
-      {
-        "processo": "0601053-71.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
-        "autuacao": "31/08/2026",
-        "desde": "31/08/2026",
-        "dias_tramitando": 58,
-        "julgado": true,
-        "data_julgamento": "27/10/2026",
-        "teor": "Julgado procedente o pedido em 27/10/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600126-32.2026.6.10.0089",
-        "gabinete": "Gab. JA 1",
-        "classe": "NIP",
-        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
-        "autuacao": "14/10/2026",
-        "desde": "14/10/2026",
-        "dias_tramitando": 14,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -7254,7 +7254,7 @@
         "processo": "0601766-46.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "RepEsp",
-        "tarefa_atual": "Analisar determinação; Petições não lidas",
+        "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
         "autuacao": "19/09/2026",
         "desde": "19/09/2026",
         "dias_tramitando": 39,
@@ -13071,7 +13071,7 @@
       "processo": "0601766-46.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "RepEsp",
-      "tarefa_atual": "Analisar determinação; Petições não lidas",
+      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
       "autuacao": "19/09/2026",
       "desde": "19/09/2026",
       "dias_tramitando": 39,
@@ -23651,7 +23651,7 @@
       "processo": "0601766-46.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "RepEsp",
-      "tarefa_atual": "Analisar determinação; Petições não lidas",
+      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
       "autuacao": "19/09/2026",
       "desde": "19/09/2026",
       "dias_tramitando": 39,
@@ -30973,7 +30973,7 @@
       "processo": "0601766-46.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "RepEsp",
-      "tarefa_atual": "Analisar determinação; Petições não lidas",
+      "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
       "autuacao": "19/09/2026",
       "desde": "19/09/2026",
       "dias_tramitando": 39,
@@ -31615,8 +31615,8 @@
     }
   ],
   "sigilosos_processos": [],
-  "publicado_em": "29/10/2026 09:46",
+  "publicado_em": "29/10/2026 09:50",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "12b215570f7d83326b4d46620814c49e104f5f52339ff33f9e065ac654c295db"
+  "hash_publicacao": "8501b023e948c82c857bd0df096a97dc7f452dfbd0379273d00b94d9a7504b2f"
 }
