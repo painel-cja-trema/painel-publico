@@ -344,17 +344,17 @@
     },
     {
       "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Analisar Processos - Urgentes; Assinar acórdão ou resolução - Gabinete; Processo julgado",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Analisar Processos - Urgentes; Pauta provisória virtual; Processo com pedido de vista",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Analisar Processos - Urgentes; Processo julgado",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Analisar Processos - Urgentes; Processo julgado; Revisar acórdão ou resolução - Gabinete",
       "quantidade": 1
     },
     {
@@ -2144,6 +2144,16 @@
         "total": 1
       },
       {
+        "codigo": "analisar-processos-urgentes-assinar-acordao-ou-resolucao-gabinete-processo-julgado",
+        "tarefa": "Analisar Processos - Urgentes; Assinar acórdão ou resolução - Gabinete; Processo julgado",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
         "codigo": "analisar-processos-urgentes-pauta-provisoria-virtual-processo-com-pedido-de-vista",
         "tarefa": "Analisar Processos - Urgentes; Pauta provisória virtual; Processo com pedido de vista",
         "contagens": {
@@ -2156,16 +2166,6 @@
       {
         "codigo": "analisar-processos-urgentes-processo-julgado",
         "tarefa": "Analisar Processos - Urgentes; Processo julgado",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
-        "codigo": "analisar-processos-urgentes-processo-julgado-revisar-acordao-ou-resolucao-gabinete",
-        "tarefa": "Analisar Processos - Urgentes; Processo julgado; Revisar acórdão ou resolução - Gabinete",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -6517,6 +6517,22 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-processos-urgentes-assinar-acordao-ou-resolucao-gabinete-processo-julgado": [
+      {
+        "processo": "0601939-70.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Analisar Processos - Urgentes; Assinar acórdão ou resolução - Gabinete; Processo julgado",
+        "autuacao": "17/10/2026",
+        "desde": "17/10/2026",
+        "dias_tramitando": 13,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "analisar-processos-urgentes-pauta-provisoria-virtual-processo-com-pedido-de-vista": [
       {
         "processo": "0601112-59.2026.6.10.0000",
@@ -6542,22 +6558,6 @@
         "autuacao": "15/10/2026",
         "desde": "15/10/2026",
         "dias_tramitando": 15,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "analisar-processos-urgentes-processo-julgado-revisar-acordao-ou-resolucao-gabinete": [
-      {
-        "processo": "0601939-70.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos - Urgentes; Processo julgado; Revisar acórdão ou resolução - Gabinete",
-        "autuacao": "17/10/2026",
-        "desde": "17/10/2026",
-        "dias_tramitando": 13,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -10966,7 +10966,7 @@
         "processo": "0601939-70.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos - Urgentes; Processo julgado; Revisar acórdão ou resolução - Gabinete",
+        "tarefa_atual": "Analisar Processos - Urgentes; Assinar acórdão ou resolução - Gabinete; Processo julgado",
         "autuacao": "17/10/2026",
         "desde": "17/10/2026",
         "dias_tramitando": 13,
@@ -28089,7 +28089,7 @@
       "processo": "0601939-70.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "REC no(a) Rp",
-      "tarefa_atual": "Analisar Processos - Urgentes; Processo julgado; Revisar acórdão ou resolução - Gabinete",
+      "tarefa_atual": "Analisar Processos - Urgentes; Assinar acórdão ou resolução - Gabinete; Processo julgado",
       "autuacao": "17/10/2026",
       "desde": "17/10/2026",
       "dias_tramitando": 13,
@@ -33781,8 +33781,8 @@
     ]
   },
   "sigilosos_processos": [],
-  "publicado_em": "30/10/2026 18:14",
+  "publicado_em": "30/10/2026 18:20",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "06aad5707b9608f4912406332bf04487d5647e99f76fc837628eecf19d110627"
+  "hash_publicacao": "dcb78586221823b03c9ef6c99b64ed8e23d694ede42450ee8ce13dc50b93694c"
 }
