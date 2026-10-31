@@ -44,9 +44,9 @@
       "juiz": "Dr. Rubem Filho",
       "distribuidor": "Danielle Cerqueira Castro",
       "quantidade": 83,
-      "media_dias": 37.9,
+      "media_dias": 37.5,
       "maior_tempo": 144,
-      "urgentes": 10,
+      "urgentes": 11,
       "minutar": 0,
       "julgados": 79,
       "percentual_julgados": 37.5,
@@ -334,12 +334,17 @@
     },
     {
       "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Analisar Processos - Urgentes",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Analisar Processos - Urgentes; Lançar movimentos de julgamento colegiado; Processo julgado",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Analisar Processos - Urgentes; Processo julgado; Registrar recurso",
+      "tarefa_atual": "Analisar Processos - Urgentes; Processo julgado",
       "quantidade": 1
     },
     {
@@ -350,11 +355,6 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Elaborar Documento - SOF",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Pauta provisória virtual; Processo com pedido de vista; Verificar Pendências",
       "quantidade": 1
     },
     {
@@ -376,15 +376,15 @@
   "por_faixa": [
     {
       "faixa": "Até 30 dias",
-      "quantidade": 124
+      "quantidade": 125
     },
     {
       "faixa": "31 a 60 dias",
-      "quantidade": 126
+      "quantidade": 124
     },
     {
       "faixa": "61 a 90 dias",
-      "quantidade": 42
+      "quantidade": 43
     },
     {
       "faixa": "Acima de 90 dias",
@@ -576,7 +576,7 @@
       "tarefa_atual": "Minutar ato",
       "autuacao": "31/08/2026",
       "desde": "27/09/2026",
-      "dias_tramitando": 60,
+      "dias_tramitando": 61,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -1278,7 +1278,7 @@
         "tarefa_atual": "Minutar ato",
         "autuacao": "31/08/2026",
         "desde": "27/09/2026",
-        "dias_tramitando": 60,
+        "dias_tramitando": 61,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -2187,6 +2187,16 @@
         "total": 1
       },
       {
+        "codigo": "analisar-processos-urgentes",
+        "tarefa": "Analisar Processos - Urgentes",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
         "codigo": "analisar-processos-urgentes-lancar-movimentos-de-julgamento-colegiado-processo-julgado",
         "tarefa": "Analisar Processos - Urgentes; Lançar movimentos de julgamento colegiado; Processo julgado",
         "contagens": {
@@ -2197,8 +2207,8 @@
         "total": 1
       },
       {
-        "codigo": "analisar-processos-urgentes-processo-julgado-registrar-recurso",
-        "tarefa": "Analisar Processos - Urgentes; Processo julgado; Registrar recurso",
+        "codigo": "analisar-processos-urgentes-processo-julgado",
+        "tarefa": "Analisar Processos - Urgentes; Processo julgado",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -2243,16 +2253,6 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "pauta-provisoria-virtual-processo-com-pedido-de-vista-verificar-pendencias",
-        "tarefa": "Pauta provisória virtual; Processo com pedido de vista; Verificar Pendências",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 1
       },
@@ -4220,7 +4220,7 @@
         "tarefa_atual": "Minutar ato",
         "autuacao": "31/08/2026",
         "desde": "27/09/2026",
-        "dias_tramitando": 60,
+        "dias_tramitando": 61,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -6580,6 +6580,22 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-processos-urgentes": [
+      {
+        "processo": "0601896-36.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "ED no(a) REC no(a) Rp",
+        "tarefa_atual": "Analisar Processos - Urgentes",
+        "autuacao": "31/10/2026",
+        "desde": "31/10/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "analisar-processos-urgentes-lancar-movimentos-de-julgamento-colegiado-processo-julgado": [
       {
         "processo": "0601939-70.2026.6.10.0000",
@@ -6596,12 +6612,12 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-processos-urgentes-processo-julgado-registrar-recurso": [
+    "analisar-processos-urgentes-processo-julgado": [
       {
         "processo": "0601896-36.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos - Urgentes; Processo julgado; Registrar recurso",
+        "tarefa_atual": "Analisar Processos - Urgentes; Processo julgado",
         "autuacao": "15/10/2026",
         "desde": "15/10/2026",
         "dias_tramitando": 15,
@@ -6669,22 +6685,6 @@
         "autuacao": "04/10/2026",
         "desde": "04/10/2026",
         "dias_tramitando": 27,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "pauta-provisoria-virtual-processo-com-pedido-de-vista-verificar-pendencias": [
-      {
-        "processo": "0601112-59.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Pauta provisória virtual; Processo com pedido de vista; Verificar Pendências",
-        "autuacao": "23/09/2026",
-        "desde": "23/09/2026",
-        "dias_tramitando": 38,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -8432,7 +8432,7 @@
         "tarefa_atual": "Minutar ato",
         "autuacao": "31/08/2026",
         "desde": "27/09/2026",
-        "dias_tramitando": 60,
+        "dias_tramitando": 61,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -10136,20 +10136,6 @@
         "responsavel_processo": ""
       },
       {
-        "processo": "0601112-59.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Pauta provisória virtual; Processo com pedido de vista; Verificar Pendências",
-        "autuacao": "23/09/2026",
-        "desde": "23/09/2026",
-        "dias_tramitando": 38,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
         "processo": "0601811-50.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
@@ -10909,7 +10895,7 @@
         "processo": "0601896-36.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos - Urgentes; Processo julgado; Registrar recurso",
+        "tarefa_atual": "Analisar Processos - Urgentes; Processo julgado",
         "autuacao": "15/10/2026",
         "desde": "15/10/2026",
         "dias_tramitando": 15,
@@ -11109,6 +11095,20 @@
         "autuacao": "27/10/2026",
         "desde": "27/10/2026",
         "dias_tramitando": 3,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601896-36.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "ED no(a) REC no(a) Rp",
+        "tarefa_atual": "Analisar Processos - Urgentes",
+        "autuacao": "31/10/2026",
+        "desde": "31/10/2026",
+        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -12301,7 +12301,7 @@
       "tarefa_atual": "Minutar ato",
       "autuacao": "31/08/2026",
       "desde": "27/09/2026",
-      "dias_tramitando": 60,
+      "dias_tramitando": 61,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -22923,7 +22923,7 @@
       "tarefa_atual": "Minutar ato",
       "autuacao": "31/08/2026",
       "desde": "27/09/2026",
-      "dias_tramitando": 60,
+      "dias_tramitando": 61,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -27637,20 +27637,6 @@
       "responsavel_processo": ""
     },
     {
-      "processo": "0601112-59.2026.6.10.0000",
-      "gabinete": "Gab. JA 3",
-      "classe": "REC no(a) Rp",
-      "tarefa_atual": "Pauta provisória virtual; Processo com pedido de vista; Verificar Pendências",
-      "autuacao": "23/09/2026",
-      "desde": "23/09/2026",
-      "dias_tramitando": 38,
-      "julgado": false,
-      "data_julgamento": "",
-      "teor": "",
-      "segredo_justica": "NÃO",
-      "responsavel_processo": ""
-    },
-    {
       "processo": "0601289-23.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "REC no(a) Rp",
@@ -28032,7 +28018,7 @@
       "processo": "0601896-36.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "REC no(a) Rp",
-      "tarefa_atual": "Analisar Processos - Urgentes; Processo julgado; Registrar recurso",
+      "tarefa_atual": "Analisar Processos - Urgentes; Processo julgado",
       "autuacao": "15/10/2026",
       "desde": "15/10/2026",
       "dias_tramitando": 15,
@@ -28288,6 +28274,20 @@
       "autuacao": "27/10/2026",
       "desde": "27/10/2026",
       "dias_tramitando": 3,
+      "julgado": false,
+      "data_julgamento": "",
+      "teor": "",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
+    },
+    {
+      "processo": "0601896-36.2026.6.10.0000",
+      "gabinete": "Gab. JA 3",
+      "classe": "ED no(a) REC no(a) Rp",
+      "tarefa_atual": "Analisar Processos - Urgentes",
+      "autuacao": "31/10/2026",
+      "desde": "31/10/2026",
+      "dias_tramitando": 0,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -33780,8 +33780,8 @@
     ]
   },
   "sigilosos_processos": [],
-  "publicado_em": "31/10/2026 14:07",
+  "publicado_em": "31/10/2026 14:08",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "ef87378062492a00b5d462ed327c58a9b6c542b19bbd11584a90a5dbcb206acb"
+  "hash_publicacao": "815537b44e74af74dd8a09ee55b1787a2dde713bd04c21de83eb5d81177dcb11"
 }
