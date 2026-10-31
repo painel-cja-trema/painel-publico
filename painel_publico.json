@@ -224,12 +224,12 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Petições não lidas",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Petições descartadas",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Petições não lidas; Registrar recurso",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Registrar recurso",
       "quantidade": 1
     },
     {
@@ -2027,16 +2027,6 @@
         "total": 4
       },
       {
-        "codigo": "analisar-peticao-avulsa-analisar-determinacao-peticoes-nao-lidas",
-        "tarefa": "Analisar Petição Avulsa; Analisar determinação; Petições não lidas",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 2,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 4
-      },
-      {
         "codigo": "analisar-processos-processo-julgado",
         "tarefa": "Analisar Processos; Processo julgado",
         "contagens": {
@@ -2055,6 +2045,16 @@
           "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 4
+      },
+      {
+        "codigo": "analisar-peticao-avulsa-analisar-determinacao-peticoes-nao-lidas",
+        "tarefa": "Analisar Petição Avulsa; Analisar determinação; Petições não lidas",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 2,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 3
       },
       {
         "codigo": "aguardando-julgamento-do-recurso-interno-registrar-recurso",
@@ -2177,8 +2177,18 @@
         "total": 1
       },
       {
-        "codigo": "analisar-peticao-avulsa-analisar-determinacao-peticoes-nao-lidas-registrar-recurso",
-        "tarefa": "Analisar Petição Avulsa; Analisar determinação; Petições não lidas; Registrar recurso",
+        "codigo": "analisar-peticao-avulsa-analisar-determinacao-peticoes-descartadas",
+        "tarefa": "Analisar Petição Avulsa; Analisar determinação; Petições descartadas",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "analisar-peticao-avulsa-analisar-determinacao-registrar-recurso",
+        "tarefa": "Analisar Petição Avulsa; Analisar determinação; Registrar recurso",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -6066,64 +6076,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-peticao-avulsa-analisar-determinacao-peticoes-nao-lidas": [
-      {
-        "processo": "0601369-84.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "CumSen",
-        "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Petições não lidas",
-        "autuacao": "12/09/2026",
-        "desde": "12/09/2026",
-        "dias_tramitando": 48,
-        "julgado": true,
-        "data_julgamento": "30/09/2026",
-        "teor": "Julgado procedente o pedido em 30/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601833-11.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Petições não lidas",
-        "autuacao": "27/09/2026",
-        "desde": "27/09/2026",
-        "dias_tramitando": 33,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601925-86.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Petições não lidas",
-        "autuacao": "03/10/2026",
-        "desde": "03/10/2026",
-        "dias_tramitando": 28,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600121-10.2026.6.10.0089",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Petições não lidas",
-        "autuacao": "07/10/2026",
-        "desde": "07/10/2026",
-        "dias_tramitando": 23,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "analisar-processos-processo-julgado": [
       {
         "processo": "0601066-70.2026.6.10.0000",
@@ -6236,6 +6188,50 @@
         "julgado": true,
         "data_julgamento": "11/10/2026",
         "teor": "Julgado procedente o pedido em 11/10/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-peticao-avulsa-analisar-determinacao-peticoes-nao-lidas": [
+      {
+        "processo": "0601369-84.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "CumSen",
+        "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Petições não lidas",
+        "autuacao": "12/09/2026",
+        "desde": "12/09/2026",
+        "dias_tramitando": 48,
+        "julgado": true,
+        "data_julgamento": "30/09/2026",
+        "teor": "Julgado procedente o pedido em 30/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601925-86.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Petições não lidas",
+        "autuacao": "03/10/2026",
+        "desde": "03/10/2026",
+        "dias_tramitando": 28,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600121-10.2026.6.10.0089",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Petições não lidas",
+        "autuacao": "07/10/2026",
+        "desde": "07/10/2026",
+        "dias_tramitando": 23,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -6558,12 +6554,28 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-peticao-avulsa-analisar-determinacao-peticoes-nao-lidas-registrar-recurso": [
+    "analisar-peticao-avulsa-analisar-determinacao-peticoes-descartadas": [
+      {
+        "processo": "0601833-11.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Petições descartadas",
+        "autuacao": "27/09/2026",
+        "desde": "27/09/2026",
+        "dias_tramitando": 33,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-peticao-avulsa-analisar-determinacao-registrar-recurso": [
       {
         "processo": "0601768-16.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Petições não lidas; Registrar recurso",
+        "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Registrar recurso",
         "autuacao": "20/09/2026",
         "desde": "20/09/2026",
         "dias_tramitando": 40,
@@ -8803,7 +8815,7 @@
         "processo": "0601768-16.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Petições não lidas; Registrar recurso",
+        "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Registrar recurso",
         "autuacao": "20/09/2026",
         "desde": "20/09/2026",
         "dias_tramitando": 40,
@@ -9055,7 +9067,7 @@
         "processo": "0601833-11.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Petições não lidas",
+        "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Petições descartadas",
         "autuacao": "27/09/2026",
         "desde": "27/09/2026",
         "dias_tramitando": 33,
@@ -13022,7 +13034,7 @@
       "processo": "0601768-16.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Petições não lidas; Registrar recurso",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Registrar recurso",
       "autuacao": "20/09/2026",
       "desde": "20/09/2026",
       "dias_tramitando": 40,
@@ -13484,7 +13496,7 @@
       "processo": "0601833-11.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Petições não lidas",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Petições descartadas",
       "autuacao": "27/09/2026",
       "desde": "27/09/2026",
       "dias_tramitando": 33,
@@ -23644,7 +23656,7 @@
       "processo": "0601768-16.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Petições não lidas; Registrar recurso",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Registrar recurso",
       "autuacao": "20/09/2026",
       "desde": "20/09/2026",
       "dias_tramitando": 40,
@@ -24106,7 +24118,7 @@
       "processo": "0601833-11.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Petições não lidas",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Petições descartadas",
       "autuacao": "27/09/2026",
       "desde": "27/09/2026",
       "dias_tramitando": 33,
@@ -33090,7 +33102,7 @@
       "processo": "0601768-16.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Petições não lidas; Registrar recurso",
+      "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Registrar recurso",
       "autuacao": "20/09/2026",
       "desde": "20/09/2026",
       "dias_tramitando": 40,
@@ -33790,8 +33802,8 @@
     ]
   },
   "sigilosos_processos": [],
-  "publicado_em": "31/10/2026 12:50",
+  "publicado_em": "31/10/2026 12:55",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "a455088c06766e983d962c7cdc872aa747cae10506eda41f2eda3bb1b6a259a5"
+  "hash_publicacao": "663e3ab6b4d691b9f62b7c858299f57c2d5c639dac5811d5fa6c0833fae772d9"
 }
