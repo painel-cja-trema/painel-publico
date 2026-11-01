@@ -249,6 +249,11 @@
     },
     {
       "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Processo com prazo em curso",
+      "quantidade": 5
+    },
+    {
+      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Aguarda Sessão de Julgamento Virtual; Elaborar extrato da ata; Pauta provisória virtual; Selecionar documentos para acórdão - Gabinete",
       "quantidade": 4
     },
@@ -260,11 +265,6 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Elaborar Documentos",
-      "quantidade": 4
-    },
-    {
-      "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Processo com prazo em curso",
       "quantidade": 4
     },
     {
@@ -285,11 +285,6 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Analisar resposta do expediente",
-      "quantidade": 2
-    },
-    {
-      "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Preparar comunicação",
       "quantidade": 2
     },
     {
@@ -340,6 +335,11 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Elaborar Documento - SOF",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Preparar comunicação",
       "quantidade": 1
     },
     {
@@ -1962,9 +1962,9 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 18,
           "Gabinete Juiz Auxiliar 2": 9,
-          "Gabinete Juiz Auxiliar 3": 4
+          "Gabinete Juiz Auxiliar 3": 5
         },
-        "total": 31
+        "total": 32
       },
       {
         "codigo": "minutar-ato",
@@ -2137,16 +2137,6 @@
         "total": 2
       },
       {
-        "codigo": "preparar-comunicacao",
-        "tarefa": "Preparar comunicação",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 2
-        },
-        "total": 2
-      },
-      {
         "codigo": "aguarda-julgamento-incluido-em-pauta-virtual-elaborar-extrato-da-ata-elaborar-extrato-da-ata-processo-incluido-em-pauta-virtual-selecionar-documentos-para-acordao-gabinete-selecionar-documentos-para-acordao-gabinete",
         "tarefa": "Aguarda Julgamento - incluído em pauta virtual; Elaborar extrato da ata; Elaborar extrato da ata; Processo incluído em pauta virtual; Selecionar documentos para acórdão - Gabinete; Selecionar documentos para acórdão - Gabinete",
         "contagens": {
@@ -2263,6 +2253,16 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "preparar-comunicacao",
+        "tarefa": "Preparar comunicação",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 1
       },
@@ -4276,6 +4276,20 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600052-71.2026.6.10.0058",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Processo com prazo em curso",
+        "autuacao": "03/10/2026",
+        "desde": "01/11/2026",
+        "dias_tramitando": 28,
+        "julgado": true,
+        "data_julgamento": "28/10/2026",
+        "teor": "Julgado improcedente o pedido em 28/10/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -6386,36 +6400,6 @@
         "responsavel_processo": ""
       }
     ],
-    "preparar-comunicacao": [
-      {
-        "processo": "0600052-71.2026.6.10.0058",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Preparar comunicação",
-        "autuacao": "03/10/2026",
-        "desde": "01/11/2026",
-        "dias_tramitando": 28,
-        "julgado": true,
-        "data_julgamento": "28/10/2026",
-        "teor": "Julgado improcedente o pedido em 28/10/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601947-47.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "NIP",
-        "tarefa_atual": "Preparar comunicação",
-        "autuacao": "04/10/2026",
-        "desde": "23/10/2026",
-        "dias_tramitando": 28,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "aguarda-julgamento-incluido-em-pauta-virtual-elaborar-extrato-da-ata-elaborar-extrato-da-ata-processo-incluido-em-pauta-virtual-selecionar-documentos-para-acordao-gabinete-selecionar-documentos-para-acordao-gabinete": [
       {
         "processo": "0601893-81.2026.6.10.0000",
@@ -6600,6 +6584,22 @@
         "tarefa_atual": "Elaborar extrato da ata; Minutar ato",
         "autuacao": "04/10/2026",
         "desde": "04/10/2026",
+        "dias_tramitando": 28,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "preparar-comunicacao": [
+      {
+        "processo": "0601947-47.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "NIP",
+        "tarefa_atual": "Preparar comunicação",
+        "autuacao": "04/10/2026",
+        "desde": "23/10/2026",
         "dias_tramitando": 28,
         "julgado": false,
         "data_julgamento": "",
@@ -10475,7 +10475,7 @@
         "processo": "0600052-71.2026.6.10.0058",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Preparar comunicação",
+        "tarefa_atual": "Processo com prazo em curso",
         "autuacao": "03/10/2026",
         "desde": "01/11/2026",
         "dias_tramitando": 28,
@@ -14244,7 +14244,7 @@
       "processo": "0600052-71.2026.6.10.0058",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Preparar comunicação",
+      "tarefa_atual": "Processo com prazo em curso",
       "autuacao": "03/10/2026",
       "desde": "01/11/2026",
       "dias_tramitando": 28,
@@ -24824,7 +24824,7 @@
       "processo": "0600052-71.2026.6.10.0058",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Preparar comunicação",
+      "tarefa_atual": "Processo com prazo em curso",
       "autuacao": "03/10/2026",
       "desde": "01/11/2026",
       "dias_tramitando": 28,
@@ -33290,7 +33290,7 @@
       "processo": "0600052-71.2026.6.10.0058",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Preparar comunicação",
+      "tarefa_atual": "Processo com prazo em curso",
       "autuacao": "03/10/2026",
       "desde": "01/11/2026",
       "dias_tramitando": 28,
@@ -33528,8 +33528,8 @@
     ]
   },
   "sigilosos_processos": [],
-  "publicado_em": "01/11/2026 14:49",
+  "publicado_em": "01/11/2026 14:52",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "cf19c0d735e09f4fb429537a7d1dd07a0c2373daeceade1bfcf6f589b24e3184"
+  "hash_publicacao": "59241055d88596d510f55f76fa48a47d42889394fd4cccf8ea6ecde50a861465"
 }
