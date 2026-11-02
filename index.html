@@ -3,14 +3,66 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Comissão de Juízes Auxiliares – 2º Grau</title>
-<link rel="stylesheet" href="/static/style.css?v=20260710_entrada">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<title>Consulta Pública · Comissão de Juízes Auxiliares – 2º Grau</title>
+<link rel="stylesheet" href="./style.css?v=20260720_pages">
+<style>
+.erro-carregamento{max-width:1100px;margin:35px auto;padding:24px;border:1px solid #d9a3a3;border-radius:14px;background:#fff4f4;color:#7b1d1d}.carregando{max-width:1100px;margin:35px auto;padding:28px;text-align:center}.sem-link{cursor:default;text-decoration:none}.public-footer-note{margin-bottom:32px}
+
+.modal-fundo{position:fixed;inset:0;background:rgba(4,24,43,.72);z-index:9999;display:none;align-items:center;justify-content:center;padding:22px}.modal-fundo.aberto{display:flex}.modal-caixa{width:min(1420px,98vw);max-height:92vh;overflow:auto;background:#fff;border-radius:18px;box-shadow:0 25px 70px rgba(0,0,0,.35)}.modal-topo{position:sticky;top:0;z-index:3;display:flex;justify-content:space-between;gap:16px;align-items:center;padding:16px 18px;background:#103f70;color:#fff}.modal-topo h2{margin:0;font-size:20px}.modal-fechar{background:#fff;color:#103f70;padding:8px 12px}.modal-corpo{padding:18px}.modal-acoes{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:14px}.modal-acoes button{background:#103f70;color:#fff}.detalhe-link{cursor:pointer}.sem-link{cursor:default}.relatorios-inline{display:flex;gap:8px;flex-wrap:wrap}.relatorios-inline button{padding:8px 11px;font-size:12px}.public-cards{grid-template-columns:repeat(4,1fr)}.indicador-gab-link{all:unset;display:flex;flex-direction:column;justify-content:center;width:100%;height:100%;cursor:pointer;box-sizing:border-box}.indicador-gab-link:hover{filter:brightness(.94)}.estoque-linha .indicador-gab-link{flex-direction:row;align-items:center;justify-content:space-between}
+@media(max-width:900px){.public-cards{grid-template-columns:1fr 1fr}}@media(max-width:560px){.public-cards{grid-template-columns:1fr}}
+</style>
 
 <style>
-.publicacao-monitor{margin-top:14px;display:grid;gap:12px}.publicacao-monitor-topo{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}.publicacao-monitor-status{font-weight:800;color:#083f72}.publicacao-monitor-meta{font-size:.9rem;color:#52677c;margin-top:5px}.publicacao-progresso{height:9px;background:#dce8e4;border-radius:999px;overflow:hidden}.publicacao-progresso>i{display:block;height:100%;width:0;background:#09845f;transition:width .35s ease}.publicacao-etapas{display:grid;grid-template-columns:repeat(auto-fit,minmax(205px,1fr));gap:8px}.publicacao-etapa{background:#fff;border:1px solid #d9e6e2;border-radius:10px;padding:10px 12px;display:grid;grid-template-columns:24px 1fr;gap:8px}.publicacao-etapa .icone{font-weight:900}.publicacao-etapa.concluida .icone{color:#087e5b}.publicacao-etapa.andamento .icone{color:#b26a00}.publicacao-etapa.falha .icone{color:#b3261e}.publicacao-etapa strong{display:block;font-size:.9rem}.publicacao-etapa small{display:block;color:#65798a;margin-top:3px}.publicacao-tempos{display:flex;gap:18px;flex-wrap:wrap;font-size:.9rem;color:#52677c}.publicacao-tempos b{color:#123f68}.publicacao-status{display:block}.publicacao-status>a{float:right;margin-top:-35px}
-.ciclo-resumo{margin-top:12px;display:flex;gap:16px;flex-wrap:wrap;font-size:.9rem;color:#52677c}.ciclo-resumo b{color:#123f68}.ciclo-etapas{margin-top:10px;display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:8px}.ciclo-etapa{background:#fff;border:1px solid #d7e3ed;border-radius:10px;padding:9px 11px;display:grid;grid-template-columns:22px 1fr;gap:8px}.ciclo-etapa strong{display:block;font-size:.88rem}.ciclo-etapa small{display:block;color:#65798a;margin-top:2px}.ciclo-etapa.concluida .icone{color:#087e5b}.ciclo-etapa.andamento .icone{color:#b26a00}.ciclo-etapa.falha .icone{color:#b3261e}
+.info-tip{
+display:inline-flex;align-items:center;justify-content:center;
+width:14px;height:14px;margin-left:3px;
+border:1px solid #1f5f99;border-radius:50%;
+background:transparent;color:#1f5f99;
+font-size:9px;font-weight:700;line-height:1;
+cursor:help;user-select:none;position:relative;
+transition:all .18s ease}
+.info-tip:hover{background:#1f5f99;color:#fff}
+.info-tip:hover::after{
+content:attr(data-tip);
+position:absolute;
+left:0;
+top:22px;
+z-index:99999;
+background:#163b63;
+color:#fff;
+padding:9px 11px;
+border-radius:8px;
+width:280px;
+max-width:calc(100vw - 48px);
+font-size:12px;
+font-weight:400;
+line-height:1.4;
+text-align:left;
+box-shadow:0 6px 18px rgba(0,0,0,.25);
+white-space:normal;
+overflow-wrap:anywhere;
+pointer-events:none}
 </style>
-<style>.cards a.card{text-decoration:none;color:inherit}.detalhe-link{cursor:pointer}</style>
+
+<style>
+/* Destaque dos indicadores principais por gabinete */
+.estoque-linha .indicador-gab-link > span{
+    display:inline-flex;
+    align-items:center;
+    gap:3px;
+    color:#173f67;
+    font-size:14px;
+    font-weight:600;
+    line-height:1.25;
+}
+.estoque-linha .indicador-gab-link > strong{
+    color:#0d3f70;
+    font-size:23px;
+    font-weight:800;
+    line-height:1;
+}
+</style>
 </head>
 <body>
 <header class="header">
@@ -19,372 +71,142 @@
    <div class="logo-card">
     <div class="logo-mark" aria-label="Justiça Eleitoral">
       <svg width="79" height="79" viewBox="0 0 120 120" role="img" aria-label="Marca Justiça Eleitoral">
-        <rect x="50" y="22" width="49" height="75" rx="1" fill="#f3c51c"/>
-        <path d="M48 28H100V98H40Z" fill="#f3c51c" opacity=".98"/>
-        <path d="M40 98 L100 98 L100 60 Z" fill="#205e44"/>
-        <path d="M39 98 L100 59" stroke="#fff" stroke-width="4"/>
-        <circle cx="52" cy="49" r="38" fill="#2d5eb8" stroke="#fff" stroke-width="4"/>
-        <g fill="#fff"><circle cx="33" cy="36" r="2.1"/><circle cx="41" cy="26" r="2"/><circle cx="56" cy="24" r="1.7"/><circle cx="69" cy="31" r="2"/><circle cx="74" cy="44" r="1.8"/><circle cx="63" cy="58" r="1.9"/><circle cx="47" cy="61" r="1.7"/><circle cx="31" cy="53" r="1.9"/><circle cx="57" cy="39" r="1.5"/><circle cx="43" cy="45" r="1.4"/></g>
+        <rect x="50" y="22" width="49" height="75" rx="1" fill="#f3c51c"/><path d="M48 28H100V98H40Z" fill="#f3c51c" opacity=".98"/><path d="M40 98 L100 98 L100 60 Z" fill="#205e44"/><path d="M39 98 L100 59" stroke="#fff" stroke-width="4"/><circle cx="52" cy="49" r="38" fill="#2d5eb8" stroke="#fff" stroke-width="4"/><g fill="#fff"><circle cx="33" cy="36" r="2.1"/><circle cx="41" cy="26" r="2"/><circle cx="56" cy="24" r="1.7"/><circle cx="69" cy="31" r="2"/><circle cx="74" cy="44" r="1.8"/><circle cx="63" cy="58" r="1.9"/><circle cx="47" cy="61" r="1.7"/><circle cx="31" cy="53" r="1.9"/><circle cx="57" cy="39" r="1.5"/><circle cx="43" cy="45" r="1.4"/></g>
       </svg>
     </div>
-    <div class="logo-copy">
-      <div class="small">Tribunal Regional Eleitoral</div>
-      <div class="big">TRE <span>MARANHÃO</span></div>
-    </div>
+    <div class="logo-copy"><div class="small">Tribunal Regional Eleitoral</div><div class="big">TRE <span>MARANHÃO</span></div></div>
    </div>
-   <div class="title">
-    <div class="eyebrow">Painel Gerencial</div>
-    <h1>Comissão de Juízes Auxiliares <span>– 2º Grau</span></h1>
-    <p>Estoque, julgamentos e distribuição de minuta</p>
-   </div>
-   <div class="election-card" aria-label="Eleições 2026">
-     <div class="election-word"><span>EL</span><span class="bars"><i></i><i></i><i></i></span><span>IÇÕES</span></div>
-     <span class="year">2026</span>
-     <div class="motto"><span class="voto">#VOTO</span><span class="na">NA</span>DEMOCRACIA</div>
-   </div>
+   <div class="title"><div class="eyebrow">Consulta Pública</div><h1>Comissão de Juízes Auxiliares <span>– 2º Grau</span></h1><p>Estoque, julgamentos e distribuição de minuta</p></div>
+   <div class="election-card" aria-label="Eleições 2026"><div class="election-word"><span>EL</span><span class="bars"><i></i><i></i><i></i></span><span>IÇÕES</span></div><span class="year">2026</span><div class="motto"><span class="voto">#VOTO</span><span class="na">NA</span>DEMOCRACIA</div></div>
   </div>
-  <div class="navline">
-   <nav class="nav"><a href="#comparativo">Comparativo</a><a href="#entrada-comissao">Entrada</a><a href="#tarefas-criticas">Tarefas críticas</a><a href="#todas-tarefas">Todas as tarefas</a><a href="#julgados">Julgados</a><a href="#minuta">Minutas</a><a href="/relatorios">Relatórios</a></nav>
-  </div>
+  <div class="navline"><nav class="nav"><a href="#comparativo">Comparativo</a><a href="#entrada-comissao">Entrada</a><a href="#tarefas-criticas">Tarefas críticas</a><a href="#todas-tarefas">Todas as tarefas</a><a href="#julgados">Julgados</a><a href="#minuta">Minutas</a></nav></div>
  </div>
- <div class="versao-sistema">
-   <strong>Versão 2.3.0</strong><br>
-   <small>19/07/2026</small>
-</div>
 </header>
-<main>
-  {% if erro %}<div class="alert erro">{{ erro }}</div>{% endif %}
-  {% if mensagem %}<div class="alert ok">{{ mensagem }}</div>{% endif %}
-
-  <section class="visao-geral">
-    <div>
-      <span class="rotulo">VISÃO GERAL</span>
-      <h2>Acompanhamento da Comissão</h2>
-      <p>Monitoramento integrado dos Gabinetes de Juiz Auxiliar 1, 2 e 3.</p>
-    </div>
-    <div class="fonte"><i></i><div><span>Fonte de dados</span><strong>Processos Tramitando 2º Grau - PJE</strong></div></div>
-  </section>
-
-  <section class="acoes">
-    <div class="acao-info">
-      <div class="acao-icone">↻</div>
-      <div><h2>Atualização de Processos Tramitando 2º Grau - PJE</h2><p>{% if arquivo %}Arquivo atual: <b>{{ arquivo }}</b><br>Última atualização do estoque: {{ atualizado_em }}<br>Última atualização dos arquivados: {{ arquivados_atualizado_em or "ainda não realizada" }}<br>Próxima atualização automática dos arquivados: {{ arquivados_proxima_atualizacao }}{% else %}Nenhum Excel carregado.{% endif %}</p></div>
-    </div>
-    <div class="botoes">
-      <form action="/dashboard/atualizar-ribeirao" method="post"><button class="principal" type="submit">↓ Atualizar dados do painel</button></form>
-      <form action="/dashboard/atualizar-arquivados" method="post"><button type="submit">↓ Atualizar arquivados agora</button></form>
-      <form action="/dashboard/importar" method="post" enctype="multipart/form-data">
-        <label class="arquivo-input"><input type="file" name="arquivo" accept=".xlsx" required><span>Selecionar Excel</span></label>
-        <button type="submit">Importar</button>
-      </form>
-      <form action="/publicacao/publicar" method="post"><button class="publicar" type="submit">◉ Publicar painel</button></form>
-      <a class="botao-relatorio-topo" href="/relatorios">▤ Relatórios</a>
-    </div>
-  </section>
-
-  <section class="atualizacao-status" id="atualizacao-status" data-em-andamento="{{ 'true' if atualizacao.em_andamento else 'false' }}">
-    <div class="atualizacao-status-topo">
-      <div>
-        <span class="rotulo">ATUALIZAÇÃO AUTOMÁTICA</span>
-        <strong id="atualizacao-situacao">{{ atualizacao.situacao }}</strong>
-        <p id="atualizacao-meta">
-          {% if atualizacao.em_andamento %}Iniciada em {{ atualizacao.inicio }}. O painel continua disponível durante a execução.
-          {% elif atualizacao.fim %}Última execução finalizada em {{ atualizacao.fim }}.
-          {% else %}A atualização abre o painel institucional, baixa o Excel, valida os dados e preserva cópia no histórico.{% endif %}
-        </p>
-      </div>
-      <span class="atualizacao-pill {% if atualizacao.em_andamento %}andamento{% else %}pronto{% endif %}" id="atualizacao-pill">
-        {% if atualizacao.em_andamento %}Em andamento{% else %}Disponível{% endif %}
-      </span>
-    </div>
-    <div class="atualizacao-config">
-      <span>Modo: <b>{{ configuracao_atualizacao.modo }}</b></span>
-      <span>Perfil Chrome: <b>{% if configuracao_atualizacao.perfil_configurado %}configurado{% else %}não configurado{% endif %}</b></span>
-      <span>Perfil: <b>{{ configuracao_atualizacao.profile_directory }}</b></span>
-      <span>Agendamento: <b>novo ciclo 10 s após o término</b></span>
-    </div>
-    <div class="atualizacao-log" id="atualizacao-log">
-      {% if atualizacao.mensagens %}
-        {% for item in atualizacao.mensagens[-4:] %}<div><time>{{ item.hora }}</time>{{ item.texto }}</div>{% endfor %}
-      {% else %}
-        <div><time>—</time>Aguardando início da atualização.</div>
-      {% endif %}
-    </div>
-    <div class="ciclo-resumo">
-      <span>Tempo total do ciclo: <b id="ciclo-tempo-total">—</b></span>
-      <span>Pausa após o término: <b id="ciclo-intervalo">10 s</b></span>
-      <span>Próxima extração: <b id="ciclo-proxima">—</b></span>
-      <span>Pausa restante: <b id="ciclo-pausa">—</b></span>
-    </div>
-    <div class="ciclo-fases">
-      <div><small>Extração do Ribeirão</small><strong id="ciclo-extracao">—</strong></div>
-      <div><small>Processamento interno</small><strong id="ciclo-processamento">—</strong></div>
-      <div><small>Publicação externa</small><strong id="ciclo-publicacao">—</strong></div>
-      <div class="gargalo"><small>Etapa mais demorada</small><strong id="ciclo-gargalo">—</strong></div>
-    </div>
-    <div class="ciclo-etapas" id="ciclo-etapas"><div class="ciclo-etapa"><span class="icone">○</span><div><strong>Aguardando ciclo</strong><small>As etapas da extração até a publicação aparecerão aqui.</small></div></div></div>
-    <details class="ciclo-historico-box">
-      <summary>Histórico dos últimos ciclos</summary>
-      <div class="wrap"><table class="ciclo-historico"><thead><tr><th>Início</th><th>Total</th><th>Extração</th><th>Processamento</th><th>Publicação</th><th>Gargalo</th><th>Status</th></tr></thead><tbody id="ciclo-historico-corpo"><tr><td colspan="7">Ainda não há ciclos registrados nesta versão.</td></tr></tbody></table></div>
-    </details>
-  </section>
-
-  <section class="publicacao-status" id="publicacao-monitor">
-    <div class="publicacao-monitor-topo">
-      <div>
-        <span class="rotulo">PUBLICAÇÃO EXTERNA</span>
-        <strong class="publicacao-monitor-status" id="publicacao-monitor-status">{{ publicacao_status.situacao }}</strong>
-        <p class="publicacao-monitor-meta" id="publicacao-monitor-meta">{% if publicacao_status.publicado_em %}Último evento: {{ publicacao_status.publicado_em }}{% else %}Aguardando a próxima publicação.{% endif %}</p>
-      </div>
-      {% if publicacao %}<a href="/publico" target="_blank" rel="noopener">Abrir painel público ↗</a>{% endif %}
-    </div>
-    <div class="publicacao-monitor">
-      <div class="publicacao-progresso"><i id="publicacao-progresso"></i></div>
-      <div class="publicacao-tempos"><span>Tempo decorrido: <b id="publicacao-tempo">—</b></span><span>Commit: <b id="publicacao-commit">{{ publicacao_status.commit or '—' }}</b></span></div>
-      <div class="publicacao-etapas" id="publicacao-etapas"><div class="publicacao-etapa"><span class="icone">○</span><div><strong>Aguardando publicação</strong><small>As etapas aparecerão aqui.</small></div></div></div>
-    </div>
-  </section>
-
-  {% if publicacao_historico %}
-  <section class="painel">
-    <div class="cabecalho-menor"><span class="rotulo">HISTÓRICO</span><h2>Últimas publicações</h2></div>
-    <div class="wrap"><table><thead><tr><th>Data/Hora</th><th>Origem</th><th>Resultado</th><th>Commit</th></tr></thead><tbody>
-      {% for item in publicacao_historico %}<tr><td>{{ item.data_hora or '-' }}</td><td>{{ item.origem or '-' }}</td><td>{{ '✓ Sucesso' if item.sucesso else '✕ Falha' }}{% if item.mensagem %}<br><small>{{ item.mensagem }}</small>{% endif %}</td><td>{{ item.commit or '-' }}</td></tr>{% endfor %}
-    </tbody></table></div>
-  </section>
-  {% endif %}
-
-  {% if resumo %}
-  <section class="cards">
-    <a class="card azul detalhe-link" href="/indicador/distribuidos" title="Clique para detalhar"><div class="ico">Σ</div><div><span>Distribuídos em 2026</span><b>{{ resumo.distribuidos_total }}</b><em>Clique para detalhar</em></div></a>
-    <a class="card azul detalhe-link" href="/indicador/recursos-distribuidos" title="Clique para detalhar"><div class="ico">↗</div><div><span>Recursos distribuídos</span><b>{{ resumo.recursos_distribuidos_total }}</b><em>Clique para detalhar</em></div></a>
-    <a class="card verde detalhe-link" href="/indicador/recursos-julgados" title="Clique para detalhar"><div class="ico">⚖</div><div><span>Recursos julgados</span><b>{{ resumo.recursos_julgados_total }}</b><em>Clique para detalhar</em></div></a>
-    <a class="card azul detalhe-link" href="/indicador/estoque" title="Clique para detalhar"><div class="ico">▤</div><div><span>Estoque atual</span><b>{{ resumo.total }}</b><em>Clique para detalhar</em></div></a>
-    <a class="card verde detalhe-link" href="/indicador/julgados" title="Clique para detalhar"><div class="ico">✓</div><div><span>Processos julgados</span><b>{{ resumo.julgados_total }}</b><em>Clique para detalhar</em></div></a>
-    <a class="card azul detalhe-link" href="/indicador/remetidos-tse-recursos" title="Processos cuja última movimentação registra remessa recursal ao TSE"><div class="ico">⇧</div><div><span>Remetidos ao TSE – Recursos</span><b>{{ resumo.remetidos_tse_recursos_total|default(0) }}</b><em>Clique para detalhar</em></div></a>
-    <a class="card amarelo detalhe-link" href="/indicador/pendentes-julgamento" title="Processos em tramitação sem julgamento"><div class="ico">◷</div><div><span>Pendentes de julgamento</span><b>{{ resumo.pendentes_julgamento_total|default(0) }}</b><em>Clique para detalhar</em></div></a>
-    <a class="card amarelo detalhe-link" href="/indicador/arquivados" title="Clique para detalhar"><div class="ico">▣</div><div><span>Arquivados</span><b>{{ resumo.arquivados_total }}</b><em>Clique para detalhar</em></div></a>
-    <a class="card roxo detalhe-link" href="/indicador/sigilosos" title="Clique para detalhar"><div class="ico">♙</div><div><span>Processos sigilosos</span><b>{{ resumo.sigilosos }}</b><em>Clique para detalhar</em></div></a>
-    <a class="card ciano detalhe-link" href="/indicador/minutar" title="Clique para detalhar"><div class="ico">▧</div><div><span>Comissão · Minutar ato</span><b>{{ resumo.minutar_processos|length }}</b><em>Clique para detalhar</em></div></a>
-  </section>
-
-  {% if resumo.entrada_comissao %}
-  <section id="entrada-comissao" class="painel entrada-comissao-painel">
-    <div class="entrada-comissao-card{% if resumo.entrada_comissao.total == 0 %} zero{% endif %}">
-      <div class="entrada-comissao-icone">⚖</div>
-      <div class="entrada-comissao-info">
-        <span class="rotulo">PORTA DE ENTRADA DA COMISSÃO</span>
-        <h2>Processos com liminar aguardando certificação</h2>
-        <p>{{ resumo.entrada_comissao.descricao }}</p>
-      </div>
-      <a class="entrada-comissao-numero" href="/entrada-comissao" title="Abrir processos com liminar na entrada da Comissão">
-        <small>Total</small>
-        <strong>{{ resumo.entrada_comissao.total }}</strong>
-      </a>
-      <div class="entrada-comissao-acoes">
-        <a class="btn-relatorio secundario" href="/entrada-comissao">Ver processos</a>
-        <a class="btn-relatorio secundario" href="/entrada-comissao/relatorios/pdf">PDF</a>
-        <a class="btn-relatorio" href="/entrada-comissao/relatorios/xlsx">Excel</a>
-      </div>
-    </div>
-  </section>
-
-  {% endif %}
-
-  <section id="tarefas-criticas" class="painel tarefas-criticas-painel">
-    <div class="tarefas-criticas-cabecalho">
-      <div>
-        <span class="rotulo">CONTROLE OPERACIONAL</span>
-        <h2>Tarefas críticas por gabinete</h2>
-        <p>Controle visual das filas de triagem, minuta, assinatura e movimentação processual nos três gabinetes.</p>
-      </div>
-      <div class="tarefas-legenda">
-        {% for coluna in resumo.tarefas_criticas.colunas %}<span>{{ coluna.curto }}</span>{% endfor %}
-      </div>
-    </div>
-
-    <div class="tarefas-gabinetes-grid">
-      {% for linha in resumo.tarefas_criticas.linhas %}
-      <article class="tarefa-gab-card tarefa-gab-{{ loop.index }}">
-        <div class="tarefa-gab-topo">
-          <div>
-            <h3>{{ linha.gabinete }}</h3>
-            <p>{% if linha.gabinete == 'Gab. JA 1' %}Dr. Nilo Ribeiro{% elif linha.gabinete == 'Gab. JA 2' %}Dra. Manuella Ribeiro{% else %}Dr. Rubem Filho{% endif %}</p>
-          </div>
-          <a class="tarefa-acervo" href="/acervo?gabinete={{ linha.nome|urlencode }}"><small>Acervo</small><strong>{{ linha.total_acervo }}</strong></a>
-        </div>
-        <div class="tarefas-metricas">
-          {% for coluna in resumo.tarefas_criticas.colunas %}
-          <a class="crit-task {{ coluna.codigo|lower }}{% if linha.contagens[coluna.codigo] == 0 %} zero{% endif %}" href="/tarefas-criticas?gabinete={{ linha.nome|urlencode }}&grupo={{ coluna.codigo }}" title="Abrir {{ coluna.rotulo }} de {{ linha.gabinete }}">
-            <span>{{ coluna.rotulo }}</span>
-            <strong>{{ linha.contagens[coluna.codigo] }}</strong>
-            <em>{{ coluna.descricao }}</em>
-          </a>
-          {% endfor %}
-        </div>
-      </article>
-      {% endfor %}
-    </div>
-
-    <div class="tarefas-total-comissao">
-      <div class="total-principal"><small>Total da Comissão</small><strong>{{ resumo.tarefas_criticas.total_acervo }}</strong></div>
-      {% for coluna in resumo.tarefas_criticas.colunas %}
-      <a href="/tarefas-criticas?grupo={{ coluna.codigo }}"><small>{{ coluna.curto }}</small><strong>{{ resumo.tarefas_criticas.totais[coluna.codigo] }}</strong></a>
-      {% endfor %}
-    </div>
-    <p class="muted tarefas-observacao">Cada número abre a relação de processos da respectiva fila crítica. A contagem usa o texto da tarefa atual do PJe/Ribeirão, inclusive quando houver complementos na descrição.</p>
-  </section>
-
-  {% if resumo.todas_tarefas and resumo.todas_tarefas.linhas %}
-  <section id="todas-tarefas" class="painel todas-tarefas-painel painel-analitico">
-    <div class="cabecalho-painel todas-tarefas-cabecalho">
-      <div>
-        <span class="rotulo">ESTOQUE OPERACIONAL</span>
-        <h2>Todas as tarefas do acervo da Comissão</h2>
-        <p>Distribuição completa das tarefas atuais dos processos cujo órgão julgador é Gabinete Juiz Auxiliar 1, 2 ou 3.</p>
-      </div>
-      <div class="acoes-painel">
-        <span class="pill">{{ resumo.todas_tarefas.linhas|length }} tarefa(s)</span>
-      </div>
-    </div>
-
-    <div class="todas-tarefas-resumo gabinete-enfase">
-      <div><small>Acervo total</small><strong>{{ resumo.todas_tarefas.total_acervo }}</strong></div>
-      <div><small>Tarefas distintas</small><strong>{{ resumo.todas_tarefas.linhas|length }}</strong></div>
-      <div><small>Gabinetes</small><strong>3</strong></div>
-      <div><small>Gabinetes</small><strong>JA 1 · JA 2 · JA 3</strong></div>
-    </div>
-
-    <div class="relatorios-acervo-geral">
-      <div>
-        <span class="rotulo">RELATÓRIO GERAL</span>
-        <h3>Processos de todos os gabinetes</h3>
-        <p>Gera a relação completa dos processos do acervo da Comissão, independentemente da tarefa atual.</p>
-      </div>
-      <div class="acoes-painel compacta">
-        <a class="btn-relatorio secundario" href="/tarefas/relatorios/pdf">PDF geral</a>
-        <a class="btn-relatorio" href="/tarefas/relatorios/xlsx">Excel geral</a>
-      </div>
-    </div>
-
-    <div class="todas-tarefas-gabinetes-grid">
-      {% for coluna in resumo.todas_tarefas.colunas %}
-      {% set ns = namespace(total=0) %}
-      {% for linha in resumo.todas_tarefas.linhas %}{% set ns.total = ns.total + linha.contagens[coluna.nome] %}{% endfor %}
-      <article class="todas-gab-card todas-gab-{{ loop.index }}">
-        <div class="todas-gab-topo">
-          <div>
-            <h3>{{ coluna.gabinete }}</h3>
-            <p>{% if coluna.gabinete == 'Gab. JA 1' %}Dr. Nilo Ribeiro{% elif coluna.gabinete == 'Gab. JA 2' %}Dra. Manuella Ribeiro{% else %}Dr. Rubem Filho{% endif %}</p>
-          </div>
-          <a class="todas-gab-acervo" href="/acervo?gabinete={{ coluna.nome|urlencode }}"><small>Acervo</small><strong>{{ ns.total }}</strong></a>
-        </div>
-        <div class="todas-gab-relatorios">
-          <a class="btn-relatorio secundario" href="/tarefas/relatorios/pdf?gabinete={{ coluna.nome|urlencode }}">PDF do gabinete</a>
-          <a class="btn-relatorio" href="/tarefas/relatorios/xlsx?gabinete={{ coluna.nome|urlencode }}">Excel do gabinete</a>
-        </div>
-        <div class="todas-gab-lista">
-          {% for linha in resumo.todas_tarefas.linhas %}
-          {% set qtd = linha.contagens[coluna.nome] %}
-          {% if qtd > 0 %}
-          <a class="todas-task-row" href="/tarefas?codigo={{ linha.codigo }}&gabinete={{ coluna.nome|urlencode }}" title="Abrir {{ linha.tarefa }} em {{ coluna.gabinete }}">
-            <span>{{ linha.tarefa }}</span>
-            <strong>{{ qtd }}</strong>
-          </a>
-          {% endif %}
-          {% endfor %}
-        </div>
-      </article>
-      {% endfor %}
-    </div>
-
-    <p class="muted tarefas-observacao">A visão principal está organizada por gabinete. O relatório geral reúne todos os processos da Comissão; em cada gabinete, os botões geram PDF ou Excel somente daquele gabinete.</p>
-  </section>
-  {% endif %}
-
-
-  <section id="comparativo" class="painel comparativo-painel">
-    <div class="cabecalho-painel"><div><span class="rotulo">ANÁLISE COMPARATIVA</span><h2>Comparativo entre gabinetes</h2><p>Estoque, tempo de tramitação, julgados e fila de minuta por gabinete.</p></div><span class="pill">Gab. JA 1 · Gab. JA 2 · Gab. JA 3</span></div>
-    <div class="comparativo">
-      {% for x in resumo.comparativo %}
-      <article class="gab cja{{ loop.index }}">
-        <div class="gab-topo"><strong>{{ x.gabinete }}</strong><span>{{ x.nome }}</span></div>
-        <div class="gab-corpo">
-          <div class="responsaveis"><div><small>Juiz auxiliar</small><b>{{ x.juiz }}</b></div><div><small>Responsável pela distribuição</small><b>{{ x.distribuidor }}</b></div></div>
-          <div class="estoque-linha"><span>Estoque atual</span><strong>{{ x.quantidade }} <small>processos</small></strong></div>
-          <div class="metricas">
-            <span>Média de dias<b>{{ x.media_dias }}</b></span>
-            <span>Maior tempo de tramitação<b>{{ x.maior_tempo }} dias</b></span>
-            <span>Urgentes<b>{{ x.urgentes }}</b></span>
-            <span>Minutar ato<b>{{ x.minutar }}</b><a class="mini-link" href="/minutar-ato?gabinete={{ x.nome|urlencode }}">Detalhar →</a></span>
-            <span>Julgados<b>{{ x.julgados }}</b></span>
-            <span>Remetidos ao TSE – Recursos<b>{{ x.remetidos_tse_recursos|default(0) }}</b><a class="mini-link" href="/indicador/remetidos-tse-recursos?gabinete={{ x.nome|urlencode }}">Detalhar →</a></span>
-            <span>Pendentes de julgamento<b>{{ x.pendentes_julgamento|default(0) }}</b><a class="mini-link" href="/indicador/pendentes-julgamento?gabinete={{ x.nome|urlencode }}">Detalhar →</a></span>
-            <span>% julgados<b>{{ x.percentual_julgados }}%</b></span>
-          </div>
-          <a class="link-detalhar" href="/acervo?gabinete={{ x.nome|urlencode }}">Detalhar acervo →</a>
-        </div>
-      </article>
-      {% endfor %}
-    </div>
-  </section>
-
-  <section id="julgados" class="painel julgados-painel">
-    <div class="cabecalho-painel"><div><span class="rotulo">RESULTADO JURISDICIONAL</span><h2>Controle de julgados</h2><p>O processo é considerado julgado quando a coluna <b>julgamento</b> está preenchida. A data é extraída do teor quando disponível.</p></div><span class="pill ouro">Julgamentos</span></div>
-    {% if resumo.julgados_recentes %}
-    <div class="grid-dupla">
-      <div><h3>Julgados recentes</h3><div class="wrap"><table><thead><tr><th>Processo</th><th>Gabinete</th><th>Data</th><th>Teor</th><th>Dias</th></tr></thead><tbody>{% for x in resumo.julgados_recentes %}<tr><td class="processo">{{ x.processo }}</td><td><span class="chip">{{ x.gabinete }}</span></td><td>{{ x.data_julgamento or 'Não identificada' }}</td><td>{{ x.teor }}</td><td>{{ x.dias_tramitando }}</td></tr>{% endfor %}</tbody></table></div></div>
-      <div><h3>Teores mais frequentes</h3><table><thead><tr><th>Teor</th><th>Qtd.</th></tr></thead><tbody>{% for x in resumo.teores %}<tr><td>{{ x.teor }}</td><td>{{ x.quantidade }}</td></tr>{% endfor %}</tbody></table></div>
-    </div>
-    {% else %}<p class="muted">Não há processos com a coluna “julgamento” preenchida no recorte atual dos três gabinetes.</p>{% endif %}
-  </section>
-
-  <section class="grid">
-    <section class="painel"><div class="cabecalho-menor"><span class="rotulo">TEMPO DE TRAMITAÇÃO</span><h2>Faixas do estoque</h2></div><table><thead><tr><th>Faixa</th><th>Quantidade</th></tr></thead><tbody>{% for x in resumo.por_faixa %}<tr><td>{{ x.faixa }}</td><td>{{ x.quantidade }}</td></tr>{% endfor %}</tbody></table></section>
-    <section id="minuta" class="painel minuta"><div class="cabecalho-menor"><span class="rotulo">OPERAÇÃO</span><h2>Distribuição de minuta · Comissão</h2></div>{% if resumo.minutar_processos %}<p class="status pronto">✓ Há {{ resumo.minutar_processos|length }} processo(s) pronto(s) para minutar nos gabinetes.</p>{% else %}<p class="status vazio">i Não há processos em “Minutar ato” nos três gabinetes.</p>{% endif %}<p><a class="link-detalhar" href="/minutar-ato">Ver detalhamento completo de Minutar ato →</a></p><p class="muted">O detalhamento considera Gab. JA 1, Gab. JA 2 e Gab. JA 3.</p></section>
-  </section>
-
-  <section class="painel"><div class="cabecalho-menor"><span class="rotulo">ESTOQUE OPERACIONAL</span><h2>Tarefas atuais por gabinete</h2></div><div class="wrap"><table><thead><tr><th>Gabinete</th><th>Tarefa</th><th>Quantidade</th></tr></thead><tbody>{% for x in resumo.por_tarefa %}<tr><td><span class="chip">{{ x.gabinete }}</span></td><td>{{ x.tarefa_atual }}</td><td>{{ x.quantidade }}</td></tr>{% endfor %}</tbody></table></div></section>
-
-  <section class="painel"><div class="cabecalho-menor"><span class="rotulo">ATENÇÃO PRIORITÁRIA</span><h2>Processos com maior tempo de tramitação</h2></div><div class="wrap"><table><thead><tr><th>Processo</th><th>Gabinete</th><th>Classe</th><th>Tarefa</th><th>Dias</th><th>Sigilo</th></tr></thead><tbody>{% for x in resumo.mais_antigos %}<tr><td class="processo">{{ x.processo }}</td><td><span class="chip">{{ x.gabinete }}</span></td><td>{{ x.classe }}</td><td>{{ x.tarefa_atual }}</td><td><span class="badge-dias">{{ x.dias_tramitando }}</span></td><td>{% if x.segredo_justica == 'SIM' %}<span class="sigilo sim">Sigiloso</span>{% else %}<span class="sigilo nao">Não</span>{% endif %}</td></tr>{% endfor %}</tbody></table></div></section>
-  {% endif %}
-</main>
-
+<main id="conteudo"><section class="carregando"><h2>Carregando painel público...</h2></section></main>
 
 <script>
-(function () {
-  const area=document.getElementById("atualizacao-status"); if(!area)return;
-  const situacao=document.getElementById("atualizacao-situacao"),meta=document.getElementById("atualizacao-meta"),pill=document.getElementById("atualizacao-pill"),log=document.getElementById("atualizacao-log");
-  const etapasEl=document.getElementById("ciclo-etapas"), totalEl=document.getElementById("ciclo-tempo-total"), intervaloEl=document.getElementById("ciclo-intervalo"), proximaEl=document.getElementById("ciclo-proxima"), pausaEl=document.getElementById("ciclo-pausa");
-  const extracaoEl=document.getElementById("ciclo-extracao"), processamentoEl=document.getElementById("ciclo-processamento"), publicacaoEl=document.getElementById("ciclo-publicacao"), gargaloEl=document.getElementById("ciclo-gargalo"), historicoEl=document.getElementById("ciclo-historico-corpo");
-  let ultimo=null;
-  function esc(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
-  function dur(s){s=Math.max(0,Math.floor(Number(s)||0));const m=Math.floor(s/60),r=s%60;return m?m+' min '+String(r).padStart(2,'0')+' s':r+' s';}
-  function desenhar(d){ultimo=d;situacao.textContent=d.situacao||"Aguardando atualização automática.";meta.textContent=d.em_andamento?"Iniciada em "+(d.inicio||"agora")+". O painel continua disponível durante a execução.":(d.fim?"Último ciclo finalizado em "+d.fim+".":"Aguardando início da atualização.");pill.textContent=d.em_andamento?"Em andamento":"Disponível";pill.className="atualizacao-pill "+(d.em_andamento?"andamento":"pronto");
-    if(Array.isArray(d.mensagens)&&d.mensagens.length)log.innerHTML=d.mensagens.slice(-4).map(x=>"<div><time>"+esc(x.hora)+"</time>"+esc(x.texto)+"</div>").join("");
-    totalEl.textContent=d.em_andamento&&d.inicio_iso?dur((new Date()-new Date(d.inicio_iso))/1000):(d.duracao_total_segundos!=null?dur(d.duracao_total_segundos):'—');intervaloEl.textContent=(d.pausa_segundos||10)+' s';proximaEl.textContent=d.proxima_execucao||'—';pausaEl.textContent=d.pausa_restante_segundos!=null?dur(d.pausa_restante_segundos):'—';
-    extracaoEl.textContent=d.tempo_extracao_segundos!=null?dur(d.tempo_extracao_segundos):'—';processamentoEl.textContent=d.tempo_processamento_segundos!=null?dur(d.tempo_processamento_segundos):'—';publicacaoEl.textContent=d.tempo_publicacao_segundos!=null?dur(d.tempo_publicacao_segundos):'—';gargaloEl.textContent=d.gargalo&&d.gargalo.nome?d.gargalo.nome+' · '+dur(d.gargalo.duracao_segundos):'—';
-    const etapas=Array.isArray(d.etapas)?d.etapas:[];etapasEl.innerHTML=etapas.length?etapas.map(x=>{const ic=x.estado==='concluida'?'✓':x.estado==='andamento'?'⏳':x.estado==='falha'?'✕':'○';return '<div class="ciclo-etapa '+esc(x.estado)+' grupo-'+esc(x.grupo||'')+'"><span class="icone">'+ic+'</span><div><strong>'+esc(x.nome)+'</strong><small>'+(x.duracao_segundos!=null?dur(x.duracao_segundos):'Em andamento')+(x.detalhe?' · '+esc(x.detalhe):'')+'</small></div></div>'}).join(''):'<div class="ciclo-etapa"><span class="icone">○</span><div><strong>Aguardando ciclo</strong><small>As etapas aparecerão aqui.</small></div></div>';
-    const hist=Array.isArray(d.historico_ciclos)?d.historico_ciclos:[];historicoEl.innerHTML=hist.length?hist.map(x=>'<tr><td>'+esc(x.inicio||'—')+'</td><td>'+dur(x.duracao_total_segundos)+'</td><td>'+dur(x.tempo_extracao_segundos)+'</td><td>'+dur(x.tempo_processamento_segundos)+'</td><td>'+dur(x.tempo_publicacao_segundos)+'</td><td>'+esc(x.gargalo&&x.gargalo.nome?x.gargalo.nome+' ('+dur(x.gargalo.duracao_segundos)+')':'—')+'</td><td><span class="ciclo-status '+(x.sucesso?'ok':'erro')+'">'+(x.sucesso?'Concluído':'Falha')+'</span></td></tr>').join(''):'<tr><td colspan="7">Ainda não há ciclos registrados nesta versão.</td></tr>';area.dataset.emAndamento=d.em_andamento?'true':'false';}
-  function atualizar(){fetch("/dashboard/atualizacao/status",{cache:"no-store"}).then(r=>r.json()).then(desenhar).catch(()=>{});}atualizar();setInterval(atualizar,2500);setInterval(()=>{if(ultimo)desenhar(ultimo)},1000);
-})();
-</script>
+const esc=v=>String(v??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
+const arr=v=>Array.isArray(v)?v:[];
+const numero=v=>Number(v||0).toLocaleString('pt-BR');
+const nomeJuiz=g=>g==='Gab. JA 1'?'Dr. Nilo Ribeiro':g==='Gab. JA 2'?'Dra. Manuella Ribeiro':'Dr. Rubem Filho';
+const responsavelDistribuicao=g=>g==='Gab. JA 1'?'Flauberth Silva Santos':g==='Gab. JA 2'?'Eduardo Daniel Pereira Neto':'Danielle Cerqueira Castro';
+let DADOS={}; let RELATORIO_ATUAL=[]; let TITULO_ATUAL='Relatório público';
+function tabela(cab,linhas){return `<div class="wrap"><table><thead><tr>${cab.map(x=>`<th>${esc(x)}</th>`).join('')}</tr></thead><tbody>${linhas.join('')||`<tr><td colspan="${cab.length}">Nenhum registro disponível.</td></tr>`}</tbody></table></div>`}
+function processosTabela(itens){return tabela(['Processo','Gabinete','Classe','Tarefa atual','Autuação','Desde','Dias','Responsável','Julgamento'],arr(itens).map(x=>`<tr><td class="processo">${esc(x.processo)}</td><td><span class="chip">${esc(x.sigla||x.gabinete||'')}</span></td><td>${esc(x.classe)}</td><td>${esc(x.tarefa_atual)}</td><td>${esc(x.autuacao)}</td><td>${esc(x.desde)}</td><td><span class="badge-dias">${numero(x.dias_tramitando)}</span></td><td>${esc(x.responsavel_processo)}</td><td>${esc(x.julgamento||x.teor||'')}</td></tr>`))}
+function abrirDetalhe(titulo,itens){TITULO_ATUAL=titulo;RELATORIO_ATUAL=arr(itens);document.getElementById('modal-titulo').textContent=`${titulo} · ${RELATORIO_ATUAL.length} processo(s)`;document.getElementById('modal-conteudo').innerHTML=processosTabela(RELATORIO_ATUAL);document.getElementById('modal').classList.add('aberto');document.body.style.overflow='hidden'}
+function fecharDetalhe(){document.getElementById('modal').classList.remove('aberto');document.body.style.overflow=''}
+function csvValor(v){return '"'+String(v??'').replace(/"/g,'""')+'"'}
+function baixarExcel(){const cab=['Processo','Gabinete','Classe','Tarefa atual','Autuação','Desde','Dias','Responsável','Julgamento'];const linhas=RELATORIO_ATUAL.map(x=>[x.processo,x.sigla||x.gabinete,x.classe,x.tarefa_atual,x.autuacao,x.desde,x.dias_tramitando,x.responsavel_processo,x.julgamento||x.teor]);const csv='\ufeff'+[cab,...linhas].map(l=>l.map(csvValor).join(';')).join('\r\n');const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));a.download=TITULO_ATUAL.replace(/[^a-z0-9]+/gi,'_').toLowerCase()+'.csv';a.click();URL.revokeObjectURL(a.href)}
+function imprimirPDF(){const w=window.open('','_blank');w.document.write(`<html><head><meta charset="utf-8"><title>${esc(TITULO_ATUAL)}</title><style>body{font-family:Arial;padding:20px;color:#173f67}h1{font-size:20px}table{width:100%;border-collapse:collapse;font-size:10px}th,td{border:1px solid #ccd8e3;padding:5px;text-align:left}th{background:#103f70;color:#fff}@page{size:landscape;margin:10mm}</style>
+<style>
+.info-tip{
+display:inline-flex;align-items:center;justify-content:center;
+width:14px;height:14px;margin-left:3px;
+border:1px solid #1f5f99;border-radius:50%;
+background:transparent;color:#1f5f99;
+font-size:9px;font-weight:700;line-height:1;
+cursor:help;user-select:none;position:relative;
+transition:all .18s ease}
+.info-tip:hover{background:#1f5f99;color:#fff}
+.info-tip:hover::after{
+content:attr(data-tip);
+position:absolute;
+left:0;
+top:22px;
+z-index:99999;
+background:#163b63;
+color:#fff;
+padding:9px 11px;
+border-radius:8px;
+width:280px;
+max-width:calc(100vw - 48px);
+font-size:12px;
+font-weight:400;
+line-height:1.4;
+text-align:left;
+box-shadow:0 6px 18px rgba(0,0,0,.25);
+white-space:normal;
+overflow-wrap:anywhere;
+pointer-events:none}
+</style>
 
-
-<script>
-(function(){
- const area=document.getElementById('publicacao-monitor'); if(!area)return;
- const statusEl=document.getElementById('publicacao-monitor-status'), meta=document.getElementById('publicacao-monitor-meta'), etapasEl=document.getElementById('publicacao-etapas'), barra=document.getElementById('publicacao-progresso'), tempo=document.getElementById('publicacao-tempo'), commit=document.getElementById('publicacao-commit');
- let ultimo=null;
- function esc(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
- function duracao(s){s=Math.max(0,Math.floor(Number(s)||0)); const m=Math.floor(s/60),r=s%60; return m?m+' min '+String(r).padStart(2,'0')+' s':r+' s';}
- function decorrido(d){if(!d||!d.inicio_iso)return d&&d.duracao_total_segundos!=null?duracao(d.duracao_total_segundos):'—'; const fim=d.fim_iso?new Date(d.fim_iso):new Date(); return duracao((fim-new Date(d.inicio_iso))/1000);}
- function desenhar(d){ultimo=d; statusEl.textContent=d.situacao||'Aguardando publicação externa.'; meta.textContent=d.mensagem|| (d.em_andamento?'Publicação em andamento.':'Aguardando a próxima publicação.'); commit.textContent=d.commit||'—'; tempo.textContent=decorrido(d);
-  const etapas=Array.isArray(d.etapas)?d.etapas:[]; const concl=etapas.filter(x=>x.estado==='concluida').length; barra.style.width=(etapas.length?Math.round((concl+(etapas.some(x=>x.estado==='andamento')?.35:0))/Math.max(etapas.length,7)*100):0)+'%';
-  etapasEl.innerHTML=etapas.length?etapas.map(x=>{const ic=x.estado==='concluida'?'✓':x.estado==='andamento'?'⏳':x.estado==='falha'?'✕':'○'; const txt=x.duracao_segundos!=null?duracao(x.duracao_segundos):(x.estado==='andamento'?'Em andamento':''); return '<div class="publicacao-etapa '+esc(x.estado)+'"><span class="icone">'+ic+'</span><div><strong>'+esc(x.nome)+'</strong><small>'+esc(txt)+(x.detalhe?' · '+esc(x.detalhe):'')+'</small></div></div>'}).join(''):'<div class="publicacao-etapa"><span class="icone">○</span><div><strong>Aguardando publicação</strong><small>As etapas aparecerão aqui.</small></div></div>';
- }
- function atualizar(){fetch('/publicacao/status',{cache:'no-store'}).then(r=>r.json()).then(desenhar).catch(()=>{});} atualizar(); setInterval(atualizar,3000); setInterval(()=>{if(ultimo&&ultimo.em_andamento)tempo.textContent=decorrido(ultimo)},1000);
-})();
+</head><body><h1>${esc(TITULO_ATUAL)}</h1><p>${RELATORIO_ATUAL.length} processo(s) · Consulta pública</p>${processosTabela(RELATORIO_ATUAL)}<script>setTimeout(()=>print(),250)<\/script></body></html>`);w.document.close()}
+function detalhe(tipo,chave,titulo){let itens=[];if(tipo==='entrada')itens=DADOS.entrada_comissao_processos;if(tipo==='critica')itens=(DADOS.tarefas_criticas_processos||{})[chave];if(tipo==='tarefa')itens=(DADOS.todas_tarefas_processos||{})[chave];if(tipo==='gabinete')itens=(DADOS.acervo_por_gabinete||{})[chave];if(tipo==='minuta')itens=DADOS.minutar_processos;if(tipo==='julgados')itens=DADOS.julgados_processos||DADOS.julgados_recentes;if(tipo==='pendentes_julgamento')itens=DADOS.pendentes_julgamento_processos;if(tipo==='remetidos_tse_recursos')itens=DADOS.remetidos_tse_recursos_processos;if(tipo==='distribuidos')itens=DADOS.distribuidos_processos;if(tipo==='cartas_precatorias'||tipo==='cartas-precatorias')itens=DADOS.cartas_precatorias_processos;if(tipo==='recursos_distribuidos'||tipo==='recursos-distribuidos')itens=DADOS.recursos_distribuidos_processos;if(tipo==='recursos_julgados'||tipo==='recursos-julgados')itens=DADOS.recursos_julgados_processos;if(tipo==='estoque')itens=DADOS.estoque_processos;if(tipo==='arquivados')itens=DADOS.arquivados_processos;if(tipo==='sigilosos')itens=DADOS.sigilosos_processos;abrirDetalhe(titulo,itens)}
+function normalizarGabinete(v){
+ const texto=String(v||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
+ const m=texto.match(/(?:gabinete(?: de)? juiz auxiliar|gab juiz auxiliar|gab ja|ja)\s*([123])\b/);
+ return m?`gabja${m[1]}`:texto.replace(/\s+/g,'');
+}
+function processosDoGabinete(itens,gabinete){
+ const alvo=normalizarGabinete(gabinete);
+ return arr(itens).filter(x=>{
+   const identificadores=[x.sigla,x.gabinete,x.gabinete_atual,x.nome_gabinete,x.unidade,x.orgao,x.orgao_julgador];
+   return identificadores.some(v=>normalizarGabinete(v)===alvo);
+ });
+}
+function detalheIndicadorGabinete(tipo,gabinete,titulo){
+ let itens=[];
+ if(tipo==='distribuidos')itens=processosDoGabinete(DADOS.distribuidos_processos,gabinete);
+ if(tipo==='cartas')itens=processosDoGabinete(DADOS.cartas_precatorias_processos,gabinete);
+ if(tipo==='estoque')itens=processosDoGabinete(DADOS.estoque_processos,gabinete);
+ if(tipo==='recursos')itens=processosDoGabinete(DADOS.recursos_distribuidos_processos,gabinete);
+ if(tipo==='julgados')itens=processosDoGabinete(DADOS.julgados_processos||DADOS.julgados_recentes,gabinete);if(tipo==='pendentes_julgamento')itens=processosDoGabinete(DADOS.pendentes_julgamento_processos,gabinete);if(tipo==='remetidos_tse_recursos')itens=processosDoGabinete(DADOS.remetidos_tse_recursos_processos,gabinete);
+ if(tipo==='arquivados')itens=processosDoGabinete(DADOS.arquivados_processos,gabinete);
+ abrirDetalhe(`${titulo} · ${gabinete}`,itens);
+}
+function detalheTarefaGabinete(chave,gabinete,titulo){
+ const itens=processosDoGabinete((DADOS.todas_tarefas_processos||{})[chave],gabinete);
+ abrirDetalhe(`${titulo} · ${gabinete}`,itens);
+}
+function detalheCriticaGabinete(chave,gabinete,titulo){
+ const itens=processosDoGabinete((DADOS.tarefas_criticas_processos||{})[chave],gabinete);
+ abrirDetalhe(`${titulo} · ${gabinete}`,itens);
+}
+function render(d){DADOS=d;const e=d.entrada_comissao||{},tc=d.tarefas_criticas||{},tt=d.todas_tarefas||{};const cols=arr(tc.colunas),linhas=arr(tc.linhas),tarefas=arr(tt.linhas),gabCols=arr(tt.colunas),comp=arr(d.comparativo);
+let h=`<section class="visao-geral"><div><span class="rotulo">CONSULTA PÚBLICA</span><h2>Acompanhamento da Comissão</h2><p>Dados restritos a processos sem segredo de justiça.</p></div><div class="fonte"><i></i><div><span>Última publicação</span><strong>${esc(d.publicado_em||'Não informada')}</strong></div></div></section>`;
+h+=`<section class="cards public-cards"><article class="card azul detalhe-link" onclick="detalhe('distribuidos','','Distribuídos em 2026')"><div class="ico">Σ</div><div><span>Distribuídos em 2026<span class="info-tip" onclick="event.preventDefault();event.stopPropagation()" data-tip="Processos principais distribuídos em 2026, sem duplicidade. Não inclui recursos.">ⓘ</span></span><b>${numero(d.distribuidos_total)}</b><em>Clique para detalhar</em></div></article><article class="card azul detalhe-link" onclick="detalhe('cartas_precatorias','','Cartas precatórias')"><div class="ico">✉</div><div><span>Cartas precatórias<span class="info-tip" onclick="event.preventDefault();event.stopPropagation()" data-tip="Cartas precatórias distribuídas, contabilizadas separadamente dos processos principais e dos recursos.">ⓘ</span></span><b>${numero(d.cartas_precatorias_total)}</b><em>Clique para detalhar</em></div></article><article class="card azul detalhe-link" onclick="detalhe('recursos_distribuidos','','Recursos distribuídos')"><div class="ico">↗</div><div><span>Recursos distribuídos<span class="info-tip" onclick="event.preventDefault();event.stopPropagation()" data-tip="Recursos distribuídos em 2026, considerados separadamente dos processos principais.">ⓘ</span></span><b>${numero(d.recursos_distribuidos_total)}</b><em>Clique para detalhar</em></div></article><article class="card verde detalhe-link" onclick="detalhe('recursos_julgados','','Recursos julgados')"><div class="ico">⚖</div><div><span>Recursos julgados<span class="info-tip" onclick="event.preventDefault();event.stopPropagation()" data-tip="Recursos com resultado recursal próprio, como provimento, desprovimento, acolhimento ou rejeição.">ⓘ</span></span><b>${numero(d.recursos_julgados_total)}</b><em>Clique para detalhar</em></div></article><article class="card azul detalhe-link" onclick="detalhe('estoque','','Estoque atual')"><div class="ico">▤</div><div><span>Estoque atual<span class="info-tip" onclick="event.preventDefault();event.stopPropagation()" data-tip="Processos principais atualmente em tramitação. Os recursos são contabilizados separadamente.">ⓘ</span></span><b>${numero(d.total)}</b><em>Clique para detalhar</em></div></article><article class="card verde detalhe-link" onclick="detalhe('julgados','','Processos julgados')"><div class="ico">✓</div><div><span>Processos julgados<span class="info-tip" onclick="event.preventDefault();event.stopPropagation()" data-tip="Processos principais com julgamento registrado. Não inclui julgamentos recursais.">ⓘ</span></span><b>${numero(d.julgados_total)}</b><em>Clique para detalhar</em></div></article><article class="card azul detalhe-link" onclick="detalhe('remetidos_tse_recursos','','Remetidos ao TSE – Recursos')"><div class="ico">⇧</div><div><span>Remetidos ao TSE – Recursos</span><b>${numero(d.remetidos_tse_recursos_total)}</b><em>Clique para detalhar</em></div></article><article class="card amarelo detalhe-link" onclick="detalhe('pendentes_julgamento','','Pendentes de julgamento')"><div class="ico">◷</div><div><span>Pendentes de julgamento<span class="info-tip" onclick="event.preventDefault();event.stopPropagation()" data-tip="Processos principais em tramitação, com campo julgamento vazio no relatório de Tramitando. Não inclui recursos nem arquivados.">ⓘ</span></span><b>${numero(d.pendentes_julgamento_total)}</b><em>Clique para detalhar</em></div></article><article class="card amarelo detalhe-link" onclick="detalhe('arquivados','','Arquivados')"><div class="ico">▣</div><div><span>Arquivados<span class="info-tip" onclick="event.preventDefault();event.stopPropagation()" data-tip="Processos principais arquivados.">ⓘ</span></span><b>${numero(d.arquivados_total)}</b><em>Clique para detalhar</em></div></article><article class="card roxo detalhe-link" onclick="detalhe('sigilosos','','Processos sigilosos')"><div class="ico">♙</div><div><span>Processos sigilosos<span class="info-tip" onclick="event.preventDefault();event.stopPropagation()" data-tip="Processos marcados com segredo de justiça. Eles não são exibidos no detalhamento público.">ⓘ</span></span><b>${numero(d.sigilosos)}</b><em>Clique para detalhar</em></div></article></section>`;
+if(d.entrada_comissao)h+=`<section id="entrada-comissao" class="painel entrada-comissao-painel"><div class="entrada-comissao-card ${Number(e.total||0)===0?'zero':''}"><div class="entrada-comissao-icone">⚖</div><div class="entrada-comissao-info"><span class="rotulo">PORTA DE ENTRADA DA COMISSÃO</span><h2>Processos com liminar aguardando certificação</h2><p>${esc(e.descricao||'')}</p></div><button class="entrada-comissao-numero detalhe-link" onclick="detalhe('entrada','','Entrada da Comissão')"><small>Total público</small><strong>${numero(e.total)}</strong></button><div class="entrada-comissao-acoes"><button class="btn-relatorio secundario" onclick="detalhe('entrada','','Entrada da Comissão')">Ver processos</button></div></div></section>`;
+if(comp.length)h+=`<section id="comparativo" class="painel"><div class="cabecalho-painel"><div><span class="rotulo">COMPARATIVO</span><h2>Indicadores por gabinete</h2></div></div><div class="comparativo">${comp.map((x,i)=>`<article class="gab cja${i+1}"><div class="gab-topo"><strong>${esc(x.gabinete)}</strong><span>${esc(x.juiz||nomeJuiz(x.gabinete))}</span></div><div class="gab-corpo"><div class="responsaveis"><div><small>Juiz auxiliar</small><b>${esc(x.juiz||nomeJuiz(x.gabinete))}</b></div><div><small>Responsável pela distribuição</small><b>${esc(x.responsavel_distribuicao||x.responsavel_pela_distribuicao||responsavelDistribuicao(x.gabinete))}</b></div></div><div class="estoque-linha"><button class="indicador-gab-link" onclick="detalheIndicadorGabinete('distribuidos','${esc(x.gabinete)}','Distribuídos')"><span>Distribuídos<span class="info-tip" onclick="event.preventDefault();event.stopPropagation()" data-tip="Processos principais distribuídos ao gabinete em 2026. Não inclui recursos.">ⓘ</span></span><strong>${numero(x.distribuidos)}</strong></button></div><div class="estoque-linha"><button class="indicador-gab-link" onclick="detalheIndicadorGabinete('cartas','${esc(x.gabinete)}','Cartas precatórias')"><span>Cartas precatórias<span class="info-tip" onclick="event.preventDefault();event.stopPropagation()" data-tip="Cartas precatórias distribuídas ao gabinete, separadas dos processos principais e dos recursos.">ⓘ</span></span><strong>${numero(x.cartas_precatorias)}</strong></button></div><div class="estoque-linha"><button class="indicador-gab-link" onclick="detalheIndicadorGabinete('estoque','${esc(x.gabinete)}','Estoque atual')"><span>Estoque atual<span class="info-tip" onclick="event.preventDefault();event.stopPropagation()" data-tip="Processos principais atualmente em tramitação. Os recursos são contabilizados separadamente.">ⓘ</span></span><strong>${numero(x.quantidade)}</strong></button></div><div class="estoque-linha"><button class="indicador-gab-link" onclick="detalheIndicadorGabinete('recursos','${esc(x.gabinete)}','Recursos')"><span>Recursos<span class="info-tip" onclick="event.preventDefault();event.stopPropagation()" data-tip="Recursos distribuídos ao gabinete (Embargos de Declaração, Agravos e demais classes recursais).">ⓘ</span></span><strong>${numero(x.recursos)}</strong></button></div><div class="metricas"><span><button class="indicador-gab-link" onclick="detalheIndicadorGabinete('julgados','${esc(x.gabinete)}','Processos julgados')">Julgados<span class="info-tip" onclick="event.preventDefault();event.stopPropagation()" data-tip="Processos principais julgados.">ⓘ</span><b>${numero(x.julgados)}</b></button></span><span><button class="indicador-gab-link" onclick="detalheIndicadorGabinete('remetidos_tse_recursos','${esc(x.gabinete)}','Remetidos ao TSE – Recursos')">Remetidos ao TSE – Recursos<b>${numero(x.remetidos_tse_recursos)}</b></button></span><span><button class="indicador-gab-link" onclick="detalheIndicadorGabinete('pendentes_julgamento','${esc(x.gabinete)}','Pendentes de julgamento')">Pendentes de julgamento<span class="info-tip" onclick="event.preventDefault();event.stopPropagation()" data-tip="Processos principais com campo julgamento vazio no relatório de Tramitando.">ⓘ</span><b>${numero(x.pendentes_julgamento)}</b></button></span><span><button class="indicador-gab-link" onclick="detalheIndicadorGabinete('arquivados','${esc(x.gabinete)}','Processos arquivados')">Arquivados<span class="info-tip" onclick="event.preventDefault();event.stopPropagation()" data-tip="Processos principais arquivados.">ⓘ</span><b>${numero(x.arquivados)}</b></button></span><span>Urgentes<span class="info-tip" onclick="event.preventDefault();event.stopPropagation()" data-tip="Processos classificados em tarefas críticas prioritárias.">ⓘ</span><b>${numero(x.urgentes)}</b></span><span>Maior tempo<span class="info-tip" onclick="event.preventDefault();event.stopPropagation()" data-tip="Maior tempo de permanência nas tarefas críticas do gabinete.">ⓘ</span><b>${numero(x.maior_tempo)} dias</b></span></div><button class="link-detalhar" onclick="detalhe('gabinete','${esc(x.gabinete)}','Acervo ${esc(x.gabinete)}')">Ver processos e relatórios</button></div></article>`).join('')}</div></section>`;
+if(linhas.length)h+=`<section id="tarefas-criticas" class="painel tarefas-criticas-painel"><div class="tarefas-criticas-cabecalho"><div><span class="rotulo">CONTROLE OPERACIONAL</span><h2>Tarefas críticas por gabinete</h2><p>Clique em uma tarefa para consultar os processos públicos.</p></div></div><div class="tarefas-gabinetes-grid">${linhas.map((l,i)=>`<article class="tarefa-gab-card tarefa-gab-${i+1}"><div class="tarefa-gab-topo"><div><h3>${esc(l.gabinete)}</h3><p>${esc(nomeJuiz(l.gabinete))}</p></div><button class="tarefa-acervo" onclick="detalhe('gabinete','${esc(l.gabinete)}','Acervo ${esc(l.gabinete)}')"><small>Acervo</small><strong>${numero(l.total_acervo)}</strong></button></div><div class="tarefas-metricas">${cols.map(c=>`<button class="crit-task ${(c.codigo||'').toLowerCase()}" onclick="detalheCriticaGabinete('${esc(c.codigo)}','${esc(l.gabinete)}','${esc(c.rotulo)}')"><span>${esc(c.rotulo)}</span><strong>${numero((l.contagens||{})[c.codigo])}</strong><em>${esc(c.descricao)}</em></button>`).join('')}</div></article>`).join('')}</div></section>`;
+if(tarefas.length){
+const cards=gabCols.map((g,i)=>{
+ const tarefasGab=tarefas.map(t=>({
+   tarefa:t,
+   valor:Number((t.contagens||{})[g.nome]||0)
+ })).filter(x=>x.valor>0).sort((a,b)=>b.valor-a.valor||String(a.tarefa.tarefa_atual||a.tarefa.tarefa).localeCompare(String(b.tarefa.tarefa_atual||b.tarefa.tarefa),'pt-BR'));
+ const maior=tarefasGab.length?tarefasGab[0].valor:0;
+ const itens=tarefasGab.map(({tarefa:t,valor:v})=>{
+   const destaque=v===maior&&maior>0?' destaque-maior':'';
+   return `<button class="todas-task-row${destaque}" onclick="detalheTarefaGabinete('${esc(t.codigo)}','${esc(g.gabinete||g.nome)}','${esc(t.tarefa_atual||t.tarefa)}')"><span>${esc(t.tarefa_atual||t.tarefa)}</span><strong>${numero(v)}</strong>${destaque?'<em>Maior volume</em>':''}</button>`;
+ }).join('');
+ const chaveGab=g.gabinete||g.nome;
+ const listaAcervo=(d.acervo_por_gabinete||{})[chaveGab];
+ const ac=Array.isArray(listaAcervo)
+   ? listaAcervo.length
+   : tarefas.reduce((s,t)=>s+Number((t.contagens||{})[g.nome]||0),0);
+ return `<article class="todas-gab-card todas-gab-${i+1}">
+ <div class="todas-gab-topo">
+ <div><h3>${esc(chaveGab)}</h3><p>${esc(nomeJuiz(chaveGab))}</p></div>
+ <button class="todas-gab-acervo" onclick="detalhe('gabinete','${esc(chaveGab)}','Acervo ${esc(chaveGab)}')"><small>Acervo</small><strong>${numero(ac)}</strong></button>
+ </div>
+ <div class="todas-gab-lista">${itens}</div>
+ </article>`;
+ }).join('');
+h+=`<section id="todas-tarefas" class="painel todas-tarefas-painel">
+<div class="cabecalho-painel todas-tarefas-cabecalho">
+<div><span class="rotulo">ESTOQUE OPERACIONAL</span><h2>Todas as tarefas por gabinete</h2><p>Visualização organizada por gabinete, no mesmo padrão das tarefas críticas.</p></div>
+<span class="pill">${tarefas.length} tarefa(s)</span>
+</div>
+<div class="todas-tarefas-gabinetes-grid">${cards}</div>
+<div class="todas-relatorios-bloco">
+<div class="todas-relatorios-topo"><h3>Visão consolidada da Comissão</h3></div>
+<div class="todas-tarefas-wrap compacto"><table class="todas-tarefas-tabela compacta"><thead><tr><th>Tarefa</th>${gabCols.map(c=>`<th>${esc(c.gabinete||c.nome)}</th>`).join('')}<th>Total</th></tr></thead><tbody>${tarefas.map(t=>{const cs=t.contagens||{};let total=0;const cel=gabCols.map(c=>{const v=Number(cs[c.nome]||0);total+=v;return `<td><button class="tarefa-numero" onclick="detalhe('tarefa','${esc(t.codigo)}','${esc(t.tarefa_atual||t.tarefa)}')">${numero(v)}</button></td>`}).join('');return `<tr><td><button class="link-detalhar" onclick="detalhe('tarefa','${esc(t.codigo)}','${esc(t.tarefa_atual||t.tarefa)}')">${esc(t.tarefa_atual||t.tarefa)}</button></td>${cel}<td><button class="tarefa-total" onclick="detalhe('tarefa','${esc(t.codigo)}','${esc(t.tarefa_atual||t.tarefa)}')">${numero(total)}</button></td></tr>`}).join('')}</tbody></table></div></div>
+</section>`;
+}
+const jr=arr(d.julgados_recentes);if(jr.length)h+=`<section id="julgados" class="painel"><div class="cabecalho-painel"><div><span class="rotulo">JULGAMENTOS</span><h2>Julgados recentes</h2><p>Relação pública dos julgamentos mais recentes.</p></div><button class="btn-relatorio" onclick="detalhe('julgados','','Processos julgados recentes')">Detalhar e gerar relatório</button></div>${processosTabela(jr.slice(0,10))}</section>`;
+h+=`<section id="minuta" class="painel minuta"><div class="cabecalho-painel"><div><span class="rotulo">OPERAÇÃO</span><h2>Distribuição de minuta</h2><p>${arr(d.minutar_processos).length} processo(s) público(s) nessa fila.</p></div><button class="btn-relatorio" onclick="detalhe('minuta','','Processos em Minutar ato')">Detalhar e gerar relatório</button></div></section><section class="painel public-footer-note"><span class="rotulo">ORIGEM</span><p>Arquivo: <b>${esc(d.arquivo_origem||'não informado')}</b>. Processos em segredo de justiça não são publicados.</p></section>`;
+document.getElementById('conteudo').innerHTML=h}
+fetch(`./painel_publico.json?v=${Date.now()}`,{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json()}).then(render).catch(err=>document.getElementById('conteudo').innerHTML=`<section class="erro-carregamento"><h2>Não foi possível carregar o painel.</h2><p>${esc(err.message)}</p></section>`);
 </script>
-</body>
-</html>
+<div id="modal" class="modal-fundo" onclick="if(event.target===this)fecharDetalhe()"><div class="modal-caixa"><div class="modal-topo"><h2 id="modal-titulo">Detalhamento</h2><button class="modal-fechar" onclick="fecharDetalhe()">Fechar</button></div><div class="modal-corpo"><div class="modal-acoes"><button onclick="imprimirPDF()">Gerar PDF / Imprimir</button><button onclick="baixarExcel()">Exportar Excel</button></div><div id="modal-conteudo"></div></div></div></div>
+</body></html>
