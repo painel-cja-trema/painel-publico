@@ -125,11 +125,6 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Analisar Processos",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Analisar Processos; Processo julgado",
       "quantidade": 1
     },
@@ -151,6 +146,11 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Petições não lidas; Processo com prazo em curso",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Verificar Pendências",
       "quantidade": 1
     },
     {
@@ -2004,16 +2004,6 @@
         "total": 5
       },
       {
-        "codigo": "analisar-processos",
-        "tarefa": "Analisar Processos",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 2
-        },
-        "total": 4
-      },
-      {
         "codigo": "elaborar-documentos",
         "tarefa": "Elaborar Documentos",
         "contagens": {
@@ -2026,6 +2016,16 @@
       {
         "codigo": "aguarda-julgamento-incluido-em-pauta-virtual-elaborar-extrato-da-ata-processo-incluido-em-pauta-virtual-selecionar-documentos-para-acordao-gabinete",
         "tarefa": "Aguarda Julgamento - incluído em pauta virtual; Elaborar extrato da ata; Processo incluído em pauta virtual; Selecionar documentos para acórdão - Gabinete",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 2
+        },
+        "total": 3
+      },
+      {
+        "codigo": "analisar-processos",
+        "tarefa": "Analisar Processos",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -2289,6 +2289,16 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "verificar-pendencias",
+        "tarefa": "Verificar Pendências",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -4943,7 +4953,7 @@
         "tarefa_atual": "Revisar Relatório, Voto e Ementa",
         "autuacao": "26/09/2026",
         "desde": "21/10/2026",
-        "dias_tramitando": 39,
+        "dias_tramitando": 40,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -5521,64 +5531,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-processos": [
-      {
-        "processo": "0600190-18.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Ag no(a) Rp",
-        "tarefa_atual": "Analisar Processos",
-        "autuacao": "23/07/2026",
-        "desde": "03/09/2026",
-        "dias_tramitando": 105,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601027-73.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos",
-        "autuacao": "25/09/2026",
-        "desde": "23/10/2026",
-        "dias_tramitando": 41,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601027-73.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "REC no(a) RepEsp",
-        "tarefa_atual": "Analisar Processos",
-        "autuacao": "23/10/2026",
-        "desde": "23/10/2026",
-        "dias_tramitando": 13,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601916-27.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos",
-        "autuacao": "05/11/2026",
-        "desde": "05/11/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "elaborar-documentos": [
       {
         "processo": "0600222-23.2026.6.10.0000",
@@ -5674,6 +5626,50 @@
         "autuacao": "22/10/2026",
         "desde": "22/10/2026",
         "dias_tramitando": 14,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-processos": [
+      {
+        "processo": "0600190-18.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Ag no(a) Rp",
+        "tarefa_atual": "Analisar Processos",
+        "autuacao": "23/07/2026",
+        "desde": "03/09/2026",
+        "dias_tramitando": 105,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601027-73.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Analisar Processos",
+        "autuacao": "25/09/2026",
+        "desde": "23/10/2026",
+        "dias_tramitando": 41,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601027-73.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "REC no(a) RepEsp",
+        "tarefa_atual": "Analisar Processos",
+        "autuacao": "23/10/2026",
+        "desde": "23/10/2026",
+        "dias_tramitando": 13,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -6258,6 +6254,22 @@
         "autuacao": "01/10/2026",
         "desde": "22/10/2026",
         "dias_tramitando": 34,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "verificar-pendencias": [
+      {
+        "processo": "0601916-27.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Verificar Pendências",
+        "autuacao": "05/11/2026",
+        "desde": "05/11/2026",
+        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -6893,7 +6905,7 @@
         "tarefa_atual": "Revisar Relatório, Voto e Ementa",
         "autuacao": "26/09/2026",
         "desde": "21/10/2026",
-        "dias_tramitando": 39,
+        "dias_tramitando": 40,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -7450,7 +7462,7 @@
         "processo": "0601916-27.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos",
+        "tarefa_atual": "Verificar Pendências",
         "autuacao": "05/11/2026",
         "desde": "05/11/2026",
         "dias_tramitando": 0,
@@ -29565,7 +29577,7 @@
       "tarefa_atual": "Revisar Relatório, Voto e Ementa",
       "autuacao": "26/09/2026",
       "desde": "21/10/2026",
-      "dias_tramitando": 39,
+      "dias_tramitando": 40,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -30066,7 +30078,7 @@
       "processo": "0601916-27.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "REC no(a) Rp",
-      "tarefa_atual": "Analisar Processos",
+      "tarefa_atual": "Verificar Pendências",
       "autuacao": "05/11/2026",
       "desde": "05/11/2026",
       "dias_tramitando": 0,
@@ -35915,8 +35927,8 @@
     ]
   },
   "sigilosos_processos": [],
-  "publicado_em": "05/11/2026 15:18",
+  "publicado_em": "05/11/2026 15:19",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "ce9fc07c74b1c1cbf176c98f17c5aeb8f33fc6a34375383f1af27053ae526f3f"
+  "hash_publicacao": "691e9c422505247027c89c521c1c402171494b8ddb8bececb482daa764a5443d"
 }
