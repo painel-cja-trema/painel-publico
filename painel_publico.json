@@ -295,6 +295,11 @@
     },
     {
       "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Aguarda Sessão de Julgamento; Elaborar extrato da ata; Liberados para julgamento pelo gabinete; Selecionar documentos para acórdão - Gabinete",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Aguardando Manifestação do MPE",
       "quantidade": 1
     },
@@ -326,11 +331,6 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Assinar ato",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Conferir Relatório, Voto e Ementa",
       "quantidade": 1
     },
     {
@@ -1807,16 +1807,6 @@
         "total": 3
       },
       {
-        "codigo": "conferir-relatorio-voto-e-ementa",
-        "tarefa": "Conferir Relatório, Voto e Ementa",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 2,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 3
-      },
-      {
         "codigo": "processo-com-prazo-em-curso-processo-julgado",
         "tarefa": "Processo com prazo em curso; Processo julgado",
         "contagens": {
@@ -1847,6 +1837,16 @@
         "total": 2
       },
       {
+        "codigo": "conferir-relatorio-voto-e-ementa",
+        "tarefa": "Conferir Relatório, Voto e Ementa",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 2,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 2
+      },
+      {
         "codigo": "realizar-triagem-ordinarios",
         "tarefa": "Realizar triagem ordinários",
         "contagens": {
@@ -1859,6 +1859,16 @@
       {
         "codigo": "aguarda-julgamento-incluido-em-pauta-processo-incluido-em-pauta-selecionar-documentos-para-acordao-gabinete-selecionar-documentos-para-acordao-gabinete",
         "tarefa": "Aguarda Julgamento - incluído em pauta; Processo incluído em pauta; Selecionar documentos para acórdão - Gabinete; Selecionar documentos para acórdão - Gabinete",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
+        "codigo": "aguarda-sessao-de-julgamento-elaborar-extrato-da-ata-liberados-para-julgamento-pelo-gabinete-selecionar-documentos-para-acordao-gabinete",
+        "tarefa": "Aguarda Sessão de Julgamento; Elaborar extrato da ata; Liberados para julgamento pelo gabinete; Selecionar documentos para acórdão - Gabinete",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -5464,50 +5474,6 @@
         "responsavel_processo": ""
       }
     ],
-    "conferir-relatorio-voto-e-ementa": [
-      {
-        "processo": "0601001-75.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "ED no(a) REC no(a) RepEsp",
-        "tarefa_atual": "Conferir Relatório, Voto e Ementa",
-        "autuacao": "20/10/2026",
-        "desde": "03/11/2026",
-        "dias_tramitando": 18,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601027-73.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "REC no(a) RepEsp",
-        "tarefa_atual": "Conferir Relatório, Voto e Ementa",
-        "autuacao": "23/10/2026",
-        "desde": "07/11/2026",
-        "dias_tramitando": 15,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601994-21.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Conferir Relatório, Voto e Ementa",
-        "autuacao": "24/10/2026",
-        "desde": "02/11/2026",
-        "dias_tramitando": 14,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "processo-com-prazo-em-curso-processo-julgado": [
       {
         "processo": "0601000-90.2026.6.10.0000",
@@ -5612,6 +5578,36 @@
         "responsavel_processo": ""
       }
     ],
+    "conferir-relatorio-voto-e-ementa": [
+      {
+        "processo": "0601001-75.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "ED no(a) REC no(a) RepEsp",
+        "tarefa_atual": "Conferir Relatório, Voto e Ementa",
+        "autuacao": "20/10/2026",
+        "desde": "03/11/2026",
+        "dias_tramitando": 18,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601994-21.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Conferir Relatório, Voto e Ementa",
+        "autuacao": "24/10/2026",
+        "desde": "02/11/2026",
+        "dias_tramitando": 14,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "realizar-triagem-ordinarios": [
       {
         "processo": "0600998-23.2026.6.10.0000",
@@ -5651,6 +5647,22 @@
         "autuacao": "11/09/2026",
         "desde": "11/09/2026",
         "dias_tramitando": 57,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "aguarda-sessao-de-julgamento-elaborar-extrato-da-ata-liberados-para-julgamento-pelo-gabinete-selecionar-documentos-para-acordao-gabinete": [
+      {
+        "processo": "0601027-73.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "REC no(a) RepEsp",
+        "tarefa_atual": "Aguarda Sessão de Julgamento; Elaborar extrato da ata; Liberados para julgamento pelo gabinete; Selecionar documentos para acórdão - Gabinete",
+        "autuacao": "23/10/2026",
+        "desde": "23/10/2026",
+        "dias_tramitando": 15,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -9585,9 +9597,9 @@
         "processo": "0601027-73.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "REC no(a) RepEsp",
-        "tarefa_atual": "Conferir Relatório, Voto e Ementa",
+        "tarefa_atual": "Aguarda Sessão de Julgamento; Elaborar extrato da ata; Liberados para julgamento pelo gabinete; Selecionar documentos para acórdão - Gabinete",
         "autuacao": "23/10/2026",
-        "desde": "07/11/2026",
+        "desde": "23/10/2026",
         "dias_tramitando": 15,
         "julgado": false,
         "data_julgamento": "",
@@ -29286,9 +29298,9 @@
       "processo": "0601027-73.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "REC no(a) RepEsp",
-      "tarefa_atual": "Conferir Relatório, Voto e Ementa",
+      "tarefa_atual": "Aguarda Sessão de Julgamento; Elaborar extrato da ata; Liberados para julgamento pelo gabinete; Selecionar documentos para acórdão - Gabinete",
       "autuacao": "23/10/2026",
-      "desde": "07/11/2026",
+      "desde": "23/10/2026",
       "dias_tramitando": 15,
       "julgado": false,
       "data_julgamento": "",
@@ -35421,8 +35433,8 @@
     ]
   },
   "sigilosos_processos": [],
-  "publicado_em": "07/11/2026 14:35",
+  "publicado_em": "07/11/2026 14:36",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "d9bf648b3f2dbb36427fb66677927a334ccbbe0381851297882915b1adb909bf"
+  "hash_publicacao": "0e23a1c120c1b787e0aa02d44fe17655e9a3336ed2a735f52eba8a1fadcd4b0e"
 }
