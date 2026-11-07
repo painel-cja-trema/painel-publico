@@ -340,11 +340,6 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Informar data de trânsito em julgado",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Lançar movimentos de julgamento colegiado; Processo com prazo em curso; Verificar inclusão de notas orais",
       "quantidade": 1
     },
@@ -361,6 +356,11 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Registrar ciência por telefone ou pessoalmente",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Verificar Pendências",
       "quantidade": 1
     }
   ],
@@ -1771,16 +1771,6 @@
         "total": 1
       },
       {
-        "codigo": "informar-data-de-transito-em-julgado",
-        "tarefa": "Informar data de trânsito em julgado",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
         "codigo": "lancar-movimentos-de-julgamento-colegiado-processo-com-prazo-em-curso-verificar-inclusao-de-notas-orais",
         "tarefa": "Lançar movimentos de julgamento colegiado; Processo com prazo em curso; Verificar inclusão de notas orais",
         "contagens": {
@@ -1817,6 +1807,16 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "verificar-pendencias",
+        "tarefa": "Verificar Pendências",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 1
       }
@@ -5640,22 +5640,6 @@
         "responsavel_processo": ""
       }
     ],
-    "informar-data-de-transito-em-julgado": [
-      {
-        "processo": "0601943-10.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Informar data de trânsito em julgado",
-        "autuacao": "04/10/2026",
-        "desde": "07/11/2026",
-        "dias_tramitando": 34,
-        "julgado": true,
-        "data_julgamento": "05/11/2026",
-        "teor": "Julgado improcedente o pedido em 05/11/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "lancar-movimentos-de-julgamento-colegiado-processo-com-prazo-em-curso-verificar-inclusao-de-notas-orais": [
       {
         "processo": "0601222-58.2026.6.10.0000",
@@ -5716,6 +5700,22 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "verificar-pendencias": [
+      {
+        "processo": "0601943-10.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Verificar Pendências",
+        "autuacao": "04/10/2026",
+        "desde": "07/11/2026",
+        "dias_tramitando": 34,
+        "julgado": true,
+        "data_julgamento": "05/11/2026",
+        "teor": "Julgado improcedente o pedido em 05/11/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -9287,7 +9287,7 @@
         "processo": "0601943-10.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Informar data de trânsito em julgado",
+        "tarefa_atual": "Verificar Pendências",
         "autuacao": "04/10/2026",
         "desde": "07/11/2026",
         "dias_tramitando": 34,
@@ -14186,7 +14186,7 @@
       "processo": "0601943-10.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Informar data de trânsito em julgado",
+      "tarefa_atual": "Verificar Pendências",
       "autuacao": "04/10/2026",
       "desde": "07/11/2026",
       "dias_tramitando": 34,
@@ -26258,7 +26258,7 @@
       "processo": "0601943-10.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Informar data de trânsito em julgado",
+      "tarefa_atual": "Verificar Pendências",
       "autuacao": "04/10/2026",
       "desde": "07/11/2026",
       "dias_tramitando": 34,
@@ -35192,7 +35192,7 @@
       "processo": "0601943-10.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Informar data de trânsito em julgado",
+      "tarefa_atual": "Verificar Pendências",
       "autuacao": "04/10/2026",
       "desde": "07/11/2026",
       "dias_tramitando": 34,
@@ -35347,8 +35347,8 @@
     ]
   },
   "sigilosos_processos": [],
-  "publicado_em": "07/11/2026 16:32",
+  "publicado_em": "07/11/2026 16:35",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "b409f642ad396c3e7b93c7920e92ac7c7dd00f3e8443adda748b1cea1dadd15a"
+  "hash_publicacao": "130a0e73760a48efb5983ae32784a4e335ef84a58649f6d23264c5001643fe45"
 }
