@@ -335,12 +335,12 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Fechar expediente manualmente",
+      "tarefa_atual": "Lançar movimentos de julgamento colegiado; Processo com prazo em curso",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Lançar movimentos de julgamento colegiado; Processo com prazo em curso",
+      "tarefa_atual": "Registrar ciência intimação pessoal",
       "quantidade": 1
     },
     {
@@ -1522,6 +1522,16 @@
         "total": 2
       },
       {
+        "codigo": "registrar-ciencia-intimacao-pessoal",
+        "tarefa": "Registrar ciência intimação pessoal",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 2
+      },
+      {
         "codigo": "aguarda-julgamento-incluido-em-pauta-processo-incluido-em-pauta-selecionar-documentos-para-acordao-gabinete-selecionar-documentos-para-acordao-gabinete",
         "tarefa": "Aguarda Julgamento - incluído em pauta; Processo incluído em pauta; Selecionar documentos para acórdão - Gabinete; Selecionar documentos para acórdão - Gabinete",
         "contagens": {
@@ -1632,16 +1642,6 @@
         "total": 1
       },
       {
-        "codigo": "fechar-expediente-manualmente",
-        "tarefa": "Fechar expediente manualmente",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
         "codigo": "lancar-movimentos-de-julgamento-colegiado-processo-com-prazo-em-curso",
         "tarefa": "Lançar movimentos de julgamento colegiado; Processo com prazo em curso",
         "contagens": {
@@ -1654,16 +1654,6 @@
       {
         "codigo": "processo-com-prazo-em-curso-registrar-recurso-registrar-recurso",
         "tarefa": "Processo com prazo em curso; Registrar recurso ; Registrar recurso",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "registrar-ciencia-intimacao-pessoal",
-        "tarefa": "Registrar ciência intimação pessoal",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -5143,6 +5133,36 @@
         "responsavel_processo": ""
       }
     ],
+    "registrar-ciencia-intimacao-pessoal": [
+      {
+        "processo": "0601018-14.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "NIP",
+        "tarefa_atual": "Registrar ciência intimação pessoal",
+        "autuacao": "27/08/2026",
+        "desde": "08/11/2026",
+        "dias_tramitando": 72,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601900-73.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Registrar ciência intimação pessoal",
+        "autuacao": "01/10/2026",
+        "desde": "22/10/2026",
+        "dias_tramitando": 37,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "aguarda-julgamento-incluido-em-pauta-processo-incluido-em-pauta-selecionar-documentos-para-acordao-gabinete-selecionar-documentos-para-acordao-gabinete": [
       {
         "processo": "0600982-69.2026.6.10.0000",
@@ -5319,22 +5339,6 @@
         "responsavel_processo": ""
       }
     ],
-    "fechar-expediente-manualmente": [
-      {
-        "processo": "0601018-14.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "NIP",
-        "tarefa_atual": "Fechar expediente manualmente",
-        "autuacao": "27/08/2026",
-        "desde": "08/11/2026",
-        "dias_tramitando": 72,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "lancar-movimentos-de-julgamento-colegiado-processo-com-prazo-em-curso": [
       {
         "processo": "0601222-58.2026.6.10.0000",
@@ -5363,22 +5367,6 @@
         "julgado": true,
         "data_julgamento": "06/11/2026",
         "teor": "Julgado procedente em parte do pedido em 06/11/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "registrar-ciencia-intimacao-pessoal": [
-      {
-        "processo": "0601900-73.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Registrar ciência intimação pessoal",
-        "autuacao": "01/10/2026",
-        "desde": "22/10/2026",
-        "dias_tramitando": 37,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -8278,7 +8266,7 @@
         "processo": "0601018-14.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "NIP",
-        "tarefa_atual": "Fechar expediente manualmente",
+        "tarefa_atual": "Registrar ciência intimação pessoal",
         "autuacao": "27/08/2026",
         "desde": "08/11/2026",
         "dias_tramitando": 72,
@@ -9501,7 +9489,7 @@
       "processo": "0601018-14.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "NIP",
-      "tarefa_atual": "Fechar expediente manualmente",
+      "tarefa_atual": "Registrar ciência intimação pessoal",
       "autuacao": "27/08/2026",
       "desde": "08/11/2026",
       "dias_tramitando": 72,
@@ -11537,7 +11525,7 @@
       "processo": "0601018-14.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "NIP",
-      "tarefa_atual": "Fechar expediente manualmente",
+      "tarefa_atual": "Registrar ciência intimação pessoal",
       "autuacao": "27/08/2026",
       "desde": "08/11/2026",
       "dias_tramitando": 72,
@@ -23455,7 +23443,7 @@
       "processo": "0601018-14.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "NIP",
-      "tarefa_atual": "Fechar expediente manualmente",
+      "tarefa_atual": "Registrar ciência intimação pessoal",
       "autuacao": "27/08/2026",
       "desde": "08/11/2026",
       "dias_tramitando": 72,
@@ -34526,8 +34514,8 @@
     ]
   },
   "sigilosos_processos": [],
-  "publicado_em": "08/11/2026 15:54",
+  "publicado_em": "08/11/2026 15:55",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "2d8eb92b120f08c9deccf133c04f9a9ee4ffc21eed18c5cf02bbe140aa6082e5"
+  "hash_publicacao": "b00c75487c8df4f7d9be97ee73049d4db7bfbfef6e8db565e1d251f3647d8515"
 }
