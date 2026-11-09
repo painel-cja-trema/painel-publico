@@ -136,7 +136,7 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Processo com prazo em curso",
-      "quantidade": 27
+      "quantidade": 26
     },
     {
       "gabinete": "Gab. JA 2",
@@ -175,6 +175,11 @@
     },
     {
       "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Analisar resposta do expediente",
+      "quantidade": 3
+    },
+    {
+      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Minutar ato",
       "quantidade": 3
     },
@@ -186,11 +191,6 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Aguarda Sessão de Julgamento Virtual; Elaborar extrato da ata; Liberados para julgamento pelo gabinete virtual; Selecionar documentos para acórdão - Gabinete",
-      "quantidade": 2
-    },
-    {
-      "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Analisar resposta do expediente",
       "quantidade": 2
     },
     {
@@ -1046,10 +1046,10 @@
         "tarefa": "Processo com prazo em curso",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 16,
-          "Gabinete Juiz Auxiliar 2": 27,
+          "Gabinete Juiz Auxiliar 2": 26,
           "Gabinete Juiz Auxiliar 3": 7
         },
-        "total": 50
+        "total": 49
       },
       {
         "codigo": "analisar-determinacao",
@@ -1192,6 +1192,16 @@
         "total": 3
       },
       {
+        "codigo": "analisar-resposta-do-expediente",
+        "tarefa": "Analisar resposta do expediente",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 3,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 3
+      },
+      {
         "codigo": "atualizar-dados-do-processo",
         "tarefa": "Atualizar dados do processo",
         "contagens": {
@@ -1218,16 +1228,6 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 2
-        },
-        "total": 2
-      },
-      {
-        "codigo": "analisar-resposta-do-expediente",
-        "tarefa": "Analisar resposta do expediente",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 2,
-          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 2
       },
@@ -2048,20 +2048,6 @@
         "autuacao": "05/10/2026",
         "desde": "09/11/2026",
         "dias_tramitando": 34,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600026-26.2026.6.10.0009",
-        "gabinete": "Gab. JA 2",
-        "classe": "NIP",
-        "tarefa_atual": "Processo com prazo em curso",
-        "autuacao": "05/11/2026",
-        "desde": "09/11/2026",
-        "dias_tramitando": 4,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -4435,6 +4421,50 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-resposta-do-expediente": [
+      {
+        "processo": "0601816-72.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar resposta do expediente",
+        "autuacao": "24/09/2026",
+        "desde": "09/11/2026",
+        "dias_tramitando": 45,
+        "julgado": true,
+        "data_julgamento": "08/11/2026",
+        "teor": "Julgado procedente em parte do pedido em 08/11/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601879-97.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar resposta do expediente",
+        "autuacao": "01/10/2026",
+        "desde": "09/11/2026",
+        "dias_tramitando": 38,
+        "julgado": true,
+        "data_julgamento": "08/11/2026",
+        "teor": "Extinto o processo por ausência das condições da ação em 08/11/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600026-26.2026.6.10.0009",
+        "gabinete": "Gab. JA 2",
+        "classe": "NIP",
+        "tarefa_atual": "Analisar resposta do expediente",
+        "autuacao": "05/11/2026",
+        "desde": "09/11/2026",
+        "dias_tramitando": 4,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "atualizar-dados-do-processo": [
       {
         "processo": "0600926-36.2026.6.10.0000",
@@ -4535,36 +4565,6 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "analisar-resposta-do-expediente": [
-      {
-        "processo": "0601816-72.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar resposta do expediente",
-        "autuacao": "24/09/2026",
-        "desde": "09/11/2026",
-        "dias_tramitando": 45,
-        "julgado": true,
-        "data_julgamento": "08/11/2026",
-        "teor": "Julgado procedente em parte do pedido em 08/11/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601879-97.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar resposta do expediente",
-        "autuacao": "01/10/2026",
-        "desde": "09/11/2026",
-        "dias_tramitando": 38,
-        "julgado": true,
-        "data_julgamento": "08/11/2026",
-        "teor": "Extinto o processo por ausência das condições da ação em 08/11/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -7578,7 +7578,7 @@
         "processo": "0600026-26.2026.6.10.0009",
         "gabinete": "Gab. JA 2",
         "classe": "NIP",
-        "tarefa_atual": "Processo com prazo em curso",
+        "tarefa_atual": "Analisar resposta do expediente",
         "autuacao": "05/11/2026",
         "desde": "09/11/2026",
         "dias_tramitando": 4,
@@ -9979,7 +9979,7 @@
       "processo": "0600026-26.2026.6.10.0009",
       "gabinete": "Gab. JA 2",
       "classe": "NIP",
-      "tarefa_atual": "Processo com prazo em curso",
+      "tarefa_atual": "Analisar resposta do expediente",
       "autuacao": "05/11/2026",
       "desde": "09/11/2026",
       "dias_tramitando": 4,
@@ -13113,7 +13113,7 @@
       "processo": "0600026-26.2026.6.10.0009",
       "gabinete": "Gab. JA 2",
       "classe": "NIP",
-      "tarefa_atual": "Processo com prazo em curso",
+      "tarefa_atual": "Analisar resposta do expediente",
       "autuacao": "05/11/2026",
       "desde": "09/11/2026",
       "dias_tramitando": 4,
@@ -25319,7 +25319,7 @@
       "processo": "0600026-26.2026.6.10.0009",
       "gabinete": "Gab. JA 2",
       "classe": "NIP",
-      "tarefa_atual": "Processo com prazo em curso",
+      "tarefa_atual": "Analisar resposta do expediente",
       "autuacao": "05/11/2026",
       "desde": "09/11/2026",
       "dias_tramitando": 4,
@@ -34217,8 +34217,8 @@
     ]
   },
   "sigilosos_processos": [],
-  "publicado_em": "09/11/2026 11:05",
+  "publicado_em": "09/11/2026 11:06",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "74703c31fa703337e657487e18c22a94a2cec86932bc96b77d9db30e99ded834"
+  "hash_publicacao": "608479a432cb10ce4ef5d823b3facf6abf2f5892efaab4724a77cb39f3acff44"
 }
