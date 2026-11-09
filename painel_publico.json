@@ -151,7 +151,7 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Aguardando julgamento do recurso interno",
-      "quantidade": 11
+      "quantidade": 12
     },
     {
       "gabinete": "Gab. JA 2",
@@ -195,11 +195,6 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
-      "quantidade": 2
-    },
-    {
-      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Analisar Petição Avulsa; Assinar ato",
       "quantidade": 2
     },
@@ -211,6 +206,11 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Aguardando julgamento do recurso interno; Analisar Petição Avulsa",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
       "quantidade": 1
     },
     {
@@ -315,12 +315,12 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Analisar Processos",
+      "tarefa_atual": "Analisar Acórdão Assinado - SJD; Processo com prazo em curso",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Lançar movimentos de julgamento colegiado; Processo com prazo em curso",
+      "tarefa_atual": "Analisar Processos",
       "quantidade": 1
     },
     {
@@ -603,7 +603,7 @@
           "TRIAGEM_ORDINARIA": 0,
           "MINUTAR_ATO": 1,
           "ASSINAR_ATO": 0,
-          "LANCAR_MOVIMENTACAO": 1
+          "LANCAR_MOVIMENTACAO": 0
         }
       }
     ],
@@ -612,7 +612,7 @@
       "TRIAGEM_ORDINARIA": 2,
       "MINUTAR_ATO": 1,
       "ASSINAR_ATO": 22,
-      "LANCAR_MOVIMENTACAO": 1
+      "LANCAR_MOVIMENTACAO": 0
     },
     "total_acervo": 255
   },
@@ -974,22 +974,7 @@
         "responsavel_processo": ""
       }
     ],
-    "LANCAR_MOVIMENTACAO": [
-      {
-        "processo": "0601222-58.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "ED no(a) REC no(a) Rp",
-        "tarefa_atual": "Lançar movimentos de julgamento colegiado; Processo com prazo em curso",
-        "autuacao": "20/10/2026",
-        "desde": "20/10/2026",
-        "dias_tramitando": 20,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ]
+    "LANCAR_MOVIMENTACAO": []
   },
   "entrada_comissao": {
     "codigo": "LIMINAR_CERTIFICACAO",
@@ -1031,10 +1016,10 @@
         "tarefa": "Aguardando julgamento do recurso interno",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 19,
-          "Gabinete Juiz Auxiliar 2": 11,
+          "Gabinete Juiz Auxiliar 2": 12,
           "Gabinete Juiz Auxiliar 3": 15
         },
-        "total": 45
+        "total": 46
       },
       {
         "codigo": "analisar-determinacao",
@@ -1157,22 +1142,22 @@
         "total": 3
       },
       {
-        "codigo": "aguardando-julgamento-do-recurso-interno-registrar-recurso",
-        "tarefa": "Aguardando julgamento do recurso interno; Registrar recurso",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 2,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 3
-      },
-      {
         "codigo": "aguarda-julgamento-incluido-em-pauta-virtual-elaborar-extrato-da-ata-processo-incluido-em-pauta-virtual-selecionar-documentos-para-acordao-gabinete",
         "tarefa": "Aguarda Julgamento - incluído em pauta virtual; Elaborar extrato da ata; Processo incluído em pauta virtual; Selecionar documentos para acórdão - Gabinete",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 2,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 2
+      },
+      {
+        "codigo": "aguardando-julgamento-do-recurso-interno-registrar-recurso",
+        "tarefa": "Aguardando julgamento do recurso interno; Registrar recurso",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 2
       },
@@ -1267,6 +1252,16 @@
         "total": 1
       },
       {
+        "codigo": "analisar-acordao-assinado-sjd-processo-com-prazo-em-curso",
+        "tarefa": "Analisar Acórdão Assinado - SJD; Processo com prazo em curso",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
         "codigo": "analisar-peticao-avulsa-analisar-determinacao",
         "tarefa": "Analisar Petição Avulsa; Analisar determinação",
         "contagens": {
@@ -1283,16 +1278,6 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "lancar-movimentos-de-julgamento-colegiado-processo-com-prazo-em-curso",
-        "tarefa": "Lançar movimentos de julgamento colegiado; Processo com prazo em curso",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 1
       },
@@ -2408,6 +2393,20 @@
         "julgado": true,
         "data_julgamento": "20/10/2026",
         "teor": "Julgado improcedente o pedido em 20/10/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601835-78.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno",
+        "autuacao": "27/09/2026",
+        "desde": "09/11/2026",
+        "dias_tramitando": 42,
+        "julgado": true,
+        "data_julgamento": "06/11/2026",
+        "teor": "Julgado procedente o pedido em 06/11/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -4452,50 +4451,6 @@
         "responsavel_processo": ""
       }
     ],
-    "aguardando-julgamento-do-recurso-interno-registrar-recurso": [
-      {
-        "processo": "0600147-81.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "RepEsp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
-        "autuacao": "15/05/2026",
-        "desde": "15/05/2026",
-        "dias_tramitando": 178,
-        "julgado": true,
-        "data_julgamento": "11/08/2026",
-        "teor": "Julgado procedente em parte do pedido em 11/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601737-93.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
-        "autuacao": "16/09/2026",
-        "desde": "16/09/2026",
-        "dias_tramitando": 53,
-        "julgado": true,
-        "data_julgamento": "22/09/2026",
-        "teor": "Julgado procedente em parte do pedido em 22/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601835-78.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
-        "autuacao": "27/09/2026",
-        "desde": "27/09/2026",
-        "dias_tramitando": 42,
-        "julgado": true,
-        "data_julgamento": "06/11/2026",
-        "teor": "Julgado procedente o pedido em 06/11/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "aguarda-julgamento-incluido-em-pauta-virtual-elaborar-extrato-da-ata-processo-incluido-em-pauta-virtual-selecionar-documentos-para-acordao-gabinete": [
       {
         "processo": "0601026-88.2026.6.10.0000",
@@ -4522,6 +4477,36 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "aguardando-julgamento-do-recurso-interno-registrar-recurso": [
+      {
+        "processo": "0600147-81.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "RepEsp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
+        "autuacao": "15/05/2026",
+        "desde": "15/05/2026",
+        "dias_tramitando": 178,
+        "julgado": true,
+        "data_julgamento": "11/08/2026",
+        "teor": "Julgado procedente em parte do pedido em 11/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601737-93.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
+        "autuacao": "16/09/2026",
+        "desde": "16/09/2026",
+        "dias_tramitando": 53,
+        "julgado": true,
+        "data_julgamento": "22/09/2026",
+        "teor": "Julgado procedente em parte do pedido em 22/09/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -4740,6 +4725,22 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-acordao-assinado-sjd-processo-com-prazo-em-curso": [
+      {
+        "processo": "0601222-58.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "ED no(a) REC no(a) Rp",
+        "tarefa_atual": "Analisar Acórdão Assinado - SJD; Processo com prazo em curso",
+        "autuacao": "20/10/2026",
+        "desde": "20/10/2026",
+        "dias_tramitando": 20,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "analisar-peticao-avulsa-analisar-determinacao": [
       {
         "processo": "0600944-57.2026.6.10.0000",
@@ -4765,22 +4766,6 @@
         "autuacao": "03/10/2026",
         "desde": "03/10/2026",
         "dias_tramitando": 37,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "lancar-movimentos-de-julgamento-colegiado-processo-com-prazo-em-curso": [
-      {
-        "processo": "0601222-58.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "ED no(a) REC no(a) Rp",
-        "tarefa_atual": "Lançar movimentos de julgamento colegiado; Processo com prazo em curso",
-        "autuacao": "20/10/2026",
-        "desde": "20/10/2026",
-        "dias_tramitando": 20,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -7057,9 +7042,9 @@
         "processo": "0601835-78.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
+        "tarefa_atual": "Aguardando julgamento do recurso interno",
         "autuacao": "27/09/2026",
-        "desde": "27/09/2026",
+        "desde": "09/11/2026",
         "dias_tramitando": 42,
         "julgado": true,
         "data_julgamento": "06/11/2026",
@@ -8417,7 +8402,7 @@
         "processo": "0601222-58.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "ED no(a) REC no(a) Rp",
-        "tarefa_atual": "Lançar movimentos de julgamento colegiado; Processo com prazo em curso",
+        "tarefa_atual": "Analisar Acórdão Assinado - SJD; Processo com prazo em curso",
         "autuacao": "20/10/2026",
         "desde": "20/10/2026",
         "dias_tramitando": 20,
@@ -12168,9 +12153,9 @@
       "processo": "0601835-78.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
+      "tarefa_atual": "Aguardando julgamento do recurso interno",
       "autuacao": "27/09/2026",
-      "desde": "27/09/2026",
+      "desde": "09/11/2026",
       "dias_tramitando": 42,
       "julgado": true,
       "data_julgamento": "06/11/2026",
@@ -24463,9 +24448,9 @@
       "processo": "0601835-78.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
+      "tarefa_atual": "Aguardando julgamento do recurso interno",
       "autuacao": "27/09/2026",
-      "desde": "27/09/2026",
+      "desde": "09/11/2026",
       "dias_tramitando": 42,
       "julgado": true,
       "data_julgamento": "06/11/2026",
@@ -27994,7 +27979,7 @@
       "processo": "0601222-58.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "ED no(a) REC no(a) Rp",
-      "tarefa_atual": "Lançar movimentos de julgamento colegiado; Processo com prazo em curso",
+      "tarefa_atual": "Analisar Acórdão Assinado - SJD; Processo com prazo em curso",
       "autuacao": "20/10/2026",
       "desde": "20/10/2026",
       "dias_tramitando": 20,
@@ -33888,9 +33873,9 @@
       "processo": "0601835-78.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
+      "tarefa_atual": "Aguardando julgamento do recurso interno",
       "autuacao": "27/09/2026",
-      "desde": "27/09/2026",
+      "desde": "09/11/2026",
       "dias_tramitando": 42,
       "julgado": true,
       "data_julgamento": "06/11/2026",
@@ -34337,8 +34322,8 @@
     ]
   },
   "sigilosos_processos": [],
-  "publicado_em": "09/11/2026 15:02",
+  "publicado_em": "09/11/2026 15:04",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "6459da616567831846e01b498d91719c149cbbc411789dc710c1e92ccb9e2cf5"
+  "hash_publicacao": "94d99d4cca1a66377218428aac93abd9f6066677f29fc7c7f1256baac25b29c4"
 }
