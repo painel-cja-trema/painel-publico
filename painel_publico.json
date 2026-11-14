@@ -29,7 +29,7 @@
       "juiz": "Dra. Manuella Ribeiro",
       "distribuidor": "Eduardo Daniel Pereira Neto",
       "quantidade": 73,
-      "media_dias": 59.1,
+      "media_dias": 59.2,
       "maior_tempo": 211,
       "urgentes": 0,
       "minutar": 1,
@@ -125,11 +125,6 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Analisar determinação; Petições não lidas",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Assinar ato",
       "quantidade": 1
     },
@@ -156,6 +151,11 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Minutar ato",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Petições não lidas; Verificar Pendências",
       "quantidade": 1
     },
     {
@@ -551,7 +551,7 @@
       "processo": "0600364-27.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação; Petições não lidas",
+      "tarefa_atual": "Petições não lidas; Verificar Pendências",
       "dias_tramitando": 102,
       "segredo_justica": "NÃO"
     },
@@ -1302,16 +1302,6 @@
         "total": 1
       },
       {
-        "codigo": "analisar-determinacao-peticoes-nao-lidas",
-        "tarefa": "Analisar determinação; Petições não lidas",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
         "codigo": "analisar-resposta-do-expediente",
         "tarefa": "Analisar resposta do expediente",
         "contagens": {
@@ -1338,6 +1328,16 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
+        "codigo": "peticoes-nao-lidas-verificar-pendencias",
+        "tarefa": "Petições não lidas; Verificar Pendências",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
       },
@@ -4365,7 +4365,7 @@
         "tarefa_atual": "Analisar Petição Avulsa; Processo com prazo em curso",
         "autuacao": "13/08/2026",
         "desde": "13/08/2026",
-        "dias_tramitando": 92,
+        "dias_tramitando": 93,
         "julgado": true,
         "data_julgamento": "01/09/2026",
         "teor": "Julgado procedente em parte do pedido em 01/09/2026",
@@ -4577,22 +4577,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-determinacao-peticoes-nao-lidas": [
-      {
-        "processo": "0600364-27.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação; Petições não lidas",
-        "autuacao": "04/08/2026",
-        "desde": "04/08/2026",
-        "dias_tramitando": 102,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "analisar-resposta-do-expediente": [
       {
         "processo": "0601889-44.2026.6.10.0000",
@@ -4634,6 +4618,22 @@
         "autuacao": "22/10/2026",
         "desde": "22/10/2026",
         "dias_tramitando": 23,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "peticoes-nao-lidas-verificar-pendencias": [
+      {
+        "processo": "0600364-27.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Petições não lidas; Verificar Pendências",
+        "autuacao": "04/08/2026",
+        "desde": "04/08/2026",
+        "dias_tramitando": 102,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -4764,7 +4764,7 @@
         "processo": "0600364-27.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Analisar determinação; Petições não lidas",
+        "tarefa_atual": "Petições não lidas; Verificar Pendências",
         "autuacao": "04/08/2026",
         "desde": "04/08/2026",
         "dias_tramitando": 102,
@@ -6001,7 +6001,7 @@
         "tarefa_atual": "Analisar Petição Avulsa; Processo com prazo em curso",
         "autuacao": "13/08/2026",
         "desde": "13/08/2026",
-        "dias_tramitando": 92,
+        "dias_tramitando": 93,
         "julgado": true,
         "data_julgamento": "01/09/2026",
         "teor": "Julgado procedente em parte do pedido em 01/09/2026",
@@ -8287,7 +8287,7 @@
       "processo": "0600364-27.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação; Petições não lidas",
+      "tarefa_atual": "Petições não lidas; Verificar Pendências",
       "autuacao": "04/08/2026",
       "desde": "04/08/2026",
       "dias_tramitando": 102,
@@ -9735,7 +9735,7 @@
       "processo": "0600364-27.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação; Petições não lidas",
+      "tarefa_atual": "Petições não lidas; Verificar Pendências",
       "autuacao": "04/08/2026",
       "desde": "04/08/2026",
       "dias_tramitando": 102,
@@ -9780,7 +9780,7 @@
       "tarefa_atual": "Analisar Petição Avulsa; Processo com prazo em curso",
       "autuacao": "13/08/2026",
       "desde": "13/08/2026",
-      "dias_tramitando": 92,
+      "dias_tramitando": 93,
       "julgado": true,
       "data_julgamento": "01/09/2026",
       "teor": "Julgado procedente em parte do pedido em 01/09/2026",
@@ -22340,7 +22340,7 @@
       "processo": "0600364-27.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação; Petições não lidas",
+      "tarefa_atual": "Petições não lidas; Verificar Pendências",
       "autuacao": "04/08/2026",
       "desde": "04/08/2026",
       "dias_tramitando": 102,
@@ -22385,7 +22385,7 @@
       "tarefa_atual": "Analisar Petição Avulsa; Processo com prazo em curso",
       "autuacao": "13/08/2026",
       "desde": "13/08/2026",
-      "dias_tramitando": 92,
+      "dias_tramitando": 93,
       "julgado": true,
       "data_julgamento": "01/09/2026",
       "teor": "Julgado procedente em parte do pedido em 01/09/2026",
@@ -32506,7 +32506,7 @@
       "tarefa_atual": "Analisar Petição Avulsa; Processo com prazo em curso",
       "autuacao": "13/08/2026",
       "desde": "13/08/2026",
-      "dias_tramitando": 92,
+      "dias_tramitando": 93,
       "julgado": true,
       "data_julgamento": "01/09/2026",
       "teor": "Julgado procedente em parte do pedido em 01/09/2026",
@@ -33876,8 +33876,8 @@
     ]
   },
   "sigilosos_processos": [],
-  "publicado_em": "14/11/2026 17:55",
+  "publicado_em": "14/11/2026 17:56",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "b96ea3b4d6ebb04b555e46334793024d6d44dd7d49ea17b508b95bef120cc1b9"
+  "hash_publicacao": "7fc4f642a7ae317f201f58454858123e435a3e1a44890a8a6f3b405bd80e855a"
 }
