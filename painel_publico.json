@@ -13,7 +13,7 @@
       "media_dias": 56.6,
       "maior_tempo": 220,
       "urgentes": 0,
-      "minutar": 2,
+      "minutar": 1,
       "julgados": 109,
       "percentual_julgados": 55.4,
       "arquivados": 101,
@@ -86,7 +86,7 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Minutar ato",
-      "quantidade": 4
+      "quantidade": 3
     },
     {
       "gabinete": "Gab. JA 1",
@@ -136,6 +136,11 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Analisar Processos",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Assinar ato",
       "quantidade": 1
     },
     {
@@ -604,11 +609,6 @@
       "processo": "0601817-57.2026.6.10.0000",
       "classe": "CumSen",
       "dias_tramitando": 50
-    },
-    {
-      "processo": "0602106-87.2026.6.10.0000",
-      "classe": "CartPrecCiv",
-      "dias_tramitando": 3
     }
   ],
   "minutar_processos": [
@@ -723,20 +723,6 @@
       "teor": "",
       "segredo_justica": "NÃO",
       "responsavel_processo": ""
-    },
-    {
-      "processo": "0602106-87.2026.6.10.0000",
-      "gabinete": "Gab. JA 1",
-      "classe": "CartPrecCiv",
-      "tarefa_atual": "Minutar ato",
-      "autuacao": "11/11/2026",
-      "desde": "14/11/2026",
-      "dias_tramitando": 3,
-      "julgado": false,
-      "data_julgamento": "",
-      "teor": "",
-      "segredo_justica": "NÃO",
-      "responsavel_processo": ""
     }
   ],
   "tarefas_criticas": {
@@ -780,8 +766,8 @@
         "contagens": {
           "TRIAGEM_URGENTE": 0,
           "TRIAGEM_ORDINARIA": 0,
-          "MINUTAR_ATO": 2,
-          "ASSINAR_ATO": 0,
+          "MINUTAR_ATO": 1,
+          "ASSINAR_ATO": 1,
           "LANCAR_MOVIMENTACAO": 0
         }
       },
@@ -813,8 +799,8 @@
     "totais": {
       "TRIAGEM_URGENTE": 0,
       "TRIAGEM_ORDINARIA": 4,
-      "MINUTAR_ATO": 9,
-      "ASSINAR_ATO": 5,
+      "MINUTAR_ATO": 8,
+      "ASSINAR_ATO": 6,
       "LANCAR_MOVIMENTACAO": 1
     },
     "total_acervo": 229
@@ -991,20 +977,6 @@
         "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
-      },
-      {
-        "processo": "0602106-87.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "CartPrecCiv",
-        "tarefa_atual": "Minutar ato",
-        "autuacao": "11/11/2026",
-        "desde": "14/11/2026",
-        "dias_tramitando": 3,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
       }
     ],
     "ASSINAR_ATO": [
@@ -1072,6 +1044,20 @@
         "autuacao": "03/10/2026",
         "desde": "07/11/2026",
         "dias_tramitando": 42,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0602106-87.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "CartPrecCiv",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "11/11/2026",
+        "desde": "14/11/2026",
+        "dias_tramitando": 3,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -1205,11 +1191,21 @@
         "codigo": "minutar-ato",
         "tarefa": "Minutar ato",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 2,
+          "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 4,
           "Gabinete Juiz Auxiliar 3": 1
         },
-        "total": 7
+        "total": 6
+      },
+      {
+        "codigo": "assinar-ato",
+        "tarefa": "Assinar ato",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 3,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 5
       },
       {
         "codigo": "aguardando-julgamento-do-recurso-interno-analisar-peticao-avulsa",
@@ -1227,16 +1223,6 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 2,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 4
-      },
-      {
-        "codigo": "assinar-ato",
-        "tarefa": "Assinar ato",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 3,
           "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 4
@@ -3859,12 +3845,70 @@
         "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
+      }
+    ],
+    "assinar-ato": [
+      {
+        "processo": "0601152-41.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "10/09/2026",
+        "desde": "14/11/2026",
+        "dias_tramitando": 65,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601743-03.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "17/09/2026",
+        "desde": "14/11/2026",
+        "dias_tramitando": 57,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601897-21.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "01/10/2026",
+        "desde": "06/11/2026",
+        "dias_tramitando": 43,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601924-04.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Assinar ato",
+        "autuacao": "03/10/2026",
+        "desde": "07/11/2026",
+        "dias_tramitando": 42,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
       },
       {
         "processo": "0602106-87.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "CartPrecCiv",
-        "tarefa_atual": "Minutar ato",
+        "tarefa_atual": "Assinar ato",
         "autuacao": "11/11/2026",
         "desde": "14/11/2026",
         "dias_tramitando": 3,
@@ -3984,64 +4028,6 @@
         "autuacao": "11/11/2026",
         "desde": "14/11/2026",
         "dias_tramitando": 3,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "assinar-ato": [
-      {
-        "processo": "0601152-41.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "10/09/2026",
-        "desde": "14/11/2026",
-        "dias_tramitando": 65,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601743-03.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "17/09/2026",
-        "desde": "14/11/2026",
-        "dias_tramitando": 57,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601897-21.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "01/10/2026",
-        "desde": "06/11/2026",
-        "dias_tramitando": 43,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601924-04.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Assinar ato",
-        "autuacao": "03/10/2026",
-        "desde": "07/11/2026",
-        "dias_tramitando": 42,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -6026,7 +6012,7 @@
         "processo": "0602106-87.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "CartPrecCiv",
-        "tarefa_atual": "Minutar ato",
+        "tarefa_atual": "Assinar ato",
         "autuacao": "11/11/2026",
         "desde": "14/11/2026",
         "dias_tramitando": 3,
@@ -25017,7 +25003,7 @@
       "processo": "0602106-87.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "CartPrecCiv",
-      "tarefa_atual": "Minutar ato",
+      "tarefa_atual": "Assinar ato",
       "autuacao": "11/11/2026",
       "desde": "14/11/2026",
       "dias_tramitando": 3,
@@ -33581,8 +33567,8 @@
     ]
   },
   "sigilosos_processos": [],
-  "publicado_em": "14/11/2026 15:12",
+  "publicado_em": "14/11/2026 15:13",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "1a652c5918f83a312dc189eeeb708307957a347823963b24eecc12f43f0d7df3"
+  "hash_publicacao": "b3708b1b804ce218efb6b91e73783b477f82e1e7616d53b1e1feb681972d2455"
 }
