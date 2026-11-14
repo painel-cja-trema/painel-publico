@@ -13,7 +13,7 @@
       "media_dias": 56.9,
       "maior_tempo": 220,
       "urgentes": 0,
-      "minutar": 0,
+      "minutar": 1,
       "julgados": 110,
       "percentual_julgados": 55.4,
       "arquivados": 104,
@@ -110,6 +110,11 @@
     },
     {
       "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Minutar ato",
+      "quantidade": 2
+    },
+    {
+      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
       "quantidade": 2
     },
@@ -145,17 +150,7 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Minutar ato",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Realizar triagem do processo - SOF",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Realizar triagem ordinários",
       "quantidade": 1
     },
     {
@@ -559,7 +554,13 @@
       "segredo_justica": "NÃO"
     }
   ],
-  "minutar_cja1": [],
+  "minutar_cja1": [
+    {
+      "processo": "0601146-34.2026.6.10.0000",
+      "classe": "CumSen",
+      "dias_tramitando": 65
+    }
+  ],
   "minutar_processos": [
     {
       "processo": "0601057-11.2026.6.10.0000",
@@ -572,6 +573,20 @@
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
+    },
+    {
+      "processo": "0601146-34.2026.6.10.0000",
+      "gabinete": "Gab. JA 1",
+      "classe": "CumSen",
+      "tarefa_atual": "Minutar ato",
+      "autuacao": "10/09/2026",
+      "desde": "14/11/2026",
+      "dias_tramitando": 65,
+      "julgado": true,
+      "data_julgamento": "14/09/2026",
+      "teor": "Julgado procedente o pedido em 14/09/2026",
       "segredo_justica": "NÃO",
       "responsavel_processo": ""
     },
@@ -644,8 +659,8 @@
         "total_acervo": 83,
         "contagens": {
           "TRIAGEM_URGENTE": 0,
-          "TRIAGEM_ORDINARIA": 3,
-          "MINUTAR_ATO": 0,
+          "TRIAGEM_ORDINARIA": 2,
+          "MINUTAR_ATO": 1,
           "ASSINAR_ATO": 2,
           "LANCAR_MOVIMENTACAO": 0
         }
@@ -677,8 +692,8 @@
     ],
     "totais": {
       "TRIAGEM_URGENTE": 0,
-      "TRIAGEM_ORDINARIA": 6,
-      "MINUTAR_ATO": 3,
+      "TRIAGEM_ORDINARIA": 5,
+      "MINUTAR_ATO": 4,
       "ASSINAR_ATO": 10,
       "LANCAR_MOVIMENTACAO": 2
     },
@@ -698,20 +713,6 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601146-34.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "CumSen",
-        "tarefa_atual": "Realizar triagem ordinários",
-        "autuacao": "10/09/2026",
-        "desde": "14/11/2026",
-        "dias_tramitando": 65,
-        "julgado": true,
-        "data_julgamento": "14/09/2026",
-        "teor": "Julgado procedente o pedido em 14/09/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -784,6 +785,20 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601146-34.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "CumSen",
+        "tarefa_atual": "Minutar ato",
+        "autuacao": "10/09/2026",
+        "desde": "14/11/2026",
+        "dias_tramitando": 65,
+        "julgado": true,
+        "data_julgamento": "14/09/2026",
+        "teor": "Julgado procedente o pedido em 14/09/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -1125,6 +1140,16 @@
         "total": 4
       },
       {
+        "codigo": "minutar-ato",
+        "tarefa": "Minutar ato",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 2
+        },
+        "total": 4
+      },
+      {
         "codigo": "registrar-ciencia-intimacao-pessoal",
         "tarefa": "Registrar ciência intimação pessoal",
         "contagens": {
@@ -1175,26 +1200,6 @@
         "total": 3
       },
       {
-        "codigo": "minutar-ato",
-        "tarefa": "Minutar ato",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 2
-        },
-        "total": 3
-      },
-      {
-        "codigo": "realizar-triagem-ordinarios",
-        "tarefa": "Realizar triagem ordinários",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 2
-        },
-        "total": 3
-      },
-      {
         "codigo": "elaborar-documentos",
         "tarefa": "Elaborar Documentos",
         "contagens": {
@@ -1211,6 +1216,16 @@
           "Gabinete Juiz Auxiliar 1": 2,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 2
+      },
+      {
+        "codigo": "realizar-triagem-ordinarios",
+        "tarefa": "Realizar triagem ordinários",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 2
         },
         "total": 2
       },
@@ -1466,7 +1481,7 @@
         "tarefa_atual": "Aguardando julgamento do recurso interno",
         "autuacao": "28/08/2026",
         "desde": "03/10/2026",
-        "dias_tramitando": 77,
+        "dias_tramitando": 78,
         "julgado": true,
         "data_julgamento": "25/09/2026",
         "teor": "Julgado improcedente o pedido em 25/09/2026",
@@ -3944,6 +3959,148 @@
         "responsavel_processo": ""
       }
     ],
+    "minutar-ato": [
+      {
+        "processo": "0600147-81.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "RepEsp",
+        "tarefa_atual": "Minutar ato",
+        "autuacao": "15/05/2026",
+        "desde": "10/11/2026",
+        "dias_tramitando": 183,
+        "julgado": true,
+        "data_julgamento": "11/08/2026",
+        "teor": "Julgado procedente em parte do pedido em 11/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600939-35.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Minutar ato",
+        "autuacao": "15/08/2026",
+        "desde": "04/11/2026",
+        "dias_tramitando": 90,
+        "julgado": true,
+        "data_julgamento": "22/08/2026",
+        "teor": "Julgado procedente em parte do pedido em 22/08/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601034-65.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Minutar ato",
+        "autuacao": "29/08/2026",
+        "desde": "30/10/2026",
+        "dias_tramitando": 77,
+        "julgado": true,
+        "data_julgamento": "19/09/2026",
+        "teor": "Julgado procedente em parte do pedido em 19/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601057-11.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Minutar ato",
+        "autuacao": "01/09/2026",
+        "desde": "14/11/2026",
+        "dias_tramitando": 74,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601089-16.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Minutar ato",
+        "autuacao": "03/09/2026",
+        "desde": "28/10/2026",
+        "dias_tramitando": 72,
+        "julgado": true,
+        "data_julgamento": "06/09/2026",
+        "teor": "Julgado procedente em parte do pedido em 06/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601096-08.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Minutar ato",
+        "autuacao": "04/09/2026",
+        "desde": "24/10/2026",
+        "dias_tramitando": 71,
+        "julgado": true,
+        "data_julgamento": "14/09/2026",
+        "teor": "Julgado procedente o pedido em 14/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601112-59.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Minutar ato",
+        "autuacao": "07/09/2026",
+        "desde": "01/11/2026",
+        "dias_tramitando": 68,
+        "julgado": true,
+        "data_julgamento": "14/09/2026",
+        "teor": "Julgado procedente em parte do pedido em 14/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601146-34.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "CumSen",
+        "tarefa_atual": "Minutar ato",
+        "autuacao": "10/09/2026",
+        "desde": "14/11/2026",
+        "dias_tramitando": 65,
+        "julgado": true,
+        "data_julgamento": "14/09/2026",
+        "teor": "Julgado procedente o pedido em 14/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601796-81.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "RepEsp",
+        "tarefa_atual": "Minutar ato",
+        "autuacao": "23/09/2026",
+        "desde": "14/11/2026",
+        "dias_tramitando": 52,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601914-57.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Minutar ato",
+        "autuacao": "02/10/2026",
+        "desde": "14/11/2026",
+        "dias_tramitando": 43,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "registrar-ciencia-intimacao-pessoal": [
       {
         "processo": "0601001-75.2026.6.10.0000",
@@ -4192,178 +4349,6 @@
         "responsavel_processo": ""
       }
     ],
-    "minutar-ato": [
-      {
-        "processo": "0600147-81.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "RepEsp",
-        "tarefa_atual": "Minutar ato",
-        "autuacao": "15/05/2026",
-        "desde": "10/11/2026",
-        "dias_tramitando": 183,
-        "julgado": true,
-        "data_julgamento": "11/08/2026",
-        "teor": "Julgado procedente em parte do pedido em 11/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600939-35.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Minutar ato",
-        "autuacao": "15/08/2026",
-        "desde": "04/11/2026",
-        "dias_tramitando": 90,
-        "julgado": true,
-        "data_julgamento": "22/08/2026",
-        "teor": "Julgado procedente em parte do pedido em 22/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601034-65.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Minutar ato",
-        "autuacao": "29/08/2026",
-        "desde": "30/10/2026",
-        "dias_tramitando": 77,
-        "julgado": true,
-        "data_julgamento": "19/09/2026",
-        "teor": "Julgado procedente em parte do pedido em 19/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601057-11.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Minutar ato",
-        "autuacao": "01/09/2026",
-        "desde": "14/11/2026",
-        "dias_tramitando": 74,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601089-16.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Minutar ato",
-        "autuacao": "03/09/2026",
-        "desde": "28/10/2026",
-        "dias_tramitando": 72,
-        "julgado": true,
-        "data_julgamento": "06/09/2026",
-        "teor": "Julgado procedente em parte do pedido em 06/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601096-08.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Minutar ato",
-        "autuacao": "04/09/2026",
-        "desde": "24/10/2026",
-        "dias_tramitando": 71,
-        "julgado": true,
-        "data_julgamento": "14/09/2026",
-        "teor": "Julgado procedente o pedido em 14/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601112-59.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Minutar ato",
-        "autuacao": "07/09/2026",
-        "desde": "01/11/2026",
-        "dias_tramitando": 68,
-        "julgado": true,
-        "data_julgamento": "14/09/2026",
-        "teor": "Julgado procedente em parte do pedido em 14/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601796-81.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "RepEsp",
-        "tarefa_atual": "Minutar ato",
-        "autuacao": "23/09/2026",
-        "desde": "14/11/2026",
-        "dias_tramitando": 52,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601914-57.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Minutar ato",
-        "autuacao": "02/10/2026",
-        "desde": "14/11/2026",
-        "dias_tramitando": 43,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "realizar-triagem-ordinarios": [
-      {
-        "processo": "0601146-34.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "CumSen",
-        "tarefa_atual": "Realizar triagem ordinários",
-        "autuacao": "10/09/2026",
-        "desde": "14/11/2026",
-        "dias_tramitando": 65,
-        "julgado": true,
-        "data_julgamento": "14/09/2026",
-        "teor": "Julgado procedente o pedido em 14/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601222-58.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Realizar triagem ordinários",
-        "autuacao": "11/09/2026",
-        "desde": "14/11/2026",
-        "dias_tramitando": 64,
-        "julgado": true,
-        "data_julgamento": "23/09/2026",
-        "teor": "Julgado procedente em parte do pedido em 23/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601737-93.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Realizar triagem ordinários",
-        "autuacao": "16/09/2026",
-        "desde": "14/11/2026",
-        "dias_tramitando": 58,
-        "julgado": true,
-        "data_julgamento": "22/09/2026",
-        "teor": "Julgado procedente em parte do pedido em 22/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "elaborar-documentos": [
       {
         "processo": "0601113-44.2026.6.10.0000",
@@ -4420,6 +4405,36 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "realizar-triagem-ordinarios": [
+      {
+        "processo": "0601222-58.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem ordinários",
+        "autuacao": "11/09/2026",
+        "desde": "14/11/2026",
+        "dias_tramitando": 64,
+        "julgado": true,
+        "data_julgamento": "23/09/2026",
+        "teor": "Julgado procedente em parte do pedido em 23/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601737-93.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem ordinários",
+        "autuacao": "16/09/2026",
+        "desde": "14/11/2026",
+        "dias_tramitando": 58,
+        "julgado": true,
+        "data_julgamento": "22/09/2026",
+        "teor": "Julgado procedente em parte do pedido em 22/09/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -4874,7 +4889,7 @@
         "tarefa_atual": "Aguardando julgamento do recurso interno",
         "autuacao": "28/08/2026",
         "desde": "03/10/2026",
-        "dias_tramitando": 77,
+        "dias_tramitando": 78,
         "julgado": true,
         "data_julgamento": "25/09/2026",
         "teor": "Julgado improcedente o pedido em 25/09/2026",
@@ -4983,7 +4998,7 @@
         "processo": "0601146-34.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "CumSen",
-        "tarefa_atual": "Realizar triagem ordinários",
+        "tarefa_atual": "Minutar ato",
         "autuacao": "10/09/2026",
         "desde": "14/11/2026",
         "dias_tramitando": 65,
@@ -10125,7 +10140,7 @@
       "tarefa_atual": "Aguardando julgamento do recurso interno",
       "autuacao": "28/08/2026",
       "desde": "03/10/2026",
-      "dias_tramitando": 77,
+      "dias_tramitando": 78,
       "julgado": true,
       "data_julgamento": "25/09/2026",
       "teor": "Julgado improcedente o pedido em 25/09/2026",
@@ -10416,7 +10431,7 @@
       "processo": "0601146-34.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "CumSen",
-      "tarefa_atual": "Realizar triagem ordinários",
+      "tarefa_atual": "Minutar ato",
       "autuacao": "10/09/2026",
       "desde": "14/11/2026",
       "dias_tramitando": 65,
@@ -22730,7 +22745,7 @@
       "tarefa_atual": "Aguardando julgamento do recurso interno",
       "autuacao": "28/08/2026",
       "desde": "03/10/2026",
-      "dias_tramitando": 77,
+      "dias_tramitando": 78,
       "julgado": true,
       "data_julgamento": "25/09/2026",
       "teor": "Julgado improcedente o pedido em 25/09/2026",
@@ -23021,7 +23036,7 @@
       "processo": "0601146-34.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "CumSen",
-      "tarefa_atual": "Realizar triagem ordinários",
+      "tarefa_atual": "Minutar ato",
       "autuacao": "10/09/2026",
       "desde": "14/11/2026",
       "dias_tramitando": 65,
@@ -32753,7 +32768,7 @@
       "tarefa_atual": "Aguardando julgamento do recurso interno",
       "autuacao": "28/08/2026",
       "desde": "03/10/2026",
-      "dias_tramitando": 77,
+      "dias_tramitando": 78,
       "julgado": true,
       "data_julgamento": "25/09/2026",
       "teor": "Julgado improcedente o pedido em 25/09/2026",
@@ -33002,7 +33017,7 @@
       "processo": "0601146-34.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "CumSen",
-      "tarefa_atual": "Realizar triagem ordinários",
+      "tarefa_atual": "Minutar ato",
       "autuacao": "10/09/2026",
       "desde": "14/11/2026",
       "dias_tramitando": 65,
@@ -33899,8 +33914,8 @@
     ]
   },
   "sigilosos_processos": [],
-  "publicado_em": "14/11/2026 18:05",
+  "publicado_em": "14/11/2026 18:06",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "335b2725fdd98161b22fbe7fec48006e838168abf46a866a3a84d97355d182f0"
+  "hash_publicacao": "357fe1048916251fb1211fad57d0c8ce61361b24f0d87a18950d12b8d04fd1d0"
 }
