@@ -210,6 +210,11 @@
     },
     {
       "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Remeter Processos - Gabinete",
+      "quantidade": 2
+    },
+    {
+      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Aguardando providências",
       "quantidade": 1
     },
@@ -230,17 +235,7 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Lançar movimento",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Realizar triagem ordinários",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Remeter Processos - Gabinete",
       "quantidade": 1
     },
     {
@@ -325,7 +320,7 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Elaborar documentos - Magistrado Assinar; Elaborar documentos - Magistrado Assinar; Elaborar documentos - Magistrado Assinar; Preparar comunicação",
+      "tarefa_atual": "Elaborar documentos - Magistrado Assinar; Elaborar documentos - Magistrado Assinar; Elaborar documentos - Magistrado Assinar; Processo com prazo em curso",
       "quantidade": 1
     },
     {
@@ -620,7 +615,7 @@
           "TRIAGEM_ORDINARIA": 1,
           "MINUTAR_ATO": 2,
           "ASSINAR_ATO": 4,
-          "LANCAR_MOVIMENTACAO": 1
+          "LANCAR_MOVIMENTACAO": 0
         }
       },
       {
@@ -641,7 +636,7 @@
       "TRIAGEM_ORDINARIA": 3,
       "MINUTAR_ATO": 3,
       "ASSINAR_ATO": 14,
-      "LANCAR_MOVIMENTACAO": 1
+      "LANCAR_MOVIMENTACAO": 0
     },
     "total_acervo": 224
   },
@@ -933,22 +928,7 @@
         "responsavel_processo": ""
       }
     ],
-    "LANCAR_MOVIMENTACAO": [
-      {
-        "processo": "0601921-49.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "02/10/2026",
-        "desde": "15/11/2026",
-        "dias_tramitando": 43,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ]
+    "LANCAR_MOVIMENTACAO": []
   },
   "entrada_comissao": {
     "codigo": "LIMINAR_CERTIFICACAO",
@@ -1156,6 +1136,16 @@
         "total": 2
       },
       {
+        "codigo": "remeter-processos-gabinete",
+        "tarefa": "Remeter Processos - Gabinete",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 2,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 2
+      },
+      {
         "codigo": "aguarda-julgamento-incluido-em-pauta-elaborar-voto-vista-iniciar-acordao-gabinete-processo-com-pedido-de-vista-processo-incluido-em-pauta-selecionar-documentos-para-acordao-gabinete",
         "tarefa": "Aguarda Julgamento - incluído em pauta; Elaborar voto vista; Iniciar Acórdão - Gabinete; Processo com pedido de vista; Processo incluído em pauta; Selecionar documentos para acórdão - Gabinete",
         "contagens": {
@@ -1216,8 +1206,8 @@
         "total": 1
       },
       {
-        "codigo": "elaborar-documentos-magistrado-assinar-elaborar-documentos-magistrado-assinar-elaborar-documentos-magistrado-assinar-preparar-comunicacao",
-        "tarefa": "Elaborar documentos - Magistrado Assinar; Elaborar documentos - Magistrado Assinar; Elaborar documentos - Magistrado Assinar; Preparar comunicação",
+        "codigo": "elaborar-documentos-magistrado-assinar-elaborar-documentos-magistrado-assinar-elaborar-documentos-magistrado-assinar-processo-com-prazo-em-curso",
+        "tarefa": "Elaborar documentos - Magistrado Assinar; Elaborar documentos - Magistrado Assinar; Elaborar documentos - Magistrado Assinar; Processo com prazo em curso",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
@@ -1236,31 +1226,11 @@
         "total": 1
       },
       {
-        "codigo": "lancar-movimento",
-        "tarefa": "Lançar movimento",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
         "codigo": "realizar-triagem-do-processo-sof",
         "tarefa": "Realizar triagem do processo - SOF",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "remeter-processos-gabinete",
-        "tarefa": "Remeter Processos - Gabinete",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -4283,6 +4253,36 @@
         "responsavel_processo": ""
       }
     ],
+    "remeter-processos-gabinete": [
+      {
+        "processo": "0601921-49.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Remeter Processos - Gabinete",
+        "autuacao": "02/10/2026",
+        "desde": "15/11/2026",
+        "dias_tramitando": 43,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0602113-79.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "CartPrecCiv",
+        "tarefa_atual": "Remeter Processos - Gabinete",
+        "autuacao": "13/11/2026",
+        "desde": "15/11/2026",
+        "dias_tramitando": 1,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "aguarda-julgamento-incluido-em-pauta-elaborar-voto-vista-iniciar-acordao-gabinete-processo-com-pedido-de-vista-processo-incluido-em-pauta-selecionar-documentos-para-acordao-gabinete": [
       {
         "processo": "0601027-73.2026.6.10.0000",
@@ -4379,12 +4379,12 @@
         "responsavel_processo": ""
       }
     ],
-    "elaborar-documentos-magistrado-assinar-elaborar-documentos-magistrado-assinar-elaborar-documentos-magistrado-assinar-preparar-comunicacao": [
+    "elaborar-documentos-magistrado-assinar-elaborar-documentos-magistrado-assinar-elaborar-documentos-magistrado-assinar-processo-com-prazo-em-curso": [
       {
         "processo": "0600926-36.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Elaborar documentos - Magistrado Assinar; Elaborar documentos - Magistrado Assinar; Elaborar documentos - Magistrado Assinar; Preparar comunicação",
+        "tarefa_atual": "Elaborar documentos - Magistrado Assinar; Elaborar documentos - Magistrado Assinar; Elaborar documentos - Magistrado Assinar; Processo com prazo em curso",
         "autuacao": "15/08/2026",
         "desde": "15/08/2026",
         "dias_tramitando": 92,
@@ -4411,22 +4411,6 @@
         "responsavel_processo": ""
       }
     ],
-    "lancar-movimento": [
-      {
-        "processo": "0601921-49.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Lançar movimento",
-        "autuacao": "02/10/2026",
-        "desde": "15/11/2026",
-        "dias_tramitando": 43,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "realizar-triagem-do-processo-sof": [
       {
         "processo": "0601762-09.2026.6.10.0000",
@@ -4439,22 +4423,6 @@
         "julgado": true,
         "data_julgamento": "24/09/2026",
         "teor": "Julgado procedente o pedido em 24/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "remeter-processos-gabinete": [
-      {
-        "processo": "0602113-79.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "CartPrecCiv",
-        "tarefa_atual": "Remeter Processos - Gabinete",
-        "autuacao": "13/11/2026",
-        "desde": "15/11/2026",
-        "dias_tramitando": 1,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -6472,7 +6440,7 @@
         "processo": "0601921-49.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Lançar movimento",
+        "tarefa_atual": "Remeter Processos - Gabinete",
         "autuacao": "02/10/2026",
         "desde": "15/11/2026",
         "dias_tramitando": 43,
@@ -6894,7 +6862,7 @@
         "processo": "0600926-36.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Elaborar documentos - Magistrado Assinar; Preparar comunicação",
+        "tarefa_atual": "Elaborar documentos - Magistrado Assinar; Processo com prazo em curso",
         "autuacao": "15/08/2026",
         "desde": "15/08/2026",
         "dias_tramitando": 92,
@@ -8005,7 +7973,7 @@
       "processo": "0600926-36.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Elaborar documentos - Magistrado Assinar; Preparar comunicação",
+      "tarefa_atual": "Elaborar documentos - Magistrado Assinar; Processo com prazo em curso",
       "autuacao": "15/08/2026",
       "desde": "15/08/2026",
       "dias_tramitando": 92,
@@ -8593,7 +8561,7 @@
       "processo": "0601921-49.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Lançar movimento",
+      "tarefa_atual": "Remeter Processos - Gabinete",
       "autuacao": "02/10/2026",
       "desde": "15/11/2026",
       "dias_tramitando": 43,
@@ -9427,7 +9395,7 @@
       "processo": "0600926-36.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Elaborar documentos - Magistrado Assinar; Preparar comunicação",
+      "tarefa_atual": "Elaborar documentos - Magistrado Assinar; Processo com prazo em curso",
       "autuacao": "15/08/2026",
       "desde": "15/08/2026",
       "dias_tramitando": 92,
@@ -11247,7 +11215,7 @@
       "processo": "0601921-49.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Lançar movimento",
+      "tarefa_atual": "Remeter Processos - Gabinete",
       "autuacao": "02/10/2026",
       "desde": "15/11/2026",
       "dias_tramitando": 43,
@@ -21990,7 +21958,7 @@
       "processo": "0600926-36.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Elaborar documentos - Magistrado Assinar; Preparar comunicação",
+      "tarefa_atual": "Elaborar documentos - Magistrado Assinar; Processo com prazo em curso",
       "autuacao": "15/08/2026",
       "desde": "15/08/2026",
       "dias_tramitando": 92,
@@ -23810,7 +23778,7 @@
       "processo": "0601921-49.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Lançar movimento",
+      "tarefa_atual": "Remeter Processos - Gabinete",
       "autuacao": "02/10/2026",
       "desde": "15/11/2026",
       "dias_tramitando": 43,
@@ -33432,8 +33400,8 @@
     ]
   },
   "sigilosos_processos": [],
-  "publicado_em": "15/11/2026 17:15",
+  "publicado_em": "15/11/2026 17:16",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "efb068e458257408b76a8f9a9feb5b09f6b4b9c95b5c720330ad92f102b18fe5"
+  "hash_publicacao": "9d6f225b6bb734239650444cf8ba8b9eb4254a8636023ad415a533e8a7c0ed6d"
 }
