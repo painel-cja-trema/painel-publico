@@ -115,11 +115,6 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Petições não lidas",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Atualizar dados do processo",
       "quantidade": 1
     },
@@ -141,6 +136,11 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Minutar ato",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
       "quantidade": 1
     },
     {
@@ -604,7 +604,7 @@
         "total_acervo": 79,
         "contagens": {
           "TRIAGEM_URGENTE": 0,
-          "TRIAGEM_ORDINARIA": 0,
+          "TRIAGEM_ORDINARIA": 1,
           "MINUTAR_ATO": 0,
           "ASSINAR_ATO": 9,
           "LANCAR_MOVIMENTACAO": 0
@@ -637,7 +637,7 @@
     ],
     "totais": {
       "TRIAGEM_URGENTE": 0,
-      "TRIAGEM_ORDINARIA": 3,
+      "TRIAGEM_ORDINARIA": 4,
       "MINUTAR_ATO": 3,
       "ASSINAR_ATO": 17,
       "LANCAR_MOVIMENTACAO": 1
@@ -686,6 +686,20 @@
         "julgado": true,
         "data_julgamento": "22/09/2026",
         "teor": "Julgado procedente em parte do pedido em 22/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600121-10.2026.6.10.0089",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
+        "autuacao": "07/10/2026",
+        "desde": "07/10/2026",
+        "dias_tramitando": 38,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -1237,16 +1251,6 @@
         "total": 1
       },
       {
-        "codigo": "analisar-peticao-avulsa-analisar-determinacao-peticoes-nao-lidas",
-        "tarefa": "Analisar Petição Avulsa; Analisar determinação; Petições não lidas",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
         "codigo": "analisar-determinacao-elaborar-documentos-magistrado-assinar-elaborar-documentos-magistrado-assinar",
         "tarefa": "Analisar determinação; Elaborar documentos - Magistrado Assinar; Elaborar documentos - Magistrado Assinar",
         "contagens": {
@@ -1293,6 +1297,16 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
+        "codigo": "peticoes-nao-lidas-realizar-triagem-ordinarios",
+        "tarefa": "Petições não lidas; Realizar triagem ordinários",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
       },
@@ -4346,22 +4360,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-peticao-avulsa-analisar-determinacao-peticoes-nao-lidas": [
-      {
-        "processo": "0600121-10.2026.6.10.0089",
-        "gabinete": "Gab. JA 1",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Petições não lidas",
-        "autuacao": "07/10/2026",
-        "desde": "07/10/2026",
-        "dias_tramitando": 38,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "analisar-determinacao-elaborar-documentos-magistrado-assinar-elaborar-documentos-magistrado-assinar": [
       {
         "processo": "0600926-36.2026.6.10.0000",
@@ -4435,6 +4433,22 @@
         "autuacao": "10/09/2026",
         "desde": "15/11/2026",
         "dias_tramitando": 66,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "peticoes-nao-lidas-realizar-triagem-ordinarios": [
+      {
+        "processo": "0600121-10.2026.6.10.0089",
+        "gabinete": "Gab. JA 1",
+        "classe": "Rp",
+        "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
+        "autuacao": "07/10/2026",
+        "desde": "07/10/2026",
+        "dias_tramitando": 38,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -5419,7 +5433,7 @@
         "processo": "0600121-10.2026.6.10.0089",
         "gabinete": "Gab. JA 1",
         "classe": "Rp",
-        "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Petições não lidas",
+        "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
         "autuacao": "07/10/2026",
         "desde": "07/10/2026",
         "dias_tramitando": 38,
@@ -8788,7 +8802,7 @@
       "processo": "0600121-10.2026.6.10.0089",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Petições não lidas",
+      "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
       "autuacao": "07/10/2026",
       "desde": "07/10/2026",
       "dias_tramitando": 38,
@@ -11554,7 +11568,7 @@
       "processo": "0600121-10.2026.6.10.0089",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Petições não lidas",
+      "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
       "autuacao": "07/10/2026",
       "desde": "07/10/2026",
       "dias_tramitando": 38,
@@ -24117,7 +24131,7 @@
       "processo": "0600121-10.2026.6.10.0089",
       "gabinete": "Gab. JA 1",
       "classe": "Rp",
-      "tarefa_atual": "Analisar Petição Avulsa; Analisar determinação; Petições não lidas",
+      "tarefa_atual": "Petições não lidas; Realizar triagem ordinários",
       "autuacao": "07/10/2026",
       "desde": "07/10/2026",
       "dias_tramitando": 38,
@@ -33347,8 +33361,8 @@
     ]
   },
   "sigilosos_processos": [],
-  "publicado_em": "15/11/2026 16:37",
+  "publicado_em": "15/11/2026 16:38",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "3f5b2b4f677e4f1a9f54cf7a4b9de60caf027274fd7795b7d41d0fb027966b7f"
+  "hash_publicacao": "8a8fd829d67c3c3dabfcf5d82071dd518698267e2de2a474556eae46dfcb997b"
 }
