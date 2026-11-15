@@ -221,7 +221,7 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Processo com prazo em curso",
-      "quantidade": 16
+      "quantidade": 15
     },
     {
       "gabinete": "Gab. JA 3",
@@ -255,6 +255,11 @@
     },
     {
       "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Analisar resposta do expediente",
+      "quantidade": 2
+    },
+    {
+      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Aguarda Julgamento - incluído em pauta virtual; Elaborar extrato da ata; Processo incluído em pauta virtual; Selecionar documentos para acórdão - Gabinete",
       "quantidade": 1
     },
@@ -281,11 +286,6 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Analisar Processos",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Analisar resposta do expediente",
       "quantidade": 1
     },
     {
@@ -799,9 +799,9 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 12,
           "Gabinete Juiz Auxiliar 2": 26,
-          "Gabinete Juiz Auxiliar 3": 16
+          "Gabinete Juiz Auxiliar 3": 15
         },
-        "total": 54
+        "total": 53
       },
       {
         "codigo": "aguardando-julgamento-do-recurso-interno",
@@ -944,6 +944,16 @@
         "total": 2
       },
       {
+        "codigo": "analisar-resposta-do-expediente",
+        "tarefa": "Analisar resposta do expediente",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 2
+        },
+        "total": 2
+      },
+      {
         "codigo": "realizar-triagem-ordinarios",
         "tarefa": "Realizar triagem ordinários",
         "contagens": {
@@ -990,16 +1000,6 @@
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "analisar-resposta-do-expediente",
-        "tarefa": "Analisar resposta do expediente",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 1
       },
@@ -1279,20 +1279,6 @@
         "julgado": true,
         "data_julgamento": "13/09/2026",
         "teor": "Julgado procedente em parte do pedido em 13/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601152-41.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Processo com prazo em curso",
-        "autuacao": "10/09/2026",
-        "desde": "15/11/2026",
-        "dias_tramitando": 66,
-        "julgado": true,
-        "data_julgamento": "15/11/2026",
-        "teor": "Extinto o processo por ausência de pressupostos processuais em 15/11/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -3971,6 +3957,36 @@
         "responsavel_processo": ""
       }
     ],
+    "analisar-resposta-do-expediente": [
+      {
+        "processo": "0601057-11.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar resposta do expediente",
+        "autuacao": "01/09/2026",
+        "desde": "15/11/2026",
+        "dias_tramitando": 75,
+        "julgado": true,
+        "data_julgamento": "15/11/2026",
+        "teor": "Julgado procedente em parte do pedido em 15/11/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601152-41.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Analisar resposta do expediente",
+        "autuacao": "10/09/2026",
+        "desde": "15/11/2026",
+        "dias_tramitando": 66,
+        "julgado": true,
+        "data_julgamento": "15/11/2026",
+        "teor": "Extinto o processo por ausência de pressupostos processuais em 15/11/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "realizar-triagem-ordinarios": [
       {
         "processo": "0602116-34.2026.6.10.0000",
@@ -4061,22 +4077,6 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "analisar-resposta-do-expediente": [
-      {
-        "processo": "0601057-11.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar resposta do expediente",
-        "autuacao": "01/09/2026",
-        "desde": "15/11/2026",
-        "dias_tramitando": 75,
-        "julgado": true,
-        "data_julgamento": "15/11/2026",
-        "teor": "Julgado procedente em parte do pedido em 15/11/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -6944,7 +6944,7 @@
         "processo": "0601152-41.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Processo com prazo em curso",
+        "tarefa_atual": "Analisar resposta do expediente",
         "autuacao": "10/09/2026",
         "desde": "15/11/2026",
         "dias_tramitando": 66,
@@ -9838,7 +9838,7 @@
       "processo": "0601152-41.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Processo com prazo em curso",
+      "tarefa_atual": "Analisar resposta do expediente",
       "autuacao": "10/09/2026",
       "desde": "15/11/2026",
       "dias_tramitando": 66,
@@ -22491,7 +22491,7 @@
       "processo": "0601152-41.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Processo com prazo em curso",
+      "tarefa_atual": "Analisar resposta do expediente",
       "autuacao": "10/09/2026",
       "desde": "15/11/2026",
       "dias_tramitando": 66,
@@ -32565,7 +32565,7 @@
       "processo": "0601152-41.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Processo com prazo em curso",
+      "tarefa_atual": "Analisar resposta do expediente",
       "autuacao": "10/09/2026",
       "desde": "15/11/2026",
       "dias_tramitando": 66,
@@ -33490,8 +33490,8 @@
     ]
   },
   "sigilosos_processos": [],
-  "publicado_em": "15/11/2026 19:37",
+  "publicado_em": "15/11/2026 19:40",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "c78d1532afeedfde1eb696769626dfed08779dd876ce94e7741d80c0a148111c"
+  "hash_publicacao": "8f391f68164c56e2cf702add10cf7167122b5b54f530f5ddd10c97301d7011b0"
 }
