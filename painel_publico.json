@@ -215,6 +215,11 @@
     },
     {
       "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Visualizar expediente DJE",
+      "quantidade": 2
+    },
+    {
+      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Aguarda Julgamento - incluído em pauta virtual; Elaborar extrato da ata; Processo incluído em pauta virtual; Selecionar documentos para acórdão - Gabinete",
       "quantidade": 1
     },
@@ -255,22 +260,12 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Preparar comunicação",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Remessa para outra instância",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Verificar Pendências",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Visualizar expediente DJE",
       "quantidade": 1
     },
     {
@@ -310,11 +305,6 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Analisar Processos",
-      "quantidade": 2
-    },
-    {
-      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Analisar resposta do expediente",
       "quantidade": 2
     },
@@ -345,7 +335,17 @@
     },
     {
       "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Analisar Processos",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Elaborar Documentos",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Preparar comunicação",
       "quantidade": 1
     },
     {
@@ -1027,16 +1027,6 @@
         "total": 3
       },
       {
-        "codigo": "analisar-processos",
-        "tarefa": "Analisar Processos",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 2
-        },
-        "total": 3
-      },
-      {
         "codigo": "minutar-relatorio-voto-e-ementa",
         "tarefa": "Minutar Relatório, Voto e Ementa",
         "contagens": {
@@ -1047,8 +1037,18 @@
         "total": 3
       },
       {
-        "codigo": "elaborar-documentos",
-        "tarefa": "Elaborar Documentos",
+        "codigo": "visualizar-expediente-dje",
+        "tarefa": "Visualizar expediente DJE",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 2,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 3
+      },
+      {
+        "codigo": "analisar-processos",
+        "tarefa": "Analisar Processos",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -1057,12 +1057,12 @@
         "total": 2
       },
       {
-        "codigo": "visualizar-expediente-dje",
-        "tarefa": "Visualizar expediente DJE",
+        "codigo": "elaborar-documentos",
+        "tarefa": "Elaborar Documentos",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
+          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 2
       },
@@ -1171,8 +1171,8 @@
         "tarefa": "Preparar comunicação",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 1
       },
@@ -3914,50 +3914,6 @@
         "responsavel_processo": ""
       }
     ],
-    "analisar-processos": [
-      {
-        "processo": "0600190-18.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Ag no(a) Rp",
-        "tarefa_atual": "Analisar Processos",
-        "autuacao": "23/07/2026",
-        "desde": "03/09/2026",
-        "dias_tramitando": 115,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600969-70.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos",
-        "autuacao": "02/09/2026",
-        "desde": "10/11/2026",
-        "dias_tramitando": 74,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601893-81.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "ED no(a) REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos",
-        "autuacao": "09/11/2026",
-        "desde": "16/11/2026",
-        "dias_tramitando": 6,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "minutar-relatorio-voto-e-ementa": [
       {
         "processo": "0601790-74.2026.6.10.0000",
@@ -4002,6 +3958,80 @@
         "responsavel_processo": ""
       }
     ],
+    "visualizar-expediente-dje": [
+      {
+        "processo": "0600968-85.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "CumSen",
+        "tarefa_atual": "Visualizar expediente DJE",
+        "autuacao": "22/08/2026",
+        "desde": "16/11/2026",
+        "dias_tramitando": 85,
+        "julgado": true,
+        "data_julgamento": "09/09/2026",
+        "teor": "Julgado procedente em parte do pedido em 09/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601063-18.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "CumSen",
+        "tarefa_atual": "Visualizar expediente DJE",
+        "autuacao": "01/09/2026",
+        "desde": "16/11/2026",
+        "dias_tramitando": 75,
+        "julgado": true,
+        "data_julgamento": "21/10/2026",
+        "teor": "Julgado procedente o pedido em 21/10/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601873-90.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "RepEsp",
+        "tarefa_atual": "Visualizar expediente DJE",
+        "autuacao": "30/09/2026",
+        "desde": "29/10/2026",
+        "dias_tramitando": 46,
+        "julgado": true,
+        "data_julgamento": "29/10/2026",
+        "teor": "Julgado improcedente o pedido em 29/10/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "analisar-processos": [
+      {
+        "processo": "0600190-18.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Ag no(a) Rp",
+        "tarefa_atual": "Analisar Processos",
+        "autuacao": "23/07/2026",
+        "desde": "03/09/2026",
+        "dias_tramitando": 115,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600969-70.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Analisar Processos",
+        "autuacao": "02/09/2026",
+        "desde": "10/11/2026",
+        "dias_tramitando": 74,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "elaborar-documentos": [
       {
         "processo": "0601142-94.2026.6.10.0000",
@@ -4028,36 +4058,6 @@
         "julgado": true,
         "data_julgamento": "21/10/2026",
         "teor": "Julgado procedente em parte do pedido em 21/10/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "visualizar-expediente-dje": [
-      {
-        "processo": "0600968-85.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "CumSen",
-        "tarefa_atual": "Visualizar expediente DJE",
-        "autuacao": "22/08/2026",
-        "desde": "16/11/2026",
-        "dias_tramitando": 85,
-        "julgado": true,
-        "data_julgamento": "09/09/2026",
-        "teor": "Julgado procedente em parte do pedido em 09/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601873-90.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "RepEsp",
-        "tarefa_atual": "Visualizar expediente DJE",
-        "autuacao": "30/09/2026",
-        "desde": "29/10/2026",
-        "dias_tramitando": 46,
-        "julgado": true,
-        "data_julgamento": "29/10/2026",
-        "teor": "Julgado improcedente o pedido em 29/10/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -4336,16 +4336,16 @@
     ],
     "preparar-comunicacao": [
       {
-        "processo": "0601063-18.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "CumSen",
+        "processo": "0601893-81.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "ED no(a) REC no(a) Rp",
         "tarefa_atual": "Preparar comunicação",
-        "autuacao": "01/09/2026",
+        "autuacao": "09/11/2026",
         "desde": "16/11/2026",
-        "dias_tramitando": 75,
-        "julgado": true,
-        "data_julgamento": "21/10/2026",
-        "teor": "Julgado procedente o pedido em 21/10/2026",
+        "dias_tramitando": 6,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -5863,7 +5863,7 @@
         "processo": "0601063-18.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "CumSen",
-        "tarefa_atual": "Preparar comunicação",
+        "tarefa_atual": "Visualizar expediente DJE",
         "autuacao": "01/09/2026",
         "desde": "16/11/2026",
         "dias_tramitando": 75,
@@ -7489,7 +7489,7 @@
         "processo": "0601893-81.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "ED no(a) REC no(a) Rp",
-        "tarefa_atual": "Analisar Processos",
+        "tarefa_atual": "Preparar comunicação",
         "autuacao": "09/11/2026",
         "desde": "16/11/2026",
         "dias_tramitando": 6,
@@ -9753,7 +9753,7 @@
       "processo": "0601063-18.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "CumSen",
-      "tarefa_atual": "Preparar comunicação",
+      "tarefa_atual": "Visualizar expediente DJE",
       "autuacao": "01/09/2026",
       "desde": "16/11/2026",
       "dias_tramitando": 75,
@@ -22406,7 +22406,7 @@
       "processo": "0601063-18.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "CumSen",
-      "tarefa_atual": "Preparar comunicação",
+      "tarefa_atual": "Visualizar expediente DJE",
       "autuacao": "01/09/2026",
       "desde": "16/11/2026",
       "dias_tramitando": 75,
@@ -27021,7 +27021,7 @@
       "processo": "0601893-81.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "ED no(a) REC no(a) Rp",
-      "tarefa_atual": "Analisar Processos",
+      "tarefa_atual": "Preparar comunicação",
       "autuacao": "09/11/2026",
       "desde": "16/11/2026",
       "dias_tramitando": 6,
@@ -32466,7 +32466,7 @@
       "processo": "0601063-18.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "CumSen",
-      "tarefa_atual": "Preparar comunicação",
+      "tarefa_atual": "Visualizar expediente DJE",
       "autuacao": "01/09/2026",
       "desde": "16/11/2026",
       "dias_tramitando": 75,
@@ -33531,8 +33531,8 @@
     ]
   },
   "sigilosos_processos": [],
-  "publicado_em": "16/11/2026 08:55",
+  "publicado_em": "16/11/2026 08:56",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "f9225ad44a97df938024b086a02c751f01aae09c892900f9f7b724f3bb9ac95f"
+  "hash_publicacao": "00f5032ce4928e65c6b39a282648dd765f80f2fa2ffb2f92a4fe0430dfa55cd1"
 }
