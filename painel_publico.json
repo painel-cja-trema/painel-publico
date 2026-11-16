@@ -245,11 +245,6 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Definir procedimento",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Elaborar Documentos",
       "quantidade": 1
     },
@@ -261,6 +256,11 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Remessa para outra instância",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Remeter Processo",
       "quantidade": 1
     },
     {
@@ -335,7 +335,7 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Aguardando julgamento do recurso interno; Analisar Petição Avulsa; Registrar recurso",
+      "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
       "quantidade": 1
     },
     {
@@ -1174,22 +1174,22 @@
         "total": 1
       },
       {
-        "codigo": "aguardando-julgamento-do-recurso-interno-analisar-peticao-avulsa-registrar-recurso",
-        "tarefa": "Aguardando julgamento do recurso interno; Analisar Petição Avulsa; Registrar recurso",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
         "codigo": "aguardando-julgamento-do-recurso-interno-peticoes-nao-lidas-peticoes-nao-lidas-peticoes-nao-lidas",
         "tarefa": "Aguardando julgamento do recurso interno; Petições não lidas; Petições não lidas; Petições não lidas",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "aguardando-julgamento-do-recurso-interno-registrar-recurso",
+        "tarefa": "Aguardando julgamento do recurso interno; Registrar recurso",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
         },
         "total": 1
       },
@@ -1210,16 +1210,6 @@
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
-        "codigo": "definir-procedimento",
-        "tarefa": "Definir procedimento",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
       },
@@ -1266,6 +1256,16 @@
       {
         "codigo": "remessa-para-outra-instancia",
         "tarefa": "Remessa para outra instância",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "remeter-processo",
+        "tarefa": "Remeter Processo",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -4351,22 +4351,6 @@
         "responsavel_processo": ""
       }
     ],
-    "aguardando-julgamento-do-recurso-interno-analisar-peticao-avulsa-registrar-recurso": [
-      {
-        "processo": "0600982-69.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "RepEsp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno; Analisar Petição Avulsa; Registrar recurso",
-        "autuacao": "24/08/2026",
-        "desde": "24/08/2026",
-        "dias_tramitando": 84,
-        "julgado": true,
-        "data_julgamento": "09/09/2026",
-        "teor": "Julgado procedente em parte do pedido em 09/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "aguardando-julgamento-do-recurso-interno-peticoes-nao-lidas-peticoes-nao-lidas-peticoes-nao-lidas": [
       {
         "processo": "0601785-52.2026.6.10.0000",
@@ -4379,6 +4363,22 @@
         "julgado": true,
         "data_julgamento": "26/09/2026",
         "teor": "Julgado procedente em parte do pedido em 26/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "aguardando-julgamento-do-recurso-interno-registrar-recurso": [
+      {
+        "processo": "0600982-69.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "RepEsp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
+        "autuacao": "24/08/2026",
+        "desde": "24/08/2026",
+        "dias_tramitando": 84,
+        "julgado": true,
+        "data_julgamento": "09/09/2026",
+        "teor": "Julgado procedente em parte do pedido em 09/09/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -4408,22 +4408,6 @@
         "autuacao": "28/09/2026",
         "desde": "16/11/2026",
         "dias_tramitando": 48,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "definir-procedimento": [
-      {
-        "processo": "0602119-86.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "CartPrecCiv",
-        "tarefa_atual": "Definir procedimento",
-        "autuacao": "16/11/2026",
-        "desde": "16/11/2026",
-        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -4507,6 +4491,22 @@
         "julgado": true,
         "data_julgamento": "01/09/2026",
         "teor": "Julgado procedente em parte do pedido em 01/09/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "remeter-processo": [
+      {
+        "processo": "0602119-86.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "CartPrecCiv",
+        "tarefa_atual": "Remeter Processo",
+        "autuacao": "16/11/2026",
+        "desde": "16/11/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -6900,7 +6900,7 @@
         "processo": "0602119-86.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "CartPrecCiv",
-        "tarefa_atual": "Definir procedimento",
+        "tarefa_atual": "Remeter Processo",
         "autuacao": "16/11/2026",
         "desde": "16/11/2026",
         "dias_tramitando": 0,
@@ -6986,7 +6986,7 @@
         "processo": "0600982-69.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "RepEsp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno; Analisar Petição Avulsa; Registrar recurso",
+        "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
         "autuacao": "24/08/2026",
         "desde": "24/08/2026",
         "dias_tramitando": 84,
@@ -9628,7 +9628,7 @@
       "processo": "0600982-69.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "RepEsp",
-      "tarefa_atual": "Aguardando julgamento do recurso interno; Analisar Petição Avulsa; Registrar recurso",
+      "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
       "autuacao": "24/08/2026",
       "desde": "24/08/2026",
       "dias_tramitando": 84,
@@ -22281,7 +22281,7 @@
       "processo": "0600982-69.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "RepEsp",
-      "tarefa_atual": "Aguardando julgamento do recurso interno; Analisar Petição Avulsa; Registrar recurso",
+      "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
       "autuacao": "24/08/2026",
       "desde": "24/08/2026",
       "dias_tramitando": 84,
@@ -24836,7 +24836,7 @@
       "processo": "0602119-86.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "CartPrecCiv",
-      "tarefa_atual": "Definir procedimento",
+      "tarefa_atual": "Remeter Processo",
       "autuacao": "16/11/2026",
       "desde": "16/11/2026",
       "dias_tramitando": 0,
@@ -32515,7 +32515,7 @@
       "processo": "0600982-69.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "RepEsp",
-      "tarefa_atual": "Aguardando julgamento do recurso interno; Analisar Petição Avulsa; Registrar recurso",
+      "tarefa_atual": "Aguardando julgamento do recurso interno; Registrar recurso",
       "autuacao": "24/08/2026",
       "desde": "24/08/2026",
       "dias_tramitando": 84,
@@ -33818,8 +33818,8 @@
     ]
   },
   "sigilosos_processos": [],
-  "publicado_em": "16/11/2026 15:37",
+  "publicado_em": "16/11/2026 15:38",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "2e78674ecab7f7af53b8123b317bf6b8bdf41182a7c92d958215f502ff42f58d"
+  "hash_publicacao": "8a844234cec8641fcbd5854b6600e60b6687048282416ffb0e830eced999873b"
 }
