@@ -315,17 +315,17 @@
     },
     {
       "gabinete": "Gab. JA 3",
-      "tarefa_atual": "Preparar comunicação",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 3",
       "tarefa_atual": "Registrar ciência intimação pessoal",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Registrar ciência por telefone ou pessoalmente",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Visualizar expediente DJE",
       "quantidade": 1
     }
   ],
@@ -1399,6 +1399,16 @@
         "total": 2
       },
       {
+        "codigo": "visualizar-expediente-dje",
+        "tarefa": "Visualizar expediente DJE",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 2
+      },
+      {
         "codigo": "aguarda-sessao-de-julgamento-iniciar-acordao-gabinete-processo-incluido-em-pauta-selecionar-documentos-para-acordao-gabinete-verificar-inclusao-de-notas-orais",
         "tarefa": "Aguarda Sessão de Julgamento; Iniciar Acórdão - Gabinete; Processo incluído em pauta; Selecionar documentos para acórdão - Gabinete; Verificar inclusão de notas orais",
         "contagens": {
@@ -1469,31 +1479,11 @@
         "total": 1
       },
       {
-        "codigo": "preparar-comunicacao",
-        "tarefa": "Preparar comunicação",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 1
-        },
-        "total": 1
-      },
-      {
         "codigo": "realizar-triagem-ordinarios",
         "tarefa": "Realizar triagem ordinários",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "visualizar-expediente-dje",
-        "tarefa": "Visualizar expediente DJE",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -4274,6 +4264,36 @@
         "responsavel_processo": ""
       }
     ],
+    "visualizar-expediente-dje": [
+      {
+        "processo": "0600958-41.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "DR",
+        "tarefa_atual": "Visualizar expediente DJE",
+        "autuacao": "21/08/2026",
+        "desde": "22/11/2026",
+        "dias_tramitando": 93,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601771-68.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "CumSen",
+        "tarefa_atual": "Visualizar expediente DJE",
+        "autuacao": "21/09/2026",
+        "desde": "22/11/2026",
+        "dias_tramitando": 61,
+        "julgado": true,
+        "data_julgamento": "06/11/2026",
+        "teor": "Julgado procedente o pedido em 06/11/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "aguarda-sessao-de-julgamento-iniciar-acordao-gabinete-processo-incluido-em-pauta-selecionar-documentos-para-acordao-gabinete-verificar-inclusao-de-notas-orais": [
       {
         "processo": "0601026-88.2026.6.10.0000",
@@ -4470,22 +4490,6 @@
         "responsavel_processo": ""
       }
     ],
-    "preparar-comunicacao": [
-      {
-        "processo": "0600958-41.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "DR",
-        "tarefa_atual": "Preparar comunicação",
-        "autuacao": "21/08/2026",
-        "desde": "22/11/2026",
-        "dias_tramitando": 93,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "realizar-triagem-ordinarios": [
       {
         "processo": "0601848-77.2026.6.10.0000",
@@ -4498,22 +4502,6 @@
         "julgado": true,
         "data_julgamento": "07/10/2026",
         "teor": "Julgado procedente em parte do pedido em 07/10/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "visualizar-expediente-dje": [
-      {
-        "processo": "0601771-68.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "CumSen",
-        "tarefa_atual": "Visualizar expediente DJE",
-        "autuacao": "21/09/2026",
-        "desde": "22/11/2026",
-        "dias_tramitando": 61,
-        "julgado": true,
-        "data_julgamento": "06/11/2026",
-        "teor": "Julgado procedente o pedido em 06/11/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -6825,7 +6813,7 @@
         "processo": "0600958-41.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "DR",
-        "tarefa_atual": "Preparar comunicação",
+        "tarefa_atual": "Visualizar expediente DJE",
         "autuacao": "21/08/2026",
         "desde": "22/11/2026",
         "dias_tramitando": 93,
@@ -7880,7 +7868,7 @@
       "processo": "0600958-41.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "DR",
-      "tarefa_atual": "Preparar comunicação",
+      "tarefa_atual": "Visualizar expediente DJE",
       "autuacao": "21/08/2026",
       "desde": "22/11/2026",
       "dias_tramitando": 93,
@@ -9213,7 +9201,7 @@
       "processo": "0600958-41.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "DR",
-      "tarefa_atual": "Preparar comunicação",
+      "tarefa_atual": "Visualizar expediente DJE",
       "autuacao": "21/08/2026",
       "desde": "22/11/2026",
       "dias_tramitando": 93,
@@ -22166,7 +22154,7 @@
       "processo": "0600958-41.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "DR",
-      "tarefa_atual": "Preparar comunicação",
+      "tarefa_atual": "Visualizar expediente DJE",
       "autuacao": "21/08/2026",
       "desde": "22/11/2026",
       "dias_tramitando": 93,
@@ -33958,8 +33946,8 @@
     ]
   },
   "sigilosos_processos": [],
-  "publicado_em": "22/11/2026 14:49",
+  "publicado_em": "22/11/2026 14:50",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "8512d7b98cf042255b19f4056e429828c43960015d1cf1439356ae844b4e71be"
+  "hash_publicacao": "2b677b13d0e3ff3937bb290bc7c043445e702cabef4f19d818640963aa598cf2"
 }
