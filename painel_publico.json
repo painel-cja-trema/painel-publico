@@ -130,12 +130,12 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Fechar expediente manualmente",
+      "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
       "quantidade": 1
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
+      "tarefa_atual": "Verificar Pendências",
       "quantidade": 1
     },
     {
@@ -1236,21 +1236,21 @@
         "total": 1
       },
       {
-        "codigo": "fechar-expediente-manualmente",
-        "tarefa": "Fechar expediente manualmente",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 1,
-          "Gabinete Juiz Auxiliar 2": 0,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
         "codigo": "peticoes-nao-lidas-realizar-triagem-ordinarios",
         "tarefa": "Petições não lidas; Realizar triagem ordinários",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "verificar-pendencias",
+        "tarefa": "Verificar Pendências",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 1,
+          "Gabinete Juiz Auxiliar 2": 0,
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 1
@@ -3869,7 +3869,7 @@
         "tarefa_atual": "Registrar ciência intimação pessoal",
         "autuacao": "01/10/2026",
         "desde": "09/11/2026",
-        "dias_tramitando": 52,
+        "dias_tramitando": 53,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -4139,22 +4139,6 @@
         "responsavel_processo": ""
       }
     ],
-    "fechar-expediente-manualmente": [
-      {
-        "processo": "0602127-63.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "CartPrecCiv",
-        "tarefa_atual": "Fechar expediente manualmente",
-        "autuacao": "18/11/2026",
-        "desde": "23/11/2026",
-        "dias_tramitando": 5,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "peticoes-nao-lidas-realizar-triagem-ordinarios": [
       {
         "processo": "0601900-73.2026.6.10.0000",
@@ -4164,6 +4148,22 @@
         "autuacao": "01/10/2026",
         "desde": "01/10/2026",
         "dias_tramitando": 52,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "verificar-pendencias": [
+      {
+        "processo": "0602127-63.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "CartPrecCiv",
+        "tarefa_atual": "Verificar Pendências",
+        "autuacao": "18/11/2026",
+        "desde": "23/11/2026",
+        "dias_tramitando": 5,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -5172,7 +5172,7 @@
         "processo": "0602127-63.2026.6.10.0000",
         "gabinete": "Gab. JA 1",
         "classe": "CartPrecCiv",
-        "tarefa_atual": "Fechar expediente manualmente",
+        "tarefa_atual": "Verificar Pendências",
         "autuacao": "18/11/2026",
         "desde": "23/11/2026",
         "dias_tramitando": 5,
@@ -5871,6 +5871,20 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0601882-52.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Registrar ciência intimação pessoal",
+        "autuacao": "01/10/2026",
+        "desde": "09/11/2026",
+        "dias_tramitando": 53,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0600023-71.2026.6.10.0009",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
@@ -5881,20 +5895,6 @@
         "julgado": true,
         "data_julgamento": "08/11/2026",
         "teor": "Julgado procedente o pedido em 08/11/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601882-52.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Registrar ciência intimação pessoal",
-        "autuacao": "01/10/2026",
-        "desde": "09/11/2026",
-        "dias_tramitando": 52,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -7900,7 +7900,7 @@
       "tarefa_atual": "Registrar ciência intimação pessoal",
       "autuacao": "01/10/2026",
       "desde": "09/11/2026",
-      "dias_tramitando": 52,
+      "dias_tramitando": 53,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -10206,6 +10206,20 @@
       "responsavel_processo": ""
     },
     {
+      "processo": "0601882-52.2026.6.10.0000",
+      "gabinete": "Gab. JA 2",
+      "classe": "Rp",
+      "tarefa_atual": "Registrar ciência intimação pessoal",
+      "autuacao": "01/10/2026",
+      "desde": "09/11/2026",
+      "dias_tramitando": 53,
+      "julgado": false,
+      "data_julgamento": "",
+      "teor": "",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
+    },
+    {
       "processo": "0600023-71.2026.6.10.0009",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
@@ -10216,20 +10230,6 @@
       "julgado": true,
       "data_julgamento": "08/11/2026",
       "teor": "Julgado procedente o pedido em 08/11/2026",
-      "segredo_justica": "NÃO",
-      "responsavel_processo": ""
-    },
-    {
-      "processo": "0601882-52.2026.6.10.0000",
-      "gabinete": "Gab. JA 2",
-      "classe": "Rp",
-      "tarefa_atual": "Registrar ciência intimação pessoal",
-      "autuacao": "01/10/2026",
-      "desde": "09/11/2026",
-      "dias_tramitando": 52,
-      "julgado": false,
-      "data_julgamento": "",
-      "teor": "",
       "segredo_justica": "NÃO",
       "responsavel_processo": ""
     },
@@ -23189,6 +23189,20 @@
       "responsavel_processo": ""
     },
     {
+      "processo": "0601882-52.2026.6.10.0000",
+      "gabinete": "Gab. JA 2",
+      "classe": "Rp",
+      "tarefa_atual": "Registrar ciência intimação pessoal",
+      "autuacao": "01/10/2026",
+      "desde": "09/11/2026",
+      "dias_tramitando": 53,
+      "julgado": false,
+      "data_julgamento": "",
+      "teor": "",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
+    },
+    {
       "processo": "0600023-71.2026.6.10.0009",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
@@ -23199,20 +23213,6 @@
       "julgado": true,
       "data_julgamento": "08/11/2026",
       "teor": "Julgado procedente o pedido em 08/11/2026",
-      "segredo_justica": "NÃO",
-      "responsavel_processo": ""
-    },
-    {
-      "processo": "0601882-52.2026.6.10.0000",
-      "gabinete": "Gab. JA 2",
-      "classe": "Rp",
-      "tarefa_atual": "Registrar ciência intimação pessoal",
-      "autuacao": "01/10/2026",
-      "desde": "09/11/2026",
-      "dias_tramitando": 52,
-      "julgado": false,
-      "data_julgamento": "",
-      "teor": "",
       "segredo_justica": "NÃO",
       "responsavel_processo": ""
     },
@@ -24421,7 +24421,7 @@
       "processo": "0602127-63.2026.6.10.0000",
       "gabinete": "Gab. JA 1",
       "classe": "CartPrecCiv",
-      "tarefa_atual": "Fechar expediente manualmente",
+      "tarefa_atual": "Verificar Pendências",
       "autuacao": "18/11/2026",
       "desde": "23/11/2026",
       "dias_tramitando": 5,
@@ -33656,8 +33656,8 @@
     ]
   },
   "sigilosos_processos": [],
-  "publicado_em": "23/11/2026 14:08",
+  "publicado_em": "23/11/2026 14:09",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "3b7459e9e78e30d84ca988139c4df7d047e27d71ba1bfb3cda2bafffcfe754d2"
+  "hash_publicacao": "25e5434ed07c1649ae2bc13aff364fbf778056369241e05768014728bd25578e"
 }
