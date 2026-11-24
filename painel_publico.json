@@ -150,12 +150,12 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Aguardando julgamento do recurso interno",
-      "quantidade": 14
+      "tarefa_atual": "Processo com prazo em curso",
+      "quantidade": 15
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Processo com prazo em curso",
+      "tarefa_atual": "Aguardando julgamento do recurso interno",
       "quantidade": 14
     },
     {
@@ -215,11 +215,6 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Preparar comunicação",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Processo com prazo em curso; Registrar recurso",
       "quantidade": 1
     },
@@ -241,7 +236,7 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Analisar determinação",
-      "quantidade": 7
+      "quantidade": 6
     },
     {
       "gabinete": "Gab. JA 3",
@@ -301,6 +296,11 @@
     {
       "gabinete": "Gab. JA 3",
       "tarefa_atual": "Assinar ato",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 3",
+      "tarefa_atual": "Elaborar Documentos",
       "quantidade": 1
     },
     {
@@ -456,7 +456,7 @@
       "processo": "0600250-88.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Preparar comunicação",
+      "tarefa_atual": "Processo com prazo em curso",
       "dias_tramitando": 123,
       "segredo_justica": "NÃO"
     },
@@ -899,10 +899,10 @@
         "tarefa": "Processo com prazo em curso",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 19,
-          "Gabinete Juiz Auxiliar 2": 14,
+          "Gabinete Juiz Auxiliar 2": 15,
           "Gabinete Juiz Auxiliar 3": 15
         },
-        "total": 48
+        "total": 49
       },
       {
         "codigo": "analisar-determinacao",
@@ -910,9 +910,9 @@
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 11,
           "Gabinete Juiz Auxiliar 2": 23,
-          "Gabinete Juiz Auxiliar 3": 7
+          "Gabinete Juiz Auxiliar 3": 6
         },
-        "total": 41
+        "total": 40
       },
       {
         "codigo": "aguardando-julgamento-do-recurso-interno",
@@ -1145,6 +1145,16 @@
         "total": 1
       },
       {
+        "codigo": "elaborar-documentos",
+        "tarefa": "Elaborar Documentos",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 0,
+          "Gabinete Juiz Auxiliar 3": 1
+        },
+        "total": 1
+      },
+      {
         "codigo": "elaborar-documentos-peticoes-nao-lidas",
         "tarefa": "Elaborar Documentos; Petições não lidas",
         "contagens": {
@@ -1157,16 +1167,6 @@
       {
         "codigo": "lancar-movimento",
         "tarefa": "Lançar movimento",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
-        "codigo": "preparar-comunicacao",
-        "tarefa": "Preparar comunicação",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -1253,6 +1253,20 @@
         "autuacao": "07/07/2026",
         "desde": "23/11/2026",
         "dias_tramitando": 140,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600250-88.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Processo com prazo em curso",
+        "autuacao": "23/07/2026",
+        "desde": "24/11/2026",
+        "dias_tramitando": 123,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -2230,20 +2244,6 @@
       {
         "processo": "0601920-64.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
-        "autuacao": "02/10/2026",
-        "desde": "24/11/2026",
-        "dias_tramitando": 52,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601922-34.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
         "classe": "Rp",
         "tarefa_atual": "Analisar determinação",
         "autuacao": "02/10/2026",
@@ -4108,6 +4108,22 @@
         "responsavel_processo": ""
       }
     ],
+    "elaborar-documentos": [
+      {
+        "processo": "0601922-34.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Elaborar Documentos",
+        "autuacao": "02/10/2026",
+        "desde": "24/11/2026",
+        "dias_tramitando": 52,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
     "elaborar-documentos-peticoes-nao-lidas": [
       {
         "processo": "0601758-69.2026.6.10.0000",
@@ -4136,22 +4152,6 @@
         "julgado": true,
         "data_julgamento": "20/08/2026",
         "teor": "Julgado procedente em parte do pedido em 20/08/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
-    "preparar-comunicacao": [
-      {
-        "processo": "0600250-88.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Preparar comunicação",
-        "autuacao": "23/07/2026",
-        "desde": "24/11/2026",
-        "dias_tramitando": 123,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -5245,7 +5245,7 @@
         "processo": "0600250-88.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
-        "tarefa_atual": "Preparar comunicação",
+        "tarefa_atual": "Processo com prazo em curso",
         "autuacao": "23/07/2026",
         "desde": "24/11/2026",
         "dias_tramitando": 123,
@@ -6885,7 +6885,7 @@
         "processo": "0601922-34.2026.6.10.0000",
         "gabinete": "Gab. JA 3",
         "classe": "Rp",
-        "tarefa_atual": "Analisar determinação",
+        "tarefa_atual": "Elaborar Documentos",
         "autuacao": "02/10/2026",
         "desde": "24/11/2026",
         "dias_tramitando": 52,
@@ -7464,7 +7464,7 @@
       "processo": "0600250-88.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Preparar comunicação",
+      "tarefa_atual": "Processo com prazo em curso",
       "autuacao": "23/07/2026",
       "desde": "24/11/2026",
       "dias_tramitando": 123,
@@ -7982,7 +7982,7 @@
       "processo": "0601922-34.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Elaborar Documentos",
       "autuacao": "02/10/2026",
       "desde": "24/11/2026",
       "dias_tramitando": 52,
@@ -8695,7 +8695,7 @@
       "processo": "0600250-88.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Preparar comunicação",
+      "tarefa_atual": "Processo com prazo em curso",
       "autuacao": "23/07/2026",
       "desde": "24/11/2026",
       "dias_tramitando": 123,
@@ -10445,7 +10445,7 @@
       "processo": "0601922-34.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Elaborar Documentos",
       "autuacao": "02/10/2026",
       "desde": "24/11/2026",
       "dias_tramitando": 52,
@@ -21706,7 +21706,7 @@
       "processo": "0600250-88.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
-      "tarefa_atual": "Preparar comunicação",
+      "tarefa_atual": "Processo com prazo em curso",
       "autuacao": "23/07/2026",
       "desde": "24/11/2026",
       "dias_tramitando": 123,
@@ -23456,7 +23456,7 @@
       "processo": "0601922-34.2026.6.10.0000",
       "gabinete": "Gab. JA 3",
       "classe": "Rp",
-      "tarefa_atual": "Analisar determinação",
+      "tarefa_atual": "Elaborar Documentos",
       "autuacao": "02/10/2026",
       "desde": "24/11/2026",
       "dias_tramitando": 52,
@@ -33800,8 +33800,8 @@
     ]
   },
   "sigilosos_processos": [],
-  "publicado_em": "24/11/2026 16:05",
+  "publicado_em": "24/11/2026 16:07",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "a9e159710ecb4b1166885120bd0028383f674e5dcfff5d812d91659adecdf801"
+  "hash_publicacao": "036126b65871d245abed5e2ad960218521c4e380c70aaa47af844b4ccd971051"
 }
