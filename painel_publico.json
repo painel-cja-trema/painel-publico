@@ -13,7 +13,7 @@
       "media_dias": 70.6,
       "maior_tempo": 230,
       "urgentes": 0,
-      "minutar": 0,
+      "minutar": 1,
       "julgados": 116,
       "percentual_julgados": 64.3,
       "arquivados": 113,
@@ -90,17 +90,17 @@
     },
     {
       "gabinete": "Gab. JA 1",
-      "tarefa_atual": "Realizar triagem ordinários",
-      "quantidade": 3
-    },
-    {
-      "gabinete": "Gab. JA 1",
       "tarefa_atual": "Revisar ato",
       "quantidade": 3
     },
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Analisar determinação; Petições não lidas",
+      "quantidade": 2
+    },
+    {
+      "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Realizar triagem ordinários",
       "quantidade": 2
     },
     {
@@ -121,6 +121,11 @@
     {
       "gabinete": "Gab. JA 1",
       "tarefa_atual": "Informar data de trânsito em julgado",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 1",
+      "tarefa_atual": "Minutar ato",
       "quantidade": 1
     },
     {
@@ -494,7 +499,13 @@
       "segredo_justica": "NÃO"
     }
   ],
-  "minutar_cja1": [],
+  "minutar_cja1": [
+    {
+      "processo": "0600042-38.2026.6.10.0022",
+      "classe": "NIP",
+      "dias_tramitando": 0
+    }
+  ],
   "minutar_processos": [
     {
       "processo": "0601113-44.2026.6.10.0000",
@@ -551,6 +562,20 @@
       "teor": "",
       "segredo_justica": "NÃO",
       "responsavel_processo": ""
+    },
+    {
+      "processo": "0600042-38.2026.6.10.0022",
+      "gabinete": "Gab. JA 1",
+      "classe": "NIP",
+      "tarefa_atual": "Minutar ato",
+      "autuacao": "24/11/2026",
+      "desde": "24/11/2026",
+      "dias_tramitando": 0,
+      "julgado": false,
+      "data_julgamento": "",
+      "teor": "",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
     }
   ],
   "tarefas_criticas": {
@@ -593,8 +618,8 @@
         "total_acervo": 70,
         "contagens": {
           "TRIAGEM_URGENTE": 0,
-          "TRIAGEM_ORDINARIA": 3,
-          "MINUTAR_ATO": 0,
+          "TRIAGEM_ORDINARIA": 2,
+          "MINUTAR_ATO": 1,
           "ASSINAR_ATO": 0,
           "LANCAR_MOVIMENTACAO": 0
         }
@@ -626,8 +651,8 @@
     ],
     "totais": {
       "TRIAGEM_URGENTE": 0,
-      "TRIAGEM_ORDINARIA": 7,
-      "MINUTAR_ATO": 4,
+      "TRIAGEM_ORDINARIA": 6,
+      "MINUTAR_ATO": 5,
       "ASSINAR_ATO": 0,
       "LANCAR_MOVIMENTACAO": 2
     },
@@ -719,20 +744,6 @@
         "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
-      },
-      {
-        "processo": "0600042-38.2026.6.10.0022",
-        "gabinete": "Gab. JA 1",
-        "classe": "NIP",
-        "tarefa_atual": "Realizar triagem ordinários",
-        "autuacao": "24/11/2026",
-        "desde": "24/11/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
       }
     ],
     "MINUTAR_ATO": [
@@ -786,6 +797,20 @@
         "autuacao": "01/10/2026",
         "desde": "24/11/2026",
         "dias_tramitando": 53,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600042-38.2026.6.10.0022",
+        "gabinete": "Gab. JA 1",
+        "classe": "NIP",
+        "tarefa_atual": "Minutar ato",
+        "autuacao": "24/11/2026",
+        "desde": "24/11/2026",
+        "dias_tramitando": 0,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -901,16 +926,6 @@
         "total": 8
       },
       {
-        "codigo": "realizar-triagem-ordinarios",
-        "tarefa": "Realizar triagem ordinários",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 3,
-          "Gabinete Juiz Auxiliar 2": 2,
-          "Gabinete Juiz Auxiliar 3": 2
-        },
-        "total": 7
-      },
-      {
         "codigo": "revisar-relatorio-voto-e-ementa",
         "tarefa": "Revisar Relatório, Voto e Ementa",
         "contagens": {
@@ -919,6 +934,16 @@
           "Gabinete Juiz Auxiliar 3": 0
         },
         "total": 7
+      },
+      {
+        "codigo": "realizar-triagem-ordinarios",
+        "tarefa": "Realizar triagem ordinários",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 2,
+          "Gabinete Juiz Auxiliar 2": 2,
+          "Gabinete Juiz Auxiliar 3": 2
+        },
+        "total": 6
       },
       {
         "codigo": "analisar-processos",
@@ -944,11 +969,11 @@
         "codigo": "minutar-ato",
         "tarefa": "Minutar ato",
         "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 1": 1,
           "Gabinete Juiz Auxiliar 2": 1,
           "Gabinete Juiz Auxiliar 3": 3
         },
-        "total": 4
+        "total": 5
       },
       {
         "codigo": "registrar-ciencia-por-telefone-ou-pessoalmente",
@@ -2848,6 +2873,20 @@
         "responsavel_processo": ""
       },
       {
+        "processo": "0601893-81.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Aguardando julgamento do recurso interno",
+        "autuacao": "01/10/2026",
+        "desde": "17/10/2026",
+        "dias_tramitando": 54,
+        "julgado": true,
+        "data_julgamento": "04/11/2026",
+        "teor": "Não conhecido o recurso de MARCO ANDRÉ CAMPOS DA SILVA em 04/11/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
         "processo": "0600023-71.2026.6.10.0009",
         "gabinete": "Gab. JA 2",
         "classe": "Rp",
@@ -2858,20 +2897,6 @@
         "julgado": true,
         "data_julgamento": "08/11/2026",
         "teor": "Julgado procedente o pedido em 08/11/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601893-81.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Aguardando julgamento do recurso interno",
-        "autuacao": "01/10/2026",
-        "desde": "17/10/2026",
-        "dias_tramitando": 53,
-        "julgado": true,
-        "data_julgamento": "04/11/2026",
-        "teor": "Não conhecido o recurso de MARCO ANDRÉ CAMPOS DA SILVA em 04/11/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       },
@@ -3188,106 +3213,6 @@
         "responsavel_processo": ""
       }
     ],
-    "realizar-triagem-ordinarios": [
-      {
-        "processo": "0601235-57.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "CumSen",
-        "tarefa_atual": "Realizar triagem ordinários",
-        "autuacao": "11/09/2026",
-        "desde": "24/11/2026",
-        "dias_tramitando": 74,
-        "julgado": true,
-        "data_julgamento": "21/10/2026",
-        "teor": "Julgado procedente o pedido em 21/10/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601848-77.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "CumSen",
-        "tarefa_atual": "Realizar triagem ordinários",
-        "autuacao": "29/09/2026",
-        "desde": "19/11/2026",
-        "dias_tramitando": 56,
-        "julgado": true,
-        "data_julgamento": "07/10/2026",
-        "teor": "Julgado procedente em parte do pedido em 07/10/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601870-38.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Realizar triagem ordinários",
-        "autuacao": "30/09/2026",
-        "desde": "24/11/2026",
-        "dias_tramitando": 54,
-        "julgado": true,
-        "data_julgamento": "15/10/2026",
-        "teor": "Julgado procedente o pedido em 15/10/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601896-36.2026.6.10.0000",
-        "gabinete": "Gab. JA 3",
-        "classe": "Rp",
-        "tarefa_atual": "Realizar triagem ordinários",
-        "autuacao": "01/10/2026",
-        "desde": "24/11/2026",
-        "dias_tramitando": 53,
-        "julgado": true,
-        "data_julgamento": "27/10/2026",
-        "teor": "Não conhecido o recurso de IRACEMA CRISTINA VALE LIMA em 27/10/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601923-19.2026.6.10.0000",
-        "gabinete": "Gab. JA 1",
-        "classe": "RepEsp",
-        "tarefa_atual": "Realizar triagem ordinários",
-        "autuacao": "02/10/2026",
-        "desde": "24/11/2026",
-        "dias_tramitando": 52,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0601930-11.2026.6.10.0000",
-        "gabinete": "Gab. JA 2",
-        "classe": "Rp",
-        "tarefa_atual": "Realizar triagem ordinários",
-        "autuacao": "03/10/2026",
-        "desde": "24/11/2026",
-        "dias_tramitando": 52,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      },
-      {
-        "processo": "0600042-38.2026.6.10.0022",
-        "gabinete": "Gab. JA 1",
-        "classe": "NIP",
-        "tarefa_atual": "Realizar triagem ordinários",
-        "autuacao": "24/11/2026",
-        "desde": "24/11/2026",
-        "dias_tramitando": 0,
-        "julgado": false,
-        "data_julgamento": "",
-        "teor": "",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "revisar-relatorio-voto-e-ementa": [
       {
         "processo": "0601789-89.2026.6.10.0000",
@@ -3381,6 +3306,92 @@
         "autuacao": "17/11/2026",
         "desde": "22/11/2026",
         "dias_tramitando": 7,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "realizar-triagem-ordinarios": [
+      {
+        "processo": "0601235-57.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "CumSen",
+        "tarefa_atual": "Realizar triagem ordinários",
+        "autuacao": "11/09/2026",
+        "desde": "24/11/2026",
+        "dias_tramitando": 74,
+        "julgado": true,
+        "data_julgamento": "21/10/2026",
+        "teor": "Julgado procedente o pedido em 21/10/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601848-77.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "CumSen",
+        "tarefa_atual": "Realizar triagem ordinários",
+        "autuacao": "29/09/2026",
+        "desde": "19/11/2026",
+        "dias_tramitando": 56,
+        "julgado": true,
+        "data_julgamento": "07/10/2026",
+        "teor": "Julgado procedente em parte do pedido em 07/10/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601870-38.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem ordinários",
+        "autuacao": "30/09/2026",
+        "desde": "24/11/2026",
+        "dias_tramitando": 54,
+        "julgado": true,
+        "data_julgamento": "15/10/2026",
+        "teor": "Julgado procedente o pedido em 15/10/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601896-36.2026.6.10.0000",
+        "gabinete": "Gab. JA 3",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem ordinários",
+        "autuacao": "01/10/2026",
+        "desde": "24/11/2026",
+        "dias_tramitando": 53,
+        "julgado": true,
+        "data_julgamento": "27/10/2026",
+        "teor": "Não conhecido o recurso de IRACEMA CRISTINA VALE LIMA em 27/10/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601923-19.2026.6.10.0000",
+        "gabinete": "Gab. JA 1",
+        "classe": "RepEsp",
+        "tarefa_atual": "Realizar triagem ordinários",
+        "autuacao": "02/10/2026",
+        "desde": "24/11/2026",
+        "dias_tramitando": 52,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0601930-11.2026.6.10.0000",
+        "gabinete": "Gab. JA 2",
+        "classe": "Rp",
+        "tarefa_atual": "Realizar triagem ordinários",
+        "autuacao": "03/10/2026",
+        "desde": "24/11/2026",
+        "dias_tramitando": 52,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -3642,6 +3653,20 @@
         "julgado": true,
         "data_julgamento": "19/10/2026",
         "teor": "Julgado procedente o pedido em 19/10/2026",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      },
+      {
+        "processo": "0600042-38.2026.6.10.0022",
+        "gabinete": "Gab. JA 1",
+        "classe": "NIP",
+        "tarefa_atual": "Minutar ato",
+        "autuacao": "24/11/2026",
+        "desde": "24/11/2026",
+        "dias_tramitando": 0,
+        "julgado": false,
+        "data_julgamento": "",
+        "teor": "",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -5075,7 +5100,7 @@
         "processo": "0600042-38.2026.6.10.0022",
         "gabinete": "Gab. JA 1",
         "classe": "NIP",
-        "tarefa_atual": "Realizar triagem ordinários",
+        "tarefa_atual": "Minutar ato",
         "autuacao": "24/11/2026",
         "desde": "24/11/2026",
         "dias_tramitando": 0,
@@ -6748,7 +6773,7 @@
         "tarefa_atual": "Aguardando julgamento do recurso interno",
         "autuacao": "01/10/2026",
         "desde": "17/10/2026",
-        "dias_tramitando": 53,
+        "dias_tramitando": 54,
         "julgado": true,
         "data_julgamento": "04/11/2026",
         "teor": "Não conhecido o recurso de MARCO ANDRÉ CAMPOS DA SILVA em 04/11/2026",
@@ -7182,7 +7207,7 @@
       "classe": "Rp",
       "teor": "Não conhecido o recurso de MARCO ANDRÉ CAMPOS DA SILVA em 04/11/2026",
       "data_julgamento": "04/11/2026",
-      "dias_tramitando": 53
+      "dias_tramitando": 54
     },
     {
       "processo": "0600962-78.2026.6.10.0000",
@@ -8094,7 +8119,7 @@
       "processo": "0600042-38.2026.6.10.0022",
       "gabinete": "Gab. JA 1",
       "classe": "NIP",
-      "tarefa_atual": "Realizar triagem ordinários",
+      "tarefa_atual": "Minutar ato",
       "autuacao": "24/11/2026",
       "desde": "24/11/2026",
       "dias_tramitando": 0,
@@ -10148,6 +10173,20 @@
       "responsavel_processo": ""
     },
     {
+      "processo": "0601893-81.2026.6.10.0000",
+      "gabinete": "Gab. JA 3",
+      "classe": "Rp",
+      "tarefa_atual": "Aguardando julgamento do recurso interno",
+      "autuacao": "01/10/2026",
+      "desde": "17/10/2026",
+      "dias_tramitando": 54,
+      "julgado": true,
+      "data_julgamento": "04/11/2026",
+      "teor": "Não conhecido o recurso de MARCO ANDRÉ CAMPOS DA SILVA em 04/11/2026",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
+    },
+    {
       "processo": "0600023-71.2026.6.10.0009",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
@@ -10158,20 +10197,6 @@
       "julgado": true,
       "data_julgamento": "08/11/2026",
       "teor": "Julgado procedente o pedido em 08/11/2026",
-      "segredo_justica": "NÃO",
-      "responsavel_processo": ""
-    },
-    {
-      "processo": "0601893-81.2026.6.10.0000",
-      "gabinete": "Gab. JA 3",
-      "classe": "Rp",
-      "tarefa_atual": "Aguardando julgamento do recurso interno",
-      "autuacao": "01/10/2026",
-      "desde": "17/10/2026",
-      "dias_tramitando": 53,
-      "julgado": true,
-      "data_julgamento": "04/11/2026",
-      "teor": "Não conhecido o recurso de MARCO ANDRÉ CAMPOS DA SILVA em 04/11/2026",
       "segredo_justica": "NÃO",
       "responsavel_processo": ""
     },
@@ -10697,7 +10722,7 @@
       "processo": "0600042-38.2026.6.10.0022",
       "gabinete": "Gab. JA 1",
       "classe": "NIP",
-      "tarefa_atual": "Realizar triagem ordinários",
+      "tarefa_atual": "Minutar ato",
       "autuacao": "24/11/2026",
       "desde": "24/11/2026",
       "dias_tramitando": 0,
@@ -23159,6 +23184,20 @@
       "responsavel_processo": ""
     },
     {
+      "processo": "0601893-81.2026.6.10.0000",
+      "gabinete": "Gab. JA 3",
+      "classe": "Rp",
+      "tarefa_atual": "Aguardando julgamento do recurso interno",
+      "autuacao": "01/10/2026",
+      "desde": "17/10/2026",
+      "dias_tramitando": 54,
+      "julgado": true,
+      "data_julgamento": "04/11/2026",
+      "teor": "Não conhecido o recurso de MARCO ANDRÉ CAMPOS DA SILVA em 04/11/2026",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
+    },
+    {
       "processo": "0600023-71.2026.6.10.0009",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
@@ -23169,20 +23208,6 @@
       "julgado": true,
       "data_julgamento": "08/11/2026",
       "teor": "Julgado procedente o pedido em 08/11/2026",
-      "segredo_justica": "NÃO",
-      "responsavel_processo": ""
-    },
-    {
-      "processo": "0601893-81.2026.6.10.0000",
-      "gabinete": "Gab. JA 3",
-      "classe": "Rp",
-      "tarefa_atual": "Aguardando julgamento do recurso interno",
-      "autuacao": "01/10/2026",
-      "desde": "17/10/2026",
-      "dias_tramitando": 53,
-      "julgado": true,
-      "data_julgamento": "04/11/2026",
-      "teor": "Não conhecido o recurso de MARCO ANDRÉ CAMPOS DA SILVA em 04/11/2026",
       "segredo_justica": "NÃO",
       "responsavel_processo": ""
     },
@@ -23694,7 +23719,7 @@
       "processo": "0600042-38.2026.6.10.0022",
       "gabinete": "Gab. JA 1",
       "classe": "NIP",
-      "tarefa_atual": "Realizar triagem ordinários",
+      "tarefa_atual": "Minutar ato",
       "autuacao": "24/11/2026",
       "desde": "24/11/2026",
       "dias_tramitando": 0,
@@ -33404,6 +33429,20 @@
       "responsavel_processo": ""
     },
     {
+      "processo": "0601893-81.2026.6.10.0000",
+      "gabinete": "Gab. JA 3",
+      "classe": "Rp",
+      "tarefa_atual": "Aguardando julgamento do recurso interno",
+      "autuacao": "01/10/2026",
+      "desde": "17/10/2026",
+      "dias_tramitando": 54,
+      "julgado": true,
+      "data_julgamento": "04/11/2026",
+      "teor": "Não conhecido o recurso de MARCO ANDRÉ CAMPOS DA SILVA em 04/11/2026",
+      "segredo_justica": "NÃO",
+      "responsavel_processo": ""
+    },
+    {
       "processo": "0600023-71.2026.6.10.0009",
       "gabinete": "Gab. JA 2",
       "classe": "Rp",
@@ -33414,20 +33453,6 @@
       "julgado": true,
       "data_julgamento": "08/11/2026",
       "teor": "Julgado procedente o pedido em 08/11/2026",
-      "segredo_justica": "NÃO",
-      "responsavel_processo": ""
-    },
-    {
-      "processo": "0601893-81.2026.6.10.0000",
-      "gabinete": "Gab. JA 3",
-      "classe": "Rp",
-      "tarefa_atual": "Aguardando julgamento do recurso interno",
-      "autuacao": "01/10/2026",
-      "desde": "17/10/2026",
-      "dias_tramitando": 53,
-      "julgado": true,
-      "data_julgamento": "04/11/2026",
-      "teor": "Não conhecido o recurso de MARCO ANDRÉ CAMPOS DA SILVA em 04/11/2026",
       "segredo_justica": "NÃO",
       "responsavel_processo": ""
     },
@@ -33702,8 +33727,8 @@
     ]
   },
   "sigilosos_processos": [],
-  "publicado_em": "24/11/2026 17:28",
+  "publicado_em": "24/11/2026 17:29",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "bf2941b440e44a2f8c476d727ee2eed5ebf4fed0238288b3a187562940d43e88"
+  "hash_publicacao": "0475b16e32d0e597444b0212ecc8f9502b981f7fef48156f3b8148846aefadda"
 }
