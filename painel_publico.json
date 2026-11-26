@@ -230,11 +230,6 @@
     },
     {
       "gabinete": "Gab. JA 2",
-      "tarefa_atual": "Elaborar Documentos",
-      "quantidade": 1
-    },
-    {
-      "gabinete": "Gab. JA 2",
       "tarefa_atual": "Lançar movimento",
       "quantidade": 1
     },
@@ -251,6 +246,11 @@
     {
       "gabinete": "Gab. JA 2",
       "tarefa_atual": "Revisar Relatório, Voto e Ementa",
+      "quantidade": 1
+    },
+    {
+      "gabinete": "Gab. JA 2",
+      "tarefa_atual": "Verificar Pendências",
       "quantidade": 1
     },
     {
@@ -1388,16 +1388,6 @@
         "total": 1
       },
       {
-        "codigo": "elaborar-documentos",
-        "tarefa": "Elaborar Documentos",
-        "contagens": {
-          "Gabinete Juiz Auxiliar 1": 0,
-          "Gabinete Juiz Auxiliar 2": 1,
-          "Gabinete Juiz Auxiliar 3": 0
-        },
-        "total": 1
-      },
-      {
         "codigo": "lancar-movimento",
         "tarefa": "Lançar movimento",
         "contagens": {
@@ -1430,6 +1420,16 @@
       {
         "codigo": "registrar-ciencia-intimacao-pessoal",
         "tarefa": "Registrar ciência intimação pessoal",
+        "contagens": {
+          "Gabinete Juiz Auxiliar 1": 0,
+          "Gabinete Juiz Auxiliar 2": 1,
+          "Gabinete Juiz Auxiliar 3": 0
+        },
+        "total": 1
+      },
+      {
+        "codigo": "verificar-pendencias",
+        "tarefa": "Verificar Pendências",
         "contagens": {
           "Gabinete Juiz Auxiliar 1": 0,
           "Gabinete Juiz Auxiliar 2": 1,
@@ -2291,7 +2291,7 @@
         "tarefa_atual": "Aguardando julgamento do recurso interno",
         "autuacao": "22/09/2026",
         "desde": "06/10/2026",
-        "dias_tramitando": 64,
+        "dias_tramitando": 65,
         "julgado": true,
         "data_julgamento": "03/10/2026",
         "teor": "Julgado procedente o pedido em 03/10/2026",
@@ -3633,7 +3633,7 @@
         "tarefa_atual": "Analisar Processos",
         "autuacao": "14/11/2026",
         "desde": "25/11/2026",
-        "dias_tramitando": 11,
+        "dias_tramitando": 12,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -4341,22 +4341,6 @@
         "responsavel_processo": ""
       }
     ],
-    "elaborar-documentos": [
-      {
-        "processo": "0600080-26.2026.6.10.0030",
-        "gabinete": "Gab. JA 2",
-        "classe": "CumSen",
-        "tarefa_atual": "Elaborar Documentos",
-        "autuacao": "16/09/2026",
-        "desde": "26/11/2026",
-        "dias_tramitando": 71,
-        "julgado": true,
-        "data_julgamento": "29/09/2026",
-        "teor": "Julgado procedente o pedido em 29/09/2026",
-        "segredo_justica": "NÃO",
-        "responsavel_processo": ""
-      }
-    ],
     "lancar-movimento": [
       {
         "processo": "0600108-84.2026.6.10.0000",
@@ -4417,6 +4401,22 @@
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
+        "segredo_justica": "NÃO",
+        "responsavel_processo": ""
+      }
+    ],
+    "verificar-pendencias": [
+      {
+        "processo": "0600080-26.2026.6.10.0030",
+        "gabinete": "Gab. JA 2",
+        "classe": "CumSen",
+        "tarefa_atual": "Verificar Pendências",
+        "autuacao": "16/09/2026",
+        "desde": "26/11/2026",
+        "dias_tramitando": 71,
+        "julgado": true,
+        "data_julgamento": "29/09/2026",
+        "teor": "Julgado procedente o pedido em 29/09/2026",
         "segredo_justica": "NÃO",
         "responsavel_processo": ""
       }
@@ -4823,7 +4823,7 @@
         "tarefa_atual": "Aguardando julgamento do recurso interno",
         "autuacao": "22/09/2026",
         "desde": "06/10/2026",
-        "dias_tramitando": 64,
+        "dias_tramitando": 65,
         "julgado": true,
         "data_julgamento": "03/10/2026",
         "teor": "Julgado procedente o pedido em 03/10/2026",
@@ -5788,7 +5788,7 @@
         "processo": "0600080-26.2026.6.10.0030",
         "gabinete": "Gab. JA 2",
         "classe": "CumSen",
-        "tarefa_atual": "Elaborar Documentos",
+        "tarefa_atual": "Verificar Pendências",
         "autuacao": "16/09/2026",
         "desde": "26/11/2026",
         "dias_tramitando": 71,
@@ -6429,12 +6429,12 @@
         "responsavel_processo": ""
       },
       {
-        "processo": "0601801-06.2026.6.10.0000",
+        "processo": "0600357-35.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
-        "classe": "REC no(a) Rp",
-        "tarefa_atual": "Conferir Relatório, Voto e Ementa",
+        "classe": "ED no(a) RepEsp",
+        "tarefa_atual": "Analisar Processos",
         "autuacao": "14/11/2026",
-        "desde": "23/11/2026",
+        "desde": "25/11/2026",
         "dias_tramitando": 12,
         "julgado": false,
         "data_julgamento": "",
@@ -6443,13 +6443,13 @@
         "responsavel_processo": ""
       },
       {
-        "processo": "0600357-35.2026.6.10.0000",
+        "processo": "0601801-06.2026.6.10.0000",
         "gabinete": "Gab. JA 2",
-        "classe": "ED no(a) RepEsp",
-        "tarefa_atual": "Analisar Processos",
+        "classe": "REC no(a) Rp",
+        "tarefa_atual": "Conferir Relatório, Voto e Ementa",
         "autuacao": "14/11/2026",
-        "desde": "25/11/2026",
-        "dias_tramitando": 11,
+        "desde": "23/11/2026",
+        "dias_tramitando": 12,
         "julgado": false,
         "data_julgamento": "",
         "teor": "",
@@ -9817,7 +9817,7 @@
       "processo": "0600080-26.2026.6.10.0030",
       "gabinete": "Gab. JA 2",
       "classe": "CumSen",
-      "tarefa_atual": "Elaborar Documentos",
+      "tarefa_atual": "Verificar Pendências",
       "autuacao": "16/09/2026",
       "desde": "26/11/2026",
       "dias_tramitando": 71,
@@ -10030,7 +10030,7 @@
       "tarefa_atual": "Aguardando julgamento do recurso interno",
       "autuacao": "22/09/2026",
       "desde": "06/10/2026",
-      "dias_tramitando": 64,
+      "dias_tramitando": 65,
       "julgado": true,
       "data_julgamento": "03/10/2026",
       "teor": "Julgado procedente o pedido em 03/10/2026",
@@ -22987,7 +22987,7 @@
       "processo": "0600080-26.2026.6.10.0030",
       "gabinete": "Gab. JA 2",
       "classe": "CumSen",
-      "tarefa_atual": "Elaborar Documentos",
+      "tarefa_atual": "Verificar Pendências",
       "autuacao": "16/09/2026",
       "desde": "26/11/2026",
       "dias_tramitando": 71,
@@ -23200,7 +23200,7 @@
       "tarefa_atual": "Aguardando julgamento do recurso interno",
       "autuacao": "22/09/2026",
       "desde": "06/10/2026",
-      "dias_tramitando": 64,
+      "dias_tramitando": 65,
       "julgado": true,
       "data_julgamento": "03/10/2026",
       "teor": "Julgado procedente o pedido em 03/10/2026",
@@ -27617,12 +27617,12 @@
       "responsavel_processo": ""
     },
     {
-      "processo": "0601801-06.2026.6.10.0000",
+      "processo": "0600357-35.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
-      "classe": "REC no(a) Rp",
-      "tarefa_atual": "Conferir Relatório, Voto e Ementa",
+      "classe": "ED no(a) RepEsp",
+      "tarefa_atual": "Analisar Processos",
       "autuacao": "14/11/2026",
-      "desde": "23/11/2026",
+      "desde": "25/11/2026",
       "dias_tramitando": 12,
       "julgado": false,
       "data_julgamento": "",
@@ -27631,13 +27631,13 @@
       "responsavel_processo": ""
     },
     {
-      "processo": "0600357-35.2026.6.10.0000",
+      "processo": "0601801-06.2026.6.10.0000",
       "gabinete": "Gab. JA 2",
-      "classe": "ED no(a) RepEsp",
-      "tarefa_atual": "Analisar Processos",
+      "classe": "REC no(a) Rp",
+      "tarefa_atual": "Conferir Relatório, Voto e Ementa",
       "autuacao": "14/11/2026",
-      "desde": "25/11/2026",
-      "dias_tramitando": 11,
+      "desde": "23/11/2026",
+      "dias_tramitando": 12,
       "julgado": false,
       "data_julgamento": "",
       "teor": "",
@@ -33767,7 +33767,7 @@
       "processo": "0600080-26.2026.6.10.0030",
       "gabinete": "Gab. JA 2",
       "classe": "CumSen",
-      "tarefa_atual": "Elaborar Documentos",
+      "tarefa_atual": "Verificar Pendências",
       "autuacao": "16/09/2026",
       "desde": "26/11/2026",
       "dias_tramitando": 71,
@@ -33910,7 +33910,7 @@
       "tarefa_atual": "Aguardando julgamento do recurso interno",
       "autuacao": "22/09/2026",
       "desde": "06/10/2026",
-      "dias_tramitando": 64,
+      "dias_tramitando": 65,
       "julgado": true,
       "data_julgamento": "03/10/2026",
       "teor": "Julgado procedente o pedido em 03/10/2026",
@@ -34496,8 +34496,8 @@
     ]
   },
   "sigilosos_processos": [],
-  "publicado_em": "26/11/2026 17:19",
+  "publicado_em": "26/11/2026 17:20",
   "arquivo_origem": "processos_tramitando_atual.xlsx",
   "consulta_publica": true,
-  "hash_publicacao": "4c2ad30131774a736ac8bc978e2215fde9c248d22f2a5d681ef86a9365b63749"
+  "hash_publicacao": "4a5220af55cdd314ecd9a7b316bbc61ed6ee82f31ecb2eae75296dc1f245576c"
 }
